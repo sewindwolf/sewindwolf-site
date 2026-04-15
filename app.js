@@ -166,15 +166,12 @@ function renderFeed(reset = false) {
   const loadMoreWrap = document.getElementById('loadMoreWrap');
   const emptyState = document.getElementById('emptyState');
 
-  console.log('renderFeed: filteredPosts=', filteredPosts.length, 'reset=', reset, 'displayCount=', displayCount);
-
   if (reset) {
     container.innerHTML = '';
     displayCount = PAGE_SIZE;
   }
 
   const slice = filteredPosts.slice(0, displayCount);
-  console.log('renderFeed: slice=', slice.length);
 
   if (slice.length === 0) {
     emptyState.style.display = 'block';
@@ -186,18 +183,11 @@ function renderFeed(reset = false) {
 
   // 只追加新增的部分
   const existingCount = container.children.length;
-  console.log('existingCount:', existingCount, 'to render:', slice.length - existingCount);
   const toRender = slice.slice(existingCount);
   toRender.forEach((post, i) => {
-    try {
-      console.log('rendering post:', post.id);
-      const card = renderCard(post);
-      card.style.animationDelay = `${i * 60}ms`;
-      container.appendChild(card);
-      console.log('appended card for:', post.id, 'container.children:', container.children.length);
-    } catch(err) {
-      console.error('renderCard error for post:', post.id, err);
-    }
+    const card = renderCard(post);
+    card.style.animationDelay = `${i * 60}ms`;
+    container.appendChild(card);
   });
 
   // 控制加载更多按钮
@@ -220,13 +210,11 @@ function renderFeed(reset = false) {
 
 // ===== 过滤逻辑 =====
 function applyFilters() {
-  console.log('applyFilters: allPosts=', allPosts.length, 'worldFilter=', currentWorldFilter, 'charFilter=', currentCharFilter);
   filteredPosts = allPosts.filter(p => {
     const worldOk = currentWorldFilter === 'all' || p.world === currentWorldFilter;
     const charOk = currentCharFilter === 'all' || p.character === currentCharFilter;
     return worldOk && charOk;
   });
-  console.log('filteredPosts:', filteredPosts.length);
   // 按时间排序（最新在前）
   filteredPosts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
   renderFeed(true);
@@ -304,14 +292,11 @@ async function init() {
 
   try {
     // 加载数据（加时间戳防缓存）
-    const res = await fetch(`data/posts.json?v=3&t=${Date.now()}`);
+    const res = await fetch(`data/posts.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const text = await res.text();
-    console.log('posts.json loaded, length:', text.length);
-    allPosts = JSON.parse(text);
-    console.log('posts parsed, count:', allPosts.length);
+    allPosts = await res.json();
   } catch (e) {
-    console.error('加载 posts.json 失败:', e);
+    console.warn('加载 posts.json 失败:', e);
     allPosts = [];
   }
 
