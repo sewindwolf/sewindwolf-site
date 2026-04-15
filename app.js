@@ -187,9 +187,13 @@ function renderFeed(reset = false) {
   // 只追加新增的部分
   const existingCount = container.children.length;
   slice.slice(existingCount).forEach((post, i) => {
-    const card = renderCard(post);
-    card.style.animationDelay = `${i * 60}ms`;
-    container.appendChild(card);
+    try {
+      const card = renderCard(post);
+      card.style.animationDelay = `${i * 60}ms`;
+      container.appendChild(card);
+    } catch(err) {
+      console.error('renderCard error for post:', post.id, err);
+    }
   });
 
   // 控制加载更多按钮
