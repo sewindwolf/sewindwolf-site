@@ -166,12 +166,15 @@ function renderFeed(reset = false) {
   const loadMoreWrap = document.getElementById('loadMoreWrap');
   const emptyState = document.getElementById('emptyState');
 
+  console.log('renderFeed: filteredPosts=', filteredPosts.length, 'reset=', reset, 'displayCount=', displayCount);
+
   if (reset) {
     container.innerHTML = '';
     displayCount = PAGE_SIZE;
   }
 
   const slice = filteredPosts.slice(0, displayCount);
+  console.log('renderFeed: slice=', slice.length);
 
   if (slice.length === 0) {
     emptyState.style.display = 'block';
@@ -209,11 +212,13 @@ function renderFeed(reset = false) {
 
 // ===== 过滤逻辑 =====
 function applyFilters() {
+  console.log('applyFilters: allPosts=', allPosts.length, 'worldFilter=', currentWorldFilter, 'charFilter=', currentCharFilter);
   filteredPosts = allPosts.filter(p => {
     const worldOk = currentWorldFilter === 'all' || p.world === currentWorldFilter;
     const charOk = currentCharFilter === 'all' || p.character === currentCharFilter;
     return worldOk && charOk;
   });
+  console.log('filteredPosts:', filteredPosts.length);
   // 按时间排序（最新在前）
   filteredPosts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
   renderFeed(true);
