@@ -186,11 +186,15 @@ function renderFeed(reset = false) {
 
   // 只追加新增的部分
   const existingCount = container.children.length;
-  slice.slice(existingCount).forEach((post, i) => {
+  console.log('existingCount:', existingCount, 'to render:', slice.length - existingCount);
+  const toRender = slice.slice(existingCount);
+  toRender.forEach((post, i) => {
     try {
+      console.log('rendering post:', post.id);
       const card = renderCard(post);
       card.style.animationDelay = `${i * 60}ms`;
       container.appendChild(card);
+      console.log('appended card for:', post.id, 'container.children:', container.children.length);
     } catch(err) {
       console.error('renderCard error for post:', post.id, err);
     }
