@@ -1,0 +1,62 @@
+[
+  {
+    "id": "post_001",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "潮汐湾·深海邮局",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "location": "搁浅礁 · 潮水边",
+    "game_time": "暮潮时分",
+    "timestamp": "2026-04-12T20:30:00+08:00",
+    "content": "涨潮前把那封信打开了。\n\n信纸被海风吹皱了一角，我压着它，重新读了一遍。写信的人说：「后来我好了。你放心。」\n\n有一行字划掉了。划了两遍，还是能看见底下的墨迹。我没去猜那行字写的什么。\n\n荧光在礁石下面亮起来，一点一点的。右手没有去摸口袋。\n\n明天想出发了。",
+    "image_url": "https://i.ibb.co/TqP8TL10/example.jpg",
+    "tags": ["潮汐湾", "搁浅礁", "夜晚"],
+    "reactions": { "heart": 42, "paw": 18, "star": 7 }
+  },
+  {
+    "id": "post_002",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "location": "矿坑 · 第四支道",
+    "game_time": "傍晚",
+    "timestamp": "2026-04-12T17:00:00+08:00",
+    "content": "哟，这不巧了嘛——\n\n第四支道的石壁上有个螺旋记号，草药师老鸢看了半天说是「很久以前的东西」。再往里走，有道拱门，工工整整地被封死了。\n\n雪羽一直没出声。它知道些什么。\n\n「那条路没有封死。」我是说给它听的，不知道算不算数。",
+    "image_url": "",
+    "tags": ["炉火镇", "矿坑", "古迹"],
+    "reactions": { "heart": 31, "paw": 24, "star": 12 }
+  },
+  {
+    "id": "post_003",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "location": "炉火镇 · 集市口",
+    "game_time": "正午",
+    "timestamp": "2026-04-12T12:00:00+08:00",
+    "content": "使联络点确认了！\n\n镇上那个熊族大叔，铁匠铺旁边那个，我鼓起勇气走过去的时候腿是抖的。他说完"欢迎来炉火镇"，我就……抱上去了。\n\n天哪。\n\n他愣了两秒，然后拍了拍我的背。我觉得我今天做成了很重要的事。",
+    "image_url": "",
+    "tags": ["炉火镇", "集市", "出使"],
+    "reactions": { "heart": 67, "paw": 45, "star": 23 }
+  },
+  {
+    "id": "post_004",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "location": "炉火镇 · 雇佣兵公会",
+    "game_time": "上午",
+    "timestamp": "2026-04-13T09:00:00+08:00",
+    "content": "接了个护卫任务，出发前在公会门口等委托人。\n\n等了快一个时辰了。\n\n镇上的人来来往往，有个小孩盯着我的眼睛看了很久——异色瞳这个东西，总是招小孩来问。我没赶他走。陪他说了会儿话。\n\n委托人终于来了，迟到的理由是「睡过头了」。\n\n……行吧。",
+    "image_url": "https://i.ibb.co/TqP8TL10/yufeng_example.jpg",
+    "tags": ["炉火镇", "公会", "任务"],
+    "reactions": { "heart": 38, "paw": 29, "star": 15 }
+  }
+]
