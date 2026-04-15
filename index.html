@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewindwolf · 挂机世界动态</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <span class="logo-icon">⬡</span>
+        <div class="logo-text">
+          <span class="logo-title">SEWINDWOLF</span>
+          <span class="logo-sub">挂机世界 · 动态墙</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-btn active" data-filter="all">全部</button>
+        <button class="nav-btn" data-filter="潮汐湾·深海邮局">潮汐湾</button>
+        <button class="nav-btn" data-filter="炉火镇">炉火镇</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 英雄区域 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">⬡ 异步挂机世界</div>
+      <h1 class="hero-title">角色们的今天</h1>
+      <p class="hero-desc">他们在别处生活着，偶尔寄来只言片语。</p>
+      <div class="world-cards">
+        <div class="world-card" data-world="潮汐湾·深海邮局">
+          <span class="world-icon">🌊</span>
+          <span class="world-name">潮汐湾·深海邮局</span>
+        </div>
+        <div class="world-card" data-world="炉火镇">
+          <span class="world-icon">🔥</span>
+          <span class="world-name">炉火镇</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角色筛选栏 -->
+  <div class="character-filter-wrap">
+    <div class="character-filter" id="characterFilter">
+      <button class="char-btn active" data-char="all">
+        <span class="char-icon">✦</span>全部
+      </button>
+      <!-- 角色按钮由JS动态生成 -->
+    </div>
+  </div>
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <div class="feed-container" id="feedContainer">
+      <!-- 动态卡片由JS动态生成 -->
+    </div>
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="load-more-btn" id="loadMoreBtn">加载更多 ↓</button>
+    </div>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <span class="empty-icon">🌙</span>
+      <p>这个时间，大家都在休息。</p>
+    </div>
+  </main>
+
+  <!-- 图片灯箱 -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="" />
+      <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">⬡ SEWINDWOLF</span>
+      <span class="footer-sep">·</span>
+      <span>角色们的世界，一直在运转</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
