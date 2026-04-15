@@ -1,3 +1,33 @@
+// ===== 主题切换 =====
+const themeKey = 'sw_theme';
+function initTheme() {
+  const saved = localStorage.getItem(themeKey);
+  const theme = saved || 'dark';
+  applyTheme(theme);
+}
+
+function applyTheme(theme) {
+  if (theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+  const icon = document.getElementById('themeIcon');
+  if (icon) {
+    icon.textContent = theme === 'light' ? '☀️' : '🌙';
+  }
+  localStorage.setItem(themeKey, theme);
+}
+
+function toggleTheme() {
+  const current = localStorage.getItem(themeKey) || 'dark';
+  const next = current === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+}
+
+// 立即初始化主题（防止闪烁）
+initTheme();
+
 // ===== 状态管理 =====
 let allPosts = [];
 let filteredPosts = [];
@@ -298,6 +328,12 @@ async function init() {
     displayCount += PAGE_SIZE;
     renderFeed(false);
   });
+
+  // 主题切换按钮
+  const themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', toggleTheme);
+  }
 
   // 初始渲染
   applyFilters();

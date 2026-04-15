@@ -24,6 +24,40 @@
   --font-sans: 'Noto Sans SC', 'PingFang SC', sans-serif;
 }
 
+/* ===== 亮色主题 ===== */
+[data-theme="light"] {
+  --bg-base: #f5f3ef;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9f8f6;
+  --bg-header: rgba(245, 243, 239, 0.92);
+  --border: rgba(0,0,0,0.08);
+  --border-light: rgba(0,0,0,0.14);
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9e9e9e;
+  --accent: #5a6cff;
+  --accent-glow: rgba(90,108,255,0.12);
+  --accent2: #b08c4a;
+  --accent2-glow: rgba(176,140,74,0.1);
+  --world-tide: #2d6f98;
+  --world-fire: #b05a1e;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] body {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(90,108,255,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 110%, rgba(176,140,74,0.04) 0%, transparent 50%);
+}
+
+[data-theme="light"] .lightbox-backdrop {
+  background: rgba(255,255,255,0.85);
+}
+
+[data-theme="light"] .char-avatar::after {
+  opacity: 0.1;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -623,3 +657,58 @@ body {
 .post-card:nth-child(3) { animation-delay: 120ms; }
 .post-card:nth-child(4) { animation-delay: 180ms; }
 .post-card:nth-child(n+5) { animation-delay: 240ms; }
+
+/* ===== 主题切换按钮 ===== */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  transform: rotate(15deg);
+}
+
+.theme-icon {
+  font-size: 16px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:active .theme-icon {
+  transform: scale(0.85);
+}
+
+/* 亮色模式下的 hover 修正 */
+[data-theme="light"] .nav-btn:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+[data-theme="light"] .char-btn.active {
+  background: rgba(0,0,0,0.06);
+}
+
+[data-theme="light"] .reaction-btn:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+[data-theme="light"] .tag {
+  background: rgba(0,0,0,0.04);
+}
+
+/* 主题过渡动画 */
+body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
+.hero-badge, .load-more-btn, .site-footer, .theme-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
