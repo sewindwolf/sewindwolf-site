@@ -291,11 +291,14 @@ async function init() {
 
   try {
     // 加载数据（加时间戳防缓存）
-    const res = await fetch(`data/posts.json?t=${Date.now()}`);
-    if (!res.ok) throw new Error('加载失败');
-    allPosts = await res.json();
+    const res = await fetch(`data/posts.json?v=3&t=${Date.now()}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const text = await res.text();
+    console.log('posts.json loaded, length:', text.length);
+    allPosts = JSON.parse(text);
+    console.log('posts parsed, count:', allPosts.length);
   } catch (e) {
-    console.warn('加载 posts.json 失败，使用空数据', e);
+    console.error('加载 posts.json 失败:', e);
     allPosts = [];
   }
 
