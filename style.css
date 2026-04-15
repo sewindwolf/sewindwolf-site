@@ -712,3 +712,113 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
 .hero-badge, .load-more-btn, .site-footer, .theme-toggle {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ===== 角色头像可点击 ===== */
+.char-avatar.clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.char-avatar.clickable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(124,140,255,0.3);
+  border-color: var(--accent);
+}
+
+.char-avatar.clickable:active {
+  transform: scale(0.95);
+}
+
+/* ===== 角色卡弹窗 ===== */
+.char-card-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.char-card-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.char-card-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+[data-theme="light"] .char-card-backdrop {
+  background: rgba(255,255,255,0.88);
+}
+
+.char-card-panel {
+  position: relative;
+  z-index: 1;
+  max-width: 90vw;
+  max-height: 85vh;
+  animation: cardSlideIn 0.3s ease;
+}
+
+@keyframes cardSlideIn {
+  from { opacity: 0; transform: scale(0.92) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.char-card-panel img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+}
+
+.char-card-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.char-card-close:hover {
+  background: rgba(255,255,255,0.25);
+  transform: rotate(90deg);
+}
+
+/* 角色头像提示文字 */
+.char-avatar-tip {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--accent);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.char-avatar.clickable:hover .char-avatar-tip {
+  opacity: 1;
+}

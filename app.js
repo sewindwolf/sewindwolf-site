@@ -36,6 +36,9 @@ let currentCharFilter = 'all';
 let displayCount = 10;
 const PAGE_SIZE = 10;
 
+// 角色数据（角色卡图片等）
+let characterData = {};
+
 // 反应状态（存 localStorage）
 const reactionKey = 'sw_reactions';
 let reactionState = JSON.parse(localStorage.getItem(reactionKey) || '{}');
@@ -113,6 +116,12 @@ function renderCard(post) {
     ? `<div class="card-tags">${post.tags.map(t => `<span class="tag"># ${escapeHtml(t)}</span>`).join('')}</div>`
     : '';
 
+  // 判断是否有角色卡图片
+  const charInfo = characterData[post.character];
+  const hasCard = charInfo && charInfo.card_image;
+  const clickableClass = hasCard ? 'clickable' : '';
+  const onClickAvatar = hasCard ? `onclick="openCharCard('${escapeHtml(post.character)}')"` : '';
+
   const card = document.createElement('article');
   card.className = 'post-card';
   card.dataset.id = post.id;
@@ -121,7 +130,10 @@ function renderCard(post) {
 
   card.innerHTML = `
     <div class="card-header">
-      <div class="char-avatar" style="background:${post.avatar_color}22;color:${post.avatar_color}">${post.avatar_symbol || '?'}</div>
+      <div class="char-avatar ${clickableClass}" style="background:${post.avatar_color}22;color:${post.avatar_color}" ${onClickAvatar}>
+        ${post.avatar_symbol || '?'}
+        ${hasCard ? '<span class="char-avatar-tip">查看角色卡</span>' : ''}
+      </div>
       <div class="card-meta">
         <div class="card-meta-top">
           <span class="char-name">${escapeHtml(post.character)}</span>
@@ -261,6 +273,26 @@ function toggleReaction(postId, type, btn) {
   }
 }
 
+// ===== 角色卡弹窗 =====
+function openCharCard(charName) {
+  const charInfo = characterData[charName];
+  if (!charInfo || !charInfo.card_image) return;
+  const modal = document.getElementById('charCardModal');
+  const img = document.getElementById('charCardImg');
+  img.src = charInfo.card_image;
+  img.alt = charName + ' 角色卡';
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCharCard() {
+  const modal = document.getElementById('charCardModal');
+  modal.classList.remove('open');
+  if (!document.getElementById('lightbox').classList.contains('open')) {
+    document.body.style.overflow = '';
+  }
+}
+
 // ===== 灯箱 =====
 function openLightbox(url) {
   const lb = document.getElementById('lightbox');
@@ -277,7 +309,10 @@ function closeLightbox() {
 }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'Escape') {
+    closeCharCard();
+    closeLightbox();
+  }
 });
 
 // ===== 初始化 =====
@@ -291,12 +326,15 @@ async function init() {
   }
 
   try {
-    // 加载数据（加时间戳防缓存）
-    const res = await fetch(`data/posts.json?t=${Date.now()}`);
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    allPosts = await res.json();
+    // 并行加载数据
+    const [postsRes, charsRes] = await Promise.all([
+      fetch(`data/posts.json?t=${Date.now()}`),
+      fetch(`data/characters.json?t=${Date.now()}`)
+    ]);
+    if (postsRes.ok) allPosts = await postsRes.json();
+    if (charsRes.ok) characterData = await charsRes.json();
   } catch (e) {
-    console.warn('加载 posts.json 失败:', e);
+    console.warn('加载数据失败:', e);
     allPosts = [];
   }
 

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
 
@@ -84,6 +84,15 @@
     </div>
   </div>
 
+  <!-- 角色卡弹窗 -->
+  <div class="char-card-modal" id="charCardModal">
+    <div class="char-card-backdrop" onclick="closeCharCard()"></div>
+    <div class="char-card-panel">
+      <button class="char-card-close" onclick="closeCharCard()">×</button>
+      <img id="charCardImg" src="" alt="" />
+    </div>
+  </div>
+
   <!-- 底部 -->
   <footer class="site-footer">
     <div class="footer-inner">
@@ -93,6 +102,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+{
+  "风亚": {
+    "character_en": "Feng Ya",
+    "avatar_symbol": "🐺",
+    "avatar_color": "#4a7fa5",
+    "card_image": "images/cards/fengya.png",
+    "ref_image": "images/refs/fengya_ref.png",
+    "world": "潮汐湾·深海邮局"
+  },
+  "提理安": {
+    "character_en": "Tilion",
+    "avatar_symbol": "🦌",
+    "avatar_color": "#7a8c6e",
+    "card_image": "images/cards/tilion.png",
+    "ref_image": "images/refs/tilion_ref.png",
+    "world": "炉火镇"
+  },
+  "狐兰兹": {
+    "character_en": "Foxlanz",
+    "avatar_symbol": "🦊",
+    "avatar_color": "#b5632a",
+    "card_image": "images/cards/foxlanz.png",
+    "ref_image": "images/refs/foxlanz_ref.png",
+    "world": "炉火镇"
+  },
+  "羽烽": {
+    "character_en": "Yu Feng",
+    "avatar_symbol": "🐯",
+    "avatar_color": "#c8a84b",
+    "card_image": "images/cards/yufeng.png",
+    "ref_image": "images/refs/yufeng_ref.png",
+    "world": "炉火镇"
+  },
+  "旻": {
+    "character_en": "Aki",
+    "avatar_symbol": "🐕",
+    "avatar_color": "#2a6b4a",
+    "card_image": "images/cards/aki.png",
+    "ref_image": "images/refs/aki_ref.png",
+    "world": "炉火镇"
+  }
+}
