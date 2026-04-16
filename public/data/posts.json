@@ -18,9 +18,9 @@
       "风亚回来了"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 67,
+      "paw": 38,
+      "star": 27
     },
     "comments": [
       {
@@ -52,9 +52,9 @@
       "蓝绿色的光"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 68,
+      "paw": 46,
+      "star": 27
     },
     "comments": [
       {
@@ -82,9 +82,9 @@
       "三角记号"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 65,
+      "paw": 54,
+      "star": 26
     },
     "comments": [
       {
@@ -116,9 +116,9 @@
       "守望之火变色"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 141,
+      "paw": 95,
+      "star": 54
     },
     "comments": [
       {
@@ -150,9 +150,9 @@
       "新发现"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 103,
+      "paw": 83,
+      "star": 35
     },
     "comments": [
       {
@@ -185,9 +185,9 @@
       "探索"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 70,
+      "paw": 61,
+      "star": 30
     },
     "comments": [
       {
@@ -220,9 +220,9 @@
       "狐兰兹"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 95,
+      "paw": 76,
+      "star": 30
     },
     "comments": [
       {
@@ -254,9 +254,9 @@
       "回来了"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 54,
+      "paw": 28,
+      "star": 23
     },
     "comments": [
       {
@@ -288,9 +288,9 @@
       "等"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 79,
+      "paw": 53,
+      "star": 33
     },
     "comments": []
   },
@@ -313,9 +313,9 @@
       "战略性撤退"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 92,
+      "paw": 64,
+      "star": 35
     },
     "comments": [
       {
@@ -347,9 +347,9 @@
       "送信"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 82,
+      "paw": 68,
+      "star": 29
     },
     "mood": "surprised",
     "comments": [
@@ -378,9 +378,9 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 91,
+      "paw": 60,
+      "star": 33
     },
     "mood": "happy",
     "comments": [
@@ -409,9 +409,9 @@
       "归途"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 63,
+      "paw": 39,
+      "star": 22
     },
     "mood": "calm",
     "comments": [
@@ -440,9 +440,9 @@
       "矿坑古道"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 42,
+      "paw": 33,
+      "star": 23
     },
     "mood": "thinking",
     "comments": [
@@ -475,9 +475,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 40,
+      "paw": 25,
+      "star": 16
     },
     "mood": "sad",
     "comments": []
@@ -500,9 +500,9 @@
       "炉火镇"
     ],
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 54,
+      "paw": 32,
+      "star": 20
     },
     "mood": "thinking"
   },
@@ -524,9 +524,9 @@
     "character": "旻",
     "timestamp": "2026-04-15T20:10:00+08:00",
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 68,
+      "paw": 49,
+      "star": 21
     },
     "mood": "sleepy"
   },
@@ -548,9 +548,9 @@
     "character": "提理安",
     "timestamp": "2026-04-15T20:12:00+08:00",
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 28,
+      "paw": 28,
+      "star": 14
     },
     "mood": "calm"
   },
@@ -572,9 +572,9 @@
     "character": "狐兰兹",
     "timestamp": "2026-04-15T20:15:00+08:00",
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 65,
+      "paw": 44,
+      "star": 30
     },
     "mood": "happy"
   },
@@ -596,9 +596,9 @@
     "character": "羽烽",
     "timestamp": "2026-04-15T20:18:00+08:00",
     "reactions": {
-      "heart": 0,
-      "paw": 0,
-      "star": 0
+      "heart": 52,
+      "paw": 38,
+      "star": 21
     },
     "mood": "sad"
   },
