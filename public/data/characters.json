@@ -1,0 +1,197 @@
+{
+  "风亚": {
+    "character_en": "Feng Ya",
+    "avatar_symbol": "🐺",
+    "avatar_color": "#4a7fa5",
+    "card_image": "images/cards/fengya.png",
+    "ref_image": "images/refs/fengya_ref.png",
+    "world": "潮汐湾·深海邮局",
+    "stickers": {
+      "happy": "images/stickers/fengya/happy.png",
+      "calm": "images/stickers/fengya/calm.png",
+      "sad": "images/stickers/fengya/sad.png",
+      "angry": "images/stickers/fengya/angry.png",
+      "shy": "images/stickers/fengya/shy.png",
+      "surprised": "images/stickers/fengya/surprised.png",
+      "thinking": "images/stickers/fengya/thinking.png",
+      "sleepy": "images/stickers/fengya/sleepy.png"
+    },
+    "stickers_inline": {
+      "happy": "images/stickers-inline/fengya/happy.webp",
+      "calm": "images/stickers-inline/fengya/calm.webp",
+      "sad": "images/stickers-inline/fengya/sad.webp",
+      "angry": "images/stickers-inline/fengya/angry.webp",
+      "shy": "images/stickers-inline/fengya/shy.webp",
+      "surprised": "images/stickers-inline/fengya/surprised.webp",
+      "thinking": "images/stickers-inline/fengya/thinking.webp",
+      "sleepy": "images/stickers-inline/fengya/sleepy.webp"
+    },
+    "stickers_thumb": {
+      "happy": "images/stickers-thumb/fengya/happy.webp",
+      "calm": "images/stickers-thumb/fengya/calm.webp",
+      "sad": "images/stickers-thumb/fengya/sad.webp",
+      "angry": "images/stickers-thumb/fengya/angry.webp",
+      "shy": "images/stickers-thumb/fengya/shy.webp",
+      "surprised": "images/stickers-thumb/fengya/surprised.webp",
+      "thinking": "images/stickers-thumb/fengya/thinking.webp",
+      "sleepy": "images/stickers-thumb/fengya/sleepy.webp"
+    },
+    "avatar": "images/avatars/fengya.png"
+  },
+  "提理安": {
+    "character_en": "Tilion",
+    "avatar_symbol": "🦌",
+    "avatar_color": "#7a8c6e",
+    "card_image": "images/cards/tilion.png",
+    "ref_image": "images/refs/tilion_ref.png",
+    "world": "炉火镇",
+    "stickers": {
+      "happy": "images/stickers/tilion/happy.png",
+      "calm": "images/stickers/tilion/calm.png",
+      "sad": "images/stickers/tilion/sad.png",
+      "angry": "images/stickers/tilion/angry.png",
+      "shy": "images/stickers/tilion/shy.png",
+      "surprised": "images/stickers/tilion/surprised.png",
+      "thinking": "images/stickers/tilion/thinking.png",
+      "sleepy": "images/stickers/tilion/sleepy.png"
+    },
+    "stickers_inline": {
+      "happy": "images/stickers-inline/tilion/happy.webp",
+      "calm": "images/stickers-inline/tilion/calm.webp",
+      "sad": "images/stickers-inline/tilion/sad.webp",
+      "angry": "images/stickers-inline/tilion/angry.webp",
+      "shy": "images/stickers-inline/tilion/shy.webp",
+      "surprised": "images/stickers-inline/tilion/surprised.webp",
+      "thinking": "images/stickers-inline/tilion/thinking.webp",
+      "sleepy": "images/stickers-inline/tilion/sleepy.webp"
+    },
+    "stickers_thumb": {
+      "happy": "images/stickers-thumb/tilion/happy.webp",
+      "calm": "images/stickers-thumb/tilion/calm.webp",
+      "sad": "images/stickers-thumb/tilion/sad.webp",
+      "angry": "images/stickers-thumb/tilion/angry.webp",
+      "shy": "images/stickers-thumb/tilion/shy.webp",
+      "surprised": "images/stickers-thumb/tilion/surprised.webp",
+      "thinking": "images/stickers-thumb/tilion/thinking.webp",
+      "sleepy": "images/stickers-thumb/tilion/sleepy.webp"
+    },
+    "avatar": "images/avatars/tilion.png"
+  },
+  "狐兰兹": {
+    "character_en": "Foxlanz",
+    "avatar_symbol": "🦊",
+    "avatar_color": "#b5632a",
+    "card_image": "images/cards/foxlanz.png",
+    "ref_image": "images/refs/foxlanz_ref.png",
+    "world": "炉火镇",
+    "stickers": {
+      "happy": "images/stickers/foxlanz/happy.png",
+      "calm": "images/stickers/foxlanz/calm.png",
+      "sad": "images/stickers/foxlanz/sad.png",
+      "angry": "images/stickers/foxlanz/angry.png",
+      "shy": "images/stickers/foxlanz/shy.png",
+      "surprised": "images/stickers/foxlanz/surprised.png",
+      "thinking": "images/stickers/foxlanz/thinking.png",
+      "sleepy": "images/stickers/foxlanz/sleepy.png"
+    },
+    "stickers_inline": {
+      "happy": "images/stickers-inline/foxlanz/happy.webp",
+      "calm": "images/stickers-inline/foxlanz/calm.webp",
+      "sad": "images/stickers-inline/foxlanz/sad.webp",
+      "angry": "images/stickers-inline/foxlanz/angry.webp",
+      "shy": "images/stickers-inline/foxlanz/shy.webp",
+      "surprised": "images/stickers-inline/foxlanz/surprised.webp",
+      "thinking": "images/stickers-inline/foxlanz/thinking.webp",
+      "sleepy": "images/stickers-inline/foxlanz/sleepy.webp"
+    },
+    "stickers_thumb": {
+      "happy": "images/stickers-thumb/foxlanz/happy.webp",
+      "calm": "images/stickers-thumb/foxlanz/calm.webp",
+      "sad": "images/stickers-thumb/foxlanz/sad.webp",
+      "angry": "images/stickers-thumb/foxlanz/angry.webp",
+      "shy": "images/stickers-thumb/foxlanz/shy.webp",
+      "surprised": "images/stickers-thumb/foxlanz/surprised.webp",
+      "thinking": "images/stickers-thumb/foxlanz/thinking.webp",
+      "sleepy": "images/stickers-thumb/foxlanz/sleepy.webp"
+    },
+    "avatar": "images/avatars/foxlanz.png"
+  },
+  "羽烽": {
+    "character_en": "Yu Feng",
+    "avatar_symbol": "🐯",
+    "avatar_color": "#c8a84b",
+    "card_image": "images/cards/yufeng.png",
+    "ref_image": "images/refs/yufeng_ref.png",
+    "world": "炉火镇",
+    "stickers": {
+      "happy": "images/stickers/yufeng/happy.png",
+      "calm": "images/stickers/yufeng/calm.png",
+      "sad": "images/stickers/yufeng/sad.png",
+      "angry": "images/stickers/yufeng/angry.png",
+      "shy": "images/stickers/yufeng/shy.png",
+      "surprised": "images/stickers/yufeng/surprised.png",
+      "thinking": "images/stickers/yufeng/thinking.png",
+      "sleepy": "images/stickers/yufeng/sleepy.png"
+    },
+    "stickers_inline": {
+      "happy": "images/stickers-inline/yufeng/happy.webp",
+      "calm": "images/stickers-inline/yufeng/calm.webp",
+      "sad": "images/stickers-inline/yufeng/sad.webp",
+      "angry": "images/stickers-inline/yufeng/angry.webp",
+      "shy": "images/stickers-inline/yufeng/shy.webp",
+      "surprised": "images/stickers-inline/yufeng/surprised.webp",
+      "thinking": "images/stickers-inline/yufeng/thinking.webp",
+      "sleepy": "images/stickers-inline/yufeng/sleepy.webp"
+    },
+    "stickers_thumb": {
+      "happy": "images/stickers-thumb/yufeng/happy.webp",
+      "calm": "images/stickers-thumb/yufeng/calm.webp",
+      "sad": "images/stickers-thumb/yufeng/sad.webp",
+      "angry": "images/stickers-thumb/yufeng/angry.webp",
+      "shy": "images/stickers-thumb/yufeng/shy.webp",
+      "surprised": "images/stickers-thumb/yufeng/surprised.webp",
+      "thinking": "images/stickers-thumb/yufeng/thinking.webp",
+      "sleepy": "images/stickers-thumb/yufeng/sleepy.webp"
+    },
+    "avatar": "images/avatars/yufeng.png"
+  },
+  "旻": {
+    "character_en": "Aki",
+    "avatar_symbol": "🐕",
+    "avatar_color": "#2a6b4a",
+    "card_image": "images/cards/aki.png",
+    "ref_image": "images/refs/aki_ref.png",
+    "world": "炉火镇",
+    "stickers": {
+      "happy": "images/stickers/aki/happy.png",
+      "calm": "images/stickers/aki/calm.png",
+      "sad": "images/stickers/aki/sad.png",
+      "angry": "images/stickers/aki/angry.png",
+      "shy": "images/stickers/aki/shy.png",
+      "surprised": "images/stickers/aki/surprised.png",
+      "thinking": "images/stickers/aki/thinking.png",
+      "sleepy": "images/stickers/aki/sleepy.png"
+    },
+    "stickers_inline": {
+      "happy": "images/stickers-inline/aki/happy.webp",
+      "calm": "images/stickers-inline/aki/calm.webp",
+      "sad": "images/stickers-inline/aki/sad.webp",
+      "angry": "images/stickers-inline/aki/angry.webp",
+      "shy": "images/stickers-inline/aki/shy.webp",
+      "surprised": "images/stickers-inline/aki/surprised.webp",
+      "thinking": "images/stickers-inline/aki/thinking.webp",
+      "sleepy": "images/stickers-inline/aki/sleepy.webp"
+    },
+    "stickers_thumb": {
+      "happy": "images/stickers-thumb/aki/happy.webp",
+      "calm": "images/stickers-thumb/aki/calm.webp",
+      "sad": "images/stickers-thumb/aki/sad.webp",
+      "angry": "images/stickers-thumb/aki/angry.webp",
+      "shy": "images/stickers-thumb/aki/shy.webp",
+      "surprised": "images/stickers-thumb/aki/surprised.webp",
+      "thinking": "images/stickers-thumb/aki/thinking.webp",
+      "sleepy": "images/stickers-thumb/aki/sleepy.webp"
+    },
+    "avatar": "images/avatars/aki.png"
+  }
+}
