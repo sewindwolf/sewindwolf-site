@@ -1,0 +1,8 @@
+﻿node_modules
+.git
+package.json
+package-lock.json
+wrangler.toml
+.gitignore
+STICKER_GUIDE.md
+.assetsignore

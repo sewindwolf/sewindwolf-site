@@ -1,107 +1,107 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sewindwolf 路 鎸傛満涓栫晫鍔ㄦ€?/title>
+  <title>Sewindwolf · 挂机世界动态</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=1776319443" />
+  <link rel="stylesheet" href="style.css?v=1776336383" />
 </head>
 <body>
 
-  <!-- 椤堕儴瀵艰埅 -->
+  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="header-inner">
       <div class="site-logo">
-        <span class="logo-icon">猬?/span>
+        <span class="logo-icon">⬡</span>
         <div class="logo-text">
           <span class="logo-title">SEWINDWOLF</span>
-          <span class="logo-sub">鎸傛満涓栫晫 路 鍔ㄦ€佸</span>
+          <span class="logo-sub">挂机世界 · 动态墙</span>
         </div>
       </div>
       <nav class="header-nav">
-        <button class="nav-btn active" data-filter="all">鍏ㄩ儴</button>
-        <button class="nav-btn" data-filter="娼睈婀韭锋繁娴烽偖灞€">娼睈婀?/button>
-        <button class="nav-btn" data-filter="鐐夌伀闀?>鐐夌伀闀?/button>
-        <button class="theme-toggle" id="themeToggle" title="鍒囨崲鏄庢殫妯″紡">
-          <span class="theme-icon" id="themeIcon">馃寵</span>
+        <button class="nav-btn active" data-filter="all">全部</button>
+        <button class="nav-btn" data-filter="潮汐湾·深海邮局">潮汐湾</button>
+        <button class="nav-btn" data-filter="炉火镇">炉火镇</button>
+        <button class="theme-toggle" id="themeToggle" title="切换明暗模式">
+          <span class="theme-icon" id="themeIcon">🌙</span>
         </button>
       </nav>
     </div>
   </header>
 
-  <!-- 鑻遍泟鍖哄煙 -->
+  <!-- 英雄区域 -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-badge">猬?寮傛鎸傛満涓栫晫</div>
-      <h1 class="hero-title">瑙掕壊浠殑浠婂ぉ</h1>
-      <p class="hero-desc">浠栦滑鍦ㄥ埆澶勭敓娲荤潃锛屽伓灏斿瘎鏉ュ彧瑷€鐗囪銆?/p>
+      <div class="hero-badge">⬡ 异步挂机世界</div>
+      <h1 class="hero-title">角色们的今天</h1>
+      <p class="hero-desc">他们在别处生活着，偶尔寄来只言片语。</p>
       <div class="world-cards">
-        <div class="world-card" data-world="娼睈婀韭锋繁娴烽偖灞€">
-          <span class="world-icon">馃寠</span>
-          <span class="world-name">娼睈婀韭锋繁娴烽偖灞€</span>
+        <div class="world-card" data-world="潮汐湾·深海邮局">
+          <span class="world-icon">🌊</span>
+          <span class="world-name">潮汐湾·深海邮局</span>
         </div>
-        <div class="world-card" data-world="鐐夌伀闀?>
-          <span class="world-icon">馃敟</span>
-          <span class="world-name">鐐夌伀闀?/span>
+        <div class="world-card" data-world="炉火镇">
+          <span class="world-icon">🔥</span>
+          <span class="world-name">炉火镇</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 瑙掕壊绛涢€夋爮 -->
+  <!-- 角色筛选栏 -->
   <div class="character-filter-wrap">
     <div class="character-filter" id="characterFilter">
       <button class="char-btn active" data-char="all">
-        <span class="char-icon">鉁?/span>鍏ㄩ儴
+        <span class="char-icon">✦</span>全部
       </button>
-      <!-- 瑙掕壊鎸夐挳鐢盝S鍔ㄦ€佺敓鎴?-->
+      <!-- 角色按钮由JS动态生成 -->
     </div>
   </div>
 
-  <!-- 涓诲唴瀹瑰尯 -->
+  <!-- 主内容区 -->
   <main class="main-content">
     <div class="feed-container" id="feedContainer">
-      <!-- 鍔ㄦ€佸崱鐗囩敱JS鍔ㄦ€佺敓鎴?-->
+      <!-- 动态卡片由JS动态生成 -->
     </div>
     <div class="load-more-wrap" id="loadMoreWrap">
-      <button class="load-more-btn" id="loadMoreBtn">鍔犺浇鏇村 鈫?/button>
+      <button class="load-more-btn" id="loadMoreBtn">加载更多 ↓</button>
     </div>
     <div class="empty-state" id="emptyState" style="display:none">
-      <span class="empty-icon">馃寵</span>
-      <p>杩欎釜鏃堕棿锛屽ぇ瀹堕兘鍦ㄤ紤鎭€?/p>
+      <span class="empty-icon">🌙</span>
+      <p>这个时间，大家都在休息。</p>
     </div>
   </main>
 
-  <!-- 鍥剧墖鐏 -->
+  <!-- 图片灯箱 -->
   <div class="lightbox" id="lightbox">
     <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
     <div class="lightbox-img-wrap">
       <img id="lightboxImg" src="" alt="" />
-      <button class="lightbox-close" onclick="closeLightbox()">脳</button>
+      <button class="lightbox-close" onclick="closeLightbox()">×</button>
     </div>
   </div>
 
-  <!-- 瑙掕壊鍗″脊绐?-->
+  <!-- 角色卡弹窗 -->
   <div class="char-card-modal" id="charCardModal">
     <div class="char-card-backdrop" onclick="closeCharCard()"></div>
     <div class="char-card-panel">
-      <button class="char-card-close" onclick="closeCharCard()">脳</button>
+      <button class="char-card-close" onclick="closeCharCard()">×</button>
       <img id="charCardImg" src="" alt="" />
     </div>
   </div>
 
-  <!-- 搴曢儴 -->
+  <!-- 底部 -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-logo">猬?SEWINDWOLF</span>
-      <span class="footer-sep">路</span>
-      <span>瑙掕壊浠殑涓栫晫锛屼竴鐩村湪杩愯浆</span>
+      <span class="footer-logo">⬡ SEWINDWOLF</span>
+      <span class="footer-sep">·</span>
+      <span>角色们的世界，一直在运转</span>
     </div>
   </footer>
 
-  <script src="app.js?v=1776335252"></script>
+  <script src="app.js?v=1776336383"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿// ===== 涓婚鍒囨崲 =====
+// ===== 主题切换 =====
 const themeKey = 'sw_theme';
 function initTheme() {
   const saved = localStorage.getItem(themeKey);
@@ -14,7 +14,7 @@ function applyTheme(theme) {
   }
   const icon = document.getElementById('themeIcon');
   if (icon) {
-    icon.textContent = theme === 'light' ? '鈽€锔? : '馃寵';
+    icon.textContent = theme === 'light' ? '☀️' : '🌙';
   }
   localStorage.setItem(themeKey, theme);
 }
@@ -25,9 +25,10 @@ function toggleTheme() {
   applyTheme(next);
 }
 
-// 绔嬪嵆鍒濆鍖栦富棰橈紙闃叉闂儊锛?initTheme();
+// 立即初始化主题（防止闪烁）
+initTheme();
 
-// ===== 鐘舵€佺鐞?=====
+// ===== 状态管理 =====
 let allPosts = [];
 let filteredPosts = [];
 let currentWorldFilter = 'all';
@@ -35,16 +36,17 @@ let currentCharFilter = 'all';
 let displayCount = 10;
 const PAGE_SIZE = 10;
 
-// 瑙掕壊鏁版嵁锛堣鑹插崱鍥剧墖绛夛級
+// 角色数据（角色卡图片等）
 let characterData = {};
 
-// 鍙嶅簲鐘舵€侊紙瀛?localStorage锛?const reactionKey = 'sw_reactions';
+// 反应状态（存 localStorage）
+const reactionKey = 'sw_reactions';
 let reactionState = JSON.parse(localStorage.getItem(reactionKey) || '{}');
 
-// ===== 宸ュ叿鍑芥暟 =====
+// ===== 工具函数 =====
 function getWorldClass(world) {
-  if (world && world.includes('娼睈婀?)) return 'tide';
-  if (world && world.includes('鐐夌伀闀?)) return 'fire';
+  if (world && world.includes('潮汐湾')) return 'tide';
+  if (world && world.includes('炉火镇')) return 'fire';
   return 'tide';
 }
 
@@ -53,11 +55,11 @@ function formatTime(ts) {
   const d = new Date(ts);
   const now = new Date();
   const diff = (now - d) / 1000;
-  if (diff < 60) return '鍒氬垰';
-  if (diff < 3600) return `${Math.floor(diff / 60)} 鍒嗛挓鍓峘;
-  if (diff < 86400) return `${Math.floor(diff / 3600)} 灏忔椂鍓峘;
+  if (diff < 60) return '刚刚';
+  if (diff < 3600) return `${Math.floor(diff / 60)} 分钟前`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)} 小时前`;
   const days = Math.floor(diff / 86400);
-  if (days < 30) return `${days} 澶╁墠`;
+  if (days < 30) return `${days} 天前`;
   return d.toLocaleDateString('zh-CN', { month: 'long', day: 'numeric' });
 }
 
@@ -67,7 +69,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ===== 琛ㄦ儏鍥惧伐鍏峰嚱鏁?=====
+// ===== 表情图工具函数 =====
 function getStickerUrl(charName, mood) {
   const charInfo = characterData[charName];
   if (!charInfo || !charInfo.stickers) return null;
@@ -92,8 +94,8 @@ function getInlineStickerUrl(charName, mood) {
 }
 
 const moodLabels = {
-  happy: '寮€蹇?, calm: '骞抽潤', sad: '闅捐繃', angry: '鐢熸皵',
-  shy: '瀹崇緸', surprised: '鎯婅', thinking: '娌夋€?, sleepy: '鍥板€?
+  happy: '开心', calm: '平静', sad: '难过', angry: '生气',
+  shy: '害羞', surprised: '惊讶', thinking: '沉思', sleepy: '困倦'
 };
 
 function renderContentWithStickers(text) {
@@ -111,14 +113,14 @@ function renderContentWithStickers(text) {
     const url = getInlineStickerUrl(charName, mood);
     if (url) {
       const label = moodLabels[mood] || mood;
-      return `<img class="inline-sticker" src="${url}" alt="${charName}${label}" title="${charName} 路 ${label}" />`;
+      return `<img class="inline-sticker" src="${url}" alt="${charName}${label}" title="${charName} · ${label}" />`;
     }
     return match;
   });
   return html;
 }
 
-// ===== 娓叉煋瑙掕壊绛涢€夋寜閽?=====
+// ===== 渲染角色筛选按钮 =====
 function buildCharFilter(posts) {
   const chars = {};
   posts.forEach(p => {
@@ -128,14 +130,14 @@ function buildCharFilter(posts) {
   });
 
   const container = document.getElementById('characterFilter');
-  // 淇濈暀"鍏ㄩ儴"鎸夐挳
+  // 保留"全部"按钮
   const allBtn = container.querySelector('[data-char="all"]');
   container.innerHTML = '';
   container.appendChild(allBtn);
 
+  // Bind click event to All button
+  allBtn.addEventListener("click", () => filterByChar("all", allBtn));
 
-  // 给'全部'按钮绑定点击事件
-  allBtn.addEventListener('click', () => filterByChar('all', allBtn));
   Object.entries(chars).forEach(([name, info]) => {
     const btn = document.createElement('button');
     btn.className = 'char-btn';
@@ -151,32 +153,33 @@ function buildCharFilter(posts) {
   });
 }
 
-// ===== 娓叉煋鍗曞紶鍗＄墖 =====
+// ===== 渲染单张卡片 =====
 function renderCard(post) {
   const worldClass = getWorldClass(post.world);
   const timeStr = formatTime(post.timestamp);
   const reactions = post.reactions || { heart: 0, paw: 0, star: 0 };
   const userReacted = reactionState[post.id] || {};
 
-  // 澶勭悊鍥剧墖
+  // 处理图片
   const hasImage = post.image_url && post.image_url.trim() !== '';
   const imageHtml = hasImage ? `
     <div class="card-image-wrap" onclick="openLightbox('${escapeHtml(post.image_url)}')">
-      <img src="${escapeHtml(post.image_url)}" alt="${escapeHtml(post.character)} 路 ${escapeHtml(post.location || '')}" loading="lazy" onerror="this.parentElement.style.display='none'" />
+      <img src="${escapeHtml(post.image_url)}" alt="${escapeHtml(post.character)} · ${escapeHtml(post.location || '')}" loading="lazy" onerror="this.parentElement.style.display='none'" />
     </div>` : '';
 
-  // 澶勭悊鏍囩
+  // 处理标签
   const tagsHtml = (post.tags && post.tags.length > 0)
     ? `<div class="card-tags">${post.tags.map(t => `<span class="tag"># ${escapeHtml(t)}</span>`).join('')}</div>`
     : '';
 
-  // 鍒ゆ柇鏄惁鏈夎鑹插崱鍥剧墖
+  // 判断是否有角色卡图片
   const charInfo = characterData[post.character];
   const hasCard = charInfo && charInfo.card_image;
   const clickableClass = hasCard ? 'clickable' : '';
   const onClickAvatar = hasCard ? `onclick="openCharCard('${escapeHtml(post.character)}')"` : '';
 
-  // 浣跨敤鍥哄畾瑙掕壊澶村儚鍥?  const avatarUrl = charInfo && charInfo.avatar ? charInfo.avatar : null;
+  // 使用固定角色头像图
+  const avatarUrl = charInfo && charInfo.avatar ? charInfo.avatar : null;
   const avatarInnerHtml = avatarUrl
     ? `<img class="avatar-sticker" src="${avatarUrl}" alt="${escapeHtml(post.character)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" /><span class="avatar-emoji-fallback" style="display:none">${post.avatar_symbol || '?'}</span>`
     : (post.avatar_symbol || '?');
@@ -191,7 +194,7 @@ function renderCard(post) {
     <div class="card-header">
       <div class="char-avatar ${clickableClass}" style="background:${post.avatar_color}22;color:${post.avatar_color}" ${onClickAvatar}>
         ${avatarInnerHtml}
-        ${hasCard ? '<span class="char-avatar-tip">鏌ョ湅瑙掕壊鍗?/span>' : ''}
+        ${hasCard ? '<span class="char-avatar-tip">查看角色卡</span>' : ''}
       </div>
       <div class="card-meta">
         <div class="card-meta-top">
@@ -199,8 +202,8 @@ function renderCard(post) {
           <span class="world-tag ${worldClass}">${escapeHtml(post.world)}</span>
         </div>
         <div class="card-location">
-          <span class="card-location-icon">馃搷</span>
-          <span>${escapeHtml(post.location || '')}${post.game_time ? ' 路 ' + escapeHtml(post.game_time) : ''}</span>
+          <span class="card-location-icon">📍</span>
+          <span>${escapeHtml(post.location || '')}${post.game_time ? ' · ' + escapeHtml(post.game_time) : ''}</span>
         </div>
       </div>
     </div>
@@ -212,16 +215,16 @@ function renderCard(post) {
     <div class="card-footer">
       <span class="card-time">${timeStr}</span>
       <div class="card-reactions">
-        <button class="reaction-btn${userReacted.heart ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','heart',this)" title="蹇冨姩">
-          <span class="reaction-icon">${userReacted.heart ? '鉂わ笍' : '馃'}</span>
+        <button class="reaction-btn${userReacted.heart ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','heart',this)" title="心动">
+          <span class="reaction-icon">${userReacted.heart ? '❤️' : '🤍'}</span>
           <span class="reaction-count" id="react_heart_${post.id}">${(reactions.heart || 0) + (userReacted.heart ? 1 : 0)}</span>
         </button>
-        <button class="reaction-btn${userReacted.paw ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','paw',this)" title="鐖嵃">
-          <span class="reaction-icon">${userReacted.paw ? '馃惥' : '馃惥'}</span>
+        <button class="reaction-btn${userReacted.paw ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','paw',this)" title="爪印">
+          <span class="reaction-icon">${userReacted.paw ? '🐾' : '🐾'}</span>
           <span class="reaction-count" id="react_paw_${post.id}">${(reactions.paw || 0) + (userReacted.paw ? 1 : 0)}</span>
         </button>
-        <button class="reaction-btn${userReacted.star ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','star',this)" title="鏀惰棌">
-          <span class="reaction-icon">${userReacted.star ? '猸? : '鈽?}</span>
+        <button class="reaction-btn${userReacted.star ? ' reacted' : ''}" onclick="toggleReaction('${post.id}','star',this)" title="收藏">
+          <span class="reaction-icon">${userReacted.star ? '⭐' : '☆'}</span>
           <span class="reaction-count" id="react_star_${post.id}">${(reactions.star || 0) + (userReacted.star ? 1 : 0)}</span>
         </button>
       </div>
@@ -231,7 +234,7 @@ function renderCard(post) {
   return card;
 }
 
-// ===== 娓叉煋鍔ㄦ€佸垪琛?=====
+// ===== 渲染动态列表 =====
 function renderFeed(reset = false) {
   const container = document.getElementById('feedContainer');
   const loadMoreWrap = document.getElementById('loadMoreWrap');
@@ -252,7 +255,7 @@ function renderFeed(reset = false) {
 
   emptyState.style.display = 'none';
 
-  // 鍙拷鍔犳柊澧炵殑閮ㄥ垎
+  // 只追加新增的部分
   const existingCount = container.children.length;
   const toRender = slice.slice(existingCount);
   toRender.forEach((post, i) => {
@@ -261,32 +264,32 @@ function renderFeed(reset = false) {
     container.appendChild(card);
   });
 
-  // 鎺у埗鍔犺浇鏇村鎸夐挳
+  // 控制加载更多按钮
   if (displayCount >= filteredPosts.length) {
     loadMoreWrap.style.display = filteredPosts.length > 0 ? 'block' : 'none';
     const btn = document.getElementById('loadMoreBtn');
     if (btn) {
       btn.disabled = true;
-      btn.textContent = '宸叉樉绀哄叏閮ㄥ姩鎬?;
+      btn.textContent = '已显示全部动态';
     }
   } else {
     loadMoreWrap.style.display = 'block';
     const btn = document.getElementById('loadMoreBtn');
     if (btn) {
       btn.disabled = false;
-      btn.textContent = `鍔犺浇鏇村 鈫擄紙杩樻湁 ${filteredPosts.length - displayCount} 鏉★級`;
+      btn.textContent = `加载更多 ↓（还有 ${filteredPosts.length - displayCount} 条）`;
     }
   }
 }
 
-// ===== 杩囨护閫昏緫 =====
+// ===== 过滤逻辑 =====
 function applyFilters() {
   filteredPosts = allPosts.filter(p => {
     const worldOk = currentWorldFilter === 'all' || p.world === currentWorldFilter;
     const charOk = currentCharFilter === 'all' || p.character === currentCharFilter;
     return worldOk && charOk;
   });
-  // 鎸夋椂闂存帓搴忥紙鏈€鏂板湪鍓嶏級
+  // 按时间排序（最新在前）
   filteredPosts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
   renderFeed(true);
 }
@@ -295,7 +298,8 @@ function filterByWorld(world, btn) {
   currentWorldFilter = world;
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  // 鍚屾涓栫晫鍗＄偣鍑绘€?  document.querySelectorAll('.world-card').forEach(c => c.classList.remove('active'));
+  // 同步世界卡点击态
+  document.querySelectorAll('.world-card').forEach(c => c.classList.remove('active'));
   applyFilters();
 }
 
@@ -306,14 +310,15 @@ function filterByChar(char, btn) {
   applyFilters();
 }
 
-// ===== 鍙嶅簲鍔熻兘 =====
+// ===== 反应功能 =====
 function toggleReaction(postId, type, btn) {
   if (!reactionState[postId]) reactionState[postId] = {};
   const wasReacted = !!reactionState[postId][type];
   reactionState[postId][type] = !wasReacted;
   localStorage.setItem(reactionKey, JSON.stringify(reactionState));
 
-  // 鏇存柊鎸夐挳鐘舵€?  const countEl = document.getElementById(`react_${type}_${postId}`);
+  // 更新按钮状态
+  const countEl = document.getElementById(`react_${type}_${postId}`);
   const post = allPosts.find(p => p.id === postId);
   if (!post) return;
   const base = (post.reactions && post.reactions[type]) || 0;
@@ -322,22 +327,22 @@ function toggleReaction(postId, type, btn) {
 
   btn.classList.toggle('reacted', reactionState[postId][type]);
 
-  // 鏇存柊 emoji
-  const icons = { heart: ['馃', '鉂わ笍'], paw: ['馃惥', '馃惥'], star: ['鈽?, '猸?] };
+  // 更新 emoji
+  const icons = { heart: ['🤍', '❤️'], paw: ['🐾', '🐾'], star: ['☆', '⭐'] };
   const iconEl = btn.querySelector('.reaction-icon');
   if (iconEl && icons[type]) {
     iconEl.textContent = reactionState[postId][type] ? icons[type][1] : icons[type][0];
   }
 }
 
-// ===== 瑙掕壊鍗″脊绐?=====
+// ===== 角色卡弹窗 =====
 function openCharCard(charName) {
   const charInfo = characterData[charName];
   if (!charInfo || !charInfo.card_image) return;
   const modal = document.getElementById('charCardModal');
   const img = document.getElementById('charCardImg');
   img.src = charInfo.card_image;
-  img.alt = charName + ' 瑙掕壊鍗?;
+  img.alt = charName + ' 角色卡';
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -350,7 +355,7 @@ function closeCharCard() {
   }
 }
 
-// ===== 鐏 =====
+// ===== 灯箱 =====
 function openLightbox(url) {
   const lb = document.getElementById('lightbox');
   const img = document.getElementById('lightboxImg');
@@ -372,9 +377,10 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ===== 鍒濆鍖?=====
+// ===== 初始化 =====
 async function init() {
-  // 鏄剧ず楠ㄦ灦灞?  const container = document.getElementById('feedContainer');
+  // 显示骨架屏
+  const container = document.getElementById('feedContainer');
   for (let i = 0; i < 3; i++) {
     const sk = document.createElement('div');
     sk.className = 'skeleton';
@@ -382,7 +388,7 @@ async function init() {
   }
 
   try {
-    // 骞惰鍔犺浇鏁版嵁
+    // 并行加载数据
     const [postsRes, charsRes] = await Promise.all([
       fetch(`data/posts.json?t=${Date.now()}`),
       fetch(`data/characters.json?t=${Date.now()}`)
@@ -390,19 +396,22 @@ async function init() {
     if (postsRes.ok) allPosts = await postsRes.json();
     if (charsRes.ok) characterData = await charsRes.json();
   } catch (e) {
-    console.warn('鍔犺浇鏁版嵁澶辫触:', e);
+    console.warn('加载数据失败:', e);
     allPosts = [];
   }
 
-  // 娓呴櫎楠ㄦ灦灞?  container.innerHTML = '';
+  // 清除骨架屏
+  container.innerHTML = '';
 
-  // 鏋勫缓瑙掕壊绛涢€?  buildCharFilter(allPosts);
+  // 构建角色筛选
+  buildCharFilter(allPosts);
 
-  // 涓栫晫鍗＄偣鍑?  document.querySelectorAll('.world-card').forEach(card => {
+  // 世界卡点击
+  document.querySelectorAll('.world-card').forEach(card => {
     card.addEventListener('click', () => {
       const w = card.dataset.world;
       currentWorldFilter = currentWorldFilter === w ? 'all' : w;
-      // 鍚屾椤堕儴瀵艰埅鎸夐挳
+      // 同步顶部导航按钮
       document.querySelectorAll('.nav-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.filter === currentWorldFilter);
       });
@@ -410,25 +419,26 @@ async function init() {
     });
   });
 
-  // 椤堕儴瀵艰埅绛涢€?  document.querySelectorAll('.nav-btn').forEach(btn => {
+  // 顶部导航筛选
+  document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.addEventListener('click', () => filterByWorld(btn.dataset.filter, btn));
   });
 
-  // 鍔犺浇鏇村
+  // 加载更多
   document.getElementById('loadMoreBtn').addEventListener('click', () => {
     displayCount += PAGE_SIZE;
     renderFeed(false);
   });
 
-  // 涓婚鍒囨崲鎸夐挳
+  // 主题切换按钮
   const themeBtn = document.getElementById('themeToggle');
   if (themeBtn) {
     themeBtn.addEventListener('click', toggleTheme);
   }
 
-  // 鍒濆娓叉煋
+  // 初始渲染
   applyFilters();
 }
 
-// 鍚姩
+// 启动
 document.addEventListener('DOMContentLoaded', init);

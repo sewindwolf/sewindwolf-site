@@ -2,5 +2,4 @@
 compatibility_date = "2026-04-16"
 
 [assets]
-directory = "./"
-exclude = [".git", "node_modules", "package.json", "package-lock.json", "wrangler.toml", ".gitignore", "STICKER_GUIDE.md"]
+directory = "./public"
