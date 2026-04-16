@@ -35,7 +35,8 @@
       "surprised": "images/stickers-thumb/fengya/surprised.webp",
       "thinking": "images/stickers-thumb/fengya/thinking.webp",
       "sleepy": "images/stickers-thumb/fengya/sleepy.webp"
-    }
+    },
+    "avatar": "images/avatars/fengya.png"
   },
   "提理安": {
     "character_en": "Tilion",
@@ -73,7 +74,8 @@
       "surprised": "images/stickers-thumb/tilion/surprised.webp",
       "thinking": "images/stickers-thumb/tilion/thinking.webp",
       "sleepy": "images/stickers-thumb/tilion/sleepy.webp"
-    }
+    },
+    "avatar": "images/avatars/tilion.png"
   },
   "狐兰兹": {
     "character_en": "Foxlanz",
@@ -111,7 +113,8 @@
       "surprised": "images/stickers-thumb/foxlanz/surprised.webp",
       "thinking": "images/stickers-thumb/foxlanz/thinking.webp",
       "sleepy": "images/stickers-thumb/foxlanz/sleepy.webp"
-    }
+    },
+    "avatar": "images/avatars/foxlanz.png"
   },
   "羽烽": {
     "character_en": "Yu Feng",
@@ -149,7 +152,8 @@
       "surprised": "images/stickers-thumb/yufeng/surprised.webp",
       "thinking": "images/stickers-thumb/yufeng/thinking.webp",
       "sleepy": "images/stickers-thumb/yufeng/sleepy.webp"
-    }
+    },
+    "avatar": "images/avatars/yufeng.png"
   },
   "旻": {
     "character_en": "Aki",
@@ -187,6 +191,7 @@
       "surprised": "images/stickers-thumb/aki/surprised.webp",
       "thinking": "images/stickers-thumb/aki/thinking.webp",
       "sleepy": "images/stickers-thumb/aki/sleepy.webp"
-    }
+    },
+    "avatar": "images/avatars/aki.png"
   }
 }

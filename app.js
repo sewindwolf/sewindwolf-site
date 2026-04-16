@@ -140,9 +140,9 @@ function buildCharFilter(posts) {
     btn.className = 'char-btn';
     btn.dataset.char = name;
     const charInfo = characterData[name];
-    const miniStickerUrl = charInfo && charInfo.stickers ? (charInfo.stickers['calm'] || charInfo.stickers['happy']) : null;
-    const miniAvatarHtml = miniStickerUrl
-      ? `<img class="char-filter-sticker" src="${miniStickerUrl}" alt="${escapeHtml(name)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="char-avatar-mini" style="display:none;background:${info.color}22;color:${info.color}">${info.symbol}</span>`
+    const miniAvatarUrl = charInfo && charInfo.avatar ? charInfo.avatar : null;
+    const miniAvatarHtml = miniAvatarUrl
+      ? `<img class="char-filter-avatar" src="${miniAvatarUrl}" alt="${escapeHtml(name)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="char-avatar-mini" style="display:none;background:${info.color}22;color:${info.color}">${info.symbol}</span>`
       : `<span class="char-avatar-mini" style="background:${info.color}22;color:${info.color}">${info.symbol}</span>`;
     btn.innerHTML = `${miniAvatarHtml} ${escapeHtml(name)}`;
     btn.addEventListener('click', () => filterByChar(name, btn));
@@ -175,11 +175,10 @@ function renderCard(post) {
   const clickableClass = hasCard ? 'clickable' : '';
   const onClickAvatar = hasCard ? `onclick="openCharCard('${escapeHtml(post.character)}')"` : '';
 
-  // 获取表情图头像（根据 mood 字段）
-  const mood = post.mood || 'calm';
-  const stickerUrl = getStickerUrl(post.character, mood);
-  const avatarInnerHtml = stickerUrl
-    ? `<img class="avatar-sticker" src="${stickerUrl}" alt="${escapeHtml(post.character)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" /><span class="avatar-emoji-fallback" style="display:none">${post.avatar_symbol || '?'}</span>`
+  // 使用固定角色头像图
+  const avatarUrl = charInfo && charInfo.avatar ? charInfo.avatar : null;
+  const avatarInnerHtml = avatarUrl
+    ? `<img class="avatar-sticker" src="${avatarUrl}" alt="${escapeHtml(post.character)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" /><span class="avatar-emoji-fallback" style="display:none">${post.avatar_symbol || '?'}</span>`
     : (post.avatar_symbol || '?');
 
   const card = document.createElement('article');
