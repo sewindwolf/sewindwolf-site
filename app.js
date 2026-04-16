@@ -73,12 +73,17 @@ function escapeHtml(str) {
 function getStickerUrl(charName, mood) {
   const charInfo = characterData[charName];
   if (!charInfo || !charInfo.stickers) return null;
+  // Prefer thumb (small webp), fallback to original png
+  if (charInfo.stickers_thumb) {
+    return charInfo.stickers_thumb[mood] || charInfo.stickers_thumb['calm'] || charInfo.stickers[mood] || charInfo.stickers['calm'] || null;
+  }
   return charInfo.stickers[mood] || charInfo.stickers['calm'] || null;
 }
 
 function getInlineStickerUrl(charName, mood) {
   const charInfo = characterData[charName];
   if (!charInfo) return null;
+  // Prefer inline (medium webp), fallback to original png
   if (charInfo.stickers_inline) {
     return charInfo.stickers_inline[mood] || charInfo.stickers_inline['calm'] || null;
   }
