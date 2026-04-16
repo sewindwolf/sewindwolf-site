@@ -235,6 +235,7 @@ function renderCard(post) {
       ${imageHtml}
       ${tagsHtml}
     </div>
+    ${commentsHtml}
     <div class="card-footer">
       <span class="card-time">${timeStr}</span>
       <div class="card-reactions">
