@@ -36,7 +36,12 @@
       "thinking": "images/stickers-thumb/fengya/thinking.webp",
       "sleepy": "images/stickers-thumb/fengya/sleepy.webp"
     },
-    "avatar": "images/avatars/fengya.png"
+    "avatar": "images/avatars/fengya.png",
+    "friends": [
+      "提理安",
+      "狐兰兹",
+      "羽烽"
+    ]
   },
   "提理安": {
     "character_en": "Tilion",
@@ -75,7 +80,13 @@
       "thinking": "images/stickers-thumb/tilion/thinking.webp",
       "sleepy": "images/stickers-thumb/tilion/sleepy.webp"
     },
-    "avatar": "images/avatars/tilion.png"
+    "avatar": "images/avatars/tilion.png",
+    "friends": [
+      "风亚",
+      "狐兰兹",
+      "旻",
+      "羽烽"
+    ]
   },
   "狐兰兹": {
     "character_en": "Foxlanz",
@@ -114,7 +125,12 @@
       "thinking": "images/stickers-thumb/foxlanz/thinking.webp",
       "sleepy": "images/stickers-thumb/foxlanz/sleepy.webp"
     },
-    "avatar": "images/avatars/foxlanz.png"
+    "avatar": "images/avatars/foxlanz.png",
+    "friends": [
+      "风亚",
+      "提理安",
+      "旻"
+    ]
   },
   "羽烽": {
     "character_en": "Yu Feng",
@@ -153,7 +169,10 @@
       "thinking": "images/stickers-thumb/yufeng/thinking.webp",
       "sleepy": "images/stickers-thumb/yufeng/sleepy.webp"
     },
-    "avatar": "images/avatars/yufeng.png"
+    "avatar": "images/avatars/yufeng.png",
+    "friends": [
+      "风亚"
+    ]
   },
   "旻": {
     "character_en": "Aki",
@@ -192,6 +211,10 @@
       "thinking": "images/stickers-thumb/aki/thinking.webp",
       "sleepy": "images/stickers-thumb/aki/sleepy.webp"
     },
-    "avatar": "images/avatars/aki.png"
+    "avatar": "images/avatars/aki.png",
+    "friends": [
+      "提理安",
+      "狐兰兹"
+    ]
   }
 }

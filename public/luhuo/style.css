@@ -857,3 +857,129 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
 .char-avatar.clickable:hover .char-avatar-tip {
   opacity: 1;
 }
+
+
+/* ===== 评论区 & 回复栏 ===== */
+.card-comments {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comment-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+}
+
+.comment-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment-avatar-emoji {
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.comment-body {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.comment-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.comment-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  word-break: break-word;
+}
+
+.comment-text .inline-sticker {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+/* 回复栏 */
+.reply-bar {
+  margin-top: 8px;
+}
+
+.reply-input-fake {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  cursor: not-allowed;
+  transition: all 0.2s;
+}
+
+.reply-input-fake:hover {
+  border-color: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+}
+
+.reply-lock-icon {
+  font-size: 12px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.reply-placeholder {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+/* 亮色模式 */
+[data-theme="light"] .reply-input-fake {
+  background: rgba(0,0,0,0.02);
+}
+
+[data-theme="light"] .reply-input-fake:hover {
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.12);
+}
+
+[data-theme="light"] .comment-avatar {
+  background: rgba(0,0,0,0.04);
+}
