@@ -1,4 +1,4 @@
-/* ===== 基础重置 ===== */
+﻿/* ===== 基础重置 ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -259,7 +259,8 @@ body {
 }
 
 .char-btn .char-avatar-mini {
-  width: 40px; height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -327,12 +328,13 @@ body {
 }
 
 .char-avatar {
-  width: 88px; height: 88px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: 20px;
   flex-shrink: 0;
   border: 2px solid rgba(255,255,255,0.08);
   position: relative;
@@ -356,7 +358,8 @@ body {
 
 .inline-sticker {
   display: inline-block;
-  width: 96px; height: 96px;
+  width: 48px;
+  height: 48px;
   vertical-align: middle;
   margin: 2px 4px;
   border-radius: 8px;
@@ -369,7 +372,8 @@ body {
 }
 
 .char-filter-sticker {
-  width: 44px; height: 44px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -666,7 +670,7 @@ body {
   .main-content { padding: 0 14px 48px; }
   .character-filter-wrap { padding: 0 14px 16px; }
   .post-card { padding: 16px 18px; }
-  .char-avatar { width: 76px; height: 76px; font-size: 30px; }
+  .char-avatar { width: 38px; height: 38px; font-size: 17px; }
   .char-name { font-size: 15px; }
   .card-content { font-size: 14px; }
   .nav-btn { padding: 4px 10px; font-size: 12px; }
@@ -825,7 +829,7 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
   background: rgba(255,255,255,0.12);
   border: 1px solid var(--border-light);
   color: var(--text-primary);
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1;
   cursor: pointer;
   display: flex;
@@ -857,3 +861,4 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
 .char-avatar.clickable:hover .char-avatar-tip {
   opacity: 1;
 }
+
