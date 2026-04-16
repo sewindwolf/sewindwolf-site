@@ -69,6 +69,40 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+// ===== 表情图工具函数 =====
+function getStickerUrl(charName, mood) {
+  const charInfo = characterData[charName];
+  if (!charInfo || !charInfo.stickers) return null;
+  return charInfo.stickers[mood] || charInfo.stickers['calm'] || null;
+}
+
+const moodLabels = {
+  happy: '开心', calm: '平静', sad: '难过', angry: '生气',
+  shy: '害羞', surprised: '惊讶', thinking: '沉思', sleepy: '困倦'
+};
+
+function renderContentWithStickers(text) {
+  let html = escapeHtml(text);
+  html = html.replace(/:([^:_]+)_([a-z]+):/g, (match, charRef, mood) => {
+    let charName = charRef;
+    if (!characterData[charName]) {
+      for (const [cn, info] of Object.entries(characterData)) {
+        if (info.character_en && info.character_en.toLowerCase().replace(/\s/g,'') === charRef.toLowerCase().replace(/\s/g,'')) {
+          charName = cn;
+          break;
+        }
+      }
+    }
+    const url = getStickerUrl(charName, mood);
+    if (url) {
+      const label = moodLabels[mood] || mood;
+      return `<img class="inline-sticker" src="${url}" alt="${charName}${label}" title="${charName} · ${label}" />`;
+    }
+    return match;
+  });
+  return html;
+}
+
 // ===== 渲染角色筛选按钮 =====
 function buildCharFilter(posts) {
   const chars = {};
@@ -88,10 +122,12 @@ function buildCharFilter(posts) {
     const btn = document.createElement('button');
     btn.className = 'char-btn';
     btn.dataset.char = name;
-    btn.innerHTML = `
-      <span class="char-avatar-mini" style="background:${info.color}22;color:${info.color}">${info.symbol}</span>
-      ${escapeHtml(name)}
-    `;
+    const charInfo = characterData[name];
+    const miniStickerUrl = charInfo && charInfo.stickers ? (charInfo.stickers['calm'] || charInfo.stickers['happy']) : null;
+    const miniAvatarHtml = miniStickerUrl
+      ? `<img class="char-filter-sticker" src="${miniStickerUrl}" alt="${escapeHtml(name)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="char-avatar-mini" style="display:none;background:${info.color}22;color:${info.color}">${info.symbol}</span>`
+      : `<span class="char-avatar-mini" style="background:${info.color}22;color:${info.color}">${info.symbol}</span>`;
+    btn.innerHTML = `${miniAvatarHtml} ${escapeHtml(name)}`;
     btn.addEventListener('click', () => filterByChar(name, btn));
     container.appendChild(btn);
   });
@@ -122,6 +158,13 @@ function renderCard(post) {
   const clickableClass = hasCard ? 'clickable' : '';
   const onClickAvatar = hasCard ? `onclick="openCharCard('${escapeHtml(post.character)}')"` : '';
 
+  // 获取表情图头像（根据 mood 字段）
+  const mood = post.mood || 'calm';
+  const stickerUrl = getStickerUrl(post.character, mood);
+  const avatarInnerHtml = stickerUrl
+    ? `<img class="avatar-sticker" src="${stickerUrl}" alt="${escapeHtml(post.character)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" /><span class="avatar-emoji-fallback" style="display:none">${post.avatar_symbol || '?'}</span>`
+    : (post.avatar_symbol || '?');
+
   const card = document.createElement('article');
   card.className = 'post-card';
   card.dataset.id = post.id;
@@ -131,7 +174,7 @@ function renderCard(post) {
   card.innerHTML = `
     <div class="card-header">
       <div class="char-avatar ${clickableClass}" style="background:${post.avatar_color}22;color:${post.avatar_color}" ${onClickAvatar}>
-        ${post.avatar_symbol || '?'}
+        ${avatarInnerHtml}
         ${hasCard ? '<span class="char-avatar-tip">查看角色卡</span>' : ''}
       </div>
       <div class="card-meta">
@@ -146,7 +189,7 @@ function renderCard(post) {
       </div>
     </div>
     <div class="card-body">
-      <p class="card-content">${escapeHtml(post.content)}</p>
+      <p class="card-content">${renderContentWithStickers(post.content)}</p>
       ${imageHtml}
       ${tagsHtml}
     </div>
