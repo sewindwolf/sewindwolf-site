@@ -153,6 +153,27 @@ function buildCharFilter(posts) {
   });
 }
 
+
+// ===== 评论区 & 回复栏 =====
+function renderComments(post) {
+  const comments = post.comments || [];
+  let commentsListHtml = "";
+  comments.forEach(c => {
+    const ci = characterData[c.from];
+    const avUrl = ci && ci.avatar ? ci.avatar : null;
+    const sym = ci ? ci.avatar_symbol : "?";
+    let avHtml;
+    if (avUrl) {
+      avHtml = '<img class="comment-avatar-img" src="' + avUrl + '" alt="' + escapeHtml(c.from) + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'" />' + '<span class="comment-avatar-emoji" style="display:none">' + sym + '</span>';
+    } else {
+      avHtml = '<span class="comment-avatar-emoji">' + sym + '</span>';
+    }
+    commentsListHtml += '<div class="comment-item">' + '<div class="comment-avatar">' + avHtml + '</div>' + '<div class="comment-body">' + '<span class="comment-name">' + escapeHtml(c.from) + '</span>' + '<span class="comment-text">' + renderContentWithStickers(c.text) + '</span>' + '</div>' + '</div>';
+  });
+
+  return '<div class="card-comments">' + (commentsListHtml ? '<div class="comments-list">' + commentsListHtml + '</div>' : "") + '<div class="reply-bar"><div class="reply-input-fake"><span class="reply-lock-icon">🔒</span><span class="reply-placeholder">你不是该用户的好友，无法发言</span></div></div></div>';
+}
+
 // ===== 渲染单张卡片 =====
 function renderCard(post) {
   const worldClass = getWorldClass(post.world);
@@ -189,6 +210,8 @@ function renderCard(post) {
   card.dataset.id = post.id;
   card.dataset.world = post.world;
   card.dataset.char = post.character;
+
+  const commentsHtml = renderComments(post);
 
   card.innerHTML = `
     <div class="card-header">
