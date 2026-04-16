@@ -76,6 +76,18 @@ function getStickerUrl(charName, mood) {
   return charInfo.stickers[mood] || charInfo.stickers['calm'] || null;
 }
 
+function getInlineStickerUrl(charName, mood) {
+  const charInfo = characterData[charName];
+  if (!charInfo) return null;
+  if (charInfo.stickers_inline) {
+    return charInfo.stickers_inline[mood] || charInfo.stickers_inline['calm'] || null;
+  }
+  if (charInfo.stickers) {
+    return charInfo.stickers[mood] || charInfo.stickers['calm'] || null;
+  }
+  return null;
+}
+
 const moodLabels = {
   happy: '开心', calm: '平静', sad: '难过', angry: '生气',
   shy: '害羞', surprised: '惊讶', thinking: '沉思', sleepy: '困倦'
@@ -93,7 +105,7 @@ function renderContentWithStickers(text) {
         }
       }
     }
-    const url = getStickerUrl(charName, mood);
+    const url = getInlineStickerUrl(charName, mood);
     if (url) {
       const label = moodLabels[mood] || mood;
       return `<img class="inline-sticker" src="${url}" alt="${charName}${label}" title="${charName} · ${label}" />`;
