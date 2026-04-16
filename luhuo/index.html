@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>炉火镇 · 世界刻度</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?h=0a4c9f02" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="text-decoration:none;color:inherit">
+        <span class="logo-icon">⬡</span>
+        <div class="logo-text">
+          <span class="logo-title">SEWINDWOLF</span>
+          <span class="logo-sub">世界刻度 · 炉火镇</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <a href="/" class="nav-btn" style="text-decoration:none">← 返回首页</a>
+        <button class="nav-btn active" data-filter="all">全部</button>
+        <button class="nav-btn" data-filter="炉火镇">炉火镇</button>
+        <button class="theme-toggle" id="themeToggle" title="切换明暗模式">
+          <span class="theme-icon" id="themeIcon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 英雄区域 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🔥 炉火镇</div>
+      <h1 class="hero-title">角色们的今天</h1>
+      <p class="hero-desc">他们在别处生活着，偶尔寄来只言片语。</p>
+    </div>
+  </section>
+
+  <!-- 角色筛选栏 -->
+  <div class="character-filter-wrap">
+    <div class="character-filter" id="characterFilter">
+      <button class="char-btn active" data-char="all">
+        <span class="char-icon">✦</span>全部
+      </button>
+    </div>
+  </div>
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <div class="feed-container" id="feedContainer"></div>
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="load-more-btn" id="loadMoreBtn">加载更多 ↓</button>
+    </div>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <span class="empty-icon">🌙</span>
+      <p>这个时间，大家都在休息。</p>
+    </div>
+  </main>
+
+  <!-- 图片灯箱 -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="" />
+      <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    </div>
+  </div>
+
+  <!-- 角色卡弹窗 -->
+  <div class="char-card-modal" id="charCardModal">
+    <div class="char-card-backdrop" onclick="closeCharCard()"></div>
+    <div class="char-card-panel">
+      <button class="char-card-close" onclick="closeCharCard()">×</button>
+      <img id="charCardImg" src="" alt="" />
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">⬡ SEWINDWOLF</span>
+      <span class="footer-sep">·</span>
+      <span>角色们的世界，一直在运转</span>
+    </div>
+  </footer>
+
+  <script src="app.js?h=e5c9cc8f"></script>
+</body>
+</html>
