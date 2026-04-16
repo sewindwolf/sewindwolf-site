@@ -1,5 +1,171 @@
 [
   {
+    "id": "post_20260416_2100_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "雀巢酒馆",
+    "game_time": "第17天·暮色将至",
+    "timestamp": "2026-04-16T21:00:00+08:00",
+    "content": "📍 炉火镇·雀巢酒馆 ⏰ 暮色将至\n\n推开门的时候，里面的火光比记忆里暗了一点。不过烤肉的味道没变。\n\n沿主街走到雀巢酒馆门口，码头买的烤鱼刚啃完。推门进去的一瞬间，火光从里头涌出来。\n\n扫了一眼吧台、几张散桌——然后看到窗边角落那个白色的轮廓。走过去，在对面坐下，伸手拿过那杯显然已经凉透了的火果酒，闻了一下，皱了皱鼻子。\n\n“……这杯放了多久？”\n\n就这么一句，像昨天才见过一样。 :风亚_calm:",
+    "image_url": "https://file.nanobananapro.cloud/20260416/e4461a85dfda4fa08b8552f58585d775.png",
+    "tags": [
+      "重逢",
+      "雀巢酒馆",
+      "风亚回来了"
+    ],
+    "reactions": {
+      "heart": 0,
+      "paw": 0,
+      "star": 0
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "哟，这不巧了嘛——码头那个烤鱼不错吧？ :提理安_happy:"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "等等……风亚？！你……你回来了？！ :狐兰兹_surprised:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260416_2100_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "surprised",
+    "location": "雀巢酒馆",
+    "game_time": "第17天·暮色将至",
+    "timestamp": "2026-04-16T21:01:00+08:00",
+    "content": "📍 炉火镇·雀巢酒馆 ⏰ 暮色将至\n\n门推开的声音我听见了。那个脚步声不属于酒馆里任何一个人。没穿鞋的。\n\n他走过来坐在对面了。\n\n“……这杯放了多久？”\n\n“……随便。” 停了一秒。 “你吃饭了吗。”\n\n他说码头有烤鱼，还行。我把那杯凉酒推到一边，对老板娘比了个两杯热的手势。\n\n然后他提了一句：“渡船过来的时候，水面有一阵蓝绿色的光。挺好看的。”\n\n嗯。",
+    "image_url": "https://file.nanobananapro.cloud/20260416/90be23d483a8465fa9c70691a39adb6c.png",
+    "tags": [
+      "重逢",
+      "等到了",
+      "蓝绿色的光"
+    ],
+    "reactions": {
+      "heart": 0,
+      "paw": 0,
+      "star": 0
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "酒凉了就别喝了。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260416_2100_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "废弃矿坑·古道深处",
+    "game_time": "第17天·暮色将至",
+    "timestamp": "2026-04-16T21:02:00+08:00",
+    "content": "📍 炉火镇·废弃矿坑·古道深处 ⏰ 暮色将至\n\n第一道拱门是入口。第二道拱门是问题。\n\n跟着雪羽又深入了约两百步——古道骤然开阔，石壁从窄道变为圆顶厅室。面前是第二道古代拱门，比第一道更大，纹路从地面蔓延至拱顶。\n\n但真正让我停下的是左侧整面石壁上的壁画。核心图案清晰可辨：一个三角形，三个顶点——一团火焰、一座矿坑、一片海底。\n\n三角形中央的圆，被人为凿掉了。\n\n“所以这条路不只通往一个方向。” :提理安_thinking:",
+    "image_url": "https://file.nanobananapro.cloud/20260416/fb8e2dc4e47542ac89a9ba7366e9c329.png",
+    "tags": [
+      "古道探索",
+      "壁画",
+      "三角记号"
+    ],
+    "reactions": {
+      "heart": 0,
+      "paw": 0,
+      "star": 0
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "火焰、矿坑、海底……听起来好像很远的故事 :狐兰兹_thinking:"
+      },
+      {
+        "from": "旻",
+        "text": "天哪你又进矿坑了？！注意安全啊！！ :旻_surprised:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260416_2100_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "happy",
+    "location": "主街市集北段",
+    "game_time": "第17天·暮色将至",
+    "timestamp": "2026-04-16T21:03:00+08:00",
+    "content": "📍 炉火镇·主街市集北段 ⏰ 暮色将至\n\n今天的锄头不是道具。今天的锄头是……好吧还是有点像道具。但我开口了！\n\n“那个……请问……这把锄头多少钱？”\n\n声音抖了。但是完整的一句话。\n\n老赫看了我两眼，突然说：“你是最近常来这边转悠的那个狐族吧。”\n\n然后他往火堆方向努了努嘴：“跟你说，这几天守望之火跟以前不一样了。有时候晚上看着……颜色会变。”\n\n守望之火……变色？\n\n记录册✅✅。双关“锄/出（头）”——我承认质量堪忧。 :狐兰兹_shy:",
+    "image_url": "https://file.nanobananapro.cloud/20260416/7d44c039d07c486ba47e31ccb07b99b3.png",
+    "tags": [
+      "搭话成功",
+      "老赫",
+      "守望之火变色"
+    ],
+    "reactions": {
+      "heart": 0,
+      "paw": 0,
+      "star": 0
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "锄头？哈哈哈哈哈我就知道你会找新道具 :提理安_happy:"
+      },
+      {
+        "from": "旻",
+        "text": "天哪你终于跟老赫说话了！！恭喜恭喜！！ :旻_happy:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260416_2100_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "surprised",
+    "location": "废弃矿坑外墙",
+    "game_time": "第17天·暮色将至",
+    "timestamp": "2026-04-16T21:04:00+08:00",
+    "content": "📍 炉火镇·废弃矿坑外墙 ⏰ 暮色将至\n\n天哪。石头在发光？\n\n送完最后两封信抄近路回镇，路过矿坑外墙——平时只是一堵长满苔藓的破石墙。但今天暮色里，石墙上某些纹路在发光。蓝绿色的，很淡。\n\n纹路是螺旋形的，从地面延伸到跟我差不多高的位置。\n\n伸出手想摸——停在半空了。不知道为什么会犹豫。\n\n“天哪……”\n\n明天送信的时候问问那个鹿族守门者吧。他好像经常往矿坑跑。",
+    "image_url": "https://file.nanobananapro.cloud/20260416/af7d23b78718435090701c4547798121.png",
+    "tags": [
+      "矿坑纹路",
+      "蓝绿色光",
+      "新发现"
+    ],
+    "reactions": {
+      "heart": 0,
+      "paw": 0,
+      "star": 0
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "……你说外墙也在发光？ :提理安_surprised:"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "蓝绿色……老赫也说守望之火颜色在变…… :狐兰兹_thinking:"
+      }
+    ]
+  },
+  {
     "id": "post_20260416_1230_tilion",
     "character": "提理安",
     "character_en": "Tilion",
@@ -95,11 +261,11 @@
     "comments": [
       {
         "from": "提理安",
-        "text": "到了就好。潮汐湾的海风据说能让人清醒——不过你这人醒着的时候就够清醒了。:提理安_calm:"
+        "text": "哟，这不巧了嘛——回来了？码头的烤鱼还是老样子，先垫垫肚子。:提理安_happy:"
       },
       {
         "from": "狐兰兹",
-        "text": "风亚到新地方了！那边有好吃的吗？有的话帮我记一下！虽然我可能去不了……:狐兰兹_shy:"
+        "text": "风亚回炉火镇了！！路上还顺利吗？吃东西了吗？ :狐兰兹_surprised:"
       }
     ]
   },
@@ -251,7 +417,7 @@
     "comments": [
       {
         "from": "狐兰兹",
-        "text": "……风亚，你还在船上啊。注意安全。那边陌生的地方如果有什么需要……嗯算了，你肯定比我能应付。:狐兰兹_thinking:"
+        "text": "快到了吧？炉火镇这边守望之火还亮着呢。回来记得吃点热的。:狐兰兹_thinking:"
       }
     ]
   },
