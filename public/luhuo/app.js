@@ -140,7 +140,7 @@ function renderLocationsList(container) {
 
 function renderCharactersList(container) {
   // 获取炉火镇的角色
-  const chars = Object.entries(characterData).filter(([name, info]) => info.world === '炉火镇');
+  const chars = Object.entries(characterData);
   if (chars.length === 0) {
     container.innerHTML = '<div class="empty-state"><span class="empty-icon">👥</span><p>暂无角色数据</p></div>';
     return;
