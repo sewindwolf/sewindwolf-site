@@ -234,12 +234,36 @@ function showCharacterDetail(charName) {
     ? `<img class="overview-detail-avatar" src="${avatarUrl}" alt="${escapeHtml(charName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="overview-detail-icon" style="display:none">${ci.avatar_symbol}</div>`
     : `<div class="overview-detail-icon">${ci.avatar_symbol}</div>`;
 
-  // 角色简介：根据 characterData 信息组装
   const worldText = ci.world || '未知';
   const friendsText = ci.friends && ci.friends.length > 0 ? ci.friends.join('、') : '暂无';
   const locText = locInfo ? locInfo.location : '位置未知';
 
-  // 查找该角色去过的所有地点
+  // 人物小传
+  let bioHtml = '';
+  if (ci.bio) {
+    const bioParagraphs = ci.bio.split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('');
+    bioHtml = `<div class="overview-section-title">📖 人物小传</div><div class="overview-bio">${bioParagraphs}</div>`;
+  }
+
+  // 表情包画廊
+  let stickersHtml = '';
+  if (ci.stickers) {
+    const stickerMoods = Object.keys(ci.stickers);
+    if (stickerMoods.length > 0) {
+      stickersHtml = `<div class="overview-section-title" style="margin-top:20px">😊 表情包</div><div class="sticker-gallery">`;
+      for (const mood of stickerMoods) {
+        const stickerUrl = ci.stickers[mood];
+        const label = moodLabels[mood] || mood;
+        stickersHtml += `
+          <div class="sticker-gallery-item" onclick="openLightbox('${escapeHtml(stickerUrl)}')">
+            <img src="${escapeHtml(stickerUrl)}" alt="${escapeHtml(charName)} · ${label}" loading="lazy" />
+            <span class="sticker-gallery-label">${label}</span>
+          </div>`;
+      }
+      stickersHtml += '</div>';
+    }
+  }
+
   const visitedLocs = {};
   allPosts.forEach(p => {
     if (p.character === charName && p.location) {
@@ -255,14 +279,12 @@ function showCharacterDetail(charName) {
     }
   });
 
-  // 按最近时间排序
   const sortedLocs = Object.entries(visitedLocs).sort((a, b) => new Date(b[1].latest) - new Date(a[1].latest));
 
   let locsHtml = '';
   if (sortedLocs.length > 0) {
     locsHtml = `<div class="overview-section-title" style="margin-top:20px">📍 活动地点</div><div class="overview-loc-list">`;
     for (const [loc, info] of sortedLocs) {
-      // 尝试匹配 locationData 中的地点
       const locKey = loc.replace(/^.*[·]\s*/, '').trim();
       const worldData = locationData['炉火镇'];
       const locData = worldData && worldData.locations ? worldData.locations[locKey] : null;
@@ -278,7 +300,6 @@ function showCharacterDetail(charName) {
     locsHtml += '</div>';
   }
 
-  // 好友列表
   let friendsHtml = '';
   if (ci.friends && ci.friends.length > 0) {
     friendsHtml = `<div class="overview-section-title" style="margin-top:20px">💛 好友</div><div class="overview-char-list">`;
@@ -299,7 +320,6 @@ function showCharacterDetail(charName) {
     friendsHtml += '</div>';
   }
 
-  // 角色卡按钮
   const cardBtnHtml = ci.card_image
     ? `<div style="margin-top:16px"><button class="load-more-btn" onclick="closeOverview();setTimeout(()=>openCharCard('${escapeHtml(charName)}'),300)" style="font-size:12px;padding:8px 20px">🎴 查看角色卡</button></div>`
     : '';
@@ -320,6 +340,8 @@ function showCharacterDetail(charName) {
         <strong>好友：</strong>${escapeHtml(friendsText)}
       </div>
       ${cardBtnHtml}
+      ${bioHtml}
+      ${stickersHtml}
       ${locsHtml}
       ${friendsHtml}
     </div>`;

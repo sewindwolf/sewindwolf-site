@@ -1197,7 +1197,7 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
   color: var(--accent);
 }
 
-/* ===== 概况详情�?===== */
+/* ===== 概况详情�?===== */
 .overview-detail {
   animation: fadeInUp 0.25s ease;
 }
@@ -1378,4 +1378,96 @@ body, .site-header, .post-card, .world-card, .char-btn, .nav-btn,
   .overview-body { padding: 14px 18px 20px; }
   .overview-detail-title { font-size: 18px; }
   .overview-detail-icon, .overview-detail-avatar { width: 52px; height: 52px; }
+}
+
+/* ===== 人物小传 ===== */
+.overview-bio {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.95;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.overview-bio p {
+  margin-bottom: 12px;
+}
+
+.overview-bio p:last-child {
+  margin-bottom: 0;
+}
+
+[data-theme="light"] .overview-bio {
+  background: rgba(0,0,0,0.02);
+}
+
+/* ===== 表情包画廊 ===== */
+.sticker-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.sticker-gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 6px 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sticker-gallery-item:hover {
+  border-color: var(--border-light);
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .sticker-gallery-item {
+  background: rgba(0,0,0,0.02);
+}
+
+[data-theme="light"] .sticker-gallery-item:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.sticker-gallery-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.sticker-gallery-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 600px) {
+  .sticker-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+  .sticker-gallery-item {
+    padding: 8px 4px 6px;
+  }
+  .sticker-gallery-item img {
+    width: 52px;
+    height: 52px;
+  }
+  .sticker-gallery-label {
+    font-size: 10px;
+  }
 }
