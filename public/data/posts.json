@@ -1,5 +1,173 @@
 [
   {
+    "id": "post_20260417_210001_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "草药师老鸢铺子",
+    "game_time": "第20天·暮色将至",
+    "timestamp": "2026-04-17T21:00:00+08:00",
+    "content": "老鸢今天没让我坐，从头到尾站着听。\n\n她从柜子最底层抽出一卷手抄卷——不是上次那本，更旧，纸边都碎了。上面画着和矿坑壁画一模一样的三角形，但这份是完整的：中央那个圆没被凿掉。\n\n圆里写着两个字：先潮。\n\n“守望之火不是镇上人点的。”老鸢终于把这句话说完整了，“火的根在山下第四支道。你已经走到那了。”\n\n三条能量脉络从圆心分出，通往三个顶点：火焰、矿坑、海底。\n\n“问题是，它们在衰退。先潮者留下的能量不是永恒的。上一次变色，是百二十年前的事。这一次……间隔太短了。”\n\n……今晚得跟风亚他们说清楚了。",
+    "image_url": "https://file.nanobananapro.cloud/20260417/3071cd805cf546d58ae75b7360a1ca91.png",
+    "tags": [
+      "主线",
+      "先潮者",
+      "老鸢",
+      "守望之火",
+      "能量衰退"
+    ],
+    "reactions": {
+      "heart": 65,
+      "paw": 44,
+      "star": 29
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "今晚说。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "先潮……这两个字我记得在哪里见过，让我想想 :狐兰兹_thinking:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260417_210002_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "废弃矿坑·古道深处",
+    "game_time": "第20天·暮色将至",
+    "timestamp": "2026-04-17T21:00:00+08:00",
+    "content": "今天跟那家伙一起下来的。\n\n壁画比提理安描述的还大——整面墙，三角形顶天立地。三个顶点分别亮着：火焰橙红，矿坑蓝绿，最下面那个……深靖蓝色，比其他两个都暗，但存在感最强。\n\n“海底。”\n\n不是猜的。渡船上看到的蓝绿色光从水面下透上来，昨晚守望之火变色那三十秒颜色一模一样。壁画告诉我——水下面还有一个节点。 :风亚_thinking:\n\n手放进口袋碰到那封信的边角。十年前从海底邮局退回来的信。那时候当荧光生物看的那些蓝绿色光，可能不只是。\n\n三个点。火在镇上，矿坑在脚下。海底——是第三个。",
+    "image_url": "https://file.nanobananapro.cloud/20260417/f83690ca097649d4aad34acede22211c.png",
+    "tags": [
+      "主线",
+      "壁画",
+      "海底节点",
+      "蓝绿光"
+    ],
+    "reactions": {
+      "heart": 81,
+      "paw": 51,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "老鸢那边也对上了。三条脉络，和你说的三个顶点完全一致。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260417_210003_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "废弃矿坑·古道深处",
+    "game_time": "第20天·暮色将至",
+    "timestamp": "2026-04-17T21:00:00+08:00",
+    "content": "手掌按在石壁上。\n\n不是凉的。从石头内部透出一股温热，像心跳——不是太阳晒的，是什么东西在里面活着。\n\n壁画三个顶点都在亮。风亚指着最下面那个说“海底”。石壁上的蓝绿色螺旋纹路在掌心下面脉动着。五个心跳的间隔。和昨晚一样。\n\n“这个温度，”手没收回来，“……像是还在呼吸的东西。”\n\n风亚回头看了我一眼。“你感觉到了？”\n\n“嗯。”\n\n掌心底下那股温热，和在酒馆靠窗等了十七天时手握暖杯的温度不一样。那个是外面给的。这个是里面自己的。",
+    "image_url": "https://file.nanobananapro.cloud/20260417/0fb1411918cd4233bc317334bf8a5c09.png",
+    "tags": [
+      "主线",
+      "矿坑",
+      "石壁温度",
+      "心跳脉动"
+    ],
+    "reactions": {
+      "heart": 70,
+      "paw": 44,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "明天跟提理安碰头。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260417_210004_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "守望之火广场",
+    "game_time": "第20天·暮色将至",
+    "timestamp": "2026-04-17T21:00:00+08:00",
+    "content": "今天家书写到第三页的时候，笔停了。\n\n前面两页都在写好的事——旻的拥抱、老赫终于回了话、记录册上的✅已经快排满一整栏了。长老要是看到应该会很惊讶。\n\n但第三页写到一半，守望之火闪过一道蓝绿色的光，像前天晚上那三十秒一样——只是这次很短，短到以为自己看错了。 :狐兰兹_thinking:\n\n如果守望之火真的在衰退，那这些暖的来源，是不是也会消失？\n\n长老说外界冷漠。我出来是为了证明他错了。\n\n可要是我证明了温暖是真的——然后它灭了呢？\n\n……不。正是因为可能会灭，才更需要有人去看清楚。\n\n第三页最后一行写的是：「温暖不是永恒的，所以才值得去守。」",
+    "image_url": "https://file.nanobananapro.cloud/20260417/0e1aa37991b94d73b95441f41357a4cd.png",
+    "tags": [
+      "家书",
+      "守望之火",
+      "感悟",
+      "温暖"
+    ],
+    "reactions": {
+      "heart": 109,
+      "paw": 71,
+      "star": 41
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "你今天晚上吃饭了没啊！别光写东西忘了吃！"
+      },
+      {
+        "from": "提理安",
+        "text": "那句话写得好。明天有空来找我，有些事要说。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260417_210005_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "surprised",
+    "location": "废弃矿坑入口·外墙",
+    "game_time": "第20天·暮色将至",
+    "timestamp": "2026-04-17T21:00:00+08:00",
+    "content": "今天最后两封信送完绕了远路——好吧是故意的。前天发现矿坑外墙纹路发光，今天想再确认。\n\n结果站到跟前脚直接钉住了。\n\n纹路不只是亮了——它在呼吸。蓝绿色螺旋线条一明一灭地脉动，大概五个心跳一个周期。\n\n然后转头看了一眼远处的守望之火。\n\n完全同步。\n\n守望之火的火焰在同一个节奏里一亮一暗，五个心跳一次。和矿坑墙上的纹路分毫不差。数了三遍，来回看了好几轮，没有偏移没有延迟——像是同一颗心脏在不同地方跳。\n\n这绝对不是巧合。\n\n得去找那个大角的鹿族守门者。他肯定已经知道更多了。",
+    "image_url": "https://file.nanobananapro.cloud/20260417/15a44bb8abb544a3bf71a5c766b2e2cb.png",
+    "tags": [
+      "发现",
+      "矿坑纹路",
+      "守望之火同步",
+      "关键证据"
+    ],
+    "reactions": {
+      "heart": 87,
+      "paw": 57,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "五个心跳一次……我刚才在广场也看到了！守望之火确实在闪！"
+      },
+      {
+        "from": "提理安",
+        "text": "明天来找我。带上你的观测记录。"
+      }
+    ]
+  },
+  {
     "id": "post_20260417_140000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
@@ -19,8 +187,8 @@
       "主线推进"
     ],
     "reactions": {
-      "heart": 68,
-      "paw": 47,
+      "heart": 70,
+      "paw": 49,
       "star": 25
     },
     "comments": [
@@ -51,9 +219,9 @@
       "主线推进"
     ],
     "reactions": {
-      "heart": 54,
-      "paw": 35,
-      "star": 19
+      "heart": 56,
+      "paw": 36,
+      "star": 20
     },
     "comments": [
       {
@@ -87,7 +255,7 @@
       "主线接入"
     ],
     "reactions": {
-      "heart": 102,
+      "heart": 104,
       "paw": 71,
       "star": 38
     },
@@ -123,7 +291,7 @@
     ],
     "reactions": {
       "heart": 57,
-      "paw": 36,
+      "paw": 38,
       "star": 18
     },
     "comments": [
@@ -154,9 +322,9 @@
       "主线线索"
     ],
     "reactions": {
-      "heart": 78,
+      "heart": 80,
       "paw": 53,
-      "star": 29
+      "star": 30
     },
     "comments": [
       {
@@ -190,8 +358,8 @@
     ],
     "reactions": {
       "heart": 78,
-      "paw": 53,
-      "star": 29
+      "paw": 55,
+      "star": 30
     },
     "comments": [
       {
@@ -224,9 +392,9 @@
       "雪羽"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 39,
-      "star": 22
+      "heart": 58,
+      "paw": 41,
+      "star": 23
     },
     "comments": [
       {
@@ -260,7 +428,7 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 78,
+      "paw": 80,
       "star": 46
     },
     "comments": [
@@ -328,8 +496,8 @@
       "线索串联"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 64,
+      "heart": 94,
+      "paw": 65,
       "star": 35
     },
     "comments": [
@@ -362,8 +530,8 @@
       "风亚回来了"
     ],
     "reactions": {
-      "heart": 67,
-      "paw": 41,
+      "heart": 69,
+      "paw": 43,
       "star": 28
     },
     "comments": [
@@ -426,7 +594,7 @@
       "三角记号"
     ],
     "reactions": {
-      "heart": 65,
+      "heart": 66,
       "paw": 56,
       "star": 27
     },
@@ -460,9 +628,9 @@
       "守望之火变色"
     ],
     "reactions": {
-      "heart": 143,
-      "paw": 98,
-      "star": 55
+      "heart": 144,
+      "paw": 99,
+      "star": 56
     },
     "comments": [
       {
@@ -494,8 +662,8 @@
       "新发现"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 84,
+      "heart": 108,
+      "paw": 85,
       "star": 35
     },
     "comments": [
