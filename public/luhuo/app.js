@@ -43,6 +43,288 @@ let characterData = {};
 const reactionKey = 'sw_reactions';
 let reactionState = JSON.parse(localStorage.getItem(reactionKey) || '{}');
 
+// ===== 概况面板 =====
+let locationData = {};
+let currentOverviewTab = 'locations';
+
+function openOverview() {
+  const modal = document.getElementById('overviewModal');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderOverviewTab(currentOverviewTab);
+}
+
+function closeOverview() {
+  const modal = document.getElementById('overviewModal');
+  modal.classList.remove('open');
+  if (!document.getElementById('lightbox').classList.contains('open') &&
+      !document.getElementById('charCardModal').classList.contains('open')) {
+    document.body.style.overflow = '';
+  }
+}
+
+function switchOverviewTab(tab, btn) {
+  currentOverviewTab = tab;
+  document.querySelectorAll('.overview-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderOverviewTab(tab);
+}
+
+function renderOverviewTab(tab) {
+  const body = document.getElementById('overviewBody');
+  if (tab === 'locations') {
+    renderLocationsList(body);
+  } else {
+    renderCharactersList(body);
+  }
+}
+
+function getCharactersAtLocation(locName) {
+  // 从最新动态中找出在该地点的角色
+  const charMap = {};
+  allPosts.forEach(p => {
+    if (!p.location) return;
+    // 匹配地点名（location可能包含"炉火镇 · 广场"格式，取最后部分）
+    const loc = p.location.replace(/^.*[·]\s*/, '').trim();
+    const fullLoc = p.location.trim();
+    if (loc === locName || fullLoc === locName || p.location.includes(locName)) {
+      if (!charMap[p.character]) {
+        charMap[p.character] = { timestamp: p.timestamp, location: p.location };
+      } else if (new Date(p.timestamp) > new Date(charMap[p.character].timestamp)) {
+        charMap[p.character] = { timestamp: p.timestamp, location: p.location };
+      }
+    }
+  });
+  return charMap;
+}
+
+function getCharacterCurrentLocation(charName) {
+  // 找到该角色最近一条动态的地点
+  const charPosts = allPosts
+    .filter(p => p.character === charName && p.location)
+    .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  if (charPosts.length > 0) {
+    return { location: charPosts[0].location, timestamp: charPosts[0].timestamp };
+  }
+  return null;
+}
+
+function renderLocationsList(container) {
+  // 当前页面是炉火镇，取炉火镇的地点
+  const worldKey = '炉火镇';
+  const worldData = locationData[worldKey];
+  if (!worldData || !worldData.locations) {
+    container.innerHTML = '<div class="empty-state"><span class="empty-icon">📍</span><p>暂无地点数据</p></div>';
+    return;
+  }
+
+  const locs = worldData.locations;
+  let html = '<div class="overview-list">';
+  for (const [name, info] of Object.entries(locs)) {
+    const charsHere = getCharactersAtLocation(name);
+    const charCount = Object.keys(charsHere).length;
+    const subText = charCount > 0 ? `${charCount} 位角色近期到访` : '暂无角色到访记录';
+    html += `
+      <div class="overview-item" onclick="showLocationDetail('${escapeHtml(name)}')">
+        <div class="overview-item-icon">${info.icon}</div>
+        <div class="overview-item-info">
+          <div class="overview-item-name">${escapeHtml(name)}</div>
+          <div class="overview-item-sub">${subText}</div>
+        </div>
+        <span class="overview-item-arrow">→</span>
+      </div>`;
+  }
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function renderCharactersList(container) {
+  // 获取炉火镇的角色
+  const chars = Object.entries(characterData).filter(([name, info]) => info.world === '炉火镇');
+  if (chars.length === 0) {
+    container.innerHTML = '<div class="empty-state"><span class="empty-icon">👥</span><p>暂无角色数据</p></div>';
+    return;
+  }
+
+  let html = '<div class="overview-list">';
+  for (const [name, info] of chars) {
+    const avatarUrl = info.avatar ? info.avatar : null;
+    const locInfo = getCharacterCurrentLocation(name);
+    const subText = locInfo ? `📍 ${locInfo.location}` : '位置未知';
+    const avatarHtml = avatarUrl
+      ? `<img class="overview-item-avatar" src="${avatarUrl}" alt="${escapeHtml(name)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="overview-item-icon" style="display:none">${info.avatar_symbol}</div>`
+      : `<div class="overview-item-icon">${info.avatar_symbol}</div>`;
+    html += `
+      <div class="overview-item" onclick="showCharacterDetail('${escapeHtml(name)}')">
+        ${avatarHtml}
+        <div class="overview-item-info">
+          <div class="overview-item-name">${escapeHtml(name)}</div>
+          <div class="overview-item-sub">${subText}</div>
+        </div>
+        <span class="overview-item-arrow">→</span>
+      </div>`;
+  }
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function showLocationDetail(locName) {
+  const worldKey = '炉火镇';
+  const worldData = locationData[worldKey];
+  if (!worldData || !worldData.locations || !worldData.locations[locName]) return;
+
+  const loc = worldData.locations[locName];
+  const charsHere = getCharactersAtLocation(locName);
+  const body = document.getElementById('overviewBody');
+
+  let tagsHtml = '';
+  if (loc.tags && loc.tags.length > 0) {
+    tagsHtml = '<div class="overview-detail-tags">' +
+      loc.tags.map(t => `<span class="tag"># ${escapeHtml(t)}</span>`).join('') +
+      '</div>';
+  }
+
+  let charsHtml = '';
+  const charEntries = Object.entries(charsHere);
+  if (charEntries.length > 0) {
+    charsHtml = `<div class="overview-section-title">👥 近期到访的角色</div><div class="overview-char-list">`;
+    for (const [charName, info] of charEntries) {
+      const ci = characterData[charName];
+      const avatarUrl = ci && ci.avatar ? ci.avatar : null;
+      const avatarHtml = avatarUrl
+        ? `<img class="char-mini-avatar" src="${avatarUrl}" alt="${escapeHtml(charName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="char-mini-emoji" style="display:none;background:${ci.avatar_color}22;color:${ci.avatar_color}">${ci.avatar_symbol}</span>`
+        : `<span class="char-mini-emoji" style="background:${ci ? ci.avatar_color : '#666'}22;color:${ci ? ci.avatar_color : '#666'}">${ci ? ci.avatar_symbol : '?'}</span>`;
+      charsHtml += `
+        <div class="overview-char-item" onclick="showCharacterDetail('${escapeHtml(charName)}')">
+          ${avatarHtml}
+          <span class="overview-char-item-name">${escapeHtml(charName)}</span>
+          <span class="overview-char-item-arrow">→</span>
+        </div>`;
+    }
+    charsHtml += '</div>';
+  } else {
+    charsHtml = '<div class="overview-section-title">👥 近期到访的角色</div><div style="font-size:13px;color:var(--text-muted);padding:8px 0">暂无角色到访记录</div>';
+  }
+
+  body.innerHTML = `
+    <div class="overview-detail">
+      <button class="overview-back" onclick="renderOverviewTab('locations')">← 返回地点列表</button>
+      <div class="overview-detail-header">
+        <div class="overview-detail-icon">${loc.icon}</div>
+        <div>
+          <div class="overview-detail-title">${escapeHtml(locName)}</div>
+          <div class="overview-detail-subtitle">炉火镇</div>
+        </div>
+      </div>
+      <div class="overview-detail-desc">${escapeHtml(loc.description)}</div>
+      ${tagsHtml}
+      ${charsHtml}
+    </div>`;
+}
+
+function showCharacterDetail(charName) {
+  const ci = characterData[charName];
+  if (!ci) return;
+
+  const body = document.getElementById('overviewBody');
+  const locInfo = getCharacterCurrentLocation(charName);
+  const avatarUrl = ci.avatar ? ci.avatar : null;
+
+  const avatarHtml = avatarUrl
+    ? `<img class="overview-detail-avatar" src="${avatarUrl}" alt="${escapeHtml(charName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="overview-detail-icon" style="display:none">${ci.avatar_symbol}</div>`
+    : `<div class="overview-detail-icon">${ci.avatar_symbol}</div>`;
+
+  // 角色简介：根据 characterData 信息组装
+  const worldText = ci.world || '未知';
+  const friendsText = ci.friends && ci.friends.length > 0 ? ci.friends.join('、') : '暂无';
+  const locText = locInfo ? locInfo.location : '位置未知';
+
+  // 查找该角色去过的所有地点
+  const visitedLocs = {};
+  allPosts.forEach(p => {
+    if (p.character === charName && p.location) {
+      const loc = p.location.trim();
+      if (!visitedLocs[loc]) {
+        visitedLocs[loc] = { count: 1, latest: p.timestamp };
+      } else {
+        visitedLocs[loc].count++;
+        if (new Date(p.timestamp) > new Date(visitedLocs[loc].latest)) {
+          visitedLocs[loc].latest = p.timestamp;
+        }
+      }
+    }
+  });
+
+  // 按最近时间排序
+  const sortedLocs = Object.entries(visitedLocs).sort((a, b) => new Date(b[1].latest) - new Date(a[1].latest));
+
+  let locsHtml = '';
+  if (sortedLocs.length > 0) {
+    locsHtml = `<div class="overview-section-title" style="margin-top:20px">📍 活动地点</div><div class="overview-loc-list">`;
+    for (const [loc, info] of sortedLocs) {
+      // 尝试匹配 locationData 中的地点
+      const locKey = loc.replace(/^.*[·]\s*/, '').trim();
+      const worldData = locationData['炉火镇'];
+      const locData = worldData && worldData.locations ? worldData.locations[locKey] : null;
+      const icon = locData ? locData.icon : '📍';
+      const isCurrentLoc = locInfo && locInfo.location === loc;
+      locsHtml += `
+        <div class="overview-loc-item" ${locData ? `onclick="showLocationDetail('${escapeHtml(locKey)}')"` : ''}>
+          <span style="font-size:20px">${icon}</span>
+          <span class="overview-loc-item-name">${escapeHtml(loc)}${isCurrentLoc ? ' <span style="color:var(--accent);font-size:11px">（当前）</span>' : ''}</span>
+          <span class="overview-loc-item-arrow" style="font-size:11px;color:var(--text-muted)">${info.count}条动态</span>
+        </div>`;
+    }
+    locsHtml += '</div>';
+  }
+
+  // 好友列表
+  let friendsHtml = '';
+  if (ci.friends && ci.friends.length > 0) {
+    friendsHtml = `<div class="overview-section-title" style="margin-top:20px">💛 好友</div><div class="overview-char-list">`;
+    for (const friendName of ci.friends) {
+      const fi = characterData[friendName];
+      if (!fi) continue;
+      const fAvatarUrl = fi.avatar ? fi.avatar : null;
+      const fAvatarHtml = fAvatarUrl
+        ? `<img class="char-mini-avatar" src="${fAvatarUrl}" alt="${escapeHtml(friendName)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><span class="char-mini-emoji" style="display:none;background:${fi.avatar_color}22;color:${fi.avatar_color}">${fi.avatar_symbol}</span>`
+        : `<span class="char-mini-emoji" style="background:${fi.avatar_color}22;color:${fi.avatar_color}">${fi.avatar_symbol}</span>`;
+      friendsHtml += `
+        <div class="overview-char-item" onclick="showCharacterDetail('${escapeHtml(friendName)}')">
+          ${fAvatarHtml}
+          <span class="overview-char-item-name">${escapeHtml(friendName)}</span>
+          <span class="overview-char-item-arrow">→</span>
+        </div>`;
+    }
+    friendsHtml += '</div>';
+  }
+
+  // 角色卡按钮
+  const cardBtnHtml = ci.card_image
+    ? `<div style="margin-top:16px"><button class="load-more-btn" onclick="closeOverview();setTimeout(()=>openCharCard('${escapeHtml(charName)}'),300)" style="font-size:12px;padding:8px 20px">🎴 查看角色卡</button></div>`
+    : '';
+
+  body.innerHTML = `
+    <div class="overview-detail">
+      <button class="overview-back" onclick="renderOverviewTab('characters')">← 返回角色列表</button>
+      <div class="overview-detail-header">
+        ${avatarHtml}
+        <div>
+          <div class="overview-detail-title">${escapeHtml(charName)}</div>
+          <div class="overview-detail-subtitle">${ci.character_en || ''} · ${worldText}</div>
+        </div>
+      </div>
+      <div class="overview-detail-desc">
+        <strong>当前位置：</strong>${escapeHtml(locText)}<br/>
+        <strong>所属世界：</strong>${escapeHtml(worldText)}<br/>
+        <strong>好友：</strong>${escapeHtml(friendsText)}
+      </div>
+      ${cardBtnHtml}
+      ${locsHtml}
+      ${friendsHtml}
+    </div>`;
+}
+
 // ===== 工具函数 =====
 function getWorldClass(world) {
   if (world && world.includes('潮汐湾')) return 'tide';
@@ -413,9 +695,10 @@ async function init() {
 
   try {
     // 并行加载数据
-    const [postsRes, charsRes] = await Promise.all([
+    const [postsRes, charsRes, locsRes] = await Promise.all([
       fetch(`../../data/posts.json?t=${Date.now()}`),
-      fetch(`../../data/characters.json?t=${Date.now()}`)
+      fetch(`../../data/characters.json?t=${Date.now()}`),
+      fetch(`../../data/locations.json?t=${Date.now()}`)
     ]);
     if (postsRes.ok) allPosts = await postsRes.json();
     if (charsRes.ok) {
@@ -434,6 +717,9 @@ async function init() {
           }
         }
       }
+    }
+    if (locsRes.ok) {
+      locationData = await locsRes.json();
     }
   } catch (e) {
     console.warn('加载数据失败:', e);
@@ -476,9 +762,15 @@ async function init() {
     themeBtn.addEventListener('click', toggleTheme);
   }
 
+  // 概况按钮
+  const overviewBtn = document.getElementById('overviewBtn');
+  if (overviewBtn) {
+    overviewBtn.addEventListener('click', openOverview);
+  }
+
   // 初始渲染
   applyFilters();
 }
 
 // 启动
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);

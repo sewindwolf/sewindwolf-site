@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?h=0a4c9f02" />
+  <link rel="stylesheet" href="style.css?h=e99e088b" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 </head>
 <body>
@@ -24,6 +24,7 @@
       </a>
       <nav class="header-nav">
         <a href="/" class="nav-btn" style="text-decoration:none">← 返回首页</a>
+        <button class="nav-btn" id="overviewBtn">📋 概况</button>
         <button class="nav-btn active" data-filter="all">全部</button>
         <button class="nav-btn" data-filter="炉火镇">炉火镇</button>
         <button class="theme-toggle" id="themeToggle" title="切换明暗模式">
@@ -81,6 +82,24 @@
     </div>
   </div>
 
+  <!-- 概况面板 -->
+  <div class="overview-modal" id="overviewModal">
+    <div class="overview-backdrop" onclick="closeOverview()"></div>
+    <div class="overview-panel">
+      <div class="overview-header">
+        <h2 class="overview-title">🔥 炉火镇 · 概况</h2>
+        <button class="overview-close" onclick="closeOverview()">×</button>
+      </div>
+      <div class="overview-tabs">
+        <button class="overview-tab active" data-tab="locations" onclick="switchOverviewTab('locations',this)">📍 地点</button>
+        <button class="overview-tab" data-tab="characters" onclick="switchOverviewTab('characters',this)">👥 角色</button>
+      </div>
+      <div class="overview-body" id="overviewBody">
+        <!-- 由 JS 动态填充 -->
+      </div>
+    </div>
+  </div>
+
   <!-- 底部 -->
   <footer class="site-footer">
     <div class="footer-inner">
@@ -90,6 +109,6 @@
     </div>
   </footer>
 
-  <script src="app.js?h=e5c9cc8f"></script>
+  <script src="app.js?h=7e616d10"></script>
 </body>
-</html>
+</html>
