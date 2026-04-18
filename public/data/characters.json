@@ -221,5 +221,28 @@
       "狐兰兹"
     ],
     "bio": "黑柴犬兽人，炉火镇的邮差。背部和头顶是深黑色，脸的下半部分和腹部是黄褐色，有着橙黄渐变的交界线。亮蓝色的眼睛。脖子上系着红色皮革项圈，金属方扣在跑动时叮当作响。穿白色无袖帽衫（胸口有个爪印logo）配茶色工装裤，双手腕戴黑色护腕。\n\n口头禅是'天哪'——什么事都天哪。包扣崩了天哪，差点撞上面包摊天哪，石头在发光也天哪。\n\n初来乍到的邮差，表面对万物好奇，吐着舌头喘气，像个什么都新鲜的毛孩子。实际上内心在为生计发愁，还有一件悬而未落的事让他焦虑。\n\n他爱八卦，强装热情，实则内心柔软。怕的不是累，怕的是热情遭到冷遇。也喜欢各种双关谐音冷笑话。\n\n每天送信的路线从铁匠老赫那边绕到北门再折回裁缝大婶家。有天路过矿坑外墙的时候——他整个人刹住了。不是「看到了」那种停，是全身鸡皮疙瘩立起来的那种停。石墙上的蓝绿色纹路在发光，而且亮度翻倍了。\n\n后来他发现纹路和守望之火是同步的。这条线索是关键证据。他串联起了自己观察到的一切，决定去找提理安。\n\n当其他四人走进古道的那天，旻选择在外围守候。这是他第一次选择留下来等——不是因为害怕，是因为有人需要在外面。"
+  },
+  "沃弗尔": {
+    "character_en": "Wolvol",
+    "avatar_symbol": "🐲",
+    "avatar_color": "#2a3d6b",
+    "card_image": "images/cards/wolvol.png",
+    "ref_image": "images/refs/wolvol_ref.png",
+    "world": "炉火镇",
+    "stickers": {
+      "happy": "images/emojis/wolvol_happy.png",
+      "calm": "images/emojis/wolvol_calm.png",
+      "angry": "images/emojis/wolvol_angry.png",
+      "shy": "images/emojis/wolvol_shy.png",
+      "surprised": "images/emojis/wolvol_surprised.png",
+      "thinking": "images/emojis/wolvol_thinking.png",
+      "sleepy": "images/emojis/wolvol_sleepy.png",
+      "eating": "images/emojis/wolvol_eating.png"
+    },
+    "stickers_inline": {},
+    "stickers_thumb": {},
+    "avatar": "images/emojis/wolvol_calm.png",
+    "friends": [],
+    "bio": "龙狼混血，出逃多年的实验体。墨蓝色的毛发下隐藏着龙族血统的痕迹——乌木色龙角、紫金色龙瞳、以及那条比同族更细长的尾巴。\\n\\n用“沃”自称，话极少，非必要远离人群。但不知不觉间，他总是出现在你的生活半径里。喜欢酸奶和番茄炒蛋。\\n\\n他在寻找一只叫泽罗恩的灰虎。为什么？他不说。\\n\\n鼻梁上那道绿色箭头纹路和左眼下的长条伤痕，让人对他的来历浮想联翩。但他只是安静地做着自己的事，像一个恰好住在隔壁的邻居。"
   }
 }
