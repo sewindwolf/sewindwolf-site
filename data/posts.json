@@ -1,5 +1,216 @@
 [
   {
+    "id": "post_20260422_140500_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "镇东旧巷 · 石屋门口",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:05:00+08:00",
+    "content": "门锁锈了。\n\n沃蹲下来，用破布慢慢擦。\n\n铜把手底下有一圈旧的磨痕——不是沃擦出来的。\n\n是之前住在这儿的人，每天进出碰它碰出来的。\n\n远处有脚步声。黑色的影子从巷口掠过，包带的扣子在阳光下闪了一下。\n\n沃没抬头。\n\n……擦门锁。",
+    "image_url": "https://file.nanobananapro.cloud/20260422/3f1f4f9bfa5f407e8693015e4d970e9a.png",
+    "tags": [
+      "独立行动",
+      "日常",
+      "门锁"
+    ],
+    "reactions": {
+      "heart": 42,
+      "paw": 28,
+      "star": 14
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260422_140400_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "雀巢酒馆 · 窗边",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:04:00+08:00",
+    "content": "一只猫跳进窗台。\n\n黄色的，瘦。爪子沾着灰。\n\n看了我三秒，没跑。\n\n我撕了一小条酱肉给它，指尖递出去。它凑过来闻了一下，小心翼翼咬走，蹲在窗台上吃。\n\n吃完了还蹲着没走。\n\n我没再给。它也没再讨。\n\n就这么一人一猫在窗台两边看着对方。\n\n「那家伙昨天在火种室里，抬头看我那一眼——」\n\n这个念头在脑子里冒出来，我自己都不知道为什么，跟这只猫没关系。\n\n猫叫了一声，跳下去了。\n\n我多坐了一会儿。",
+    "image_url": "https://file.nanobananapro.cloud/20260422/6112d047b1e34daa87d95566c5724a52.png",
+    "tags": [
+      "日常",
+      "猫",
+      "酒馆"
+    ],
+    "reactions": {
+      "heart": 68,
+      "paw": 45,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "你居然分东西给别的生物吃。"
+      },
+      {
+        "from": "羽烽",
+        "text": "……那是只猫。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260422_140300_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "happy",
+    "location": "主街铁匠铺 · 老赫的摊",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:03:00+08:00",
+    "content": "今天——今天——今天——\n\n老赫抬头看到我经过，没等我绕开，他——他直接把那根大锄头的柄底递给我说：「小狐，帮我抬一下底。」\n\n等等。\n\n他叫我小狐。他不仅叫我了，还让我帮忙了。\n\n我耳朵没夹！我真的没夹！\n\n（好吧可能夹了一秒，但只有一秒。）\n\n我蹲下来托住锄头底部的木杆——老赫的手劲是真的大，光他一只手举着那把锄头就够了，根本不需要我。可是他还是让我托了，还是让我参与了。\n\n这不是「搭话」。这是——这是「抬」。\n\n我被炉火镇第二个大叔——正式——使——唤——了。\n\n（第一个是面包摊的熊族大叔，第二个是老赫——使联络点印信✅之后的第一次「被需要」。）\n\n记录册新增✅，今天新双关：「抬/太（棒了）」——质量我自己承认一般，情绪对就行。:狐兰兹_happy:",
+    "image_url": "https://file.nanobananapro.cloud/20260422/6a50d3a818274fc5b76bc86a5c43e74b.png",
+    "tags": [
+      "成长记录",
+      "老赫",
+      "被需要"
+    ],
+    "reactions": {
+      "heart": 127,
+      "paw": 86,
+      "star": 48
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "哇！你被使唤了？恭喜！"
+      },
+      {
+        "from": "提理安",
+        "text": "老赫一只手就能举起来那东西。他是故意给你递的。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": ":狐兰兹_shy:……啊？"
+      }
+    ]
+  },
+  {
+    "id": "post_20260422_140200_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "主街市集 · 石阶",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:02:00+08:00",
+    "content": "一条烤鱼，蜜渍辣椒粉没放够，摊主是新来的。\n\n坐在石阶上啃的时候，前面三步远的鱼骨大叔正在跟一个白胡子老船工讲话。\n\n——「南边水路今年起雾起得怪，去潮汐湾的渡船要价又涨了。」\n\n——「不是雾的事吧。水面那层荧光，前几天亮得我孙子以为是鬼火。」\n\n嚼着鱼的嘴停了半秒。\n\n「荧光前几天亮得很」——这是第二个人跟我说类似的话。上一个是我自己从渡船上看见的。\n\n我没接话。\n\n老船工后来又讲了一堆关于北线谁家船翻了之类的事，我没怎么听进去。鱼的尾巴有点焦，很难吃。\n\n但我多坐了一会儿。蜜渍辣椒粉不够的这根鱼，不知不觉啃完了第二口之后又啃完了第三口。\n\n项链从领口滑出来了，我没收回去。",
+    "image_url": "https://file.nanobananapro.cloud/20260422/3fed179426584cf7960434c292734627.png",
+    "tags": [
+      "潮汐湾",
+      "荧光",
+      "偷听"
+    ],
+    "reactions": {
+      "heart": 95,
+      "paw": 61,
+      "star": 33
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "难吃还啃三口。"
+      },
+      {
+        "from": "风亚",
+        "text": "跟你有关系？"
+      },
+      {
+        "from": "提理安",
+        "text": "你俩在评论区吵，我在内室听老鸢讲锁。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260422_140100_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "thinking",
+    "location": "主街 · 面包摊前",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:01:00+08:00",
+    "content": "天哪——差点被裁缝大婶拖进布料摊。\n\n说是「你小子最近怎么了眼神飘来飘去」。\n\n我飘了吗我没有啊——好吧我有。包里那封信今天早上又看了第七次还是第八次。背面那行字不知道怎么搞的我每闭一次眼睛就看见一次。\n\n「不必找沃，沃会找你。」\n\n这个「沃」是谁啊？是个名字还是个口头禅？提理安他们之前没提过有谁叫这个音啊。可是写信的那个人——画螺旋图案那么准的人——不可能随便乱写一个音。\n\n裁缝大婶捏着我胳膊开始讲八卦第七条，她说话的时候我一直在想这个。\n\n然后她突然压低声音说：「镇东那边最近有人搬进了空了好久的石屋，你知道吗。」\n\n……\n\n包扣在我手里自己崩开了。",
+    "image_url": "https://file.nanobananapro.cloud/20260422/8f05eb6c792f4f7e8a5ec6c5d935578f.png",
+    "tags": [
+      "信件秘密",
+      "主线",
+      "八卦"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 73,
+      "star": 39
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "你的包扣是真的很常坏。"
+      },
+      {
+        "from": "提理安",
+        "text": "你刚才走过镇东巷口的时候在想事？——最近巡到那边，看到一个我不认识的身影。"
+      },
+      {
+        "from": "旻",
+        "text": ":旻_surprised:……你看到谁了？"
+      }
+    ]
+  },
+  {
+    "id": "post_20260422_140000_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "surprised",
+    "location": "草药师老鸢铺子 · 内室",
+    "game_time": "第29天·正午暖阳",
+    "timestamp": "2026-04-22T14:00:00+08:00",
+    "content": "老鸢把旧册子翻到了一页我从没见过的图。\n\n不是纹路，是一个锁。\n\n两层同心圆，中间咬合。外圈标着「火种室」，内圈标着——空白。\n\n老鸢用指甲敲了敲内圈：「空白不是没名字。是名字刻不上去。」\n\n我问这是什么锁。\n\n她沉默了足足有十个心跳那么久，才说出一个词：「双向锁。」\n\n——需要两边同时拧动才能打开。一边在火种室地板下，另一边在……老鸢说到这里停了，伸手把册子合上一半，留出一道缝透光。\n\n「另一边，在海的那一端。」\n\n雪羽刚才还在我肩上打盹，这一瞬间爪子骤然收紧。\n\n我低头看自己的手。石板下的第四拍，原来不是「另一个心脏」——它是另一边的人，正隔着这整座山、这整片海，在等我们拧动这把锁。\n\n——可是这把锁已经有多久没人碰过了。",
+    "image_url": "https://file.nanobananapro.cloud/20260422/50d1d1c64f804d209a04a6f9d5fe0141.png",
+    "tags": [
+      "主线",
+      "双向锁",
+      "先潮者"
+    ],
+    "reactions": {
+      "heart": 138,
+      "paw": 92,
+      "star": 54
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "海的那一端……那不就是风亚来的方向吗。"
+      },
+      {
+        "from": "风亚",
+        "text": "……"
+      },
+      {
+        "from": "羽烽",
+        "text": "他看到这条了。"
+      }
+    ]
+  },
+  {
     "id": "post_20260422_080000_tilion",
     "character": "提理安",
     "character_en": "Tilion",
@@ -19,9 +230,9 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 42,
+      "heart": 45,
       "paw": 30,
-      "star": 16
+      "star": 17
     },
     "comments": [
       {
@@ -54,9 +265,9 @@
       "烤串"
     ],
     "reactions": {
-      "heart": 58,
+      "heart": 59,
       "paw": 38,
-      "star": 22
+      "star": 23
     },
     "comments": [
       {
@@ -88,8 +299,8 @@
       "公开秘密"
     ],
     "reactions": {
-      "heart": 47,
-      "paw": 32,
+      "heart": 50,
+      "paw": 34,
       "star": 18
     },
     "comments": [
@@ -120,8 +331,8 @@
     ],
     "reactions": {
       "heart": 72,
-      "paw": 51,
-      "star": 28
+      "paw": 53,
+      "star": 29
     },
     "comments": [
       {
@@ -154,9 +365,9 @@
       "矿坑"
     ],
     "reactions": {
-      "heart": 63,
-      "paw": 42,
-      "star": 25
+      "heart": 65,
+      "paw": 44,
+      "star": 26
     },
     "comments": [
       {
@@ -186,7 +397,7 @@
     ],
     "reactions": {
       "heart": 38,
-      "paw": 22,
+      "paw": 24,
       "star": 14
     },
     "comments": []
@@ -210,7 +421,7 @@
       "暮色将至"
     ],
     "reactions": {
-      "heart": 47,
+      "heart": 48,
       "paw": 31,
       "star": 16
     },
@@ -278,8 +489,8 @@
       "坦白"
     ],
     "reactions": {
-      "heart": 52,
-      "paw": 36,
+      "heart": 54,
+      "paw": 38,
       "star": 19
     },
     "comments": [
@@ -308,8 +519,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 62,
+      "heart": 90,
+      "paw": 63,
       "star": 34
     },
     "comments": [
@@ -346,9 +557,9 @@
       "秘密"
     ],
     "reactions": {
-      "heart": 61,
-      "paw": 43,
-      "star": 21
+      "heart": 64,
+      "paw": 44,
+      "star": 22
     },
     "comments": [
       {
@@ -380,7 +591,7 @@
       "独行"
     ],
     "reactions": {
-      "heart": 42,
+      "heart": 43,
       "paw": 28,
       "star": 15
     },
@@ -405,8 +616,8 @@
       "火种室发现"
     ],
     "reactions": {
-      "heart": 52,
-      "paw": 35,
+      "heart": 55,
+      "paw": 37,
       "star": 19
     },
     "comments": [
@@ -439,9 +650,9 @@
       "火种室思考"
     ],
     "reactions": {
-      "heart": 68,
+      "heart": 69,
       "paw": 41,
-      "star": 22
+      "star": 23
     },
     "comments": [
       {
@@ -473,8 +684,8 @@
       "沉思"
     ],
     "reactions": {
-      "heart": 45,
-      "paw": 30,
+      "heart": 46,
+      "paw": 31,
       "star": 16
     },
     "comments": [
@@ -504,7 +715,7 @@
     ],
     "reactions": {
       "heart": 85,
-      "paw": 56,
+      "paw": 58,
       "star": 31
     },
     "comments": [
@@ -541,8 +752,8 @@
       "信封背面"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 48,
+      "heart": 75,
+      "paw": 50,
       "star": 25
     },
     "comments": [
@@ -575,8 +786,8 @@
       "独行"
     ],
     "reactions": {
-      "heart": 38,
-      "paw": 22,
+      "heart": 39,
+      "paw": 23,
       "star": 14
     },
     "comments": []
@@ -600,9 +811,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 98,
       "paw": 64,
-      "star": 35
+      "star": 36
     },
     "comments": [
       {
@@ -634,9 +845,9 @@
       "拼图"
     ],
     "reactions": {
-      "heart": 82,
+      "heart": 83,
       "paw": 55,
-      "star": 30
+      "star": 31
     },
     "comments": [
       {
@@ -665,8 +876,8 @@
     ],
     "reactions": {
       "heart": 73,
-      "paw": 49,
-      "star": 27
+      "paw": 50,
+      "star": 28
     },
     "comments": [
       {
@@ -698,8 +909,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 82,
+      "heart": 120,
+      "paw": 84,
       "star": 45
     },
     "comments": [
@@ -732,9 +943,9 @@
       "不安"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 60,
-      "star": 33
+      "heart": 92,
+      "paw": 62,
+      "star": 34
     },
     "comments": [
       {
@@ -766,8 +977,8 @@
       "发现"
     ],
     "reactions": {
-      "heart": 65,
-      "paw": 42,
+      "heart": 66,
+      "paw": 44,
       "star": 25
     },
     "comments": []
@@ -791,9 +1002,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 98,
-      "paw": 67,
-      "star": 38
+      "heart": 99,
+      "paw": 68,
+      "star": 39
     },
     "comments": [
       {
@@ -825,9 +1036,9 @@
       "荧光线"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 55,
-      "star": 30
+      "heart": 83,
+      "paw": 57,
+      "star": 31
     },
     "comments": [
       {
@@ -923,7 +1134,7 @@
       "沃"
     ],
     "reactions": {
-      "heart": 90,
+      "heart": 92,
       "paw": 63,
       "star": 35
     },
@@ -953,7 +1164,7 @@
       "泽罗恩"
     ],
     "reactions": {
-      "heart": 72,
+      "heart": 73,
       "paw": 48,
       "star": 28
     },
