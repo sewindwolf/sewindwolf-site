@@ -1,5 +1,199 @@
 [
   {
+    "id": "post_20260503_140100_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇·孪生废镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "surprised",
+    "location": "孪生废镇·入口石板街",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:01:00+08:00",
+    "content": "推开窄门之后，我们四个人站在一条街上。\n\n石板、路牌、拐角、门上钉铁环的位置——全都和炉火镇一样。只是没有人。也没有炊烟。路牌上的字模糊到看不清，但我认得那个拐角：往右是市集，往左是酒馆。\n\n羽烽在我身后半步没说话。狐兰兹在我左侧把陶片贴在挂件上，两块都发着蓝绿光。沃弗尔站得最后一个，手里没握东西。\n\n我开口：「跟咱家镇子一样。」\n\n停了一下。\n\n「……但是更旧。」",
+    "image_url": "https://file.nanobananapro.cloud/20260503/2785d8e3073d48d38bc43498a84021ad.png",
+    "tags": [
+      "孪生废镇",
+      "第六幕开幕",
+      "首次领头"
+    ],
+    "reactions": {
+      "heart": 138,
+      "paw": 92,
+      "star": 54
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "位置描述一出来我手就停了。那是我们镇没错。"
+      },
+      {
+        "from": "旻",
+        "text": "天哪。我在窄门这边听到蓝绿光跳了一下。你们都过去了？"
+      }
+    ]
+  },
+  {
+    "id": "post_20260503_140300_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇·孪生废镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "thinking",
+    "location": "孪生废镇·雀巢酒馆旧址",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:03:00+08:00",
+    "content": "窗户的位置一样。\n\n吧台一样。我靠了十几天的那张凳子——位置一样。\n\n伸手摸了一下，凳面上有被坐出来的痕迹。木头都磨得发亮了。不是一天两天。\n\n「有人坐过。」\n\n怎么说呢。这应该是我该坐的那张凳子。",
+    "image_url": "https://file.nanobananapro.cloud/20260503/8cd8e1bc463c4c7e98e6698c4dd6d174.png",
+    "tags": [
+      "孪生废镇",
+      "镜像酒馆",
+      "有人坐过"
+    ],
+    "reactions": {
+      "heart": 89,
+      "paw": 58,
+      "star": 34
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "你那张凳子这边比咱家那张还旧。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260503_140500_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇·孪生废镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "孪生废镇·守望亭废墟",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:05:00+08:00",
+    "content": "守望之火的位置，火塘是冷的。\n\n里面全是灰，没有一丝热气。我蹲下来，从灰里拨出一小张烧了一半的纸——字是我认得的那种老字体。\n\n只看得清一行：\n\n「……火还亮着吗？」\n\n问号那一笔压得很深。\n\n我手里的小火苗陶挂件在这一瞬亮了一下。不烫。是那种「我还在」的亮。\n\n把纸角小心合进记录册。今天不需要双关。只想记下来。",
+    "image_url": "https://file.nanobananapro.cloud/20260503/2b2e617b3b5d4f829dfb04aca9281c1b.png",
+    "tags": [
+      "孪生守望亭",
+      "半焦信角",
+      "火还亮着吗"
+    ],
+    "reactions": {
+      "heart": 156,
+      "paw": 104,
+      "star": 62
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "把这张纸给我看一眼——别烧到它。"
+      },
+      {
+        "from": "旻",
+        "text": "天哪这句话……我包扣都崩不了了。"
+      },
+      {
+        "from": "风亚",
+        "text": "火还亮着。你告诉那边的他，火还亮着。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260503_140700_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇·孪生废镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "surprised",
+    "location": "孪生废镇·一处石屋内",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:07:00+08:00",
+    "content": "一间石屋。门半开。\n\n炉灶里还有余温。\n\n桌上有一个木碗，半碗汤，还在微微冒气。凳子是侧倒着的。\n\n沃没动。沃站在门口。\n\n有人刚走。\n\n不是很久以前。\n\n左边的暖贝比右边的凉贝更烫了一格。另一边的人在这里。\n\n——沃终于没再独自走一条路了。",
+    "image_url": "https://file.nanobananapro.cloud/20260503/eb9641e896b4405a80b6c4b118715a01.png",
+    "tags": [
+      "孪生废镇",
+      "有人刚走",
+      "双贝温差"
+    ],
+    "reactions": {
+      "heart": 124,
+      "paw": 82,
+      "star": 48
+    }
+  },
+  {
+    "id": "post_20260503_140900_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇·守望之火",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "火种室·值班桌",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:09:00+08:00",
+    "content": "我留下来了。\n\n火种室这边的蓝绿火柱今天跳得比昨天稳。值班簿摊开，我在旁边画了一个小沙漏——不是给谁看的，给自己数的。那四个人推门进去，我数着他们离开的心跳。\n\n雪羽今天不啄面包屑，也没叫。就趴在桌边上看我写字。羽毛又暗了一点。\n\n老鸢下午会来。豆子他娘今天居然没来。——她大概也知道，今天这事比豆子大。\n\n炉火镇的门今天也开着。火种室这扇门，今天我替他们看着。",
+    "image_url": "https://file.nanobananapro.cloud/20260503/225854e86bb8484f95c94da122b617a7.png",
+    "tags": [
+      "火端留守",
+      "倒计时",
+      "雪羽"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 76,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "这边一切都还在。你告诉雪羽——我们会回去吃它啄剩的那块面包。"
+      },
+      {
+        "from": "旻",
+        "text": "鹿大哥，沙漏画得比登记簿上的狼还好看。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260503_141100_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇·窄门",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "calm",
+    "location": "镇东·窄门外石阶",
+    "game_time": "第40天·正午暖阳",
+    "timestamp": "2026-05-03T14:11:00+08:00",
+    "content": "他们进去之后，我蹲在门外。\n\n《裂缝日志·第1册》摊在膝盖上，第1页我画了门缝的蓝绿光，节奏是三下一停。今天我不再跑着喊了。我守在这儿，一条一条记。\n\n沃弗尔昨天给我的暖贝挂在包扣上。按一下——\n\n不烫。\n\n沃说过：「不烫就是安全。」\n\n那他们现在是安全的。\n\n……好。我在这儿等。\n\n对了，今早没吃饭。面包摊大叔记得我这一条，等会儿一定给我塞两个圆的。",
+    "image_url": "https://file.nanobananapro.cloud/20260503/c91f1ff1ff3c4cfabddde15e3d70e067.png",
+    "tags": [
+      "通道信使",
+      "裂缝日志",
+      "暖贝不烫"
+    ],
+    "reactions": {
+      "heart": 134,
+      "paw": 88,
+      "star": 50
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "你那本日志画得比我登记簿整齐。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "天哪——这话我该说。你先别把我的双关抢走。"
+      }
+    ]
+  },
+  {
     "id": "post_20260503_080100_tilion",
     "character": "提理安",
     "character_en": "Tilion",
@@ -19,7 +213,7 @@
     ],
     "reactions": {
       "heart": 98,
-      "paw": 72,
+      "paw": 73,
       "star": 41
     },
     "comments": [
@@ -53,8 +247,8 @@
     ],
     "reactions": {
       "heart": 126,
-      "paw": 89,
-      "star": 52
+      "paw": 90,
+      "star": 53
     },
     "comments": []
   },
@@ -77,9 +271,9 @@
       "四块凑齐"
     ],
     "reactions": {
-      "heart": 142,
+      "heart": 143,
       "paw": 98,
-      "star": 58
+      "star": 59
     },
     "comments": [
       {
@@ -111,9 +305,9 @@
       "跟下去"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 76,
-      "star": 44
+      "heart": 111,
+      "paw": 78,
+      "star": 45
     },
     "comments": [
       {
@@ -141,7 +335,7 @@
       "推开窄门"
     ],
     "reactions": {
-      "heart": 135,
+      "heart": 136,
       "paw": 92,
       "star": 51
     },
@@ -176,9 +370,9 @@
       "暖贝不烫"
     ],
     "reactions": {
-      "heart": 152,
-      "paw": 104,
-      "star": 62
+      "heart": 153,
+      "paw": 105,
+      "star": 63
     },
     "comments": [
       {
@@ -212,9 +406,9 @@
       "暮色"
     ],
     "reactions": {
-      "heart": 113,
-      "paw": 78,
-      "star": 42
+      "heart": 115,
+      "paw": 79,
+      "star": 43
     },
     "comments": [
       {
@@ -248,7 +442,7 @@
       "成长"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 101,
       "paw": 62,
       "star": 32
     },
@@ -288,9 +482,9 @@
       "潮汐湾"
     ],
     "reactions": {
-      "heart": 145,
+      "heart": 147,
       "paw": 93,
-      "star": 55
+      "star": 56
     },
     "comments": [
       {
@@ -328,8 +522,8 @@
       "跟下去"
     ],
     "reactions": {
-      "heart": 130,
-      "paw": 85,
+      "heart": 132,
+      "paw": 87,
       "star": 48
     },
     "comments": [
@@ -364,9 +558,9 @@
       "同频"
     ],
     "reactions": {
-      "heart": 169,
-      "paw": 102,
-      "star": 63
+      "heart": 170,
+      "paw": 104,
+      "star": 64
     },
     "comments": [
       {
@@ -403,9 +597,9 @@
       "启程前夜"
     ],
     "reactions": {
-      "heart": 137,
-      "paw": 88,
-      "star": 51
+      "heart": 139,
+      "paw": 90,
+      "star": 52
     },
     "comments": [
       {
@@ -438,7 +632,7 @@
     ],
     "reactions": {
       "heart": 88,
-      "paw": 64,
+      "paw": 66,
       "star": 35
     },
     "comments": [
@@ -479,8 +673,8 @@
       "笑哭"
     ],
     "reactions": {
-      "heart": 125,
-      "paw": 91,
+      "heart": 126,
+      "paw": 92,
       "star": 46
     },
     "comments": [
@@ -517,9 +711,9 @@
       "母亲"
     ],
     "reactions": {
-      "heart": 104,
-      "paw": 74,
-      "star": 39
+      "heart": 105,
+      "paw": 75,
+      "star": 40
     },
     "comments": [
       {
@@ -555,9 +749,9 @@
       "羽烽"
     ],
     "reactions": {
-      "heart": 105,
-      "paw": 70,
-      "star": 42
+      "heart": 108,
+      "paw": 72,
+      "star": 43
     },
     "comments": [
       {
@@ -595,7 +789,7 @@
     "reactions": {
       "heart": 142,
       "paw": 96,
-      "star": 55
+      "star": 56
     },
     "comments": [
       {
@@ -636,8 +830,8 @@
     ],
     "reactions": {
       "heart": 119,
-      "paw": 85,
-      "star": 43
+      "paw": 87,
+      "star": 44
     },
     "comments": []
   },
@@ -671,9 +865,9 @@
     "character": "提理安",
     "timestamp": "2026-05-02T08:05:00+08:00",
     "reactions": {
-      "heart": 96,
+      "heart": 98,
       "paw": 59,
-      "star": 36
+      "star": 37
     }
   },
   {
@@ -710,7 +904,7 @@
     "character": "旻",
     "timestamp": "2026-05-02T08:08:00+08:00",
     "reactions": {
-      "heart": 109,
+      "heart": 111,
       "paw": 72,
       "star": 38
     }
@@ -736,9 +930,9 @@
     "character": "风亚",
     "timestamp": "2026-05-02T08:12:00+08:00",
     "reactions": {
-      "heart": 138,
-      "paw": 69,
-      "star": 49
+      "heart": 140,
+      "paw": 71,
+      "star": 50
     }
   },
   {
@@ -767,9 +961,9 @@
     "character": "羽烽",
     "timestamp": "2026-05-02T08:15:00+08:00",
     "reactions": {
-      "heart": 125,
+      "heart": 128,
       "paw": 63,
-      "star": 44
+      "star": 45
     }
   },
   {
@@ -807,7 +1001,7 @@
     "timestamp": "2026-05-02T08:18:00+08:00",
     "reactions": {
       "heart": 172,
-      "paw": 94,
+      "paw": 95,
       "star": 60
     }
   },
@@ -833,8 +1027,8 @@
     "timestamp": "2026-05-02T08:20:00+08:00",
     "reactions": {
       "heart": 89,
-      "paw": 52,
-      "star": 32
+      "paw": 53,
+      "star": 33
     }
   },
   {
@@ -856,8 +1050,8 @@
       "真相浮现"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 64,
+      "heart": 90,
+      "paw": 66,
       "star": 39
     },
     "comments": [
@@ -891,7 +1085,7 @@
     ],
     "reactions": {
       "heart": 119,
-      "paw": 93,
+      "paw": 95,
       "star": 45
     },
     "comments": [
@@ -945,7 +1139,7 @@
       "潮生"
     ],
     "reactions": {
-      "heart": 112,
+      "heart": 114,
       "paw": 74,
       "star": 44
     },
@@ -975,9 +1169,9 @@
       "解密"
     ],
     "reactions": {
-      "heart": 157,
-      "paw": 110,
-      "star": 56
+      "heart": 160,
+      "paw": 112,
+      "star": 57
     },
     "comments": [
       {
@@ -1009,8 +1203,8 @@
       "空凹槽"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 70,
+      "heart": 109,
+      "paw": 71,
       "star": 41
     },
     "comments": []
@@ -1035,9 +1229,9 @@
       "主线·档案线"
     ],
     "reactions": {
-      "heart": 119,
-      "paw": 72,
-      "star": 41
+      "heart": 122,
+      "paw": 74,
+      "star": 42
     },
     "comments": [
       {
@@ -1071,9 +1265,9 @@
       "反同质化"
     ],
     "reactions": {
-      "heart": 131,
-      "paw": 80,
-      "star": 44
+      "heart": 134,
+      "paw": 82,
+      "star": 45
     },
     "comments": [
       {
@@ -1111,7 +1305,7 @@
     ],
     "reactions": {
       "heart": 137,
-      "paw": 85,
+      "paw": 86,
       "star": 47
     },
     "comments": []
@@ -1136,9 +1330,9 @@
       "潮汐湾"
     ],
     "reactions": {
-      "heart": 100,
-      "paw": 67,
-      "star": 33
+      "heart": 103,
+      "paw": 69,
+      "star": 34
     },
     "comments": []
   },
@@ -1162,9 +1356,9 @@
       "主线·脉搏线"
     ],
     "reactions": {
-      "heart": 147,
-      "paw": 90,
-      "star": 49
+      "heart": 150,
+      "paw": 91,
+      "star": 50
     },
     "comments": [
       {
@@ -1197,9 +1391,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 52,
-      "star": 27
+      "heart": 88,
+      "paw": 53,
+      "star": 28
     },
     "comments": []
   },
@@ -1223,8 +1417,8 @@
       "主线·档案线"
     ],
     "reactions": {
-      "heart": 83,
-      "paw": 58,
+      "heart": 84,
+      "paw": 59,
       "star": 29
     },
     "comments": [
@@ -1297,7 +1491,7 @@
       "主线·身世线"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 101,
       "paw": 57,
       "star": 37
     },
@@ -1328,9 +1522,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 135,
+      "heart": 138,
       "paw": 79,
-      "star": 51
+      "star": 52
     },
     "comments": [
       {
@@ -1359,8 +1553,8 @@
       "主线·脉搏线"
     ],
     "reactions": {
-      "heart": 147,
-      "paw": 88,
+      "heart": 148,
+      "paw": 90,
       "star": 55
     },
     "comments": [
@@ -1396,7 +1590,7 @@
     "reactions": {
       "heart": 106,
       "paw": 64,
-      "star": 45
+      "star": 46
     },
     "comments": []
   },
@@ -1420,9 +1614,9 @@
       "三人录"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 58,
-      "star": 36
+      "heart": 91,
+      "paw": 60,
+      "star": 37
     },
     "comments": [
       {
@@ -1459,8 +1653,8 @@
       "吐槽"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 67,
+      "heart": 93,
+      "paw": 68,
       "star": 31
     },
     "comments": [
@@ -1500,7 +1694,7 @@
     ],
     "reactions": {
       "heart": 110,
-      "paw": 77,
+      "paw": 78,
       "star": 47
     },
     "comments": [
@@ -1539,9 +1733,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 62,
-      "star": 34
+      "heart": 89,
+      "paw": 63,
+      "star": 35
     },
     "comments": [
       {
@@ -1574,8 +1768,8 @@
       "C路"
     ],
     "reactions": {
-      "heart": 139,
-      "paw": 93,
+      "heart": 141,
+      "paw": 95,
       "star": 50
     },
     "comments": [
@@ -1614,8 +1808,8 @@
       "C路"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 72,
+      "heart": 105,
+      "paw": 74,
       "star": 46
     },
     "comments": [
@@ -1645,9 +1839,9 @@
       "第六幕启幕"
     ],
     "reactions": {
-      "heart": 82,
+      "heart": 85,
       "paw": 54,
-      "star": 32
+      "star": 33
     },
     "comments": [
       {
@@ -1680,8 +1874,8 @@
       "三代汇合"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 103,
+      "heart": 139,
+      "paw": 104,
       "star": 61
     },
     "comments": [
@@ -1719,8 +1913,8 @@
       "母亲线索"
     ],
     "reactions": {
-      "heart": 125,
-      "paw": 87,
+      "heart": 126,
+      "paw": 89,
       "star": 50
     },
     "comments": [
@@ -1754,9 +1948,9 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 98,
       "paw": 66,
-      "star": 34
+      "star": 35
     },
     "comments": [
       {
@@ -1789,8 +1983,8 @@
       "深蓝色旅人线索"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 72,
+      "heart": 105,
+      "paw": 74,
       "star": 40
     },
     "comments": [
@@ -1820,9 +2014,9 @@
       "沃弗尔"
     ],
     "reactions": {
-      "heart": 113,
+      "heart": 115,
       "paw": 82,
-      "star": 48
+      "star": 49
     },
     "comments": []
   },
@@ -1845,9 +2039,9 @@
       "休假诅咒"
     ],
     "reactions": {
-      "heart": 71,
-      "paw": 53,
-      "star": 26
+      "heart": 72,
+      "paw": 54,
+      "star": 27
     },
     "comments": [
       {
@@ -1884,8 +2078,8 @@
     ],
     "reactions": {
       "heart": 178,
-      "paw": 123,
-      "star": 62
+      "paw": 125,
+      "star": 63
     },
     "comments": [
       {
@@ -1921,9 +2115,9 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 122,
+      "heart": 124,
       "paw": 82,
-      "star": 38
+      "star": 39
     },
     "comments": [
       {
@@ -1959,8 +2153,8 @@
       "潮汐湾日常"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 60,
+      "heart": 83,
+      "paw": 62,
       "star": 30
     },
     "comments": [
@@ -1997,7 +2191,7 @@
       "主线·裂缝种子"
     ],
     "reactions": {
-      "heart": 116,
+      "heart": 117,
       "paw": 89,
       "star": 55
     },
@@ -2035,8 +2229,8 @@
       "主线·应对日"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 49,
+      "heart": 73,
+      "paw": 51,
       "star": 27
     },
     "comments": []
@@ -2062,7 +2256,7 @@
       "独行"
     ],
     "reactions": {
-      "heart": 10,
+      "heart": 12,
       "paw": 4,
       "star": 5
     },
@@ -2089,8 +2283,8 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 11,
-      "paw": 6,
+      "heart": 14,
+      "paw": 8,
       "star": 3
     },
     "comments": []
@@ -2116,9 +2310,9 @@
       "镜像第一幕"
     ],
     "reactions": {
-      "heart": 13,
-      "paw": 8,
-      "star": 4
+      "heart": 14,
+      "paw": 9,
+      "star": 5
     },
     "comments": []
   },
@@ -2144,8 +2338,8 @@
       "守到下一代"
     ],
     "reactions": {
-      "heart": 5,
-      "paw": 4,
+      "heart": 6,
+      "paw": 6,
       "star": 2
     },
     "comments": []
@@ -2172,8 +2366,8 @@
     ],
     "reactions": {
       "heart": 9,
-      "paw": 2,
-      "star": 1
+      "paw": 4,
+      "star": 2
     },
     "comments": []
   },
@@ -2200,8 +2394,8 @@
       "收束"
     ],
     "reactions": {
-      "heart": 12,
-      "paw": 8,
+      "heart": 15,
+      "paw": 10,
       "star": 4
     },
     "comments": []
@@ -2227,9 +2421,9 @@
       "温度分化"
     ],
     "reactions": {
-      "heart": 10,
-      "paw": 6,
-      "star": 1
+      "heart": 11,
+      "paw": 7,
+      "star": 2
     },
     "comments": []
   },
@@ -2256,7 +2450,7 @@
     "reactions": {
       "heart": 7,
       "paw": 2,
-      "star": 1
+      "star": 2
     },
     "comments": []
   },
@@ -2282,9 +2476,9 @@
       "雪羽伏笔"
     ],
     "reactions": {
-      "heart": 7,
-      "paw": 7,
-      "star": 0
+      "heart": 9,
+      "paw": 8,
+      "star": 1
     },
     "comments": []
   },
@@ -2310,9 +2504,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 7,
+      "heart": 10,
       "paw": 0,
-      "star": 3
+      "star": 4
     },
     "comments": []
   },
@@ -2365,8 +2559,8 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 6,
-      "paw": 4,
+      "heart": 8,
+      "paw": 6,
       "star": 2
     },
     "comments": []
@@ -2392,8 +2586,8 @@
     ],
     "reactions": {
       "heart": 91,
-      "paw": 65,
-      "star": 34
+      "paw": 66,
+      "star": 35
     },
     "comments": [
       {
@@ -2426,9 +2620,9 @@
       "休假诅咒"
     ],
     "reactions": {
-      "heart": 83,
+      "heart": 86,
       "paw": 53,
-      "star": 31
+      "star": 32
     },
     "comments": [
       {
@@ -2465,8 +2659,8 @@
       "质量可以"
     ],
     "reactions": {
-      "heart": 121,
-      "paw": 78,
+      "heart": 123,
+      "paw": 80,
       "star": 48
     },
     "comments": [
@@ -2505,7 +2699,7 @@
     ],
     "reactions": {
       "heart": 102,
-      "paw": 76,
+      "paw": 78,
       "star": 40
     },
     "comments": [
@@ -2543,7 +2737,7 @@
       "烤虾不会吃"
     ],
     "reactions": {
-      "heart": 130,
+      "heart": 132,
       "paw": 83,
       "star": 54
     },
@@ -2609,9 +2803,9 @@
       "口误泄露"
     ],
     "reactions": {
-      "heart": 8,
-      "paw": 3,
-      "star": 4
+      "heart": 10,
+      "paw": 4,
+      "star": 5
     },
     "comments": []
   },
@@ -2635,7 +2829,7 @@
       "海端信息共享"
     ],
     "reactions": {
-      "heart": 9,
+      "heart": 10,
       "paw": 7,
       "star": 3
     },
@@ -2662,7 +2856,7 @@
     ],
     "reactions": {
       "heart": 6,
-      "paw": 8,
+      "paw": 10,
       "star": 2
     },
     "comments": []
@@ -2688,7 +2882,7 @@
       "火端搭档"
     ],
     "reactions": {
-      "heart": 13,
+      "heart": 14,
       "paw": 2,
       "star": 4
     },
@@ -2716,8 +2910,8 @@
     ],
     "reactions": {
       "heart": 9,
-      "paw": 7,
-      "star": 4
+      "paw": 9,
+      "star": 5
     },
     "comments": []
   },
@@ -2744,7 +2938,7 @@
     "reactions": {
       "heart": 9,
       "paw": 6,
-      "star": 2
+      "star": 3
     },
     "comments": []
   },
@@ -2767,7 +2961,7 @@
       "共振"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 87,
       "paw": 52,
       "star": 34
     },
@@ -2792,9 +2986,9 @@
       "征兆"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 72,
-      "star": 34
+      "heart": 103,
+      "paw": 73,
+      "star": 35
     },
     "comments": [
       {
@@ -2852,9 +3046,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 97,
+      "heart": 98,
       "paw": 58,
-      "star": 31
+      "star": 32
     },
     "comments": []
   },
@@ -2877,8 +3071,8 @@
       "独坐"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 54,
+      "heart": 77,
+      "paw": 56,
       "star": 31
     },
     "comments": [
@@ -2941,9 +3135,9 @@
       "征兆#2"
     ],
     "reactions": {
-      "heart": 94,
+      "heart": 97,
       "paw": 60,
-      "star": 33
+      "star": 34
     },
     "comments": []
   },
@@ -2966,9 +3160,9 @@
       "主线"
     ],
     "reactions": {
-      "heart": 79,
-      "paw": 47,
-      "star": 24
+      "heart": 81,
+      "paw": 49,
+      "star": 25
     },
     "comments": [
       {
@@ -2996,9 +3190,9 @@
       "海端值守"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 101,
       "paw": 63,
-      "star": 34
+      "star": 35
     },
     "comments": []
   },
@@ -3021,9 +3215,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 129,
-      "paw": 82,
-      "star": 45
+      "heart": 131,
+      "paw": 83,
+      "star": 46
     },
     "comments": [
       {
@@ -3055,8 +3249,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 52,
+      "heart": 86,
+      "paw": 53,
       "star": 27
     },
     "comments": []
@@ -3106,8 +3300,8 @@
       "海端值守"
     ],
     "reactions": {
-      "heart": 135,
-      "paw": 88,
+      "heart": 138,
+      "paw": 89,
       "star": 50
     },
     "comments": [
@@ -3141,8 +3335,8 @@
       "金臂环"
     ],
     "reactions": {
-      "heart": 86,
-      "paw": 56,
+      "heart": 88,
+      "paw": 58,
       "star": 28
     },
     "comments": [
@@ -3174,7 +3368,7 @@
     "reactions": {
       "heart": 112,
       "paw": 68,
-      "star": 36
+      "star": 37
     },
     "comments": [
       {
@@ -3211,9 +3405,9 @@
       "成长记录"
     ],
     "reactions": {
-      "heart": 162,
+      "heart": 163,
       "paw": 104,
-      "star": 62
+      "star": 63
     },
     "comments": [
       {
@@ -3250,9 +3444,9 @@
       "守望之火偏暗"
     ],
     "reactions": {
-      "heart": 126,
-      "paw": 89,
-      "star": 49
+      "heart": 127,
+      "paw": 90,
+      "star": 50
     },
     "comments": [
       {
@@ -3289,9 +3483,9 @@
       "第五幕主线"
     ],
     "reactions": {
-      "heart": 101,
+      "heart": 104,
       "paw": 62,
-      "star": 35
+      "star": 36
     },
     "comments": []
   },
@@ -3314,8 +3508,8 @@
       "蜜藻烤虾"
     ],
     "reactions": {
-      "heart": 107,
-      "paw": 78,
+      "heart": 110,
+      "paw": 79,
       "star": 42
     },
     "comments": [
@@ -3349,8 +3543,8 @@
       "深蓝色龙角的先生"
     ],
     "reactions": {
-      "heart": 98,
-      "paw": 69,
+      "heart": 100,
+      "paw": 71,
       "star": 47
     },
     "comments": [
@@ -3388,7 +3582,7 @@
     ],
     "reactions": {
       "heart": 152,
-      "paw": 100,
+      "paw": 102,
       "star": 59
     },
     "comments": [
@@ -3426,8 +3620,8 @@
     ],
     "reactions": {
       "heart": 87,
-      "paw": 52,
-      "star": 30
+      "paw": 53,
+      "star": 31
     },
     "comments": [
       {
@@ -3459,9 +3653,9 @@
       "北线新闻"
     ],
     "reactions": {
-      "heart": 119,
-      "paw": 79,
-      "star": 43
+      "heart": 120,
+      "paw": 81,
+      "star": 44
     },
     "comments": [
       {
@@ -3498,8 +3692,8 @@
     ],
     "reactions": {
       "heart": 75,
-      "paw": 43,
-      "star": 27
+      "paw": 45,
+      "star": 28
     },
     "comments": []
   },
@@ -3535,7 +3729,7 @@
     "timestamp": "2026-04-27T08:00:00+08:00",
     "reactions": {
       "heart": 137,
-      "paw": 89,
+      "paw": 91,
       "star": 44
     }
   },
@@ -3575,8 +3769,8 @@
     "timestamp": "2026-04-27T08:01:00+08:00",
     "reactions": {
       "heart": 175,
-      "paw": 110,
-      "star": 62
+      "paw": 112,
+      "star": 63
     }
   },
   {
@@ -3607,7 +3801,7 @@
     "timestamp": "2026-04-27T08:02:00+08:00",
     "reactions": {
       "heart": 118,
-      "paw": 76,
+      "paw": 77,
       "star": 38
     }
   },
@@ -3642,9 +3836,9 @@
     "character": "旻",
     "timestamp": "2026-04-27T08:03:00+08:00",
     "reactions": {
-      "heart": 154,
-      "paw": 103,
-      "star": 51
+      "heart": 155,
+      "paw": 105,
+      "star": 52
     }
   },
   {
@@ -3669,8 +3863,8 @@
     "character": "沃弗尔",
     "timestamp": "2026-04-27T08:04:00+08:00",
     "reactions": {
-      "heart": 107,
-      "paw": 64,
+      "heart": 108,
+      "paw": 66,
       "star": 32
     }
   },
@@ -3709,8 +3903,8 @@
     "character": "提理安",
     "timestamp": "2026-04-27T08:05:00+08:00",
     "reactions": {
-      "heart": 130,
-      "paw": 79,
+      "heart": 131,
+      "paw": 80,
       "star": 42
     }
   },
@@ -3733,8 +3927,8 @@
       "归来"
     ],
     "reactions": {
-      "heart": 139,
-      "paw": 85,
+      "heart": 142,
+      "paw": 86,
       "star": 58
     },
     "comments": [
@@ -3771,9 +3965,9 @@
       "雪羽罪证"
     ],
     "reactions": {
-      "heart": 111,
+      "heart": 114,
       "paw": 74,
-      "star": 43
+      "star": 44
     },
     "comments": [
       {
@@ -3813,8 +4007,8 @@
       "成长记录30"
     ],
     "reactions": {
-      "heart": 180,
-      "paw": 115,
+      "heart": 182,
+      "paw": 117,
       "star": 75
     },
     "comments": [
@@ -3851,9 +4045,9 @@
       "第一次喝发光汤"
     ],
     "reactions": {
-      "heart": 130,
+      "heart": 131,
       "paw": 82,
-      "star": 54
+      "star": 55
     },
     "comments": [
       {
@@ -3885,9 +4079,9 @@
       "第八次崩扣"
     ],
     "reactions": {
-      "heart": 165,
-      "paw": 108,
-      "star": 61
+      "heart": 167,
+      "paw": 109,
+      "star": 62
     },
     "comments": [
       {
@@ -3923,7 +4117,7 @@
       "海底遗迹"
     ],
     "reactions": {
-      "heart": 101,
+      "heart": 103,
       "paw": 61,
       "star": 43
     },
@@ -3948,7 +4142,7 @@
       "出发"
     ],
     "reactions": {
-      "heart": 156,
+      "heart": 157,
       "paw": 104,
       "star": 57
     },
@@ -3986,9 +4180,9 @@
       "跟随"
     ],
     "reactions": {
-      "heart": 131,
-      "paw": 88,
-      "star": 49
+      "heart": 133,
+      "paw": 89,
+      "star": 50
     },
     "comments": [
       {
@@ -4016,7 +4210,7 @@
       "休假诅咒"
     ],
     "reactions": {
-      "heart": 120,
+      "heart": 122,
       "paw": 77,
       "star": 49
     },
@@ -4054,7 +4248,7 @@
       "成长记录29"
     ],
     "reactions": {
-      "heart": 174,
+      "heart": 175,
       "paw": 124,
       "star": 72
     },
@@ -4092,7 +4286,7 @@
       "自主选择"
     ],
     "reactions": {
-      "heart": 173,
+      "heart": 175,
       "paw": 109,
       "star": 61
     },
@@ -4130,9 +4324,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 151,
+      "heart": 152,
       "paw": 94,
-      "star": 55
+      "star": 56
     },
     "comments": []
   },
@@ -4156,9 +4350,9 @@
       "守门者"
     ],
     "reactions": {
-      "heart": 110,
+      "heart": 111,
       "paw": 68,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -4195,9 +4389,9 @@
       "独自"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 79,
-      "star": 46
+      "heart": 119,
+      "paw": 81,
+      "star": 47
     },
     "comments": []
   },
@@ -4222,7 +4416,7 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 75,
+      "paw": 77,
       "star": 40
     },
     "comments": [
@@ -4261,7 +4455,7 @@
     "reactions": {
       "heart": 114,
       "paw": 73,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -4290,9 +4484,9 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 170,
-      "paw": 112,
-      "star": 72
+      "heart": 173,
+      "paw": 113,
+      "star": 73
     },
     "comments": [
       {
@@ -4329,9 +4523,9 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 125,
+      "heart": 126,
       "paw": 75,
-      "star": 48
+      "star": 49
     },
     "comments": [
       {
@@ -4368,9 +4562,9 @@
       "主线"
     ],
     "reactions": {
-      "heart": 158,
-      "paw": 96,
-      "star": 52
+      "heart": 159,
+      "paw": 97,
+      "star": 53
     },
     "comments": [
       {
@@ -4403,9 +4597,9 @@
       "极简"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 62,
-      "star": 34
+      "heart": 91,
+      "paw": 64,
+      "star": 35
     },
     "comments": [
       {
@@ -4435,8 +4629,8 @@
     ],
     "reactions": {
       "heart": 137,
-      "paw": 78,
-      "star": 47
+      "paw": 79,
+      "star": 48
     },
     "comments": [
       {
@@ -4470,7 +4664,7 @@
     ],
     "reactions": {
       "heart": 177,
-      "paw": 108,
+      "paw": 110,
       "star": 59
     },
     "comments": [
@@ -4509,8 +4703,8 @@
     ],
     "reactions": {
       "heart": 137,
-      "paw": 90,
-      "star": 47
+      "paw": 91,
+      "star": 48
     },
     "comments": [
       {
@@ -4549,7 +4743,7 @@
     "reactions": {
       "heart": 118,
       "paw": 75,
-      "star": 45
+      "star": 46
     },
     "comments": []
   },
@@ -4572,8 +4766,8 @@
       "发现"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 56,
+      "heart": 91,
+      "paw": 57,
       "star": 30
     },
     "comments": [
@@ -4612,7 +4806,7 @@
     "reactions": {
       "heart": 63,
       "paw": 46,
-      "star": 22
+      "star": 23
     },
     "comments": [
       {
@@ -4642,7 +4836,7 @@
       "壁画"
     ],
     "reactions": {
-      "heart": 63,
+      "heart": 66,
       "paw": 41,
       "star": 24
     },
@@ -4680,7 +4874,7 @@
       "发现"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 98,
       "paw": 61,
       "star": 32
     },
@@ -4718,9 +4912,9 @@
       "窄门"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 51,
-      "star": 27
+      "heart": 83,
+      "paw": 52,
+      "star": 28
     },
     "comments": [
       {
@@ -4763,8 +4957,8 @@
     ],
     "reactions": {
       "heart": 53,
-      "paw": 37,
-      "star": 21
+      "paw": 38,
+      "star": 22
     },
     "comments": []
   },
@@ -4788,7 +4982,7 @@
       "日常"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 87,
       "paw": 46,
       "fire": 13,
       "star": 4
@@ -4827,8 +5021,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 32,
+      "heart": 60,
+      "paw": 34,
       "fire": 11,
       "star": 4
     },
@@ -4860,10 +5054,10 @@
       "主线"
     ],
     "reactions": {
-      "heart": 77,
-      "paw": 48,
+      "heart": 78,
+      "paw": 49,
       "fire": 22,
-      "star": 7
+      "star": 8
     },
     "comments": [
       {
@@ -4906,7 +5100,7 @@
     ],
     "reactions": {
       "heart": 49,
-      "paw": 34,
+      "paw": 35,
       "fire": 8,
       "star": 2
     },
@@ -4944,10 +5138,10 @@
       "内心"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 41,
+      "heart": 65,
+      "paw": 42,
       "fire": 11,
-      "star": 3
+      "star": 4
     },
     "comments": [
       {
@@ -4983,8 +5177,8 @@
       "独行"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 40,
+      "heart": 94,
+      "paw": 42,
       "fire": 26,
       "star": 5
     },
@@ -5009,8 +5203,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 77,
-      "paw": 49,
+      "heart": 78,
+      "paw": 50,
       "star": 25
     },
     "comments": [
@@ -5043,8 +5237,8 @@
       "黄昏"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 39,
+      "heart": 61,
+      "paw": 41,
       "star": 24
     },
     "comments": [
@@ -5075,7 +5269,7 @@
     ],
     "reactions": {
       "heart": 50,
-      "paw": 36,
+      "paw": 38,
       "star": 19
     },
     "comments": [
@@ -5113,7 +5307,7 @@
       "烤栗子"
     ],
     "reactions": {
-      "heart": 88,
+      "heart": 90,
       "paw": 62,
       "star": 32
     },
@@ -5148,9 +5342,9 @@
       "坦白"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 56,
-      "star": 29
+      "heart": 82,
+      "paw": 57,
+      "star": 30
     },
     "comments": [
       {
@@ -5182,7 +5376,7 @@
       "独行"
     ],
     "reactions": {
-      "heart": 62,
+      "heart": 65,
       "paw": 44,
       "star": 25
     },
@@ -5208,7 +5402,7 @@
       "两端共振"
     ],
     "reactions": {
-      "heart": 147,
+      "heart": 150,
       "paw": 91,
       "star": 54
     },
@@ -5250,8 +5444,8 @@
       "跟着走"
     ],
     "reactions": {
-      "heart": 112,
-      "paw": 70,
+      "heart": 114,
+      "paw": 71,
       "star": 39
     },
     "comments": [
@@ -5281,9 +5475,9 @@
       "不需要双关"
     ],
     "reactions": {
-      "heart": 174,
+      "heart": 175,
       "paw": 104,
-      "star": 63
+      "star": 64
     },
     "comments": [
       {
@@ -5322,7 +5516,7 @@
     "reactions": {
       "heart": 95,
       "paw": 64,
-      "star": 32
+      "star": 33
     },
     "comments": [
       {
@@ -5363,8 +5557,8 @@
       "镇东石屋伏笔"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 82,
+      "heart": 141,
+      "paw": 83,
       "star": 43
     },
     "comments": [
@@ -5402,7 +5596,7 @@
       "完整的圆"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 83,
       "paw": 53,
       "star": 27
     },
@@ -5428,9 +5622,9 @@
       "雪羽"
     ],
     "reactions": {
-      "heart": 79,
-      "paw": 52,
-      "star": 26
+      "heart": 81,
+      "paw": 53,
+      "star": 27
     },
     "comments": [
       {
@@ -5463,9 +5657,9 @@
       "主线推进"
     ],
     "reactions": {
-      "heart": 132,
-      "paw": 80,
-      "star": 44
+      "heart": 133,
+      "paw": 82,
+      "star": 45
     },
     "comments": [
       {
@@ -5497,9 +5691,9 @@
       "同行"
     ],
     "reactions": {
-      "heart": 99,
+      "heart": 100,
       "paw": 59,
-      "star": 36
+      "star": 37
     },
     "comments": [
       {
@@ -5528,7 +5722,7 @@
       "陶挂件"
     ],
     "reactions": {
-      "heart": 153,
+      "heart": 156,
       "paw": 94,
       "star": 52
     },
@@ -5563,9 +5757,9 @@
       "送别"
     ],
     "reactions": {
-      "heart": 172,
-      "paw": 102,
-      "star": 58
+      "heart": 175,
+      "paw": 103,
+      "star": 59
     },
     "comments": [
       {
@@ -5599,8 +5793,8 @@
     ],
     "reactions": {
       "heart": 123,
-      "paw": 78,
-      "star": 43
+      "paw": 80,
+      "star": 44
     },
     "comments": []
   },
@@ -5624,9 +5818,9 @@
       "独立行动"
     ],
     "reactions": {
-      "heart": 76,
+      "heart": 77,
       "paw": 52,
-      "star": 28
+      "star": 29
     },
     "comments": []
   },
@@ -5651,7 +5845,7 @@
     "reactions": {
       "heart": 123,
       "paw": 96,
-      "star": 39
+      "star": 40
     },
     "comments": [
       {
@@ -5683,8 +5877,8 @@
       "主线"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 90,
+      "heart": 141,
+      "paw": 92,
       "star": 50
     },
     "comments": [
@@ -5720,9 +5914,9 @@
       "默认跟上"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 52,
-      "star": 26
+      "heart": 85,
+      "paw": 54,
+      "star": 27
     },
     "comments": [
       {
@@ -5750,9 +5944,9 @@
       "去潮汐湾"
     ],
     "reactions": {
-      "heart": 111,
-      "paw": 71,
-      "star": 38
+      "heart": 113,
+      "paw": 72,
+      "star": 39
     },
     "comments": [
       {
@@ -5784,8 +5978,8 @@
       "雀巢酒馆"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 57,
+      "heart": 93,
+      "paw": 58,
       "star": 30
     },
     "comments": [
@@ -5818,7 +6012,7 @@
       "门锁"
     ],
     "reactions": {
-      "heart": 51,
+      "heart": 52,
       "paw": 35,
       "star": 17
     },
@@ -5843,7 +6037,7 @@
       "酒馆"
     ],
     "reactions": {
-      "heart": 76,
+      "heart": 77,
       "paw": 52,
       "star": 26
     },
@@ -5877,9 +6071,9 @@
       "被需要"
     ],
     "reactions": {
-      "heart": 132,
-      "paw": 97,
-      "star": 54
+      "heart": 133,
+      "paw": 99,
+      "star": 55
     },
     "comments": [
       {
@@ -5915,9 +6109,9 @@
       "偷听"
     ],
     "reactions": {
-      "heart": 110,
-      "paw": 65,
-      "star": 39
+      "heart": 113,
+      "paw": 67,
+      "star": 40
     },
     "comments": [
       {
@@ -5954,8 +6148,8 @@
     ],
     "reactions": {
       "heart": 129,
-      "paw": 80,
-      "star": 43
+      "paw": 82,
+      "star": 44
     },
     "comments": [
       {
@@ -5993,7 +6187,7 @@
     "reactions": {
       "heart": 142,
       "paw": 98,
-      "star": 58
+      "star": 59
     },
     "comments": [
       {
@@ -6030,7 +6224,7 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 50,
+      "heart": 51,
       "paw": 36,
       "star": 20
     },
@@ -6066,8 +6260,8 @@
     ],
     "reactions": {
       "heart": 65,
-      "paw": 44,
-      "star": 26
+      "paw": 45,
+      "star": 27
     },
     "comments": [
       {
@@ -6101,7 +6295,7 @@
     "reactions": {
       "heart": 63,
       "paw": 39,
-      "star": 18
+      "star": 19
     },
     "comments": [
       {
@@ -6165,9 +6359,9 @@
       "矿坑"
     ],
     "reactions": {
-      "heart": 77,
-      "paw": 46,
-      "star": 30
+      "heart": 80,
+      "paw": 48,
+      "star": 31
     },
     "comments": [
       {
@@ -6196,8 +6390,8 @@
       "泽罗恩"
     ],
     "reactions": {
-      "heart": 49,
-      "paw": 32,
+      "heart": 50,
+      "paw": 33,
       "star": 17
     },
     "comments": []
@@ -6221,8 +6415,8 @@
       "暮色将至"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 40,
+      "heart": 67,
+      "paw": 41,
       "star": 20
     },
     "comments": [
@@ -6257,7 +6451,7 @@
     "reactions": {
       "heart": 78,
       "paw": 52,
-      "star": 24
+      "star": 25
     },
     "comments": [
       {
@@ -6290,7 +6484,7 @@
     ],
     "reactions": {
       "heart": 64,
-      "paw": 45,
+      "paw": 47,
       "star": 23
     },
     "comments": [
@@ -6319,9 +6513,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 70,
-      "star": 37
+      "heart": 105,
+      "paw": 71,
+      "star": 38
     },
     "comments": [
       {
@@ -6358,7 +6552,7 @@
     ],
     "reactions": {
       "heart": 74,
-      "paw": 51,
+      "paw": 52,
       "star": 24
     },
     "comments": [
@@ -6391,8 +6585,8 @@
       "独行"
     ],
     "reactions": {
-      "heart": 51,
-      "paw": 37,
+      "heart": 53,
+      "paw": 38,
       "star": 19
     },
     "comments": []
@@ -6416,7 +6610,7 @@
       "火种室发现"
     ],
     "reactions": {
-      "heart": 72,
+      "heart": 74,
       "paw": 46,
       "star": 22
     },
@@ -6450,9 +6644,9 @@
       "火种室思考"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 82,
       "paw": 51,
-      "star": 27
+      "star": 28
     },
     "comments": [
       {
@@ -6485,8 +6679,8 @@
     ],
     "reactions": {
       "heart": 56,
-      "paw": 38,
-      "star": 17
+      "paw": 40,
+      "star": 18
     },
     "comments": [
       {
@@ -6514,8 +6708,8 @@
       "分析"
     ],
     "reactions": {
-      "heart": 96,
-      "paw": 64,
+      "heart": 99,
+      "paw": 65,
       "star": 35
     },
     "comments": [
@@ -6552,8 +6746,8 @@
       "信封背面"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 55,
+      "heart": 83,
+      "paw": 57,
       "star": 31
     },
     "comments": [
@@ -6586,7 +6780,7 @@
       "独行"
     ],
     "reactions": {
-      "heart": 48,
+      "heart": 51,
       "paw": 30,
       "star": 21
     },
@@ -6612,8 +6806,8 @@
     ],
     "reactions": {
       "heart": 103,
-      "paw": 69,
-      "star": 42
+      "paw": 71,
+      "star": 43
     },
     "comments": [
       {
@@ -6646,8 +6840,8 @@
     ],
     "reactions": {
       "heart": 98,
-      "paw": 61,
-      "star": 38
+      "paw": 63,
+      "star": 39
     },
     "comments": [
       {
@@ -6675,9 +6869,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 89,
+      "heart": 92,
       "paw": 56,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -6709,9 +6903,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 130,
+      "heart": 133,
       "paw": 88,
-      "star": 48
+      "star": 49
     },
     "comments": [
       {
@@ -6743,9 +6937,9 @@
       "不安"
     ],
     "reactions": {
-      "heart": 104,
-      "paw": 68,
-      "star": 37
+      "heart": 106,
+      "paw": 70,
+      "star": 38
     },
     "comments": [
       {
@@ -6777,7 +6971,7 @@
       "发现"
     ],
     "reactions": {
-      "heart": 75,
+      "heart": 76,
       "paw": 50,
       "star": 28
     },
@@ -6802,8 +6996,8 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 107,
-      "paw": 74,
+      "heart": 110,
+      "paw": 75,
       "star": 43
     },
     "comments": [
@@ -6836,8 +7030,8 @@
       "荧光线"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 65,
+      "heart": 95,
+      "paw": 66,
       "star": 34
     },
     "comments": [
@@ -6870,8 +7064,8 @@
       "线索"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 48,
+      "heart": 76,
+      "paw": 50,
       "star": 29
     },
     "comments": [
@@ -6900,8 +7094,8 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 124,
-      "paw": 88,
+      "heart": 125,
+      "paw": 89,
       "star": 50
     },
     "comments": [
@@ -6934,8 +7128,8 @@
       "沃"
     ],
     "reactions": {
-      "heart": 109,
-      "paw": 70,
+      "heart": 111,
+      "paw": 72,
       "star": 40
     },
     "comments": [
@@ -6989,9 +7183,9 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 60,
-      "star": 31
+      "heart": 90,
+      "paw": 61,
+      "star": 32
     },
     "comments": [
       {
@@ -7023,9 +7217,9 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 78,
-      "paw": 48,
-      "star": 27
+      "heart": 81,
+      "paw": 50,
+      "star": 28
     },
     "comments": [
       {
@@ -7053,9 +7247,9 @@
       "追踪"
     ],
     "reactions": {
-      "heart": 97,
-      "paw": 69,
-      "star": 36
+      "heart": 100,
+      "paw": 71,
+      "star": 37
     },
     "comments": [
       {
@@ -7088,8 +7282,8 @@
     ],
     "reactions": {
       "heart": 76,
-      "paw": 54,
-      "star": 28
+      "paw": 56,
+      "star": 29
     },
     "comments": [
       {
@@ -7117,7 +7311,7 @@
       "成长"
     ],
     "reactions": {
-      "heart": 114,
+      "heart": 115,
       "paw": 78,
       "star": 41
     },
@@ -7151,9 +7345,9 @@
       "归"
     ],
     "reactions": {
-      "heart": 53,
-      "paw": 38,
-      "star": 22
+      "heart": 55,
+      "paw": 39,
+      "star": 23
     },
     "comments": []
   },
@@ -7176,7 +7370,7 @@
       "有缘人收"
     ],
     "reactions": {
-      "heart": 83,
+      "heart": 84,
       "paw": 54,
       "star": 28
     },
@@ -7210,9 +7404,9 @@
       "镇东线索"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 50,
-      "star": 27
+      "heart": 77,
+      "paw": 51,
+      "star": 28
     },
     "comments": [
       {
@@ -7246,7 +7440,7 @@
     "reactions": {
       "heart": 63,
       "paw": 41,
-      "star": 22
+      "star": 23
     },
     "comments": [
       {
@@ -7275,8 +7469,8 @@
     ],
     "reactions": {
       "heart": 71,
-      "paw": 44,
-      "star": 23
+      "paw": 45,
+      "star": 24
     },
     "comments": [
       {
@@ -7304,7 +7498,7 @@
       "旻求助"
     ],
     "reactions": {
-      "heart": 113,
+      "heart": 114,
       "paw": 74,
       "star": 42
     },
@@ -7338,7 +7532,7 @@
       "归"
     ],
     "reactions": {
-      "heart": 51,
+      "heart": 52,
       "paw": 34,
       "star": 18
     },
@@ -7364,9 +7558,9 @@
       "续火之后"
     ],
     "reactions": {
-      "heart": 72,
+      "heart": 73,
       "paw": 55,
-      "star": 29
+      "star": 30
     },
     "comments": [
       {
@@ -7399,9 +7593,9 @@
       "内省"
     ],
     "reactions": {
-      "heart": 70,
+      "heart": 72,
       "paw": 42,
-      "star": 23
+      "star": 24
     },
     "comments": [
       {
@@ -7434,8 +7628,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 104,
-      "paw": 70,
+      "heart": 106,
+      "paw": 71,
       "star": 40
     },
     "comments": [
@@ -7469,9 +7663,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 71,
-      "paw": 47,
-      "star": 27
+      "heart": 72,
+      "paw": 49,
+      "star": 28
     },
     "comments": [
       {
@@ -7500,9 +7694,9 @@
       "续火之后"
     ],
     "reactions": {
-      "heart": 87,
+      "heart": 88,
       "paw": 63,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -7541,7 +7735,7 @@
     "reactions": {
       "heart": 50,
       "paw": 27,
-      "star": 17
+      "star": 18
     },
     "comments": []
   },
@@ -7564,7 +7758,7 @@
       "市集"
     ],
     "reactions": {
-      "heart": 88,
+      "heart": 90,
       "paw": 61,
       "star": 32
     },
@@ -7598,9 +7792,9 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 70,
-      "paw": 44,
-      "star": 25
+      "heart": 73,
+      "paw": 46,
+      "star": 26
     },
     "comments": [
       {
@@ -7632,8 +7826,8 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 115,
-      "paw": 77,
+      "heart": 116,
+      "paw": 78,
       "star": 43
     },
     "comments": [
@@ -7670,8 +7864,8 @@
       "市集"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 49,
+      "heart": 74,
+      "paw": 51,
       "star": 25
     },
     "comments": [
@@ -7701,8 +7895,8 @@
     ],
     "reactions": {
       "heart": 97,
-      "paw": 67,
-      "star": 39
+      "paw": 68,
+      "star": 40
     },
     "comments": [
       {
@@ -7736,7 +7930,7 @@
     "reactions": {
       "heart": 59,
       "paw": 38,
-      "star": 20
+      "star": 21
     },
     "comments": []
   },
@@ -7760,7 +7954,7 @@
     ],
     "reactions": {
       "heart": 81,
-      "paw": 56,
+      "paw": 58,
       "star": 27
     },
     "comments": [
@@ -7794,8 +7988,8 @@
     ],
     "reactions": {
       "heart": 79,
-      "paw": 46,
-      "star": 25
+      "paw": 47,
+      "star": 26
     },
     "comments": [
       {
@@ -7827,9 +8021,9 @@
       "不再等待"
     ],
     "reactions": {
-      "heart": 61,
-      "paw": 46,
-      "star": 21
+      "heart": 64,
+      "paw": 47,
+      "star": 22
     },
     "comments": [
       {
@@ -7857,9 +8051,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 76,
-      "star": 43
+      "heart": 108,
+      "paw": 78,
+      "star": 44
     },
     "comments": [
       {
@@ -7891,9 +8085,9 @@
       "等到了"
     ],
     "reactions": {
-      "heart": 93,
+      "heart": 95,
       "paw": 66,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -7925,7 +8119,7 @@
       "泽罗恩"
     ],
     "reactions": {
-      "heart": 51,
+      "heart": 54,
       "paw": 35,
       "star": 19
     },
@@ -7986,9 +8180,9 @@
       "温暖"
     ],
     "reactions": {
-      "heart": 153,
+      "heart": 156,
       "paw": 104,
-      "star": 56
+      "star": 57
     },
     "comments": [
       {
@@ -8021,9 +8215,9 @@
       "同行"
     ],
     "reactions": {
-      "heart": 88,
+      "heart": 89,
       "paw": 58,
-      "star": 30
+      "star": 31
     },
     "comments": [
       {
@@ -8052,8 +8246,8 @@
       "收束"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 64,
+      "heart": 103,
+      "paw": 65,
       "star": 35
     },
     "comments": [
@@ -8087,9 +8281,9 @@
       "主线收束"
     ],
     "reactions": {
-      "heart": 80,
+      "heart": 83,
       "paw": 55,
-      "star": 27
+      "star": 28
     },
     "comments": [
       {
@@ -8122,8 +8316,8 @@
       "暮色"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 37,
+      "heart": 59,
+      "paw": 39,
       "star": 21
     },
     "comments": []
@@ -8147,8 +8341,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 109,
-      "paw": 69,
+      "heart": 110,
+      "paw": 70,
       "star": 41
     },
     "comments": [
@@ -8181,8 +8375,8 @@
       "冒险"
     ],
     "reactions": {
-      "heart": 126,
-      "paw": 86,
+      "heart": 127,
+      "paw": 87,
       "star": 47
     },
     "comments": [
@@ -8245,9 +8439,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 105,
-      "paw": 66,
-      "star": 38
+      "heart": 107,
+      "paw": 68,
+      "star": 39
     },
     "comments": [
       {
@@ -8279,8 +8473,8 @@
       "封门开启"
     ],
     "reactions": {
-      "heart": 45,
-      "paw": 26,
+      "heart": 48,
+      "paw": 28,
       "star": 18
     },
     "comments": [
@@ -8314,8 +8508,8 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 58,
+      "heart": 90,
+      "paw": 59,
       "star": 33
     },
     "comments": [
@@ -8346,7 +8540,7 @@
     ],
     "reactions": {
       "heart": 72,
-      "paw": 43,
+      "paw": 44,
       "star": 31
     },
     "comments": [
@@ -8380,9 +8574,9 @@
       "决心"
     ],
     "reactions": {
-      "heart": 107,
+      "heart": 109,
       "paw": 76,
-      "star": 44
+      "star": 45
     },
     "comments": [
       {
@@ -8414,8 +8608,8 @@
       "出发"
     ],
     "reactions": {
-      "heart": 78,
-      "paw": 48,
+      "heart": 79,
+      "paw": 49,
       "star": 27
     },
     "comments": [
@@ -8445,7 +8639,7 @@
       "发现"
     ],
     "reactions": {
-      "heart": 91,
+      "heart": 92,
       "paw": 70,
       "star": 38
     },
@@ -8481,9 +8675,9 @@
       "能量衰退"
     ],
     "reactions": {
-      "heart": 75,
-      "paw": 49,
-      "star": 32
+      "heart": 76,
+      "paw": 51,
+      "star": 33
     },
     "comments": [
       {
@@ -8516,9 +8710,9 @@
       "蓝绿光"
     ],
     "reactions": {
-      "heart": 96,
-      "paw": 59,
-      "star": 42
+      "heart": 99,
+      "paw": 60,
+      "star": 43
     },
     "comments": [
       {
@@ -8547,8 +8741,8 @@
       "心跳脉动"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 52,
+      "heart": 87,
+      "paw": 53,
       "star": 31
     },
     "comments": [
@@ -8578,9 +8772,9 @@
       "温暖"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 77,
-      "star": 47
+      "heart": 119,
+      "paw": 79,
+      "star": 48
     },
     "comments": [
       {
@@ -8613,8 +8807,8 @@
       "关键证据"
     ],
     "reactions": {
-      "heart": 99,
-      "paw": 71,
+      "heart": 101,
+      "paw": 72,
       "star": 39
     },
     "comments": [
@@ -8649,8 +8843,8 @@
     ],
     "reactions": {
       "heart": 84,
-      "paw": 61,
-      "star": 29
+      "paw": 63,
+      "star": 30
     },
     "comments": [
       {
@@ -8716,9 +8910,9 @@
       "主线接入"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 79,
-      "star": 46
+      "heart": 120,
+      "paw": 81,
+      "star": 47
     },
     "comments": [
       {
@@ -8751,8 +8945,8 @@
       "初探"
     ],
     "reactions": {
-      "heart": 65,
-      "paw": 44,
+      "heart": 67,
+      "paw": 46,
       "star": 18
     },
     "comments": [
@@ -8783,7 +8977,7 @@
       "主线线索"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 96,
       "paw": 62,
       "star": 34
     },
@@ -8818,9 +9012,9 @@
       "线索汇集"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 99,
       "paw": 66,
-      "star": 35
+      "star": 36
     },
     "comments": [
       {
@@ -8855,7 +9049,7 @@
     "reactions": {
       "heart": 71,
       "paw": 50,
-      "star": 29
+      "star": 30
     },
     "comments": [
       {
@@ -8888,9 +9082,9 @@
       "成长记录"
     ],
     "reactions": {
-      "heart": 127,
-      "paw": 89,
-      "star": 48
+      "heart": 130,
+      "paw": 91,
+      "star": 49
     },
     "comments": [
       {
@@ -8928,7 +9122,7 @@
     "reactions": {
       "heart": 75,
       "paw": 50,
-      "star": 24
+      "star": 25
     },
     "comments": [
       {
@@ -8957,7 +9151,7 @@
       "线索串联"
     ],
     "reactions": {
-      "heart": 101,
+      "heart": 102,
       "paw": 75,
       "star": 40
     },
@@ -8991,9 +9185,9 @@
       "风亚回来了"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 83,
       "paw": 48,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -9025,8 +9219,8 @@
       "蓝绿色的光"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 55,
+      "heart": 82,
+      "paw": 56,
       "star": 35
     },
     "comments": [
@@ -9055,9 +9249,9 @@
       "三角记号"
     ],
     "reactions": {
-      "heart": 77,
+      "heart": 78,
       "paw": 64,
-      "star": 30
+      "star": 31
     },
     "comments": [
       {
@@ -9090,7 +9284,7 @@
     ],
     "reactions": {
       "heart": 160,
-      "paw": 106,
+      "paw": 107,
       "star": 61
     },
     "comments": [
@@ -9123,9 +9317,9 @@
       "新发现"
     ],
     "reactions": {
-      "heart": 119,
-      "paw": 91,
-      "star": 40
+      "heart": 122,
+      "paw": 92,
+      "star": 41
     },
     "comments": [
       {
@@ -9159,8 +9353,8 @@
     ],
     "reactions": {
       "heart": 92,
-      "paw": 67,
-      "star": 36
+      "paw": 68,
+      "star": 37
     },
     "comments": [
       {
@@ -9193,9 +9387,9 @@
       "狐兰兹"
     ],
     "reactions": {
-      "heart": 107,
+      "heart": 110,
       "paw": 86,
-      "star": 35
+      "star": 36
     },
     "comments": [
       {
@@ -9228,8 +9422,8 @@
     ],
     "reactions": {
       "heart": 72,
-      "paw": 38,
-      "star": 29
+      "paw": 39,
+      "star": 30
     },
     "comments": [
       {
@@ -9261,9 +9455,9 @@
       "等"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 63,
-      "star": 39
+      "heart": 92,
+      "paw": 64,
+      "star": 40
     },
     "comments": []
   },
@@ -9286,9 +9480,9 @@
       "战略性撤退"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 73,
-      "star": 39
+      "heart": 106,
+      "paw": 75,
+      "star": 40
     },
     "comments": [
       {
@@ -9320,9 +9514,9 @@
       "送信"
     ],
     "reactions": {
-      "heart": 102,
+      "heart": 105,
       "paw": 73,
-      "star": 35
+      "star": 36
     },
     "mood": "surprised",
     "comments": [
@@ -9352,7 +9546,7 @@
     ],
     "reactions": {
       "heart": 110,
-      "paw": 69,
+      "paw": 70,
       "star": 39
     },
     "mood": "happy",
@@ -9383,8 +9577,8 @@
     ],
     "reactions": {
       "heart": 80,
-      "paw": 52,
-      "star": 25
+      "paw": 53,
+      "star": 26
     },
     "mood": "calm",
     "comments": [
@@ -9413,9 +9607,9 @@
       "矿坑古道"
     ],
     "reactions": {
-      "heart": 62,
+      "heart": 63,
       "paw": 42,
-      "star": 30
+      "star": 31
     },
     "mood": "thinking",
     "comments": [
@@ -9448,9 +9642,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 34,
-      "star": 22
+      "heart": 60,
+      "paw": 36,
+      "star": 23
     },
     "mood": "sad",
     "comments": []
@@ -9473,9 +9667,9 @@
       "炉火镇"
     ],
     "reactions": {
-      "heart": 77,
+      "heart": 78,
       "paw": 38,
-      "star": 28
+      "star": 29
     },
     "mood": "thinking"
   },
@@ -9497,8 +9691,8 @@
     "character": "旻",
     "timestamp": "2026-04-15T20:10:00+08:00",
     "reactions": {
-      "heart": 86,
-      "paw": 53,
+      "heart": 87,
+      "paw": 55,
       "star": 26
     },
     "mood": "sleepy"
@@ -9521,9 +9715,9 @@
     "character": "提理安",
     "timestamp": "2026-04-15T20:12:00+08:00",
     "reactions": {
-      "heart": 44,
-      "paw": 38,
-      "star": 20
+      "heart": 46,
+      "paw": 39,
+      "star": 21
     },
     "mood": "calm"
   },
@@ -9545,9 +9739,9 @@
     "character": "狐兰兹",
     "timestamp": "2026-04-15T20:15:00+08:00",
     "reactions": {
-      "heart": 80,
-      "paw": 52,
-      "star": 33
+      "heart": 83,
+      "paw": 54,
+      "star": 34
     },
     "mood": "happy"
   },
@@ -9569,9 +9763,9 @@
     "character": "羽烽",
     "timestamp": "2026-04-15T20:18:00+08:00",
     "reactions": {
-      "heart": 64,
-      "paw": 49,
-      "star": 24
+      "heart": 66,
+      "paw": 51,
+      "star": 25
     },
     "mood": "sad"
   },
@@ -9593,9 +9787,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 42,
-      "star": 22
+      "heart": 77,
+      "paw": 44,
+      "star": 23
     },
     "mood": "calm"
   },
@@ -9617,9 +9811,9 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 71,
+      "heart": 72,
       "paw": 33,
-      "star": 21
+      "star": 22
     },
     "mood": "surprised"
   },
@@ -9641,7 +9835,7 @@
       "出发准备"
     ],
     "reactions": {
-      "heart": 56,
+      "heart": 57,
       "paw": 30,
       "star": 14
     },
@@ -9665,8 +9859,8 @@
       "等待"
     ],
     "reactions": {
-      "heart": 68,
-      "paw": 50,
+      "heart": 71,
+      "paw": 52,
       "star": 26
     },
     "mood": "sad"
@@ -9713,9 +9907,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 51,
-      "paw": 36,
-      "star": 16
+      "heart": 52,
+      "paw": 37,
+      "star": 17
     },
     "mood": "sleepy"
   },
@@ -9737,9 +9931,9 @@
       "探索"
     ],
     "reactions": {
-      "heart": 51,
-      "paw": 43,
-      "star": 21
+      "heart": 52,
+      "paw": 45,
+      "star": 22
     },
     "mood": "surprised"
   },
@@ -9761,9 +9955,9 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 47,
-      "paw": 41,
-      "star": 19
+      "heart": 49,
+      "paw": 43,
+      "star": 20
     },
     "mood": "sleepy"
   },
@@ -9785,9 +9979,9 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 62,
-      "star": 34
+      "heart": 90,
+      "paw": 64,
+      "star": 35
     },
     "mood": "happy"
   },
@@ -9809,9 +10003,9 @@
       "社交挑战"
     ],
     "reactions": {
-      "heart": 94,
+      "heart": 96,
       "paw": 64,
-      "star": 36
+      "star": 37
     },
     "mood": "shy"
   },
@@ -9833,9 +10027,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 48,
-      "star": 27
+      "heart": 87,
+      "paw": 50,
+      "star": 28
     },
     "mood": "calm"
   },
@@ -9857,9 +10051,9 @@
       "出发前"
     ],
     "reactions": {
-      "heart": 53,
+      "heart": 55,
       "paw": 31,
-      "star": 18
+      "star": 19
     },
     "mood": "calm"
   },
@@ -9881,9 +10075,9 @@
       "离别"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 33,
-      "star": 22
+      "heart": 59,
+      "paw": 34,
+      "star": 23
     },
     "mood": "thinking"
   },
@@ -9905,9 +10099,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 29,
-      "star": 11
+      "heart": 58,
+      "paw": 31,
+      "star": 12
     },
     "mood": "calm"
   },
@@ -9929,9 +10123,9 @@
       "双关语"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 47,
-      "star": 25
+      "heart": 76,
+      "paw": 48,
+      "star": 26
     },
     "mood": "happy"
   },
@@ -9953,9 +10147,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 83,
       "paw": 54,
-      "star": 30
+      "star": 31
     },
     "mood": "thinking"
   },
@@ -9977,9 +10171,9 @@
       "内省"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 58,
-      "star": 32
+      "heart": 90,
+      "paw": 59,
+      "star": 33
     },
     "mood": "shy"
   },
@@ -10001,8 +10195,8 @@
       "等待"
     ],
     "reactions": {
-      "heart": 69,
-      "paw": 47,
+      "heart": 71,
+      "paw": 48,
       "star": 25
     },
     "mood": "sad"
@@ -10025,9 +10219,9 @@
       "想念"
     ],
     "reactions": {
-      "heart": 70,
+      "heart": 71,
       "paw": 45,
-      "star": 29
+      "star": 30
     },
     "mood": "sad"
   },
@@ -10049,9 +10243,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 65,
+      "heart": 68,
       "paw": 41,
-      "star": 24
+      "star": 25
     },
     "mood": "sad"
   },
@@ -10073,9 +10267,9 @@
       "收束"
     ],
     "reactions": {
-      "heart": 99,
+      "heart": 100,
       "paw": 60,
-      "star": 40
+      "star": 41
     },
     "mood": "calm"
   },
@@ -10097,9 +10291,9 @@
       "道别"
     ],
     "reactions": {
-      "heart": 92,
+      "heart": 95,
       "paw": 56,
-      "star": 36
+      "star": 37
     },
     "mood": "thinking"
   },
@@ -10121,7 +10315,7 @@
       "等待"
     ],
     "reactions": {
-      "heart": 56,
+      "heart": 58,
       "paw": 28,
       "star": 13
     },
@@ -10145,9 +10339,9 @@
       "首日"
     ],
     "reactions": {
-      "heart": 77,
+      "heart": 80,
       "paw": 58,
-      "star": 26
+      "star": 27
     },
     "mood": "surprised"
   },
@@ -10169,9 +10363,9 @@
       "温情"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 46,
-      "star": 22
+      "heart": 61,
+      "paw": 47,
+      "star": 23
     },
     "mood": "calm"
   },
@@ -10193,8 +10387,8 @@
       "发现"
     ],
     "reactions": {
-      "heart": 61,
-      "paw": 46,
+      "heart": 64,
+      "paw": 47,
       "star": 27
     },
     "mood": "calm"
@@ -10217,7 +10411,7 @@
       "读信"
     ],
     "reactions": {
-      "heart": 108,
+      "heart": 109,
       "paw": 66,
       "star": 46
     },
@@ -10241,9 +10435,9 @@
       "触动"
     ],
     "reactions": {
-      "heart": 67,
-      "paw": 44,
-      "star": 25
+      "heart": 69,
+      "paw": 46,
+      "star": 26
     },
     "mood": "thinking"
   },
@@ -10266,7 +10460,7 @@
     ],
     "reactions": {
       "heart": 48,
-      "paw": 28,
+      "paw": 30,
       "star": 18
     },
     "mood": "calm"
@@ -10289,8 +10483,8 @@
       "牵挂"
     ],
     "reactions": {
-      "heart": 79,
-      "paw": 49,
+      "heart": 81,
+      "paw": 50,
       "star": 27
     },
     "mood": "thinking"
@@ -10314,7 +10508,7 @@
     ],
     "reactions": {
       "heart": 52,
-      "paw": 38,
+      "paw": 39,
       "star": 20
     },
     "mood": "sad"
@@ -10338,7 +10532,7 @@
     ],
     "reactions": {
       "heart": 82,
-      "paw": 49,
+      "paw": 50,
       "star": 28
     },
     "mood": "happy"
@@ -10361,8 +10555,8 @@
       "社交挑战"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 57,
+      "heart": 92,
+      "paw": 58,
       "star": 30
     },
     "mood": "shy"
@@ -10385,9 +10579,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 49,
-      "star": 25
+      "heart": 75,
+      "paw": 51,
+      "star": 26
     },
     "mood": "calm"
   },
@@ -10409,9 +10603,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 47,
+      "heart": 50,
       "paw": 34,
-      "star": 18
+      "star": 19
     },
     "mood": "happy"
   },
@@ -10433,9 +10627,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 60,
-      "paw": 38,
-      "star": 22
+      "heart": 62,
+      "paw": 39,
+      "star": 23
     },
     "mood": "calm"
   },
@@ -10459,7 +10653,7 @@
     "reactions": {
       "heart": 66,
       "paw": 46,
-      "star": 25
+      "star": 26
     },
     "mood": "sad"
   },
@@ -10482,7 +10676,7 @@
     ],
     "reactions": {
       "heart": 52,
-      "paw": 33,
+      "paw": 35,
       "star": 18
     },
     "mood": "thinking"
@@ -10505,7 +10699,7 @@
       "双关语"
     ],
     "reactions": {
-      "heart": 77,
+      "heart": 79,
       "paw": 52,
       "star": 28
     },
@@ -10529,8 +10723,8 @@
       "古代记号"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 40,
+      "heart": 58,
+      "paw": 41,
       "star": 24
     },
     "mood": "surprised"
@@ -10553,8 +10747,8 @@
       "发现"
     ],
     "reactions": {
-      "heart": 50,
-      "paw": 38,
+      "heart": 51,
+      "paw": 40,
       "star": 19
     },
     "mood": "thinking"
@@ -10578,8 +10772,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 101,
-      "paw": 67,
+      "heart": 102,
+      "paw": 69,
       "star": 43
     },
     "mood": "happy"
@@ -10602,8 +10796,8 @@
       "紧张"
     ],
     "reactions": {
-      "heart": 71,
-      "paw": 50,
+      "heart": 72,
+      "paw": 51,
       "star": 27
     },
     "mood": "shy"
@@ -10626,9 +10820,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 37,
-      "star": 20
+      "heart": 59,
+      "paw": 38,
+      "star": 21
     },
     "mood": "calm"
   },
@@ -10650,9 +10844,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 29,
-      "star": 16
+      "heart": 58,
+      "paw": 31,
+      "star": 17
     },
     "mood": "calm"
   },
@@ -10674,7 +10868,7 @@
       "取信"
     ],
     "reactions": {
-      "heart": 87,
+      "heart": 88,
       "paw": 50,
       "star": 36
     },
@@ -10698,8 +10892,8 @@
       "失眠"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 41,
+      "heart": 74,
+      "paw": 43,
       "star": 24
     },
     "mood": "thinking"
@@ -10723,9 +10917,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 50,
-      "paw": 39,
-      "star": 21
+      "heart": 53,
+      "paw": 41,
+      "star": 22
     },
     "mood": "happy"
   },
@@ -10747,9 +10941,9 @@
       "决心"
     ],
     "reactions": {
-      "heart": 70,
-      "paw": 45,
-      "star": 23
+      "heart": 71,
+      "paw": 47,
+      "star": 24
     },
     "mood": "calm"
   },
@@ -10771,9 +10965,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 43,
-      "star": 19
+      "heart": 60,
+      "paw": 45,
+      "star": 20
     },
     "mood": "sad"
   },
@@ -10795,8 +10989,8 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 60,
-      "paw": 40,
+      "heart": 62,
+      "paw": 41,
       "star": 20
     },
     "mood": "sad"
@@ -10819,8 +11013,8 @@
       "出发"
     ],
     "reactions": {
-      "heart": 53,
-      "paw": 40,
+      "heart": 55,
+      "paw": 42,
       "star": 23
     },
     "mood": "sleepy"
@@ -10846,8 +11040,8 @@
     ],
     "reactions": {
       "heart": 155,
-      "paw": 101,
-      "star": 59
+      "paw": 103,
+      "star": 60
     },
     "comments": []
   },
@@ -10871,9 +11065,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 99,
+      "heart": 100,
       "paw": 65,
-      "star": 32
+      "star": 33
     },
     "comments": []
   },
@@ -10897,9 +11091,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 133,
-      "paw": 87,
-      "star": 53
+      "heart": 136,
+      "paw": 88,
+      "star": 54
     },
     "comments": []
   },
@@ -10923,9 +11117,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 172,
-      "paw": 112,
-      "star": 68
+      "heart": 174,
+      "paw": 114,
+      "star": 69
     },
     "comments": []
   },
@@ -10950,8 +11144,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 82,
+      "heart": 131,
+      "paw": 84,
       "star": 46
     },
     "comments": []
@@ -10977,7 +11171,7 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 113,
+      "heart": 115,
       "paw": 72,
       "star": 43
     },
@@ -11004,9 +11198,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 201,
+      "heart": 204,
       "paw": 129,
-      "star": 84
+      "star": 85
     },
     "comments": []
   },
@@ -11031,8 +11225,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 178,
-      "paw": 122,
+      "heart": 181,
+      "paw": 123,
       "star": 72
     },
     "comments": []
@@ -11058,8 +11252,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 205,
-      "paw": 136,
+      "heart": 206,
+      "paw": 138,
       "star": 89
     },
     "comments": []
@@ -11085,8 +11279,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 219,
-      "paw": 148,
+      "heart": 221,
+      "paw": 150,
       "star": 100
     },
     "comments": []
@@ -11112,9 +11306,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 225,
-      "paw": 157,
-      "star": 102
+      "heart": 227,
+      "paw": 159,
+      "star": 103
     },
     "comments": []
   },
@@ -11140,8 +11334,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 238,
-      "paw": 164,
+      "heart": 240,
+      "paw": 165,
       "star": 112
     },
     "comments": []
@@ -11166,8 +11360,8 @@
       "风亚"
     ],
     "reactions": {
-      "heart": 267,
-      "paw": 186,
+      "heart": 269,
+      "paw": 188,
       "star": 97
     },
     "comments": [
@@ -11202,8 +11396,8 @@
     ],
     "reactions": {
       "heart": 256,
-      "paw": 147,
-      "star": 106
+      "paw": 149,
+      "star": 107
     },
     "comments": [
       {
@@ -11237,7 +11431,7 @@
     ],
     "reactions": {
       "heart": 254,
-      "paw": 144,
+      "paw": 145,
       "star": 107
     },
     "comments": [
@@ -11275,8 +11469,8 @@
       "狐兰兹"
     ],
     "reactions": {
-      "heart": 253,
-      "paw": 151,
+      "heart": 255,
+      "paw": 153,
       "star": 94
     },
     "comments": [
@@ -11310,8 +11504,8 @@
       "旻"
     ],
     "reactions": {
-      "heart": 217,
-      "paw": 167,
+      "heart": 220,
+      "paw": 168,
       "star": 118
     },
     "comments": [
@@ -11349,9 +11543,9 @@
       "沃弗尔"
     ],
     "reactions": {
-      "heart": 221,
-      "paw": 187,
-      "star": 114
+      "heart": 222,
+      "paw": 188,
+      "star": 115
     },
     "comments": [
       {
