@@ -1,5 +1,200 @@
 [
   {
+    "id": "post_20260508_080200_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "主街市集石阶",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:02:00+08:00",
+    "content": "回来了。\n\n从孪生废镇那边回来——走的路和去时一样长，只是这次没有人在尽头站着了。\n\n今早推开窄门出来，太阳还没完全翻过城墙。主街市集的摊子刚铺开一半，烤串的烟从老位置飘过来。蹲在石阶上要了根蜜渍山椒串，咬一口——辣度还是那个辣度，石头还是那个石头。\n\n昨天的事……不用想。该走完的路走完了。\n\n项链还在领口外面。不收了。以前是不知道该不该露着，现在只是觉得，没什么好藏的。\n\n嗯。串不错。今天的辣椒比前天的香一点。\n\n还行。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/d031f9ea8b864698b9aac3f7e2a4ce48.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Composition: eye-level shot, character sitting on low stone steps, one knee up, relaxed low posture, rule of thirds right positioning, negative space on left showing morning market. Scene: Early morning at a rustic fantasy medieval town market street. Warm golden sunrise filtering through hanging cloth awnings. Stone cobblestones with morning dew. Wooden stalls just opening, faint grill smoke rising. A few distant NPC figures setting up stalls in background. Action/Expression: Sitting casually on worn stone steps eating a grilled meat skewer, relaxed half-lidded expression, looking ahead at morning activity with quiet contentment. One hand holding skewer near mouth, other arm resting on raised knee. Outfit: Dark blue-grey sleeveless vest over grey long-sleeve undershirt, dark brown pants, leather belt with small pouch, boots. Art style: warm storybook illustration, semi-realistic furry, soft diffused morning golden light, detailed stone architecture environment, atmospheric haze. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "日常",
+      "市集",
+      "烤串",
+      "回归"
+    ],
+    "reactions": {
+      "heart": 67,
+      "paw": 45,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "项链露着挺好看的。你那个串分我一口。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "辣椒比前天香……这是什么级别的味觉评价系统 :狐兰兹_shy:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_080200_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "守望亭",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:03:00+08:00",
+    "content": "值班簿翻开新一页。\n\n今天第一件事是写日期。笔停了一秒——“第45天”。上面的“第44天”那一页是空的，昨天整天没写一个字。\n\n肩膀上这只……棕色的，金眼睛的，昨天停上来就没走。今早醒来还在。它比雪羽轻，爪子抓肩膀的力道不一样——雪羽抓得紧，这只松松的，像还没决定要不要留。\n\n“你叫什么。”\n\n它歪头。不答。\n\n行吧。慢慢来。反正守望亭又不赶人走。\n\n写了一行：值班日志第45天·天气晴·守望之火橙红稳定·新鸟在肩·名字待定。\n\n炉火镇的门今天也开着。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/5bd5bdf6668a4d54898bc2f0904b97f8.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Composition: rule of thirds, character positioned on right third of frame, negative space on left showing interior of a stone watchtower with warm light. Medium shot. Scene: Interior of a rustic stone watchtower guardpost at early morning. Warm lamplight illuminating a wooden desk with open logbook and ink. A small brown bird with golden eyes perched on character's right shoulder. Stone walls with pinned maps and notes. Window showing orange sunrise glow outside. Action/Expression: Sitting at desk writing in logbook with a quill, slight upward glance toward the small bird on shoulder with a subtle soft expression of wonder and acceptance. Left hand resting near ink pot. Outfit: Dark green long coat with high collar, brown leather shoulder guard, lighter undershirt visible at neck. Art style: warm storybook illustration, semi-realistic furry, intimate indoor golden lamplight, cozy atmosphere, detailed props. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "守望亭",
+      "新鸟",
+      "值班",
+      "日常"
+    ],
+    "reactions": {
+      "heart": 52,
+      "paw": 38,
+      "star": 18
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "提理安哥！它金色眼睛好好看！！名字要不叫小金？"
+      },
+      {
+        "from": "提理安",
+        "text": "……不叫小金。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_080200_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "calm",
+    "location": "守望之火广场",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:04:00+08:00",
+    "content": "记录册翻到新一页。第㉽页。\n\n坐在广场石凳上写了半天，才发现第一行已经写完了：\n\n“第六幕结束了。”\n\n就……结束了。那条路走完了，那个人也见到了（虽然不是我见到的），那扇门也关上了。该收的线收了，该亮的字亮了。\n\n抬头看了看广场。守望之火今早烧得很稳，橙红色，不蓝不绿。几个早起的住户在火堆旁暖手。熊岩大叔在对面摆面包摊。裁缝大婶跟鱼贩老谢吵价钱。\n\n……挺好的。就是普通的一天。\n\n陶挂件在胸口，不亮也不响，安安静静搁着。“工具也有休息日的。”\n\n今天试着憋一个双关——\n\n不行。还是算了。:狐兰兹_calm:\n\n明天再说。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/66b6efe764494b3d981c57475e9e3000.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Foxlanz's face tattoo must be clearly visible. Composition: bird's eye view, top-down overhead perspective, character small in wide environment of a town square with a central bonfire pit. Scene: Early morning view from above of a fantasy medieval town square. A large stone fire pit in center with steady orange flame. Scattered wooden benches around. A few distant townsfolk crossing the square. Morning mist lingering at edges. Cobblestone ground with patches of moss. Action/Expression: Character sitting cross-legged on a stone bench near the fire pit, writing in a small leather-bound notebook on their knee. Looking down at notebook. Small ceramic pendant visible at chest glowing faintly blue-green. Outfit: Dark reddish-brown hooded cloak over black inner garments, hood down, leather satchel beside them on bench. Art style: warm storybook illustration, semi-realistic furry, bird's eye establishing shot, morning atmosphere with lingering mist, warm firelight contrast with cool dawn air. fully clothed, pants/robe clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "记录册",
+      "广场",
+      "日常",
+      "休息日"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 55,
+      "star": 30
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "工具也有休息日哈哈哈哈哈 :旻_happy:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_080200_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "雁巢酒馆",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:05:00+08:00",
+    "content": "热麦酒。\n\n酒馆老板今早开门就看到我坐在门口等。没问。开锁进去，倒酒推过来。\n\n窗外主街上有人在走。太阳还低。\n\n昨天把信给他了。他出来的时候拍了我一下臂弯。那就行了。\n\n今天不用看着谁。不用跟着谁。不用守什么门。\n\n就坐着喝酒。\n\n酒是热的。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/f843b0fe175343958540cfa9b8a15dac.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Composition: medium shot, shallow depth of field, bokeh background, focus on hands holding a clay mug, character seated at window. Warm interior lighting contrasting cool blue morning light from window. Scene: Interior of a rustic fantasy tavern in early morning. Character sitting alone at a window-side wooden table. Morning blue light streaming through a dusty glass window. A clay mug of hot mead steaming in hands. Wooden beams overhead. Empty tavern, chairs still upside-down on other tables. Action/Expression: Sitting relaxed at window table, both hands wrapped around warm clay mug, gazing out window with neutral composed expression. Steam rising from mug catching window light. Outfit: White flowing robe/toga with gold trim at edges, leather belt with sword sheath at hip, dark arm wraps on forearms. Art style: warm storybook illustration, semi-realistic furry, intimate morning lighting, shallow depth of field with bokeh on background details, peaceful solitude mood. fully clothed, pants/robe clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "酒馆",
+      "日常",
+      "热麦酒",
+      "独处"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 40,
+      "star": 19
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260508_080200_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "主街",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:06:00+08:00",
+    "content": "包扣——又崩了！！！\n\n昨天一天没崩以为它终于消停了结果今早出门第三步“啪”一声熟悉的脆响信件和面包直接腾空我勈叉去接差点把裁缝大婶的布匹架撞飞——\n\n“小旻你这是第几次了！！”\n“本月第十八次大婶您记错了上周二那次不算的！”\n\n好吧总之今天正式恢复送信日常。暖贝昨天就回正常温度了，裂缝日志第1册也合上封底了。窄门那边的事情告一段落。\n\n布告板新消息——\n\n「远洋商船暴鼠疫·百二十人困港外不得靠岸」\n「铁联暂停南征·铁骑全线返营休整」\n「东方大国五月中立庭·呼吁各邦善待往返商旅」\n\n天哪，远洋渡船那个好可怕。被困在船上出不来……还好我是跑陆路的。\n\n熊岩大叔今早又塞了两个圆面包——“一个你的一个给鹿大哥的。”\n\n好嘯跑了！！",
+    "image_url": "https://file.nanobananapro.cloud/20260508/9c37acf2465b4cdea31bec1d9124eaa5.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Composition: dynamic angle, slight motion blur on background, character mid-stride running along a cobblestone street, diagonal composition suggesting forward momentum. Scene: Morning on a medieval fantasy town main street. Character running at full speed past market stalls and townsfolk who dodge aside. Letters and a bread roll flying out of an overstuffed messenger bag. Bright morning sunlight casting long shadows on cobblestones. A bulletin board visible in background with posted notices. Action/Expression: Running at full speed with tongue out, ears flapping back, one arm clutching messenger bag strap, other arm pumping. Expression of energetic joy and determination. A buckle on the bag visibly popping open mid-run. Outfit: Green short-sleeved tunic over lighter undershirt, brown shorts above knee, ankle wraps, messenger bag across chest with visible buckle breaking. Art style: warm storybook illustration, semi-realistic furry, dynamic motion photography style, slight radial blur on background, energetic morning atmosphere. fully clothed, shorts clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "送信",
+      "包扣",
+      "新闻",
+      "日常",
+      "狂奔"
+    ],
+    "reactions": {
+      "heart": 72,
+      "paw": 52,
+      "star": 25
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "第十八次……裁缝大婶的记忆力比你准。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "鼠疫那个……希望他们平安 :狐兰兹_thinking:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_080200_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "沃弗尔石屋",
+    "game_time": "第45天·晨光时分",
+    "timestamp": "2026-05-08T08:07:00+08:00",
+    "content": "门开了。\n\n今天没有第二扇门。没有石台。没有贝壳。\n\n就是自己的石屋。自己的门。门外是镇子。\n\n昨天那扇门关上了。门后面的暖光和炒烟……像沃的村子。但不是今天的事。\n\n站了一会儿。看外面。太阳照进来的角度比昨天高一点。石头地板上有光斑走过去。远处有人跑——好像是那个黑色的邮差，跑得飞快，什么东西掉了又接住了。\n\n腰带挂在墙钩上。两枚贝壳安静。不热不冷。\n\n今天没有要走的路。\n\n沃就站一会儿。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/4e054bcb61524da29de63ce18ccfaac7.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. Composition: side profile shot, character silhouetted against background light from a doorway, rim lighting from side. Character standing in a dark stone room interior looking toward a bright doorway. Scene: Interior of a small stone dwelling at early morning. Character standing in profile facing an open doorway where morning golden light streams in. Sparse furnishings: a stone shelf with a few objects, a low cot, dust motes in the light beam. The room is austere, clean but minimal. A belt with two shell-like objects hanging on a wall hook. Action/Expression: Standing in profile silhouette, one hand resting on the stone door frame, looking out at the morning light with a contemplative neutral expression. Still and quiet posture. Outfit: Dark blue-black long coat, dark pants, simple leather boots. Minimal accessories. Art style: warm storybook illustration, semi-realistic furry, dramatic silhouette with rim lighting, atmospheric dust motes in light beam, quiet contemplative mood. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "石屋",
+      "日常",
+      "独处",
+      "安静"
+    ],
+    "reactions": {
+      "heart": 48,
+      "paw": 32,
+      "star": 15
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260507_141145_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
