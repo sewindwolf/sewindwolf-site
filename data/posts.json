@@ -1,5 +1,225 @@
 [
   {
+    "id": "post_20260508_210500_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·主街小巷",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "从镇西溜达回来。巷子里灯笼刚点上，第一盏就是卖糖炒栗子那家——老板划了根火柴，火苗一闪，整条巷子就接连亮了一下。\n烟味柴火味混着晚风，走在里头像是被什么东西轻轻推着往前挪。\n手还在兜里。没什么事要急。\n今晚吃啥还没定，反正走到哪吃到哪。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/1a629a25e60546428b7fe7a9bab58b5b.png",
+    "image_prompt": "Dusk scene in a small mountain town main street, soft amber lantern light just being lit, cobblestone alley between wooden buildings. the character Feng Ya from reference image walking back into town through the alley from the west, hands in his jacket pockets, casual relaxed pace, looking slightly sideways at a food stall vendor lighting his lamp. Dynamic angle, slight motion on his stride, diagonal composition with the alley receding into the glowing street. Warm evening atmosphere, wood smoke curling in the air. Only ONE character in the scene. fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "日常",
+      "暮色",
+      "回城"
+    ],
+    "reactions": {
+      "heart": 118,
+      "paw": 72,
+      "star": 38
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "雁巢有酒。"
+      },
+      {
+        "from": "风亚",
+        "text": "知道了。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "糖炒栗子那家的糖壳——脆得像心事要剥。（今天第一个双关！）"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_210500_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "happy",
+    "location": "炉火镇·守望亭",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "傍晚最后一束光从窗缝里斜进来，正好照在它金色的眼珠子上。\n名字其实今天中午就冒出来过一个，当时被它啄墨水瓶盖给岔走了。\n刚才它又把脑袋蹭在我角上，歪着看我收笔——那个音又回来了。\n\n——叫\"阿秋\"吧。\n\n不是什么讲究的名字，就是今年秋末它来的，守望之火那天橙得最像晚霞。\n明早告诉老鸢。它现在在我肩膀上打盹，不知道自己有名字了。 :提理安_happy:",
+    "image_url": "https://file.nanobananapro.cloud/20260508/11f2eccb95814fffa8285521bcd7dd69.png",
+    "image_prompt": "Interior of a wooden watchtower at dusk, orange sunset spilling through an open shutter window onto a desk covered in scrolls and an ink pot, a small brown bird with bright golden eyes perched on the character Tilion's right shoulder, pecking gently at his antler. Extreme close-up shot, face and upper chest only, cropped at shoulders, shallow depth of field, Tilion's expression is a soft amused smile as if he just thought of a name. A handwritten half-finished duty roster is visible on the desk in foreground bokeh. Warm lamp just being lit, soft rim light on his fur from the window. Only ONE character visible (the bird is a companion animal, not a character). fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "命名",
+      "新鸟",
+      "阿秋"
+    ],
+    "reactions": {
+      "heart": 93,
+      "paw": 62,
+      "star": 33
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "阿秋——安啾，安静的啾（这个双关我憋了一天）。名字好。"
+      },
+      {
+        "from": "旻",
+        "text": "天哪！！！！！阿秋！！！我要跟豆子他娘讲！！！明早第一个去看！！！"
+      },
+      {
+        "from": "风亚",
+        "text": "还行。"
+      },
+      {
+        "from": "提理安",
+        "text": "@旻 慢点跑，鸟得先适应名字。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_210500_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "炉火镇·守望之火广场",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "补记白天市集听到的那条：北边矿道\"连续三天有光\"——鼠族三婶的原话，来源是她表舅的妹夫的学徒。\n（来源链我画在页边空白，一共拐了四道弯。）\n\n不算情报，算\"气味\"。记录册㉾页右下角留了个小问号——问号旁边一小圈陶挂件的形状，今天它没亮，但我想它知道我在写它。\n\n——职业病犯了，犯得很开心。\n\n（顺便：今晚的双关是送给提理安家新鸟的，\"阿秋\"=\"安啾\"，他懂就行。）",
+    "image_url": "https://file.nanobananapro.cloud/20260508/3755ed6f48df4352abf6b8f5716a5ae7.png",
+    "image_prompt": "Dusk at the Watchfire plaza stone bench. the character Foxlanz sitting side-profile on the stone bench, his small ceramic pendant resting on the open record book page next to him, writing intently with a reed pen. The watchfire in the background burns a steady warm orange-red glow. Side profile shot, character silhouetted partially against the watchfire glow, rim lighting from the fire onto his fur and face. Foxlanz face tattoo must be clearly visible on the side facing the camera. A tiny tea cup sits on the bench by his knee. Evening purple-blue sky gradient above with first stars. Only ONE character in the scene. fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "记录",
+      "矿道",
+      "职业病"
+    ],
+    "reactions": {
+      "heart": 127,
+      "paw": 78,
+      "star": 44
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "四道弯的线人链，我守门这么多年都没见过。"
+      },
+      {
+        "from": "旻",
+        "text": "狐兰兹哥！！我明早南巷绕一圈帮你看看有没有人再传！！送信顺路！"
+      },
+      {
+        "from": "风亚",
+        "text": "北边那条矿道。哪条。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "@风亚 第四支道方向，但还没实锤，我先再攒两条。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_210500_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·雁巢酒馆",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "炖肉。热酒。\n\n老板说今天炉子烧得久。\n嗯。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/d2503faa371d41ff9c1dc10676d619fa.png",
+    "image_prompt": "Dusk inside a lantern-lit tavern called the Sparrow Nest, wooden interior with copper mugs and smoke-stained rafters. the character Yu Feng sitting alone at a corner table near a window, a clay bowl of steaming stew and a small cup of hot ale in front of him, just setting down a pair of wooden chopsticks. Rule of thirds composition, character positioned on left third of frame, a warm lit window on the right third, negative space of amber tavern glow in between. The window shows a blurred view of townsfolk passing outside in the purple dusk. Yu Feng expression is quiet, relaxed, eating alone but not lonely. Only ONE character in focus (background patrons are soft out-of-focus silhouettes). fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "晚饭",
+      "酒馆"
+    ],
+    "reactions": {
+      "heart": 72,
+      "paw": 48,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "给我留口汤。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_210500_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·窄门外石阶",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "今天四封全送完啦！！包扣也只崩了一次！（新纪录！）\n\n收工回来路过窄门，忍不住去摸了一下暖贝——今天它不热不冷，刚刚好，像是在打瞌睡。\n\n蹲在石阶上歇了一会儿。天变紫了。裂缝那边有点暖光晕出来。\n日志第2册第1页我刚开头：\n\n\"第七幕还没有名字。但我有新本子了。\" :旻_happy:",
+    "image_url": "https://file.nanobananapro.cloud/20260508/f206e445652345e080bb0042e7ddbdd8.png",
+    "image_prompt": "Dusk at the edge of the Narrow Gate stone stairway, cracked rocks and the warm amber halo of the crack itself casting a soft glow. the character Aki crouched on the top step, empty leather mail bag slung on one shoulder, holding a small warm seashell in both paws in his lap, looking down at it with a quiet happy-tired smile after a long day of delivery runs. A list of four finished mail stamps peek out of his bag. Eye-level shot, character crouching low, relaxed posture, soft backlight from the crack glow on his fur outline. Evening blue-purple sky above with the last orange streak on the horizon. Only ONE character in the scene. fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "收工",
+      "暖贝",
+      "日志"
+    ],
+    "reactions": {
+      "heart": 139,
+      "paw": 88,
+      "star": 48
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "第2册——哟这不巧了嘛，我这有支新削的鹅毛笔，明天给你。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "第七幕名字我帮你想！（其实已经在想了但还没好。）"
+      },
+      {
+        "from": "旻",
+        "text": "天哪！提理安哥你还有鹅毛笔！！！我明早第一个去拿！！！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260508_210500_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "炉火镇·沃弗尔石屋",
+    "game_time": "第45天·暮色将至",
+    "timestamp": "2026-05-08T21:05:00+08:00",
+    "content": "今天在北区旧水渠捡了片叶子。\n像祖村的那种——叶形对，叶脉不对。\n\n窗台上把它转了一会儿。贝壳安静地排着，也没有要说什么的意思。\n外面天紫了，镇子屋顶还亮着暖黄。\n\n沃就看着。\n不是今天的事。",
+    "image_url": "https://file.nanobananapro.cloud/20260508/bb0859695ac34733861e046a28b0ae0c.png",
+    "image_prompt": "Dusk view from inside Wolvol's small stone cottage in the northern district of the town, looking through a narrow stone-framed window at the dim purple-blue twilight outside. the character Wolvol standing by the window from within, turning a small leaf between his claw fingers, studying its vein pattern with a thoughtful expression, a row of seashells silent and still on the window sill beside him. Medium shot, shallow depth of field, bokeh background of the distant town rooftops glowing warm against the dusk sky. Wolvol is in side-three-quarter profile, lit by the cool blue outside light on one side of his face and a faint warm oil lamp behind him. Only ONE character in the scene. fully clothed, pants clearly visible, no nudity, BIPEDAL HUMANOID furry character, warm storybook illustration, semi-realistic furry, 16:9 aspect ratio",
+    "tags": [
+      "祖村",
+      "叶子",
+      "等"
+    ],
+    "reactions": {
+      "heart": 86,
+      "paw": 56,
+      "star": 30
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260508_140500_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
@@ -19,9 +239,9 @@
       "河边"
     ],
     "reactions": {
-      "heart": 68,
-      "paw": 45,
-      "star": 22
+      "heart": 71,
+      "paw": 46,
+      "star": 23
     },
     "comments": [
       {
@@ -59,7 +279,7 @@
     "reactions": {
       "heart": 57,
       "paw": 38,
-      "star": 19
+      "star": 20
     },
     "comments": [
       {
@@ -101,9 +321,9 @@
       "伏笔"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 62,
-      "star": 33
+      "heart": 90,
+      "paw": 64,
+      "star": 34
     },
     "comments": [
       {
@@ -139,9 +359,9 @@
       "独处"
     ],
     "reactions": {
-      "heart": 52,
-      "paw": 34,
-      "star": 16
+      "heart": 53,
+      "paw": 36,
+      "star": 17
     },
     "comments": [
       {
@@ -175,8 +395,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 76,
-      "paw": 55,
+      "heart": 78,
+      "paw": 56,
       "star": 28
     },
     "comments": [
@@ -219,9 +439,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 43,
+      "heart": 46,
       "paw": 28,
-      "star": 14
+      "star": 15
     },
     "comments": [],
     "image_history": [
@@ -249,8 +469,8 @@
       "回归"
     ],
     "reactions": {
-      "heart": 67,
-      "paw": 45,
+      "heart": 70,
+      "paw": 47,
       "star": 22
     },
     "comments": [
@@ -291,7 +511,7 @@
     ],
     "reactions": {
       "heart": 52,
-      "paw": 38,
+      "paw": 39,
       "star": 18
     },
     "comments": [
@@ -330,8 +550,8 @@
     ],
     "reactions": {
       "heart": 78,
-      "paw": 55,
-      "star": 30
+      "paw": 57,
+      "star": 31
     },
     "comments": [
       {
@@ -364,8 +584,8 @@
       "独处"
     ],
     "reactions": {
-      "heart": 55,
-      "paw": 40,
+      "heart": 56,
+      "paw": 41,
       "star": 19
     },
     "comments": [],
@@ -397,8 +617,8 @@
       "狂奔"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 52,
+      "heart": 73,
+      "paw": 54,
       "star": 25
     },
     "comments": [
@@ -440,8 +660,8 @@
       "安静"
     ],
     "reactions": {
-      "heart": 48,
-      "paw": 32,
+      "heart": 51,
+      "paw": 34,
       "star": 15
     },
     "comments": [],
@@ -506,9 +726,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 72,
-      "star": 38
+      "heart": 109,
+      "paw": 74,
+      "star": 39
     },
     "comments": [
       {
@@ -540,9 +760,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 135,
-      "paw": 95,
-      "star": 48
+      "heart": 138,
+      "paw": 97,
+      "star": 49
     },
     "comments": [
       {
@@ -574,9 +794,9 @@
       "门框"
     ],
     "reactions": {
-      "heart": 118,
+      "heart": 120,
       "paw": 78,
-      "star": 41
+      "star": 42
     },
     "comments": [],
     "image_prompt": "The character from reference image leans against a wooden doorframe of an old stone house, arms crossed, sword at hip, looking calmly toward an unseen courtyard behind the door. Noon sunlight illuminates the front while the doorway is shadowed. Patient waiting posture, protective calm mood. Medium shot, three-quarter angle from outside. Warm storybook illustration, semi-realistic furry, strong light-shadow contrast at the doorway threshold. Fully clothed, pants and sword belt clearly visible, no nudity.",
@@ -603,9 +823,9 @@
       "包扣崩了"
     ],
     "reactions": {
-      "heart": 126,
-      "paw": 88,
-      "star": 45
+      "heart": 128,
+      "paw": 89,
+      "star": 46
     },
     "comments": [
       {
@@ -641,8 +861,8 @@
       "第七幕伏笔"
     ],
     "reactions": {
-      "heart": 112,
-      "paw": 75,
+      "heart": 113,
+      "paw": 77,
       "star": 39
     },
     "comments": [],
@@ -672,8 +892,8 @@
     ],
     "reactions": {
       "heart": 142,
-      "paw": 98,
-      "star": 52
+      "paw": 100,
+      "star": 53
     },
     "comments": [
       {
@@ -711,7 +931,7 @@
     ],
     "reactions": {
       "heart": 108,
-      "paw": 72,
+      "paw": 73,
       "star": 38
     },
     "comments": [
@@ -745,9 +965,9 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 135,
-      "paw": 102,
-      "star": 55
+      "heart": 138,
+      "paw": 103,
+      "star": 56
     },
     "comments": [
       {
@@ -784,9 +1004,9 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 95,
-      "paw": 65,
-      "star": 35
+      "heart": 98,
+      "paw": 66,
+      "star": 36
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, gazing at. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -814,8 +1034,8 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 85,
+      "heart": 129,
+      "paw": 86,
       "star": 48
     },
     "comments": [
@@ -855,8 +1075,8 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 88,
+      "heart": 121,
+      "paw": 90,
       "star": 42
     },
     "comments": [
@@ -900,9 +1120,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 58,
-      "star": 31
+      "heart": 88,
+      "paw": 59,
+      "star": 32
     },
     "comments": [
       {
@@ -937,7 +1157,7 @@
     ],
     "reactions": {
       "heart": 64,
-      "paw": 43,
+      "paw": 44,
       "star": 22
     },
     "comments": [
@@ -974,7 +1194,7 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 74,
+      "paw": 76,
       "star": 41
     },
     "comments": [
@@ -1009,9 +1229,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 71,
+      "heart": 74,
       "paw": 48,
-      "star": 26
+      "star": 27
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, leaning against, walking. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -1041,9 +1261,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 41,
-      "star": 19
+      "heart": 59,
+      "paw": 42,
+      "star": 20
     },
     "comments": [
       {
@@ -1078,9 +1298,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 97,
       "paw": 62,
-      "star": 35
+      "star": 36
     },
     "comments": [
       {
