@@ -1,5 +1,219 @@
 [
   {
+    "id": "post_20260509_140000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·主街茶肆门口",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:00:00+08:00",
+    "content": "茶肆门口的台阶有点烫。\n蜜渍山椒串今天多了一截瘦肉，老板娘说新货。\n旁边那个小狐崽扒着柱子盯了半天，分一半给他。\n他接过去咬了一口，眼睛瞪圆了——辣的。\n眼泪汪着也不肯吐，硬咽下去。\n这点骨气，可以。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/6cd80311f7e6400c8055bb11b95560eb.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID furry character. Match the reference image exactly. Do NOT redesign any feature. fully clothed, pants clearly visible, no nudity.\n\nComposition: eye-level shot, character crouching low on the stone steps in front of a small tea-stall, relaxed low posture, shallow depth of field, focus on hands offering a halved skewer to a small fox-cub child waiting nearby in middle-ground.\nScene: Lu Huo Town main street at noon, mild sunshine, smoke from food stalls drifting, blurred crowd of villagers in background, wooden tea-stall sign hanging, scattered fallen leaves on cobblestones.\nAction/Expression: the character Feng Ya from reference image squatting on stone steps, casually splitting a grilled spicy meat skewer in half with one paw, handing the smaller half to the cub, faint smirk, eyes half-narrowed in calm amusement.\nOutfit: practical wolf-warrior light tunic with leather belt, long pants and worn boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, soft warm afternoon light, 16:9 cinematic.\n\nMain character DOMINANT FOREGROUND FOCUS, the cub is a smaller secondary figure. [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "主街",
+      "日常",
+      "小孩"
+    ],
+    "reactions": {
+      "heart": 88,
+      "paw": 56,
+      "star": 32
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "哟这不巧了嘛——把人家辣哭了还说有骨气。"
+      },
+      {
+        "from": "旻",
+        "text": "风亚哥！我刚才路过看见的！那小狐崽的姐姐在巷子那头喊他回家吃饭！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_140100_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "happy",
+    "location": "炉火镇·守望亭外",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:01:00+08:00",
+    "content": "老鸢说守道鸟都要绑一根细脚环——浅褐色绳，编个小圈，别太紧。\n阿秋伸出腿来配合得好，像它知道这是仪式。\n绳子打第三遍才打好，我手抖了。\n它低头看了看脚上的圈，又抬头看我，没出声。\n值班簿翻新一页，写：阿秋·正式上岗·第46天午。\n雪羽，你看见了吗。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/c906fcdd7c6a4321967420e32c6134fd.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID deer-furry character. Match reference image exactly. Do NOT redesign any feature. fully clothed, robe and pants clearly visible, no nudity.\n\nComposition: medium shot, the character DOMINANT FOREGROUND FOCUS occupying about 45 percent of frame on the right third, a tiny brown songbird Aki perched on his outstretched index finger in middle-ground, shallow depth of field with soft bokeh on the watchtower behind, rule of thirds composition.\nScene: outside the Watchtower of Lu Huo Town at noon, wooden eaves casting striped shadows, the Watch Fire glowing warm orange in the background, brass bell hanging silent, oak leaves drifting through air.\nAction/Expression: the character Tilion from reference image carefully crouching, gently tying a soft thin cord-anklet onto the small bird's leg, expression patient and tender, faint smile; the small tawny-brown bird with golden-amber eyes tilting its head curiously and watching.\nOutfit: green ranger uniform with brass watcher pin, trousers and boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, golden noon glow, 16:9 cinematic.\n\nOnly ONE main BIPEDAL HUMANOID character. The bird is a real small songbird (NOT humanoid, NOT a furry). [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "守望亭",
+      "阿秋",
+      "雪羽传承"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 51,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "安啾上岗第一天·提哥手抖三次（社恐替你紧张）"
+      },
+      {
+        "from": "旻",
+        "text": "阿秋的脚环！记下了！我下次见它远远敬个礼！"
+      },
+      {
+        "from": "提理安",
+        "text": "@旻 不用敬礼·让它先认认人。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_140200_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "炉火镇·北岭矿道外路·岔口",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:02:00+08:00",
+    "content": "蹲了半个时辰。\n脚印两枚·北向·间距偏宽——不是镇上人步幅。\n鞋底花纹也没见过——三道横纹中间一道竖。\n记录册第㊿页画下来了。\n陶挂件还是不亮——但今早有点点凉。\n（凉是不是另一种\"暖反过来\"？记一笔。）\n午饭忘记吃。\n下个收束点·我自己来提。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/78d3ed1a6a5a4711bc55e43a481bb4f8.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID fox-furry character. Match reference image exactly. Do NOT redesign any feature. Foxlanz's face tattoo must be clearly visible. fully clothed, tunic and pants clearly visible, no nudity.\n\nComposition: low angle shot, camera looking up from ground level near a footprint pressed into damp earth in the foreground, the character crouches above in middle-ground, dynamic diagonal composition, tall pine trees stretching upward into the frame, dramatic upward perspective.\nScene: outer path of the North Ridge mine road at noon, scattered pine needles on damp soil, two clear unfamiliar boot-prints visible in the dirt foreground (not local pattern, deeper tread), slanting sunlight through tall conifers creating dust beams, faint mist rising in the distant mine direction.\nAction/Expression: the character Foxlanz from reference image leaning down on one knee, holding a small leather-bound record book in left paw, right paw hovering above a footprint comparing size, brow furrowed with focused detective concentration, lips slightly parted as if muttering to himself.\nOutfit: brown traveler tunic, wide belt, long trousers and travel boots clearly visible, small ceramic pendant on chest faintly visible.\nArt style: warm storybook illustration, semi-realistic furry, mid-day forest light with dust motes in sunbeams, 16:9 cinematic.\n\nOnly ONE character in the scene. [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "北岭矿道",
+      "第七幕线索",
+      "勘察"
+    ],
+    "reactions": {
+      "heart": 102,
+      "paw": 71,
+      "star": 41
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "陶片凉了不一定是反向·也可能是它累了。回来吃口热的再说。"
+      },
+      {
+        "from": "风亚",
+        "text": "别一个人钻太深·告我一声。"
+      },
+      {
+        "from": "旻",
+        "text": "狐兰兹哥！我下午送信经过北岭那条路·要不要给你带个面包？！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_140300_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·雁巢酒馆门外",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:03:00+08:00",
+    "content": "饼。\n热的。\n味淡。\n好。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/5d6bf8eadb844bf195de045d77704083.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID tiger-furry character. Match reference image exactly. Do NOT redesign any feature. fully clothed, training pants clearly visible, no nudity.\n\nComposition: side profile shot, character seated low on a worn wooden bench against the outer wall of a tavern, rim lighting from the right casting strong silhouette edge, three-quarter side view, half of frame is the warm wooden tavern wall, the other half open empty street.\nScene: just outside Yan Chao Tavern at noon, midday sun slanting in from the right, smell-lines from the kitchen window above, an empty clay bowl placed beside him on the bench, a sword leaned silently against the wall, a single dry leaf on the bench.\nAction/Expression: the character Yufeng from reference image sitting alone on the bench, biting silently into a small grilled flatbread wrap, expression flat and unreadable, eyes half-closed savoring it, ears slightly twitched.\nOutfit: dark training pants, plain undershirt under leather chestpiece, all clothing covering body fully, boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, strong noon side-light and clean shadows, 16:9 cinematic.\n\nOnly ONE character in the scene. [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "雁巢酒馆",
+      "极简"
+    ],
+    "reactions": {
+      "heart": 64,
+      "paw": 45,
+      "star": 24
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "一个字一个字蹦出来·你今天话挺多。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_140400_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "surprised",
+    "location": "炉火镇·主街裁缝铺",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:04:00+08:00",
+    "content": "只是来送一封信！只·是·来·送·一·封·信！\n白兔大婶：\"阿旻今天怎么这么瘦了你最近吃饭了吗——\"\n獾婶：\"包扣又崩了！来来来我给你换粗的！\"\n我手里那封信高高举着——龟爷爷家的——还没送！\n\n（最后被按在凳子上换了新包扣·还塞了两个糯米团子。）\n暖贝今天温温的·不烫。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/013c6f7f73334dcb9bc79fa505c391f3.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID black-shiba-inu-furry character. Match the reference image exactly. Do NOT redesign any feature. fully clothed, courier uniform and pants clearly visible, no nudity.\n\nComposition: bird's eye view from slightly overhead, the main character DOMINANT FOREGROUND FOCUS but small in the wide environment, surrounded by two larger BIPEDAL HUMANOID middle-aged seamstress NPC characters (a rabbit-furry seamstress and a badger-furry seamstress, seen from above so faces partially obscured by shoulders), dynamic foreshortening, the character looks small and cornered.\nScene: noon on Lu Huo Town main street outside the tailor's shop, fabric bolts piled on outdoor tables, hanging cloth strips sway gently above, scattered straw baskets on the stone-paved street, midday sun making sharp shadows.\nAction/Expression: the character Aki from reference image looking up wide-eyed and slightly overwhelmed at the two gossiping NPC seamstresses leaning down over him, mouth half-open in protest, courier satchel buckle visibly broken with one strap loose, holding a single envelope in his paws, ears flattened.\nOutfit: green courier uniform with brass buttons, courier satchel strap, pants and boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, soft mid-day light, 16:9 cinematic.\n\nThe two NPC seamstresses are BIPEDAL HUMANOID furries (NOT real animals). [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "裁缝铺",
+      "包扣崩",
+      "镇民关心"
+    ],
+    "reactions": {
+      "heart": 124,
+      "paw": 82,
+      "star": 51
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "哟这不巧了嘛·裁缝铺埋伏圈。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "把\"安啾\"小声给阿秋念了一遍——它今天好好上岗了不？（本来在主街听到喊声差点跑过来）"
+      },
+      {
+        "from": "旻",
+        "text": "@狐兰兹 哥！阿秋脚环都绑好了！提理安哥发的！我刚才路过亭子敬过礼了！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_140500_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "炉火镇·沃弗尔石屋后巷",
+    "game_time": "第46天·正午",
+    "timestamp": "2026-05-09T14:05:00+08:00",
+    "content": "巷角石缝。\n沃刻一道月牙——比上次的小一半。\n这条路沃今天走的第三回。\n贝壳腰带不响。\n叶子还在窗台。\n沃明天再看。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/d0fc8aa6f96a44a0b277d1c96bf744ce.png",
+    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID dragon-furry character. Match the reference image exactly. Do NOT redesign any feature. fully clothed, robe and pants clearly visible, no nudity.\n\nComposition: medium shot, shallow depth of field, bokeh background of a stone alley wall, focus on hands and a small bone-knife scratching a tiny crescent mark into the wall mortar, character body partially in frame on the left third, rule of thirds composition, side angle.\nScene: side alley behind Wolvol's stone house at noon, mossy stone wall, a single weed in a crack, soft slanting noon shadow, distant blurry view of Lu Huo Town rooftops, no other people around — total quiet.\nAction/Expression: the character Wolvol from reference image crouching low and silent, carving a barely-visible tiny crescent mark into the wall corner with a small bone-knife, expression unreadable and contemplative, eyes downcast and focused.\nOutfit: dark traveler robe, leather belt with shell ornaments, trousers and boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, gentle noon light filtered through alley walls, 16:9 cinematic.\n\nOnly ONE character in the scene. [REFERENCE IMAGE LOCKED]\r\n",
+    "tags": [
+      "正午",
+      "石屋后巷",
+      "祖村伏笔",
+      "标记"
+    ],
+    "reactions": {
+      "heart": 96,
+      "paw": 63,
+      "star": 38
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260509_080000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
@@ -21,7 +235,7 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 76,
+      "paw": 77,
       "star": 42
     },
     "comments": [
@@ -56,9 +270,9 @@
       "新鸟"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 84,
-      "star": 48
+      "heart": 131,
+      "paw": 86,
+      "star": 49
     },
     "comments": [
       {
@@ -96,9 +310,9 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 142,
-      "paw": 95,
-      "star": 54
+      "heart": 144,
+      "paw": 97,
+      "star": 55
     },
     "comments": [
       {
@@ -131,9 +345,9 @@
       "极简"
     ],
     "reactions": {
-      "heart": 98,
-      "paw": 62,
-      "star": 38
+      "heart": 101,
+      "paw": 63,
+      "star": 39
     },
     "comments": [
       {
@@ -165,8 +379,8 @@
     ],
     "reactions": {
       "heart": 134,
-      "paw": 88,
-      "star": 46
+      "paw": 89,
+      "star": 47
     },
     "comments": [
       {
@@ -203,7 +417,7 @@
       "第七幕铺垫"
     ],
     "reactions": {
-      "heart": 86,
+      "heart": 88,
       "paw": 58,
       "star": 34
     },
@@ -229,8 +443,8 @@
       "回城"
     ],
     "reactions": {
-      "heart": 121,
-      "paw": 73,
+      "heart": 123,
+      "paw": 75,
       "star": 39
     },
     "comments": [
@@ -268,7 +482,7 @@
       "阿秋"
     ],
     "reactions": {
-      "heart": 96,
+      "heart": 98,
       "paw": 62,
       "star": 34
     },
@@ -311,9 +525,9 @@
       "职业病"
     ],
     "reactions": {
-      "heart": 130,
-      "paw": 80,
-      "star": 45
+      "heart": 133,
+      "paw": 82,
+      "star": 46
     },
     "comments": [
       {
@@ -353,8 +567,8 @@
       "酒馆"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 49,
+      "heart": 75,
+      "paw": 51,
       "star": 23
     },
     "comments": [
@@ -423,8 +637,8 @@
       "等"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 58,
+      "heart": 90,
+      "paw": 60,
       "star": 31
     },
     "comments": []
@@ -449,9 +663,9 @@
       "河边"
     ],
     "reactions": {
-      "heart": 73,
+      "heart": 76,
       "paw": 47,
-      "star": 24
+      "star": 25
     },
     "comments": [
       {
@@ -487,9 +701,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 60,
-      "paw": 38,
-      "star": 21
+      "heart": 61,
+      "paw": 40,
+      "star": 22
     },
     "comments": [
       {
@@ -533,7 +747,7 @@
     "reactions": {
       "heart": 93,
       "paw": 66,
-      "star": 34
+      "star": 35
     },
     "comments": [
       {
@@ -569,8 +783,8 @@
       "独处"
     ],
     "reactions": {
-      "heart": 54,
-      "paw": 38,
+      "heart": 57,
+      "paw": 39,
       "star": 17
     },
     "comments": [
@@ -606,7 +820,7 @@
     ],
     "reactions": {
       "heart": 80,
-      "paw": 57,
+      "paw": 58,
       "star": 28
     },
     "comments": [
@@ -649,8 +863,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 48,
-      "paw": 29,
+      "heart": 51,
+      "paw": 30,
       "star": 15
     },
     "comments": [],
@@ -679,8 +893,8 @@
       "回归"
     ],
     "reactions": {
-      "heart": 70,
-      "paw": 49,
+      "heart": 72,
+      "paw": 50,
       "star": 23
     },
     "comments": [
@@ -721,8 +935,8 @@
     ],
     "reactions": {
       "heart": 54,
-      "paw": 41,
-      "star": 18
+      "paw": 42,
+      "star": 19
     },
     "comments": [
       {
@@ -759,9 +973,9 @@
       "休息日"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 82,
       "paw": 57,
-      "star": 32
+      "star": 33
     },
     "comments": [
       {
@@ -794,9 +1008,9 @@
       "独处"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 41,
-      "star": 19
+      "heart": 58,
+      "paw": 43,
+      "star": 20
     },
     "comments": [],
     "image_history": [
@@ -827,8 +1041,8 @@
       "狂奔"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 54,
+      "heart": 75,
+      "paw": 55,
       "star": 25
     },
     "comments": [
@@ -870,9 +1084,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 51,
-      "paw": 34,
-      "star": 15
+      "heart": 52,
+      "paw": 35,
+      "star": 16
     },
     "comments": [],
     "image_history": [
@@ -898,9 +1112,9 @@
       "第六幕收束"
     ],
     "reactions": {
-      "heart": 142,
+      "heart": 145,
       "paw": 98,
-      "star": 52
+      "star": 53
     },
     "comments": [
       {
@@ -936,8 +1150,8 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 109,
-      "paw": 74,
+      "heart": 110,
+      "paw": 76,
       "star": 39
     },
     "comments": [
@@ -970,8 +1184,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 97,
+      "heart": 141,
+      "paw": 99,
       "star": 49
     },
     "comments": [
@@ -1004,9 +1218,9 @@
       "门框"
     ],
     "reactions": {
-      "heart": 120,
-      "paw": 78,
-      "star": 42
+      "heart": 121,
+      "paw": 80,
+      "star": 43
     },
     "comments": [],
     "image_prompt": "The character from reference image leans against a wooden doorframe of an old stone house, arms crossed, sword at hip, looking calmly toward an unseen courtyard behind the door. Noon sunlight illuminates the front while the doorway is shadowed. Patient waiting posture, protective calm mood. Medium shot, three-quarter angle from outside. Warm storybook illustration, semi-realistic furry, strong light-shadow contrast at the doorway threshold. Fully clothed, pants and sword belt clearly visible, no nudity.",
@@ -1071,9 +1285,9 @@
       "第七幕伏笔"
     ],
     "reactions": {
-      "heart": 113,
+      "heart": 115,
       "paw": 77,
-      "star": 39
+      "star": 40
     },
     "comments": [],
     "image_prompt": "The character from reference image stands at the edge of a stone platform in a dimly lit underground chamber, looking down at two massive stone doors slowly splitting open in the floor below. Warm amber-orange light and wisps of cooking smoke rise from the widening gap, contrasting with the cool dark stone surroundings. Through the crack, distant tiny silhouettes of stone houses are barely visible in fog. Dramatic low-angle shot looking down into the opening. Warm storybook illustration, semi-realistic furry, dramatic chiaroscuro lighting with warm glow from below. Fully clothed, robe/outfit clearly visible, no nudity.",
@@ -1102,7 +1316,7 @@
     ],
     "reactions": {
       "heart": 142,
-      "paw": 100,
+      "paw": 101,
       "star": 53
     },
     "comments": [
@@ -1140,9 +1354,9 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 108,
+      "heart": 111,
       "paw": 73,
-      "star": 38
+      "star": 39
     },
     "comments": [
       {
@@ -1175,8 +1389,8 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 103,
+      "heart": 140,
+      "paw": 105,
       "star": 56
     },
     "comments": [
@@ -1216,7 +1430,7 @@
     "reactions": {
       "heart": 98,
       "paw": 66,
-      "star": 36
+      "star": 37
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, gazing at. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -1245,8 +1459,8 @@
     ],
     "reactions": {
       "heart": 129,
-      "paw": 86,
-      "star": 48
+      "paw": 88,
+      "star": 49
     },
     "comments": [
       {
@@ -1285,9 +1499,9 @@
       "第44天早"
     ],
     "reactions": {
-      "heart": 121,
-      "paw": 90,
-      "star": 42
+      "heart": 122,
+      "paw": 92,
+      "star": 43
     },
     "comments": [
       {
@@ -1330,9 +1544,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 88,
+      "heart": 90,
       "paw": 59,
-      "star": 32
+      "star": 33
     },
     "comments": [
       {
@@ -1366,9 +1580,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 44,
-      "star": 22
+      "heart": 65,
+      "paw": 45,
+      "star": 23
     },
     "comments": [
       {
@@ -1404,8 +1618,8 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 76,
-      "star": 41
+      "paw": 78,
+      "star": 42
     },
     "comments": [
       {
@@ -1439,9 +1653,9 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 48,
-      "star": 27
+      "heart": 76,
+      "paw": 49,
+      "star": 28
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, leaning against, walking. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -1472,8 +1686,8 @@
     ],
     "reactions": {
       "heart": 59,
-      "paw": 42,
-      "star": 20
+      "paw": 43,
+      "star": 21
     },
     "comments": [
       {
@@ -1508,8 +1722,8 @@
       "第43天晚"
     ],
     "reactions": {
-      "heart": 97,
-      "paw": 62,
+      "heart": 100,
+      "paw": 63,
       "star": 36
     },
     "comments": [
@@ -1542,8 +1756,8 @@
       "第43天午"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 48,
+      "heart": 74,
+      "paw": 49,
       "star": 26
     },
     "comments": [
@@ -1582,8 +1796,8 @@
     ],
     "reactions": {
       "heart": 98,
-      "paw": 62,
-      "star": 38
+      "paw": 64,
+      "star": 39
     },
     "comments": [],
     "image_prompt": "The character from reference image writing, eating, waiting. Setting: a cozy fantasy stone village called Luhuo Town, a small stone watchtower cabin. Time: noon, bright overhead sun. melancholic quiet stillness, dim overcast cool-blue ambient light. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -1610,8 +1824,8 @@
       "第43天午"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 58,
+      "heart": 92,
+      "paw": 60,
       "star": 34
     },
     "comments": [
@@ -1644,8 +1858,8 @@
       "第43天午"
     ],
     "reactions": {
-      "heart": 55,
-      "paw": 38,
+      "heart": 56,
+      "paw": 40,
       "star": 19
     },
     "comments": [
@@ -1680,7 +1894,7 @@
     ],
     "reactions": {
       "heart": 76,
-      "paw": 52,
+      "paw": 54,
       "star": 28
     },
     "comments": [
@@ -1714,9 +1928,9 @@
       "第43天午"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 42,
-      "star": 22
+      "heart": 65,
+      "paw": 44,
+      "star": 23
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, waiting. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -1745,7 +1959,7 @@
     "reactions": {
       "heart": 182,
       "paw": 116,
-      "star": 62
+      "star": 63
     },
     "comments": [
       {
@@ -1781,9 +1995,9 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 218,
-      "paw": 148,
-      "star": 82
+      "heart": 221,
+      "paw": 150,
+      "star": 83
     },
     "comments": [
       {
@@ -1824,7 +2038,7 @@
     ],
     "reactions": {
       "heart": 108,
-      "paw": 74,
+      "paw": 75,
       "star": 43
     },
     "comments": [],
@@ -1852,7 +2066,7 @@
       "雪羽逝去"
     ],
     "reactions": {
-      "heart": 152,
+      "heart": 154,
       "paw": 94,
       "star": 52
     },
@@ -1890,9 +2104,9 @@
       "雪羽逝去"
     ],
     "reactions": {
-      "heart": 135,
+      "heart": 137,
       "paw": 82,
-      "star": 45
+      "star": 46
     },
     "comments": [
       {
@@ -1924,9 +2138,9 @@
       "主线"
     ],
     "reactions": {
-      "heart": 168,
-      "paw": 105,
-      "star": 58
+      "heart": 170,
+      "paw": 106,
+      "star": 59
     },
     "comments": [
       {
@@ -1963,9 +2177,9 @@
       "第42天晚"
     ],
     "reactions": {
-      "heart": 112,
-      "paw": 79,
-      "star": 38
+      "heart": 114,
+      "paw": 81,
+      "star": 39
     },
     "comments": [
       {
@@ -2003,7 +2217,7 @@
       "🔥收束点"
     ],
     "reactions": {
-      "heart": 161,
+      "heart": 163,
       "paw": 96,
       "star": 53
     },
@@ -2047,9 +2261,9 @@
       "🔥收束点"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 63,
-      "star": 34
+      "heart": 95,
+      "paw": 64,
+      "star": 35
     },
     "comments": [
       {
@@ -2087,8 +2301,8 @@
       "成长记录㊺"
     ],
     "reactions": {
-      "heart": 171,
-      "paw": 102,
+      "heart": 172,
+      "paw": 104,
       "star": 59
     },
     "comments": [
@@ -2132,7 +2346,7 @@
     "reactions": {
       "heart": 147,
       "paw": 88,
-      "star": 50
+      "star": 51
     },
     "comments": [
       {
@@ -2176,7 +2390,7 @@
     ],
     "reactions": {
       "heart": 177,
-      "paw": 108,
+      "paw": 109,
       "star": 62
     },
     "comments": [
@@ -2262,7 +2476,7 @@
     "reactions": {
       "heart": 92,
       "paw": 70,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -2298,9 +2512,9 @@
       "脉搏线"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 59,
-      "star": 35
+      "heart": 90,
+      "paw": 61,
+      "star": 36
     },
     "comments": [],
     "image_prompt": "The character from reference image touching, reaching out hand, seashell. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -2328,7 +2542,7 @@
       "大纲42午🔥"
     ],
     "reactions": {
-      "heart": 133,
+      "heart": 136,
       "paw": 79,
       "star": 53
     },
@@ -2366,8 +2580,8 @@
       "孪生废镇"
     ],
     "reactions": {
-      "heart": 96,
-      "paw": 66,
+      "heart": 99,
+      "paw": 67,
       "star": 40
     },
     "comments": [],
@@ -2396,9 +2610,9 @@
       "大纲42午🔥🔥"
     ],
     "reactions": {
-      "heart": 107,
+      "heart": 109,
       "paw": 81,
-      "star": 38
+      "star": 39
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, wind blowing. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, an old stone house with courtyard. Time: noon, bright overhead sun. moment of revelation and awe, dramatic shaft of light breaking through. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -2466,8 +2680,8 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 123,
-      "paw": 86,
+      "heart": 124,
+      "paw": 88,
       "star": 49
     },
     "comments": [
@@ -2505,9 +2719,9 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 154,
+      "heart": 155,
       "paw": 96,
-      "star": 58
+      "star": 59
     },
     "comments": [
       {
@@ -2583,9 +2797,9 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 187,
-      "paw": 126,
-      "star": 70
+      "heart": 190,
+      "paw": 127,
+      "star": 71
     },
     "comments": [
       {
@@ -2631,8 +2845,8 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 141,
-      "paw": 95,
+      "heart": 143,
+      "paw": 96,
       "star": 53
     },
     "comments": [
@@ -2672,8 +2886,8 @@
     ],
     "reactions": {
       "heart": 121,
-      "paw": 85,
-      "star": 45
+      "paw": 86,
+      "star": 46
     },
     "comments": [
       {
@@ -2719,9 +2933,9 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 57,
-      "star": 36
+      "heart": 86,
+      "paw": 59,
+      "star": 37
     },
     "comments": [
       {
@@ -2763,9 +2977,9 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 68,
-      "star": 39
+      "heart": 104,
+      "paw": 69,
+      "star": 40
     },
     "comments": [
       {
@@ -2804,8 +3018,8 @@
     ],
     "reactions": {
       "heart": 142,
-      "paw": 94,
-      "star": 52
+      "paw": 95,
+      "star": 53
     },
     "comments": [
       {
@@ -2851,8 +3065,8 @@
       "破守岗"
     ],
     "reactions": {
-      "heart": 97,
-      "paw": 69,
+      "heart": 99,
+      "paw": 71,
       "star": 33
     },
     "comments": [
@@ -2895,8 +3109,8 @@
       "第六幕"
     ],
     "reactions": {
-      "heart": 104,
-      "paw": 70,
+      "heart": 107,
+      "paw": 71,
       "star": 37
     },
     "comments": [
@@ -2941,8 +3155,8 @@
       "身世"
     ],
     "reactions": {
-      "heart": 2,
-      "paw": 3,
+      "heart": 4,
+      "paw": 5,
       "star": 1
     },
     "comments": [],
@@ -2971,8 +3185,8 @@
     ],
     "reactions": {
       "heart": 2,
-      "paw": 5,
-      "star": 1
+      "paw": 7,
+      "star": 2
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, by the window, wind blowing. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, a warm rustic tavern with wooden beams. Time: early morning, dawn light. quiet resolve and acceptance, dawn light breaking through. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -2999,9 +3213,9 @@
       "成长记录"
     ],
     "reactions": {
-      "heart": 4,
-      "paw": 5,
-      "star": 1
+      "heart": 5,
+      "paw": 6,
+      "star": 2
     },
     "comments": [],
     "image_prompt": "The character from reference image writing, recording notes, reaching out hand. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, a small stone watchtower cabin. Time: early morning, dawn light. deep contemplation, golden hour warm side-lighting. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -3028,7 +3242,7 @@
       "祖辈"
     ],
     "reactions": {
-      "heart": 8,
+      "heart": 9,
       "paw": 2,
       "star": 3
     },
@@ -3057,8 +3271,8 @@
       "雪羽"
     ],
     "reactions": {
-      "heart": 6,
-      "paw": 3,
+      "heart": 9,
+      "paw": 5,
       "star": 2
     },
     "comments": [],
@@ -3086,9 +3300,9 @@
       "裂缝日志"
     ],
     "reactions": {
-      "heart": 7,
+      "heart": 9,
       "paw": 2,
-      "star": 1
+      "star": 2
     },
     "comments": [],
     "image_prompt": "The character from reference image running, writing, waiting. Setting: narrow ancient stone passage with steep stairs. Time: early morning, dawn light. tense vigilant alertness, sharp contrasting light and shadow. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -3116,8 +3330,8 @@
       "有人活着"
     ],
     "reactions": {
-      "heart": 146,
-      "paw": 101,
+      "heart": 149,
+      "paw": 103,
       "star": 55
     },
     "comments": [
@@ -3160,7 +3374,7 @@
     ],
     "reactions": {
       "heart": 132,
-      "paw": 86,
+      "paw": 88,
       "star": 48
     },
     "comments": [
@@ -3199,8 +3413,8 @@
     ],
     "reactions": {
       "heart": 172,
-      "paw": 110,
-      "star": 63
+      "paw": 111,
+      "star": 64
     },
     "comments": [
       {
@@ -3241,9 +3455,9 @@
       "四字极简"
     ],
     "reactions": {
-      "heart": 120,
-      "paw": 74,
-      "star": 42
+      "heart": 123,
+      "paw": 76,
+      "star": 43
     },
     "comments": [],
     "image_prompt": "The character from reference image waiting, seashell, wind blowing. Setting: an abandoned mirror-twin ghost town with overgrown stone buildings, a ferry landing on the opposite shore. Time: dusk, golden orange sky. pensive introspective atmosphere, golden hour warm side-lighting. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -3271,8 +3485,8 @@
       "四人回不来"
     ],
     "reactions": {
-      "heart": 160,
-      "paw": 99,
+      "heart": 163,
+      "paw": 101,
       "star": 60
     },
     "comments": [
@@ -3310,8 +3524,8 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 152,
-      "paw": 104,
+      "heart": 154,
+      "paw": 106,
       "star": 56
     },
     "comments": [
@@ -3352,8 +3566,8 @@
       "首次领头"
     ],
     "reactions": {
-      "heart": 145,
-      "paw": 96,
+      "heart": 148,
+      "paw": 97,
       "star": 57
     },
     "comments": [
@@ -3390,9 +3604,9 @@
       "有人坐过"
     ],
     "reactions": {
-      "heart": 94,
+      "heart": 97,
       "paw": 60,
-      "star": 36
+      "star": 37
     },
     "comments": [
       {
@@ -3424,7 +3638,7 @@
       "火还亮着吗"
     ],
     "reactions": {
-      "heart": 159,
+      "heart": 162,
       "paw": 105,
       "star": 64
     },
@@ -3494,9 +3708,9 @@
       "雪羽"
     ],
     "reactions": {
-      "heart": 115,
+      "heart": 116,
       "paw": 76,
-      "star": 43
+      "star": 44
     },
     "comments": [
       {
@@ -3533,7 +3747,7 @@
     ],
     "reactions": {
       "heart": 136,
-      "paw": 90,
+      "paw": 92,
       "star": 51
     },
     "comments": [
@@ -3570,9 +3784,9 @@
       "雪羽知情"
     ],
     "reactions": {
-      "heart": 105,
-      "paw": 76,
-      "star": 42
+      "heart": 106,
+      "paw": 77,
+      "star": 43
     },
     "comments": [
       {
@@ -3608,8 +3822,8 @@
       "双贝同温"
     ],
     "reactions": {
-      "heart": 130,
-      "paw": 91,
+      "heart": 133,
+      "paw": 92,
       "star": 54
     },
     "comments": [],
@@ -3637,9 +3851,9 @@
       "四块凑齐"
     ],
     "reactions": {
-      "heart": 145,
+      "heart": 147,
       "paw": 98,
-      "star": 59
+      "star": 60
     },
     "comments": [
       {
@@ -3676,8 +3890,8 @@
     ],
     "reactions": {
       "heart": 116,
-      "paw": 80,
-      "star": 46
+      "paw": 81,
+      "star": 47
     },
     "comments": [
       {
@@ -3709,8 +3923,8 @@
       "推开窄门"
     ],
     "reactions": {
-      "heart": 141,
-      "paw": 97,
+      "heart": 142,
+      "paw": 98,
       "star": 53
     },
     "comments": [
@@ -3749,8 +3963,8 @@
     ],
     "reactions": {
       "heart": 156,
-      "paw": 109,
-      "star": 63
+      "paw": 110,
+      "star": 64
     },
     "comments": [
       {
@@ -3788,9 +4002,9 @@
       "暮色"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 80,
-      "star": 44
+      "heart": 120,
+      "paw": 81,
+      "star": 45
     },
     "comments": [
       {
@@ -3828,9 +4042,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 104,
-      "paw": 65,
-      "star": 33
+      "heart": 105,
+      "paw": 67,
+      "star": 34
     },
     "comments": [
       {
@@ -3872,8 +4086,8 @@
       "潮汐湾"
     ],
     "reactions": {
-      "heart": 150,
-      "paw": 96,
+      "heart": 152,
+      "paw": 98,
       "star": 57
     },
     "comments": [
@@ -3918,7 +4132,7 @@
     "reactions": {
       "heart": 136,
       "paw": 88,
-      "star": 49
+      "star": 50
     },
     "comments": [
       {
@@ -3958,7 +4172,7 @@
     "reactions": {
       "heart": 176,
       "paw": 108,
-      "star": 66
+      "star": 67
     },
     "comments": [
       {
@@ -4000,7 +4214,7 @@
     ],
     "reactions": {
       "heart": 141,
-      "paw": 95,
+      "paw": 97,
       "star": 52
     },
     "comments": [
@@ -4037,9 +4251,9 @@
       "夹层页"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 66,
-      "star": 35
+      "heart": 97,
+      "paw": 68,
+      "star": 36
     },
     "comments": [
       {
@@ -4083,9 +4297,9 @@
       "笑哭"
     ],
     "reactions": {
-      "heart": 131,
-      "paw": 92,
-      "star": 47
+      "heart": 133,
+      "paw": 93,
+      "star": 48
     },
     "comments": [
       {
@@ -4125,9 +4339,9 @@
       "母亲"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 77,
-      "star": 42
+      "heart": 109,
+      "paw": 79,
+      "star": 43
     },
     "comments": [
       {
@@ -4168,8 +4382,8 @@
     ],
     "reactions": {
       "heart": 112,
-      "paw": 75,
-      "star": 45
+      "paw": 77,
+      "star": 46
     },
     "comments": [
       {
@@ -4255,9 +4469,9 @@
       "血脉"
     ],
     "reactions": {
-      "heart": 122,
-      "paw": 89,
-      "star": 45
+      "heart": 123,
+      "paw": 90,
+      "star": 46
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, looking down, looking up. Setting: a dim underground fire-seed chamber with glowing embers. Time: noon, bright overhead sun. pensive introspective atmosphere, golden hour warm side-lighting. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4295,9 +4509,9 @@
     "character": "提理安",
     "timestamp": "2026-05-02T08:05:00+08:00",
     "reactions": {
-      "heart": 102,
+      "heart": 105,
       "paw": 61,
-      "star": 37
+      "star": 38
     },
     "image_prompt": "The character from reference image drawing/sketching, luminescent, fire/flame. Setting: the main cobblestone street of a fantasy village, a stone-built fantasy setting. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
     "image_history": [
@@ -4338,7 +4552,7 @@
     "character": "旻",
     "timestamp": "2026-05-02T08:08:00+08:00",
     "reactions": {
-      "heart": 113,
+      "heart": 116,
       "paw": 74,
       "star": 40
     },
@@ -4368,9 +4582,9 @@
     "character": "风亚",
     "timestamp": "2026-05-02T08:12:00+08:00",
     "reactions": {
-      "heart": 144,
+      "heart": 147,
       "paw": 75,
-      "star": 50
+      "star": 51
     },
     "image_prompt": "The character from reference image walking, waiting, sleeping/dozing. Setting: a coastal town called Tidal Bay, a tall stone lighthouse on a cliff. Time: early morning, dawn light. melancholic quiet stillness, dim overcast cool-blue ambient light. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
     "image_history": [
@@ -4403,7 +4617,7 @@
     "character": "羽烽",
     "timestamp": "2026-05-02T08:15:00+08:00",
     "reactions": {
-      "heart": 131,
+      "heart": 134,
       "paw": 65,
       "star": 46
     },
@@ -4446,9 +4660,9 @@
     "character": "狐兰兹",
     "timestamp": "2026-05-02T08:18:00+08:00",
     "reactions": {
-      "heart": 174,
+      "heart": 176,
       "paw": 96,
-      "star": 61
+      "star": 62
     },
     "image_prompt": "The character from reference image crouching, walking, writing. Setting: a watchtower on the northern ridge, a stone-built fantasy setting. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
     "image_history": [
@@ -4476,8 +4690,8 @@
     "character": "沃弗尔",
     "timestamp": "2026-05-02T08:20:00+08:00",
     "reactions": {
-      "heart": 90,
-      "paw": 54,
+      "heart": 91,
+      "paw": 55,
       "star": 33
     },
     "image_prompt": "The character from reference image crouching, looking up, luminescent. Setting: a stone-built fantasy setting. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4504,7 +4718,7 @@
       "真相浮现"
     ],
     "reactions": {
-      "heart": 91,
+      "heart": 92,
       "paw": 69,
       "star": 41
     },
@@ -4543,7 +4757,7 @@
     ],
     "reactions": {
       "heart": 122,
-      "paw": 100,
+      "paw": 101,
       "star": 46
     },
     "comments": [
@@ -4576,9 +4790,9 @@
       "潮生"
     ],
     "reactions": {
-      "heart": 109,
-      "paw": 83,
-      "star": 34
+      "heart": 112,
+      "paw": 84,
+      "star": 35
     },
     "comments": [],
     "image_prompt": "The character from reference image writing, looking up, wind blowing. Setting: an old letter archive room. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4605,8 +4819,8 @@
       "潮生"
     ],
     "reactions": {
-      "heart": 115,
-      "paw": 78,
+      "heart": 117,
+      "paw": 80,
       "star": 46
     },
     "comments": [
@@ -4639,9 +4853,9 @@
       "解密"
     ],
     "reactions": {
-      "heart": 166,
-      "paw": 116,
-      "star": 58
+      "heart": 168,
+      "paw": 117,
+      "star": 59
     },
     "comments": [
       {
@@ -4677,9 +4891,9 @@
       "空凹槽"
     ],
     "reactions": {
-      "heart": 114,
+      "heart": 117,
       "paw": 73,
-      "star": 42
+      "star": 43
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, seashell. Setting: a stone-built fantasy setting. Time: dusk, golden orange sky. pensive introspective atmosphere, golden hour warm side-lighting. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4707,9 +4921,9 @@
       "主线·档案线"
     ],
     "reactions": {
-      "heart": 125,
-      "paw": 77,
-      "star": 42
+      "heart": 127,
+      "paw": 78,
+      "star": 43
     },
     "comments": [
       {
@@ -4747,9 +4961,9 @@
       "反同质化"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 83,
-      "star": 47
+      "heart": 139,
+      "paw": 85,
+      "star": 48
     },
     "comments": [
       {
@@ -4792,7 +5006,7 @@
     "reactions": {
       "heart": 139,
       "paw": 87,
-      "star": 48
+      "star": 49
     },
     "comments": [],
     "image_prompt": "The character from reference image writing, wind blowing. Setting: a coastal town called Tidal Bay, an old letter archive room, a stone-built fantasy setting. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4820,8 +5034,8 @@
       "潮汐湾"
     ],
     "reactions": {
-      "heart": 107,
-      "paw": 71,
+      "heart": 109,
+      "paw": 72,
       "star": 36
     },
     "comments": [],
@@ -4850,8 +5064,8 @@
       "主线·脉搏线"
     ],
     "reactions": {
-      "heart": 151,
-      "paw": 93,
+      "heart": 153,
+      "paw": 94,
       "star": 52
     },
     "comments": [
@@ -4889,9 +5103,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 57,
-      "star": 29
+      "heart": 92,
+      "paw": 59,
+      "star": 30
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, by the window. Setting: a cozy fantasy stone village called Luhuo Town, a watchtower on the northern ridge, a stone-built fantasy setting. Time: noon, bright overhead sun. pensive introspective atmosphere, golden hour warm side-lighting. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -4920,7 +5134,7 @@
     ],
     "reactions": {
       "heart": 85,
-      "paw": 62,
+      "paw": 63,
       "star": 30
     },
     "comments": [
@@ -4958,9 +5172,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 69,
-      "star": 36
+      "heart": 109,
+      "paw": 70,
+      "star": 37
     },
     "comments": [
       {
@@ -5001,9 +5215,9 @@
       "主线·身世线"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 62,
-      "star": 38
+      "heart": 107,
+      "paw": 63,
+      "star": 39
     },
     "comments": [
       {
@@ -5036,9 +5250,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 143,
-      "paw": 84,
-      "star": 54
+      "heart": 145,
+      "paw": 85,
+      "star": 55
     },
     "comments": [
       {
@@ -5072,8 +5286,8 @@
     ],
     "reactions": {
       "heart": 151,
-      "paw": 92,
-      "star": 55
+      "paw": 93,
+      "star": 56
     },
     "comments": [
       {
@@ -5110,8 +5324,8 @@
       "独行"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 67,
+      "heart": 109,
+      "paw": 69,
       "star": 47
     },
     "comments": [],
@@ -5140,7 +5354,7 @@
       "三人录"
     ],
     "reactions": {
-      "heart": 94,
+      "heart": 97,
       "paw": 63,
       "star": 37
     },
@@ -5183,9 +5397,9 @@
       "吐槽"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 96,
       "paw": 72,
-      "star": 32
+      "star": 33
     },
     "comments": [
       {
@@ -5227,9 +5441,9 @@
       "披风"
     ],
     "reactions": {
-      "heart": 114,
-      "paw": 80,
-      "star": 47
+      "heart": 115,
+      "paw": 82,
+      "star": 48
     },
     "comments": [
       {
@@ -5271,9 +5485,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 67,
-      "star": 36
+      "heart": 95,
+      "paw": 68,
+      "star": 37
     },
     "comments": [
       {
@@ -5310,9 +5524,9 @@
       "C路"
     ],
     "reactions": {
-      "heart": 141,
+      "heart": 144,
       "paw": 97,
-      "star": 52
+      "star": 53
     },
     "comments": [
       {
@@ -5356,7 +5570,7 @@
     "reactions": {
       "heart": 112,
       "paw": 78,
-      "star": 48
+      "star": 49
     },
     "comments": [
       {
@@ -5389,9 +5603,9 @@
       "第六幕启幕"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 57,
-      "star": 33
+      "heart": 88,
+      "paw": 59,
+      "star": 34
     },
     "comments": [
       {
@@ -5428,8 +5642,8 @@
       "三代汇合"
     ],
     "reactions": {
-      "heart": 142,
-      "paw": 108,
+      "heart": 143,
+      "paw": 109,
       "star": 62
     },
     "comments": [
@@ -5471,8 +5685,8 @@
       "母亲线索"
     ],
     "reactions": {
-      "heart": 129,
-      "paw": 89,
+      "heart": 132,
+      "paw": 90,
       "star": 50
     },
     "comments": [
@@ -5510,9 +5724,9 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 69,
-      "star": 37
+      "heart": 104,
+      "paw": 71,
+      "star": 38
     },
     "comments": [
       {
@@ -5549,8 +5763,8 @@
       "深蓝色旅人线索"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 74,
+      "heart": 110,
+      "paw": 75,
       "star": 40
     },
     "comments": [
@@ -5584,9 +5798,9 @@
       "沃弗尔"
     ],
     "reactions": {
-      "heart": 120,
+      "heart": 123,
       "paw": 84,
-      "star": 49
+      "star": 50
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, holding, looking down. Setting: a cozy fantasy stone village called Luhuo Town, a warm rustic tavern with wooden beams. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -5614,7 +5828,7 @@
     ],
     "reactions": {
       "heart": 75,
-      "paw": 57,
+      "paw": 58,
       "star": 28
     },
     "comments": [
@@ -5655,7 +5869,7 @@
       "第一次发言"
     ],
     "reactions": {
-      "heart": 181,
+      "heart": 182,
       "paw": 128,
       "star": 64
     },
@@ -5697,8 +5911,8 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 126,
-      "paw": 86,
+      "heart": 129,
+      "paw": 87,
       "star": 40
     },
     "comments": [
@@ -5739,9 +5953,9 @@
       "潮汐湾日常"
     ],
     "reactions": {
-      "heart": 87,
+      "heart": 88,
       "paw": 62,
-      "star": 31
+      "star": 32
     },
     "comments": [
       {
@@ -5781,9 +5995,9 @@
       "主线·裂缝种子"
     ],
     "reactions": {
-      "heart": 122,
-      "paw": 93,
-      "star": 56
+      "heart": 123,
+      "paw": 95,
+      "star": 57
     },
     "comments": [
       {
@@ -5823,9 +6037,9 @@
       "主线·应对日"
     ],
     "reactions": {
-      "heart": 76,
+      "heart": 77,
       "paw": 53,
-      "star": 27
+      "star": 28
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, looking up. Setting: a vast underground sea cavern with bioluminescent ceiling, narrow ancient stone passage with steep stairs. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -5854,9 +6068,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 16,
+      "heart": 19,
       "paw": 6,
-      "star": 6
+      "star": 7
     },
     "comments": [],
     "image_prompt": "The character from reference image crouching, listening, seashell. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. Time: nighttime, moonlit. tense vigilant alertness, sharp contrasting light and shadow. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -5885,9 +6099,9 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 19,
-      "paw": 10,
-      "star": 4
+      "heart": 20,
+      "paw": 12,
+      "star": 5
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, leaning against, running. Setting: a cozy fantasy stone village called Luhuo Town, a warm rustic tavern with wooden beams, stone steps. Time: dusk, golden orange sky. weary drained stillness, dim exhausted late light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -5917,8 +6131,8 @@
     ],
     "reactions": {
       "heart": 19,
-      "paw": 11,
-      "star": 5
+      "paw": 12,
+      "star": 6
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, walking, writing. Setting: a coastal town called Tidal Bay, a seaside tavern decorated with fish bones, a stone-built fantasy setting. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -5948,8 +6162,8 @@
       "守到下一代"
     ],
     "reactions": {
-      "heart": 12,
-      "paw": 8,
+      "heart": 14,
+      "paw": 9,
       "star": 4
     },
     "comments": [],
@@ -5980,7 +6194,7 @@
     ],
     "reactions": {
       "heart": 14,
-      "paw": 7,
+      "paw": 9,
       "star": 3
     },
     "comments": [],
@@ -6013,8 +6227,8 @@
     ],
     "reactions": {
       "heart": 19,
-      "paw": 12,
-      "star": 6
+      "paw": 13,
+      "star": 7
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, running, drawing/sketching. Setting: a cozy fantasy stone village called Luhuo Town, a dim underground fire-seed chamber with glowing embers, a stone-built fantasy setting. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6043,9 +6257,9 @@
       "温度分化"
     ],
     "reactions": {
-      "heart": 15,
-      "paw": 10,
-      "star": 4
+      "heart": 16,
+      "paw": 12,
+      "star": 5
     },
     "comments": [],
     "image_prompt": "The character from reference image staring at, waiting, seashell. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. intense focused concentration, concentrated directional light from one source. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6074,9 +6288,9 @@
       "守火人"
     ],
     "reactions": {
-      "heart": 10,
+      "heart": 11,
       "paw": 6,
-      "star": 3
+      "star": 4
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, running, recording notes. Setting: a cozy fantasy stone village called Luhuo Town, a small stone watchtower cabin, stone steps. Time: noon, bright overhead sun. gentle heartwarming comfort, warm amber firelight. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6107,7 +6321,7 @@
     ],
     "reactions": {
       "heart": 14,
-      "paw": 10,
+      "paw": 11,
       "star": 1
     },
     "comments": [],
@@ -6138,9 +6352,9 @@
       "质变"
     ],
     "reactions": {
-      "heart": 13,
-      "paw": 2,
-      "star": 5
+      "heart": 15,
+      "paw": 4,
+      "star": 6
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, staring at, looking down. Setting: a coastal town called Tidal Bay, rocky reefs by the shore, a stone-built fantasy setting. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6170,8 +6384,8 @@
     ],
     "reactions": {
       "heart": 6,
-      "paw": 8,
-      "star": 5
+      "paw": 9,
+      "star": 6
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, drawing/sketching, touching. Setting: a coastal town called Tidal Bay, rocky reefs by the shore. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6201,8 +6415,8 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 9,
-      "paw": 8,
+      "heart": 10,
+      "paw": 10,
       "star": 3
     },
     "comments": [],
@@ -6231,8 +6445,8 @@
       "跑起来了"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 70,
+      "heart": 95,
+      "paw": 72,
       "star": 36
     },
     "comments": [
@@ -6270,9 +6484,9 @@
       "休假诅咒"
     ],
     "reactions": {
-      "heart": 93,
+      "heart": 94,
       "paw": 55,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -6314,8 +6528,8 @@
     ],
     "reactions": {
       "heart": 125,
-      "paw": 83,
-      "star": 49
+      "paw": 85,
+      "star": 50
     },
     "comments": [
       {
@@ -6356,7 +6570,7 @@
       "虾这个可以"
     ],
     "reactions": {
-      "heart": 102,
+      "heart": 103,
       "paw": 80,
       "star": 41
     },
@@ -6399,7 +6613,7 @@
       "烤虾不会吃"
     ],
     "reactions": {
-      "heart": 136,
+      "heart": 138,
       "paw": 87,
       "star": 55
     },
@@ -6444,7 +6658,7 @@
     "reactions": {
       "heart": 149,
       "paw": 98,
-      "star": 62
+      "star": 63
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, reaching out hand, listening. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6474,7 +6688,7 @@
     ],
     "reactions": {
       "heart": 13,
-      "paw": 6,
+      "paw": 8,
       "star": 6
     },
     "comments": [],
@@ -6503,8 +6717,8 @@
       "海端信息共享"
     ],
     "reactions": {
-      "heart": 14,
-      "paw": 11,
+      "heart": 16,
+      "paw": 12,
       "star": 3
     },
     "comments": [],
@@ -6533,7 +6747,7 @@
       "首次回应"
     ],
     "reactions": {
-      "heart": 10,
+      "heart": 12,
       "paw": 13,
       "star": 3
     },
@@ -6564,8 +6778,8 @@
       "火端搭档"
     ],
     "reactions": {
-      "heart": 20,
-      "paw": 4,
+      "heart": 22,
+      "paw": 5,
       "star": 5
     },
     "comments": [],
@@ -6595,8 +6809,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 13,
-      "paw": 13,
+      "heart": 14,
+      "paw": 15,
       "star": 6
     },
     "comments": [],
@@ -6626,7 +6840,7 @@
       "通道信使"
     ],
     "reactions": {
-      "heart": 12,
+      "heart": 15,
       "paw": 11,
       "star": 4
     },
@@ -6656,8 +6870,8 @@
     ],
     "reactions": {
       "heart": 88,
-      "paw": 54,
-      "star": 35
+      "paw": 55,
+      "star": 36
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, touching, smiling/laughing. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. Time: noon, bright overhead sun. moment of revelation and awe, dramatic shaft of light breaking through. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6685,7 +6899,7 @@
     ],
     "reactions": {
       "heart": 105,
-      "paw": 74,
+      "paw": 75,
       "star": 36
     },
     "comments": [
@@ -6718,9 +6932,9 @@
       "征兆"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 63,
-      "star": 29
+      "heart": 92,
+      "paw": 65,
+      "star": 30
     },
     "comments": [
       {
@@ -6752,7 +6966,7 @@
       "日常"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 99,
       "paw": 62,
       "star": 33
     },
@@ -6781,9 +6995,9 @@
       "独坐"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 57,
-      "star": 32
+      "heart": 82,
+      "paw": 59,
+      "star": 33
     },
     "comments": [
       {
@@ -6815,9 +7029,9 @@
       "静"
     ],
     "reactions": {
-      "heart": 119,
-      "paw": 82,
-      "star": 42
+      "heart": 120,
+      "paw": 83,
+      "star": 43
     },
     "comments": [
       {
@@ -6854,7 +7068,7 @@
     ],
     "reactions": {
       "heart": 97,
-      "paw": 63,
+      "paw": 65,
       "star": 34
     },
     "comments": [],
@@ -6884,7 +7098,7 @@
     "reactions": {
       "heart": 84,
       "paw": 54,
-      "star": 26
+      "star": 27
     },
     "comments": [
       {
@@ -6916,9 +7130,9 @@
       "海端值守"
     ],
     "reactions": {
-      "heart": 103,
+      "heart": 106,
       "paw": 65,
-      "star": 36
+      "star": 37
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, drinking, waiting. Setting: a coastal town called Tidal Bay, rocky reefs by the shore, near water in a cavern. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -6945,9 +7159,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 134,
-      "paw": 83,
-      "star": 46
+      "heart": 135,
+      "paw": 85,
+      "star": 47
     },
     "comments": [
       {
@@ -6983,8 +7197,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 92,
-      "paw": 55,
+      "heart": 94,
+      "paw": 56,
       "star": 29
     },
     "comments": [],
@@ -7012,9 +7226,9 @@
       "沃弗尔主线"
     ],
     "reactions": {
-      "heart": 108,
-      "paw": 70,
-      "star": 37
+      "heart": 111,
+      "paw": 72,
+      "star": 38
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, listening. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. Time: early morning, dawn light. moment of revelation and awe, dramatic shaft of light breaking through. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -7042,9 +7256,9 @@
       "海端值守"
     ],
     "reactions": {
-      "heart": 144,
+      "heart": 147,
       "paw": 91,
-      "star": 51
+      "star": 52
     },
     "comments": [
       {
@@ -7081,8 +7295,8 @@
       "金臂环"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 60,
+      "heart": 92,
+      "paw": 61,
       "star": 28
     },
     "comments": [
@@ -7116,8 +7330,8 @@
       "镇东线索"
     ],
     "reactions": {
-      "heart": 115,
-      "paw": 70,
+      "heart": 116,
+      "paw": 72,
       "star": 37
     },
     "comments": [
@@ -7159,8 +7373,8 @@
       "成长记录"
     ],
     "reactions": {
-      "heart": 166,
-      "paw": 105,
+      "heart": 169,
+      "paw": 106,
       "star": 63
     },
     "comments": [
@@ -7203,8 +7417,8 @@
     ],
     "reactions": {
       "heart": 128,
-      "paw": 94,
-      "star": 51
+      "paw": 96,
+      "star": 52
     },
     "comments": [
       {
@@ -7245,9 +7459,9 @@
       "第五幕主线"
     ],
     "reactions": {
-      "heart": 105,
-      "paw": 67,
-      "star": 37
+      "heart": 108,
+      "paw": 69,
+      "star": 38
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, listening. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. pensive introspective atmosphere, golden hour warm side-lighting. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -7274,7 +7488,7 @@
       "蜜藻烤虾"
     ],
     "reactions": {
-      "heart": 112,
+      "heart": 114,
       "paw": 79,
       "star": 42
     },
@@ -7313,7 +7527,7 @@
       "深蓝色龙角的先生"
     ],
     "reactions": {
-      "heart": 104,
+      "heart": 106,
       "paw": 73,
       "star": 48
     },
@@ -7355,7 +7569,7 @@
       "耳朵没夹"
     ],
     "reactions": {
-      "heart": 155,
+      "heart": 158,
       "paw": 105,
       "star": 60
     },
@@ -7397,8 +7611,8 @@
       "横着的太阳"
     ],
     "reactions": {
-      "heart": 92,
-      "paw": 54,
+      "heart": 93,
+      "paw": 55,
       "star": 33
     },
     "comments": [
@@ -7435,9 +7649,9 @@
       "北线新闻"
     ],
     "reactions": {
-      "heart": 124,
-      "paw": 83,
-      "star": 45
+      "heart": 127,
+      "paw": 84,
+      "star": 46
     },
     "comments": [
       {
@@ -7477,9 +7691,9 @@
       "第四拍"
     ],
     "reactions": {
-      "heart": 77,
+      "heart": 78,
       "paw": 47,
-      "star": 30
+      "star": 31
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, looking up, luminescent. Setting: submerged ancient ruins underwater, a stone-built fantasy setting. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -7518,8 +7732,8 @@
     "character": "风亚",
     "timestamp": "2026-04-27T08:00:00+08:00",
     "reactions": {
-      "heart": 141,
-      "paw": 95,
+      "heart": 143,
+      "paw": 96,
       "star": 45
     },
     "image_prompt": "The character from reference image walking, drinking, eating. Setting: a coastal town called Tidal Bay, a bustling village market with stalls. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -7563,8 +7777,8 @@
     "timestamp": "2026-04-27T08:01:00+08:00",
     "reactions": {
       "heart": 177,
-      "paw": 113,
-      "star": 64
+      "paw": 114,
+      "star": 65
     },
     "image_prompt": "The character from reference image walking, gazing at, recording notes. Setting: a cozy fantasy stone village called Luhuo Town, the main cobblestone street of a fantasy village. Time: early morning, dawn light. joyful lighthearted energy, bright cheerful sunlight with warm tones. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
     "image_history": [
@@ -7598,8 +7812,8 @@
     "character": "羽烽",
     "timestamp": "2026-04-27T08:02:00+08:00",
     "reactions": {
-      "heart": 119,
-      "paw": 80,
+      "heart": 120,
+      "paw": 82,
       "star": 39
     },
     "image_prompt": "The character from reference image walking, drinking, sleeping/dozing. Setting: a coastal town called Tidal Bay, rocky reefs by the shore. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -7638,7 +7852,7 @@
     "character": "旻",
     "timestamp": "2026-04-27T08:03:00+08:00",
     "reactions": {
-      "heart": 157,
+      "heart": 159,
       "paw": 109,
       "star": 52
     },
@@ -7741,9 +7955,9 @@
       "归来"
     ],
     "reactions": {
-      "heart": 145,
-      "paw": 89,
-      "star": 58
+      "heart": 147,
+      "paw": 90,
+      "star": 59
     },
     "comments": [
       {
@@ -7783,9 +7997,9 @@
       "雪羽罪证"
     ],
     "reactions": {
-      "heart": 119,
+      "heart": 120,
       "paw": 77,
-      "star": 44
+      "star": 45
     },
     "comments": [
       {
@@ -7830,7 +8044,7 @@
     ],
     "reactions": {
       "heart": 183,
-      "paw": 122,
+      "paw": 123,
       "star": 76
     },
     "comments": [
@@ -7871,8 +8085,8 @@
       "第一次喝发光汤"
     ],
     "reactions": {
-      "heart": 137,
-      "paw": 83,
+      "heart": 138,
+      "paw": 84,
       "star": 56
     },
     "comments": [
@@ -7909,8 +8123,8 @@
       "第八次崩扣"
     ],
     "reactions": {
-      "heart": 170,
-      "paw": 112,
+      "heart": 171,
+      "paw": 113,
       "star": 64
     },
     "comments": [
@@ -7951,7 +8165,7 @@
       "海底遗迹"
     ],
     "reactions": {
-      "heart": 108,
+      "heart": 109,
       "paw": 63,
       "star": 44
     },
@@ -7980,9 +8194,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 159,
-      "paw": 107,
-      "star": 58
+      "heart": 160,
+      "paw": 109,
+      "star": 59
     },
     "comments": [
       {
@@ -8022,9 +8236,9 @@
       "跟随"
     ],
     "reactions": {
-      "heart": 134,
-      "paw": 92,
-      "star": 50
+      "heart": 135,
+      "paw": 94,
+      "star": 51
     },
     "comments": [
       {
@@ -8056,8 +8270,8 @@
       "休假诅咒"
     ],
     "reactions": {
-      "heart": 126,
-      "paw": 82,
+      "heart": 128,
+      "paw": 84,
       "star": 49
     },
     "comments": [
@@ -8098,8 +8312,8 @@
       "成长记录29"
     ],
     "reactions": {
-      "heart": 179,
-      "paw": 126,
+      "heart": 181,
+      "paw": 127,
       "star": 72
     },
     "comments": [
@@ -8140,9 +8354,9 @@
       "自主选择"
     ],
     "reactions": {
-      "heart": 181,
-      "paw": 110,
-      "star": 62
+      "heart": 183,
+      "paw": 111,
+      "star": 63
     },
     "comments": [
       {
@@ -8182,9 +8396,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 155,
+      "heart": 157,
       "paw": 96,
-      "star": 56
+      "star": 57
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, drawing/sketching. Setting: a vast underground sea cavern with bioluminescent ceiling, a stone-built fantasy setting, stone steps. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -8212,8 +8426,8 @@
       "守门者"
     ],
     "reactions": {
-      "heart": 116,
-      "paw": 71,
+      "heart": 119,
+      "paw": 73,
       "star": 34
     },
     "comments": [
@@ -8255,9 +8469,9 @@
       "独自"
     ],
     "reactions": {
-      "heart": 120,
-      "paw": 83,
-      "star": 48
+      "heart": 122,
+      "paw": 84,
+      "star": 49
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, nighttime. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a small island in the underground sea. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -8285,9 +8499,9 @@
       "收束后"
     ],
     "reactions": {
-      "heart": 116,
+      "heart": 117,
       "paw": 81,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -8327,9 +8541,9 @@
       "七束光"
     ],
     "reactions": {
-      "heart": 116,
-      "paw": 73,
-      "star": 42
+      "heart": 117,
+      "paw": 75,
+      "star": 43
     },
     "comments": [
       {
@@ -8362,7 +8576,7 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 177,
+      "heart": 180,
       "paw": 115,
       "star": 73
     },
@@ -8405,9 +8619,9 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 130,
+      "heart": 132,
       "paw": 78,
-      "star": 50
+      "star": 51
     },
     "comments": [
       {
@@ -8448,8 +8662,8 @@
       "主线"
     ],
     "reactions": {
-      "heart": 161,
-      "paw": 100,
+      "heart": 163,
+      "paw": 102,
       "star": 54
     },
     "comments": [
@@ -8487,9 +8701,9 @@
       "极简"
     ],
     "reactions": {
-      "heart": 95,
-      "paw": 67,
-      "star": 37
+      "heart": 97,
+      "paw": 68,
+      "star": 38
     },
     "comments": [
       {
@@ -8522,9 +8736,9 @@
       "主线"
     ],
     "reactions": {
-      "heart": 140,
+      "heart": 143,
       "paw": 83,
-      "star": 50
+      "star": 51
     },
     "comments": [
       {
@@ -8561,9 +8775,9 @@
       "成长记录㉕"
     ],
     "reactions": {
-      "heart": 179,
-      "paw": 112,
-      "star": 60
+      "heart": 181,
+      "paw": 113,
+      "star": 61
     },
     "comments": [
       {
@@ -8605,8 +8819,8 @@
     ],
     "reactions": {
       "heart": 142,
-      "paw": 92,
-      "star": 49
+      "paw": 94,
+      "star": 50
     },
     "comments": [
       {
@@ -8647,9 +8861,9 @@
       "沃弗尔"
     ],
     "reactions": {
-      "heart": 122,
-      "paw": 77,
-      "star": 47
+      "heart": 125,
+      "paw": 79,
+      "star": 48
     },
     "comments": [],
     "image_prompt": "The character from reference image walking. Setting: a cozy fantasy stone village called Luhuo Town, a vast underground sea cavern with bioluminescent ceiling. Time: dusk, golden orange sky. pensive introspective atmosphere, golden hour warm side-lighting. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -8676,8 +8890,8 @@
       "发现"
     ],
     "reactions": {
-      "heart": 93,
-      "paw": 58,
+      "heart": 94,
+      "paw": 59,
       "star": 32
     },
     "comments": [
@@ -8718,7 +8932,7 @@
       "日常"
     ],
     "reactions": {
-      "heart": 68,
+      "heart": 71,
       "paw": 47,
       "star": 24
     },
@@ -8755,7 +8969,7 @@
     ],
     "reactions": {
       "heart": 69,
-      "paw": 43,
+      "paw": 44,
       "star": 25
     },
     "comments": [
@@ -8796,9 +9010,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 100,
-      "paw": 63,
-      "star": 32
+      "heart": 101,
+      "paw": 64,
+      "star": 33
     },
     "comments": [
       {
@@ -8838,8 +9052,8 @@
       "窄门"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 55,
+      "heart": 90,
+      "paw": 57,
       "star": 29
     },
     "comments": [
@@ -8887,7 +9101,7 @@
     ],
     "reactions": {
       "heart": 55,
-      "paw": 40,
+      "paw": 41,
       "star": 23
     },
     "comments": [],
@@ -8916,10 +9130,10 @@
       "日常"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 49,
+      "heart": 91,
+      "paw": 50,
       "fire": 13,
-      "star": 6
+      "star": 7
     },
     "comments": [
       {
@@ -8960,9 +9174,9 @@
     ],
     "reactions": {
       "heart": 64,
-      "paw": 38,
+      "paw": 39,
       "fire": 11,
-      "star": 5
+      "star": 6
     },
     "comments": [
       {
@@ -8996,10 +9210,10 @@
       "主线"
     ],
     "reactions": {
-      "heart": 79,
-      "paw": 51,
+      "heart": 82,
+      "paw": 52,
       "fire": 22,
-      "star": 10
+      "star": 11
     },
     "comments": [
       {
@@ -9045,7 +9259,7 @@
       "成长"
     ],
     "reactions": {
-      "heart": 54,
+      "heart": 55,
       "paw": 39,
       "fire": 8,
       "star": 3
@@ -9088,10 +9302,10 @@
       "内心"
     ],
     "reactions": {
-      "heart": 65,
-      "paw": 46,
+      "heart": 68,
+      "paw": 48,
       "fire": 11,
-      "star": 4
+      "star": 5
     },
     "comments": [
       {
@@ -9132,9 +9346,9 @@
     ],
     "reactions": {
       "heart": 97,
-      "paw": 43,
+      "paw": 45,
       "fire": 26,
-      "star": 6
+      "star": 7
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, looking up, listening. Setting: narrow ancient stone passage with steep stairs, a stone-built fantasy setting. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -9161,7 +9375,7 @@
       "日常"
     ],
     "reactions": {
-      "heart": 79,
+      "heart": 81,
       "paw": 54,
       "star": 26
     },
@@ -9199,8 +9413,8 @@
       "黄昏"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 41,
+      "heart": 66,
+      "paw": 42,
       "star": 25
     },
     "comments": [
@@ -9234,9 +9448,9 @@
       "决策"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 43,
-      "star": 19
+      "heart": 59,
+      "paw": 45,
+      "star": 20
     },
     "comments": [
       {
@@ -9277,9 +9491,9 @@
       "烤栗子"
     ],
     "reactions": {
-      "heart": 94,
+      "heart": 95,
       "paw": 65,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -9316,8 +9530,8 @@
       "坦白"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 60,
+      "heart": 87,
+      "paw": 61,
       "star": 31
     },
     "comments": [
@@ -9354,8 +9568,8 @@
       "独行"
     ],
     "reactions": {
-      "heart": 66,
-      "paw": 45,
+      "heart": 67,
+      "paw": 47,
       "star": 26
     },
     "comments": [],
@@ -9430,8 +9644,8 @@
       "跟着走"
     ],
     "reactions": {
-      "heart": 115,
-      "paw": 74,
+      "heart": 118,
+      "paw": 76,
       "star": 40
     },
     "comments": [
@@ -9467,7 +9681,7 @@
     "reactions": {
       "heart": 178,
       "paw": 109,
-      "star": 64
+      "star": 65
     },
     "comments": [
       {
@@ -9508,8 +9722,8 @@
       "雪羽比我快"
     ],
     "reactions": {
-      "heart": 97,
-      "paw": 67,
+      "heart": 99,
+      "paw": 68,
       "star": 35
     },
     "comments": [
@@ -9598,9 +9812,9 @@
       "完整的圆"
     ],
     "reactions": {
-      "heart": 89,
+      "heart": 92,
       "paw": 54,
-      "star": 28
+      "star": 29
     },
     "comments": [],
     "image_prompt": "The character from reference image gazing at, drawing/sketching, touching. Setting: narrow ancient stone passage with steep stairs, a stone-built fantasy setting. Time: noon, bright overhead sun. pensive introspective atmosphere, golden hour warm side-lighting. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -9628,9 +9842,9 @@
       "雪羽"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 87,
       "paw": 56,
-      "star": 28
+      "star": 29
     },
     "comments": [
       {
@@ -9667,8 +9881,8 @@
       "主线推进"
     ],
     "reactions": {
-      "heart": 135,
-      "paw": 84,
+      "heart": 136,
+      "paw": 86,
       "star": 46
     },
     "comments": [
@@ -9705,7 +9919,7 @@
       "同行"
     ],
     "reactions": {
-      "heart": 105,
+      "heart": 108,
       "paw": 62,
       "star": 38
     },
@@ -9740,7 +9954,7 @@
       "陶挂件"
     ],
     "reactions": {
-      "heart": 156,
+      "heart": 158,
       "paw": 95,
       "star": 52
     },
@@ -9779,8 +9993,8 @@
       "送别"
     ],
     "reactions": {
-      "heart": 177,
-      "paw": 104,
+      "heart": 180,
+      "paw": 106,
       "star": 60
     },
     "comments": [
@@ -9819,8 +10033,8 @@
     ],
     "reactions": {
       "heart": 127,
-      "paw": 81,
-      "star": 45
+      "paw": 83,
+      "star": 46
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, listening, doorframe. Setting: a narrow eastern alley with old stone walls, narrow ancient stone passage with steep stairs. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -9848,7 +10062,7 @@
       "独立行动"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 86,
       "paw": 53,
       "star": 31
     },
@@ -9879,7 +10093,7 @@
     "reactions": {
       "heart": 123,
       "paw": 98,
-      "star": 41
+      "star": 42
     },
     "comments": [
       {
@@ -9916,8 +10130,8 @@
     ],
     "reactions": {
       "heart": 144,
-      "paw": 95,
-      "star": 51
+      "paw": 97,
+      "star": 52
     },
     "comments": [
       {
@@ -9957,7 +10171,7 @@
     ],
     "reactions": {
       "heart": 91,
-      "paw": 55,
+      "paw": 57,
       "star": 28
     },
     "comments": [
@@ -10028,8 +10242,8 @@
       "雀巢酒馆"
     ],
     "reactions": {
-      "heart": 96,
-      "paw": 62,
+      "heart": 98,
+      "paw": 64,
       "star": 31
     },
     "comments": [
@@ -10066,9 +10280,9 @@
       "门锁"
     ],
     "reactions": {
-      "heart": 58,
+      "heart": 59,
       "paw": 39,
-      "star": 19
+      "star": 20
     },
     "comments": [],
     "image_prompt": "The character from reference image looking up. Setting: a narrow eastern alley with old stone walls, a small stone house. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -10095,9 +10309,9 @@
       "酒馆"
     ],
     "reactions": {
-      "heart": 81,
-      "paw": 53,
-      "star": 27
+      "heart": 83,
+      "paw": 54,
+      "star": 28
     },
     "comments": [
       {
@@ -10133,8 +10347,8 @@
       "被需要"
     ],
     "reactions": {
-      "heart": 137,
-      "paw": 103,
+      "heart": 139,
+      "paw": 105,
       "star": 56
     },
     "comments": [
@@ -10175,9 +10389,9 @@
       "偷听"
     ],
     "reactions": {
-      "heart": 113,
-      "paw": 68,
-      "star": 40
+      "heart": 114,
+      "paw": 70,
+      "star": 41
     },
     "comments": [
       {
@@ -10217,8 +10431,8 @@
       "八卦"
     ],
     "reactions": {
-      "heart": 135,
-      "paw": 85,
+      "heart": 136,
+      "paw": 86,
       "star": 45
     },
     "comments": [
@@ -10260,7 +10474,7 @@
     ],
     "reactions": {
       "heart": 147,
-      "paw": 101,
+      "paw": 102,
       "star": 60
     },
     "comments": [
@@ -10302,8 +10516,8 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 53,
-      "paw": 38,
+      "heart": 55,
+      "paw": 39,
       "star": 21
     },
     "comments": [
@@ -10341,9 +10555,9 @@
       "烤串"
     ],
     "reactions": {
-      "heart": 67,
-      "paw": 46,
-      "star": 27
+      "heart": 69,
+      "paw": 48,
+      "star": 28
     },
     "comments": [
       {
@@ -10380,7 +10594,7 @@
     ],
     "reactions": {
       "heart": 65,
-      "paw": 40,
+      "paw": 42,
       "star": 20
     },
     "comments": [
@@ -10414,9 +10628,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 63,
-      "star": 35
+      "heart": 88,
+      "paw": 64,
+      "star": 36
     },
     "comments": [
       {
@@ -10453,7 +10667,7 @@
       "矿坑"
     ],
     "reactions": {
-      "heart": 82,
+      "heart": 84,
       "paw": 49,
       "star": 32
     },
@@ -10488,9 +10702,9 @@
       "泽罗恩"
     ],
     "reactions": {
-      "heart": 52,
+      "heart": 55,
       "paw": 35,
-      "star": 17
+      "star": 18
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, running, doorframe. Setting: a narrow eastern alley with old stone walls, narrow ancient stone passage with steep stairs. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -10517,9 +10731,9 @@
       "暮色将至"
     ],
     "reactions": {
-      "heart": 69,
-      "paw": 43,
-      "star": 22
+      "heart": 71,
+      "paw": 45,
+      "star": 23
     },
     "comments": [
       {
@@ -10556,8 +10770,8 @@
     ],
     "reactions": {
       "heart": 80,
-      "paw": 55,
-      "star": 25
+      "paw": 57,
+      "star": 26
     },
     "comments": [
       {
@@ -10593,9 +10807,9 @@
       "坦白"
     ],
     "reactions": {
-      "heart": 69,
-      "paw": 52,
-      "star": 24
+      "heart": 71,
+      "paw": 54,
+      "star": 25
     },
     "comments": [
       {
@@ -10627,9 +10841,9 @@
       "成长"
     ],
     "reactions": {
-      "heart": 109,
-      "paw": 72,
-      "star": 39
+      "heart": 111,
+      "paw": 73,
+      "star": 40
     },
     "comments": [
       {
@@ -10670,7 +10884,7 @@
     ],
     "reactions": {
       "heart": 74,
-      "paw": 54,
+      "paw": 55,
       "star": 24
     },
     "comments": [
@@ -10708,8 +10922,8 @@
     ],
     "reactions": {
       "heart": 56,
-      "paw": 39,
-      "star": 21
+      "paw": 41,
+      "star": 22
     },
     "comments": [],
     "image_prompt": "The character from reference image running, reaching out hand, doorframe. Setting: a cozy fantasy stone village called Luhuo Town, a narrow eastern alley with old stone walls, narrow ancient stone passage with steep stairs. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -10736,7 +10950,7 @@
       "火种室发现"
     ],
     "reactions": {
-      "heart": 76,
+      "heart": 77,
       "paw": 49,
       "star": 23
     },
@@ -10774,9 +10988,9 @@
       "火种室思考"
     ],
     "reactions": {
-      "heart": 85,
+      "heart": 88,
       "paw": 52,
-      "star": 28
+      "star": 29
     },
     "comments": [
       {
@@ -10814,7 +11028,7 @@
     "reactions": {
       "heart": 57,
       "paw": 43,
-      "star": 18
+      "star": 19
     },
     "comments": [
       {
@@ -10888,9 +11102,9 @@
       "信封背面"
     ],
     "reactions": {
-      "heart": 86,
+      "heart": 87,
       "paw": 60,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -10926,9 +11140,9 @@
       "独行"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 32,
-      "star": 21
+      "heart": 59,
+      "paw": 33,
+      "star": 22
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, walking, waiting. Setting: a narrow eastern alley with old stone walls, narrow ancient stone passage with steep stairs. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -10956,8 +11170,8 @@
     ],
     "reactions": {
       "heart": 108,
-      "paw": 74,
-      "star": 44
+      "paw": 75,
+      "star": 45
     },
     "comments": [
       {
@@ -10993,9 +11207,9 @@
       "拼图"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 65,
-      "star": 39
+      "heart": 103,
+      "paw": 66,
+      "star": 40
     },
     "comments": [
       {
@@ -11027,9 +11241,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 98,
-      "paw": 58,
-      "star": 35
+      "heart": 99,
+      "paw": 60,
+      "star": 36
     },
     "comments": [
       {
@@ -11065,8 +11279,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 92,
+      "heart": 141,
+      "paw": 93,
       "star": 50
     },
     "comments": [
@@ -11103,9 +11317,9 @@
       "不安"
     ],
     "reactions": {
-      "heart": 111,
+      "heart": 112,
       "paw": 74,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -11141,9 +11355,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 79,
+      "heart": 80,
       "paw": 52,
-      "star": 28
+      "star": 29
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, doorframe. Setting: a cozy fantasy stone village called Luhuo Town, a narrow eastern alley with old stone walls. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -11170,9 +11384,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 114,
-      "paw": 79,
-      "star": 44
+      "heart": 116,
+      "paw": 80,
+      "star": 45
     },
     "comments": [
       {
@@ -11246,8 +11460,8 @@
       "线索"
     ],
     "reactions": {
-      "heart": 78,
-      "paw": 53,
+      "heart": 79,
+      "paw": 55,
       "star": 31
     },
     "comments": [
@@ -11280,8 +11494,8 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 129,
-      "paw": 90,
+      "heart": 130,
+      "paw": 91,
       "star": 51
     },
     "comments": [
@@ -11318,9 +11532,9 @@
       "沃"
     ],
     "reactions": {
-      "heart": 113,
+      "heart": 116,
       "paw": 73,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -11353,7 +11567,7 @@
     ],
     "reactions": {
       "heart": 88,
-      "paw": 57,
+      "paw": 59,
       "star": 33
     },
     "comments": [],
@@ -11382,8 +11596,8 @@
     ],
     "reactions": {
       "heart": 92,
-      "paw": 66,
-      "star": 33
+      "paw": 68,
+      "star": 34
     },
     "comments": [
       {
@@ -11419,8 +11633,8 @@
       "火种室"
     ],
     "reactions": {
-      "heart": 85,
-      "paw": 53,
+      "heart": 86,
+      "paw": 54,
       "star": 28
     },
     "comments": [
@@ -11453,7 +11667,7 @@
       "追踪"
     ],
     "reactions": {
-      "heart": 106,
+      "heart": 108,
       "paw": 73,
       "star": 37
     },
@@ -11491,8 +11705,8 @@
       "脉搏"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 59,
+      "heart": 81,
+      "paw": 60,
       "star": 30
     },
     "comments": [
@@ -11525,8 +11739,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 120,
-      "paw": 81,
+      "heart": 122,
+      "paw": 82,
       "star": 43
     },
     "comments": [
@@ -11564,8 +11778,8 @@
     ],
     "reactions": {
       "heart": 57,
-      "paw": 42,
-      "star": 24
+      "paw": 43,
+      "star": 25
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, doorframe, luminescent. Setting: a narrow eastern alley with old stone walls. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -11592,8 +11806,8 @@
       "有缘人收"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 55,
+      "heart": 90,
+      "paw": 56,
       "star": 29
     },
     "comments": [
@@ -11630,7 +11844,7 @@
       "镇东线索"
     ],
     "reactions": {
-      "heart": 82,
+      "heart": 83,
       "paw": 53,
       "star": 30
     },
@@ -11668,9 +11882,9 @@
       "矿石消退"
     ],
     "reactions": {
-      "heart": 65,
-      "paw": 42,
-      "star": 24
+      "heart": 68,
+      "paw": 44,
+      "star": 25
     },
     "comments": [
       {
@@ -11702,9 +11916,9 @@
       "蓝绿光"
     ],
     "reactions": {
-      "heart": 75,
+      "heart": 77,
       "paw": 46,
-      "star": 25
+      "star": 26
     },
     "comments": [
       {
@@ -11736,8 +11950,8 @@
       "旻求助"
     ],
     "reactions": {
-      "heart": 120,
-      "paw": 76,
+      "heart": 122,
+      "paw": 77,
       "star": 44
     },
     "comments": [
@@ -11774,8 +11988,8 @@
       "归"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 36,
+      "heart": 58,
+      "paw": 37,
       "star": 18
     },
     "comments": [],
@@ -11805,8 +12019,8 @@
     ],
     "reactions": {
       "heart": 78,
-      "paw": 56,
-      "star": 32
+      "paw": 57,
+      "star": 33
     },
     "comments": [
       {
@@ -11844,8 +12058,8 @@
     ],
     "reactions": {
       "heart": 77,
-      "paw": 44,
-      "star": 25
+      "paw": 46,
+      "star": 26
     },
     "comments": [
       {
@@ -11882,8 +12096,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 112,
-      "paw": 72,
+      "heart": 114,
+      "paw": 74,
       "star": 40
     },
     "comments": [
@@ -11921,9 +12135,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 76,
-      "paw": 51,
-      "star": 29
+      "heart": 79,
+      "paw": 52,
+      "star": 30
     },
     "comments": [
       {
@@ -11956,9 +12170,9 @@
       "续火之后"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 65,
-      "star": 35
+      "heart": 92,
+      "paw": 66,
+      "star": 36
     },
     "comments": [
       {
@@ -11999,9 +12213,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 53,
-      "paw": 31,
-      "star": 19
+      "heart": 56,
+      "paw": 33,
+      "star": 20
     },
     "comments": [],
     "image_prompt": "The character from reference image by the window. Setting: a fantasy village street. Time: dusk, golden orange sky. pensive introspective atmosphere, golden hour warm side-lighting. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -12028,9 +12242,9 @@
       "市集"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 61,
-      "star": 32
+      "heart": 93,
+      "paw": 62,
+      "star": 33
     },
     "comments": [
       {
@@ -12066,9 +12280,9 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 75,
-      "paw": 49,
-      "star": 27
+      "heart": 77,
+      "paw": 51,
+      "star": 28
     },
     "comments": [
       {
@@ -12146,8 +12360,8 @@
       "市集"
     ],
     "reactions": {
-      "heart": 75,
-      "paw": 54,
+      "heart": 78,
+      "paw": 55,
       "star": 27
     },
     "comments": [
@@ -12181,7 +12395,7 @@
     ],
     "reactions": {
       "heart": 98,
-      "paw": 72,
+      "paw": 73,
       "star": 41
     },
     "comments": [
@@ -12219,8 +12433,8 @@
     ],
     "reactions": {
       "heart": 60,
-      "paw": 39,
-      "star": 23
+      "paw": 40,
+      "star": 24
     },
     "comments": [],
     "image_prompt": "The character from reference image leaning against, walking, running. Setting: a narrow eastern alley with old stone walls. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -12247,7 +12461,7 @@
       "内省"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 85,
       "paw": 60,
       "star": 28
     },
@@ -12285,9 +12499,9 @@
       "火种室后"
     ],
     "reactions": {
-      "heart": 83,
-      "paw": 50,
-      "star": 26
+      "heart": 84,
+      "paw": 51,
+      "star": 27
     },
     "comments": [
       {
@@ -12323,9 +12537,9 @@
       "不再等待"
     ],
     "reactions": {
-      "heart": 65,
-      "paw": 50,
-      "star": 23
+      "heart": 68,
+      "paw": 51,
+      "star": 24
     },
     "comments": [
       {
@@ -12358,7 +12572,7 @@
     ],
     "reactions": {
       "heart": 111,
-      "paw": 81,
+      "paw": 83,
       "star": 46
     },
     "comments": [
@@ -12395,9 +12609,9 @@
       "等到了"
     ],
     "reactions": {
-      "heart": 97,
-      "paw": 70,
-      "star": 35
+      "heart": 99,
+      "paw": 72,
+      "star": 36
     },
     "comments": [
       {
@@ -12434,7 +12648,7 @@
     ],
     "reactions": {
       "heart": 59,
-      "paw": 37,
+      "paw": 38,
       "star": 20
     },
     "comments": [],
@@ -12502,8 +12716,8 @@
       "温暖"
     ],
     "reactions": {
-      "heart": 160,
-      "paw": 107,
+      "heart": 161,
+      "paw": 108,
       "star": 58
     },
     "comments": [
@@ -12541,9 +12755,9 @@
       "同行"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 60,
-      "star": 32
+      "heart": 93,
+      "paw": 62,
+      "star": 33
     },
     "comments": [
       {
@@ -12576,9 +12790,9 @@
       "收束"
     ],
     "reactions": {
-      "heart": 105,
-      "paw": 68,
-      "star": 36
+      "heart": 108,
+      "paw": 69,
+      "star": 37
     },
     "comments": [
       {
@@ -12615,8 +12829,8 @@
       "主线收束"
     ],
     "reactions": {
-      "heart": 83,
-      "paw": 58,
+      "heart": 86,
+      "paw": 59,
       "star": 29
     },
     "comments": [
@@ -12654,9 +12868,9 @@
       "暮色"
     ],
     "reactions": {
-      "heart": 61,
-      "paw": 43,
-      "star": 22
+      "heart": 64,
+      "paw": 44,
+      "star": 23
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, drawing/sketching. Setting: a warm rustic tavern with wooden beams. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -12683,8 +12897,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 113,
-      "paw": 71,
+      "heart": 115,
+      "paw": 72,
       "star": 43
     },
     "comments": [
@@ -12722,7 +12936,7 @@
     ],
     "reactions": {
       "heart": 130,
-      "paw": 92,
+      "paw": 94,
       "star": 48
     },
     "comments": [
@@ -12759,7 +12973,7 @@
       "脉动"
     ],
     "reactions": {
-      "heart": 80,
+      "heart": 83,
       "paw": 49,
       "star": 27
     },
@@ -12793,9 +13007,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 114,
-      "paw": 70,
-      "star": 41
+      "heart": 116,
+      "paw": 71,
+      "star": 42
     },
     "comments": [
       {
@@ -12831,9 +13045,9 @@
       "封门开启"
     ],
     "reactions": {
-      "heart": 51,
-      "paw": 29,
-      "star": 18
+      "heart": 53,
+      "paw": 30,
+      "star": 19
     },
     "comments": [
       {
@@ -12870,9 +13084,9 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 96,
-      "paw": 62,
-      "star": 34
+      "heart": 98,
+      "paw": 63,
+      "star": 35
     },
     "comments": [
       {
@@ -12905,9 +13119,9 @@
       "守望之火"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 48,
-      "star": 31
+      "heart": 74,
+      "paw": 50,
+      "star": 32
     },
     "comments": [
       {
@@ -12944,9 +13158,9 @@
       "决心"
     ],
     "reactions": {
-      "heart": 111,
-      "paw": 81,
-      "star": 45
+      "heart": 114,
+      "paw": 82,
+      "star": 46
     },
     "comments": [
       {
@@ -12982,9 +13196,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 50,
-      "star": 28
+      "heart": 83,
+      "paw": 52,
+      "star": 29
     },
     "comments": [
       {
@@ -13017,7 +13231,7 @@
       "发现"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 97,
       "paw": 73,
       "star": 40
     },
@@ -13057,9 +13271,9 @@
       "能量衰退"
     ],
     "reactions": {
-      "heart": 81,
-      "paw": 56,
-      "star": 34
+      "heart": 84,
+      "paw": 57,
+      "star": 35
     },
     "comments": [
       {
@@ -13096,8 +13310,8 @@
       "蓝绿光"
     ],
     "reactions": {
-      "heart": 102,
-      "paw": 62,
+      "heart": 104,
+      "paw": 63,
       "star": 45
     },
     "comments": [
@@ -13131,8 +13345,8 @@
       "心跳脉动"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 54,
+      "heart": 93,
+      "paw": 55,
       "star": 32
     },
     "comments": [
@@ -13166,9 +13380,9 @@
       "温暖"
     ],
     "reactions": {
-      "heart": 122,
-      "paw": 80,
-      "star": 50
+      "heart": 125,
+      "paw": 82,
+      "star": 51
     },
     "comments": [
       {
@@ -13205,9 +13419,9 @@
       "关键证据"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 74,
-      "star": 39
+      "heart": 108,
+      "paw": 75,
+      "star": 40
     },
     "comments": [
       {
@@ -13245,8 +13459,8 @@
     ],
     "reactions": {
       "heart": 86,
-      "paw": 67,
-      "star": 32
+      "paw": 69,
+      "star": 33
     },
     "comments": [
       {
@@ -13281,7 +13495,7 @@
     ],
     "reactions": {
       "heart": 72,
-      "paw": 47,
+      "paw": 49,
       "star": 26
     },
     "comments": [
@@ -13320,9 +13534,9 @@
       "主线接入"
     ],
     "reactions": {
-      "heart": 123,
-      "paw": 82,
-      "star": 48
+      "heart": 126,
+      "paw": 84,
+      "star": 49
     },
     "comments": [
       {
@@ -13360,8 +13574,8 @@
     ],
     "reactions": {
       "heart": 74,
-      "paw": 49,
-      "star": 18
+      "paw": 51,
+      "star": 19
     },
     "comments": [
       {
@@ -13395,9 +13609,9 @@
       "主线线索"
     ],
     "reactions": {
-      "heart": 100,
+      "heart": 103,
       "paw": 67,
-      "star": 35
+      "star": 36
     },
     "comments": [
       {
@@ -13434,9 +13648,9 @@
       "线索汇集"
     ],
     "reactions": {
-      "heart": 101,
-      "paw": 68,
-      "star": 37
+      "heart": 102,
+      "paw": 69,
+      "star": 38
     },
     "comments": [
       {
@@ -13474,7 +13688,7 @@
     ],
     "reactions": {
       "heart": 73,
-      "paw": 51,
+      "paw": 53,
       "star": 31
     },
     "comments": [
@@ -13512,8 +13726,8 @@
       "成长记录"
     ],
     "reactions": {
-      "heart": 136,
-      "paw": 95,
+      "heart": 139,
+      "paw": 96,
       "star": 49
     },
     "comments": [
@@ -13556,7 +13770,7 @@
     "reactions": {
       "heart": 78,
       "paw": 53,
-      "star": 27
+      "star": 28
     },
     "comments": [
       {
@@ -13590,8 +13804,8 @@
     ],
     "reactions": {
       "heart": 104,
-      "paw": 78,
-      "star": 40
+      "paw": 80,
+      "star": 41
     },
     "comments": [
       {
@@ -13627,8 +13841,8 @@
       "风亚回来了"
     ],
     "reactions": {
-      "heart": 83,
-      "paw": 50,
+      "heart": 86,
+      "paw": 51,
       "star": 35
     },
     "comments": [
@@ -13665,9 +13879,9 @@
       "蓝绿色的光"
     ],
     "reactions": {
-      "heart": 85,
+      "heart": 88,
       "paw": 56,
-      "star": 36
+      "star": 37
     },
     "comments": [
       {
@@ -13699,9 +13913,9 @@
       "三角记号"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 66,
-      "star": 32
+      "heart": 87,
+      "paw": 68,
+      "star": 33
     },
     "comments": [
       {
@@ -13738,7 +13952,7 @@
     ],
     "reactions": {
       "heart": 162,
-      "paw": 110,
+      "paw": 112,
       "star": 62
     },
     "comments": [
@@ -13775,9 +13989,9 @@
       "新发现"
     ],
     "reactions": {
-      "heart": 127,
+      "heart": 130,
       "paw": 95,
-      "star": 42
+      "star": 43
     },
     "comments": [
       {
@@ -13814,8 +14028,8 @@
       "探索"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 72,
+      "heart": 96,
+      "paw": 74,
       "star": 39
     },
     "comments": [
@@ -13853,9 +14067,9 @@
       "狐兰兹"
     ],
     "reactions": {
-      "heart": 116,
+      "heart": 117,
       "paw": 89,
-      "star": 37
+      "star": 38
     },
     "comments": [
       {
@@ -13891,8 +14105,8 @@
       "回来了"
     ],
     "reactions": {
-      "heart": 76,
-      "paw": 41,
+      "heart": 78,
+      "paw": 42,
       "star": 32
     },
     "comments": [
@@ -13930,7 +14144,7 @@
     ],
     "reactions": {
       "heart": 97,
-      "paw": 68,
+      "paw": 70,
       "star": 41
     },
     "comments": [],
@@ -13958,8 +14172,8 @@
       "战略性撤退"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 77,
+      "heart": 108,
+      "paw": 78,
       "star": 41
     },
     "comments": [
@@ -13996,8 +14210,8 @@
       "送信"
     ],
     "reactions": {
-      "heart": 110,
-      "paw": 75,
+      "heart": 113,
+      "paw": 76,
       "star": 37
     },
     "mood": "surprised",
@@ -14032,8 +14246,8 @@
     ],
     "reactions": {
       "heart": 113,
-      "paw": 73,
-      "star": 41
+      "paw": 75,
+      "star": 42
     },
     "mood": "happy",
     "comments": [
@@ -14066,8 +14280,8 @@
       "归途"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 53,
+      "heart": 87,
+      "paw": 55,
       "star": 27
     },
     "mood": "calm",
@@ -14101,9 +14315,9 @@
       "矿坑古道"
     ],
     "reactions": {
-      "heart": 68,
+      "heart": 70,
       "paw": 47,
-      "star": 32
+      "star": 33
     },
     "mood": "thinking",
     "comments": [
@@ -14141,8 +14355,8 @@
     ],
     "reactions": {
       "heart": 63,
-      "paw": 40,
-      "star": 25
+      "paw": 42,
+      "star": 26
     },
     "mood": "sad",
     "comments": [],
@@ -14169,9 +14383,9 @@
       "炉火镇"
     ],
     "reactions": {
-      "heart": 82,
+      "heart": 84,
       "paw": 41,
-      "star": 30
+      "star": 31
     },
     "mood": "thinking",
     "image_prompt": "The character from reference image walking, touching, eating. Setting: a cozy fantasy stone village called Luhuo Town, the deck of a small wooden boat. Time: dusk, golden orange sky. pensive introspective atmosphere, golden hour warm side-lighting. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14198,7 +14412,7 @@
     "timestamp": "2026-04-15T20:10:00+08:00",
     "reactions": {
       "heart": 91,
-      "paw": 56,
+      "paw": 57,
       "star": 26
     },
     "mood": "sleepy",
@@ -14225,8 +14439,8 @@
     "character": "提理安",
     "timestamp": "2026-04-15T20:12:00+08:00",
     "reactions": {
-      "heart": 46,
-      "paw": 44,
+      "heart": 47,
+      "paw": 45,
       "star": 22
     },
     "mood": "calm",
@@ -14254,7 +14468,7 @@
     "timestamp": "2026-04-15T20:15:00+08:00",
     "reactions": {
       "heart": 85,
-      "paw": 59,
+      "paw": 61,
       "star": 34
     },
     "mood": "happy",
@@ -14281,9 +14495,9 @@
     "character": "羽烽",
     "timestamp": "2026-04-15T20:18:00+08:00",
     "reactions": {
-      "heart": 70,
-      "paw": 55,
-      "star": 26
+      "heart": 72,
+      "paw": 56,
+      "star": 27
     },
     "mood": "sad",
     "image_prompt": "The character from reference image running, flipping open, by the window. Setting: a warm rustic tavern with wooden beams, a stone-built fantasy setting. Time: dusk, golden orange sky. melancholic quiet stillness, dim overcast cool-blue ambient light. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14309,7 +14523,7 @@
       "出发"
     ],
     "reactions": {
-      "heart": 79,
+      "heart": 82,
       "paw": 46,
       "star": 23
     },
@@ -14338,7 +14552,7 @@
     ],
     "reactions": {
       "heart": 73,
-      "paw": 36,
+      "paw": 37,
       "star": 23
     },
     "mood": "surprised",
@@ -14365,9 +14579,9 @@
       "出发准备"
     ],
     "reactions": {
-      "heart": 60,
-      "paw": 33,
-      "star": 16
+      "heart": 62,
+      "paw": 35,
+      "star": 17
     },
     "mood": "calm",
     "image_prompt": "The character from reference image sitting, walking, touching. Setting: a tall stone lighthouse on a cliff, a stone-built fantasy setting. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14393,8 +14607,8 @@
       "等待"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 55,
+      "heart": 75,
+      "paw": 56,
       "star": 27
     },
     "mood": "sad",
@@ -14421,7 +14635,7 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 63,
+      "heart": 66,
       "paw": 47,
       "star": 22
     },
@@ -14450,8 +14664,8 @@
     ],
     "reactions": {
       "heart": 55,
-      "paw": 41,
-      "star": 18
+      "paw": 43,
+      "star": 19
     },
     "mood": "sleepy",
     "image_prompt": "The character from reference image sleeping/dozing, by the window, a bird nearby. Setting: a warm rustic tavern with wooden beams, a stone-built fantasy setting. Time: early morning, dawn light. drowsy cozy late-night atmosphere, dim warm lamplight. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14477,8 +14691,8 @@
       "探索"
     ],
     "reactions": {
-      "heart": 55,
-      "paw": 49,
+      "heart": 56,
+      "paw": 50,
       "star": 24
     },
     "mood": "surprised",
@@ -14506,8 +14720,8 @@
     ],
     "reactions": {
       "heart": 50,
-      "paw": 47,
-      "star": 21
+      "paw": 49,
+      "star": 22
     },
     "mood": "sleepy",
     "image_prompt": "The character from reference image snow, a bird nearby. Setting: a dark underground passage, a stone-built fantasy setting. Time: late night. drowsy cozy late-night atmosphere, dim warm lamplight. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14533,8 +14747,8 @@
       "记录册"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 67,
+      "heart": 96,
+      "paw": 69,
       "star": 36
     },
     "mood": "happy",
@@ -14561,7 +14775,7 @@
       "社交挑战"
     ],
     "reactions": {
-      "heart": 101,
+      "heart": 103,
       "paw": 65,
       "star": 37
     },
@@ -14589,7 +14803,7 @@
       "成长"
     ],
     "reactions": {
-      "heart": 91,
+      "heart": 94,
       "paw": 53,
       "star": 29
     },
@@ -14618,7 +14832,7 @@
     ],
     "reactions": {
       "heart": 60,
-      "paw": 34,
+      "paw": 36,
       "star": 20
     },
     "mood": "calm",
@@ -14645,9 +14859,9 @@
       "离别"
     ],
     "reactions": {
-      "heart": 64,
-      "paw": 34,
-      "star": 24
+      "heart": 65,
+      "paw": 36,
+      "star": 25
     },
     "mood": "thinking",
     "image_prompt": "The character from reference image walking, luminescent, lantern light. Setting: a wooden dock by the waterfront, near water in a cavern. Time: nighttime, moonlit. pensive introspective atmosphere, golden hour warm side-lighting. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14673,8 +14887,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 34,
+      "heart": 59,
+      "paw": 35,
       "star": 14
     },
     "mood": "calm",
@@ -14701,7 +14915,7 @@
       "双关语"
     ],
     "reactions": {
-      "heart": 80,
+      "heart": 83,
       "paw": 52,
       "star": 27
     },
@@ -14729,8 +14943,8 @@
       "成长"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 57,
+      "heart": 89,
+      "paw": 58,
       "star": 31
     },
     "mood": "thinking",
@@ -14757,8 +14971,8 @@
       "内省"
     ],
     "reactions": {
-      "heart": 91,
-      "paw": 61,
+      "heart": 92,
+      "paw": 62,
       "star": 34
     },
     "mood": "shy",
@@ -14785,8 +14999,8 @@
       "等待"
     ],
     "reactions": {
-      "heart": 75,
-      "paw": 50,
+      "heart": 76,
+      "paw": 52,
       "star": 26
     },
     "mood": "sad",
@@ -14813,9 +15027,9 @@
       "想念"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 47,
-      "star": 31
+      "heart": 77,
+      "paw": 49,
+      "star": 32
     },
     "mood": "sad",
     "image_prompt": "The character from reference image eating. Setting: a warm rustic tavern with wooden beams, a stone-built fantasy setting. Time: nighttime, moonlit. melancholic quiet stillness, dim overcast cool-blue ambient light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14841,9 +15055,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 75,
-      "paw": 45,
-      "star": 26
+      "heart": 78,
+      "paw": 47,
+      "star": 27
     },
     "mood": "sad",
     "image_prompt": "The character from reference image by the window, luminescent, fire/flame. Setting: a warm rustic tavern with wooden beams, a stone-built fantasy setting. Time: dusk, golden orange sky. melancholic quiet stillness, dim overcast cool-blue ambient light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14869,7 +15083,7 @@
       "收束"
     ],
     "reactions": {
-      "heart": 101,
+      "heart": 104,
       "paw": 64,
       "star": 42
     },
@@ -14897,9 +15111,9 @@
       "道别"
     ],
     "reactions": {
-      "heart": 100,
-      "paw": 56,
-      "star": 38
+      "heart": 103,
+      "paw": 58,
+      "star": 39
     },
     "mood": "thinking",
     "image_prompt": "The character from reference image walking, eating. Setting: an underwater postal office, a stone-built fantasy setting. Time: nighttime, moonlit. pensive introspective atmosphere, golden hour warm side-lighting. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -14925,8 +15139,8 @@
       "等待"
     ],
     "reactions": {
-      "heart": 58,
-      "paw": 30,
+      "heart": 59,
+      "paw": 31,
       "star": 15
     },
     "mood": "calm",
@@ -14953,8 +15167,8 @@
       "首日"
     ],
     "reactions": {
-      "heart": 83,
-      "paw": 60,
+      "heart": 86,
+      "paw": 61,
       "star": 28
     },
     "mood": "surprised",
@@ -14981,7 +15195,7 @@
       "温情"
     ],
     "reactions": {
-      "heart": 64,
+      "heart": 67,
       "paw": 50,
       "star": 23
     },
@@ -15010,8 +15224,8 @@
     ],
     "reactions": {
       "heart": 66,
-      "paw": 49,
-      "star": 27
+      "paw": 51,
+      "star": 28
     },
     "mood": "calm",
     "image_prompt": "The character from reference image waiting, luminescent, fire/flame. Setting: a dark underground passage, a stone-built fantasy setting. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15037,8 +15251,8 @@
       "读信"
     ],
     "reactions": {
-      "heart": 112,
-      "paw": 68,
+      "heart": 114,
+      "paw": 70,
       "star": 46
     },
     "mood": "sad",
@@ -15065,7 +15279,7 @@
       "触动"
     ],
     "reactions": {
-      "heart": 74,
+      "heart": 77,
       "paw": 47,
       "star": 28
     },
@@ -15121,8 +15335,8 @@
       "牵挂"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 51,
+      "heart": 84,
+      "paw": 53,
       "star": 29
     },
     "mood": "thinking",
@@ -15149,9 +15363,9 @@
       "新闻"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 40,
-      "star": 22
+      "heart": 60,
+      "paw": 42,
+      "star": 23
     },
     "mood": "sad",
     "image_prompt": "The character from reference image listening, by the window. Setting: a warm rustic tavern with wooden beams, a stone-built fantasy setting. Time: early morning, dawn light. melancholic quiet stillness, dim overcast cool-blue ambient light. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15177,8 +15391,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 52,
+      "heart": 88,
+      "paw": 53,
       "star": 29
     },
     "mood": "happy",
@@ -15205,8 +15419,8 @@
       "社交挑战"
     ],
     "reactions": {
-      "heart": 94,
-      "paw": 61,
+      "heart": 97,
+      "paw": 63,
       "star": 31
     },
     "mood": "shy",
@@ -15234,8 +15448,8 @@
     ],
     "reactions": {
       "heart": 81,
-      "paw": 54,
-      "star": 27
+      "paw": 56,
+      "star": 28
     },
     "mood": "calm",
     "image_prompt": "The character from reference image sitting, writing, recording notes. Setting: a cozy fantasy stone village called Luhuo Town, a town square with a central bonfire. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15261,9 +15475,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 54,
-      "paw": 34,
-      "star": 20
+      "heart": 56,
+      "paw": 35,
+      "star": 21
     },
     "mood": "happy",
     "image_prompt": "The character from reference image standing, walking, snow. Setting: the stone gatehouse of a walled village, a stone-built fantasy setting. Time: early morning, dawn light. joyful lighthearted energy, bright cheerful sunlight with warm tones. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15289,9 +15503,9 @@
       "安静"
     ],
     "reactions": {
-      "heart": 67,
+      "heart": 68,
       "paw": 42,
-      "star": 24
+      "star": 25
     },
     "mood": "calm",
     "image_prompt": "The character from reference image sitting, touching. Setting: rocky reefs by the shore, stone steps. Time: nighttime, moonlit. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15317,8 +15531,8 @@
       "想念"
     ],
     "reactions": {
-      "heart": 67,
-      "paw": 47,
+      "heart": 69,
+      "paw": 48,
       "star": 28
     },
     "mood": "sad",
@@ -15345,8 +15559,8 @@
       "线索"
     ],
     "reactions": {
-      "heart": 57,
-      "paw": 38,
+      "heart": 60,
+      "paw": 39,
       "star": 19
     },
     "mood": "thinking",
@@ -15373,9 +15587,9 @@
       "双关语"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 52,
-      "star": 29
+      "heart": 87,
+      "paw": 53,
+      "star": 30
     },
     "mood": "happy",
     "image_prompt": "The character from reference image writing, recording notes. Setting: a stone-built fantasy setting. Time: nighttime, moonlit. joyful lighthearted energy, bright cheerful sunlight with warm tones. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15401,9 +15615,9 @@
       "古代记号"
     ],
     "reactions": {
-      "heart": 62,
-      "paw": 42,
-      "star": 25
+      "heart": 63,
+      "paw": 43,
+      "star": 26
     },
     "mood": "surprised",
     "image_prompt": "The character from reference image staring at, glowing, snow. Setting: an herbalist shop filled with dried plants and bottles, a stone-built fantasy setting. Time: noon, bright overhead sun. moment of revelation and awe, dramatic shaft of light breaking through. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15429,9 +15643,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 58,
+      "heart": 61,
       "paw": 41,
-      "star": 20
+      "star": 21
     },
     "mood": "thinking",
     "image_prompt": "The character from reference image gazing at, snow. Setting: an herbalist shop filled with dried plants and bottles, a stone-built fantasy setting. Time: noon, bright overhead sun. pensive introspective atmosphere, golden hour warm side-lighting. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15458,7 +15672,7 @@
       "成长"
     ],
     "reactions": {
-      "heart": 106,
+      "heart": 109,
       "paw": 69,
       "star": 43
     },
@@ -15487,8 +15701,8 @@
     ],
     "reactions": {
       "heart": 74,
-      "paw": 53,
-      "star": 28
+      "paw": 54,
+      "star": 29
     },
     "mood": "shy",
     "image_prompt": "The character from reference image walking, writing, recording notes. Setting: a bustling village market with stalls, a stone-built fantasy setting. Time: noon, bright overhead sun. tender bashful warmth, soft pink-golden backlight. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15514,9 +15728,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 63,
-      "paw": 38,
-      "star": 22
+      "heart": 64,
+      "paw": 40,
+      "star": 23
     },
     "mood": "calm",
     "image_prompt": "The character from reference image standing, waiting. Setting: a wooden dock by the waterfront. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15542,9 +15756,9 @@
       "日常"
     ],
     "reactions": {
-      "heart": 62,
-      "paw": 32,
-      "star": 17
+      "heart": 65,
+      "paw": 33,
+      "star": 18
     },
     "mood": "calm",
     "image_prompt": "The character from reference image crouching, running, touching. Setting: a bustling village market with stalls. Time: dusk, golden orange sky. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15570,8 +15784,8 @@
       "取信"
     ],
     "reactions": {
-      "heart": 92,
-      "paw": 54,
+      "heart": 93,
+      "paw": 56,
       "star": 37
     },
     "mood": "thinking",
@@ -15598,7 +15812,7 @@
       "失眠"
     ],
     "reactions": {
-      "heart": 75,
+      "heart": 77,
       "paw": 47,
       "star": 24
     },
@@ -15627,9 +15841,9 @@
       "发现"
     ],
     "reactions": {
-      "heart": 56,
-      "paw": 41,
-      "star": 24
+      "heart": 59,
+      "paw": 43,
+      "star": 25
     },
     "mood": "happy",
     "image_prompt": "The character from reference image walking. Setting: a dark underground passage, a stone-built fantasy setting. Time: early morning, dawn light. joyful lighthearted energy, bright cheerful sunlight with warm tones. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15655,8 +15869,8 @@
       "决心"
     ],
     "reactions": {
-      "heart": 74,
-      "paw": 48,
+      "heart": 75,
+      "paw": 50,
       "star": 24
     },
     "mood": "calm",
@@ -15683,9 +15897,9 @@
       "等待"
     ],
     "reactions": {
-      "heart": 64,
+      "heart": 66,
       "paw": 48,
-      "star": 21
+      "star": 22
     },
     "mood": "sad",
     "image_prompt": "The character from reference image by the window, fire/flame, wind blowing. Setting: a warm rustic tavern with wooden beams, a windowsill. Time: early morning, dawn light. melancholic quiet stillness, dim overcast cool-blue ambient light. medium shot with shallow depth of field. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15713,7 +15927,7 @@
     "reactions": {
       "heart": 66,
       "paw": 42,
-      "star": 21
+      "star": 22
     },
     "mood": "sad",
     "image_prompt": "The character from reference image walking, fire/flame, wind blowing. Setting: a stone-built fantasy setting, the stone gatehouse of a walled village. Time: early morning, dawn light. melancholic quiet stillness, dim overcast cool-blue ambient light. close-up upper body portrait with blurred background. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15739,9 +15953,9 @@
       "出发"
     ],
     "reactions": {
-      "heart": 59,
-      "paw": 44,
-      "star": 23
+      "heart": 60,
+      "paw": 45,
+      "star": 24
     },
     "mood": "sleepy",
     "image_prompt": "The character from reference image crouching, walking, listening. Setting: a cozy fantasy stone village called Luhuo Town, the stone gatehouse of a walled village. Time: early morning, dawn light. drowsy cozy late-night atmosphere, dim warm lamplight. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15769,8 +15983,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 159,
-      "paw": 107,
+      "heart": 162,
+      "paw": 108,
       "star": 61
     },
     "comments": [],
@@ -15799,9 +16013,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 65,
-      "star": 34
+      "heart": 105,
+      "paw": 67,
+      "star": 35
     },
     "comments": [],
     "image_prompt": "The character from reference image sitting, gazing at, eating. Setting: a coastal town called Tidal Bay, rocky reefs by the shore, stone steps. Time: early morning, dawn light. serene contemplative mood, soft diffused natural light. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15831,7 +16045,7 @@
     "reactions": {
       "heart": 137,
       "paw": 91,
-      "star": 54
+      "star": 55
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, fire/flame. Setting: a cozy fantasy stone village called Luhuo Town, a dark underground passage, a dim underground fire-seed chamber with glowing embers. Time: early morning, dawn light. moment of revelation and awe, dramatic shaft of light breaking through. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15859,8 +16073,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 178,
-      "paw": 116,
+      "heart": 181,
+      "paw": 117,
       "star": 69
     },
     "comments": [],
@@ -15891,8 +16105,8 @@
     ],
     "reactions": {
       "heart": 134,
-      "paw": 84,
-      "star": 47
+      "paw": 85,
+      "star": 48
     },
     "comments": [],
     "image_prompt": "The character from reference image eating, listening, fire/flame. Setting: a cozy fantasy stone village called Luhuo Town, the main cobblestone street of a fantasy village, a stone-built fantasy setting. Time: early morning, dawn light. pensive introspective atmosphere, golden hour warm side-lighting. three-quarter view from the side. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -15921,8 +16135,8 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 75,
+      "heart": 120,
+      "paw": 77,
       "star": 45
     },
     "comments": [],
@@ -15953,7 +16167,7 @@
     ],
     "reactions": {
       "heart": 206,
-      "paw": 132,
+      "paw": 133,
       "star": 87
     },
     "comments": [],
@@ -15985,7 +16199,7 @@
     "reactions": {
       "heart": 187,
       "paw": 125,
-      "star": 72
+      "star": 73
     },
     "comments": [],
     "image_prompt": "The character from reference image staring at, looking up, wind blowing. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a stone-built fantasy setting. Time: noon, bright overhead sun. moment of revelation and awe, dramatic shaft of light breaking through. wide shot from behind showing the scene ahead. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -16014,9 +16228,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 212,
-      "paw": 138,
-      "star": 90
+      "heart": 215,
+      "paw": 139,
+      "star": 91
     },
     "comments": [],
     "image_prompt": "The character from reference image smiling/laughing, listening, fire/flame. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a stone-built fantasy setting. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. dynamic angle slightly from below. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -16045,9 +16259,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 225,
+      "heart": 226,
       "paw": 154,
-      "star": 102
+      "star": 103
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, writing, drawing/sketching. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a stone-built fantasy setting. Time: noon, bright overhead sun. pensive introspective atmosphere, golden hour warm side-lighting. medium shot, slightly low angle. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -16078,7 +16292,7 @@
     "reactions": {
       "heart": 230,
       "paw": 162,
-      "star": 104
+      "star": 105
     },
     "comments": [],
     "image_prompt": "The character from reference image standing, walking, lantern light. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a stone-built fantasy setting. Time: noon, bright overhead sun. moment of revelation and awe, dramatic shaft of light breaking through. medium close-up, eye level. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -16108,9 +16322,9 @@
       "第32天"
     ],
     "reactions": {
-      "heart": 242,
-      "paw": 166,
-      "star": 113
+      "heart": 245,
+      "paw": 167,
+      "star": 114
     },
     "comments": [],
     "image_prompt": "The character from reference image walking, writing, waiting. Setting: a vast underground sea cavern with bioluminescent ceiling, a domed underground cavern, a small island in the underground sea. Time: noon, bright overhead sun. serene contemplative mood, soft diffused natural light. wide establishing shot showing environment. Warm storybook illustration, semi-realistic furry art style. Fully clothed, pants/robe clearly visible, no nudity.",
@@ -16140,7 +16354,7 @@
     "reactions": {
       "heart": 272,
       "paw": 189,
-      "star": 99
+      "star": 100
     },
     "comments": [
       {
@@ -16177,8 +16391,8 @@
       "羽烽"
     ],
     "reactions": {
-      "heart": 259,
-      "paw": 150,
+      "heart": 260,
+      "paw": 151,
       "star": 109
     },
     "comments": [
@@ -16217,8 +16431,8 @@
     ],
     "reactions": {
       "heart": 257,
-      "paw": 149,
-      "star": 107
+      "paw": 151,
+      "star": 108
     },
     "comments": [
       {
@@ -16259,7 +16473,7 @@
       "狐兰兹"
     ],
     "reactions": {
-      "heart": 258,
+      "heart": 260,
       "paw": 155,
       "star": 94
     },
@@ -16298,7 +16512,7 @@
       "旻"
     ],
     "reactions": {
-      "heart": 225,
+      "heart": 226,
       "paw": 170,
       "star": 118
     },
@@ -16343,7 +16557,7 @@
     "reactions": {
       "heart": 226,
       "paw": 189,
-      "star": 116
+      "star": 117
     },
     "comments": [
       {
@@ -16384,8 +16598,8 @@
       "走廊"
     ],
     "reactions": {
-      "heart": 142,
-      "paw": 98,
+      "heart": 145,
+      "paw": 100,
       "star": 55
     },
     "comments": [
@@ -16422,9 +16636,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 85,
-      "star": 47
+      "heart": 130,
+      "paw": 87,
+      "star": 48
     },
     "comments": [
       {
@@ -16500,9 +16714,9 @@
       "沉默"
     ],
     "reactions": {
-      "heart": 108,
+      "heart": 111,
       "paw": 72,
-      "star": 38
+      "star": 39
     },
     "comments": [
       {
@@ -16534,9 +16748,9 @@
       "面包"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 82,
-      "star": 42
+      "heart": 120,
+      "paw": 83,
+      "star": 43
     },
     "comments": [
       {
@@ -16572,9 +16786,9 @@
       "第七幕预告"
     ],
     "reactions": {
-      "heart": 95,
+      "heart": 98,
       "paw": 65,
-      "star": 35
+      "star": 36
     },
     "comments": [],
     "image_history": [
