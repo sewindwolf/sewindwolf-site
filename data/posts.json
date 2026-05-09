@@ -127,8 +127,8 @@
     "game_time": "第46天·正午",
     "timestamp": "2026-05-09T14:03:00+08:00",
     "content": "饼。\n热的。\n味淡。\n好。",
-    "image_url": "https://file.nanobananapro.cloud/20260509/5d6bf8eadb844bf195de045d77704083.png",
-    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID tiger-furry character. Match reference image exactly. Do NOT redesign any feature. fully clothed, training pants clearly visible, no nudity.\n\nComposition: side profile shot, character seated low on a worn wooden bench against the outer wall of a tavern, rim lighting from the right casting strong silhouette edge, three-quarter side view, half of frame is the warm wooden tavern wall, the other half open empty street.\nScene: just outside Yan Chao Tavern at noon, midday sun slanting in from the right, smell-lines from the kitchen window above, an empty clay bowl placed beside him on the bench, a sword leaned silently against the wall, a single dry leaf on the bench.\nAction/Expression: the character Yufeng from reference image sitting alone on the bench, biting silently into a small grilled flatbread wrap, expression flat and unreadable, eyes half-closed savoring it, ears slightly twitched.\nOutfit: dark training pants, plain undershirt under leather chestpiece, all clothing covering body fully, boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, strong noon side-light and clean shadows, 16:9 cinematic.\n\nOnly ONE character in the scene. [REFERENCE IMAGE LOCKED]\r\n",
+    "image_url": "https://file.nanobananapro.cloud/20260509/df0b2db6733c4172b56eb77c28cddc93.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID tiger-furry character. Match reference image exactly. Do NOT redesign any feature. fully clothed, training pants clearly visible, no nudity.\n\nComposition: side profile shot, character seated low on a worn wooden bench against the outer wall of a tavern, rim lighting from the right casting strong silhouette edge, three-quarter side view, half of frame is the warm wooden tavern wall, the other half open empty street.\nScene: just outside Yan Chao Tavern at noon, midday sun slanting in from the right, smell-lines from the kitchen window above, an empty clay bowl placed beside him on the bench, a sword leaned silently against the wall, a single dry leaf on the bench.\nAction/Expression: the character Yufeng from reference image sitting alone on the bench, biting silently into a small grilled flatbread wrap, expression flat and unreadable, eyes half-closed savoring it, ears slightly twitched.\nOutfit: dark training pants, plain undershirt under leather chestpiece, all clothing covering body fully, boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, strong noon side-light and clean shadows, 16:9 cinematic.\n\nOnly ONE character in the scene. [REFERENCE IMAGE LOCKED]",
     "tags": [
       "正午",
       "雁巢酒馆",
@@ -144,6 +144,13 @@
         "from": "风亚",
         "text": "一个字一个字蹦出来·你今天话挺多。"
       }
+    ],
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260509/5d6bf8eadb844bf195de045d77704083.png",
+      "https://file.nanobananapro.cloud/20260509/1847b936ef6d4f8296513a3f17398613.png",
+      "https://file.nanobananapro.cloud/20260509/b0c9a6586a7b43bc966e6d88515904d2.png",
+      "https://file.nanobananapro.cloud/20260509/df0b2db6733c4172b56eb77c28cddc93.png",
+      "https://file.nanobananapro.cloud/20260509/237591da69e34d84bc98bd90db0c6e34.png"
     ]
   },
   {
@@ -158,8 +165,8 @@
     "game_time": "第46天·正午",
     "timestamp": "2026-05-09T14:04:00+08:00",
     "content": "只是来送一封信！只·是·来·送·一·封·信！\n白兔大婶：\"阿旻今天怎么这么瘦了你最近吃饭了吗——\"\n獾婶：\"包扣又崩了！来来来我给你换粗的！\"\n我手里那封信高高举着——龟爷爷家的——还没送！\n\n（最后被按在凳子上换了新包扣·还塞了两个糯米团子。）\n暖贝今天温温的·不烫。",
-    "image_url": "https://file.nanobananapro.cloud/20260509/013c6f7f73334dcb9bc79fa505c391f3.png",
-    "image_prompt": "﻿[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID black-shiba-inu-furry character. Match the reference image exactly. Do NOT redesign any feature. fully clothed, courier uniform and pants clearly visible, no nudity.\n\nComposition: bird's eye view from slightly overhead, the main character DOMINANT FOREGROUND FOCUS but small in the wide environment, surrounded by two larger BIPEDAL HUMANOID middle-aged seamstress NPC characters (a rabbit-furry seamstress and a badger-furry seamstress, seen from above so faces partially obscured by shoulders), dynamic foreshortening, the character looks small and cornered.\nScene: noon on Lu Huo Town main street outside the tailor's shop, fabric bolts piled on outdoor tables, hanging cloth strips sway gently above, scattered straw baskets on the stone-paved street, midday sun making sharp shadows.\nAction/Expression: the character Aki from reference image looking up wide-eyed and slightly overwhelmed at the two gossiping NPC seamstresses leaning down over him, mouth half-open in protest, courier satchel buckle visibly broken with one strap loose, holding a single envelope in his paws, ears flattened.\nOutfit: green courier uniform with brass buttons, courier satchel strap, pants and boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, soft mid-day light, 16:9 cinematic.\n\nThe two NPC seamstresses are BIPEDAL HUMANOID furries (NOT real animals). [REFERENCE IMAGE LOCKED]\r\n",
+    "image_url": "https://file.nanobananapro.cloud/20260509/b4d78ab0a45c467c918679f6ec3a1641.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] BIPEDAL HUMANOID black-shiba-inu-furry character. Match the reference image exactly. Do NOT redesign any feature. fully clothed, courier uniform and pants clearly visible, no nudity.\n\nComposition: bird's eye view from slightly overhead, the main character DOMINANT FOREGROUND FOCUS but small in the wide environment, surrounded by two larger BIPEDAL HUMANOID middle-aged seamstress NPC characters (a rabbit-furry seamstress and a badger-furry seamstress, seen from above so faces partially obscured by shoulders), dynamic foreshortening, the character looks small and cornered.\nScene: noon on Lu Huo Town main street outside the tailor's shop, fabric bolts piled on outdoor tables, hanging cloth strips sway gently above, scattered straw baskets on the stone-paved street, midday sun making sharp shadows.\nAction/Expression: the character Aki from reference image looking up wide-eyed and slightly overwhelmed at the two gossiping NPC seamstresses leaning down over him, mouth half-open in protest, courier satchel buckle visibly broken with one strap loose, holding a single envelope in his paws, ears flattened.\nOutfit: green courier uniform with brass buttons, courier satchel strap, pants and boots clearly visible.\nArt style: warm storybook illustration, semi-realistic furry, soft mid-day light, 16:9 cinematic.\n\nThe two NPC seamstresses are BIPEDAL HUMANOID furries (NOT real animals). [REFERENCE IMAGE LOCKED]",
     "tags": [
       "正午",
       "裁缝铺",
@@ -184,6 +191,13 @@
         "from": "旻",
         "text": "@狐兰兹 哥！阿秋脚环都绑好了！提理安哥发的！我刚才路过亭子敬过礼了！"
       }
+    ],
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260509/013c6f7f73334dcb9bc79fa505c391f3.png",
+      "https://file.nanobananapro.cloud/20260509/f44d3174bb5c4db4b7ed01cedeb4eb85.png",
+      "https://file.nanobananapro.cloud/20260509/a22e6bfbcdaa4178b464a4cc4d96890b.png",
+      "https://file.nanobananapro.cloud/20260509/58db81f50187485e9eda1079d45176c5.png",
+      "https://file.nanobananapro.cloud/20260509/b4d78ab0a45c467c918679f6ec3a1641.png"
     ]
   },
   {
