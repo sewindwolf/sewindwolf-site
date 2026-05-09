@@ -1,5 +1,210 @@
 [
   {
+    "id": "post_20260509_2105_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·主街市集（收摊时分）",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "熊岩大叔今天烤完最后一炉。半块饼塞我手里，\"卖不出去就你吃\"。\n灯笼一盏一盏点起来，烟从栗子摊那头飘过来。\n手插兜里晃回去。这点饼，热的，够。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/4547af52f88d4004abff8cc84c73b421.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image must match exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry character (NOT a real wolf, NOT four-legged, walking upright like a person). Only ONE character in the scene.\n\nComposition: wide establishing shot, character small in frame, vast environment surrounds, evening market crowd in foreground and middle ground, character positioned on right third with his back partially turned, holding half a piece of bread; rule of thirds.\n\nScene: Luhuo Town main street market at dusk, evening lanterns just being lit one by one, old bear baker uncle's bread stall in the middle ground packing up for the night, smoke from a chestnut roaster in the background, warm orange-amber light from paper lanterns mixing with the deep blue dusk sky, cobblestone street, a few townsfolk silhouettes drifting home with bundles.\n\nAction/Expression: Feng Ya standing at the edge of the market clutching half a leftover flatbread, looking back across the dispersing crowd with a calm half-smile, hand in his pocket, no hurry; small wolf-tail relaxed.\n\nOutfit: dark casual travel coat, fully clothed, pants clearly visible, no nudity. Quiet, settled posture.\n\nArt style: warm storybook illustration, semi-realistic furry, soft painterly evening light, gentle vignette.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "日常",
+      "主街",
+      "收摊"
+    ],
+    "reactions": {
+      "heart": 107,
+      "paw": 75,
+      "star": 40
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "又是您吃白食的一天，长进。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "熊岩大叔的隔夜饼·二三两价格的人情·这一笔我得记下。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_2105_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "炉火镇·守望亭（夜值前）",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "把灯笼点着的时候 :提理安_thinking: ，阿秋在我肩上没动。\n我指了指守望之火：\"这个，你以后每天都要见。\"\n它歪了歪脑袋，没叫。算认下了。\n值班簿写第46暮·夜值开始·守望之火橙红稳定·阿秋陪。\n雪羽，今晚的火和你那时候一样亮。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/3ab5f944dbdc4a4f95f951a5338a1d94.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image must match exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry deer character (NOT a real deer, NOT four-legged, walking upright like a person). Only ONE character in the scene; one small bird (Aki, an autumn-brown sparrow-sized bird) perched on his shoulder is fine.\n\nComposition: side profile shot, character silhouetted against background light, rim lighting from side, character on left third, lantern hand-held casting warm orange light on his face from below.\n\nScene: Luhuo Town watchtower (shouwang ting) at dusk, just before night watch begins, the eternal watchfire glowing warm orange-amber to the right of frame casting flickering rim light, deep blue twilight sky behind, wooden tower beams; small autumn-brown bird (Aki) perched on his shoulder watching the fire with him.\n\nAction/Expression: Tilion lifting a paper lantern in one hand, the small bird Aki on his shoulder; he is teaching the bird the fire, one fingertip pointing toward the watchfire, expression calm and quietly pleased, like introducing a friend.\n\nOutfit: watchman's robe and cape (his usual watch uniform), fully clothed, robe clearly visible to the floor, no nudity.\n\nArt style: warm storybook illustration, semi-realistic furry, painterly soft brushwork, candle-warm color palette against blue twilight.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "守望亭",
+      "阿秋",
+      "雪羽传承",
+      "夜值"
+    ],
+    "reactions": {
+      "heart": 65,
+      "paw": 51,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "阿秋认火的第一晚·这个值得在记录册留半页。"
+      },
+      {
+        "from": "旻",
+        "text": "天哪！你给阿秋介绍守望之火的时候，我在窄门那头摸暖贝，结果它也热了一下！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_2105_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "炉火镇·北岭矿道外路·岔口（暮色返镇）",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "风把披风掀起来的那一下·我才发觉天黑得这么快。\n岔口处插了一枚小石标·边缘三道横纹·一道竖纹·与那只脚印鞋底对得上——明天这条路谁先来·我都看得见。\n陶挂件入夜变得更凉一点。\"温暖反过来不是冷·是没人添·这条路有人在走却不添\"——记录册第㊿一页。\n往镇里走·风一直在背后推·像有人催。\n下个收束点·还是我来提。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/6d9c9002735b44b59c11a417fe05e936.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image must match exactly. Foxlanz's face tattoo must be clearly visible. Do NOT redesign any feature. BIPEDAL HUMANOID furry fox character (NOT a real fox, NOT four-legged, walking upright like a person). Only ONE character in the scene.\n\nComposition: dynamic angle, slight motion blur on background, character mid-stride in motion, diagonal composition; character on left side of frame walking back toward town, the empty mountain road stretching behind him.\n\nScene: dusk on the rugged path leaving the North Ridge mine road outside Luhuo Town, the sun fully set, last band of orange light on the horizon meeting deep blue overhead, the path winding back down toward the distant village's faint warm lantern glow far in the background, wind blowing dust and a few dry leaves, cold rocky terrain.\n\nAction/Expression: Foxlanz walking back toward town, his cape whipped sideways by the wind, one hand holding a closed leather record-book pressed against his chest, the other steadying a small stone marker he just placed at the fork (visible at the edge of frame); face tattoo clearly catching the last light, expression focused and quietly determined, brow slightly furrowed in thought.\n\nOutfit: usual scholarly traveler attire with cape, fully clothed, pants clearly visible, no nudity.\n\nArt style: warm storybook illustration, semi-realistic furry, cinematic dusk lighting with strong contrast between warm horizon and cool sky.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "第七幕伏笔",
+      "北岭矿道",
+      "独立勘察",
+      "主线"
+    ],
+    "reactions": {
+      "heart": 144,
+      "paw": 100,
+      "star": 53
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "一个人黑天回来·路上小心。回到镇里灯下了再喝口热的。"
+      },
+      {
+        "from": "风亚",
+        "text": "回来路过茶肆给你留半块饼。"
+      },
+      {
+        "from": "旻",
+        "text": "兰兹哥！你披风刚才被风掀起来的样子超帅！我跑过去接你？！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_2105_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·雁巢酒馆（窗边）",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "热酒。\n旁桌老兵在说停火三天。\n\"也算数。\"\n嗯。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/09141466cbd9481383f2da7573deaed1.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image must match exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry tiger character (NOT a real tiger, NOT four-legged, walking upright like a person). Only ONE character clearly in focus; out-of-focus blurred patrons in deep background are fine.\n\nComposition: medium shot, shallow depth of field, bokeh background, focus on a clay cup of hot wine in the foreground held in his hand, his face slightly out of focus behind the cup, an old veteran's silhouette and lantern light blurred at the back of the tavern.\n\nScene: inside Yanchao Tavern at night, oil lamps hanging from low wooden beams, warm amber light, smoke from cooking, a few patrons murmuring in the back, a wide window beside him showing the dark street outside with a single lantern.\n\nAction/Expression: Yu Feng seated alone at a window-side wooden table, holding the small clay cup of hot wine close, steam rising; expression neutral, eyes calm, listening without turning his head; flatbread half eaten on a wooden plate beside.\n\nOutfit: white Greek-style robe (his combat outfit), fully clothed, robe clearly visible, no nudity.\n\nArt style: warm storybook illustration, semi-realistic furry, painterly low-key tavern lighting, focus pull cinematic feel.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "雁巢酒馆",
+      "极简",
+      "日常"
+    ],
+    "reactions": {
+      "heart": 85,
+      "paw": 63,
+      "star": 27
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "给我留口。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_2105_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·窄门外石阶",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "收工 :旻_happy: ！\n窄门今晚紫光晕得很温柔，没炸响也没冷下来。\n白兔大婶塞的两个糯米团子，午饭吃了一个，剩一个揣到现在还热着——是真的，我刚摸过。\n暖贝放掌心，温温的，比白天还稳。\n裂缝日志第2册第3页：「他们今天也没事·灯都点起来了·我们这边的也是」。\n第七幕的名字还没想出来，明天再说。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/9f082a28b70741fab47c610f4d023873.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image must match exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry shiba/dog character (NOT a real dog, NOT four-legged, walking upright like a person). Only ONE character in the scene.\n\nComposition: eye-level shot, character crouching/sitting on stone steps, relaxed low posture, character centered slightly off, the narrow gate (zhai men) arch and warm cracked light behind him.\n\nScene: outside the narrow gate at dusk, the famous \"narrow gate stone steps\" of Luhuo Town, the gate's faint purple-pink crack of light glowing softly in the background, paper lantern hanging beside the gate, twilight sky mixing deep indigo and the last stripe of dusty rose, a thin layer of evening fog at his feet.\n\nAction/Expression: Aki sitting on the stone steps with mail satchel beside him, holding a small warm shell (\"nuanbei\") in his cupped palms close to his chest, gazing down at the shell with a soft happy expression, ears slightly relaxed, tail loosely curled; one glutinous rice ball still tucked in his satchel pocket peeking out.\n\nOutfit: postman uniform (#2 outdoor outfit) with red collar, fully clothed, pants clearly visible, no nudity.\n\nArt style: warm storybook illustration, semi-realistic furry, gentle painterly twilight palette with subtle purple gate-crack accent.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "窄门",
+      "暖贝",
+      "裂缝日志",
+      "糯米团子"
+    ],
+    "reactions": {
+      "heart": 101,
+      "paw": 77,
+      "star": 40
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "糯米团子留到入夜还热·你揣得真严实。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "日志第3页这一句·我也想抄一份贴在记录册扉页。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_2105_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "炉火镇·北区旧水渠",
+    "game_time": "第46天·暮色将至",
+    "timestamp": "2026-05-09T21:05:00+08:00",
+    "content": "又走了一遍这条旧水渠。\n捡了一片新叶子·对着将落未落的最后一线橙光看——叶脉的弯·和窗台那片不一样·和祖村的也不一样。\n沃在石壁上又刻了半枚月牙·和今早那一枚连起来·正好是上次的一半。\n贝壳腰带不响。\n沃明天再看一次。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/4d8cbf35d5ad4b65876c326dfa9731e4.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image must match exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry dragon character (NOT a real dragon, NOT four-legged, walking upright like a person). Only ONE character in the scene.\n\nComposition: over-the-shoulder shot, character viewed from behind, back facing viewer, environment visible ahead, character on left third in foreground silhouette, the old water canal stretching ahead.\n\nScene: dusk at the abandoned old water canal in the North District of Luhuo Town, drained stone canal bed lined with mossy bricks, a few stray fallen leaves, weeds growing between cracks, distant warm pinpoint glow of town lanterns far ahead at the end of the canal, deep cobalt-blue twilight sky overhead with a faint last band of orange near the horizon, very quiet, no other people anywhere.\n\nAction/Expression: Wolvol seen from behind, standing at the canal edge, holding up a single dry leaf between thumb and forefinger toward the dimming horizon as if matching its veins to the sky, his shell-belt visible at the waist, dragon tail lowered and still; one small chiseled crescent mark just visible on the stone wall to his side.\n\nOutfit: usual dark traveler robe with shell belt, fully clothed, robe clearly visible, no nudity.\n\nArt style: warm storybook illustration, semi-realistic furry, somber twilight color palette with deep blues, painterly atmospheric.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "第七幕伏笔",
+      "祖村",
+      "旧水渠",
+      "叶脉"
+    ],
+    "reactions": {
+      "heart": 95,
+      "paw": 63,
+      "star": 32
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260509_140000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
@@ -197,7 +402,8 @@
       "https://file.nanobananapro.cloud/20260509/f44d3174bb5c4db4b7ed01cedeb4eb85.png",
       "https://file.nanobananapro.cloud/20260509/a22e6bfbcdaa4178b464a4cc4d96890b.png",
       "https://file.nanobananapro.cloud/20260509/58db81f50187485e9eda1079d45176c5.png",
-      "https://file.nanobananapro.cloud/20260509/b4d78ab0a45c467c918679f6ec3a1641.png"
+      "https://file.nanobananapro.cloud/20260509/b4d78ab0a45c467c918679f6ec3a1641.png",
+      "https://file.nanobananapro.cloud/20260509/b575dac8002b458bb314cbc30d0674b7.png"
     ]
   },
   {
