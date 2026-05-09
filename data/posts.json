@@ -1,5 +1,215 @@
 [
   {
+    "id": "post_20260509_080000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·主街布告板",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:00:00+08:00",
+    "content": "早市开门。熊岩大叔塞了个烤得最热的那个圆面包，说不收钱你收着。\n站布告板前慢慢啃。今天的新帖：「远方大邦在胜利纪念日前后停火三日，老兵走上街头，有人在旧战壕边种了花；另有南方两国边境再度互射弩矢，中立庭连夜斡旋」。\n三十多年了，愿意停三天也算数。\n面包里有葡萄干，今天比前天多一颗。这个可以。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/9171179a50794a0fbcf2308fbd3e1652.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Feng Ya (BIPEDAL HUMANOID furry). Must match reference image 1 exactly. Do NOT redesign any feature.\n\nScene: Emberkeep town main street market at dawn 08:00, morning mist partially dispersed, golden sunlight slanting through wooden stalls. A public bulletin board with several posters nailed on it, a baker stall steaming bread behind, cobblestone street glistening with dew.\n\nAction: Feng Ya stands in front of the bulletin board reading posters, one hand holding a small paper bag of warm bread, the other hand tucked in pocket. His posture is relaxed, head slightly tilted reading. The four-leaf clover pendant necklace hanging outside his collar over clothes.\n\nComposition: rule of thirds, character on left third, bulletin board and morning market filling right two-thirds, wide establishing shot showing atmosphere, shallow depth of field with bokeh market behind, slight back-three-quarter angle so we see his focused profile and poster content.\n\nLighting: warm golden morning sun from east, long soft shadows, amber rim light on shoulder.\n\nArt style: warm storybook illustration, semi-realistic furry, painterly lighting, 16:9 horizontal landscape format.\n\nOnly ONE character in the scene. fully clothed, pants clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "日常",
+      "布告板",
+      "早市",
+      "新闻植入"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 76,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "嗯。"
+      },
+      {
+        "from": "提理安",
+        "text": "葡萄干加一颗你记那么清——哟这不巧了嘛，我面包里一颗没有。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_080100_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "happy",
+    "location": "炉火镇·草药师老鸢铺子",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:01:00+08:00",
+    "content": "阿秋今天正式见师。\n老鸢看了鸟三秒，又看我三秒，又看鸟三秒，伸手递了一颗干莓——阿秋歪头啄了，咽下去，然后蹭了一下老鸢手背。\n老鸢：「这孩子眼亮。」\n「什么时候来的？」\n「第44天午后，守望亭窗台。」\n老鸢点头：「那是它挑的你。好好处。」\n我没说话。阿秋在肩上。炉火镇的门今天也开着。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/91bb7557825f423ca91a42d06096a710.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Tilion (BIPEDAL HUMANOID furry, deer). Must match reference image 1 exactly. Do NOT redesign any feature. A small brown bird named Aki Qiu is perched on his shoulder.\n\nScene: Inside herbalist Old Yuan's cozy medieval apothecary shop at morning, wooden shelves lined with glass jars and dried herbs, hanging bundles of plants from rafters, warm amber lantern light mixing with cool morning light from small window, a heavy oak counter covered with old parchment and ink bottles.\n\nAction: Tilion stands by the counter introducing the small brown bird on his shoulder to an unseen elderly figure (only an elderly arm with wrinkled paw visible at edge of frame holding a bird treat). Tilion's expression is warm and slightly proud. His hand gestures toward the bird.\n\nComposition: medium shot with the herbalist arm cropped at edge of frame for narrative depth, focus on Tilion and bird, rule of thirds with Tilion on left-center, rich environmental details right, shallow depth of field on shelves behind.\n\nLighting: soft warm interior amber glow from lanterns, cool morning window light creating atmosphere, gentle specular highlights on bird feathers.\n\nArt style: semi-realistic fantasy furry illustration, warm medieval palette, amber and forest green tones, painterly lighting, 16:9 horizontal landscape format.\n\nfully clothed, pants clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "阿秋",
+      "老鸢",
+      "命名",
+      "新鸟"
+    ],
+    "reactions": {
+      "heart": 128,
+      "paw": 84,
+      "star": 48
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "阿秋！我早上看见它在您肩膀上打盹了！它吃面包屑吗？"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "安啾——（职业病，请原谅我。）"
+      },
+      {
+        "from": "风亚",
+        "text": "眼亮是真的。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_080200_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "炉火镇·北岭矿道外路",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:02:00+08:00",
+    "content": "昨天三婶说北边矿道连续三天夜里有光，我把这段拐了四道弯的线索画成了小图，今早一个人绕过去看。\n远远蹲在路口，本子上画的和远处看的比了比。\n光这几天不再发了——但路面上有新脚印。不是镇上人的尺码。\n小火苗陶挂件今早安静，它不亮不代表这条路不在。\n记录册㊾页：「温暖的反面不是冷，是没人再往里添。」今天不憋双关。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/768caae1ecb348dba6dbb2ccb1f975bd.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Foxlanz (BIPEDAL HUMANOID furry). Must match reference image 1 exactly. Foxlanz's face tattoo must be clearly visible. Do NOT redesign any feature.\n\nScene: North edge of Emberkeep town where stone walls meet old abandoned mine road, early morning, thin mist clinging to pine trees in distance, cold grey-blue sky slowly warming to amber at horizon, cobblestone path leading toward distant dark mine entrance barely visible.\n\nAction: Foxlanz crouches low on the path edge, holding up a small notebook/record sketch to compare with the actual distant mine entrance visible in the background. One ear is perked, the other slightly lowered (analysis focus). His small fire-shape ceramic pendant hangs visibly at his chest.\n\nComposition: low angle shot looking up at Foxlanz slightly, character positioned on left third, distant mine entrance as focal point on right horizon, depth layering with foreground path / mid-ground Foxlanz / far background mine, diagonal composition adds intrigue.\n\nLighting: cool morning blue-grey ambient, warm amber spot from sunrise on character's face tattoo side, subtle depth fog.\n\nArt style: warm storybook illustration, semi-realistic furry, painterly lighting, 16:9 horizontal landscape format.\n\nOnly ONE character in the scene. fully clothed, pants clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "矿道线索",
+      "职业病",
+      "档案员",
+      "记录册"
+    ],
+    "reactions": {
+      "heart": 142,
+      "paw": 95,
+      "star": 54
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "脚印尺码你画下来没？回头拿给我对对——别自己一个人贴着路口蹲太久，凉。"
+      },
+      {
+        "from": "旻",
+        "text": "兰兹哥！要不要我明天顺路也跑过去看一眼！我腿快！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_080300_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·镇东练武场",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:03:00+08:00",
+    "content": "第四遍。\n找回来了。\n露水未干。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/7960b1a66ac64e0299203d3931d016a7.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Yu Feng (BIPEDAL HUMANOID furry, white tiger). Must match reference image 1 exactly. Do NOT redesign any feature.\n\nScene: Emberkeep town east training grounds, open stone-paved square near town wall, early morning 8am, dew still on grass patches, low sun casts long shadows, a rough wooden training post stands in the middle ground, distant town rooftops hazy in morning mist.\n\nAction: Yu Feng mid-swing with his longsword in a clean training motion, blade catching morning light, his white tiger tail flowing with momentum, stance low and balanced. Dynamic motion pose. Gold arm bracer reflecting.\n\nComposition: dynamic angle with slight motion blur on tail and blade tip, diagonal composition, character in center-right of frame in mid-stride, wide establishing shot showing training grounds, environmental scale visible.\n\nLighting: low-angle golden morning sunlight creating strong rim light on white fur silhouette, dramatic long shadows stretching across stone ground, cool blue ambient in shadow areas.\n\nArt style: semi-realistic fantasy furry illustration, warm medieval palette, amber and forest green tones, painterly lighting, 16:9 horizontal landscape format.\n\nOnly ONE character in the scene. fully clothed, pants clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "练剑",
+      "镇东",
+      "极简"
+    ],
+    "reactions": {
+      "heart": 98,
+      "paw": 62,
+      "star": 38
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "这回比昨天切得开。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_080400_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·主街",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:04:00+08:00",
+    "content": "天哪包扣崩了！本月第19次！（比第18次早了一天——新纪录！）\n第一封是给龟爷爷的复信，绿色封蜡，大老远来的；第二封是老赫铁匠家催票据；第三封封皮上写「愿家人还在」——昨天布告板刚讲过远方胜利纪念日停火三日，今天就有人用这个写信，信封我多拿稳了两手。\n跑到面包摊时熊岩大叔又塞面包：「慢点！带上你阿秋哥的那份！」\n阿秋不是我哥，阿秋是提大哥的鸟。但是我会把面包送到。\n裂缝日志·第2册·第2页：今早暖贝温温的——他们那边还好。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/aac42dc9960a4e1db3da1203a45caa46.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Aki (BIPEDAL HUMANOID furry). Must match reference image 1 exactly. Do NOT redesign any feature.\n\nScene: Emberkeep main street at 08:30 morning, bustling beginning-of-day activity, baker stalls with steam rising, townsfolk setting up shops, cobblestones in morning light, a small well plaza visible in middle ground.\n\nAction: Aki in full running motion, satchel strap flying, several letters half-spilling out of the bag, one letter caught in his mouth, tongue sticking out from running heat. A torn bag buckle flapping loose. Dynamic running motion with tail low.\n\nComposition: dynamic angle, slight motion blur on background, character mid-stride captured diagonally, character filling left-center of frame, wide shot showing market environment on both sides, depth sense, sense of speed.\n\nLighting: bright morning sunlight, warm golden tones on fur, soft shadows following the street.\n\nArt style: warm storybook illustration, semi-realistic furry, painterly lighting, 16:9 horizontal landscape format.\n\nOnly ONE character in the scene. fully clothed, shorts clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "送信",
+      "包扣纪录",
+      "裂缝日志",
+      "阿秋",
+      "新闻植入"
+    ],
+    "reactions": {
+      "heart": 134,
+      "paw": 88,
+      "star": 46
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "阿秋说它等着那份面包。（它真没说，我替它说。）"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "旻——跑慢半步不会塌天。（我知道我说这话没用，但我每次都要说一下，这是我的职业病。）"
+      },
+      {
+        "from": "旻",
+        "text": "兰兹哥等我下一封送完跟你汇合！！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260509_080500_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "炉火镇·沃弗尔石屋",
+    "game_time": "第46天·晨光时分",
+    "timestamp": "2026-05-09T08:05:00+08:00",
+    "content": "窗台那片叶子。\n对着光看。\n叶形是祖村的。叶脉不是。\n贝壳安静。\n不是今天的事。\n沃再看一会儿。",
+    "image_url": "https://file.nanobananapro.cloud/20260509/ee6b4d9737cc48b7abfaa1840bf642f0.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The main character is Wolvol (BIPEDAL HUMANOID furry, dragon). Must match reference image 1 exactly. Do NOT redesign any feature.\n\nScene: Interior of Wolvol's small stone cottage at morning, sunlight slanting through a small window onto a rough wooden windowsill, dust motes floating in beams, simple furniture visible (an old wooden chair, a weathered chest), minimal and quiet.\n\nAction: Wolvol stands by the windowsill holding a single dried leaf up to the window light, examining it closely, the leaf casting detailed shadow patterns on his palm. His other hand rests on the windowsill. Two small seashells on the windowsill near his hand. Expression is contemplative, eyes focused on the leaf veins.\n\nComposition: side profile shot with Wolvol silhouetted against window light, rim lighting from side, focus on leaf and his hand in sharp detail, shallow depth of field, medium-close framing, serene quiet mood.\n\nLighting: soft directional window light from left, cool shadow on his right side, warm highlights on leaf edge, dust motes catching light.\n\nArt style: semi-realistic fantasy furry illustration, warm medieval palette with muted dragon-blue tones, painterly lighting, 16:9 horizontal landscape format.\n\nOnly ONE character in the scene. fully clothed, pants clearly visible, no nudity.\n\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "祖村伏笔",
+      "叶脉",
+      "第七幕铺垫"
+    ],
+    "reactions": {
+      "heart": 86,
+      "paw": 58,
+      "star": 34
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260508_210500_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
@@ -19,9 +229,9 @@
       "回城"
     ],
     "reactions": {
-      "heart": 118,
-      "paw": 72,
-      "star": 38
+      "heart": 121,
+      "paw": 73,
+      "star": 39
     },
     "comments": [
       {
@@ -58,9 +268,9 @@
       "阿秋"
     ],
     "reactions": {
-      "heart": 93,
+      "heart": 96,
       "paw": 62,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -101,9 +311,9 @@
       "职业病"
     ],
     "reactions": {
-      "heart": 127,
-      "paw": 78,
-      "star": 44
+      "heart": 130,
+      "paw": 80,
+      "star": 45
     },
     "comments": [
       {
@@ -143,9 +353,9 @@
       "酒馆"
     ],
     "reactions": {
-      "heart": 72,
-      "paw": 48,
-      "star": 22
+      "heart": 73,
+      "paw": 49,
+      "star": 23
     },
     "comments": [
       {
@@ -174,9 +384,9 @@
       "日志"
     ],
     "reactions": {
-      "heart": 139,
+      "heart": 141,
       "paw": 88,
-      "star": 48
+      "star": 49
     },
     "comments": [
       {
@@ -213,9 +423,9 @@
       "等"
     ],
     "reactions": {
-      "heart": 86,
-      "paw": 56,
-      "star": 30
+      "heart": 89,
+      "paw": 58,
+      "star": 31
     },
     "comments": []
   },
@@ -239,9 +449,9 @@
       "河边"
     ],
     "reactions": {
-      "heart": 71,
-      "paw": 46,
-      "star": 23
+      "heart": 73,
+      "paw": 47,
+      "star": 24
     },
     "comments": [
       {
@@ -277,9 +487,9 @@
       "守望亭"
     ],
     "reactions": {
-      "heart": 57,
+      "heart": 60,
       "paw": 38,
-      "star": 20
+      "star": 21
     },
     "comments": [
       {
@@ -321,8 +531,8 @@
       "伏笔"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 64,
+      "heart": 93,
+      "paw": 66,
       "star": 34
     },
     "comments": [
@@ -359,8 +569,8 @@
       "独处"
     ],
     "reactions": {
-      "heart": 53,
-      "paw": 36,
+      "heart": 54,
+      "paw": 38,
       "star": 17
     },
     "comments": [
@@ -395,8 +605,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 78,
-      "paw": 56,
+      "heart": 80,
+      "paw": 57,
       "star": 28
     },
     "comments": [
@@ -439,8 +649,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 46,
-      "paw": 28,
+      "heart": 48,
+      "paw": 29,
       "star": 15
     },
     "comments": [],
@@ -470,8 +680,8 @@
     ],
     "reactions": {
       "heart": 70,
-      "paw": 47,
-      "star": 22
+      "paw": 49,
+      "star": 23
     },
     "comments": [
       {
@@ -510,8 +720,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 52,
-      "paw": 39,
+      "heart": 54,
+      "paw": 41,
       "star": 18
     },
     "comments": [
@@ -549,9 +759,9 @@
       "休息日"
     ],
     "reactions": {
-      "heart": 78,
+      "heart": 81,
       "paw": 57,
-      "star": 31
+      "star": 32
     },
     "comments": [
       {
