@@ -1,0 +1,87 @@
+=== Phase 1: Submit all 6 in parallel via node ===
+--- sub_fengya ---
+[fengya] prompt len=3249, refs=1
+[fengya] submitted taskId=15-4aca513d-a806-4dd2-96db-c219b338510c
+
+--- sub_yufeng ---
+[yufeng] prompt len=3296, refs=3
+[yufeng] submitted taskId=7-88735a93-aeac-4582-8089-aa53d2af1f7b
+
+--- sub_tilion ---
+[tilion] prompt len=3328, refs=4
+[tilion] submitted taskId=13-8336df49-3ab5-4a8b-8820-e8834eb5a5a7
+
+--- sub_foxlanz ---
+[foxlanz] prompt len=3414, refs=1
+[foxlanz] submitted taskId=6-e4d451e4-01cd-401f-85f6-602de1119484
+
+--- sub_aki ---
+[aki] prompt len=3351, refs=2
+[aki] submitted taskId=6-582266d9-e0c5-4d1c-b7a7-28a5b104321d
+
+--- sub_wolvol ---
+[wolvol] prompt len=3794, refs=6
+[wolvol] submitted taskId=12-d4d74172-033e-40b2-a1fb-4e4299483c8c
+
+=== Phase 2: Poll all 6 in parallel via node ===
+--- poll_fengya ---
+[fengya] polling taskId=15-4aca513d-a806-4dd2-96db-c219b338510c
+[fengya] poll 3: running
+[fengya] poll 6: running
+[fengya] poll 9: running
+[fengya] poll 12: running
+[fengya] SUCCESS https://file.nanobananapro.cloud/20260425/c73b486df77f49c5af22d4b6d27dba6a.png
+
+--- poll_yufeng ---
+[yufeng] polling taskId=7-88735a93-aeac-4582-8089-aa53d2af1f7b
+[yufeng] poll 3: running
+[yufeng] poll 6: running
+[yufeng] poll 9: running
+[yufeng] poll 12: running
+[yufeng] poll 15: running
+[yufeng] poll 18: running
+[yufeng] poll 21: running
+[yufeng] SUCCESS https://file.nanobananapro.cloud/20260425/a4705ae3bcd144fd8fed68072c404677.png
+
+--- poll_tilion ---
+[tilion] polling taskId=13-8336df49-3ab5-4a8b-8820-e8834eb5a5a7
+[tilion] poll 3: running
+[tilion] poll 6: running
+[tilion] SUCCESS https://file.nanobananapro.cloud/20260425/7427864ed794442b897a2d3a4d5c3b82.png
+
+--- poll_foxlanz ---
+[foxlanz] polling taskId=6-e4d451e4-01cd-401f-85f6-602de1119484
+[foxlanz] poll 3: running
+[foxlanz] poll 6: running
+[foxlanz] poll 9: running
+[foxlanz] poll 12: running
+[foxlanz] poll 15: running
+[foxlanz] poll 18: running
+[foxlanz] poll 21: running
+[foxlanz] poll 24: running
+[foxlanz] SUCCESS https://file.nanobananapro.cloud/20260425/3ec63224fc4d460d80a16a978972ea83.png
+
+--- poll_aki ---
+[aki] polling taskId=6-582266d9-e0c5-4d1c-b7a7-28a5b104321d
+[aki] poll 3: running
+[aki] poll 6: running
+[aki] poll 9: running
+[aki] poll 12: running
+[aki] poll 15: running
+[aki] poll 18: running
+[aki] SUCCESS https://file.nanobananapro.cloud/20260425/7a60368467f746e092bb63b2ae6f133d.png
+
+--- poll_wolvol ---
+[wolvol] polling taskId=12-d4d74172-033e-40b2-a1fb-4e4299483c8c
+[wolvol] poll 3: running
+[wolvol] poll 6: running
+[wolvol] poll 9: running
+[wolvol] SUCCESS https://file.nanobananapro.cloud/20260425/94dc9756db23475895778956b22ba3e3.png
+
+=== Final URLs ===
+fengya : https://file.nanobananapro.cloud/20260425/c73b486df77f49c5af22d4b6d27dba6a.png
+yufeng : https://file.nanobananapro.cloud/20260425/a4705ae3bcd144fd8fed68072c404677.png
+tilion : https://file.nanobananapro.cloud/20260425/7427864ed794442b897a2d3a4d5c3b82.png
+foxlanz : https://file.nanobananapro.cloud/20260425/3ec63224fc4d460d80a16a978972ea83.png
+aki : https://file.nanobananapro.cloud/20260425/7a60368467f746e092bb63b2ae6f133d.png
+wolvol : https://file.nanobananapro.cloud/20260425/94dc9756db23475895778956b22ba3e3.png

@@ -1,0 +1,27 @@
+STYLIZED ANTHROPOMORPHIC FURRY character illustration, semi-realistic fantasy furry art style with painterly shading, NOT photorealistic.
+
+[MAIN CHARACTER from Image 1 — TILION, locked to reference] Character must match reference image 1 exactly. Do NOT redesign any feature. BIPEDAL HUMANOID reindeer-person (NOT a real reindeer, NOT a quadruped, NOT feral).
+
+[MUST-HAVE DETAILS — these specific features must be clearly visible]:
+- large branched reindeer antlers
+- silver forehead circlet/headband
+- green-and-gold draped cloak
+- tall dark-brown military boots with high shaft
+- white dove "Xueyu" perched on his LEFT shoulder (critical companion detail)
+
+[COMPOSITION — HIGH ANGLE OVERHEAD SHOT, Tilion foreground, vast cavern beyond]:
+Bird's-eye high-angle composition from above-and-behind Tilion's right shoulder. He stands at the very last stone step of a descending staircase that emerges from the southern wall of a colossal underground domed cavern. Below him, the entire chamber spreads out: a perfectly still mirror-black underground lake, a central rocky island with an obsidian stele, and on the far northern shore two small figures (a wolf-person and a tiger-person silhouettes, both clearly BIPEDAL HUMANOID, far-distant, 2% frame height). In the exact middle of the central island, a single figure is already present — a blue-furred dragon-wolf hybrid with horns (distant silhouette, BIPEDAL HUMANOID, 3% frame height). The hemispherical dome ceiling above is carved with SIX radial ray-lines of spiral runes, each glowing a different soft hue (teal, indigo, amber, silver, deep green, and one ending in a dragon-horn-shaped symbol). Tilion is in the lower-left foreground, back of head visible, one paw resting on the stone step's carved railing. Xueyu the white dove is visibly perched on his left shoulder, head tilted down to also survey the chamber. Camera tilts slightly to show both Tilion's foreground silhouette AND the massive dome scene.
+
+[OUTFIT LOCKED]: formal deep-green tunic with gold piping, layered green-and-gold draped cloak, silver circlet on brow, tall dark-brown military boots, carved wooden flute at hip.
+
+[BODY TYPE]: tall stately deer build, mature adult, composed posture.
+
+[LIGHTING]: dominant multi-color ambient glow from the six radial runes on the dome ceiling above, secondary cool silver up-light from the still lake, warm backlight from the stairwell behind him (the route he came from).
+
+[ATMOSPHERE]: "so this is where everything led" — the moment of realization from a survey's vantage, the sacred chamber revealed, profound stillness, mythic scale.
+
+[STYLE MANDATE]: semi-realistic fantasy furry illustration, painterly brushwork, moody multi-hue palette, visible fur detail, clean readable silhouette.
+
+[NEGATIVE — MUST NOT appear]: photorealistic rendering, real deer, real reindeer, quadruped, animal silhouette in foreground, naked torso, shirtless, armor, helmet, gloves, duplicate character, generic anime style, ground-level angle (must be high-angle), real wolf, real tiger, real dragon. Foreground must contain ONLY Tilion; any other figures must remain distant small silhouettes.
+
+[REFERENCE IMAGE LOCKED] Reproduce exact Tilion character from reference image 1. Background figures must be clearly BIPEDAL HUMANOID furry silhouettes, kept small-scale and far.

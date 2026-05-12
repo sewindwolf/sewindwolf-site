@@ -1,0 +1,27 @@
+STYLIZED ANTHROPOMORPHIC FURRY character illustration, semi-realistic fantasy furry art style with painterly shading, NOT photorealistic.
+
+[MAIN CHARACTER from Image 1 — YU FENG, locked to reference] Character must match reference image 1 exactly. Do NOT redesign any feature. BIPEDAL HUMANOID white-tiger-person (NOT a real tiger, NOT a quadruped, NOT feral).
+
+[MUST-HAVE DETAILS — these specific features must be clearly visible]:
+- black tiger stripes on white fur
+- HETEROCHROMIA: RIGHT eye GOLD, LEFT eye GREEN (critical detail, not reversed)
+- messy black hair tips spiked up, green-tipped
+- broad rounded face (not angular)
+- combat-style white war-robes with large white cloak (the fixed battle outfit, NOT travel gear)
+
+[COMPOSITION — medium shot, SIDE PROFILE with turned torso, environmental wide]:
+Three-quarter side profile of Yu Feng standing on the edge of a wet stone step at the northern shore of a vast underground lake. His body is turned toward the right (viewer's right), but his head is sharply turned BACK to the left, looking across the dark mirror-water at two figures on the far southern shore — distant silhouettes of a deer-person (antlers visible) and a fox-person (triangular ears, fluffy tail). Those two figures are DISTANT SILHOUETTES, 2% frame height, far across the underground lake, clearly BIPEDAL HUMANOID (NOT real animals, NOT quadrupeds). Yu Feng occupies the left third of the frame at mid-height. His expression is "are-you-kidding-me" flat deadpan — eyebrow slightly raised, lips pressed thin, the classic cold-faced sarcasm look. One paw on hip, other paw holding two traveling packs slung over shoulder. Above them all, a hemispherical cavern dome glows faintly with six radial ray-patterns. Water is still as glass, reflecting everything.
+
+[OUTFIT LOCKED]: fixed battle attire — flowing white war-robes with layered cloth plates, massive white cloak draped off one shoulder, dark under-leggings, reinforced leather bracers. NOT Greek-style, NOT laurel-crowned. Fantasy warrior aesthetic.
+
+[BODY TYPE]: tall muscular white tiger build, tall bulky frame, late twenties apparent age.
+
+[LIGHTING]: cool indigo-silver ambient from dome runes, faint teal up-light from lake reflection on his chin and throat fur, gold rim light on the right ear catching a stray amber rune-ray.
+
+[ATMOSPHERE]: "the world is absurd but I'm here anyway" — the deadpan moment of recognizing that his mercenary partner and two people from a completely different town have all ended up in the same impossible cavern. Dry humor under awe.
+
+[STYLE MANDATE]: semi-realistic fantasy furry illustration, painterly brushwork, moody cavern palette, visible fur detail, clean silhouette.
+
+[NEGATIVE — MUST NOT appear]: photorealistic rendering, real tiger, quadruped, animal silhouette in foreground, naked torso, shirtless, Greek laurel crown, green robes, both eyes same color, wrong eye color placement, brown travel clothing, duplicate character, generic anime style, near-viewer detailed side figures (they must remain distant silhouettes), real deer, real fox.
+
+[REFERENCE IMAGE LOCKED] Reproduce exact Yu Feng character from reference image 1. The distant deer and fox silhouettes must be clearly BIPEDAL HUMANOID furry figures (not real animals), but kept far and small-scale.
