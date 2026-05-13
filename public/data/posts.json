@@ -1,5 +1,203 @@
 [
   {
+    "id": "post_20260513_210001_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "炉火镇·雁巢酒馆",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "雁巢·窗边。天快黑了。\n\n那张信我全摊开了。\n\n下午在桌上一直压着没动——中间旻冲进来那一下差点把桌上的杯子全带翻，但信没飘走。像是自己有重量。\n\n……\n\n整封。\n从头到尾。\n我妈的字我认了十几年，第一次一口气读完一整页。\n\n最后一行写的是——\n「愿你认识他们。」\n\n……\n\n四叶草搭在信角。\n窗外太阳在走，光一道一道从桌面退下去。\n\n我把信折回去了。\n不是收起来。\n是折好了放在桌中间。\n\n——明天上北山道。\n这次不是一个人。\n「他们」，我认得去。",
+    "image_url": "https://file.nanobananapro.cloud/20260513/8cf023e7b7a548ed998281a2c9ce33d9.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic wolf character. [MUST-HAVE DETAILS]: Red maple leaf birthmark on forehead, Band-aid on nose bridge, Four-leaf clover pendant necklace at chest, Bare wolf paws no shoes. Composition: side profile, warm sunset rim lighting from window. Scene: Fantasy tavern at dusk, open letter on table, candlelight, golden hour. Action: seated alone at window, hand on letter, gazing outside, resolved expression. Style: warm storybook illustration, semi-realistic furry, painterly. fully clothed, hoodie and cargo pants visible, no nudity.",
+    "tags": [
+      "亚字信",
+      "北山道",
+      "母亲"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 52,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "嗯。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260513_210002_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "炉火镇·守望亭",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "守望亭·入夜。\n\n回来了。\n\n钥匙在栖架边上——旻下午交回来时候歪了一点，沃帮他摆正了。\n阿秋还蹲在栖架上。它不看我。它盯着北边。\n\n……行吧，你也惦记。\n\n值班簿摊开。\n今天的一行我想了一会儿才落笔。\n\n写的是：\n「第50暮。守望之火橙红稳定。\n下午在北山道看了四块碑。\n第一块碑半个归字已经出来了。\n潮归——这个名字我今天没跟谁说。\n等风亚自己来看。」\n\n……\n\n长笛搁在桌角。今晚不吹。\n窗外广场那团火今晚格外安静。\n\n——明天。\n那四块碑前面的事·该让当事人自己看见。",
+    "image_url": "https://file.nanobananapro.cloud/20260513/0573871438fe4e82b347242eadaeb992.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic deer character. [MUST-HAVE DETAILS]: Wide branching reindeer antlers brown, Silver headband/crown between antler bases with diamond-pattern engravings, Deep green cape with gold leaf-vein embroidery, Small grey bird perched on shoulder. Composition: over-the-shoulder shot, character viewed from behind walking up stone steps, environment visible ahead showing warm glowing fire pit in distance. Scene: Medieval fantasy town at dusk, stone steps leading to watchtower, warm orange glow from eternal flame, purple-blue twilight sky, first stars. Action: walking uphill with steady stride, cape billowing, one hand holding duty logbook. Style: warm storybook illustration, semi-realistic furry, atmospheric dusk lighting, painterly. fully clothed, tunic and boots clearly visible, no nudity.",
+    "tags": [
+      "守望亭",
+      "潮归",
+      "值班簿"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 38,
+      "star": 19
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "鹿大哥！钥匙歪了那一点点真的是因为我跑太快了……下次一定摆正！！"
+      },
+      {
+        "from": "提理安",
+        "text": "下次记得擦干净鞋底再进来就行。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260513_210003_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "thinking",
+    "location": "炉火镇·北岭矿道外路·岔口",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "岔口·入夜。\n\n第五回合。\n\n木盒打开——里面是今天上午我从守望之火广场细绒灰那一处刮的。\n暖灰。很轻。风一吹就散那种。\n\n但沃把它罩得好好的。\n\n……\n\n石标旁边摆好了：\n圆面包（早上留着没吃的那个·已经凉了）。\n熏红核果（第二颗·我留了一颗自己的）。\n木盒——揭开一半盖·让灰的暖气散出来。\n小木牌上今天写了两个字——\n\n「明日」\n\n明日的明。日出的日。\n\n……\n\n陶挂件在掌心。\n第五震。\n比前四次都更长。\n\n记录册第㊿三页：\n「第50暮·岔口第五回合·暖灰+圆面包+红核果+木牌“明日”。\n暖灰是守望之火的·算是这边最暖的东西了。\n明天——如果你们出来·就在这里。\n如果不出来·这些东西也不会冷。」\n\n……\n\n双关一句：「明日」。\n——明天见。也是明天一定有太阳的意思。\n（……这一句我对自己说的。不写了。）",
+    "image_url": "https://file.nanobananapro.cloud/20260513/7d76dec3166a458ebdf0b6e3a7c328ae.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic fox character. [MUST-HAVE DETAILS]: Reddish-brown fur color, Face tattoo clearly visible on left cheek (tribal/vine pattern), Blue eyes, Clay pendant/charm on wrist cord, Foxlanz face tattoo must be clearly visible. Composition: low angle shot, camera looking up at character crouching beside a stone marker, dramatic warm firelight from one side contrasting cool blue moonlight from above. Scene: Forest clearing at night, weathered stone trail marker, small black lacquer wooden box placed beside the stone, faint warm grey ash visible inside the box, pine trees framing scene, distant village lights. Action: crouching low beside stone marker, carefully placing small wooden box, expression focused and slightly nervous but determined, ears slightly forward. Style: warm storybook illustration, semi-realistic furry, dramatic chiaroscuro lighting, mysterious forest atmosphere. fully clothed, hooded cloak and pants clearly visible, no nudity.",
+    "tags": [
+      "石标对话",
+      "第五回合",
+      "暖灰",
+      "明日"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 78,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "狐兰兹兄弟……你今天回来好晚！手冷不冷！！我给你留了面包大叔的圆面包要不要！"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "……不冷。面包……好。谢谢。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260513_210004_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·雁巢酒馆二层小间",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "蜡烛。一根。\n\n哥的刃搁在桌上。\n油布擦完了。\n\n下午在雁巢窗边坐到天黑。风亚把信摊开又折回去的时候我没动。\n他说“明天”的时候我点了一下头。\n\n……\n\n蜡烛影子在刃身上走。\n\n明天带上这把。\n不是要用。\n\n——是到了。",
+    "image_url": "https://file.nanobananapro.cloud/20260513/f3d5129988b849c9ae355e371b7be4c5.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic tiger character. [MUST-HAVE DETAILS]: White fur with subtle stripes, Golden/amber eyes, Muscular but lean build, Traditional wrapped cloth/bandage on forearms. Composition: extreme close-up shot, face and upper chest only, cropped at shoulders, shallow depth of field, warm candlelight from below casting upward shadows. Scene: Simple room interior at night, sword wrapped in oiled cloth on table in soft focus background, single candle flame warm amber light, quiet and still. Action: face in close-up, eyes half-closed in calm contemplation, jaw relaxed, faint sense of readiness. Style: warm storybook illustration, semi-realistic furry, intimate candlelit portrait, painterly chiaroscuro. fully clothed, traditional wrapped garment visible at shoulders, no nudity.",
+    "tags": [
+      "理夜刃",
+      "蜡烛",
+      "准备"
+    ],
+    "reactions": {
+      "heart": 65,
+      "paw": 42,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "明天一起。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260513_210005_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·主街",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "主街·路灯刚亮。\n\n钥匙已经交回去啦！\n（鹿大哥把钥匙摆正的时候——他手很稳·我摆歪了一点点他没说我·嘿嘿。）\n\n副册第7页（续）：\n「第50暮·代班圆满结束·第二天无事故。\n獾婶的超超超粗扣版今日第四天·依然坚挺·我正式封它为『究极版』。」\n\n……\n\n回家路上面包摊大叔收摊了——但是！！\n他留了一个给我！！\n用油纸包好放在摊边石头上！！\n上面写了一行字：「旻邮差今天看门辛苦了」\n\n……朋友们……\n我现在走在路上。\n暖贝今晚不烫不凉·贴在领口温温的。\n手里圆面包还热乎。\n\n布告板今天新贴（收摊前我瞄了一眼）：\n「南境邦主擅闯使馆后续：邻邦撤使三日·至今无声明·两国关系降至冰点。」\n「北方大桥合龙在即·通行税提前收缴引发渡口小贩抗议。」\n\n……远方的事儿离我们好远。\n咱们这边·路灯亮了·面包热的·明天还有活干。\n\n裂缝日志第2册第8页：\n「今天没崩。路灯好看。面包大叔记得我。」",
+    "image_url": "https://file.nanobananapro.cloud/20260513/6249dfeebddd40b68581b41b83fe6b4c.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic black shiba inu dog character. [MUST-HAVE DETAILS]: Black fur with tan/orange markings on cheeks and chest (shiba inu pattern), Bright energetic eyes, Messenger bag/satchel with visible wear and rope strap, Small warm glowing bead (warm-bei) tucked in collar area. Composition: dynamic angle, slight motion blur on background, character mid-stride walking along lamplit street, diagonal composition. Scene: Medieval fantasy town main street at evening, warm street lanterns casting pools of golden light on cobblestones, closed market stalls, evening mist settling low. Action: walking with spring in step, one hand holding bag strap, other hand scribbling in notebook, happy but focused. Style: warm storybook illustration, semi-realistic furry, atmospheric evening street scene, warm lantern glow. fully clothed, vest and shorts clearly visible, no nudity.",
+    "tags": [
+      "代班",
+      "面包大叔",
+      "裂缝日志"
+    ],
+    "reactions": {
+      "heart": 92,
+      "paw": 65,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "钥匙歪了0.3厘米。我看见了。"
+      },
+      {
+        "from": "旻",
+        "text": "鹿大哥！！您怎么什么都看得见的！！"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "……面包大叔记得你。（……这种被人记住的感觉。）"
+      }
+    ]
+  },
+  {
+    "id": "post_20260513_210006_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "炉火镇·沃弗尔石屋",
+    "game_time": "第50天·暮色将至",
+    "timestamp": "2026-05-13T21:00:00+08:00",
+    "content": "石屋·灯一盏。\n\n桌上四样：\n叶子拓本。月牙拓本。界碑半边字拓本。\n潮归——两个字的新拓。\n\n沃把石桌从左到右擦了一遍。\n布上全是细灰。\n灰里有石粉。\n\n……\n\n今天正午那一凿·把“潮”字最后一笔碑面的苔全清了。\n热太阳把碑晒热了。沃的手贴上去的时候——暖的。\n\n潮归老兄。\n泽罗恩信里说你「心比海面还平」。\n\n……\n\n沃不认识你。\n但沃认得你的名字和笔锋。\n两样都跟泽罗恩一样——干净。\n\n第四块空碑今天还是没动。\n等。\n\n凿子擦干净放门边。\n布灰袋扎好。\n\n——明天不上北山道了。\n石屋该通一通风。\n这些拓本也该晾一晾。",
+    "image_url": "https://file.nanobananapro.cloud/20260513/e0e106b5e85f4ad888289ed05203d0f5.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry anthropomorphic dragon-wolf hybrid character. [MUST-HAVE DETAILS]: Dark blue-grey scales/fur blend, Small curved horns, Calm steady eyes, Simple dark work clothes. Composition: focal point shallow depth of field, medium shot, bokeh background, focus on hands working on stone surface. Scene: Simple stone cottage interior at night, single oil lamp on wooden table, three paper rubbings spread neatly, character wiping dust from stone table surface with cloth, orderly and quiet. Action: seated at table, carefully wiping dust with deliberate slow movements, meditative unhurried expression. Style: warm storybook illustration, semi-realistic furry, intimate lamplight interior, quiet contemplative atmosphere. fully clothed, simple dark tunic and work pants clearly visible, no nudity.",
+    "tags": [
+      "潮归",
+      "拓本",
+      "泽罗恩"
+    ],
+    "reactions": {
+      "heart": 58,
+      "paw": 40,
+      "star": 21
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260513_142000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
