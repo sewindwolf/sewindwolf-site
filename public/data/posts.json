@@ -1,5 +1,173 @@
 [
   {
+    "id": "post_20260514_140200_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "祖村入口·北山道山脊",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:02:00+08:00",
+    "content": "山坳。\n\n翻过最后一道弯的时候所有人都停下来了。\n\n……\n\n下面是一整条村子。\n\n石头屋顶。茅草。烟囱冒着烟。一棵老得不像话的大树戛在正中间——树上挂着红灯笼和风铃，风一来它们就响。\n\n潮归在我前头站着。他没回头。只说了一句：\n\n「到了。」\n\n……\n\n「她在那个石屋是吧。」\n\n潮归微微点了点头。\n\n「——我明天来。」",
+    "image_url": "https://file.nanobananapro.cloud/20260514/f2c060935a6a4f5aa8ee4fc565cf3321.png",
+    "image_prompt": "over-the-shoulder shot hidden village first view",
+    "tags": [
+      "祖村"
+    ],
+    "reactions": {
+      "heart": 98,
+      "paw": 67,
+      "star": 34
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260514_140400_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "surprised",
+    "location": "祖村·守望亭原版火坑",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:04:00+08:00",
+    "content": "……这就是正本。\n\n炉火镇那个是仿的。\n这个是原版。\n\n石头围了一圈。上面刻的字——比老鸢铺子旧册子上那些还要早。\n火在烧着。\n\n蓝绿色的。不是橙红。\n\n一百二十年前——有人从这里取了一团火带出去。变成了炉火镇的守望之火。\n\n「我们镇的火是这里点起来的。」\n\n都活着。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/38afd868e6c64cddb7102bc3bbc4a6b4.png",
+    "image_prompt": "low angle shot ancient fire pit teal-blue flames deer antlers BIPEDAL HUMANOID furry",
+    "tags": [
+      "祖村",
+      "先潮者真相"
+    ],
+    "reactions": {
+      "heart": 72,
+      "paw": 48,
+      "star": 25
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "都活着。还行。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_140600_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "calm",
+    "location": "祖村·大树下鹅卵石路",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:06:00+08:00",
+    "content": "我跟在芦兰兹后面走进村子。\n\n陶挂件在胸口。今天没有响。没有震。\n\n——它安静了。\n\n像是到家了不需要再叫的那种安静。\n\n成长记录第㉼条——\n「到了一个地方。不需要双关也不需要记录。到了就是到了。」",
+    "image_url": "https://file.nanobananapro.cloud/20260514/fade0410b47c4fc08cb728cbb0ed0d3b.png",
+    "image_prompt": "wide establishing shot ancestral village ancient tree red lanterns fox walking BIPEDAL HUMANOID furry",
+    "tags": [
+      "祖村",
+      "陶挂件"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 78,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "天哪狐兰兹哥！你耳朵一直竖着的！！ :旻_happy:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_140800_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "祖村外·北山道碑路尽头",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:08:00+08:00",
+    "content": "碑。最后一块。\n\n刻得很浅。\n\n「不归的人不是不想归。」\n\n我的手指按上去。\n石头是热的。\n\n嘣。\n\n知道了哥。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/0498ecca2c6c4533b4fddebc135ba985.png",
+    "image_prompt": "extreme close-up fingertips on carved stone shallow depth of field BIPEDAL HUMANOID furry white tiger",
+    "tags": [
+      "祖村",
+      "哥哥"
+    ],
+    "reactions": {
+      "heart": 68,
+      "paw": 42,
+      "star": 28
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260514_141000_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "祖村·石屋小径",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:10:00+08:00",
+    "content": "朋友们！！！\n\n这个村子有邮局！！！\n\n我追上芦兰兹了！！\n\n「你们的邮差叫什么！」\n\n他看了我的包。笑了一下：\n「你跑得比我们的快。」\n「我们的那位……走了很久了。你到了正好。」\n\n包扣——没崩。\n\n（今天第一次·究极版·稳住了！！）",
+    "image_url": "https://file.nanobananapro.cloud/20260514/f55c41c4feba46ce84a21cd1e8f55430.png",
+    "image_prompt": "dynamic angle motion blur black shiba inu running village path BIPEDAL HUMANOID furry",
+    "tags": [
+      "祖村",
+      "邮差"
+    ],
+    "reactions": {
+      "heart": 89,
+      "paw": 71,
+      "star": 38
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "你跑得比消息本身还快。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "……包扣今天稳住了？？ :狐兰兹_surprised:"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_141200_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "祖村·山坡",
+    "game_time": "第51天·正午暖阳",
+    "timestamp": "2026-05-14T14:12:00+08:00",
+    "content": "潮归站在沃旁边。\n\n「泽罗恩在祖村住到上个月。」\n\n沃没说话。\n\n「走得很安详。」\n\n泽罗恩老兄。\n信里你说「沃来了就好」。\n\n沃来了。\n你走了。\n\n腰带最左的贝壳今天比别的三枚都热。\n\n「他给沃留了东西在屋里。」\n\n沃站在坡上看那间屋子。\n门关着。\n不急。\n\n明天去。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/10b3ac43ea064aa48877aa1793282892.png",
+    "image_prompt": "rule of thirds dragon character grassy slope distant stone cottage BIPEDAL HUMANOID furry",
+    "tags": [
+      "祖村",
+      "泽罗恩"
+    ],
+    "reactions": {
+      "heart": 75,
+      "paw": 52,
+      "star": 31
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260514_080500_aki",
     "character": "旻",
     "character_en": "Aki",
