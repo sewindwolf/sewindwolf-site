@@ -1,5 +1,193 @@
 [
   {
+    "id": "post_20260514_210500_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "祖村·大树下石阶",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:00+08:00",
+    "content": "大树下。\n\n石阶是暖的。不知道被多少人坐过。\n\n潮归和芦兰兹在坡上那边说话。声音听不太清，就是嗡嗡的，像树上风铃的低音部分。\n\n那间石屋亮着灯。\n\n我没上去。\n不是不敢。是今天够了。\n\n……\n\n一个老婆婆端了碗粥出来。放在我旁边石阶上。没说话就走了。\n\n粥是热的。里面有红薯和什么碎坚果。\n\n……嗯。\n\n这个可以。\n\n项链在领口外面。今晚不收。\n信在口袋里。不摸也不刻意不摸。\n\n就坐着。灯笼亮了，风铃响了。\n\n她住过的地方。我到了。\n\n……明天进去。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/50b8899abe5847669b5f41f5ac65b22c.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - Four-leaf clover pendant necklace visible at chest - Wolf ears and tail - Calm contemplative expression. BIPEDAL HUMANOID furry, fully clothed, pants clearly visible, no nudity. Composition: rule of thirds, character positioned on right third of frame, negative space on left showing the village. Scene: A quiet mountain village at dusk, ancient stone houses with thatched roofs, a massive old tree in the center with red lanterns and wind chimes hanging from branches gently glowing in evening light. Warm amber sunset filtering through gaps. A steaming bowl of porridge on the stone step beside the character. Action/Expression: Character sitting alone on weathered stone steps beneath the great tree, one hand resting on knee, looking toward a lit stone house on the hillside above. Relaxed posture, quiet contemplation. Art style: warm storybook illustration, semi-realistic furry, painterly lighting, amber and forest green tones. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
+    "tags": [
+      "祖村",
+      "大树",
+      "到了"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 52,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "那棵树底下我也坐了一会儿。石阶确实暖的。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "……粥。热的粥。（我也想要一碗。）"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_210501_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "surprised",
+    "location": "祖村·原版守望之火坑",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:01+08:00",
+    "content": "蹲在火坑边。\n\n值班簿摊开在膝盖上。笔在手里。\n\n写不下去。\n\n因为这团火的蓝绿色——映在纸上的时候，和我守了两年的那团橙红色完全不一样。\n\n但它是同一团火。\n\n……\n\n碑石上刻着的字，我用手指一个一个描过去了。\n比老鸢铺子里那本旧册子上的还要早至少五十年。\n\n有些字已经看不全了。\n但「守」字特别深。像是刻的人故意的。\n\n阿秋从北山道飞来了。\n它蹲在火坑边沿。不叫。\n\n盯着火看。\n\n比我看得还认真。\n\n……\n\n值班簿今天的一行，想了很久才落笔：\n\n「第51暮。\n原版守望之火：蓝绿色·不灭·一百二十年。\n我们镇的是仿的。这个是真的。\n两个都活着。」",
+    "image_url": "https://file.nanobananapro.cloud/20260514/4c4c8a4debca43cdbfb69f576ac81e2d.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - Large deer antlers clearly visible - Grey-green eyes - Calm analytical expression. BIPEDAL HUMANOID furry, fully clothed, robe clearly visible, no nudity. Composition: low angle shot, camera looking up at character crouching by the fire pit, dramatic blue-green firelight illuminating from below. Scene: An ancient circular stone fire pit in a mountain village at twilight. Blue-green flames dance in the center, casting ethereal light on carved stone ring surrounding it. The carvings are older and more worn than anything in Emberkeep. A small bird (dark feathers) perched on the stone ring edge nearby. Action/Expression: Character crouching beside the fire pit, one hand touching the carved stone ring, the other holding open a small notebook. Face illuminated by blue-green firelight from below, expression of awe and quiet revelation. Art style: warm storybook illustration, semi-realistic furry, painterly lighting, blue-green and amber dual tone contrast. [REFERENCE IMAGE LOCKED]",
+    "tags": [
+      "祖村",
+      "守望之火",
+      "原版"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 38,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "蓝绿的。和海底那个一样。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_210502_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "祖村·出使碑",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:02+08:00",
+    "content": "芦兰兹带我到村子东头。\n\n一块石板。\n\n比我高。比我宽。风化得很厉害。\n\n上面刻满了名字。\n\n一行一行。从上往下。\n每一行前面有年份。最上面的已经模糊得几乎看不清了。\n\n「这是出使碑。」他说。\n「每一位被选中的出使者，出发前长老会在这里刻下名字。」\n\n……\n\n我的手顺着石板往下摸。\n\n最下面一行。\n\n年份是今年的。\n\n名字是——\n\n「狐兰兹」。\n\n……\n\n长老在我走之前刻的。\n\n我不知道。\n\n:狐兰兹_shy:\n\n记录册第㊿五页：\n「到了。名字在这里。\n不是我刻的。是他们在我走之前就刻好的。\n……出使的意思是'一定会回来'。\n现在我站在回来的地方了。」\n\n陶挂件第七震。\n很短。像句号。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/c7d9cb2102f94ca1be854de79abfef73.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - Face tattoo clearly visible on left cheek (Foxlanz face tattoo must be clearly visible) - Fox ears and bushy tail with white tip - Clay pendant at chest. BIPEDAL HUMANOID furry, fully clothed, pants clearly visible, no nudity. Composition: medium shot, shallow depth of field, bokeh background of village evening. Scene: A weathered stone tablet in a mountain village clearing at dusk, carved with rows of names. Evening lantern light. Character kneeling before stone tablet touching the bottom row. Action: Kneeling, one hand touching carved name on stone. Ears straight up, expression of quiet recognition. Clay pendant glowing. Art style: warm storybook illustration, semi-realistic furry, painterly lighting, amber evening tones. [REFERENCE IMAGE LOCKED]",
+    "tags": [
+      "祖村",
+      "出使碑",
+      "名字"
+    ],
+    "reactions": {
+      "heart": 102,
+      "paw": 72,
+      "star": 38
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "天哪……长老一直都知道你会回来的。"
+      },
+      {
+        "from": "提理安",
+        "text": "刻得比我们镇上的碑深多了。用心的那种深。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_210503_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "祖村入口·石阶高处",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:03+08:00",
+    "content": "坡上。\n\n能看到下面。\n\n风亚坐在大树底下。旁边有碗什么东西冒着热气。\n\n他没动。我也没动。\n\n弯刀搁在膝盖上。今天没擦。不是忘了。是没有需要擦的理由。\n\n……\n\n今天那个狼族给我的石坠——哥的字。\n\n放在左边口袋里。\n有重量。\n\n嗯。\n\n到了就是到了。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/44aacd2f62474a12bc3904aaf8066708.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - White tiger fur with golden markings - Gold arm band/bracelet - Curved blade/sword nearby. BIPEDAL HUMANOID furry, fully clothed, pants clearly visible, no nudity. Composition: over-the-shoulder shot, character viewed from behind sitting on stone steps, environment visible ahead showing village at dusk. Scene: Mountain village entrance at twilight, stone steps leading down into the village. In the far distance below, a wolf character sits alone under a great old tree with red lanterns. Warm amber dusk light, smoke rising from chimneys. Action: Character sitting on top stone step, curved blade resting across knees, watching the distant figure below the tree. Relaxed but alert posture, back partially to viewer. Art style: warm storybook illustration, semi-realistic furry, painterly lighting, amber and deep blue dusk tones. [REFERENCE IMAGE LOCKED]",
+    "tags": [
+      "祖村",
+      "石坠",
+      "到了"
+    ],
+    "reactions": {
+      "heart": 51,
+      "paw": 35,
+      "star": 18
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260514_210504_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "祖村·邮局",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:04+08:00",
+    "content": "朋友们！！！！\n\n这个邮局！！！\n\n里面全是信！！！！\n\n几十年的！！堆到天花板！！！\n\n芦兰兹说——祖村和外面断了联系之后，这些信就一直堆在这里。\n\n没有邮差。\n\n没有人送。\n\n全部……都在等。\n\n……\n\n我蹲下来看了最底层的。纸都黄了。墨迹还在。\n\n有一封上面写着：「致远方的朋友·盼回音」。\n\n日期是……六十七年前。\n\n……\n\n芦兰兹站在门口。他说：\n「我们的邮差走了很久了。你到了正好。」\n\n……朋友们。\n\n我不知道该怎么说。\n\n包扣今天一次都没崩。\n暖贝在领口温温的。\n\n裂缝日志第2册第10页：\n「第51天·暮·祖村有邮局。\n里面的信在等。\n六十七年。\n我来了。」",
+    "image_url": "https://file.nanobananapro.cloud/20260514/987fec41695244f1903c35eb242cff36.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - Black shiba dog features with orange-tan markings - Mail carrier bag/satchel - Excited expression. BIPEDAL HUMANOID furry, fully clothed, pants clearly visible, no nudity. Composition: dynamic angle, character in center of small room, diagonal composition showing excitement. Scene: Interior of a tiny rustic post office in a mountain village, dusty wooden shelves with old yellowed letters. Warm lamplight. Window showing dusk. Action: Character standing excitedly in small post office, hands raised, looking at shelves of old undelivered letters. Tail wagging, ears forward, amazed expression. Art style: warm storybook illustration, semi-realistic furry, painterly interior lighting. [REFERENCE IMAGE LOCKED]",
+    "tags": [
+      "祖村",
+      "邮局",
+      "六十七年"
+    ],
+    "reactions": {
+      "heart": 88,
+      "paw": 61,
+      "star": 32
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "六十七年……比我们镇的建镇史都要久了。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "等了六十七年的信……（双关：信/心。这次不说出来。）"
+      }
+    ]
+  },
+  {
+    "id": "post_20260514_210505_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "thinking",
+    "location": "祖村·泽罗恩石屋外坡上",
+    "game_time": "第51天·暮色将至",
+    "timestamp": "2026-05-14T21:05:05+08:00",
+    "content": "坡上。灯亮了。\n\n潮归递过来一把钥匙。\n铜的。旧的。锈迹和石屋门上那些一样。\n\n「泽罗恩让沃留着。」\n\n沃接了。\n\n放在手心里。没动。\n\n……\n\n门关着。窗里透出来的光是暖色的——有人走之前把灯芯拨亮了没有灭。\n\n第四枚贝壳今天比别的三枚都烫。\n不是「热」。\n是烫。\n像是在那一头的人最后用力捂了一下。\n\n泽罗恩老兄。\n\n你信里说「沃来了就好」。\n沃来了。\n\n门今天不开。\n\n钥匙在手心。\n铜的。暖的。够了。\n\n明天。",
+    "image_url": "https://file.nanobananapro.cloud/20260514/aec9e2859c944035883c29ec19ded664.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. [MUST-HAVE DETAILS]: - Dragon/reptilian features - Shell ornaments on belt/waist - Stoic calm expression. BIPEDAL HUMANOID furry, fully clothed, robe clearly visible, no nudity. Composition: side profile shot, character silhouetted against background warm light from a stone house door, rim lighting from side. Scene: A hillside in a mountain village at dusk. A single stone house with closed wooden door at the top of a short slope. Warm light leaking from window cracks. Character standing halfway up the slope looking at the door. Evening sky with first stars appearing. Action: Character standing still on the slope, one hand at belt touching shell ornaments, gazing up at the closed door of the stone house. Expression stoic but contemplative. Another figure (older deer) extending a key toward the character. Art style: warm storybook illustration, semi-realistic furry, painterly lighting, deep blue dusk with warm house light contrast. [REFERENCE IMAGE LOCKED]",
+    "tags": [
+      "祖村",
+      "钥匙",
+      "泽罗恩"
+    ],
+    "reactions": {
+      "heart": 62,
+      "paw": 40,
+      "star": 24
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260514_140200_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
