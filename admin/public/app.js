@@ -10,6 +10,9 @@ let regenTargetId = null;
 let regenCount = 1;
 let regenBatchId = null;
 let selectedCandidateUrl = null;
+let currentPage = 1;
+const PAGE_SIZE = 50;
+let thumbObserver = null;
 
 async function init() {
   await loadPosts();
@@ -67,22 +70,32 @@ function applyFilters() {
     }
     return true;
   });
+  currentPage = 1;
   renderPosts();
 }
 
 function renderPosts() {
   const container = document.getElementById('postsList');
   const stats = document.getElementById('stats');
-  stats.textContent = '\u663E\u793A ' + filtered.length + ' / ' + allPosts.length + ' \u6761\u52A8\u6001' + (hasUnsaved ? ' | \u26A0\uFE0F \u6709\u672A\u90E8\u7F72\u7684\u4FEE\u6539' : '');
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+
+  const startIndex = (currentPage - 1) * PAGE_SIZE;
+  const pagePosts = filtered.slice(startIndex, startIndex + PAGE_SIZE);
+  const rangeText = filtered.length
+    ? ' | 第 ' + (startIndex + 1) + '-' + (startIndex + pagePosts.length) + ' 条'
+    : '';
+  stats.textContent = '显示 ' + filtered.length + ' / ' + allPosts.length + ' 条动态' + rangeText + ' | 第 ' + currentPage + '/' + totalPages + ' 页' + (hasUnsaved ? ' | ⚠️ 有未部署的修改' : '');
 
   let html = '';
-  for (const p of filtered) {
+  for (const p of pagePosts) {
     const imgTag = p.image_url
-      ? '<img class="post-thumb" src="' + p.image_url + '" onerror="this.className=\'post-thumb no-img\';this.alt=\'\u56FE\u7247\u52A0\u8F7D\u5931\u8D25\';">'
-      : '<div class="post-thumb no-img">\u65E0\u56FE</div>';
+      ? '<img class="post-thumb lazy-thumb" data-src="' + escapeHtml(p.image_url) + '" decoding="async" width="160" height="100" onerror="this.className=&quot;post-thumb no-img&quot;;this.alt=&quot;图片加载失败&quot;;">'
+      : '<div class="post-thumb no-img">无图</div>';
     const contentPreview = escapeHtml(p.content || '').replace(/\n/g, ' ').slice(0, 120);
     const hasPrompt = p.image_prompt && p.image_prompt.trim();
-    const promptPreview = hasPrompt ? escapeHtml(p.image_prompt).slice(0, 150) + (p.image_prompt.length > 150 ? '...' : '') : '<em style="color:var(--text-dim);">\u65E0\u63D0\u793A\u8BCD</em>';
+    const promptPreview = hasPrompt ? escapeHtml(p.image_prompt).slice(0, 150) + (p.image_prompt.length > 150 ? '...' : '') : '<em style="color:var(--text-dim);">无提示词</em>';
 
     const historyBlock = renderHistoryBlock(p);
 
@@ -98,19 +111,74 @@ function renderPosts() {
       + '</div>'
       + '<div class="post-content-preview">' + contentPreview + '</div>'
       + '<details class="prompt-details">'
-      + '<summary class="prompt-summary">\uD83C\uDFA8 \u63D0\u793A\u8BCD</summary>'
+      + '<summary class="prompt-summary">🎨 提示词</summary>'
       + '<div class="prompt-content">' + promptPreview + '</div>'
       + '</details>'
       + historyBlock
       + '</div>'
       + '<div class="post-actions">'
-      + '<button class="btn-edit" onclick="openEdit(\'' + p.id + '\')">\u7F16\u8F91</button>'
-      + '<button class="btn-regen-sm" onclick="openRegen(\'' + p.id + '\')" ' + (hasPrompt ? '' : 'disabled title="\u8BF7\u5148\u5728\u7F16\u8F91\u4E2D\u586B\u5199\u63D0\u793A\u8BCD"') + '>\uD83D\uDD04 \u91CD\u65B0\u751F\u56FE</button>'
-      + '<button class="btn-delete" onclick="confirmDelete(\'' + p.id + '\')">\u5220\u9664</button>'
+      + '<button class="btn-edit" onclick="openEdit(\'' + p.id + '\')">编辑</button>'
+      + '<button class="btn-regen-sm" onclick="openRegen(\'' + p.id + '\')" ' + (hasPrompt ? '' : 'disabled title="请先在编辑中填写提示词"') + '>🔄 重新生图</button>'
+      + '<button class="btn-delete" onclick="confirmDelete(\'' + p.id + '\')">删除</button>'
       + '</div>'
       + '</div>';
   }
-  container.innerHTML = html;
+  const pagination = renderPagination(totalPages);
+  container.innerHTML = pagination + html + pagination;
+  activateLazyThumbs(container);
+}
+
+function renderPagination(totalPages) {
+  if (totalPages <= 1) return '';
+  let html = '<nav class="pagination" aria-label="分页">';
+  html += '<button class="page-btn" onclick="setPage(' + (currentPage - 1) + ')" ' + (currentPage <= 1 ? 'disabled' : '') + '>上一页</button>';
+  const from = Math.max(1, currentPage - 3);
+  const to = Math.min(totalPages, currentPage + 3);
+  if (from > 1) {
+    html += '<button class="page-btn" onclick="setPage(1)">1</button>';
+    if (from > 2) html += '<span class="page-ellipsis">...</span>';
+  }
+  for (let p = from; p <= to; p++) {
+    html += '<button class="page-btn ' + (p === currentPage ? 'active' : '') + '" onclick="setPage(' + p + ')">' + p + '</button>';
+  }
+  if (to < totalPages) {
+    if (to < totalPages - 1) html += '<span class="page-ellipsis">...</span>';
+    html += '<button class="page-btn" onclick="setPage(' + totalPages + ')">' + totalPages + '</button>';
+  }
+  html += '<button class="page-btn" onclick="setPage(' + (currentPage + 1) + ')" ' + (currentPage >= totalPages ? 'disabled' : '') + '>下一页</button>';
+  html += '</nav>';
+  return html;
+}
+
+function setPage(page) {
+  currentPage = page;
+  renderPosts();
+  window.scrollTo({ top: 0, behavior: 'auto' });
+}
+
+function activateLazyThumbs(root) {
+  if (thumbObserver) thumbObserver.disconnect();
+  const imgs = root.querySelectorAll('img.lazy-thumb[data-src]');
+  if (!('IntersectionObserver' in window)) {
+    imgs.forEach(loadLazyThumb);
+    return;
+  }
+  thumbObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadLazyThumb(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '300px 0px', threshold: 0.01 });
+  imgs.forEach(img => thumbObserver.observe(img));
+}
+
+function loadLazyThumb(img) {
+  const src = img.getAttribute('data-src');
+  if (!src) return;
+  img.src = src;
+  img.removeAttribute('data-src');
 }
 
 // === Render image history block (per-card) ===
@@ -129,8 +197,9 @@ function renderHistoryBlock(p) {
     const url = history[i];
     const isCurrent = (url === p.image_url);
     const urlEsc = url.replace(/'/g, '%27');
+    // ⚡ 性能优化：用 data-src 占位，details 展开时才注入真实 src，避免一次性解码全部历史图
     thumbs += '<div class="history-thumb ' + (isCurrent ? 'current' : '') + '">'
-      + '<img src="' + url + '" loading="lazy" onclick="previewFullImage(\'' + urlEsc + '\')">'
+      + '<img data-src="' + url + '" decoding="async" width="140" height="90" alt="" onclick="previewFullImage(\'' + urlEsc + '\')">'
       + '<div class="history-thumb-actions">'
       + (isCurrent
           ? '<span class="history-current-tag">✅ 当前</span>'
@@ -140,16 +209,54 @@ function renderHistoryBlock(p) {
       + '</div>'
       + '</div>';
   }
-  return '<details class="history-details">'
+  return '<details class="history-details" ontoggle="onHistoryToggle(this)">'
     + '<summary class="history-summary">\uD83D\uDCDA \u5386\u53F2\u56FE (' + history.length + ' \u5F20)</summary>'
     + '<div class="history-content"><div class="history-grid">' + thumbs + '</div></div>'
     + '</details>';
 }
 
-// 通过新标签页全图预览
+// ⚡ 性能优化：details 展开时才注入 src，关闭时清空以释放解码内存
+function onHistoryToggle(detailsEl) {
+  const imgs = detailsEl.querySelectorAll('img[data-src]');
+  if (detailsEl.open) {
+    imgs.forEach(img => { if (!img.src) img.src = img.getAttribute('data-src'); });
+  } else {
+    imgs.forEach(img => { img.removeAttribute('src'); });
+  }
+}
+
+// 页内模态预览全图（不再新标签页打开原图，避免高清 PNG 占满内存）
 function previewFullImage(url) {
   const realUrl = decodeURIComponent(url);
-  window.open(realUrl, '_blank');
+  let overlay = document.getElementById('imgPreviewOverlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'imgPreviewOverlay';
+    overlay.className = 'img-preview-overlay';
+    overlay.onclick = closeImagePreview;
+    document.body.appendChild(overlay);
+  }
+  // 每次重建内部，关闭时一起删，保证 GC
+  overlay.innerHTML = '<div class="img-preview-inner" onclick="event.stopPropagation()">'
+    + '<button class="img-preview-close" onclick="closeImagePreview()">×</button>'
+    + '<img src="' + realUrl.replace(/"/g, '&quot;') + '" decoding="async" alt="preview">'
+    + '<div class="img-preview-actions">'
+    + '<a class="btn-sm" href="' + realUrl.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener">新标签打开原图</a>'
+    + '</div>'
+    + '</div>';
+  overlay.style.display = 'flex';
+  document.addEventListener('keydown', _imgPreviewKeyHandler);
+}
+function closeImagePreview() {
+  const overlay = document.getElementById('imgPreviewOverlay');
+  if (overlay) {
+    overlay.innerHTML = ''; // 释放图片资源
+    overlay.style.display = 'none';
+  }
+  document.removeEventListener('keydown', _imgPreviewKeyHandler);
+}
+function _imgPreviewKeyHandler(e) {
+  if (e.key === 'Escape') closeImagePreview();
 }
 
 async function setCurrentImage(postId, url) {
@@ -215,13 +322,18 @@ function openEdit(id) {
   document.getElementById('editImagePrompt').value = post.image_prompt || '';
   document.getElementById('editContent').value = post.content || '';
   const img = document.getElementById('imagePreview');
-  if (post.image_url) { img.src = post.image_url; img.style.display = 'block'; }
-  else { img.style.display = 'none'; }
+  img.removeAttribute('src');
+  img.style.display = 'none';
   document.getElementById('editModal').classList.add('open');
 }
 
 function closeModal() {
   document.getElementById('editModal').classList.remove('open');
+  const img = document.getElementById('imagePreview');
+  if (img) {
+    img.removeAttribute('src');
+    img.style.display = 'none';
+  }
   editingId = null;
 }
 

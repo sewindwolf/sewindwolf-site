@@ -587,3 +587,107 @@ main {
 .btn-del-history:hover {
   background: rgba(220,120,120,0.2);
 }
+
+
+/* === 全屏图片预览模态层（2026-05-12 性能优化） === */
+.img-preview-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: zoom-out;
+}
+.img-preview-inner {
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.img-preview-inner img {
+  max-width: 92vw;
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  background: #1a1a1f;
+}
+.img-preview-close {
+  position: absolute;
+  top: -38px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.img-preview-close:hover { background: rgba(255,255,255,0.3); }
+.img-preview-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+.img-preview-actions .btn-sm {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+.img-preview-actions .btn-sm:hover { background: rgba(255,255,255,0.2); }
+
+
+/* === PAGINATION / LAZY THUMBS === */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 18px;
+}
+.page-btn {
+  min-width: 36px;
+  padding: 7px 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.page-btn:hover:not(:disabled), .page-btn.active {
+  border-color: var(--accent);
+  background: var(--surface-alt);
+  color: #fff;
+}
+.page-btn.active {
+  color: var(--accent-hover);
+  font-weight: 700;
+}
+.page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.page-ellipsis {
+  color: var(--text-dim);
+  padding: 0 2px;
+}
+.lazy-thumb:not([src]) {
+  background: linear-gradient(135deg, var(--bg), var(--surface-alt));
+}
