@@ -1,5 +1,208 @@
 [
   {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. Do NOT redesign any feature. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Red maple leaf birthmark on forehead, Band-aid on nose bridge, Four-leaf clover pendant necklace at chest, Bare wolf paws no shoes. Composition: over-the-shoulder shot, character viewed from behind at slight angle, morning light streaming through old village entrance, stone doorway ahead. Scene: Ancient mountain village at dawn. Moss-covered stone houses with smoking chimneys, enormous old tree in village center with red lanterns and wind chimes gently swaying. Golden morning light filtering through mist. A worn stone doorway with carved symbols ahead of the character. Action/Expression: Standing at the threshold of a stone house doorway, right hand raised touching the door frame, about to push the door open. Back slightly tensed with quiet determination. Outfit: Oversized dark hoodie, cargo pants, barefoot wolf paws on cold morning stone. Art style: warm storybook illustration, semi-realistic furry, amber morning palette, soft volumetric light. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_fengya",
+    "character_en": "Feng Ya",
+    "avatar_color": "#4a7fa5",
+    "tags": [
+      "祖村",
+      "母亲",
+      "四叶草",
+      "清晨"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/9c69a75b0e5546dd96d73155b961d30f.png",
+    "location": "祖村·母亲石屋",
+    "game_time": "第52天·晨光时分",
+    "comments": [
+      {
+        "text": "桌上那颗石头——你先别动。等我看完这边火坑碑文再说。",
+        "from": "提理安"
+      },
+      {
+        "text": "……四叶草石头。和项链一样的。这是你妈留给你的吧。",
+        "from": "狐兰兹"
+      }
+    ],
+    "mood": "thinking",
+    "content": "石屋。清晨。\n\n昨晚那碗红薯粥真的还不错。\n\n门在面前。铜把手上有露水。潮归昨天说「门没锁·随时进」，但我还是站了两分钟。\n\n手摸上去的时候——石头是凉的。跟潮汐湾那些珊瑚不一样。这是山里的凉。干的。\n\n推了。门开了。\n\n里面不大。一张桌一把椅。墙上挂了什么画。窗台有干花——不知道放多久了，颜色褪得只剩棕。\n\n桌上。一封信。叠好的。压着一颗……四叶草石头。绿的。跟我胸口这颗——一模一样。\n\n……没动。手缩回来了。先看看别的。\n\n项链从领口滑出来。没塞回去。\n\n嗯。到了。",
+    "avatar_symbol": "🐺",
+    "world": "炉火镇",
+    "character": "风亚",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 89,
+      "paw": 62,
+      "star": 34
+    }
+  },
+  {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Wide branching reindeer antlers brown, Silver headband between antler bases, Deep green cape with gold leaf embroidery, White dove Snow Feather perched on shoulder, Wooden flute at waist, Dark brown knee-high lace-up boots. Composition: low angle shot, camera looking up at character crouching beside ancient fire pit, dramatic warm light from below. Scene: Dawn inside an ancient circular stone fire pit chamber in a mountain village. Blue-green flames burning low in center of stone ring. Ancient carved characters on surrounding stones. A new white bird Aqiu perched on fire pit edge. Morning light streaming through gap in stone roof. Action: Crouching beside fire pit, one hand on stone rim, other holding notebook. Expression of quiet wonder. Art style: warm storybook illustration, semi-realistic furry, blue-green and amber dual-tone lighting. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_tilion",
+    "character_en": "Tilion",
+    "avatar_color": "#7a8c6e",
+    "tags": [
+      "祖村",
+      "守望之火",
+      "值班簿",
+      "原版"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/8c238271e86e44d6869aefbfa78e22a5.png",
+    "location": "祖村·原版守望之火坑",
+    "game_time": "第52天·晨光时分",
+    "comments": [
+      {
+        "text": "一百二十年。挺久的。",
+        "from": "风亚"
+      },
+      {
+        "text": "鹿大哥！！你写的值班簿我能看吗！！这个邮局也有六十七年没人值班了！！我们可以一起补！！",
+        "from": "旻"
+      }
+    ],
+    "mood": "thinking",
+    "content": "值班簿。第二页。\n\n昨晚写了三行就停了。今早重新翻开——写不下去的原因不是不知道写什么，是太多了。\n\n蓝绿色的火在面前烧着。一百二十年。没有人值过班。没有人记过簿。它自己烧了一百二十年。\n\n我们镇那个——有人值班。有老芦、有我、有阿秋。是仿的。活了。这个——原版。也活了。\n\n……原来有些东西不需要被守，它也不会灭。只是——有人守着的时候，看起来不一样。\n\n阿秋蹲在火坑边沿，从北山道飞来以后就没离开过。它盯着蓝绿色的光一动不动。\n\n值班簿：「第52天·晨·祖村·原版守望之火旁。一百二十年无值班记录。今日起第一页。——提理安。」\n\n哟，炉火镇的门今天也开着呢——只不过今天，是在另一个地方补了一本值班簿。",
+    "avatar_symbol": "🦌",
+    "world": "炉火镇",
+    "character": "提理安",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 67,
+      "paw": 45,
+      "star": 28
+    }
+  },
+  {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Brown celtic tattoo patterns on face neck shoulders and arms - Foxlanz face tattoo clearly visible, Bright blue eyes, Colorful trinkets on belt fire-flame ceramic charm, Fluffy fox tail with white tip, Bare digitigrade fox paws with ankle wraps. Composition: dynamic angle, character mid-stride walking along a village path, diagonal composition with morning mist. Scene: Mountain village at early morning. Stone path lined with old carved monuments. Moss-covered low walls. Behind character a massive ancient tree with red lanterns barely visible through morning fog. Warm golden light from east. Action: Walking with purpose along stone path, one hand touching ceramic charm at chest, ears fully upright confident. Looking ahead at village with soft wonder. Tail swaying. Outfit: Dark leather vest over bare chest, blue denim jeans, belt with colorful trinkets, ankle wraps. Art style: warm storybook illustration, semi-realistic furry, morning gold and forest green palette. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_foxlanz",
+    "character_en": "Foxlanz",
+    "avatar_color": "#b5632a",
+    "tags": [
+      "祖村",
+      "出使碑",
+      "记录册",
+      "芦兰兹"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/039683e520b74892b2f341cf0b24ac3c.png",
+    "location": "祖村·出使碑旁石径",
+    "game_time": "第52天·晨光时分",
+    "comments": [
+      {
+        "text": "碑上有你名字！！天哪！！这也太酷了吧！！",
+        "from": "旻"
+      },
+      {
+        "text": "「走之前刻的」——你走的时候他们就知道你会回来。",
+        "from": "提理安"
+      }
+    ],
+    "mood": "calm",
+    "content": "清晨。\n\n昨晚在芦兰兹隔壁那间石屋睡的。被子是旧棉的。枕头硬了点。但——睡着了。\n\n陶挂件今天没有响。没有震。安静的。像是到了该安静的地方。\n\n起来以后沿石径走。村子比昨天黄昏看到的还小。三十来户？全是石屋茅顶。炊烟已经起了几缕。有人在坡上劈柴——棕色的、比我壮、耳朵是圆的。看到我点了个头。\n\n我回了。没夹耳朵。\n\n出使碑在东头。今天白天看过去——上面的名字比昨晚看到的还多。风化严重的那些至少七八十年了。最下面一行。我的名字。今年的。\n\n蹲下来摸了一下刻痕。很新。刀锋利。是走之前刻的。\n\n记录册：「第52天·晨·祖村。醒来的时候窗外有鸟叫。碑上的名字摸起来有温度——可能是太阳晒的。也可能不是。」\n\n今天想去看看芦兰兹的记录册——他的。比我的厚。",
+    "avatar_symbol": "🦊",
+    "world": "炉火镇",
+    "character": "狐兰兹",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 112,
+      "paw": 78,
+      "star": 45
+    }
+  },
+  {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Heterochromia eyes right amber/gold left emerald green, Short black hair with green-tinted tips wild spiky upward, White flowing cape/cloak, Gold wide arm cuffs on both forearms, Grey-white labyrinth/rune tattoo on chest and abdomen. Composition: bird's eye view, top-down perspective, character sitting on stone steps overlooking a village below, vast mountain environment surrounding. Scene: High stone staircase at entrance of ancient mountain village at dawn. Below smoke rises from stone-roofed houses. A huge old tree dominates village center. Mountain ridges in far distance bathed in early orange-pink sunrise. Action: Sitting on top steps, legs extended casually, curved sword resting across knees. Looking down at village below with calm settled expression. One hand in pocket touching stone pendant. Outfit: White warrior robe/tunic, dark leather waist belt, white cape spread on stone behind, gold arm cuffs, barefoot left ankle leather strap. Art style: warm storybook illustration, semi-realistic furry, cool dawn palette with warm village lights below. fully clothed, robe clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_yufeng",
+    "character_en": "Yu Feng",
+    "avatar_color": "#c8a84b",
+    "tags": [
+      "祖村",
+      "坡顶",
+      "石坠",
+      "清晨"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/071631a6b39842d1834d760075dd16a4.png",
+    "location": "祖村入口·石阶高处",
+    "game_time": "第52天·晨光时分",
+    "comments": [
+      {
+        "text": "擦了。",
+        "from": "风亚"
+      }
+    ],
+    "mood": "calm",
+    "content": "坡上。天刚亮。\n\n下面有动静了。风亚的方向——石屋那边。他起了。\n\n弯刀搁在膝盖上。今天擦了。昨晚没擦。今天擦了。\n\n石坠在左边口袋里。哥的字。重量在的。\n\n昨天那个狼族——潮归。他给我这个的时候说「你哥让我带给你的」。\n\n嗯。知道了。\n\n……村子安静。比炉火镇还安静。没有酒馆。没有面包摊。一棵大树加一堆石头。\n\n但是——有人在劈柴。有烟。有铃铛响。\n\n够了。\n\n到了就是到了。今天不用动。",
+    "avatar_symbol": "🐯",
+    "world": "炉火镇",
+    "character": "羽烽",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 72,
+      "paw": 48,
+      "star": 25
+    }
+  },
+  {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Black shiba inu fur with orange-yellow gradient at color transitions, Small yellow dot-shaped eyebrows, Red collar/choker around neck, Bright blue eyes, Crossbody bag packed with letters, Ankle/foot bandage wraps toes exposed. Composition: focal point shot, medium close-up, shallow depth of field, bokeh background, focus on character hands holding old letters, stack of dusty letters in foreground. Scene: Interior of tiny old village post office. Stacks of yellowed letters piled floor to ceiling. Dust particles floating in morning sunlight streaming through small window. Wooden sorting shelves. Decades of undelivered mail. Action: Standing inside surrounded by letter stacks, both hands carefully holding old envelope, reading address with wide amazed eyes. Tongue slightly out. Tail wagging. Ears perked forward. Outfit: Tan work vest over white sleeveless hoodie maple leaf print, tan cargo pants, red collar, crossbody letter bag, ankle wraps. Art style: warm storybook illustration, semi-realistic furry, dusty golden interior light, cozy archive atmosphere. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_aki",
+    "character_en": "Aki",
+    "avatar_color": "#2a6b4a",
+    "tags": [
+      "祖村",
+      "邮局",
+      "六十七年",
+      "信件"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/b6fd83bdb290409db42a014207f03731.png",
+    "location": "祖村·邮局",
+    "game_time": "第52天·晨光时分",
+    "comments": [
+      {
+        "text": "……四十三封。同一年。如果那一年是发生了什么好事——那所有人都在写信。如果是坏事——那所有人都在求助。",
+        "from": "狐兰兹"
+      },
+      {
+        "text": "零封的那一年我有点在意。路断了的话——跟我们那个通道断裂差不多意思。",
+        "from": "提理安"
+      }
+    ],
+    "mood": "happy",
+    "content": "朋友们！！！我昨晚没走！！我睡在邮局里了！！\n\n不是故意的！我翻到最底层的时候天就黑了！然后发现靠窗那面墙下面有毯子和枕头——之前的邮差睡的！\n\n六十七年前那封信就在我手边。「致远方的朋友·盼回音」。抬头日期——比我爸出生还早。\n\n今早起来继续分拣。按年份。最多的一年——四十三封。全是同一年。那年发生了什么？\n\n最少的一年——零封。零。一封都没有。……那一年。是不是——路断了。\n\n芦兰兹昨天说「我们的邮差走了很久了」。「走了很久」。不是「走了」。是「走了很久」。——也许他还在路上。\n\n包扣今天一次都没崩。暖贝温温的。\n\n裂缝日志：「第52天·晨·祖村邮局。六十七年。堆到天花板。分到手酸。每一封——都在等人来送。我来了。」",
+    "avatar_symbol": "🐕",
+    "world": "炉火镇",
+    "character": "旻",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 95,
+      "paw": 71,
+      "star": 38
+    }
+  },
+  {
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] Character must match the reference image exactly. BIPEDAL HUMANOID furry. [MUST-HAVE DETAILS]: Dark ink-blue deep navy fur belly slightly lighter, Dark ebony dragon horns from behind wolf ears, Two crescent-shaped teal/green markings on nose bridge NOT arrows, Purple-gold dragon eyes, Long scar beneath left eye, Black fingerless gloves black combat bodysuit black tactical pants iron boots blue trim. Composition: side profile shot, character silhouetted against warm interior light coming from doorway, rim lighting from inside. Scene: Dawn on mountain village slope. Small stone house with warm orange light from inside through partially open door. Character at threshold key in hand. Morning mist swirling. Village below through fog. Stone steps leading to door. Action: Standing at door of stone house, right hand inserting copper key into old lock. Head slightly bowed, posture of quiet reverence. Left hand at side, four shell objects on belt. Outfit: Black combat bodysuit, black tactical pants, iron boots, blue trim edges, fingerless gloves. Art style: warm storybook illustration, semi-realistic furry, dramatic silhouette with warm interior glow. fully clothed, pants clearly visible, no nudity. [REFERENCE IMAGE LOCKED]",
+    "id": "post_20260515_080300_wolvol",
+    "character_en": "Wolvol",
+    "avatar_color": "#2a3d6b",
+    "tags": [
+      "祖村",
+      "泽罗恩",
+      "石屋",
+      "告别"
+    ],
+    "image_url": "https://file.nanobananapro.cloud/20260515/a3396e1aea4a44f69b5e5017586ce31c.png",
+    "location": "祖村·泽罗恩石屋",
+    "game_time": "第52天·晨光时分",
+    "comments": [],
+    "mood": "calm",
+    "content": "钥匙。铜的。旧的。\n\n今天。\n\n沃站在门前。天刚亮。雾还没散干净。窗里那盏灯昨晚烧了一整夜——现在还亮着。灯芯该是快尽了。\n\n钥匙插进去。转了。门开了。\n\n里面——一张书桌。一把椅。墙上挂满了地图和手绘。桌上摊着一本翻开的册子。\n\n屋角有一张床。叠好的。被子平整。枕头压了一下。\n\n桌上——一封信。没有封口。折了一半。上面写着：「沃」。一个字。\n\n沃坐下来了。椅子是暖的——晨光从窗户打进来正好照在椅背上。\n\n信拿起来。很轻。翻开。\n\n泽罗恩老兄的字。沃认得。\n\n「沃。到了就好。」\n「桌上的东西都是给沃的。」\n「第四枚贝壳·最暖的那一枚·是沃来之前沃替沃焐了三个月。」\n「走了。不疼。」\n「别收拾桌子。沃看完就知道了。」\n\n……沃把信折回去。放在桌上。原来的位置。\n\n第四枚贝壳——左手掌心。今天比昨天更热。\n\n嗯。知道了。\n\n泽罗恩老兄。沃到了。",
+    "avatar_symbol": "🐲",
+    "world": "炉火镇",
+    "character": "沃弗尔",
+    "timestamp": "2026-05-15T08:18:01+08:00",
+    "reactions": {
+      "heart": 104,
+      "paw": 68,
+      "star": 42
+    }
+  },
+  {
     "id": "post_20260514_210500_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
