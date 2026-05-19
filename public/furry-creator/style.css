@@ -219,3 +219,14 @@ body.is-result .result-panel{display:block;}
   box-shadow:0 12px 28px rgba(143,211,255,.24);
 }
 .gpt-action:disabled{opacity:.62;cursor:not-allowed;box-shadow:none;}
+.fal-gpt-action{
+  border:0;
+  border-radius:14px;
+  padding:12px 18px;
+  background:linear-gradient(135deg,#c4b5fd,#f0abfc);
+  color:#1f1233;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 12px 28px rgba(196,181,253,.24);
+}
+.fal-gpt-action:disabled{opacity:.62;cursor:not-allowed;box-shadow:none;}

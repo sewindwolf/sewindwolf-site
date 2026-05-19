@@ -253,6 +253,12 @@ let locked = new Set();
 let currentStep = 0;
 let wizardStarted = false;
 let currentImageProvider = 'banana';
+const imageProviderConfigs = {
+  banana: { label: 'Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
+  gpt: { label: 'GPT-Image-2', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
+  falGpt: { label: 'GPT fal.ai', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate' }
+};
+function imageProviderConfig(provider){ return imageProviderConfigs[provider] || imageProviderConfigs.banana; }
 
 function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 function resolve(value, options){ return value === 'random' || value === 'auto' ? pick(options) : value; }
@@ -747,10 +753,11 @@ async function requestBananaImage(password){
     return;
   }
   const cleanPassword = String(password || '').trim();
-  const provider = currentImageProvider === 'gpt' ? 'gpt' : 'banana';
-  const providerLabel = provider === 'gpt' ? 'GPT' : 'Banana';
-  const btn = document.getElementById(provider === 'gpt' ? 'gptGenerateBtn' : 'bananaGenerateBtn');
-  const otherBtn = document.getElementById(provider === 'gpt' ? 'bananaGenerateBtn' : 'gptGenerateBtn');
+  const provider = imageProviderConfigs[currentImageProvider] ? currentImageProvider : 'banana';
+  const providerInfo = imageProviderConfig(provider);
+  const providerLabel = providerInfo.label;
+  const btn = document.getElementById(providerInfo.buttonId);
+  const otherBtns = Object.entries(imageProviderConfigs).filter(([key]) => key !== provider).map(([, info]) => document.getElementById(info.buttonId)).filter(Boolean);
   const submitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const panel = document.getElementById('bananaPasswordPanel');
   const box = document.getElementById('bananaBox');
@@ -764,10 +771,10 @@ async function requestBananaImage(password){
   preview.innerHTML = '';
   status.textContent = '正在提交 ' + providerLabel + ' 生图任务，请稍等……';
   if(btn) btn.disabled = true;
-  if(otherBtn) otherBtn.disabled = true;
+  otherBtns.forEach(otherBtn => otherBtn.disabled = true);
   if(submitBtn) submitBtn.disabled = true;
   try{
-    const resp = await fetch(provider === 'gpt' ? '/api/gpt-generate' : '/api/banana-generate', {
+    const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(), character })
@@ -783,7 +790,7 @@ async function requestBananaImage(password){
     status.textContent = '生图失败：' + (err.message || err);
   }finally{
     if(btn) btn.disabled = false;
-    if(otherBtn) otherBtn.disabled = false;
+    otherBtns.forEach(otherBtn => otherBtn.disabled = false);
     if(submitBtn) submitBtn.disabled = false;
   }
 }
@@ -831,6 +838,8 @@ function bindStatic(){
   document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
   const gptGenerateBtn = document.getElementById('gptGenerateBtn');
   if(gptGenerateBtn) gptGenerateBtn.onclick = () => openBananaPasswordPanel('gpt');
+  const falGptGenerateBtn = document.getElementById('falGptGenerateBtn');
+  if(falGptGenerateBtn) falGptGenerateBtn.onclick = () => openBananaPasswordPanel('falGpt');
   const bananaPasswordInput = document.getElementById('bananaPasswordInput');
   const bananaPasswordSubmitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const bananaPasswordCancelBtn = document.getElementById('bananaPasswordCancelBtn');
