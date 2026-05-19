@@ -47,6 +47,29 @@ const speciesVariantOptions = {
   'experimental beastfolk': [['experimental wolf beastfolk','实验狼兽人'],['experimental fox beastfolk','实验狐兽人'],['experimental reptile beastfolk','实验爬行兽人'],['experimental chimera beastfolk','实验嵌合兽人'],['random','随机一个实验体细分']]
 };
 
+const promptTemplates = {
+  turnaround: {
+    label: '标准三视图',
+    cn: '标准三视图',
+    description: '正面 / 侧面 / 背面，干净白底，适合后续稳定扩展。'
+  },
+  designBoard: {
+    label: '完整设定板',
+    cn: '完整设定板',
+    description: '三视图 + 头像 + 细节格 + 配色 + 装备/徽章，像幻想 RPG 角色设定稿。'
+  },
+  profileCard: {
+    label: '头像角色卡',
+    cn: '头像角色卡',
+    description: '大头像/半身展示 + 信息栏 + 色板，适合社交展示和角色档案。'
+  },
+  modelSheet: {
+    label: '干净模型表',
+    cn: '干净模型表',
+    description: '更偏动画/建模用，轮廓清楚、标注区域少、背景极简。'
+  }
+};
+
 const questions = [
   { id: 'speciesCategory', title: '第一步：你想从哪类种族开始？', tip: '先选一个大方向，下一步会展开具体种族。这里必须选择，不能跳过。', required: true, options: [['common','常见种族'],['rare','罕见种族'],['fantasy','幻想/神话种族'],['mechanical','机械/人造种族']] },
   { id: 'speciesChoice', title: '第二步：选择基础种族', tip: '先选基础种族，例如犬、猫、狼、龙等；下一步会展开更细的品种或亚型。', required: true, dynamic: 'species' },
@@ -63,7 +86,8 @@ const questions = [
   { id: 'outfitStyle', title: '服装风格', tip: '决定整体衣装大方向。可补充 12 字以内自定义服装方向。', custom: true, customKey: 'customOutfit', customPlaceholder: '如：水手披肩', options: [['accessory','饰品为主'],['street','现代街头'],['fantasy','奇幻冒险'],['cyber','赛博朋克'],['tribal','部落自然'],['noble','贵族礼服'],['armor','战斗装甲'],['mage','魔法师/祭司'],['random','随机']] },
   { id: 'outfitDetail', title: '服装细节', tip: '补充衣服层次与剪裁，避免结果只有一句“穿着某种服装”。可补充 12 字以内自定义细节。', custom: true, customKey: 'customOutfitDetail', customPlaceholder: '如：云纹袖口', options: [['light','轻便短外套'],['layered','多层次披挂'],['cloak','披风 / 斗篷'],['uniform','制服感剪裁'],['armor-parts','局部护甲'],['techwear','机能绑带与模块'],['robe','长袍与垂坠布料'],['minimal','简洁不复杂'],['random','随机']] },
   { id: 'world', title: '世界观', tip: '世界观最多可选两个，用于融合角色出身与氛围；“随机”会随机 1~2 个世界观。可补充 12 字以内自定义世界观。', multiple: true, maxSelect: 2, custom: true, customKey: 'customWorld', customPlaceholder: '如：雾港旧城', options: [['modern','现代都市'],['beastfolk','奇幻兽人世界'],['cyberpunk','赛博朋克'],['academy','魔法学院'],['wasteland','废土'],['ocean','海洋文明'],['myth','神话世界'],['space','太空科幻'],['random','随机']] },
-  { id: 'detailLevel', title: '生成细节密度', tip: '不是跳过细节，而是决定最终描述写得更简洁还是更完整。', options: [['balanced','平衡'],['clean','简洁清楚'],['rich','细节丰富'],['reference','偏角色卡 / 三视图设定'],['random','随机']] }
+  { id: 'detailLevel', title: '生成细节密度', tip: '不是跳过细节，而是决定最终描述写得更简洁还是更完整。', options: [['balanced','平衡'],['clean','简洁清楚'],['rich','细节丰富'],['reference','偏角色卡 / 三视图设定'],['random','随机']] },
+  { id: 'promptTemplate', title: '最终版式模板', tip: '生成前选择这张图要长什么样：是标准三视图，还是带头像、细节、配色和装备栏的完整设定板。', required: true, options: [['turnaround','标准三视图'],['designBoard','完整设定板'],['profileCard','头像角色卡'],['modelSheet','干净模型表']] }
 ];
 const pools = {
   common: speciesDetailOptions.common.filter(([v]) => v !== 'random').map(([v]) => v),
@@ -305,7 +329,7 @@ function settleAllRandomChoices(){
 function init(){
   currentStep = 0;
   activeTab = 'description';
-  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'standard', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced' };
+  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'standard', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
   wizardStarted = false;
   bindStatic();
   showHomePage();
@@ -554,6 +578,8 @@ function buildCharacter(partial = {}){
   if(canUpdateLocked('outfit', next, partial)) next.outfit = appendCustom(maps.outfitStyle[resolve(state.outfitStyle, Object.keys(maps.outfitStyle))], state.customOutfit);
   if(canUpdateLocked('outfitDetail', next, partial)) next.outfitDetail = appendCustom(maps.outfitDetail[resolve(state.outfitDetail, Object.keys(maps.outfitDetail))], state.customOutfitDetail);
   if(canUpdateLocked('detailLevel', next, partial)) next.detailLevel = maps.detailLevel[resolve(state.detailLevel, Object.keys(maps.detailLevel))];
+  next.promptTemplate = promptTemplates[state.promptTemplate] ? state.promptTemplate : 'turnaround';
+  next.promptTemplateLabel = selectedPromptTemplate(next).cn;
   if(canUpdateLocked('anthro', next, partial)){
     const anthroKey = resolve(state.anthro, Object.keys(maps.anthro));
     next.anthro = maps.anthro[anthroKey];
@@ -575,34 +601,61 @@ function buildCharacter(partial = {}){
   return next;
 }
 
+function selectedPromptTemplate(c){
+  const id = c.promptTemplate || state.promptTemplate || 'turnaround';
+  return promptTemplates[id] ? { id, ...promptTemplates[id] } : { id: 'turnaround', ...promptTemplates.turnaround };
+}
+
 function zhSummary(c){
   const color = cnColor(c.color);
-  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，属于${cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。`;
+  const template = selectedPromptTemplate(c);
+  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，属于${cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。最终版式为${template.cn}。`;
 }
 
 function zhDescription(c){
   const color = cnColor(c.color);
+  const template = selectedPromptTemplate(c);
   return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}。角色采用${cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}。
 
 外观上，角色身体覆盖${cn(c.covering)}，主毛色是${color[0]}，胸腹、吻部或局部辅色为${color[1]}，整体点缀为${color[2]}。花纹设计采用${cn(c.marking)}，瞳色为${cn(c.eyeColor)}，需要在正面头像和三视图中保持一致。额外补充细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴设计为${cn(c.tail)}，额外强化点是${cnJoin(c.specialFeatures || c.specialFeature)}。
 
-装饰物选择${cnJoin(c.accessories || c.accessory)}，服装方向是${cn(c.outfit)}，并加入${cn(c.outfitDetail)}作为细节层次。服装需要适配兽人身体结构，保持完整穿着，不裸露，同时让关键毛色和花纹仍然可见。角色来自${cnJoin(c.worlds || c.world)}。整体画风倾向为${cn(c.artStyle)}，细节密度为${cn(c.detailLevel)}，适合制作成清晰、统一、可继续扩展的原创角色形象。`;
+装饰物选择${cnJoin(c.accessories || c.accessory)}，服装方向是${cn(c.outfit)}，并加入${cn(c.outfitDetail)}作为细节层次。服装需要适配兽人身体结构，保持完整穿着，不裸露，同时让关键毛色和花纹仍然可见。角色来自${cnJoin(c.worlds || c.world)}。整体画风倾向为${cn(c.artStyle)}，细节密度为${cn(c.detailLevel)}，最终版式为${template.cn}：${template.description}`;
 }
 
-function bananaPrompt(c){
-  return `Full body ${c.anthro} turnaround sheet, front view, side view, and back view of the same character, arranged left-to-right on a 16:9 wide horizontal canvas.
-
-[ANTHRO LEVEL] ${c.anthro}. ${c.anthroGuidance || ''}
+function characterPromptCore(c){
+  return `[ANTHRO LEVEL] ${c.anthro}. ${c.anthroGuidance || ''}
 
 STYLIZED CHARACTER based on ${c.species}. The character has a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Additional design notes: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
 
 [OUTFIT] ${c.outfit}, ${c.outfitDetail}, fully clothed, pants, skirt, or robe clearly visible, no nudity. Clothing adapted for furry anatomy while keeping important body markings visible.
 
-[BODY TYPE] ${c.bodyType}, clear readable silhouette, neutral standing pose, arms slightly away from body. Detail density: ${c.detailLevel}.
+[BODY TYPE] ${c.bodyType}, clear readable silhouette, neutral standing pose, arms slightly away from body. Detail density: ${c.detailLevel}.`;
+}
 
-[REFERENCE SHEET REQUIREMENTS] 16:9 wide horizontal reference sheet layout, same character in all three views, consistent species design, consistent colors and markings, consistent eye color, consistent additional design notes, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit across front, side, and back views. Plain white background, clean colored character design sheet, high quality lineart, detailed but readable design.
+function templatePrompt(c){
+  const template = selectedPromptTemplate(c).id;
+  if(template === 'designBoard') return `[LAYOUT TEMPLATE] Complete fantasy RPG character design board / character reference sheet on a 16:9 wide horizontal canvas.
 
-[STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details, no complex background.`;
+Include a large central three-view turnaround of the same character: front view, side view, and back view, arranged left-to-right with consistent proportions and identical outfit. Add a bust portrait close-up panel, several small detail panels for accessories, markings, necklace, arm wraps, tail fur, clothing materials, a separate equipment or weapon design panel, a color palette swatch section, and an emblem / tribal symbol section. Use clean thin panel borders, elegant fantasy UI layout, parchment or artbook presentation. Use empty text boxes and placeholder label areas only; no readable text, no random letters.`;
+  if(template === 'profileCard') return `[LAYOUT TEMPLATE] Character profile card presentation on a 16:9 wide horizontal canvas.
+
+Create a large polished bust portrait and a smaller full-body standing view of the same character. Add decorative profile information boxes, color palette swatches, accessory detail callouts, and a clean nameplate area. The layout should feel like a collectible OC profile card / game character archive page. Use empty text boxes and placeholder label areas only; no readable text, no random letters.`;
+  if(template === 'modelSheet') return `[LAYOUT TEMPLATE] Clean animation model sheet / production turnaround on a 16:9 wide horizontal canvas.
+
+Show front view, side view, back view, and one small neutral expression head close-up. Use a plain light background, very clear silhouette, minimal decoration, clean spacing, consistent proportions, readable limbs, tail, ears, outfit, markings, and accessories. No information boxes, no complex background, no decorative clutter.`;
+  return `[LAYOUT TEMPLATE] Standard full-body furry OC turnaround sheet on a 16:9 wide horizontal canvas.
+
+Show front view, side view, and back view of the same character arranged left-to-right. Plain white background, clean colored character design sheet, high quality lineart, detailed but readable design, no complex background.`;
+}
+
+function bananaPrompt(c){
+  return `${templatePrompt(c)}
+
+${characterPromptCore(c)}
+
+[CONSISTENCY REQUIREMENTS] Same character in every panel and view, consistent species design, consistent colors and markings, consistent eye color, consistent additional design notes, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit wherever the same character appears.
+
+[STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details.`;
 }
 
 function positivePrompt(c){
@@ -760,6 +813,7 @@ function bindStatic(){
     state.outfitDetail='random';
     state.world=['random'];
     state.detailLevel='random';
+    state.promptTemplate=pick(['turnaround','designBoard','profileCard','modelSheet']);
     currentStep = 0;
     settleAllRandomChoices();
     generate({all:true});
