@@ -200,10 +200,21 @@ async function handleGptGenerate(request, env){
   return json({ ok:true, taskId, imageUrl });
 }
 
+async function handleFurryConfigStatus(request, env){
+  if(request.method !== 'POST') return json({ ok:false, error:'method not allowed' }, 405);
+  let body;
+  try { body = await request.json(); } catch { return json({ ok:false, error:'请求体不是有效 JSON' }, 400); }
+  if(body.password !== ACCESS_PASSWORD) return json({ ok:false, error:'密码错误' }, 403);
+  const hasBananaKey = !!String(env.BANANA_KEY || '').trim();
+  const hasGptImage2Key = !!String(env.GPT_IMAGE2_KEY || '').trim();
+  return json({ ok: hasBananaKey && hasGptImage2Key, hasBananaKey, hasGptImage2Key });
+}
+
 export default {
   async fetch(request, env, ctx){
     const url = new URL(request.url);
     try{
+      if(url.pathname === '/api/furry-config-status') return await handleFurryConfigStatus(request, env);
       if(url.pathname === '/api/banana-generate') return await handleBananaGenerate(request, env);
       if(url.pathname === '/api/gpt-generate') return await handleGptGenerate(request, env);
       const furryAsset = handleFurryCreatorAsset(url.pathname);
