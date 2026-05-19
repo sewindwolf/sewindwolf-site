@@ -1,3 +1,24 @@
+/furry-creator
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+/furry-creator/
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+/furry-creator/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+/furry-creator/style.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/furry-creator/app.js
+  Cache-Control: public, max-age=31536000, immutable
+
 /data/posts.json
   Cache-Control: no-cache, no-store, must-revalidate
 
