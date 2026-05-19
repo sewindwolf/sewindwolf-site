@@ -11,6 +11,21 @@ const GPT_IMAGE2_DETAIL_URL = 'https://api.wuyinkeji.com/api/async/detail';
 const ACCESS_PASSWORD = 'jibao';
 const DEFAULT_REFERENCE_IMAGE_URL = 'https://sewindwolf.art/furry-creator/assets/blank-reference.png';
 
+function furryAssetResponse(body, contentType){
+  return new Response(body, {
+    headers: {
+      'Content-Type': contentType + '; charset=utf-8',
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
+    }
+  });
+}
+
+function handleFurryCreatorAsset(pathname){
+  if(pathname === '/furry-creator' || pathname === '/furry-creator/' || pathname === '/furry-creator/index.html') return furryAssetResponse(FURRY_INDEX_HTML, 'text/html');
+  if(pathname === '/furry-creator/style.css') return furryAssetResponse(FURRY_STYLE_CSS, 'text/css');
+  if(pathname === '/furry-creator/app.js') return furryAssetResponse(FURRY_APP_JS, 'text/javascript');
+  return null;
+}
 function json(data, status = 200){
   return new Response(JSON.stringify(data), {
     status,
