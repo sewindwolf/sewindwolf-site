@@ -577,14 +577,14 @@ function buildCharacter(partial = {}){
 
 function zhSummary(c){
   const color = cnColor(c.color);
-  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，属于${cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。头部/五官特征是${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。`;
+  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，属于${cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。`;
 }
 
 function zhDescription(c){
   const color = cnColor(c.color);
   return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}。角色采用${cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}。
 
-外观上，角色身体覆盖${cn(c.covering)}，主毛色是${color[0]}，胸腹、吻部或局部辅色为${color[1]}，整体点缀为${color[2]}。花纹设计采用${cn(c.marking)}，瞳色为${cn(c.eyeColor)}，需要在正面头像和三视图中保持一致。头部/五官特征包括${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴设计为${cn(c.tail)}，额外强化点是${cnJoin(c.specialFeatures || c.specialFeature)}。
+外观上，角色身体覆盖${cn(c.covering)}，主毛色是${color[0]}，胸腹、吻部或局部辅色为${color[1]}，整体点缀为${color[2]}。花纹设计采用${cn(c.marking)}，瞳色为${cn(c.eyeColor)}，需要在正面头像和三视图中保持一致。额外补充细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴设计为${cn(c.tail)}，额外强化点是${cnJoin(c.specialFeatures || c.specialFeature)}。
 
 装饰物选择${cnJoin(c.accessories || c.accessory)}，服装方向是${cn(c.outfit)}，并加入${cn(c.outfitDetail)}作为细节层次。服装需要适配兽人身体结构，保持完整穿着，不裸露，同时让关键毛色和花纹仍然可见。角色来自${cnJoin(c.worlds || c.world)}。整体画风倾向为${cn(c.artStyle)}，细节密度为${cn(c.detailLevel)}，适合制作成清晰、统一、可继续扩展的原创角色形象。`;
 }
@@ -594,13 +594,13 @@ function bananaPrompt(c){
 
 [ANTHRO LEVEL] ${c.anthro}. ${c.anthroGuidance || ''}
 
-STYLIZED CHARACTER based on ${c.species}. The character has a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Head and facial feature design: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
+STYLIZED CHARACTER based on ${c.species}. The character has a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Additional design notes: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
 
 [OUTFIT] ${c.outfit}, ${c.outfitDetail}, fully clothed, pants, skirt, or robe clearly visible, no nudity. Clothing adapted for furry anatomy while keeping important body markings visible.
 
 [BODY TYPE] ${c.bodyType}, clear readable silhouette, neutral standing pose, arms slightly away from body. Detail density: ${c.detailLevel}.
 
-[REFERENCE SHEET REQUIREMENTS] 16:9 wide horizontal reference sheet layout, same character in all three views, consistent species design, consistent colors and markings, consistent eye color, consistent head and facial features, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit across front, side, and back views. Plain white background, clean colored character design sheet, high quality lineart, detailed but readable design.
+[REFERENCE SHEET REQUIREMENTS] 16:9 wide horizontal reference sheet layout, same character in all three views, consistent species design, consistent colors and markings, consistent eye color, consistent additional design notes, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit across front, side, and back views. Plain white background, clean colored character design sheet, high quality lineart, detailed but readable design.
 
 [STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details, no complex background.`;
 }
