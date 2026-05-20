@@ -728,8 +728,8 @@ function openBananaPasswordPanel(provider = 'banana'){
     showResultPage();
     return;
   }
-  currentImageProvider = provider === 'gpt' ? 'gpt' : 'banana';
-  const providerLabel = currentImageProvider === 'gpt' ? 'GPT' : 'Banana';
+  currentImageProvider = imageProviderConfigs[provider] ? provider : 'banana';
+  const providerLabel = imageProviderConfig(currentImageProvider).label;
   const box = document.getElementById('bananaBox');
   const panel = document.getElementById('bananaPasswordPanel');
   const input = document.getElementById('bananaPasswordInput');
