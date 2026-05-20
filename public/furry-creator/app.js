@@ -331,7 +331,63 @@ function settleAllRandomChoices(){
     settleQuestionRandom(q, getQuestionOptions(q));
   });
 }
+function characterExportData(){
+  const base = character || buildCharacter();
+  return {
+    ...base,
+    state: { ...state },
+    locked: Array.from(locked),
+    appVersion: window.APP_VERSION || '',
+    chineseSummary: zhSummary(base),
+    chineseDescription: zhDescription(base),
+    bananaPrompt: bananaPrompt(base),
+    negativePrompt: negativePrompt()
+  };
+}
 
+function promptPairText(){
+  const base = character || buildCharacter();
+  return '[Positive Prompt]\n' + bananaPrompt(base) + '\n\n[Negative Prompt]\n' + negativePrompt();
+}
+
+function restoreFromImportedData(data){
+  if(!data || typeof data !== 'object') throw new Error('JSON 格式不正确');
+  if(data.state && typeof data.state === 'object') state = { ...state, ...data.state };
+  const nextCharacter = data.character && typeof data.character === 'object' ? data.character : data;
+  if(!nextCharacter.species && !nextCharacter.chineseSummary && !nextCharacter.bananaPrompt) throw new Error('没有找到可恢复的角色数据');
+  character = { ...nextCharacter };
+  delete character.state;
+  delete character.locked;
+  delete character.appVersion;
+  delete character.chineseSummary;
+  delete character.chineseDescription;
+  delete character.bananaPrompt;
+  delete character.negativePrompt;
+  locked = new Set(Array.isArray(data.locked) ? data.locked : []);
+  activeTab = 'description';
+  setViewMode('result');
+  setHeroVisible(true);
+  document.querySelector('.form-panel').style.display = 'none';
+  document.querySelector('.result-panel').style.display = 'block';
+  renderResult();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function bindManualCharCounters(){
+  document.querySelectorAll('[data-count-for]').forEach(counter => {
+    const input = document.getElementById(counter.dataset.countFor);
+    if(!input) return;
+    const max = Number(input.getAttribute('maxlength')) || 0;
+    const update = () => {
+      const clean = sanitizeCustomInput(input.value, max);
+      if(input.value !== clean) input.value = clean;
+      counter.textContent = input.value.length + ' / ' + max;
+      counter.classList.toggle('near-limit', max > 0 && input.value.length >= Math.floor(max * 0.8));
+    };
+    input.addEventListener('input', update);
+    update();
+  });
+}
 function init(){
   currentStep = 0;
   activeTab = 'description';
@@ -390,8 +446,6 @@ function renderQuestions(){
   const q = questions[currentStep];
   const options = getQuestionOptions(q);
   const progress = Math.round(((currentStep + 1) / questions.length) * 100);
-  const advancedBox = document.getElementById('advancedBox');
-  if(advancedBox) advancedBox.style.display = currentStep === questions.length - 1 ? 'block' : 'none';
   box.innerHTML = `
     <div class="step-meta">
       <span>第 ${currentStep + 1} / ${questions.length} 步</span>
@@ -802,8 +856,7 @@ function bindStatic(){
   if(startBtn) startBtn.onclick = () => startWizard();
   document.getElementById('generateBtn').onclick = () => showResultPage();
   document.getElementById('randomAllBtn').onclick = () => {
-    const randomness = document.getElementById('randomnessLevel') ? document.getElementById('randomnessLevel').value : 'moderate';
-    state.randomnessLevel = randomness;
+    state.randomnessLevel = state.randomnessLevel || 'moderate';
     state.speciesCategory=pick(['common','rare','fantasy','mechanical']);
     state.speciesChoice='random';
     state.speciesVariant='random';
@@ -835,7 +888,8 @@ function bindStatic(){
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
   document.querySelectorAll('[data-manual]').forEach(btn => btn.onclick = () => applyManualResult(btn.dataset.manual));
   document.getElementById('copyBtn').onclick = async () => { await navigator.clipboard.writeText(document.getElementById('output').value); document.getElementById('copyBtn').textContent='已复制'; setTimeout(()=>document.getElementById('copyBtn').textContent='复制当前内容',1200); };
-  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
+  const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
+  if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
   const gptGenerateBtn = document.getElementById('gptGenerateBtn');
   if(gptGenerateBtn) gptGenerateBtn.onclick = () => openBananaPasswordPanel('gpt');
   const falGptGenerateBtn = document.getElementById('falGptGenerateBtn');
@@ -847,7 +901,7 @@ function bindStatic(){
   if(bananaPasswordInput) bananaPasswordInput.onkeydown = e => { if(e.key === 'Enter') requestBananaImage(bananaPasswordInput.value); };
   if(bananaPasswordCancelBtn) bananaPasswordCancelBtn.onclick = () => { document.getElementById('bananaBox').hidden = true; if(bananaPasswordInput) bananaPasswordInput.value = ''; };
   document.getElementById('downloadBtn').onclick = () => {
-    const data = JSON.stringify({ ...character, chineseSummary: zhSummary(character), chineseDescription: zhDescription(character), bananaPrompt: bananaPrompt(character), negativePrompt: negativePrompt() }, null, 2);
+    const data = JSON.stringify(characterExportData(), null, 2);
     const blob = new Blob([data], {type:'application/json'});
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -855,7 +909,23 @@ function bindStatic(){
     a.click();
     URL.revokeObjectURL(a.href);
   };
-  ['markingComplexity','bodyType','randomnessLevel'].forEach(id => { const el = document.getElementById(id); if(el) el.onchange = () => generate(); });
+  const importJsonBtn = document.getElementById('importJsonBtn');
+  const importJsonInput = document.getElementById('importJsonInput');
+  if(importJsonBtn && importJsonInput){
+    importJsonBtn.onclick = () => importJsonInput.click();
+    importJsonInput.onchange = async () => {
+      const file = importJsonInput.files && importJsonInput.files[0];
+      if(!file) return;
+      try{
+        restoreFromImportedData(JSON.parse(await file.text()));
+      }catch(err){
+        alert('导入失败：' + (err.message || err));
+      }finally{
+        importJsonInput.value = '';
+      }
+    };
+  }
+  bindManualCharCounters();
 }
 
 init();

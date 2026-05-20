@@ -7,20 +7,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260520-fal-gpt-provider-fix" />
+  <link rel="stylesheet" href="style.css?v=20260520-quick-wins-import" />
 </head>
 <body>
-  <script>window.APP_VERSION = '20260520-fal-gpt-provider-fix';</script>
+  <script>window.APP_VERSION = '20260520-quick-wins-import';</script>
   <div class="shell">
     <header class="hero">
       <div class="badge">SEWINDWOLF · CHARACTER LAB</div>
       <h1>FurryOC形象提示词生成</h1>
-      <p>通过少量选择快速生成 Furry OC 设定、Nano Banana Pro 可用英文提示词、负面提示词与 JSON 数据。输入授权密码后，可提交 Banana 生图任务并查看生成结果。</p>
+      <p>通过少量选择快速生成 Furry OC 设定、三渠道可用英文提示词、负面提示词与 JSON 数据。不想填写也可以先一键生成 Demo，再在结果页局部微调。</p>
       <div class="hero-actions">
         <button class="primary" id="startWizardBtn">开始填写</button>
-        <button class="ghost" id="randomAllBtn">完全随机一个惊喜</button>
+        <button class="ghost" id="randomAllBtn">一键随机生成 Demo</button>
         <button class="ghost" id="resetBtn">重新填写</button>
         <button class="ghost" id="refreshLatestBtn" type="button">刷新到最新版</button>
+        <span class="hero-hint">懒得填问卷？先随机生成一个角色，再重随机或手动替换局部设定。</span>
       </div>
     </header>
 
@@ -31,40 +32,6 @@
           <h2>分步问卷</h2>
         </div>
         <div id="questions" class="questions"></div>
-        <div class="advanced" id="advancedBox">
-          <h3>05 可选细节 / 微调项</h3>
-          <p class="advanced-note">这些选项用于最后微调自动补全。随机强度会影响系统自动补全和“完全随机一个惊喜”的变化幅度；混沌随机会更大胆，但仍会尽量保持角色设定可用。</p>
-          <div class="advanced-grid">
-            <label>花纹复杂度
-              <select id="markingComplexity">
-                <option value="auto">系统推荐</option>
-                <option value="clean">简单干净</option>
-                <option value="natural">少量自然花纹</option>
-                <option value="distinct">明显动物花纹</option>
-                <option value="ornate">华丽图案</option>
-                <option value="glowing">发光纹路</option>
-              </select>
-            </label>
-            <label>体型
-              <select id="bodyType">
-                <option value="auto">系统推荐</option>
-                <option value="slim">修长</option>
-                <option value="athletic">运动型</option>
-                <option value="soft">柔和圆润</option>
-                <option value="strong">强壮</option>
-                <option value="tall">高挑</option>
-              </select>
-            </label>
-            <label>随机强度
-              <select id="randomnessLevel">
-                <option value="safe">保守随机</option>
-                <option value="moderate" selected>中度随机</option>
-                <option value="bold">大胆随机</option>
-                <option value="chaos">混沌随机</option>
-              </select>
-            </label>
-          </div>
-        </div>
         <button class="generate" id="generateBtn">生成结果</button>
       </section>
 
@@ -83,12 +50,13 @@
             <button data-reroll="outfit">重随机服装</button>
           </div>
           <div class="manual-result-panel">
-            <div class="manual-result-title">对结果不满意？手动替换局部设定（每项最多30字）</div>
+            <div class="manual-result-title">对结果不满意？手动替换局部设定，替换后自动锁定</div>
+            <p class="manual-result-note">物种/配色/服装最多12字，额外细节最多30字；已锁定项不会被重随机覆盖。</p>
             <div class="manual-result-grid">
-              <label>物种<input id="manualSpeciesInput" maxlength="12" placeholder="如：金毛寻回犬" /></label>
-              <label>配色<input id="manualColorInput" maxlength="12" placeholder="如：金黄色" /></label>
-              <label>服装<input id="manualOutfitInput" maxlength="12" placeholder="如：学院披肩" /></label>
-              <label>额外细节<input id="manualHeadInput" maxlength="30" placeholder="如：单尖耳" /></label>
+              <label>物种<span class="char-count" data-count-for="manualSpeciesInput">0 / 12</span><input id="manualSpeciesInput" maxlength="12" placeholder="如：九尾狐，替换后自动锁定" /></label>
+              <label>配色<span class="char-count" data-count-for="manualColorInput">0 / 12</span><input id="manualColorInput" maxlength="12" placeholder="如：金黄色，替换后自动锁定" /></label>
+              <label>服装<span class="char-count" data-count-for="manualOutfitInput">0 / 12</span><input id="manualOutfitInput" maxlength="12" placeholder="如：学院披肩，替换后自动锁定" /></label>
+              <label>额外细节<span class="char-count" data-count-for="manualHeadInput">0 / 30</span><input id="manualHeadInput" maxlength="30" placeholder="如：单尖耳，替换后自动锁定" /></label>
             </div>
             <div class="manual-result-actions">
               <button data-manual="species">替换物种</button>
@@ -107,7 +75,10 @@
         <textarea id="output" spellcheck="false" readonly></textarea>
         <div class="copy-row">
           <button class="primary" id="copyBtn">复制当前内容</button>
+          <button class="ghost" id="copyPromptPairBtn" type="button">复制正+负提示词</button>
           <button class="ghost" id="downloadBtn">下载 JSON</button>
+          <button class="ghost" id="importJsonBtn" type="button">导入 JSON</button>
+          <input class="visually-hidden-file" id="importJsonInput" type="file" accept="application/json,.json" />
           <button class="banana-action" id="bananaGenerateBtn">提交 Banana 生图任务</button>
           <button class="gpt-action" id="gptGenerateBtn" type="button">提交 GPT-Image-2 生图任务</button>
           <button class="fal-gpt-action" id="falGptGenerateBtn" type="button">提交 GPT fal.ai 生图任务</button>
@@ -127,17 +98,17 @@
           <div class="banana-preview" id="bananaPreview"></div>
         </div>
         <p class="note">说明：点击任一“提交 XX 生图任务”按钮后会在页面内显示密码输入框，密码正确才会用当前提示词提交对应生图任务；生成完成后会显示图片预览和原图链接。</p>
-        <div class="version-row">当前版本：<span id="versionText">20260520-fal-gpt-provider-fix</span></div>
+        <div class="version-row">当前版本：<span id="versionText">20260520-quick-wins-import</span></div>
       </section>
     </main>
   </div>
   <script>
-    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260520-fal-gpt-provider-fix');
+    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260520-quick-wins-import');
     document.getElementById('refreshLatestBtn') && document.getElementById('refreshLatestBtn').addEventListener('click', function(){
       location.replace('/furry-creator/?v=' + Date.now());
     });
   </script>
-  <script src="app.js?v=20260520-fal-gpt-provider-fix"></script>
+  <script src="app.js?v=20260520-quick-wins-import"></script>
 </body>
 </html>
 

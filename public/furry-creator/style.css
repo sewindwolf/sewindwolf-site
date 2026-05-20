@@ -230,3 +230,10 @@ body.is-result .result-panel{display:block;}
   box-shadow:0 12px 28px rgba(196,181,253,.24);
 }
 .fal-gpt-action:disabled{opacity:.62;cursor:not-allowed;box-shadow:none;}
+
+.hero-hint{display:flex;align-items:center;color:#b9c8ea;font-size:13px;line-height:1.6;max-width:560px;}
+.manual-result-note{margin:0 0 10px;color:#b9c8ea;font-size:12px;line-height:1.6;}
+.char-count{justify-self:end;color:#8ea2c8;font-size:12px;font-weight:800;margin-top:-20px;}
+.char-count.near-limit{color:#ffd166;}
+.visually-hidden-file{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;}
+@media(max-width:700px){.hero-hint{width:100%;}}
