@@ -60,7 +60,7 @@ function extractImageUrlDeep(value){
     return '';
   }
   if(typeof value === 'object'){
-    for(const key of ['url','image_url','imageUrl','src','data','result','urls']){
+    for(const key of ['url','image_url','imageUrl','src','images','image','data','result','output','outputs','urls','files','file','artifacts','content']){
       const found = extractImageUrlDeep(value[key]);
       if(found) return found;
     }
@@ -225,7 +225,7 @@ async function fetchFalResultFromCandidates(urls, FAL_KEY){
         continue;
       }
       if(resp.status === 404 || resp.status === 405){
-        lastError = `fal.ai result ${resp.status} from ${url}: ${text.slice(0, 300)}`;
+        if(!lastError) lastError = `fal.ai result ${resp.status} from ${url}: ${text.slice(0, 300)}`;
         continue;
       }
       throw new Error(`fal.ai result ${resp.status}: ${text.slice(0, 500)}`);
@@ -240,8 +240,7 @@ async function pollFalGpt(task, FAL_KEY){
   const statusUrl = normalizeFalQueueUrl(task.statusUrl) || (FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId + '/status');
   const responseCandidates = uniqueFalUrls([
     task.responseUrl,
-    FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId,
-    FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId + '/response'
+    FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId
   ]);
   for(let i = 0; i < 72; i++){
     await sleep(5000);
