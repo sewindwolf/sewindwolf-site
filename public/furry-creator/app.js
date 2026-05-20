@@ -313,6 +313,8 @@ let state = {};
 let character = null;
 let activeTab = 'description';
 let locked = new Set();
+let selectedEditField = null;
+let manualOverrides = {};
 let currentStep = 0;
 let wizardStarted = false;
 let currentImageProvider = 'banana';
@@ -400,6 +402,7 @@ function characterExportData(){
     ...base,
     state: { ...state },
     locked: Array.from(locked),
+    manualOverrides: { ...manualOverrides },
     appVersion: window.APP_VERSION || '',
     chineseSummary: zhSummary(base),
     chineseDescription: zhDescription(base),
@@ -421,12 +424,15 @@ function restoreFromImportedData(data){
   character = { ...nextCharacter };
   delete character.state;
   delete character.locked;
+  delete character.manualOverrides;
   delete character.appVersion;
   delete character.chineseSummary;
   delete character.chineseDescription;
   delete character.bananaPrompt;
   delete character.negativePrompt;
   locked = new Set(Array.isArray(data.locked) ? data.locked : []);
+  manualOverrides = data.manualOverrides && typeof data.manualOverrides === 'object' ? { ...data.manualOverrides } : {};
+  selectedEditField = null;
   activeTab = 'description';
   setViewMode('result');
   setHeroVisible(true);
@@ -451,9 +457,118 @@ function bindManualCharCounters(){
     update();
   });
 }
+const editableFieldConfigs = {
+  species: { title:'物种 / 品种', desc:'决定角色的基础种族名称。注意：这里默认只替换名称，不会自动重建头部、尾巴、体表和腿脚结构。', risk:true, max:30, placeholder:'如：九尾狐、雪原狮鹫、机械白狼', partial:'species', get:c=>c.species, apply(v,c){ c.species = v; } },
+  anthro: { title:'拟人程度 / 形体比例', desc:'这是高风险结构字段，会影响姿态、腿脚、手部、体表覆盖和生图硬约束。建议写成百分比或明确解剖补充。', risk:true, max:60, placeholder:'如：60%左右，腿更像狼，但手仍保留人手结构', partial:'anthro', get:c=>c.anthroLabel || c.anthro, apply(v,c){ c.anthroLabel = v; c.anthroGuidance = (c.anthroGuidance || '') + ' User anatomy override: ' + v; } },
+  bodyType: { title:'体型轮廓', desc:'决定三视图剪影和身体比例，例如修长、厚重、运动型、小巧等。', risk:true, max:40, placeholder:'如：修长但有爆发力的体型', partial:'bodyType', get:c=>c.bodyType, apply(v,c){ c.bodyType = v; } },
+  temperament: { title:'整体气质', desc:'决定角色第一印象和描述用词，会影响表情、姿态和氛围。', max:30, placeholder:'如：高冷但有恶作剧感', partial:'temperament', get:c=>c.temperament, apply(v,c){ c.temperament = v; } },
+  artStyle: { title:'画风倾向', desc:'决定最终图片的视觉风格，例如厚涂、赛璐璐、绘本、半写实等。', risk:true, max:40, placeholder:'如：厚涂日系设定稿', partial:'artStyle', get:c=>c.artStyle, apply(v,c){ c.artStyle = v; state.customArtStyle = v; } },
+  world: { title:'世界观', desc:'决定角色出身和环境氛围。多个世界观可以用逗号、顿号或斜杠分隔。', max:40, placeholder:'如：雪原王国，古代遗迹', partial:'world', get:c=>cnJoin(c.worlds || c.world), apply(v,c){ const arr = splitCustomList(v); c.worlds = arr; c.world = enJoin(arr); state.customWorld = v; } },
+  color: { title:'毛色 / 主色基调', desc:'决定身体主要毛色、辅色和点缀色，会写入中文描述与正向提示词。', max:30, placeholder:'如：黑蓝渐变毛色，胸口银白', partial:'color', get:c=>cnColor(c.color || []).join('、'), apply(v,c){ c.color = customFurColorDesign(v, c.color || []); state.customFurColor = v; } },
+  marking: { title:'花纹类型', desc:'决定条纹、斑点、渐变、面纹、图腾或发光纹等身体标记。', max:30, placeholder:'如：眉心月纹和尾巴环纹', partial:'marking', get:c=>c.marking, apply(v,c){ c.marking = v; state.customMarking = v; } },
+  eyeColor: { title:'瞳色', desc:'决定眼睛颜色和辨识度，尤其影响头像、角色卡和三视图一致性。', max:24, placeholder:'如：左金右蓝异色瞳', partial:'eyeColor', get:c=>c.eyeColor, apply(v,c){ c.eyeColor = v; state.customEyeColor = v; } },
+  head: { title:'头部特征', desc:'包含吻部、耳朵、头部轮廓等，会影响物种识别度。', risk:true, max:50, placeholder:'如：短吻、单尖耳、左耳缺口、厚颈毛', partial:'head', get:c=>c.headFeature || `${c.muzzle}, ${c.ears}`, apply(v,c){ c.headFeature = v; } },
+  specialFeature: { title:'重点外形特征', desc:'用于强化尾巴、耳朵、角、翅膀、鬃毛、鳞片、机械义体等记忆点。多个特征可用逗号分隔。', max:50, placeholder:'如：断角金纹，背部小翼膜', partial:'specialFeature', get:c=>cnJoin(c.specialFeatures || c.specialFeature), apply(v,c){ const arr = splitCustomList(v); c.specialFeatures = arr; c.specialFeature = enJoin(arr); state.customFeature = v; } },
+  accessory: { title:'装饰物', desc:'决定项链、耳饰、围巾、护腕、腰包、眼镜、发饰等角色记忆点。多个装饰可用逗号分隔。', max:50, placeholder:'如：铃铛项圈，旧金属护目镜', partial:'accessory', get:c=>cnJoin(c.accessories || c.accessory), apply(v,c){ const arr = splitCustomList(v); c.accessories = arr; c.accessory = enJoin(arr); state.customAccessory = v; } },
+  outfit: { title:'服装风格', desc:'决定整体衣装大方向，例如街头、奇幻、赛博、部落、礼服、装甲等。', max:40, placeholder:'如：学院披肩和短靴', partial:'outfit', get:c=>c.outfit, apply(v,c){ c.outfit = v; state.customOutfit = v; } },
+  outfitDetail: { title:'服装细节', desc:'补充衣服层次、剪裁、绑带、披风、护甲、机能模块等细节。', max:50, placeholder:'如：多层次衣物与金属绑带', partial:'outfitDetail', get:c=>c.outfitDetail, apply(v,c){ c.outfitDetail = v; state.customOutfitDetail = v; } },
+  tail: { title:'尾巴', desc:'决定尾巴形状、数量、蓬松度和标志性轮廓。', risk:true, max:40, placeholder:'如：九条蓬松狐尾，尾尖发光', partial:'head', get:c=>c.tail, apply(v,c){ c.tail = v; } },
+  covering: { title:'体表覆盖', desc:'高风险结构字段，决定是皮肤、毛发、羽毛、鳞片、机械外壳还是混合覆盖。', risk:true, max:50, placeholder:'如：胸腹短毛，四肢有厚实长毛', partial:'anthro', get:c=>c.covering, apply(v,c){ c.covering = v; } },
+  legStructure: { title:'腿部结构', desc:'高风险结构字段，决定人腿、跖行、趾行、兽腿、蹄足等解剖方向。', risk:true, max:50, placeholder:'如：偏狼的强趾行腿，但站姿仍直立', partial:'anthro', get:c=>c.legStructure, apply(v,c){ c.legStructure = v; } },
+  footType: { title:'足部结构', desc:'高风险结构字段，决定人脚、爪足、蹄、鸟爪、蹼足等，会直接影响三视图。', risk:true, max:50, placeholder:'如：大号爪足，有清晰肉垫', partial:'anthro', get:c=>c.footType, apply(v,c){ c.footType = v; } },
+  promptTemplate: { title:'最终版式模板', desc:'决定图片版式，例如标准三视图、完整设定板、头像角色卡或模型表。自由输入可能让版式不稳定。', risk:true, max:60, placeholder:'如：三视图+头像+配色板', partial:'detailLevel', get:c=>c.promptTemplateLabel || selectedPromptTemplate(c).cn, apply(v,c){ c.promptTemplateLabel = v; c.promptTemplateCustom = v; } },
+  detailLevel: { title:'生成细节密度', desc:'决定描述和设定板细节是简洁、平衡、丰富还是偏角色卡。', max:30, placeholder:'如：细节丰富但保持清楚', partial:'detailLevel', get:c=>c.detailLevel, apply(v,c){ c.detailLevel = v; } }
+};
+
+function splitCustomList(value){
+  return String(value || '').split(/[，,、/|]/).map(v => sanitizeCustomInput(v, 24)).filter(Boolean);
+}
+
+function displayValueForField(key){
+  const cfg = editableFieldConfigs[key];
+  if(!cfg || !character) return '';
+  return cn(cfg.get(character) || '');
+}
+
+function selectEditField(key){
+  if(!editableFieldConfigs[key]) return;
+  selectedEditField = key;
+  renderFieldEditor();
+}
+
+function renderFieldEditor(){
+  const empty = document.getElementById('fieldEditorEmpty');
+  const editor = document.getElementById('fieldEditor');
+  if(!empty || !editor) return;
+  const cfg = editableFieldConfigs[selectedEditField];
+  if(!cfg){
+    empty.hidden = false;
+    editor.hidden = true;
+    return;
+  }
+  empty.hidden = true;
+  editor.hidden = false;
+  const title = document.getElementById('editFieldTitle');
+  const desc = document.getElementById('editFieldDesc');
+  const current = document.getElementById('editFieldCurrent');
+  const risk = document.getElementById('editFieldRisk');
+  const input = document.getElementById('editFieldInput');
+  const count = document.getElementById('editFieldCount');
+  if(title) title.textContent = cfg.title;
+  if(desc){ desc.textContent = cfg.desc; desc.classList.toggle('is-risk', !!cfg.risk); }
+  if(current) current.textContent = displayValueForField(selectedEditField) || '暂无内容';
+  if(risk) risk.hidden = !cfg.risk;
+  if(input){
+    input.maxLength = cfg.max || 30;
+    input.placeholder = cfg.placeholder || '输入你想替换的内容';
+    input.value = manualOverrides[selectedEditField] || '';
+  }
+  updateFieldEditorCount();
+}
+
+function updateFieldEditorCount(){
+  const input = document.getElementById('editFieldInput');
+  const count = document.getElementById('editFieldCount');
+  const cfg = editableFieldConfigs[selectedEditField];
+  if(!input || !count || !cfg) return;
+  const clean = sanitizeCustomInput(input.value, cfg.max || 30);
+  if(input.value !== clean) input.value = clean;
+  count.textContent = input.value.length + ' / ' + (cfg.max || 30);
+  count.classList.toggle('near-limit', input.value.length >= Math.floor((cfg.max || 30) * 0.8));
+}
+
+function applyFieldEdit(){
+  const cfg = editableFieldConfigs[selectedEditField];
+  const input = document.getElementById('editFieldInput');
+  if(!cfg || !input) return;
+  if(!character) showResultPage();
+  const clean = sanitizeCustomInput(input.value, cfg.max || 30);
+  if(!clean) return;
+  manualOverrides[selectedEditField] = clean;
+  cfg.apply(clean, character);
+  locked.add(selectedEditField);
+  renderResult();
+}
+
+function rerollSelectedField(){
+  const cfg = editableFieldConfigs[selectedEditField];
+  if(!cfg) return;
+  locked.delete(selectedEditField);
+  delete manualOverrides[selectedEditField];
+  generate({ [cfg.partial || selectedEditField]: true });
+}
+
+function unlockSelectedField(){
+  if(!selectedEditField) return;
+  locked.delete(selectedEditField);
+  delete manualOverrides[selectedEditField];
+  renderResult();
+}
 function init(){
   currentStep = 0;
   activeTab = 'description';
+  selectedEditField = null;
+  manualOverrides = {};
   state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'anthro40', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
   wizardStarted = false;
   bindStatic();
@@ -723,13 +838,17 @@ function buildCharacter(partial = {}){
   if(canUpdateLocked('bodyType', next, partial)) next.bodyType = maps.bodyType[resolve(state.bodyTypeChoice, Object.keys(maps.bodyType))];
 
   if(speciesChanged || !next.muzzle || partial.head || partial.all){
-    next.muzzle = base[0]; next.ears = base[1]; next.tail = base[2]; next.covering = base[3]; next.legStructure = base[4]; next.footType = base[5];
+    if(!locked.has('head')){ next.muzzle = base[0]; next.ears = base[1]; }
+    if(!locked.has('tail')) next.tail = base[2];
+    if(!locked.has('covering')) next.covering = base[3];
+    if(!locked.has('legStructure')) next.legStructure = base[4];
+    if(!locked.has('footType')) next.footType = base[5];
   }
   if(canUpdateLocked('anthro', next, partial)){
     const profile = anthroProfiles[next.anthroKey] || anthroProfiles.anthro40;
-    next.covering = profile.covering;
-    next.legStructure = profile.legStructure;
-    next.footType = profile.footType;
+    if(!locked.has('covering')) next.covering = profile.covering;
+    if(!locked.has('legStructure')) next.legStructure = profile.legStructure;
+    if(!locked.has('footType')) next.footType = profile.footType;
   }
   if(canUpdateLocked('head', next, partial)) next.headFeature = `${next.muzzle}, ${next.ears}`;
   delete next.profession;
@@ -802,50 +921,45 @@ function negativePrompt(){
   return 'different characters in each view, inconsistent outfit, inconsistent fur pattern, inconsistent eye color, inconsistent accessory, missing tail, missing ears, missing markings, extra limbs, duplicated heads, wrong anatomy, cropped body, hidden feet, dynamic action pose, complex background, text, watermark, logo, blurry, low quality, messy design, inconsistent proportions, nudity, exposed lower body';
 }
 
-function applyManualResult(kind){
-  if(!character){
-    showResultPage();
-    return;
-  }
-  const input = document.getElementById('manual' + kind[0].toUpperCase() + kind.slice(1) + 'Input');
-  const clean = sanitizeCustomInput(input ? input.value : '', kind === 'head' ? 30 : 12);
-  if(!clean) return;
-  if(kind === 'species'){
-    character.species = clean;
-    locked.add('species');
-  }
-  if(kind === 'color'){
-    state.customFurColor = clean;
-    character.color = customFurColorDesign(clean, character.color || []);
-    locked.add('color');
-  }
-  if(kind === 'outfit'){
-    state.customOutfit = clean;
-    character.outfit = clean;
-    locked.add('outfit');
-  }
-  if(kind === 'head'){
-    character.headFeature = clean;
-    locked.add('head');
-  }
-  renderResult();
-}
-
 function renderResult(){
   document.getElementById('summary').textContent = zhSummary(character);
-  const tags = [character.species, character.bodyType, character.temperament, character.artStyle, enJoin(character.worlds || character.world), character.color[0], character.marking, character.eyeColor, character.headFeature || `${character.muzzle}, ${character.ears}`, enJoin(character.specialFeatures || character.specialFeature), enJoin(character.accessories || character.accessory), character.outfit, character.outfitDetail, character.tail];
+  const tagConfigs = [
+    ['species', character.species],
+    ['anthro', character.anthroLabel || character.anthro],
+    ['bodyType', character.bodyType],
+    ['temperament', character.temperament],
+    ['artStyle', character.artStyle],
+    ['world', enJoin(character.worlds || character.world)],
+    ['color', character.color && character.color[0]],
+    ['marking', character.marking],
+    ['eyeColor', character.eyeColor],
+    ['head', character.headFeature || `${character.muzzle}, ${character.ears}`],
+    ['covering', character.covering],
+    ['legStructure', character.legStructure],
+    ['footType', character.footType],
+    ['specialFeature', enJoin(character.specialFeatures || character.specialFeature)],
+    ['accessory', enJoin(character.accessories || character.accessory)],
+    ['outfit', character.outfit],
+    ['outfitDetail', character.outfitDetail],
+    ['tail', character.tail],
+    ['detailLevel', character.detailLevel],
+    ['promptTemplate', character.promptTemplateLabel || selectedPromptTemplate(character).cn]
+  ];
   const tagBox = document.getElementById('tags');
   tagBox.innerHTML = '';
-  tags.forEach(t => {
-    const headTag = character.headFeature || `${character.muzzle}, ${character.ears}`;
-    const key = t === character.species ? 'species' : t === character.bodyType ? 'bodyType' : t === character.temperament ? 'temperament' : t === character.artStyle ? 'artStyle' : t === enJoin(character.worlds || character.world) ? 'world' : t === character.color[0] ? 'color' : t === character.marking ? 'marking' : t === character.eyeColor ? 'eyeColor' : t === headTag ? 'head' : t === enJoin(character.specialFeatures || character.specialFeature) ? 'specialFeature' : t === enJoin(character.accessories || character.accessory) ? 'accessory' : t === character.outfit ? 'outfit' : t === character.outfitDetail ? 'outfitDetail' : t;
-    const el = document.createElement('span');
-    el.className = 'tag' + (locked.has(key) ? ' locked' : '');
-    el.textContent = key === 'accessory' ? cnJoin(character.accessories || character.accessory) : key === 'specialFeature' ? cnJoin(character.specialFeatures || character.specialFeature) : key === 'world' ? cnJoin(character.worlds || character.world) : cn(t);
-    el.onclick = () => { locked.has(key) ? locked.delete(key) : locked.add(key); renderResult(); };
+  tagConfigs.filter(([, value]) => value).forEach(([key, value]) => {
+    const cfg = editableFieldConfigs[key];
+    const el = document.createElement('button');
+    el.type = 'button';
+    el.className = 'tag' + (locked.has(key) ? ' locked' : '') + (selectedEditField === key ? ' selected' : '') + (cfg && cfg.risk ? ' risk' : '');
+    el.dataset.editField = key;
+    el.textContent = key === 'accessory' ? cnJoin(character.accessories || character.accessory) : key === 'specialFeature' ? cnJoin(character.specialFeatures || character.specialFeature) : key === 'world' ? cnJoin(character.worlds || character.world) : cn(value);
+    el.title = cfg ? cfg.title : '点击编辑';
+    el.onclick = () => selectEditField(key);
     tagBox.appendChild(el);
   });
-  const data = { ...character, chineseSummary: zhSummary(character), chineseDescription: zhDescription(character), bananaPrompt: bananaPrompt(character), negativePrompt: negativePrompt() };
+  renderFieldEditor();
+  const data = characterExportData();
   const output = document.getElementById('output');
   if(activeTab === 'description') output.value = zhDescription(character);
   if(activeTab === 'banana') output.value = bananaPrompt(character);
@@ -962,7 +1076,16 @@ function bindStatic(){
   document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; init(); };
   document.querySelectorAll('.tab').forEach(btn => btn.onclick = () => { document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); activeTab = btn.dataset.tab; renderResult(); });
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
-  document.querySelectorAll('[data-manual]').forEach(btn => btn.onclick = () => applyManualResult(btn.dataset.manual));
+  const editFieldInput = document.getElementById('editFieldInput');
+  if(editFieldInput) editFieldInput.oninput = () => updateFieldEditorCount();
+  const applyFieldEditBtn = document.getElementById('applyFieldEditBtn');
+  if(applyFieldEditBtn) applyFieldEditBtn.onclick = () => applyFieldEdit();
+  const rerollFieldBtn = document.getElementById('rerollFieldBtn');
+  if(rerollFieldBtn) rerollFieldBtn.onclick = () => rerollSelectedField();
+  const unlockFieldBtn = document.getElementById('unlockFieldBtn');
+  if(unlockFieldBtn) unlockFieldBtn.onclick = () => unlockSelectedField();
+  const cancelFieldEditBtn = document.getElementById('cancelFieldEditBtn');
+  if(cancelFieldEditBtn) cancelFieldEditBtn.onclick = () => { selectedEditField = null; renderResult(); };
   document.getElementById('copyBtn').onclick = async () => { await navigator.clipboard.writeText(document.getElementById('output').value); document.getElementById('copyBtn').textContent='已复制'; setTimeout(()=>document.getElementById('copyBtn').textContent='复制当前内容',1200); };
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
   if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
