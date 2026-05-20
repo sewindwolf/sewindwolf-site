@@ -192,27 +192,73 @@ async function submitFalGpt(prompt, FAL_KEY){
   return { requestId, statusUrl, responseUrl };
 }
 
+function normalizeFalQueueUrl(value){
+  const raw = String(value || '').trim();
+  if(!raw || raw === '/') return '';
+  if(/^https?:\/\//i.test(raw)) return raw;
+  if(raw.startsWith('/')) return 'https://queue.fal.run' + raw;
+  return FAL_QUEUE_BASE_URL + raw.replace(/^\/+/, '');
+}
+
+function uniqueFalUrls(urls){
+  return [...new Set(urls.map(normalizeFalQueueUrl).filter(Boolean))];
+}
+
+async function fetchFalJson(url, FAL_KEY, method = 'GET'){
+  const resp = await fetch(url, { method, headers: { Authorization: `Key ${FAL_KEY}` } });
+  const text = await resp.text();
+  let data;
+  try { data = JSON.parse(text); } catch { data = { raw: text }; }
+  return { resp, text, data };
+}
+
+async function fetchFalResultFromCandidates(urls, FAL_KEY){
+  let lastError = '';
+  for(const url of urls){
+    const methods = url.endsWith('/response') ? ['POST', 'GET'] : ['GET'];
+    for(const method of methods){
+      const { resp, text, data } = await fetchFalJson(url, FAL_KEY, method);
+      if(resp.ok){
+        const imageUrl = extractFalImageUrl(data);
+        if(imageUrl) return imageUrl;
+        lastError = `fal.ai no image url from ${url}: ${text.slice(0, 300)}`;
+        continue;
+      }
+      if(resp.status === 404 || resp.status === 405){
+        lastError = `fal.ai result ${resp.status} from ${url}: ${text.slice(0, 300)}`;
+        continue;
+      }
+      throw new Error(`fal.ai result ${resp.status}: ${text.slice(0, 500)}`);
+    }
+  }
+  throw new Error(lastError || 'fal.ai no result url');
+}
+
 async function pollFalGpt(task, FAL_KEY){
   const requestId = task.requestId || '';
-  const statusUrl = task.statusUrl || (FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodeURIComponent(requestId) + '/status');
-  const responseUrl = task.responseUrl || (FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodeURIComponent(requestId));
+  const encodedId = encodeURIComponent(requestId);
+  const statusUrl = normalizeFalQueueUrl(task.statusUrl) || (FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId + '/status');
+  const responseCandidates = uniqueFalUrls([
+    task.responseUrl,
+    FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId,
+    FAL_QUEUE_BASE_URL + FAL_GPT_MODEL + '/requests/' + encodedId + '/response'
+  ]);
   for(let i = 0; i < 72; i++){
     await sleep(5000);
-    const statusResp = await fetch(statusUrl, { headers: { Authorization: `Key ${FAL_KEY}` } });
-    const statusText = await statusResp.text();
-    let statusData;
-    try { statusData = JSON.parse(statusText); } catch { statusData = { raw: statusText }; }
+    const { resp: statusResp, text: statusText, data: statusData } = await fetchFalJson(statusUrl, FAL_KEY);
     if(!statusResp.ok) continue;
+    const immediateImageUrl = extractFalImageUrl(statusData);
+    if(immediateImageUrl) return immediateImageUrl;
     const status = String(statusData?.status || statusData?.state || '').toUpperCase();
     if(status === 'COMPLETED' || statusData?.completed === true){
-      const resultResp = await fetch(responseUrl, { headers: { Authorization: `Key ${FAL_KEY}` } });
-      const resultText = await resultResp.text();
-      let resultData;
-      try { resultData = JSON.parse(resultText); } catch { resultData = { raw: resultText }; }
-      if(!resultResp.ok) throw new Error(`fal.ai result ${resultResp.status}: ${resultText.slice(0, 500)}`);
-      const imageUrl = extractFalImageUrl(resultData);
-      if(imageUrl) return imageUrl;
-      throw new Error(`fal.ai no image url: ${resultText.slice(0, 500)}`);
+      const completedCandidates = uniqueFalUrls([
+        statusData?.response_url,
+        statusData?.responseUrl,
+        statusData?.result_url,
+        statusData?.resultUrl,
+        ...responseCandidates
+      ]);
+      return await fetchFalResultFromCandidates(completedCandidates, FAL_KEY);
     }
     if(status === 'FAILED' || status === 'ERROR' || status === 'CANCELED') throw new Error(`fal.ai task failed: ${statusText.slice(0, 500)}`);
   }
