@@ -75,6 +75,7 @@ const questions = [
   { id: 'speciesChoice', title: '第二步：选择基础种族', tip: '先选基础种族，例如犬、猫、狼、龙等；下一步会展开更细的品种或亚型。', required: true, dynamic: 'species' },
   { id: 'speciesVariant', title: '第三步：选择品种 / 亚型细则', tip: '这里会决定更具体的种族细节，例如狗可以细分为柴犬、哈士奇、德牧、萨摩耶等。', required: true, dynamic: 'variant' },
   { id: 'anthro', title: '拟人程度', tip: '按 0%~100% 控制人形/兽形比例：数值越低越接近人类兽耳，数值越高越接近野兽或怪物体态。', options: [['anthro0','0% 近人类 / 兽耳人'],['anthro20','20% 轻度兽化'],['anthro40','40% 标准 furry'],['anthro60','60% 强兽人'],['anthro80','80% 野兽倾向'],['anthro100','100% 兽形 / 怪物感'],['random','随机']] },
+  { id: 'genderExpression', title: '性别 / 性别表达', tip: '决定角色的称谓、体态表达和服装倾向；不确定可以选中性或随机。这里必须选择，避免生图时性别漂移。', required: true, options: [['masculine','男性化'],['feminine','女性化'],['androgynous','中性 / 雌雄莫辨'],['boyish','少年感'],['girlish','少女感'],['mature-masculine','成熟男性化'],['mature-feminine','成熟女性化'],['random','随机']] },
   { id: 'bodyTypeChoice', title: '体型轮廓', tip: '这是捏人里非常关键的一步，会直接影响三视图剪影。', options: [['slim','修长'],['athletic','运动型'],['soft','柔和圆润'],['strong','强壮'],['tall','高挑优雅'],['small','小巧灵活'],['heavy','厚重敦实'],['random','随机']] },
   { id: 'temperament', title: '整体气质', tip: '决定角色给人的第一印象，也会影响描述用词。', options: [['cute','可爱亲和'],['cool','冷酷帅气'],['wild','野性危险'],['noble','高贵神秘'],['playful','活泼调皮'],['gentle','温柔可靠'],['dark','阴暗邪气'],['random','随机']] },
   { id: 'artStyle', title: '画风倾向', tip: '决定最终提示词的视觉风格。也可以在下方手写 12 字以内画风，例如厚涂、赛璐璐、绘本风。', custom: true, customKey: 'customArtStyle', customPlaceholder: '如：厚涂绘本风', options: [['clean-anime','清爽日系立绘'],['kemono','日系兽设 / Kemono'],['storybook','温暖绘本风'],['semi-realistic','半写实插画'],['cartoon','欧美卡通感'],['cell-shading','赛璐璐动画风'],['painterly','厚涂概念图'],['game-concept','游戏角色设定图'],['random','随机']] },
@@ -126,6 +127,7 @@ const maps = {
   temperament: { cute:'cute and friendly', cool:'cool and reliable', wild:'wild and dangerous', noble:'noble and mysterious', playful:'playful and lively', gentle:'gentle and dependable', dark:'dark and ominous' },
   artStyle: { 'clean-anime':'clean anime character illustration style', kemono:'Japanese kemono furry character design style', storybook:'warm storybook illustration style', 'semi-realistic':'semi-realistic polished illustration style', cartoon:'western cartoon character design style', 'cell-shading':'crisp cel-shaded animation style', painterly:'painterly concept art style', 'game-concept':'game character concept art style' },
   anthro: { anthro0:'0% anthro level, near-human kemonomimi character', anthro20:'20% anthro level, lightly animalized kemono character', anthro40:'40% anthro level, balanced standard furry character', anthro60:'60% anthro level, strong beastman furry character', anthro80:'80% anthro level, feral-leaning anthropomorphic beast character', anthro100:'100% anthro level, beast-shaped monster or divine animal character' },
+  genderExpression: { masculine:'masculine gender expression', feminine:'feminine gender expression', androgynous:'androgynous gender expression', boyish:'cute boyish gender expression', girlish:'cute girlish gender expression', 'mature-masculine':'mature masculine gender expression', 'mature-feminine':'mature feminine gender expression' },
   world: { modern:'modern city', beastfolk:'fantasy beastfolk kingdom', cyberpunk:'neon cyberpunk city', academy:'magic academy', wasteland:'post-apocalyptic wasteland', ocean:'ocean civilization', myth:'ancient mythological realm', space:'spacefaring sci-fi colony' },
   outfitStyle: { accessory:'minimal clothing with tasteful accessories', street:'modern streetwear outfit', fantasy:'fantasy adventurer outfit', cyber:'cyberpunk techwear outfit', tribal:'tribal nature-inspired outfit', noble:'noble formal attire', armor:'battle armor', mage:'mage or priest ceremonial robe' },
   bodyType: { slim:'slim build', athletic:'athletic build', soft:'soft rounded build', strong:'strong muscular build', tall:'tall elegant build', small:'small agile build', heavy:'heavy sturdy build' },
@@ -262,6 +264,7 @@ const zhTerms = {
   'cute and friendly':'可爱亲和', 'cool and reliable':'冷酷可靠', 'wild and dangerous':'野性危险', 'noble and mysterious':'高贵神秘', 'playful and lively':'活泼调皮', 'gentle and dependable':'温柔可靠', 'dark and ominous':'阴暗邪气',
   'clean anime character illustration style':'清爽日系立绘', 'Japanese kemono furry character design style':'日系兽设 / Kemono', 'warm storybook illustration style':'温暖绘本风', 'semi-realistic polished illustration style':'半写实插画', 'western cartoon character design style':'欧美卡通感', 'crisp cel-shaded animation style':'赛璐璐动画风', 'painterly concept art style':'厚涂概念图', 'game character concept art style':'游戏角色设定图',
   '0% anthro level, near-human kemonomimi character':'0% 近人类 / 兽耳人', '20% anthro level, lightly animalized kemono character':'20% 轻度兽化', '40% anthro level, balanced standard furry character':'40% 标准 furry', '60% anthro level, strong beastman furry character':'60% 强兽人', '80% anthro level, feral-leaning anthropomorphic beast character':'80% 野兽倾向', '100% anthro level, beast-shaped monster or divine animal character':'100% 兽形 / 怪物感',
+  'masculine gender expression':'男性化性别表达', 'feminine gender expression':'女性化性别表达', 'androgynous gender expression':'中性 / 雌雄莫辨性别表达', 'cute boyish gender expression':'少年感性别表达', 'cute girlish gender expression':'少女感性别表达', 'mature masculine gender expression':'成熟男性化性别表达', 'mature feminine gender expression':'成熟女性化性别表达',
   'modern city':'现代都市', 'fantasy beastfolk kingdom':'奇幻兽人王国', 'neon cyberpunk city':'霓虹赛博朋克都市', 'magic academy':'魔法学院', 'post-apocalyptic wasteland':'后末日废土', 'ocean civilization':'海洋文明', 'ancient mythological realm':'远古神话世界', 'spacefaring sci-fi colony':'太空科幻殖民地',
   'minimal clothing with tasteful accessories':'以饰品为主的轻量服装', 'modern streetwear outfit':'现代街头服装', 'fantasy adventurer outfit':'奇幻冒险者服装', 'cyberpunk techwear outfit':'赛博朋克机能服', 'tribal nature-inspired outfit':'自然部落风服装', 'noble formal attire':'贵族礼服', 'battle armor':'战斗装甲', 'mage or priest ceremonial robe':'魔法师或祭司礼袍',
   'slim build':'修长体型', 'athletic build':'运动型体型', 'soft rounded build':'柔和圆润体型', 'strong muscular build':'强壮肌肉体型', 'strong build':'强壮体型', 'tall elegant build':'高挑优雅体型',
@@ -461,6 +464,7 @@ const editableFieldConfigs = {
   species: { title:'物种 / 品种', desc:'决定角色的基础种族名称。注意：这里默认只替换名称，不会自动重建头部、尾巴、体表和腿脚结构。', risk:true, max:30, placeholder:'如：九尾狐、雪原狮鹫、机械白狼', partial:'species', get:c=>c.species, apply(v,c){ c.species = v; } },
   anthro: { title:'拟人程度 / 形体比例', desc:'这是高风险结构字段，会影响姿态、腿脚、手部、体表覆盖和生图硬约束。建议写成百分比或明确解剖补充。', risk:true, max:60, placeholder:'如：60%左右，腿更像狼，但手仍保留人手结构', partial:'anthro', get:c=>c.anthroLabel || c.anthro, apply(v,c){ c.anthroLabel = v; c.anthroGuidance = (c.anthroGuidance || '') + ' User anatomy override: ' + v; } },
   bodyType: { title:'体型轮廓', desc:'决定三视图剪影和身体比例，例如修长、厚重、运动型、小巧等。', risk:true, max:40, placeholder:'如：修长但有爆发力的体型', partial:'bodyType', get:c=>c.bodyType, apply(v,c){ c.bodyType = v; } },
+  genderExpression: { title:'性别 / 性别表达', desc:'决定角色称谓、体态表达、服装倾向和生图稳定性。建议写清楚男性化、女性化、中性、少年感、少女感等。', risk:true, max:40, placeholder:'如：中性偏少年感，不强调性征', partial:'genderExpression', get:c=>genderExpressionText(c), apply(v,c){ c.genderExpression = v; } },
   temperament: { title:'整体气质', desc:'决定角色第一印象和描述用词，会影响表情、姿态和氛围。', max:30, placeholder:'如：高冷但有恶作剧感', partial:'temperament', get:c=>c.temperament, apply(v,c){ c.temperament = v; } },
   artStyle: { title:'画风倾向', desc:'决定最终图片的视觉风格，例如厚涂、赛璐璐、绘本、半写实等。', risk:true, max:40, placeholder:'如：厚涂日系设定稿', partial:'artStyle', get:c=>c.artStyle, apply(v,c){ c.artStyle = v; state.customArtStyle = v; } },
   world: { title:'世界观', desc:'决定角色出身和环境氛围。多个世界观可以用逗号、顿号或斜杠分隔。', max:40, placeholder:'如：雪原王国，古代遗迹', partial:'world', get:c=>cnJoin(c.worlds || c.world), apply(v,c){ const arr = splitCustomList(v); c.worlds = arr; c.world = enJoin(arr); state.customWorld = v; } },
@@ -569,7 +573,7 @@ function init(){
   activeTab = 'description';
   selectedEditField = null;
   manualOverrides = {};
-  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'anthro40', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
+  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'anthro40', genderExpression:null, bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', customOutfitDetail:'', outfitDetail:'random', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
   wizardStarted = false;
   bindStatic();
   showHomePage();
@@ -829,6 +833,7 @@ function buildCharacter(partial = {}){
     next.anthroPosture = profile.posture;
     next.anthroHandType = profile.handType;
   }
+  if(canUpdateLocked('genderExpression', next, partial)) next.genderExpression = maps.genderExpression[resolve(state.genderExpression || 'androgynous', Object.keys(maps.genderExpression))];
   if(canUpdateLocked('temperament', next, partial)) next.temperament = maps.temperament[resolve(state.temperament, Object.keys(maps.temperament))];
   if(canUpdateLocked('artStyle', next, partial)) next.artStyle = appendCustom(maps.artStyle[resolve(state.artStyle, Object.keys(maps.artStyle))], state.customArtStyle);
   if(!locked.has('world') && (!next.worlds || partial.world || partial.all)){
@@ -860,16 +865,20 @@ function selectedPromptTemplate(c){
   return promptTemplates[id] ? { id, ...promptTemplates[id] } : { id: 'turnaround', ...promptTemplates.turnaround };
 }
 
+function genderExpressionText(c){
+  return (c && c.genderExpression) || maps.genderExpression.androgynous;
+}
+
 function zhSummary(c){
   const color = cnColor(c.color);
   const template = selectedPromptTemplate(c);
-  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，拟人程度为${c.anthroLabel || cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。最终版式为${template.cn}。`;
+  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，拟人程度为${c.anthroLabel || cn(c.anthro)}，性别表达为${cn(genderExpressionText(c))}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。最终版式为${template.cn}。`;
 }
 
 function zhDescription(c){
   const color = cnColor(c.color);
   const template = selectedPromptTemplate(c);
-  return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}。角色采用${c.anthroLabel || cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，姿态为${cn(c.anthroPosture || '')}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}，手部为${cn(c.anthroHandType || '')}。
+  return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}，性别表达为${cn(genderExpressionText(c))}。角色采用${c.anthroLabel || cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，姿态为${cn(c.anthroPosture || '')}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}，手部为${cn(c.anthroHandType || '')}。
 
 外观上，角色身体覆盖${cn(c.covering)}，主毛色是${color[0]}，胸腹、吻部或局部辅色为${color[1]}，整体点缀为${color[2]}。花纹设计采用${cn(c.marking)}，瞳色为${cn(c.eyeColor)}，需要在正面头像和三视图中保持一致。额外补充细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴设计为${cn(c.tail)}，额外强化点是${cnJoin(c.specialFeatures || c.specialFeature)}。
 
@@ -878,9 +887,10 @@ function zhDescription(c){
 
 function characterPromptCore(c){
   return `[ANTHRO LEVEL] ${c.anthroLabel || c.anthro} (${c.anthroPercent ?? ''}%). This is a hard anatomy constraint, not a mood label. ${c.anthroGuidance || ''}
+[GENDER EXPRESSION] ${genderExpressionText(c)}. This is a hard visual direction for silhouette, face, outfit styling, and character presentation. Keep it consistent in every view and panel without exaggerating sexualized traits.
 [ANATOMY DETAILS] Posture: ${c.anthroPosture || 'upright bipedal posture'}. Legs: ${c.legStructure}. Feet: ${c.footType}. Hands: ${c.anthroHandType || 'readable hands or paws'}. Body covering: ${c.covering}. Keep every view at the same anthro percentage and do not drift toward a generic human body.
 
-STYLIZED CHARACTER based on ${c.species}. The character has a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Additional design notes: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
+STYLIZED CHARACTER based on ${c.species}. The character has ${genderExpressionText(c)}, a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Additional design notes: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
 
 [OUTFIT] ${c.outfit}, ${c.outfitDetail}, fully clothed, pants, skirt, or robe clearly visible, no nudity. Clothing adapted for furry anatomy while keeping important body markings visible.
 
@@ -908,7 +918,7 @@ function bananaPrompt(c){
 
 ${characterPromptCore(c)}
 
-[CONSISTENCY REQUIREMENTS] Same character in every panel and view, consistent species design, consistent colors and markings, consistent eye color, consistent additional design notes, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit wherever the same character appears.
+[CONSISTENCY REQUIREMENTS] Same character in every panel and view, consistent species design, consistent gender expression, consistent colors and markings, consistent eye color, consistent additional design notes, tail, body proportions, special features, accessories, world-setting motifs, and identical outfit wherever the same character appears.
 
 [STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details.`;
 }
@@ -926,6 +936,7 @@ function renderResult(){
   const tagConfigs = [
     ['species', character.species],
     ['anthro', character.anthroLabel || character.anthro],
+    ['genderExpression', genderExpressionText(character)],
     ['bodyType', character.bodyType],
     ['temperament', character.temperament],
     ['artStyle', character.artStyle],
