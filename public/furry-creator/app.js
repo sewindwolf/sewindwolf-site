@@ -74,7 +74,7 @@ const questions = [
   { id: 'speciesCategory', title: '第一步：你想从哪类种族开始？', tip: '先选一个大方向，下一步会展开具体种族。这里必须选择，不能跳过。', required: true, options: [['common','常见种族'],['rare','罕见种族'],['fantasy','幻想/神话种族'],['mechanical','机械/人造种族']] },
   { id: 'speciesChoice', title: '第二步：选择基础种族', tip: '先选基础种族，例如犬、猫、狼、龙等；下一步会展开更细的品种或亚型。', required: true, dynamic: 'species' },
   { id: 'speciesVariant', title: '第三步：选择品种 / 亚型细则', tip: '这里会决定更具体的种族细节，例如狗可以细分为柴犬、哈士奇、德牧、萨摩耶等。', required: true, dynamic: 'variant' },
-  { id: 'anthro', title: '拟人程度', tip: '决定角色更像标准兽人、兽耳人、野兽还是神兽/怪物方向。', options: [['standard','标准 furry'],['humanlike','更接近人类'],['beastlike','更接近野兽'],['mythic','怪物/神兽感'],['random','随机']] },
+  { id: 'anthro', title: '拟人程度', tip: '按 0%~100% 控制人形/兽形比例：数值越低越接近人类兽耳，数值越高越接近野兽或怪物体态。', options: [['anthro0','0% 近人类 / 兽耳人'],['anthro20','20% 轻度兽化'],['anthro40','40% 标准 furry'],['anthro60','60% 强兽人'],['anthro80','80% 野兽倾向'],['anthro100','100% 兽形 / 怪物感'],['random','随机']] },
   { id: 'bodyTypeChoice', title: '体型轮廓', tip: '这是捏人里非常关键的一步，会直接影响三视图剪影。', options: [['slim','修长'],['athletic','运动型'],['soft','柔和圆润'],['strong','强壮'],['tall','高挑优雅'],['small','小巧灵活'],['heavy','厚重敦实'],['random','随机']] },
   { id: 'temperament', title: '整体气质', tip: '决定角色给人的第一印象，也会影响描述用词。', options: [['cute','可爱亲和'],['cool','冷酷帅气'],['wild','野性危险'],['noble','高贵神秘'],['playful','活泼调皮'],['gentle','温柔可靠'],['dark','阴暗邪气'],['random','随机']] },
   { id: 'artStyle', title: '画风倾向', tip: '决定最终提示词的视觉风格。也可以在下方手写 12 字以内画风，例如厚涂、赛璐璐、绘本风。', custom: true, customKey: 'customArtStyle', customPlaceholder: '如：厚涂绘本风', options: [['clean-anime','清爽日系立绘'],['kemono','日系兽设 / Kemono'],['storybook','温暖绘本风'],['semi-realistic','半写实插画'],['cartoon','欧美卡通感'],['cell-shading','赛璐璐动画风'],['painterly','厚涂概念图'],['game-concept','游戏角色设定图'],['random','随机']] },
@@ -125,7 +125,7 @@ const speciesDefaults = {
 const maps = {
   temperament: { cute:'cute and friendly', cool:'cool and reliable', wild:'wild and dangerous', noble:'noble and mysterious', playful:'playful and lively', gentle:'gentle and dependable', dark:'dark and ominous' },
   artStyle: { 'clean-anime':'clean anime character illustration style', kemono:'Japanese kemono furry character design style', storybook:'warm storybook illustration style', 'semi-realistic':'semi-realistic polished illustration style', cartoon:'western cartoon character design style', 'cell-shading':'crisp cel-shaded animation style', painterly:'painterly concept art style', 'game-concept':'game character concept art style' },
-  anthro: { standard:'fully anthropomorphic furry character', humanlike:'humanlike kemono character with animal features', beastlike:'more beastlike anthropomorphic animal character', mythic:'mythic monster-like anthropomorphic furry character' },
+  anthro: { anthro0:'0% anthro level, near-human kemonomimi character', anthro20:'20% anthro level, lightly animalized kemono character', anthro40:'40% anthro level, balanced standard furry character', anthro60:'60% anthro level, strong beastman furry character', anthro80:'80% anthro level, feral-leaning anthropomorphic beast character', anthro100:'100% anthro level, beast-shaped monster or divine animal character' },
   world: { modern:'modern city', beastfolk:'fantasy beastfolk kingdom', cyberpunk:'neon cyberpunk city', academy:'magic academy', wasteland:'post-apocalyptic wasteland', ocean:'ocean civilization', myth:'ancient mythological realm', space:'spacefaring sci-fi colony' },
   outfitStyle: { accessory:'minimal clothing with tasteful accessories', street:'modern streetwear outfit', fantasy:'fantasy adventurer outfit', cyber:'cyberpunk techwear outfit', tribal:'tribal nature-inspired outfit', noble:'noble formal attire', armor:'battle armor', mage:'mage or priest ceremonial robe' },
   bodyType: { slim:'slim build', athletic:'athletic build', soft:'soft rounded build', strong:'strong muscular build', tall:'tall elegant build', small:'small agile build', heavy:'heavy sturdy build' },
@@ -151,12 +151,75 @@ const maps = {
   detailLevel: { balanced:'balanced detail level', clean:'clean and concise design', rich:'richly detailed design', reference:'reference-sheet focused design' }
 };
 
-const anthroPromptGuidance = {
-  standard: 'Balanced furry anatomy: clearly anthropomorphic, upright posture, readable animal head, ears, tail, paws, and digitigrade or furry-adapted limbs.',
-  humanlike: 'Humanlike kemono direction: mostly human body proportions, upright human posture, humanlike hands and clothing fit, with animal ears, tail, muzzle, fur, and species features kept visible.',
-  beastlike: 'Beastlike anthro direction: stronger animal silhouette, pronounced muzzle, paws or claws, digitigrade stance, more animal-like limbs and posture while still standing upright.',
-  mythic: 'Mythic monster-like direction: supernatural beastfolk silhouette, stronger non-human anatomy, dramatic species traits, mystical or legendary presence while still suitable for a character reference sheet.'
+const anthroLegacyMap = { humanlike:'anthro20', standard:'anthro40', beastlike:'anthro80', mythic:'anthro100' };
+
+const anthroProfiles = {
+  anthro0: {
+    percent: 0,
+    cn: '0% 近人类 / 兽耳人',
+    guidance: '0% anthro anatomy: almost human silhouette and upright human posture, human torso, human legs and human hands, only animal ears, tail, light fur accents or subtle species motifs. Avoid animal muzzle, avoid digitigrade legs, avoid heavy paws.',
+    posture: 'upright human posture, straight spine, normal human stance',
+    covering: 'mostly human skin with limited fur accents',
+    legStructure: 'human plantigrade legs',
+    footType: 'human feet or very light paw-inspired feet',
+    handType: 'human hands with subtle claw-like nails'
+  },
+  anthro20: {
+    percent: 20,
+    cn: '20% 轻度兽化',
+    guidance: '20% anthro anatomy: mostly human proportions with visible animal ears, tail, soft fur on forearms or lower legs, slight muzzle or animal nose, humanlike hands, upright relaxed stance. Keep the face cute and readable, not fully animal-headed.',
+    posture: 'upright humanlike posture with relaxed shoulders',
+    covering: 'partial soft fur on ears, tail, forearms and lower legs',
+    legStructure: 'mostly human plantigrade legs with slight animal styling',
+    footType: 'humanlike feet with light paw pads or small claws',
+    handType: 'humanlike hands with short claws'
+  },
+  anthro40: {
+    percent: 40,
+    cn: '40% 标准 furry',
+    guidance: '40% anthro anatomy: balanced standard furry design, upright bipedal body, clear animal head and muzzle, visible ears and tail, paw hands, digitigrade or furry-adapted legs, still close to human body proportions.',
+    posture: 'upright bipedal furry posture',
+    covering: 'full visible fur or species body covering',
+    legStructure: 'moderate digitigrade furry legs',
+    footType: 'clear paw feet',
+    handType: 'paw-like hands with usable fingers'
+  },
+  anthro60: {
+    percent: 60,
+    cn: '60% 强兽人',
+    guidance: '60% anthro anatomy: stronger animal silhouette while standing upright, pronounced muzzle, thicker neck fluff and chest fur, larger paws, stronger digitigrade legs, wider shoulders or animal musculature, less human facial structure.',
+    posture: 'upright but powerfully animal-like stance',
+    covering: 'dense full-body fur or species covering with thick neck and chest fluff',
+    legStructure: 'strong digitigrade animal legs',
+    footType: 'large paw feet or clawed animal feet',
+    handType: 'large paw hands with claws and readable fingers'
+  },
+  anthro80: {
+    percent: 80,
+    cn: '80% 野兽倾向',
+    guidance: '80% anthro anatomy: feral-leaning beastman, long muzzle, heavy fur mane, hunched forward torso, longer arms, large clawed paws, powerful digitigrade legs, body language closer to a wild animal while still readable as an OC character.',
+    posture: 'forward-leaning semi-feral bipedal posture',
+    covering: 'heavy fur, mane, shaggy limbs and stronger animal texture',
+    legStructure: 'deep digitigrade beast legs with powerful haunches',
+    footType: 'oversized clawed paw feet',
+    handType: 'large clawed paw hands'
+  },
+  anthro100: {
+    percent: 100,
+    cn: '100% 兽形 / 怪物感',
+    guidance: '100% anthro anatomy: beast-shaped monster or divine animal direction, strongly non-human body plan, low crouching or quadruped-ready stance, animal torso rhythm, long muzzle, large claws, heavy paws, tail and mane dominate the silhouette. Keep it coherent for a character reference sheet, not a normal human body.',
+    posture: 'low crouching beast posture, quadruped-ready stance',
+    covering: 'complete animal fur, scales, feathers or monster body covering',
+    legStructure: 'fully animal-like hind legs',
+    footType: 'large animal paws, talons, hooves or claws',
+    handType: 'animal forepaws or clawed hands'
+  }
 };
+
+function normalizeAnthroKey(value){
+  if(value === 'random' || value === 'auto') return pick(Object.keys(maps.anthro));
+  return maps.anthro[value] ? value : (anthroLegacyMap[value] || 'anthro40');
+}
 
 const colors = {
   natural: [['gray fur','white chest and muzzle','darker back fur and tail tip'],['orange fur','cream muzzle and belly','dark ear tips and ringed tail'],['brown fur','tan chest fur','subtle facial markings']],
@@ -198,7 +261,7 @@ const zhTerms = {
   'experimental wolf beastfolk':'实验狼兽人', 'experimental fox beastfolk':'实验狐兽人', 'experimental reptile beastfolk':'实验爬行兽人', 'experimental chimera beastfolk':'实验嵌合兽人',
   'cute and friendly':'可爱亲和', 'cool and reliable':'冷酷可靠', 'wild and dangerous':'野性危险', 'noble and mysterious':'高贵神秘', 'playful and lively':'活泼调皮', 'gentle and dependable':'温柔可靠', 'dark and ominous':'阴暗邪气',
   'clean anime character illustration style':'清爽日系立绘', 'Japanese kemono furry character design style':'日系兽设 / Kemono', 'warm storybook illustration style':'温暖绘本风', 'semi-realistic polished illustration style':'半写实插画', 'western cartoon character design style':'欧美卡通感', 'crisp cel-shaded animation style':'赛璐璐动画风', 'painterly concept art style':'厚涂概念图', 'game character concept art style':'游戏角色设定图',
-  'fully anthropomorphic furry character':'标准拟人兽人', 'humanlike kemono character with animal features':'更接近人类的兽耳/兽尾角色', 'more beastlike anthropomorphic animal character':'更接近野兽的拟人动物角色', 'mythic monster-like anthropomorphic furry character':'带有怪物或神兽感的拟人兽人',
+  '0% anthro level, near-human kemonomimi character':'0% 近人类 / 兽耳人', '20% anthro level, lightly animalized kemono character':'20% 轻度兽化', '40% anthro level, balanced standard furry character':'40% 标准 furry', '60% anthro level, strong beastman furry character':'60% 强兽人', '80% anthro level, feral-leaning anthropomorphic beast character':'80% 野兽倾向', '100% anthro level, beast-shaped monster or divine animal character':'100% 兽形 / 怪物感',
   'modern city':'现代都市', 'fantasy beastfolk kingdom':'奇幻兽人王国', 'neon cyberpunk city':'霓虹赛博朋克都市', 'magic academy':'魔法学院', 'post-apocalyptic wasteland':'后末日废土', 'ocean civilization':'海洋文明', 'ancient mythological realm':'远古神话世界', 'spacefaring sci-fi colony':'太空科幻殖民地',
   'minimal clothing with tasteful accessories':'以饰品为主的轻量服装', 'modern streetwear outfit':'现代街头服装', 'fantasy adventurer outfit':'奇幻冒险者服装', 'cyberpunk techwear outfit':'赛博朋克机能服', 'tribal nature-inspired outfit':'自然部落风服装', 'noble formal attire':'贵族礼服', 'battle armor':'战斗装甲', 'mage or priest ceremonial robe':'魔法师或祭司礼袍',
   'slim build':'修长体型', 'athletic build':'运动型体型', 'soft rounded build':'柔和圆润体型', 'strong muscular build':'强壮肌肉体型', 'strong build':'强壮体型', 'tall elegant build':'高挑优雅体型',
@@ -391,7 +454,7 @@ function bindManualCharCounters(){
 function init(){
   currentStep = 0;
   activeTab = 'description';
-  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'standard', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
+  state = { speciesCategory:null, speciesChoice:null, speciesVariant:null, anthro:'anthro40', bodyTypeChoice:'athletic', temperament:'cool', artStyle:'game-concept', customArtStyle:'', furColor:'random', customFurColor:'', markingChoice:'random', customMarking:'', eyeColor:'random', customEyeColor:'', featureDetail:['random'], customFeature:'', accessory:['random'], customAccessory:'', outfitStyle:'fantasy', customOutfit:'', outfitDetail:'random', customOutfitDetail:'', world:['random'], customWorld:'', detailLevel:'balanced', promptTemplate:'turnaround' };
   wizardStarted = false;
   bindStatic();
   showHomePage();
@@ -641,9 +704,15 @@ function buildCharacter(partial = {}){
   next.promptTemplate = promptTemplates[state.promptTemplate] ? state.promptTemplate : 'turnaround';
   next.promptTemplateLabel = selectedPromptTemplate(next).cn;
   if(canUpdateLocked('anthro', next, partial)){
-    const anthroKey = resolve(state.anthro, Object.keys(maps.anthro));
+    const anthroKey = normalizeAnthroKey(state.anthro);
+    const profile = anthroProfiles[anthroKey] || anthroProfiles.anthro40;
+    next.anthroKey = anthroKey;
+    next.anthroPercent = profile.percent;
+    next.anthroLabel = profile.cn;
     next.anthro = maps.anthro[anthroKey];
-    next.anthroGuidance = anthroPromptGuidance[anthroKey];
+    next.anthroGuidance = profile.guidance;
+    next.anthroPosture = profile.posture;
+    next.anthroHandType = profile.handType;
   }
   if(canUpdateLocked('temperament', next, partial)) next.temperament = maps.temperament[resolve(state.temperament, Object.keys(maps.temperament))];
   if(canUpdateLocked('artStyle', next, partial)) next.artStyle = appendCustom(maps.artStyle[resolve(state.artStyle, Object.keys(maps.artStyle))], state.customArtStyle);
@@ -655,6 +724,12 @@ function buildCharacter(partial = {}){
 
   if(speciesChanged || !next.muzzle || partial.head || partial.all){
     next.muzzle = base[0]; next.ears = base[1]; next.tail = base[2]; next.covering = base[3]; next.legStructure = base[4]; next.footType = base[5];
+  }
+  if(canUpdateLocked('anthro', next, partial)){
+    const profile = anthroProfiles[next.anthroKey] || anthroProfiles.anthro40;
+    next.covering = profile.covering;
+    next.legStructure = profile.legStructure;
+    next.footType = profile.footType;
   }
   if(canUpdateLocked('head', next, partial)) next.headFeature = `${next.muzzle}, ${next.ears}`;
   delete next.profession;
@@ -669,13 +744,13 @@ function selectedPromptTemplate(c){
 function zhSummary(c){
   const color = cnColor(c.color);
   const template = selectedPromptTemplate(c);
-  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，属于${cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。最终版式为${template.cn}。`;
+  return `一名气质偏${cn(c.temperament)}的${cn(c.species)}角色，拟人程度为${c.anthroLabel || cn(c.anthro)}。体型为${cn(c.bodyType)}，主毛色是${color[0]}，辅色为${color[1]}，色彩点缀为${color[2]}，花纹类型是${cn(c.marking)}，瞳色为${cn(c.eyeColor)}。额外细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴为${cn(c.tail)}，重点特征是${cnJoin(c.specialFeatures || c.specialFeature)}。装饰物为${cnJoin(c.accessories || c.accessory)}，服装为${cn(c.outfit)}，细节是${cn(c.outfitDetail)}，来自${cnJoin(c.worlds || c.world)}。画风倾向为${cn(c.artStyle)}。最终版式为${template.cn}。`;
 }
 
 function zhDescription(c){
   const color = cnColor(c.color);
   const template = selectedPromptTemplate(c);
-  return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}。角色采用${cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}。
+  return `这是一名以${cn(c.species)}为方向的拟人兽人角色，整体气质偏${cn(c.temperament)}。角色采用${c.anthroLabel || cn(c.anthro)}的设计方向，体型轮廓是${cn(c.bodyType)}，姿态为${cn(c.anthroPosture || '')}，腿部结构为${cn(c.legStructure)}，足部为${cn(c.footType)}，手部为${cn(c.anthroHandType || '')}。
 
 外观上，角色身体覆盖${cn(c.covering)}，主毛色是${color[0]}，胸腹、吻部或局部辅色为${color[1]}，整体点缀为${color[2]}。花纹设计采用${cn(c.marking)}，瞳色为${cn(c.eyeColor)}，需要在正面头像和三视图中保持一致。额外补充细节为${cn(c.headFeature || `${c.muzzle}, ${c.ears}`)}，尾巴设计为${cn(c.tail)}，额外强化点是${cnJoin(c.specialFeatures || c.specialFeature)}。
 
@@ -683,13 +758,14 @@ function zhDescription(c){
 }
 
 function characterPromptCore(c){
-  return `[ANTHRO LEVEL] ${c.anthro}. ${c.anthroGuidance || ''}
+  return `[ANTHRO LEVEL] ${c.anthroLabel || c.anthro} (${c.anthroPercent ?? ''}%). This is a hard anatomy constraint, not a mood label. ${c.anthroGuidance || ''}
+[ANATOMY DETAILS] Posture: ${c.anthroPosture || 'upright bipedal posture'}. Legs: ${c.legStructure}. Feet: ${c.footType}. Hands: ${c.anthroHandType || 'readable hands or paws'}. Body covering: ${c.covering}. Keep every view at the same anthro percentage and do not drift toward a generic human body.
 
 STYLIZED CHARACTER based on ${c.species}. The character has a ${c.bodyType}, ${c.legStructure}, ${c.footType}, expressive ${c.eyeColor}, and ${c.tail}. Additional design notes: ${c.headFeature || `${c.muzzle}, ${c.ears}`}. Body covering: ${c.covering}. Color design: ${enJoin(c.color)}. Marking design: ${c.marking}. Special features: ${enJoin(c.specialFeatures || c.specialFeature)}. Accessories: ${enJoin(c.accessories || c.accessory)}. World setting fusion: ${enJoin(c.worlds || c.world)}. Personality impression: ${c.temperament}. Art style: ${c.artStyle}.
 
 [OUTFIT] ${c.outfit}, ${c.outfitDetail}, fully clothed, pants, skirt, or robe clearly visible, no nudity. Clothing adapted for furry anatomy while keeping important body markings visible.
 
-[BODY TYPE] ${c.bodyType}, clear readable silhouette, neutral standing pose, arms slightly away from body. Detail density: ${c.detailLevel}.`;
+[BODY TYPE] ${c.bodyType}, ${c.anthroPosture || 'neutral standing pose'}, clear readable silhouette, arms slightly away from body. Detail density: ${c.detailLevel}.`;
 }
 
 function templatePrompt(c){
