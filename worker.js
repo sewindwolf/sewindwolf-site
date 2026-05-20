@@ -10,7 +10,7 @@ const GPT_IMAGE2_SUBMIT_URL = 'https://api.wuyinkeji.com/api/async/image_gpt';
 const GPT_IMAGE2_DETAIL_URL = 'https://api.wuyinkeji.com/api/async/detail';
 const FAL_GPT_MODEL = 'openai/gpt-image-2';
 const FAL_QUEUE_BASE_URL = 'https://queue.fal.run/';
-const ACCESS_PASSWORD = 'jibao';
+const ACCESS_PASSWORD = 'chujun';
 const DEFAULT_REFERENCE_IMAGE_URL = 'https://sewindwolf.art/furry-creator/assets/blank-reference.png';
 const HISTORY_INDEX_KEY = 'furry-history:index';
 const HISTORY_MAX_ITEMS = 500;
@@ -451,7 +451,3 @@ export default {
     }
   }
 };
-
-
-
-
