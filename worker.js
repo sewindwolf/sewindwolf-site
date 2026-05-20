@@ -8,7 +8,7 @@ const FURRY_APP_JS = "const speciesDetailOptions = {\n  common: [[\u0027wolf\u00
 const BANANA_RESULT_URL = 'https://nanobananapro.cloud/api/v1/image/nano-banana/result';
 const GPT_IMAGE2_SUBMIT_URL = 'https://api.wuyinkeji.com/api/async/image_gpt';
 const GPT_IMAGE2_DETAIL_URL = 'https://api.wuyinkeji.com/api/async/detail';
-const FAL_GPT_MODEL = 'fal-ai/gpt-image-1';
+const FAL_GPT_MODEL = 'openai/gpt-image-2';
 const FAL_QUEUE_BASE_URL = 'https://queue.fal.run/';
 const ACCESS_PASSWORD = 'jibao';
 const DEFAULT_REFERENCE_IMAGE_URL = 'https://sewindwolf.art/furry-creator/assets/blank-reference.png';
