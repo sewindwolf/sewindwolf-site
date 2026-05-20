@@ -5,3 +5,13 @@ compatibility_date = "2026-04-16"
 [assets]
 directory = "./public"
 
+
+
+[durable_objects]
+bindings = [
+  { name = "FurryHistoryStore", class_name = "FurryHistoryStore" }
+]
+
+[[migrations]]
+tag = "v1-furry-history-store"
+new_sqlite_classes = ["FurryHistoryStore"]

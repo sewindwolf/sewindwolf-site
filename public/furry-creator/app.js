@@ -321,6 +321,9 @@ let manualOverrides = {};
 let currentStep = 0;
 let wizardStarted = false;
 let currentImageProvider = 'banana';
+let historyPage = 1;
+let historyPassword = '';
+const HISTORY_PAGE_SIZE = 10;
 const imageProviderConfigs = {
   banana: { label: 'Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
   gpt: { label: 'GPT-Image-2', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
@@ -1052,9 +1055,132 @@ async function requestBananaImage(password){
 
 function generate(partial){ character = buildCharacter(partial); renderResult(); }
 
+function openHistoryPanel(){
+  const modal = document.getElementById('historyModal');
+  const input = document.getElementById('historyPasswordInput');
+  const status = document.getElementById('historyStatus');
+  const grid = document.getElementById('historyGrid');
+  if(!modal) return;
+  modal.hidden = false;
+  if(status) status.textContent = '请输入密码后查看生成历史。';
+  if(grid) grid.innerHTML = '';
+  if(input){
+    input.value = historyPassword || '';
+    setTimeout(() => input.focus(), 80);
+  }
+}
+
+function closeHistoryPanel(){
+  const modal = document.getElementById('historyModal');
+  if(modal) modal.hidden = true;
+}
+
+function historyCardTitle(item){
+  const parts = [item.species, item.genderExpression, item.promptTemplateLabel].filter(Boolean);
+  return parts.length ? parts.join(' · ') : 'FurryOC 生成结果';
+}
+
+function renderHistoryItems(items){
+  const grid = document.getElementById('historyGrid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  if(!items || !items.length){
+    grid.innerHTML = '<div class="history-empty">这一页还没有生成记录。</div>';
+    return;
+  }
+  items.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'history-card';
+    const link = document.createElement('a');
+    link.href = item.imageUrl || '#';
+    link.target = '_blank';
+    link.rel = 'noopener';
+    const img = document.createElement('img');
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.src = item.imageUrl || '';
+    img.alt = historyCardTitle(item);
+    link.appendChild(img);
+    const body = document.createElement('div');
+    body.className = 'history-card-body';
+    const title = document.createElement('h4');
+    title.textContent = historyCardTitle(item);
+    const meta = document.createElement('p');
+    const created = item.createdAt ? new Date(item.createdAt).toLocaleString('zh-CN', { hour12:false }) : '未知时间';
+    meta.textContent = (item.providerLabel || item.provider || '未知渠道') + ' · ' + created;
+    const details = document.createElement('p');
+    details.textContent = [item.anthroLabel, item.bodyType, item.temperament].filter(Boolean).join(' / ');
+    const open = document.createElement('a');
+    open.href = item.imageUrl || '#';
+    open.target = '_blank';
+    open.rel = 'noopener';
+    open.textContent = '打开原图';
+    body.append(title, meta, details, open);
+    card.append(link, body);
+    grid.appendChild(card);
+  });
+}
+
+async function loadHistory(page = 1){
+  const input = document.getElementById('historyPasswordInput');
+  const status = document.getElementById('historyStatus');
+  const prev = document.getElementById('historyPrevBtn');
+  const next = document.getElementById('historyNextBtn');
+  const pageLabel = document.getElementById('historyPageLabel');
+  const password = String((input && input.value) || historyPassword || '').trim();
+  if(!password){
+    if(status) status.textContent = '请先输入历史后台密码。';
+    return;
+  }
+  historyPassword = password;
+  if(status) status.textContent = '正在加载生成历史……';
+  if(prev) prev.disabled = true;
+  if(next) next.disabled = true;
+  try{
+    const resp = await fetch('/api/furry-history', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ password, page, pageSize: HISTORY_PAGE_SIZE })
+    });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '加载失败');
+    historyPage = data.page || page;
+    renderHistoryItems(data.items || []);
+    if(pageLabel) pageLabel.textContent = '第 ' + historyPage + ' 页';
+    if(prev) prev.disabled = historyPage <= 1;
+    if(next) next.disabled = !data.hasMore;
+    if(status) status.textContent = '共 ' + (data.total || 0) + ' 条记录；每页最多 ' + (data.pageSize || HISTORY_PAGE_SIZE) + ' 张。';
+  }catch(err){
+    renderHistoryItems([]);
+    if(status) status.textContent = '加载失败：' + (err.message || err);
+  }finally{
+    if(prev) prev.disabled = historyPage <= 1;
+  }
+}
+
+function bindHistoryPanel(){
+  const openBtn = document.getElementById('openHistoryBtn');
+  const openResultBtn = document.getElementById('openHistoryFromResultBtn');
+  const closeBtn = document.getElementById('historyCloseBtn');
+  const loadBtn = document.getElementById('historyLoadBtn');
+  const input = document.getElementById('historyPasswordInput');
+  const prev = document.getElementById('historyPrevBtn');
+  const next = document.getElementById('historyNextBtn');
+  if(openBtn) openBtn.onclick = () => openHistoryPanel();
+  if(openResultBtn) openResultBtn.onclick = () => openHistoryPanel();
+  if(closeBtn) closeBtn.onclick = () => closeHistoryPanel();
+  if(loadBtn) loadBtn.onclick = () => loadHistory(1);
+  if(input) input.onkeydown = e => { if(e.key === 'Enter') loadHistory(1); };
+  if(prev) prev.onclick = () => loadHistory(Math.max(1, historyPage - 1));
+  if(next) next.onclick = () => loadHistory(historyPage + 1);
+  const modal = document.getElementById('historyModal');
+  if(modal) modal.addEventListener('click', e => { if(e.target === modal) closeHistoryPanel(); });
+}
+
 function bindStatic(){
   const startBtn = document.getElementById('startWizardBtn');
   if(startBtn) startBtn.onclick = () => startWizard();
+  bindHistoryPanel();
   document.getElementById('generateBtn').onclick = () => showResultPage();
   document.getElementById('randomAllBtn').onclick = () => {
     state.randomnessLevel = state.randomnessLevel || 'moderate';
