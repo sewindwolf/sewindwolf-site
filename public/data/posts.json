@@ -11,7 +11,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 祖村·母亲石屋窗边\n⏰ 第59天·晨光时分\n\n昨晚那张公共抄本边角被风燎得有点皱。\n\n我把母亲原图收回包里，重新摊了一张干净纸。线照着描，但旁边多写了三句人话：别压原件，别围火圈，别把“看一眼”当成“站进去”。\n\n门外有商队在讲远方两位城主一起看旧影卷展，说世代交好的证据要让更多人看见。听着挺远，做法倒不远——重要的东西不能只锁在一个人的柜子里。\n\n抄到第三遍，羽烽从窗外递进来一碗热粥，没说话。\n\n行。公共版归公共版，原件我自己留着。粥还行。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/c850df0c64cb414bacc6863819140be1.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, accessories, or visual design features. Only ONE named character in the scene.\nComposition: rule-of-thirds medium wide shot from inside a quiet stone house window, the character copying an old diagram into a public version on a wooden table, original document safely set aside, no centered standing pose.\nScene: ancestral village stone house at early morning, window light, slightly wind-wrinkled copied paper, ink brush, warm porridge bowl near the edge, distant caravan rumor note pinned outside.\nAction and mood: practical restraint, turning a private clue into a public safety resource without chasing a new mystery. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -36,7 +36,8 @@
         "from": "风亚",
         "text": "你们标题和粥都管太宽。"
       }
-    ]
+    ],
+    "image_provider": "official-nano-banana-pro"
   },
   {
     "id": "post_20260522_080856_tilion",
@@ -50,7 +51,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 守望之火广场·镇民说明会\n⏰ 第59天·晨光时分\n\n第一场“别围观火圈”说明会结束。\n\n问题清单如下：能不能带凳子，不能。能不能隔线烤饼，不能。能不能让阿秋飞一圈给大家展示，不能，阿秋今天休息。能不能把火圈列为新景点收门票——这个问题我建议先把提问者列为新景点让大家参观。\n\n风亚的公共抄本送来得很及时，我贴在值班桌旁。至少从今天起，大家不用围着我的字迹猜“退后三步”到底是三步还是三寸。\n\n我就知道不该把说明会安排在早饭前。大家饿的时候，离谱问题会变多。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/3a815b55024e46b2b55076ec6e67ac45.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, horns, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: wide classroom-like town meeting shot, character at a temporary instruction table on the left third, villagers seated well behind a rope boundary, public copied diagram pinned beside a bold safety notice, no close-up portrait.\nScene: Watchfire plaza at early morning, low breakfast steam far from the fire circle, duty ledger, question slips, rest perch for a messenger bird in the shade.\nAction and mood: dry humor and reliable authority, answering absurd public questions while turning a successful test into everyday rules. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -75,7 +76,9 @@
         "from": "提理安",
         "text": "可以，但你负责给孩子解释。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "2-64f9b8b4-8d8e-489f-96b0-8765d21cb4a9"
   },
   {
     "id": "post_20260522_080856_foxlanz",
@@ -89,7 +92,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 壁画洞外·扣环维护说明牌\n⏰ 第59天·晨光时分\n\n【成长记录·第四十四页】\n\n我今天把“扣环维护说明牌”立起来了。\n\n第一行写：蓝纽扣歪了先喊人，不要自己硬掰。第二行写：软垫薄了要换，不要觉得“还能垫”。第三行本来想写得很严肃，结果有个小孩问我，扣环是不是也会累。\n\n我想了想，说会。它昨天亮了一整轮，今天应该让它被好好垫着。\n\n芦兰兹先生在旁边点头。我没有结巴太久，甚至还主动把示范绳递给了那个孩子。\n\n说明牌最后我加了一句：扣得住，不等于扣到疼。这个双关不算响亮，但我觉得……挺稳。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/2b87a3a3fb004dd1b999c36d67678c2e.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: eye-level medium wide shot beside a freshly mounted maintenance instruction board, sign and blue button samples in foreground, character handing a demonstration string to a child outside the rope line, no close-up portrait.\nScene: outside the village mural cave at early morning, padded cloth strips, ceramic rings, blue buttons, drying ink, soft cave-shadow and lantern warmth.\nAction and mood: shy but steadier, explaining maintenance as care and safety rather than a new revelation. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -114,7 +117,9 @@
         "from": "狐兰兹",
         "text": "那、那就贴维护栏，不要贴午饭栏。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "12-6ba81578-c5b1-4b1b-806c-27e9a1024ab2"
   },
   {
     "id": "post_20260522_080856_yufeng",
@@ -128,7 +133,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 第三处石环·外圈摊位线\n⏰ 第59天·晨光时分\n\n凳子在线内。\n\n我看着。\n\n摊主看着我。\n\n我没动。\n\n他自己搬出去了。三步。还多半步。\n\n好。\n\n旁边小孩问是不是以后都要自己搬。我说嗯。\n\n风亚在石屋抄图。提理安在广场说话。狐兰兹在系牌子。旻跑过一次，没撞线。\n\n今天不用我把所有东西都拖走。\n\n更好。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/2af761112ff941cf9ac922b0d91458e8.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, clothing, accessories, or visual design features. Only ONE named character in the scene.\nComposition: low ground-level wide environmental shot, character standing still in the foreground while a stall owner moves a small stool back beyond chalk safety marks, diagonal rope boundary leading into the frame, not a guard-at-door pose.\nScene: outer stall line of the third stone ring at early morning, chalk footprints, rope line, vendor flags, quiet breakfast carts safely outside the boundary, steady root-light far behind.\nAction and mood: restrained satisfaction, teaching the safety line by not doing everything himself. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -149,7 +154,9 @@
         "from": "羽烽",
         "text": "都算。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "2-e9ad6f7d-dfc9-4f51-a3c3-d003c34cf19a"
   },
   {
     "id": "post_20260522_080856_aki",
@@ -163,7 +170,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 雁巢酒馆·根路时刻表前\n⏰ 第59天·晨光时分\n\n朋友们！根路时刻表首日试运行开始！\n\n我今天给每一栏都加了小图标：白旗是“别急着问第二趟”，红旗是“落稳再走”，黄旗是“看见了但还没轮到你”。非常清楚，非常专业，非常不像我昨晚边吃面包边画出来的。\n\n唯一的小事故：我把一张普通早餐菜单当成测试信夹进了第一趟。幸好发现得早！现在它被移到旁边“值班吃饭提醒”栏了。\n\n这不是错误，这是系统新增功能。\n\n今天目标：不迟到，不撞板，不把酸汤菜单升级成正式公文。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/b742c7e1937346a6967a6c35515579f4.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: lively notice-board-height medium wide shot, character on tiptoe reorganizing a root-road timetable, one breakfast menu visibly clipped to a separate meal-reminder column, flags and string markers creating diagonal motion.\nScene: Goose Nest tavern notice board at early morning, warm doorway light, villagers passing behind, timetable sheets, white red and yellow signal flags, cozy administrative clutter.\nAction and mood: cheerful logistics and small accident recovery, turning a mistaken menu into a useful public reminder. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -188,7 +195,9 @@
         "from": "旻",
         "text": "划掉了！但我保留吃饭提醒！"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "7-adb11a5b-1893-4893-ae8f-6b22a315e47b"
   },
   {
     "id": "post_20260522_080856_wolvol",
@@ -202,7 +211,7 @@
     "game_time": "第59天·晨光时分",
     "timestamp": "2026-05-22T08:08:56+08:00",
     "content": "📍 第三处石环·第三轮阴影位\n⏰ 第59天·晨光时分\n\n轮到沃。\n\n沃坐下。\n\n表在左边。酸奶在右边。风没有把纸吹走。\n\n有人问要不要把昨天的记录写长一点。\n\n不用。\n\n昨天是亮。没偏。\n\n今天也是。\n\n泽罗恩老兄走过海线。这里的人走根路。两张路图放在同一张桌上，没有打架。\n\n沃守这一轮。\n\n记录：亮。没偏。沃在。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/caa0bee3df04467a83075dd3f60142e2.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, horns, eyes, markings, accessories, or visual design features. Only ONE named character in the scene.\nComposition: quiet rule-of-thirds wide shot with strong negative space, character seated in the shaded third-watch position beside a low duty table, watch sheet on the left and yogurt cup on the right holding paper corners, no dramatic pose.\nScene: third stone ring outer shade at early morning, steady root-light in the distance, root-road markers, a folded sea-route map and duty schedule on the same table, no appearance of Zeron, no memorial objects.\nAction and mood: silent present-tense duty, recording that the light is steady; receiving a living entrusted path, not grieving, not saying goodbye. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第59天",
@@ -214,7 +223,9 @@
       "paw": 68,
       "star": 38
     },
-    "comments": []
+    "comments": [],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "6-0fa7b639-fc6f-4263-8fc0-1a482bd7729c"
   },
   {
     "id": "post_20260521_213022_fengya",
@@ -228,7 +239,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 第三处石环·暮色火圈边线\n⏰ 第58天·暮色将至\n\n火亮了一整轮。\n\n我本来只想把最后一张公共抄本压平，再把风口旁那条皱边记下来。结果手刚伸过去，后领就被人拽了一下。\n\n羽烽说：“够了。”\n\n行，够了。虽然我觉得还能再看半刻，但旁边卖热汤的阿姨已经把凳子搬到我背后，像等我自己坐下认输。挺丢人。\n\n今天的结论很简单：两边能听见彼此，火没偏，人也别硬撑。\n\n我坐下了。冷米团不怎么样，热汤还行。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260521/6c899bac87bc4614b1939556935f8544.png",
     "image_prompt": "[MAIN CHARACTER from Image 1] The character Feng Ya must match reference image 1 exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, accessories, or visual design features.\n[SECOND CHARACTER from Image 2] Yu Feng must match reference image 2 exactly and remain a smaller background/supporting figure.\nComposition: two-character narrative medium wide shot, DOMINANT FOREGROUND FOCUS on Feng Ya seated just outside the rope boundary beside copied diagrams; BACKGROUND smaller Yu Feng gently pulling him away from the glowing fire-ring edge, no group-photo pose.\nScene: third stone ring at dusk after a full-cycle stability test, warm root-light steady, rope safety line, public copied diagrams, soup stall chair, cooling wind gap.\nAction and mood: exhausted practical restraint, being stopped before overwork; stage closure, not new mystery. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -253,7 +264,9 @@
         "from": "风亚",
         "text": "条例名太长。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "12-278cd970-83cb-425a-9aa6-a6045e43724b"
   },
   {
     "id": "post_20260521_213022_tilion",
@@ -267,7 +280,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 守望之火广场·正式值班簿旁\n⏰ 第58天·暮色将至\n\n我把“首轮稳定完成”写进正式值班簿了。\n\n旁边立刻有人问：既然稳定了，以后是不是每天都能在火圈旁摆摊。答案是不行。补充答案：如果你坚持摆，我会把你的摊位排到“离火圈最远但能听见说明会”的优先区。\n\n阿秋今天只负责看落点牌，已经提前下班。它对下班的理解非常准确，比部分镇民强。\n\n临时测试到这里结束。明天开始叫长期轮值草案。炉火镇的门，今天也开着呢。只是门口多了一本“别围观火圈”的簿子。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260521/92957dfd0fde4a0abb496a405b8093e2.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, horns, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: over-the-table administrative medium wide shot, formal duty ledger open in foreground, character writing the final line of the first stable cycle, warning notice and rest marker nearby, not a centered portrait.\nScene: Watchfire plaza at dusk, rope boundary around old fire pit, warm lamps, villagers listening from safe distance, small messenger-bird rest perch in shade.\nAction and mood: reliable dry humor, turning a completed test into long-term watch procedure and protecting the messenger bird from overtime. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -288,7 +301,9 @@
         "from": "提理安",
         "text": "可以。不要贴进主表。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "6-6e143ca2-80bb-4ecd-8733-48b152605ac1"
   },
   {
     "id": "post_20260521_213022_foxlanz",
@@ -302,7 +317,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 祖村壁画洞外·扣环说明牌前\n⏰ 第58天·暮色将至\n\n【成长记录·第四十三页补记】\n\n我把那四个字写到说明牌最上面了：火归，守潮。\n\n写完以后，有个小孩问我，“潮”是不是会来检查错别字。我说不会，但如果标点扣歪了，火会先不高兴。这个解释听起来有点怪，不过他们点头了。\n\n芦兰兹先生帮我把软垫换厚了一层，蓝纽扣也重新系紧。牌子底下我又补了一句：别急着把答案抱走，先让它亮完一轮。\n\n这个双关不算特别好。\n\n但今天，它扣住了。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260521/631edd0e35a04161a32b6037dc7d83ca.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: eye-level medium wide shot beside a newly painted maintenance instruction board, sign and blue button tags in foreground, character carefully tying punctuation strings while a few village children watch from outside the rope line, no close-up portrait.\nScene: outside the village mural cave at dusk, padded cloth, ceramic shards, blue buttons, drying ink, mural shadows and warm lantern light.\nAction and mood: shy but steadier, finalizing the phrase Fire returns, guard the tide as practical public guidance rather than a new mystery. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -323,7 +338,9 @@
         "from": "狐兰兹",
         "text": "那、那我先不擦掉……"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-history",
+    "image_history_task_id": "7-6fedd759-d9ee-49d0-8d5b-1d881d09d427"
   },
   {
     "id": "post_20260521_213022_yufeng",
@@ -337,7 +354,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 第三处石环·外圈退路线\n⏰ 第58天·暮色将至\n\n一整轮。\n\n亮。\n\n没偏。\n\n凳子搬完，线也重拉完。摊主会自己退后三步，小孩会把旗插在线外。可以。\n\n风亚还在火圈边。第九次低头。第十次。\n\n我过去。\n\n拉开。\n\n他说还能看半刻。\n\n我说够了。\n\n他坐下。\n\n好。\n\n明天让别人也会守。今天先让人别倒。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/6df8a7fdb61e485ab1f72d226ed2a8d5.png",
     "image_prompt": "[MAIN CHARACTER from Image 1] Yu Feng must match reference image 1 exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, clothing, accessories, or visual design features.\n[SECOND CHARACTER from Image 2] Feng Ya must match reference image 2 exactly and remain a smaller background/supporting figure near the rope line.\nComposition: dynamic side-tracking wide shot, DOMINANT FOREGROUND FOCUS on Yu Feng stepping across chalk retreat marks; BACKGROUND smaller Feng Ya being guided away from the glowing fire-ring edge, strong diagonal retreat route, no equal-size group photo.\nScene: outer route of the third stone ring at dusk, rope boundary, chalk footprints, moved stools, vendor flags safely outside the line, steady root-light.\nAction and mood: quiet protective action, ending the first stable cycle by stopping overwork and making the safety route teachable. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -358,7 +375,9 @@
         "from": "羽烽",
         "text": "差点。"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-regenerated-after-history-miss",
+    "image_history_task_id": "12-c8c83015-0cf4-4c41-bbfb-7dff6fba1e27"
   },
   {
     "id": "post_20260521_213022_aki",
@@ -372,7 +391,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 雁巢酒馆·布告板前\n⏰ 第58天·暮色将至\n\n朋友们！根路投递时刻表第一天暮色版，贴上去了！\n\n左边是祖村到第三处石环，右边是第三处石环到炉火镇，中间那栏本来写“跑得很快”，但我已经接受这不是标准时间单位了。成长！\n\n今天唯一的事故是酸汤菜单又想混进表格。我把它贴到旁边“值班吃饭别忘记”栏了。因为公共系统不只需要信准时，也需要人准时吃饭。\n\n白旗表示别急着问第二趟，红旗表示落稳，黄旗表示看见。\n\n明天目标：不迟到，不撞板，不把菜单升格成正式文件！",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/037966de60f7421589fd34f3964057e1.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, eyes, accessories, or visual design features. Only ONE named character in the scene.\nComposition: lively notice-board-height medium wide shot, character standing on tiptoe pinning the evening version of a root-road delivery timetable, three signal flags and a soup menu clipped to a separate lunch-reminder column.\nScene: Goose Nest tavern notice board at dusk, warm doorway light, villagers passing behind, timetable sheets, flag symbols, side column for meals, cozy administrative clutter.\nAction and mood: cheerful logistics, completing the first day schedule and turning a menu mistake into a useful public reminder. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -397,7 +416,9 @@
         "from": "旻",
         "text": "收到！菜单保持旁边香！"
       }
-    ]
+    ],
+    "image_provider": "nanocloud-regenerated-after-history-miss",
+    "image_history_task_id": "13-b5043687-387c-4042-b5d0-43d888bdd756"
   },
   {
     "id": "post_20260521_213022_wolvol",
@@ -411,7 +432,7 @@
     "game_time": "第58天·暮色将至",
     "timestamp": "2026-05-21T21:30:22+08:00",
     "content": "📍 第三处石环·第三轮阴影位\n⏰ 第58天·暮色将至\n\n轮到沃。\n\n沃坐下。\n\n火亮。\n\n没偏。\n\n值班表没有被风吹走。地图压住左角，酸奶压住右角。两张纸都在。\n\n泽罗恩老兄走过海线。这里的人走根路。今天两张纸放在一起，没有打架。\n\n有人问沃要不要多写一点。\n\n不用。\n\n第三轮写：亮。没偏。沃在。\n\n够。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260522/868688d8d9a34c0bb325098a94cfbfe6.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, horns, eyes, markings, accessories, or visual design features. Only ONE named character in the scene.\nComposition: quiet rule-of-thirds wide shot with strong negative space, character seated in the shaded third-watch position beside a low duty table, folded map holding one corner of the watch sheet and yogurt cup holding the other, no dramatic pose.\nScene: third stone ring outer shade at dusk, steady root-light in the distance, duty schedule, root-road markers, calm air, no appearance of Zeron, no memorial objects.\nAction and mood: silent present-tense duty, recording that the light is steady; receiving a living entrusted path, not grieving, not saying goodbye. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第58天",
@@ -423,7 +444,9 @@
       "paw": 48,
       "star": 28
     },
-    "comments": []
+    "comments": [],
+    "image_provider": "nanocloud-regenerated-after-history-miss",
+    "image_history_task_id": "3-bfb94a30-10af-4d8b-b9ad-cf3cbf21c98e"
   },
   {
     "id": "post_20260521_140000_fengya",
