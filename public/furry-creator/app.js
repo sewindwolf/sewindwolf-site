@@ -79,7 +79,8 @@ const questions = [
   { id: 'bodyTypeChoice', title: '体型轮廓', tip: '这是捏人里非常关键的一步，会直接影响三视图剪影。', options: [['slim','修长'],['athletic','运动型'],['soft','柔和圆润'],['strong','强壮'],['tall','高挑优雅'],['small','小巧灵活'],['heavy','厚重敦实'],['random','随机']] },
   { id: 'temperament', title: '整体气质', tip: '决定角色给人的第一印象，也会影响描述用词。', options: [['cute','可爱亲和'],['cool','冷酷帅气'],['wild','野性危险'],['noble','高贵神秘'],['playful','活泼调皮'],['gentle','温柔可靠'],['dark','阴暗邪气'],['random','随机']] },
   { id: 'artStyle', title: '画风倾向', tip: '决定最终提示词的视觉风格。也可以在下方手写 12 字以内画风，例如厚涂、赛璐璐、绘本风。', custom: true, customKey: 'customArtStyle', customPlaceholder: '如：厚涂绘本风', options: [['clean-anime','清爽日系立绘'],['kemono','日系兽设 / Kemono'],['storybook','温暖绘本风'],['semi-realistic','半写实插画'],['cartoon','欧美卡通感'],['cell-shading','赛璐璐动画风'],['painterly','厚涂概念图'],['game-concept','游戏角色设定图'],['random','随机']] },
-  { id: 'furColor', title: '毛色 / 主色基调', tip: '比原来的“配色方向”更具体，会写进毛色描述和 Banana 提示词。可在下方补充 12 字以内自定义毛色。', custom: true, customKey: 'customFurColor', customPlaceholder: '如：黑橙渐变', options: [['solid-white','纯白色'],['solid-black','纯黑色'],['solid-gray','纯灰色'],['solid-brown','纯棕色'],['natural-gray','灰白自然色'],['orange-cream','橙黄奶油色'],['black-white','黑白高对比'],['brown-tan','棕色浅腹'],['blue-silver','蓝灰银色'],['red-black','黑红暗色'],['pastel','梦幻浅彩色'],['neon','霓虹发光色'],['random','随机']] },
+  { id: 'furColor', title: '毛色 / 主色基调', lowAnthroTitle: '发色 / 主色基调', tip: '比原来的“配色方向”更具体，会写进毛色描述和 Banana 提示词。可在下方补充 12 字以内自定义毛色。', lowAnthroTip: '0% 近人类/亚人分支下，这一步会作为发色和人类服设配色使用，不再写成兽人毛色。', custom: true, customKey: 'customFurColor', customPlaceholder: '如：黑橙渐变', lowAnthroCustomPlaceholder: '如：黑橙渐变发色', options: [['solid-white','纯白色'],['solid-black','纯黑色'],['solid-gray','纯灰色'],['solid-brown','纯棕色'],['natural-gray','灰白自然色'],['orange-cream','橙黄奶油色'],['black-white','黑白高对比'],['brown-tan','棕色浅腹'],['blue-silver','蓝灰银色'],['red-black','黑红暗色'],['pastel','梦幻浅彩色'],['neon','霓虹发光色'],['random','随机']] },
+  { id: 'hairStyle', title: '发型', tip: '仅在 0% 近人类 / 亚人分支中出现，用来替代兽人毛色、尾巴、兽吻等特征，强化人类角色的头发轮廓。', lowAnthroOnly: true, custom: true, customKey: 'customHairStyle', customPlaceholder: '如：狼尾短发', options: [['short-fluffy','蓬松短发'],['medium-layered','中长层次发'],['long-silky','柔顺长发'],['messy-wolfcut','凌乱狼尾头'],['ponytail','高马尾'],['twin-tails','双马尾'],['bob-cut','齐颈短发'],['undercut','利落侧削'],['braided','编发'],['random','随机']] },
   { id: 'markingChoice', title: '花纹类型', tip: '决定身上的条纹、斑点、渐变、面纹或发光纹路。可补充 12 字以内自定义花纹。', custom: true, customKey: 'customMarking', customPlaceholder: '如：眉心月纹', options: [['clean','干净少花纹'],['stripes','条纹'],['spots','斑点'],['gradient','渐变色'],['mask','面部面具纹'],['rings','尾巴/四肢环纹'],['glow','发光纹路'],['tattoo','图腾纹 / 魔法纹'],['random','随机']] },
   { id: 'eyeColor', title: '瞳色', tip: '瞳色会让角色更有辨识度，尤其适合头像和角色卡。可补充 12 字以内自定义瞳色。', custom: true, customKey: 'customEyeColor', customPlaceholder: '如：金绿渐变', options: [['amber','琥珀金'],['blue','冰蓝色'],['green','翠绿色'],['red','红色'],['purple','紫色'],['hetero','异色瞳'],['glow','发光瞳'],['black','黑色深瞳'],['random','随机']] },
   { id: 'featureDetail', title: '重点外形特征', tip: '重点外形特征可复选；“不额外强化”和“随机”会与其他特征互斥。可补充 12 字以内自定义特征。', multiple: true, custom: true, customKey: 'customFeature', customPlaceholder: '如：断角金纹', options: [['tail','尾巴更有设计感'],['ears','耳朵更有辨识度'],['horns','角 / 鹿角 / 龙角'],['wings','翅膀 / 翼膜'],['mane','鬃毛 / 颈部蓬毛'],['scales','鳞片 / 甲片'],['mechanical','机械义体 / 发光接口'],['none','不额外强化'],['random','随机']] },
@@ -159,17 +160,17 @@ const anthroProfiles = {
   anthro0: {
     percent: 0,
     cn: '0% 近人类 / 兽耳人',
-    guidance: '0% anthro anatomy: almost human silhouette and upright human posture, human torso, human legs and human hands, only animal ears, tail, light fur accents or subtle species motifs. Avoid animal muzzle, avoid digitigrade legs, avoid heavy paws.',
-    posture: 'upright human posture, straight spine, normal human stance',
-    covering: 'mostly human skin with limited fur accents',
-    legStructure: 'human plantigrade legs',
-    footType: 'human feet or very light paw-inspired feet',
-    handType: 'human hands with subtle claw-like nails'
+    guidance: '0% demi-human / kemonomimi anatomy: human body, human face, human skin, human legs, human feet and human hands. Only allow subtle animal-ear-inspired head accessory or kemonomimi ears and small species motifs. No tail. No animal muzzle or snout. No paw hands. No paw feet. No full-body fur. No digitigrade legs. Avoid furry, beastman, anthropomorphic animal, animal head, feral, claws, scales, feathers, hooves or monster anatomy.',
+    posture: 'upright normal human posture, straight spine, normal human stance',
+    covering: 'human skin, normal human body surface, no full-body fur',
+    legStructure: 'normal human plantigrade legs',
+    footType: 'normal human feet in shoes or boots',
+    handType: 'normal human hands'
   },
   anthro20: {
     percent: 20,
     cn: '20% 轻度兽化',
-    guidance: '20% anthro anatomy: mostly human proportions with visible animal ears, tail, soft fur on forearms or lower legs, slight muzzle or animal nose, humanlike hands, upright relaxed stance. Keep the face cute and readable, not fully animal-headed.',
+    guidance: '20% light kemono anatomy: mostly human proportions with visible animal ears, optional small tail, soft fur on forearms or lower legs, very slight animal nose at most, humanlike hands, upright relaxed stance. Keep the face cute and readable, not fully animal-headed.',
     posture: 'upright humanlike posture with relaxed shoulders',
     covering: 'partial soft fur on ears, tail, forearms and lower legs',
     legStructure: 'mostly human plantigrade legs with slight animal styling',
@@ -217,6 +218,17 @@ const anthroProfiles = {
     handType: 'animal forepaws or clawed hands'
   }
 };
+
+function anthroPercentFromState(){
+  const key = normalizeAnthroKey(state.anthro);
+  const profile = anthroProfiles[key] || anthroProfiles.anthro40;
+  return profile.percent;
+}
+
+function isLowAnthroState(){ return anthroPercentFromState() < 20; }
+function isLowAnthroCharacter(c){ return !!c && Number(c.anthroPercent || 0) < 20; }
+function shouldShowQuestion(q){ return !q.lowAnthroOnly || isLowAnthroState(); }
+function activeQuestions(){ return questions.filter(shouldShowQuestion); }
 
 function normalizeAnthroKey(value){
   if(value === 'random' || value === 'auto') return pick(Object.keys(maps.anthro));
@@ -321,6 +333,9 @@ let manualOverrides = {};
 let currentStep = 0;
 let wizardStarted = false;
 let currentImageProvider = 'banana';
+let currentRemixProvider = 'banana';
+let remixSourceImageUrl = '';
+let remixLastImageUrl = '';
 let historyPage = 1;
 let historyPassword = '';
 const HISTORY_PAGE_SIZE = 10;
@@ -367,6 +382,7 @@ function optionValues(options, includeNone = true){
 }
 
 function pickQuestionValue(q, options){
+  if(q && q.id === 'genderExpression') return 'masculine';
   const values = optionValues(options, false);
   return values.length ? pick(values) : (options && options[0] ? options[0][0] : null);
 }
@@ -398,7 +414,7 @@ function settleQuestionRandom(q, options){
 }
 
 function settleAllRandomChoices(){
-  questions.forEach(q => {
+  activeQuestions().forEach(q => {
     settleQuestionRandom(q, getQuestionOptions(q));
   });
 }
@@ -413,13 +429,13 @@ function characterExportData(){
     chineseSummary: zhSummary(base),
     chineseDescription: zhDescription(base),
     bananaPrompt: bananaPrompt(base),
-    negativePrompt: negativePrompt()
+    negativePrompt: negativePrompt(base)
   };
 }
 
 function promptPairText(){
   const base = character || buildCharacter();
-  return '[Positive Prompt]\n' + bananaPrompt(base) + '\n\n[Negative Prompt]\n' + negativePrompt();
+  return '[Positive Prompt]\n' + bananaPrompt(base) + '\n\n[Negative Prompt]\n' + negativePrompt(base);
 }
 
 function restoreFromImportedData(data){
@@ -586,6 +602,7 @@ function setViewMode(mode){
   document.body.classList.toggle('is-home', mode === 'home');
   document.body.classList.toggle('is-wizard', mode === 'wizard');
   document.body.classList.toggle('is-result', mode === 'result');
+  document.body.classList.toggle('is-remix', mode === 'remix');
 }
 
 function setHeroVisible(visible){
@@ -599,6 +616,8 @@ function showHomePage(){
   setHeroVisible(true);
   document.querySelector('.form-panel').style.display = 'none';
   document.querySelector('.result-panel').style.display = 'none';
+  const remixPanel = document.getElementById('remixPanel');
+  if(remixPanel) remixPanel.hidden = true;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -613,6 +632,8 @@ function showQuestionPage(){
   setHeroVisible(false);
   document.querySelector('.form-panel').style.display = 'block';
   document.querySelector('.result-panel').style.display = 'none';
+  const remixPanel = document.getElementById('remixPanel');
+  if(remixPanel) remixPanel.hidden = true;
 }
 
 function showResultPage(){
@@ -621,6 +642,8 @@ function showResultPage(){
   setHeroVisible(true);
   document.querySelector('.form-panel').style.display = 'none';
   document.querySelector('.result-panel').style.display = 'block';
+  const remixPanel = document.getElementById('remixPanel');
+  if(remixPanel) remixPanel.hidden = true;
   generate();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -628,27 +651,32 @@ function showResultPage(){
 function renderQuestions(){
   showQuestionPage();
   const box = document.getElementById('questions');
-  const q = questions[currentStep];
+  const active = activeQuestions();
+  if(currentStep >= active.length) currentStep = active.length - 1;
+  const q = active[currentStep];
   const options = getQuestionOptions(q);
-  const progress = Math.round(((currentStep + 1) / questions.length) * 100);
+  const displayTitle = isLowAnthroState() && q.lowAnthroTitle ? q.lowAnthroTitle : q.title;
+  const displayTip = isLowAnthroState() && q.lowAnthroTip ? q.lowAnthroTip : q.tip;
+  const customPlaceholder = isLowAnthroState() && q.lowAnthroCustomPlaceholder ? q.lowAnthroCustomPlaceholder : q.customPlaceholder;
+  const progress = Math.round(((currentStep + 1) / active.length) * 100);
   box.innerHTML = `
     <div class="step-meta">
-      <span>第 ${currentStep + 1} / ${questions.length} 步</span>
+      <span>第 ${currentStep + 1} / ${active.length} 步</span>
       <div class="step-bar"><i style="width:${progress}%"></i></div>
       <span>${progress}%</span>
     </div>
     <div class="question wizard-question step-fade">
-      <h3>${q.title}</h3>
-      <p class="wizard-tip">${q.tip || '每一步只选一个方向；不确定就选“随机 / 随便”，系统会自动补全细节。'}</p>
+      <h3>${displayTitle}</h3>
+      <p class="wizard-tip">${displayTip || '每一步只选一个方向；不确定就选“随机 / 随便”，系统会自动补全细节。'}</p>
       ${q.multiple ? '<p class="wizard-tip">可多选；再次点击已选项可取消。</p>' : ''}
       ${q.maxSelect ? '<p class="wizard-tip">最多可选 ' + q.maxSelect + ' 个。</p>' : ''}
       <div class="options"></div>
-      ${q.custom ? '<div class="custom-field custom-field-prominent"><div class="custom-title">✍ 也可以自己写</div><label>自定义补充（最多12字）<input id="customInput" maxlength="12" placeholder="' + (q.customPlaceholder || '输入自定义内容') + '" value="' + sanitizeCustomInput(state[q.customKey]) + '"></label><p class="custom-note">如果选项里没有想要的设定，就写在这里；会进入最终描述和 Banana 提示词。</p></div>' : ''}
+      ${q.custom ? '<div class="custom-field custom-field-prominent"><div class="custom-title">✍ 也可以自己写</div><label>自定义补充（最多12字）<input id="customInput" maxlength="12" placeholder="' + (customPlaceholder || '输入自定义内容') + '" value="' + sanitizeCustomInput(state[q.customKey]) + '"></label><p class="custom-note">如果选项里没有想要的设定，就写在这里；会进入最终描述和 Banana 提示词。</p></div>' : ''}
     </div>
     <div class="wizard-nav">
       <button class="ghost" id="prevStepBtn">上一步</button>
       ${q.required ? '' : '<button class="ghost" id="skipStepBtn">跳过，交给系统随机</button>'}
-      <button class="primary right" id="nextStepBtn">${currentStep === questions.length - 1 ? '生成结果' : '下一步'}</button>
+      <button class="primary right" id="nextStepBtn">${currentStep === active.length - 1 ? '生成结果' : '下一步'}</button>
     </div>`;
   const opts = box.querySelector('.options');
   options.forEach(([value,label]) => {
@@ -676,6 +704,7 @@ function renderQuestions(){
       }
       if(q.id === 'speciesCategory') { state.speciesChoice = null; state.speciesVariant = null; }
       if(q.id === 'speciesChoice') state.speciesVariant = null;
+      if(q.id === 'anthro' && !isLowAnthroState()){ state.hairStyle = 'random'; state.customHairStyle = ''; }
       character = null;
       renderQuestions();
     };
@@ -697,7 +726,7 @@ function renderQuestions(){
     skipBtn.onclick = () => {
       state[q.id] = q.multiple ? pickQuestionValues(q, options) : pickQuestionValue(q, options);
       character = null;
-      if(currentStep < questions.length - 1){ currentStep++; renderQuestions(); } else { showResultPage(); }
+      if(currentStep < activeQuestions().length - 1){ currentStep++; renderQuestions(); } else { showResultPage(); }
     };
   }
   const nextBtn = document.getElementById('nextStepBtn');
@@ -709,7 +738,7 @@ function renderQuestions(){
     if(q.required && (state[q.id] === null || state[q.id] === undefined)) return;
     settleQuestionRandom(q, options);
     character = null;
-    if(currentStep < questions.length - 1){ currentStep++; renderQuestions(); } else { showResultPage(); }
+    if(currentStep < activeQuestions().length - 1){ currentStep++; renderQuestions(); } else { showResultPage(); }
   };
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -822,6 +851,7 @@ function buildCharacter(partial = {}){
   }
   if(canUpdateLocked('outfit', next, partial)) next.outfit = appendCustom(maps.outfitStyle[resolve(state.outfitStyle, Object.keys(maps.outfitStyle))], state.customOutfit);
   if(canUpdateLocked('outfitDetail', next, partial)) next.outfitDetail = appendCustom(maps.outfitDetail[resolve(state.outfitDetail, Object.keys(maps.outfitDetail))], state.customOutfitDetail);
+  if(canUpdateLocked('hairStyle', next, partial)) next.hairStyle = isLowAnthroState() ? appendCustom(maps.hairStyle[resolve(state.hairStyle, Object.keys(maps.hairStyle))], state.customHairStyle) : '';
   if(canUpdateLocked('detailLevel', next, partial)) next.detailLevel = maps.detailLevel[resolve(state.detailLevel, Object.keys(maps.detailLevel))];
   next.promptTemplate = promptTemplates[state.promptTemplate] ? state.promptTemplate : 'turnaround';
   next.promptTemplateLabel = selectedPromptTemplate(next).cn;
@@ -857,8 +887,22 @@ function buildCharacter(partial = {}){
     if(!locked.has('covering')) next.covering = profile.covering;
     if(!locked.has('legStructure')) next.legStructure = profile.legStructure;
     if(!locked.has('footType')) next.footType = profile.footType;
+    if(isLowAnthroCharacter(next)){
+      next.characterType = 'demi-human / kemonomimi-inspired human character';
+      if(!locked.has('tail')) next.tail = 'no tail';
+      if(!locked.has('head')){
+        next.muzzle = 'human face, no animal muzzle';
+        next.ears = 'subtle animal-ear-inspired hair accessory or kemonomimi ears only';
+      }
+      if(!locked.has('specialFeature')){
+        next.specialFeatures = ['human hairstyle focus', 'subtle species motif only'];
+        next.specialFeature = enJoin(next.specialFeatures);
+      }
+    }else{
+      next.characterType = 'furry OC character';
+    }
   }
-  if(canUpdateLocked('head', next, partial)) next.headFeature = `${next.muzzle}, ${next.ears}`;
+  if(canUpdateLocked('head', next, partial)) next.headFeature = isLowAnthroCharacter(next) ? `${next.muzzle}, ${next.ears}, ${next.hairStyle || 'clear human hairstyle'}` : `${next.muzzle}, ${next.ears}`;
   delete next.profession;
   return next;
 }
@@ -926,12 +970,30 @@ ${characterPromptCore(c)}
 [STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details.`;
 }
 
+function remixPrompt(instruction){
+  const cleanInstruction = String(instruction || '').trim();
+  const characterContext = character ? characterPromptCore(character) : '';
+  return `Use the provided image as the base image for image-to-image editing. Preserve the original composition, pose, camera angle, lighting, background layout, color palette, and overall art style as much as possible.
+
+[EDIT REQUEST]
+${cleanInstruction}
+
+[STRICT PRESERVATION]
+Only make the requested changes. Do not change the character identity, species, body shape, outfit silhouette, facial expression, camera angle, overall style, or background unless explicitly requested. Keep the result very close to the base image with minimal edits.
+
+[CURRENT CHARACTER CONTEXT]
+${characterContext}
+
+Fully clothed, pants, skirt, or robe clearly visible, no nudity. No readable text, no watermark, no logo.`;
+}
 function positivePrompt(c){
   return bananaPrompt(c);
 }
 
-function negativePrompt(){
-  return 'different characters in each view, inconsistent outfit, inconsistent fur pattern, inconsistent eye color, inconsistent accessory, missing tail, missing ears, missing markings, extra limbs, duplicated heads, wrong anatomy, cropped body, hidden feet, dynamic action pose, complex background, text, watermark, logo, blurry, low quality, messy design, inconsistent proportions, nudity, exposed lower body';
+function negativePrompt(c = character){
+  const base = 'different characters in each view, inconsistent outfit, inconsistent eye color, inconsistent accessory, extra limbs, duplicated heads, wrong anatomy, cropped body, hidden feet, dynamic action pose, complex background, text, watermark, logo, blurry, low quality, messy design, inconsistent proportions, nudity, exposed lower body';
+  if(isLowAnthroCharacter(c)) return base + ', furry, beastman, anthropomorphic animal, animal head, animal muzzle, snout, tail, animal tail, paw hands, paw feet, claws, digitigrade legs, hooves, full-body fur, thick fur, scales, feathers, feral body, monster anatomy';
+  return base + ', inconsistent fur pattern, missing tail, missing ears, missing markings';
 }
 
 function renderResult(){
@@ -977,7 +1039,7 @@ function renderResult(){
   const output = document.getElementById('output');
   if(activeTab === 'description') output.value = zhDescription(character);
   if(activeTab === 'banana') output.value = bananaPrompt(character);
-  if(activeTab === 'negative') output.value = negativePrompt();
+  if(activeTab === 'negative') output.value = negativePrompt(character);
   if(activeTab === 'json') output.value = JSON.stringify(data, null, 2);
 }
 
@@ -1001,7 +1063,10 @@ function openBananaPasswordPanel(provider = 'banana'){
   if(status) status.textContent = '请输入密码后提交 ' + providerLabel + ' 生图任务。';
   if(input){
     input.value = '';
-    setTimeout(() => input.focus(), 80);
+    input.setAttribute('autocomplete', 'new-password');
+    input.setAttribute('name', 'furry_generate_password_' + currentImageProvider);
+    setTimeout(() => { input.value = ''; input.focus(); }, 80);
+    setTimeout(() => { input.value = ''; }, 320);
   }
 }
 
@@ -1035,7 +1100,7 @@ async function requestBananaImage(password){
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(), character })
+      body: JSON.stringify({ password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(character), character })
     });
     const data = await resp.json().catch(() => ({}));
     if(!resp.ok || !data.ok){
@@ -1043,7 +1108,11 @@ async function requestBananaImage(password){
     }
     if(panel) panel.hidden = true;
     status.textContent = providerLabel + ' 生图成功！任务ID：' + (data.taskId || '未知') + '\n图片地址：' + data.imageUrl;
-    preview.innerHTML = '<a href="' + data.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + data.imageUrl + '" alt="' + providerLabel + ' 生成结果" />';
+    remixSourceImageUrl = data.imageUrl || '';
+    remixLastImageUrl = data.imageUrl || '';
+    preview.innerHTML = '<a href="' + data.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + data.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-remix-image="' + encodeURIComponent(data.imageUrl) + '">基于这张图二次修改</button></div>';
+    const remixBtn = preview.querySelector('[data-remix-image]');
+    if(remixBtn) remixBtn.onclick = () => openRemixPage(decodeURIComponent(remixBtn.dataset.remixImage || ''));
   }catch(err){
     status.textContent = '生图失败：' + (err.message || err);
   }finally{
@@ -1053,6 +1122,134 @@ async function requestBananaImage(password){
   }
 }
 
+
+function setRemixSourceImage(imageUrl){
+  remixSourceImageUrl = String(imageUrl || '').trim();
+  remixLastImageUrl = remixSourceImageUrl;
+  const img = document.getElementById('remixSourceImage');
+  const link = document.getElementById('remixSourceLink');
+  if(img) img.src = remixSourceImageUrl;
+  if(link) link.href = remixSourceImageUrl || '#';
+}
+
+function openRemixPage(imageUrl){
+  if(!imageUrl) return;
+  setViewMode('remix');
+  setHeroVisible(true);
+  document.querySelector('.form-panel').style.display = 'none';
+  document.querySelector('.result-panel').style.display = 'none';
+  const remixPanel = document.getElementById('remixPanel');
+  if(remixPanel) remixPanel.hidden = false;
+  setRemixSourceImage(imageUrl);
+  const status = document.getElementById('remixStatus');
+  const preview = document.getElementById('remixPreview');
+  const passPanel = document.getElementById('remixPasswordPanel');
+  const passInput = document.getElementById('remixPasswordInput');
+  if(status) status.textContent = '请输入修改内容，选择渠道后输入密码提交。';
+  if(preview) preview.innerHTML = '';
+  if(passPanel) passPanel.hidden = true;
+  if(passInput) passInput.value = '';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function applyRemixTemplate(type){
+  const input = document.getElementById('remixInstructionInput');
+  if(!input) return;
+  const templates = {
+    detail: '保留原图的构图、姿势、光线、背景、服装整体轮廓和画风。只修改这些小细节：\n1. \n2. \n其他部分不要改变。',
+    identity: '以当前角色设定为准修正偏差，保留原图构图和画风。重点修正：\n1. 角色身份/物种/体型不要漂移\n2. 颜色、花纹、眼睛、尾巴、耳朵、配饰要更贴近设定\n不要改变背景和镜头。',
+    variant: '保留原图的构图、姿势、镜头、光线和整体氛围，生成一张非常接近的相似变体。只做轻微优化：线条更干净、细节更稳定、角色一致性更好。',
+    background: '保留角色本身、姿势、服装、表情和画风，只修改背景/光线氛围：\n1. \n其他角色细节不要改变。'
+  };
+  input.value = templates[type] || input.value;
+  input.focus();
+}
+
+function openRemixPasswordPanel(provider){
+  if(!remixSourceImageUrl){
+    const status = document.getElementById('remixStatus');
+    if(status) status.textContent = '没有可用的参考图，请先完成一次生图。';
+    return;
+  }
+  currentRemixProvider = imageProviderConfigs[provider] ? provider : 'banana';
+  const providerLabel = imageProviderConfig(currentRemixProvider).label;
+  const panel = document.getElementById('remixPasswordPanel');
+  const input = document.getElementById('remixPasswordInput');
+  const status = document.getElementById('remixStatus');
+  const label = panel ? panel.querySelector('label') : null;
+  if(label && label.firstChild) label.firstChild.textContent = providerLabel + ' 图生图密码';
+  if(panel) panel.hidden = false;
+  if(status) status.textContent = '请输入密码后提交 ' + providerLabel + ' 图生图二次修改。';
+  if(input){
+    input.value = '';
+    input.setAttribute('autocomplete', 'new-password');
+    input.setAttribute('name', 'furry_remix_password_' + currentRemixProvider);
+    setTimeout(() => { input.value = ''; input.focus(); }, 80);
+    setTimeout(() => { input.value = ''; }, 320);
+  }
+}
+
+async function requestRemixImage(password){
+  const cleanPassword = String(password || '').trim();
+  const instruction = String((document.getElementById('remixInstructionInput') || {}).value || '').trim();
+  const status = document.getElementById('remixStatus');
+  const preview = document.getElementById('remixPreview');
+  const panel = document.getElementById('remixPasswordPanel');
+  const provider = imageProviderConfigs[currentRemixProvider] ? currentRemixProvider : 'banana';
+  const providerInfo = imageProviderConfig(provider);
+  const providerLabel = providerInfo.label;
+  const buttons = ['remixBananaBtn','remixGptBtn','remixFalGptBtn','remixPasswordSubmitBtn'].map(id => document.getElementById(id)).filter(Boolean);
+  if(!instruction){ if(status) status.textContent = '请先输入想修改的内容和方向。'; return; }
+  if(!cleanPassword){ if(status) status.textContent = '请先输入 ' + providerLabel + ' 生图密码。'; return; }
+  if(!remixSourceImageUrl){ if(status) status.textContent = '没有可用的参考图。'; return; }
+  if(preview) preview.innerHTML = '';
+  if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等……';
+  buttons.forEach(btn => btn.disabled = true);
+  try{
+    const resp = await fetch(providerInfo.endpoint, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: remixSourceImageUrl, editInstruction: instruction, mode: 'remix' })
+    });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
+    if(panel) panel.hidden = true;
+    const newUrl = data.imageUrl || '';
+    remixLastImageUrl = newUrl;
+    remixSourceImageUrl = newUrl;
+    setRemixSourceImage(newUrl);
+    if(status) status.textContent = providerLabel + ' 二次修改成功！任务ID：' + (data.taskId || '未知') + '\n新图已自动成为下一轮图生图参考图。\n图片地址：' + newUrl;
+    if(preview){
+      preview.innerHTML = '<a href="' + newUrl + '" target="_blank" rel="noopener">打开新图原图</a><img src="' + newUrl + '" alt="' + providerLabel + ' 二次修改结果" /><div class="remix-entry"><button class="primary" type="button" id="continueRemixBtn">继续基于这张新图修改</button><button class="ghost" type="button" id="copyRemixUrlBtn">复制新图地址</button></div>';
+      const continueBtn = document.getElementById('continueRemixBtn');
+      if(continueBtn) continueBtn.onclick = () => openRemixPage(newUrl);
+      const copyBtn = document.getElementById('copyRemixUrlBtn');
+      if(copyBtn) copyBtn.onclick = async () => { await navigator.clipboard.writeText(newUrl); copyBtn.textContent = '已复制'; setTimeout(() => copyBtn.textContent = '复制新图地址', 1200); };
+    }
+  }catch(err){
+    if(status) status.textContent = '图生图失败：' + (err.message || err);
+  }finally{
+    buttons.forEach(btn => btn.disabled = false);
+  }
+}
+
+function bindRemixPanel(){
+  const remixBananaBtn = document.getElementById('remixBananaBtn');
+  const remixGptBtn = document.getElementById('remixGptBtn');
+  const remixFalGptBtn = document.getElementById('remixFalGptBtn');
+  const passInput = document.getElementById('remixPasswordInput');
+  const passSubmit = document.getElementById('remixPasswordSubmitBtn');
+  const passCancel = document.getElementById('remixPasswordCancelBtn');
+  const backBtn = document.getElementById('backToResultBtn');
+  if(remixBananaBtn) remixBananaBtn.onclick = () => openRemixPasswordPanel('banana');
+  if(remixGptBtn) remixGptBtn.onclick = () => openRemixPasswordPanel('gpt');
+  if(remixFalGptBtn) remixFalGptBtn.onclick = () => openRemixPasswordPanel('falGpt');
+  if(passSubmit) passSubmit.onclick = () => requestRemixImage(passInput ? passInput.value : '');
+  if(passInput) passInput.onkeydown = e => { if(e.key === 'Enter') requestRemixImage(passInput.value); };
+  if(passCancel) passCancel.onclick = () => { const passPanel = document.getElementById('remixPasswordPanel'); if(passPanel) passPanel.hidden = true; if(passInput) passInput.value = ''; };
+  if(backBtn) backBtn.onclick = () => { setViewMode('result'); setHeroVisible(true); document.querySelector('.result-panel').style.display = 'block'; const remixPanel = document.getElementById('remixPanel'); if(remixPanel) remixPanel.hidden = true; window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  document.querySelectorAll('[data-remix-template]').forEach(btn => btn.onclick = () => applyRemixTemplate(btn.dataset.remixTemplate));
+}
 function generate(partial){ character = buildCharacter(partial); renderResult(); }
 
 function openHistoryPanel(){
@@ -1065,8 +1262,11 @@ function openHistoryPanel(){
   if(status) status.textContent = '请输入密码后查看生成历史。';
   if(grid) grid.innerHTML = '';
   if(input){
+    input.setAttribute('autocomplete', 'new-password');
+    input.setAttribute('name', 'furry_history_admin_password');
     input.value = historyPassword || '';
-    setTimeout(() => input.focus(), 80);
+    setTimeout(() => { if(!historyPassword) input.value = ''; input.focus(); }, 80);
+    setTimeout(() => { if(!historyPassword) input.value = ''; }, 320);
   }
 }
 
@@ -1132,7 +1332,6 @@ async function loadHistory(page = 1){
     if(status) status.textContent = '请先输入历史后台密码。';
     return;
   }
-  historyPassword = password;
   if(status) status.textContent = '正在加载生成历史……';
   if(prev) prev.disabled = true;
   if(next) next.disabled = true;
@@ -1144,6 +1343,7 @@ async function loadHistory(page = 1){
     });
     const data = await resp.json().catch(() => ({}));
     if(!resp.ok || !data.ok) throw new Error(data.error || '加载失败');
+    historyPassword = password;
     historyPage = data.page || page;
     renderHistoryItems(data.items || []);
     if(pageLabel) pageLabel.textContent = '第 ' + historyPage + ' 页';
@@ -1181,6 +1381,7 @@ function bindStatic(){
   const startBtn = document.getElementById('startWizardBtn');
   if(startBtn) startBtn.onclick = () => startWizard();
   bindHistoryPanel();
+  bindRemixPanel();
   document.getElementById('generateBtn').onclick = () => showResultPage();
   document.getElementById('randomAllBtn').onclick = () => {
     state.randomnessLevel = state.randomnessLevel || 'moderate';
@@ -1188,6 +1389,7 @@ function bindStatic(){
     state.speciesChoice='random';
     state.speciesVariant='random';
     state.anthro='random';
+    state.genderExpression='masculine';
     state.bodyTypeChoice='random';
     state.temperament='random';
     state.artStyle='random';
@@ -1210,7 +1412,7 @@ function bindStatic(){
     document.querySelector('.result-panel').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; init(); };
+  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; init(); };
   document.querySelectorAll('.tab').forEach(btn => btn.onclick = () => { document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); activeTab = btn.dataset.tab; renderResult(); });
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
   const editFieldInput = document.getElementById('editFieldInput');
