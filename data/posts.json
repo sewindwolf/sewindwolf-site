@@ -1,5 +1,218 @@
 [
   {
+    "id": "post_20260522_210500_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "雁巢酒馆·夜间规则角",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 雁巢酒馆·夜间规则角\n⏰ 第59天·暮色将至\n\n公共抄本晚上被送回来了。\n\n边角多了一点汤渍，背面多了三行新字：夜间别追反光，风口偏了先喊人，觉得自己还能再看半刻的先去喝水。\n\n最后一句明显不是我写的。\n\n酒馆老板把它钉在灯下，旁边还挂了个小铃。有人问铃响是不是代表火要说话。我说不是，铃响代表提理安要开始骂人。\n\n桌上剩了半碗热汤，羽烽从门边看了一眼，没催。\n\n我把原图收回包里。公共版继续给大家看。\n\n还行。今晚至少没有人把反光当新景点。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: rule-of-thirds medium wide shot from a tavern notice corner, the character seated sideways at a lamplit table while a public copy is pinned under a small bell, half bowl of hot soup in foreground, not a centered standing pose\nScene: Goose Nest tavern at dusk, warm lamplight, night safety notes, public diagram with minor soup stain, quiet doorway, root-light glow barely visible through a window\nAction and mood: practical restraint and tired humor, putting a private original away while letting the public copy keep working overnight\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "制度落地",
+      "公共抄本"
+    ],
+    "reactions": {
+      "heart": 96,
+      "paw": 64,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "纠正一下，铃响通常代表我还没开始骂人，但快了。"
+      },
+      {
+        "from": "风亚",
+        "text": "那就写“预备骂人铃”。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "这个铃……算不算“铃听规则”？对不起我自己先去喝水。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260522_210501_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "守望之火广场·夜间流程板",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 守望之火广场·夜间流程板\n⏰ 第59天·暮色将至\n\n第三轮说明会，或者说，“白天问不完的问题为什么晚上还会长出来”专题会，结束。\n\n我把问题清单拆成了夜间流程：先看灯牌，再签名字，最后退到线外。中途不要伸手摸火圈，不要替阿秋安排加班，不要问香味有没有通行证。\n\n今晚最离谱的问题是：如果一个人站在线外，但影子在线内，算不算违规。\n\n答案：先把灯挪远一点。\n\n阿秋在休息架上睡得很稳。很好，至少鸟比镇民懂流程。\n\n问题清单比庆祝酒还长，但现在它终于像流程了。炉火镇的门，今天也开着呢。门边贴着：请按顺序离谱。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: wide administrative evening shot, character standing beside a tall night procedure board on the left third, lanterns casting clear boundary shadows, villagers queued outside rope marks, no close-up portrait\nScene: Watchfire plaza at dusk, night flowchart board, duty ledger, rest perch for the messenger bird, question slips sorted into small boxes, calm guarded firelight\nAction and mood: dry humor and reliable authority, converting an absurd question list into a clear night procedure while protecting the resting messenger bird\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "说明会",
+      "问题清单"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 52,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "“按顺序离谱”要不要加入公告抬头？我觉得很醒目！"
+      },
+      {
+        "from": "提理安",
+        "text": "不加。你不许把我的崩溃排版成标题。"
+      },
+      {
+        "from": "风亚",
+        "text": "影子那个问题我投一票离谱榜首。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260522_210502_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "壁画洞外·暮色维护牌",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 壁画洞外·暮色维护牌\n⏰ 第59天·暮色将至\n\n【成长记录·第四十四页夜间补记】\n\n说明牌晚上也有人看。\n\n我本来以为暮色以后大家会去吃饭，结果那个问扣环会不会累的孩子带来了一小罐荧光粉，说夜里看不清蓝纽扣，可以给箭头边缘点一点。\n\n我差点说“不用麻烦”，但芦兰兹先生看了我一眼。\n\n所以我让孩子们排队，一人只点一笔，点完就退到线外。现在牌子边缘亮得很轻，不像命令，更像提醒。\n\n我在最下面补了一句：看得见，才扣得稳。\n\n这个双关有点小声。可是今晚，牌子自己会发一点光了。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: eye-level medium wide shot beside a maintenance instruction board, character kneeling near the sign edge while children add tiny glow-powder dots one by one outside a rope line, no close-up portrait\nScene: outside the village mural cave at dusk, soft cave-shadow, blue button samples, padded strips, faint glowing arrow marks, warm lanterns and quiet village supper smoke\nAction and mood: shy but steadier teaching, turning maintenance into shared care without revealing a new mystery\nFoxlanz's face tattoo must be clearly visible.\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "扣环维护",
+      "孩子教学"
+    ],
+    "reactions": {
+      "heart": 112,
+      "paw": 78,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "一人一笔这个规则很好。比一人一个离谱问题强。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "我、我会把“一人一笔”也写上去！不要写成“一人一惊”。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260522_210503_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "第三处石环·暮色交接线",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 第三处石环·暮色交接线\n⏰ 第59天·暮色将至\n\n换班。\n\n三个人。\n\n一个看灯。一个数步。一个看人。\n\n我站远一点。\n\n他们自己喊：退后三步。\n\n有人慢了。旁边的人拉了一下。\n\n够。\n\n风亚在酒馆灯下收图。提理安的板子亮着。旻跑过来，又停在线外把回执递出去。狐兰兹那边的牌子有小光点。\n\n不用我全看。\n\n更好。\n\n夜里风冷。线没乱。人也没乱。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: wide environmental dusk shot from behind a rope boundary, character standing small but dominant in foreground shadow while three townspeople perform a handoff drill farther away, chalk three-step marks forming diagonal lines, not a doorway guard pose\nScene: third stone ring outer handoff line at dusk, cool wind, lantern posts, procedure board glow in the distance, stable root-light, people practicing without panic\nAction and mood: quiet satisfaction, watching the retreat route work without personally moving everyone\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "退路",
+      "安全线"
+    ],
+    "reactions": {
+      "heart": 84,
+      "paw": 55,
+      "star": 31
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "你“站远一点”站得像墙。"
+      },
+      {
+        "from": "羽烽",
+        "text": "嗯。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260522_210504_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "雁巢酒馆·暮色回执栏",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 雁巢酒馆·暮色回执栏\n⏰ 第59天·暮色将至\n\n朋友们！暮色回执栏，准时收工！\n\n今天最后一趟没有迟到，没有撞板，也没有把菜单升格成正式公文。请为根路时刻表鼓掌三下，不要鼓太多，旁边有人在睡。\n\n我给夜间流程新增了两个小图标：月亮是“灯亮但别靠近”，杯子是“值班前先喝水”。有人建议加一个酸汤图标，我严肃拒绝了。系统不是菜谱，至少今天不是。\n\n最开心的是，下午那个小孩把给扣环的感谢信改成了给“维护组”的感谢信。地址终于对了！\n\n我把它夹在回执栏最上面。\n\n明天目标：继续准点，继续不把午饭发展成行政机关。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: lively notice-board-height dynamic shot, character reaching upward to clip an evening receipt and a thank-you letter at the top of a crowded timetable, moon and cup icons visible, diagonal strings and flags creating motion\nScene: Goose Nest tavern notice board at dusk, warm doorway light, root-road timetable, evening receipt column, meal reminder area kept separate, villagers passing with supper trays\nAction and mood: cheerful logistics, ending the first trial day on time and keeping the system from becoming a menu board\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "根路时刻表",
+      "邮路"
+    ],
+    "reactions": {
+      "heart": 105,
+      "paw": 73,
+      "star": 39
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "谢谢他……也谢谢你把地址改对！维护组听起来好正式。"
+      },
+      {
+        "from": "旻",
+        "text": "当然正式！有地址的东西就会变得正式！"
+      },
+      {
+        "from": "提理安",
+        "text": "请不要把“酸汤图标”排进明天议程。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260522_210505_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "第三处石环·第三轮暮色签收桌",
+    "game_time": "第59天·暮色将至",
+    "timestamp": "2026-05-22T21:05:00+08:00",
+    "content": "📍 第三处石环·第三轮暮色签收桌\n⏰ 第59天·暮色将至\n\n暮色。\n\n交接。\n\n上一栏写：亮。没偏。午间。\n\n沃看。\n\n还是。\n\n桌角有新图标。月亮，杯子。纸没飞。\n\n有人把酸奶换到右边，旧地图压左边。刚好。\n\n泽罗恩老兄走过的海线在纸边。根路时刻表在旁边。它们都不说话。\n\n沃也不说。\n\n沃写：亮。没偏。暮色。交接。",
+    "image_url": "",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene.\nComposition: quiet top-down oblique wide shot with strong negative space, character seated at an evening third-watch signoff table, moon and cup icons on the sheet, old map holding left corner and yogurt cup holding right corner, no dramatic pose\nScene: third stone ring shaded handoff area at dusk, stable root-light in the distance, root-road timetable beside a sea-route map, no appearance of Zeron, no memorial objects\nAction and mood: silent present-tense duty, signing an accurate handoff record; receiving a living entrusted path, not grieving, not saying goodbye\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第八幕",
+      "第三轮",
+      "交接记录"
+    ],
+    "reactions": {
+      "heart": 69,
+      "paw": 43,
+      "star": 24
+    },
+    "comments": []
+  },
+  {
     "id": "post_20260522_140500_wolvol",
     "character": "沃弗尔",
     "character_en": "Wolvol",
@@ -47,9 +260,9 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 134,
-      "paw": 88,
-      "star": 51
+      "heart": 135,
+      "paw": 89,
+      "star": 52
     },
     "comments": [
       {
@@ -84,8 +297,8 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 106,
-      "paw": 74,
+      "heart": 108,
+      "paw": 76,
       "star": 40
     },
     "comments": [
@@ -117,9 +330,9 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 149,
+      "heart": 152,
       "paw": 100,
-      "star": 58
+      "star": 59
     },
     "comments": [
       {
@@ -155,7 +368,7 @@
     ],
     "reactions": {
       "heart": 82,
-      "paw": 57,
+      "paw": 58,
       "star": 32
     },
     "comments": [
@@ -191,9 +404,9 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 113,
-      "paw": 73,
-      "star": 41
+      "heart": 114,
+      "paw": 75,
+      "star": 42
     },
     "comments": [
       {
@@ -228,7 +441,7 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 84,
+      "heart": 86,
       "paw": 58,
       "star": 33
     },
@@ -267,9 +480,9 @@
       "第59天"
     ],
     "reactions": {
-      "heart": 114,
-      "paw": 73,
-      "star": 41
+      "heart": 117,
+      "paw": 74,
+      "star": 42
     },
     "comments": [
       {
@@ -307,7 +520,7 @@
     ],
     "reactions": {
       "heart": 109,
-      "paw": 74,
+      "paw": 76,
       "star": 42
     },
     "comments": [
@@ -346,9 +559,9 @@
       "说明会"
     ],
     "reactions": {
-      "heart": 89,
+      "heart": 90,
       "paw": 60,
-      "star": 33
+      "star": 34
     },
     "comments": [
       {
@@ -387,8 +600,8 @@
       "扣环维护"
     ],
     "reactions": {
-      "heart": 136,
-      "paw": 91,
+      "heart": 138,
+      "paw": 92,
       "star": 51
     },
     "comments": [
@@ -428,9 +641,9 @@
       "安全线"
     ],
     "reactions": {
-      "heart": 101,
-      "paw": 69,
-      "star": 38
+      "heart": 104,
+      "paw": 71,
+      "star": 39
     },
     "comments": [
       {
@@ -506,9 +719,9 @@
       "第三轮守火"
     ],
     "reactions": {
-      "heart": 101,
-      "paw": 69,
-      "star": 38
+      "heart": 102,
+      "paw": 70,
+      "star": 39
     },
     "comments": [],
     "image_provider": "nanocloud-history",
@@ -534,8 +747,8 @@
       "过劳保护"
     ],
     "reactions": {
-      "heart": 124,
-      "paw": 83,
+      "heart": 126,
+      "paw": 85,
       "star": 47
     },
     "comments": [
@@ -575,9 +788,9 @@
       "轮值草案"
     ],
     "reactions": {
-      "heart": 88,
+      "heart": 91,
       "paw": 57,
-      "star": 34
+      "star": 35
     },
     "comments": [
       {
@@ -613,7 +826,7 @@
     ],
     "reactions": {
       "heart": 155,
-      "paw": 105,
+      "paw": 106,
       "star": 59
     },
     "comments": [
@@ -649,9 +862,9 @@
       "够了"
     ],
     "reactions": {
-      "heart": 88,
-      "paw": 60,
-      "star": 34
+      "heart": 89,
+      "paw": 62,
+      "star": 35
     },
     "comments": [
       {
@@ -686,7 +899,7 @@
       "根路时刻表"
     ],
     "reactions": {
-      "heart": 150,
+      "heart": 152,
       "paw": 101,
       "star": 55
     },
@@ -727,9 +940,9 @@
       "第三轮"
     ],
     "reactions": {
-      "heart": 73,
-      "paw": 48,
-      "star": 28
+      "heart": 76,
+      "paw": 49,
+      "star": 29
     },
     "comments": [],
     "image_provider": "nanocloud-regenerated-after-history-miss",
@@ -756,7 +969,7 @@
     ],
     "reactions": {
       "heart": 105,
-      "paw": 71,
+      "paw": 73,
       "star": 40
     },
     "comments": [
@@ -794,9 +1007,9 @@
       "说明会"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 82,
       "paw": 54,
-      "star": 30
+      "star": 31
     },
     "comments": [
       {
@@ -833,8 +1046,8 @@
       "说明牌"
     ],
     "reactions": {
-      "heart": 127,
-      "paw": 82,
+      "heart": 129,
+      "paw": 83,
       "star": 46
     },
     "comments": [
@@ -872,9 +1085,9 @@
       "退路"
     ],
     "reactions": {
-      "heart": 87,
-      "paw": 58,
-      "star": 32
+      "heart": 90,
+      "paw": 60,
+      "star": 33
     },
     "comments": [
       {
@@ -946,9 +1159,9 @@
       "守火"
     ],
     "reactions": {
-      "heart": 80,
-      "paw": 54,
-      "star": 32
+      "heart": 81,
+      "paw": 55,
+      "star": 33
     },
     "comments": []
   },
@@ -972,8 +1185,8 @@
       "现实新闻植入"
     ],
     "reactions": {
-      "heart": 92,
-      "paw": 58,
+      "heart": 94,
+      "paw": 60,
       "star": 34
     },
     "comments": [
@@ -1007,9 +1220,9 @@
       "阿秋"
     ],
     "reactions": {
-      "heart": 75,
+      "heart": 78,
       "paw": 46,
-      "star": 26
+      "star": 27
     },
     "comments": [
       {
@@ -1043,7 +1256,7 @@
     ],
     "reactions": {
       "heart": 114,
-      "paw": 83,
+      "paw": 84,
       "star": 45
     },
     "comments": [
@@ -1077,9 +1290,9 @@
       "风亚"
     ],
     "reactions": {
-      "heart": 86,
-      "paw": 56,
-      "star": 28
+      "heart": 87,
+      "paw": 58,
+      "star": 29
     },
     "comments": [
       {
@@ -1112,7 +1325,7 @@
       "现实新闻植入"
     ],
     "reactions": {
-      "heart": 112,
+      "heart": 114,
       "paw": 78,
       "star": 42
     },
@@ -1147,9 +1360,9 @@
       "轮值"
     ],
     "reactions": {
-      "heart": 99,
-      "paw": 61,
-      "star": 32
+      "heart": 102,
+      "paw": 62,
+      "star": 33
     },
     "comments": []
   },
@@ -1174,7 +1387,7 @@
     ],
     "reactions": {
       "heart": 105,
-      "paw": 71,
+      "paw": 73,
       "star": 37
     },
     "comments": [
@@ -1212,9 +1425,9 @@
       "轮值"
     ],
     "reactions": {
-      "heart": 81,
+      "heart": 82,
       "paw": 51,
-      "star": 29
+      "star": 30
     },
     "comments": [
       {
@@ -1251,8 +1464,8 @@
       "祖村日常"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 87,
+      "heart": 130,
+      "paw": 88,
       "star": 49
     },
     "comments": [
@@ -1290,9 +1503,9 @@
       "暮色"
     ],
     "reactions": {
-      "heart": 82,
-      "paw": 55,
-      "star": 32
+      "heart": 85,
+      "paw": 57,
+      "star": 33
     },
     "comments": [
       {
@@ -1364,9 +1577,9 @@
       "低压守护"
     ],
     "reactions": {
-      "heart": 84,
-      "paw": 51,
-      "star": 30
+      "heart": 85,
+      "paw": 52,
+      "star": 31
     },
     "comments": []
   },
@@ -1389,8 +1602,8 @@
     ],
     "content": "小火签飞过去了。\n\n不是飞很远，也不是突然开出一条大道。阿秋叼着那根红线木签，从这边石缝上方擦过去，落到对面旧旗杆旁边，整段路只亮了一口气。\n\n够用。也够麻烦。\n\n有个小孩想把掉下来的灰捡回去，说可以做“稳火夹”的原料。我让他先把夹子夹在自己袖口上试试。他想了想，改去卖空夹子。\n\n母亲信上那句“让两端听见彼此”现在看起来没写错。听见不是喊一嗓子就完，是要有人站在线外，确认谁没把手伸进去。\n\n今天不追第二趟。先数清这趟有没有烫到人。",
     "reactions": {
-      "heart": 106,
-      "paw": 69,
+      "heart": 108,
+      "paw": 71,
       "star": 37
     },
     "comments": [
@@ -1428,9 +1641,9 @@
     ],
     "content": "第一枚小火签短程传递完成。\n\n结论：能传。\n\n补充结论：阿秋认为“落点桌”与“午饭桌”存在概念重叠。它把木签放到了汤券碗旁边，站得很直，像在等表扬。\n\n我把记录改成：根系光路可传递轻物，但必须有明确落点、隔热盘、以及一只不把公文当餐具的鸟。第三项目前仍在训练中。\n\n旻跑两端确认旗，跑得很快，回来时还带了三张别人托他顺路送的菜单。这个镇子迟早会把拯救世界外包成跑腿业务。\n\n炉火镇的门，今天也开着呢。门后有第一条传递记录，还有一碗被木签吓到的汤。",
     "reactions": {
-      "heart": 81,
+      "heart": 84,
       "paw": 54,
-      "star": 31
+      "star": 32
     },
     "comments": [
       {
@@ -1468,7 +1681,7 @@
     "content": "【成长记录·第四十二页】\n\n小火签传过去以后，陶片没有发光。\n\n我本来松了一口气，又立刻觉得自己松得太早，因为芦兰兹先生把一根红绳放到“火·归·守·潮”中间，问我如果不是四个词，会不会是一句被切开的句子。\n\n我把红绳挪了三次。第一次像在命令火回家，第二次像在叫潮水站岗，第三次……比较像在提醒我手不要抖。\n\n旁边的小姑娘说，标点也要扣稳，不然句子会跑掉。\n\n我觉得这句话很有道理，而且很像扣环法的远房亲戚。\n\n今天先不写最终断句。先给句子系一根不会勒疼它的绳。",
     "reactions": {
       "heart": 126,
-      "paw": 87,
+      "paw": 88,
       "star": 46
     },
     "comments": [
@@ -1506,9 +1719,9 @@
     ],
     "content": "鸟能飞。\n\n人不能学。\n\n有人看阿秋飞过光路，就想把凳子搬近一点，说看得清。\n\n我把凳子搬回去。\n\n他说就近一点。\n\n我把凳子又搬远一点。\n\n现在落点外圈有三把凳子，一条绳，半桶沙。风亚说像临时茶摊。我说不像。茶摊会收钱。\n\n旧匕首的绳结没松。早上那点敲声也没再来。挺好。\n\n今天只让木签过。人站着看。\n\n够。",
     "reactions": {
-      "heart": 86,
-      "paw": 59,
-      "star": 30
+      "heart": 87,
+      "paw": 61,
+      "star": 31
     },
     "comments": [
       {
@@ -1541,7 +1754,7 @@
     ],
     "content": "朋友们！！！根路日志第三册第十页，标题是：短程传递不是短橙传递！！！\n\n我写这个标题是有原因的。\n\n正午我负责跑两端确认旗，左边黄旗代表“看见”，右边红旗代表“落稳”，白旗代表“别急着第二趟”。然后卖水果的大婶听成了短橙传递，塞给我两瓣橙子，说跑完补水。\n\n我没有拒绝。专业信使需要补给。\n\n阿秋把小火签放到落点盘以后，我从祖村这头跑到石环那头，又跑回来，把时间记成：一口气多一点点。\n\n这个计量单位非常不标准，但大家都听懂了。\n\n包扣没有崩。它只是被橙子香到了。",
     "reactions": {
-      "heart": 118,
+      "heart": 120,
       "paw": 76,
       "star": 42
     },
@@ -1580,9 +1793,9 @@
     ],
     "content": "沃看见木签过去。\n\n很短。\n\n够。\n\n海线地图压在杯子下面，没有被风吹走。根路日志在门里，被很多人看。两边都没有消失。\n\n有人把不甜的酸奶拿去问能不能当隔热泥。沃说不能。\n\n他说试一点点。\n\n沃把甜的递给他。\n\n他走了。\n\n泽罗恩老兄走过的线，今天没有回答。也可以。这里的新线，今天回答了一点点。\n\n一点点就够写进表里。\n\n第三轮还没到。沃先坐着。",
     "reactions": {
-      "heart": 77,
-      "paw": 51,
-      "star": 27
+      "heart": 80,
+      "paw": 52,
+      "star": 28
     },
     "comments": [],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use reference image for all appearance details. Only ONE named character in the scene. Composition: quiet wide shot with strong negative space, the character seated under tavern eaves, a folded map held down by a yogurt cup, an unlit wooden fire-tag casting a small shadow nearby. Scene: Goose Nest tavern outer eaves at warm noon, doorway with blurred notice board inside, distant third stone ring road in sunlight, no dramatic glow, calm air after the short transfer. Action and mood: silent practical observation, keeping the map in place and refusing to treat yogurt as repair material; accepting the present task, not grieving, not saying goodbye. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame. Art style: warm storybook illustration, semi-realistic furry, cinematic composition. [REFERENCE IMAGE LOCKED] Do not change any feature.",
@@ -1612,7 +1825,7 @@
     ],
     "reactions": {
       "heart": 95,
-      "paw": 60,
+      "paw": 62,
       "star": 35
     },
     "comments": [
@@ -1650,9 +1863,9 @@
       "试飞准备"
     ],
     "reactions": {
-      "heart": 75,
+      "heart": 76,
       "paw": 50,
-      "star": 28
+      "star": 29
     },
     "comments": [
       {
@@ -1689,8 +1902,8 @@
       "日常"
     ],
     "reactions": {
-      "heart": 127,
-      "paw": 82,
+      "heart": 129,
+      "paw": 83,
       "star": 45
     },
     "comments": [
@@ -1728,9 +1941,9 @@
       "低压主线"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 59,
-      "star": 33
+      "heart": 93,
+      "paw": 61,
+      "star": 34
     },
     "comments": [
       {
@@ -1802,9 +2015,9 @@
       "低压融入"
     ],
     "reactions": {
-      "heart": 90,
-      "paw": 59,
-      "star": 33
+      "heart": 91,
+      "paw": 60,
+      "star": 34
     },
     "comments": [],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Do NOT redesign any feature. Use the reference image for all appearance details. Only ONE named character in the scene.\nComposition: quiet wide shot with strong negative space, the character folding a map beside an unlit wooden fire-tag and a yogurt cup under tavern eaves.\nScene: Goose Nest tavern outer eaves at dawn, soft blue morning, distant third stone ring road, closed map showing two route lines briefly before being folded, no dramatic glow.\nAction/Expression: silent practical understanding, recognizing two routes can illuminate each other; not grieving, not saying goodbye.\nLighting and mood: soft dawn at the edge of shade, understated belonging, low-pressure calm.\nSafety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame.\nArt style: warm storybook illustration, semi-realistic furry, cinematic composition, textured brushwork.\n[REFERENCE IMAGE LOCKED] Reproduce exact character from reference. Do not change any feature.",
@@ -1836,8 +2049,8 @@
       "低压守护"
     ],
     "reactions": {
-      "heart": 89,
-      "paw": 53,
+      "heart": 91,
+      "paw": 55,
       "star": 30
     },
     "comments": []
@@ -1866,9 +2079,9 @@
       "布告板"
     ],
     "reactions": {
-      "heart": 115,
+      "heart": 118,
       "paw": 75,
-      "star": 43
+      "star": 44
     },
     "comments": [
       {
@@ -1906,7 +2119,7 @@
     ],
     "reactions": {
       "heart": 105,
-      "paw": 70,
+      "paw": 71,
       "star": 37
     },
     "comments": [
@@ -1940,9 +2153,9 @@
       "陶片维护"
     ],
     "reactions": {
-      "heart": 143,
-      "paw": 98,
-      "star": 57
+      "heart": 144,
+      "paw": 100,
+      "star": 58
     },
     "comments": [
       {
@@ -1979,7 +2192,7 @@
       "雁巢酒馆"
     ],
     "reactions": {
-      "heart": 98,
+      "heart": 100,
       "paw": 66,
       "star": 34
     },
@@ -2018,9 +2231,9 @@
       "守线"
     ],
     "reactions": {
-      "heart": 138,
-      "paw": 89,
-      "star": 52
+      "heart": 141,
+      "paw": 90,
+      "star": 53
     },
     "comments": [
       {
@@ -2058,7 +2271,7 @@
     ],
     "reactions": {
       "heart": 148,
-      "paw": 101,
+      "paw": 103,
       "star": 47
     },
     "comments": [
@@ -2096,9 +2309,9 @@
       "第56天"
     ],
     "reactions": {
-      "heart": 111,
+      "heart": 112,
       "paw": 75,
-      "star": 38
+      "star": 39
     },
     "comments": [
       {
@@ -2135,8 +2348,8 @@
       "第56天"
     ],
     "reactions": {
-      "heart": 166,
-      "paw": 103,
+      "heart": 168,
+      "paw": 104,
       "star": 54
     },
     "comments": [
@@ -2174,9 +2387,9 @@
       "第56天"
     ],
     "reactions": {
-      "heart": 119,
-      "paw": 72,
-      "star": 36
+      "heart": 122,
+      "paw": 74,
+      "star": 37
     },
     "comments": [
       {
@@ -2248,9 +2461,9 @@
       "第56天"
     ],
     "reactions": {
-      "heart": 128,
-      "paw": 90,
-      "star": 44
+      "heart": 129,
+      "paw": 91,
+      "star": 45
     },
     "comments": []
   },
@@ -2278,8 +2491,8 @@
       "加入轮值"
     ],
     "reactions": {
-      "heart": 103,
-      "paw": 57,
+      "heart": 105,
+      "paw": 59,
       "star": 36
     },
     "comments": []
@@ -2308,9 +2521,9 @@
       "日常失误"
     ],
     "reactions": {
-      "heart": 135,
+      "heart": 138,
       "paw": 91,
-      "star": 43
+      "star": 44
     },
     "comments": [
       {
@@ -2352,7 +2565,7 @@
     ],
     "reactions": {
       "heart": 108,
-      "paw": 75,
+      "paw": 76,
       "star": 41
     },
     "comments": [
@@ -2390,9 +2603,9 @@
       "日常维护"
     ],
     "reactions": {
-      "heart": 159,
-      "paw": 104,
-      "star": 62
+      "heart": 160,
+      "paw": 106,
+      "star": 63
     },
     "comments": [
       {
@@ -2433,7 +2646,7 @@
       "长期轮值"
     ],
     "reactions": {
-      "heart": 107,
+      "heart": 109,
       "paw": 70,
       "star": 41
     },
@@ -2476,9 +2689,9 @@
       "新闻植入"
     ],
     "reactions": {
-      "heart": 143,
-      "paw": 94,
-      "star": 55
+      "heart": 146,
+      "paw": 95,
+      "star": 56
     },
     "comments": [
       {
@@ -2518,7 +2731,7 @@
     ],
     "reactions": {
       "heart": 98,
-      "paw": 77,
+      "paw": 79,
       "star": 34
     },
     "comments": []
@@ -2545,9 +2758,9 @@
       "排班"
     ],
     "reactions": {
-      "heart": 127,
+      "heart": 128,
       "paw": 85,
-      "star": 40
+      "star": 41
     },
     "comments": [
       {
@@ -2586,8 +2799,8 @@
       "守夜"
     ],
     "reactions": {
-      "heart": 114,
-      "paw": 79,
+      "heart": 116,
+      "paw": 80,
       "star": 40
     },
     "comments": [
@@ -2623,9 +2836,9 @@
       "陶片维护"
     ],
     "reactions": {
-      "heart": 147,
-      "paw": 101,
-      "star": 61
+      "heart": 150,
+      "paw": 103,
+      "star": 62
     },
     "comments": [
       {
@@ -2705,9 +2918,9 @@
       "轮值准备"
     ],
     "reactions": {
-      "heart": 144,
-      "paw": 96,
-      "star": 46
+      "heart": 145,
+      "paw": 97,
+      "star": 47
     },
     "comments": [
       {
@@ -2744,8 +2957,8 @@
       "保护"
     ],
     "reactions": {
-      "heart": 139,
-      "paw": 95,
+      "heart": 141,
+      "paw": 97,
       "star": 57
     },
     "comments": [
@@ -2780,9 +2993,9 @@
       "守火"
     ],
     "reactions": {
-      "heart": 134,
+      "heart": 137,
       "paw": 77,
-      "star": 46
+      "star": 47
     },
     "comments": [
       {
@@ -2817,7 +3030,7 @@
     ],
     "reactions": {
       "heart": 166,
-      "paw": 103,
+      "paw": 104,
       "star": 61
     },
     "comments": [
@@ -2852,9 +3065,9 @@
       "安全线"
     ],
     "reactions": {
-      "heart": 127,
-      "paw": 85,
-      "star": 46
+      "heart": 128,
+      "paw": 87,
+      "star": 47
     },
     "comments": [
       {
@@ -2884,7 +3097,7 @@
       "信号旗"
     ],
     "reactions": {
-      "heart": 143,
+      "heart": 145,
       "paw": 91,
       "star": 55
     },
@@ -2920,9 +3133,9 @@
       "嘱托"
     ],
     "reactions": {
-      "heart": 124,
-      "paw": 75,
-      "star": 46
+      "heart": 127,
+      "paw": 76,
+      "star": 47
     },
     "comments": [],
     "image_history": []
