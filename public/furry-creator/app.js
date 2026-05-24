@@ -350,7 +350,7 @@ async function pollQueuedImageTask(providerInfo, password, task, statusEl, extra
   const providerLabel = providerInfo.label;
   const taskId = task.taskId || task.requestId || '';
   for(let i = 0; i < 120; i++){
-    if(statusEl) statusEl.textContent = providerLabel + ' 已提交，正在后台生成中…\n任务ID：' + (taskId || '未知') + '\n已等待约 ' + (i * 5) + ' 秒，请不要重复提交。';
+    if(statusEl) statusEl.textContent = providerLabel + ' 任务已提交，正在等待 fal.ai 返回最终结果…\n当前状态：生成中，尚未成功也尚未失败\n任务ID：' + (taskId || '未知') + '\n已等待约 ' + (i * 5) + ' 秒，请不要重复提交。';
     await sleep(5000);
     const resp = await fetch(providerInfo.statusEndpoint, {
       method: 'POST',
@@ -362,6 +362,9 @@ async function pollQueuedImageTask(providerInfo, password, task, statusEl, extra
     if(data.done && data.imageUrl){
       await onComplete(data);
       return data;
+    }
+    if(data.done && !data.imageUrl){
+      throw new Error('任务已结束，但服务端没有返回图片地址');
     }
   }
   throw new Error(providerLabel + ' 后台生成仍未完成，请稍后到 fal.ai 后台或生成历史中查看。');
@@ -1140,6 +1143,7 @@ async function requestBananaImage(password){
     if(data.pending && providerInfo.asyncQueue){
       await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish);
     }else{
+      if(!data.imageUrl) throw new Error('任务已提交但尚未返回最终图片，请稍后重试');
       await finish(data);
     }
   }catch(err){
@@ -1261,6 +1265,7 @@ async function requestRemixImage(password){
     if(data.pending && providerInfo.asyncQueue){
       await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish);
     }else{
+      if(!data.imageUrl) throw new Error('任务已提交但尚未返回最终图片，请稍后重试');
       await finish(data);
     }
   }catch(err){
