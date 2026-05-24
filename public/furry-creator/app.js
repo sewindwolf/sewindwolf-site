@@ -342,9 +342,30 @@ const HISTORY_PAGE_SIZE = 10;
 const imageProviderConfigs = {
   banana: { label: 'Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
   gpt: { label: 'GPT-Image-2', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
-  falGpt: { label: 'GPT fal.ai', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate' }
+  falGpt: { label: 'GPT fal.ai', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate', statusEndpoint: '/api/fal-gpt-status', asyncQueue: true }
 };
 function imageProviderConfig(provider){ return imageProviderConfigs[provider] || imageProviderConfigs.banana; }
+function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
+async function pollQueuedImageTask(providerInfo, password, task, statusEl, extraBody, onComplete){
+  const providerLabel = providerInfo.label;
+  const taskId = task.taskId || task.requestId || '';
+  for(let i = 0; i < 120; i++){
+    if(statusEl) statusEl.textContent = providerLabel + ' 已提交，正在后台生成中…\n任务ID：' + (taskId || '未知') + '\n已等待约 ' + (i * 5) + ' 秒，请不要重复提交。';
+    await sleep(5000);
+    const resp = await fetch(providerInfo.statusEndpoint, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ ...(extraBody || {}), password, taskId, statusUrl: task.statusUrl || '', responseUrl: task.responseUrl || '' })
+    });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '查询任务状态失败');
+    if(data.done && data.imageUrl){
+      await onComplete(data);
+      return data;
+    }
+  }
+  throw new Error(providerLabel + ' 后台生成仍未完成，请稍后到 fal.ai 后台或生成历史中查看。');
+}
 
 function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 function resolve(value, options){ return value === 'random' || value === 'auto' ? pick(options) : value; }
@@ -1091,8 +1112,9 @@ async function requestBananaImage(password){
     status.textContent = '请先输入 ' + providerLabel + ' 生图密码。';
     return;
   }
+  const requestBody = { password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(character), character };
   preview.innerHTML = '';
-  status.textContent = '正在提交 ' + providerLabel + ' 生图任务，请稍等……';
+  status.textContent = '正在提交 ' + providerLabel + ' 生图任务，请稍等…';
   if(btn) btn.disabled = true;
   otherBtns.forEach(otherBtn => otherBtn.disabled = true);
   if(submitBtn) submitBtn.disabled = true;
@@ -1100,19 +1122,26 @@ async function requestBananaImage(password){
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(character), character })
+      body: JSON.stringify(requestBody)
     });
     const data = await resp.json().catch(() => ({}));
     if(!resp.ok || !data.ok){
       throw new Error(data.error || '提交失败');
     }
-    if(panel) panel.hidden = true;
-    status.textContent = providerLabel + ' 生图成功！任务ID：' + (data.taskId || '未知') + '\n图片地址：' + data.imageUrl;
-    remixSourceImageUrl = data.imageUrl || '';
-    remixLastImageUrl = data.imageUrl || '';
-    preview.innerHTML = '<a href="' + data.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + data.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-remix-image="' + encodeURIComponent(data.imageUrl) + '">基于这张图二次修改</button></div>';
-    const remixBtn = preview.querySelector('[data-remix-image]');
-    if(remixBtn) remixBtn.onclick = () => openRemixPage(decodeURIComponent(remixBtn.dataset.remixImage || ''));
+    const finish = async (result) => {
+      if(panel) panel.hidden = true;
+      status.textContent = providerLabel + ' 生图成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
+      remixSourceImageUrl = result.imageUrl || '';
+      remixLastImageUrl = result.imageUrl || '';
+      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + result.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">基于这张图二次修改</button></div>';
+      const remixBtn = preview.querySelector('[data-remix-image]');
+      if(remixBtn) remixBtn.onclick = () => openRemixPage(decodeURIComponent(remixBtn.dataset.remixImage || ''));
+    };
+    if(data.pending && providerInfo.asyncQueue){
+      await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish);
+    }else{
+      await finish(data);
+    }
   }catch(err){
     status.textContent = '生图失败：' + (err.message || err);
   }finally{
@@ -1202,29 +1231,37 @@ async function requestRemixImage(password){
   if(!instruction){ if(status) status.textContent = '请先输入想修改的内容和方向。'; return; }
   if(!cleanPassword){ if(status) status.textContent = '请先输入 ' + providerLabel + ' 生图密码。'; return; }
   if(!remixSourceImageUrl){ if(status) status.textContent = '没有可用的参考图。'; return; }
+  const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: remixSourceImageUrl, editInstruction: instruction, mode: 'remix' };
   if(preview) preview.innerHTML = '';
-  if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等……';
+  if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等…';
   buttons.forEach(btn => btn.disabled = true);
   try{
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: remixSourceImageUrl, editInstruction: instruction, mode: 'remix' })
+      body: JSON.stringify(requestBody)
     });
     const data = await resp.json().catch(() => ({}));
     if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
-    if(panel) panel.hidden = true;
-    const newUrl = data.imageUrl || '';
-    remixLastImageUrl = newUrl;
-    remixSourceImageUrl = newUrl;
-    setRemixSourceImage(newUrl);
-    if(status) status.textContent = providerLabel + ' 二次修改成功！任务ID：' + (data.taskId || '未知') + '\n新图已自动成为下一轮图生图参考图。\n图片地址：' + newUrl;
-    if(preview){
-      preview.innerHTML = '<a href="' + newUrl + '" target="_blank" rel="noopener">打开新图原图</a><img src="' + newUrl + '" alt="' + providerLabel + ' 二次修改结果" /><div class="remix-entry"><button class="primary" type="button" id="continueRemixBtn">继续基于这张新图修改</button><button class="ghost" type="button" id="copyRemixUrlBtn">复制新图地址</button></div>';
-      const continueBtn = document.getElementById('continueRemixBtn');
-      if(continueBtn) continueBtn.onclick = () => openRemixPage(newUrl);
-      const copyBtn = document.getElementById('copyRemixUrlBtn');
-      if(copyBtn) copyBtn.onclick = async () => { await navigator.clipboard.writeText(newUrl); copyBtn.textContent = '已复制'; setTimeout(() => copyBtn.textContent = '复制新图地址', 1200); };
+    const finish = async (result) => {
+      if(panel) panel.hidden = true;
+      const newUrl = result.imageUrl || '';
+      remixLastImageUrl = newUrl;
+      remixSourceImageUrl = newUrl;
+      setRemixSourceImage(newUrl);
+      if(status) status.textContent = providerLabel + ' 二次修改成功！任务ID：' + (result.taskId || '未知') + '\n新图已自动成为下一轮图生图参考图。\n图片地址：' + newUrl;
+      if(preview){
+        preview.innerHTML = '<a href="' + newUrl + '" target="_blank" rel="noopener">打开新图原图</a><img src="' + newUrl + '" alt="' + providerLabel + ' 二次修改结果" /><div class="remix-entry"><button class="primary" type="button" id="continueRemixBtn">继续基于这张新图修改</button><button class="ghost" type="button" id="copyRemixUrlBtn">复制新图地址</button></div>';
+        const continueBtn = document.getElementById('continueRemixBtn');
+        if(continueBtn) continueBtn.onclick = () => openRemixPage(newUrl);
+        const copyBtn = document.getElementById('copyRemixUrlBtn');
+        if(copyBtn) copyBtn.onclick = async () => { await navigator.clipboard.writeText(newUrl); copyBtn.textContent = '已复制'; setTimeout(() => copyBtn.textContent = '复制新图地址', 1200); };
+      }
+    };
+    if(data.pending && providerInfo.asyncQueue){
+      await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish);
+    }else{
+      await finish(data);
     }
   }catch(err){
     if(status) status.textContent = '图生图失败：' + (err.message || err);
