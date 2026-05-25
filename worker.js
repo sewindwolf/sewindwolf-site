@@ -63,10 +63,25 @@ function extractImageUrl(data){
   return data?.data?.results?.[0]?.url || data?.data?.url || data?.data?.imageUrl || data?.result?.url || data?.url || '';
 }
 
+function isLikelyImageUrl(value){
+  const raw = String(value || '').trim();
+  if(!/^https?:\/\//i.test(raw)) return false;
+  try {
+    const url = new URL(raw);
+    const host = url.hostname.toLowerCase();
+    const path = url.pathname.toLowerCase();
+    if(host === 'sewindwolf.art' || host.endsWith('.sewindwolf.art')) return false;
+    if(host === 'queue.fal.run' || path.includes('/requests/') || path.endsWith('/status') || path.endsWith('/response')) return false;
+    if(/\.(png|jpe?g|webp|gif)(\?|#|$)/i.test(url.pathname)) return true;
+    if(/(^|\.)(fal\.media|nanobananapro\.cloud|wuyinkeji\.com|replicate\.delivery|r2\.dev|openai\.com)$/i.test(host)) return true;
+  } catch { return false; }
+  return false;
+}
+
 function extractImageUrlDeep(value){
   if(!value) return '';
   if(typeof value === 'string'){
-    if(/^https?:\/\//i.test(value)) return value;
+    if(isLikelyImageUrl(value)) return value.trim();
     try { return extractImageUrlDeep(JSON.parse(value)); } catch { return ''; }
   }
   if(Array.isArray(value)){
@@ -77,7 +92,7 @@ function extractImageUrlDeep(value){
     return '';
   }
   if(typeof value === 'object'){
-    for(const key of ['url','image_url','imageUrl','src','images','image','data','result','output','outputs','urls','files','file','artifacts','content']){
+    for(const key of ['images','image','artifacts','files','file','output','outputs','urls','url','image_url','imageUrl','src','data','result','content']){
       const found = extractImageUrlDeep(value[key]);
       if(found) return found;
     }
@@ -491,7 +506,8 @@ export default {
       if(url.pathname === '/api/fal-gpt-status') return await handleFalGptStatus(request, env);
       const furryAsset = handleFurryCreatorAsset(url.pathname);
       if(furryAsset) return furryAsset;
-      return env.ASSETS.fetch(request);
+      if(env.ASSETS && typeof env.ASSETS.fetch === 'function') return env.ASSETS.fetch(request);
+      return json({ ok:false, error:'资源不存在或图片链接无效', path:url.pathname }, 404);
     }catch(err){
       return json({ ok:false, error: err?.message || String(err) }, 500);
     }
