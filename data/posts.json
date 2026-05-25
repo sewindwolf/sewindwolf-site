@@ -246,7 +246,16 @@
       "第三轮"
     ],
     "content": "📍 第三处石环·扁石交接处\n⏰ 第62天·暮色将至\n\n暮色。\n\n风短。\n\n纸没飞。\n\n石头在。\n\n下一班问，能不能用。\n\n沃点头。\n\n他把手放上去，又拿开。纸还在。\n\n够。\n\n左边旧线在袋里。右边今日表归夹。中间一块扁石。\n\n不是谁的手一直按。\n\n石头也会守一点。\n\n沃写：石可用。\n\n亮。",
-    "comments": [],
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "纸角压住就行，别把自己也压在那儿。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "沃知道。"
+      }
+    ],
     "prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with one unnamed next-shift worker as a small background figure only. Composition: quiet dusk ground-level handoff shot, the main character in dominant foreground beside a flat clean paperweight stone holding a duty sheet corner, a background worker briefly testing the stone and removing their hand while the paper remains still, closed route map safely inside a nearby bag, not noon stone selection, not morning finger-pressing, not signature-square framing. Scene: third stone circle at evening, short wind, stable root-light, practical duty sheets, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent practical handoff, turning a living entrusted duty into a reusable tool so no one has to hold the paper forever. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "image_url": "https://file.nanobananapro.cloud/20260525/30c5ce88423e49da96f67b95b54fc76e.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with one unnamed next-shift worker as a small background figure only. Composition: quiet dusk ground-level handoff shot, the main character in dominant foreground beside a flat clean paperweight stone holding a duty sheet corner, a background worker briefly testing the stone and removing their hand while the paper remains still, closed route map safely inside a nearby bag, not noon stone selection, not morning finger-pressing, not signature-square framing. Scene: third stone circle at evening, short wind, stable root-light, practical duty sheets, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent practical handoff, turning a living entrusted duty into a reusable tool so no one has to hold the paper forever. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
@@ -477,7 +486,16 @@
       "paw": 55,
       "star": 31
     },
-    "comments": [],
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "扁石这个办法很稳！稳、稳石……不是，我是说很有用。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "嗯。"
+      }
+    ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene. Composition: quiet close-environment tabletop-ground shot, the main character in dominant foreground selecting a flat clean stone to hold down a duty sheet corner, round stones and sharp stones set aside, an old route map closed safely inside a nearby bag, wide empty space of the third stone circle behind, not a finger-press paper corner repetition, not a signature square, not a map-reading scene. Scene: third stone circle at noon, short wind, stable root-light, practical maintenance papers, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent present-tense problem solving, turning a living entrusted path into a small reusable maintenance tool for the current shift. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "image_history": []
   },
