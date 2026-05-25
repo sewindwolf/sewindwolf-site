@@ -301,3 +301,35 @@ body.is-remix .remix-panel{display:block;}
 .remix-quick-row,.remix-provider-row,.remix-entry{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
 .remix-entry{padding:12px;border:1px solid rgba(143,211,255,.28);border-radius:16px;background:rgba(143,211,255,.08);}
 @media(max-width:700px){.remix-quick-row button,.remix-provider-row button,.remix-entry button{width:100%;}.remix-source-card img{max-height:58vh;}}
+
+
+.workflow-gallery-panel{margin-top:14px;padding:14px;border:1px solid rgba(143,211,255,.28);border-radius:18px;background:rgba(143,211,255,.07);}
+.workflow-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px;}
+.workflow-head h3{margin:2px 0 6px;color:#e7ecff;}
+.workflow-head p{margin:0;color:#b9c8ea;font-size:13px;line-height:1.6;}
+.workflow-gallery,.remix-reference-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px;}
+.workflow-card,.reference-card{overflow:hidden;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.06);}
+.workflow-card.selected,.reference-card.primary-ref{border-color:var(--accent);box-shadow:0 0 0 3px rgba(143,211,255,.14);}
+.workflow-card img,.reference-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#fff;}
+.workflow-card-body,.reference-card-body{display:grid;gap:6px;padding:10px;}
+.workflow-card-body strong,.reference-card-body strong{font-size:13px;color:#eef3ff;line-height:1.35;}
+.workflow-card-body span,.reference-card-body span,.reference-count{font-size:12px;color:#b9c8ea;line-height:1.45;}
+.workflow-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;}
+.workflow-actions button{padding:7px 9px;font-size:12px;}
+.workflow-empty{grid-column:1/-1;padding:18px;border:1px dashed rgba(143,211,255,.35);border-radius:14px;color:#b9c8ea;text-align:center;background:rgba(255,255,255,.04);}
+.remix-reference-actions{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0;}
+.remix-source-card img[hidden]{display:none;}
+.history-pick-btn{width:100%;margin-top:6px;}
+@media(max-width:700px){.workflow-gallery,.remix-reference-grid{grid-template-columns:1fr 1fr;}.workflow-actions{display:grid;grid-template-columns:1fr;}.workflow-actions button{width:100%;}}
+
+
+.remix-result-card{margin-bottom:12px;padding:12px;border:1px solid rgba(143,211,255,.24);border-radius:16px;background:rgba(255,255,255,.055);}
+.remix-result-card img{display:block;width:100%;border-radius:12px;margin-top:8px;background:#fff;}
+.remix-result-card .remix-entry{margin-top:10px;}
+.grid>.workflow-gallery-panel{grid-column:1/-1;}
+
+
+body.is-home #workflowGalleryPanel,
+body.is-wizard #workflowGalleryPanel{display:none;}
+body.is-result #workflowGalleryPanel,
+body.is-remix #workflowGalleryPanel{display:block;}

@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260521-img2img-remix" />
+  <link rel="stylesheet" href="style.css?v=20260525-workflow-visibility-fix" />
 </head>
 <body>
-  <script>window.APP_VERSION = '20260521-img2img-remix';</script>
+  <script>window.APP_VERSION = '20260525-workflow-visibility-fix';</script>
   <div class="shell">
     <header class="hero">
       <div class="badge">SEWINDWOLF · CHARACTER LAB</div>
@@ -27,6 +27,17 @@
     </header>
 
     <main class="grid">
+      <section class="panel workflow-gallery-panel" id="workflowGalleryPanel">
+        <div class="workflow-head">
+          <div>
+            <div class="field-editor-kicker">CURRENT WORKFLOW</div>
+            <h3>当前工作流图片 <span id="workflowCount">0</span> / 5</h3>
+            <p id="workflowLimitNote">最多保留 5 张；新图不会覆盖旧图；可随时选择任意旧图作为再生成参考。</p>
+          </div>
+        </div>
+        <div class="workflow-gallery" id="workflowGallery"><div class="workflow-empty">本工作流还没有生成图片。</div></div>
+      </section>
+
       <section class="panel form-panel">
         <div class="panel-title">
           <span>01</span>
@@ -109,7 +120,7 @@
           <div class="banana-preview" id="bananaPreview"></div>
         </div>
         <p class="note">说明：点击任一“提交 XX 生图任务”按钮后会在页面内显示密码输入框，密码正确才会用当前提示词提交对应生图任务；生成完成后会显示图片预览和原图链接。生图成功后可进入“图生图二次修改”，新图也可以继续作为下一轮参考图。</p>
-        <div class="version-row">当前版本：<span id="versionText">20260521-img2img-remix</span></div>
+        <div class="version-row">当前版本：<span id="versionText">20260525-workflow-visibility-fix</span></div>
       </section>
 
       <section class="panel remix-panel" id="remixPanel" hidden>
@@ -119,10 +130,17 @@
         </div>
         <div class="remix-source-card">
           <div class="field-editor-kicker">BASE IMAGE</div>
-          <h3>以上一张生成图为基础继续修改</h3>
-          <p>尽量一次只改 1～3 个点；系统会强制保留原图构图、姿势、光线、背景和画风，避免越修越漂。</p>
-          <a id="remixSourceLink" href="#" target="_blank" rel="noopener">打开当前参考图</a>
-          <img id="remixSourceImage" alt="当前图生图参考图" />
+          <h3>选择 1～5 张参考图继续修改</h3>
+          <p>可以从本工作流、历史图片或本地上传中选择参考图；第一张是主参考图。Banana 暂按第一张线上图处理，GPT-Image-2 / GPT fal.ai 会尝试多图联合。</p>
+          <div class="remix-reference-actions">
+            <button class="ghost" id="addHistoryReferenceBtn" type="button">从历史选择参考图</button>
+            <button class="ghost" id="addLocalReferenceBtn" type="button">上传本地参考图</button>
+            <input class="visually-hidden-file" id="localReferenceInput" type="file" accept="image/*" multiple />
+          </div>
+          <a id="remixSourceLink" href="#" target="_blank" rel="noopener">暂无主参考图</a>
+          <img id="remixSourceImage" alt="当前图生图主参考图" hidden />
+          <div class="reference-count">已选择 <span id="remixReferenceCount">0</span> / 5 张参考图</div>
+          <div class="remix-reference-grid" id="remixReferenceGrid"><div class="workflow-empty">还没有选择参考图。</div></div>
         </div>
         <div class="remix-controls">
           <label>修改内容和方向
@@ -181,12 +199,12 @@
     </div>
   </div>
   <script>
-    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260521-img2img-remix');
+    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260525-workflow-visibility-fix');
     document.getElementById('refreshLatestBtn') && document.getElementById('refreshLatestBtn').addEventListener('click', function(){
       location.replace('/furry-creator/?v=' + Date.now());
     });
   </script>
-  <script src="app.js?v=20260521-img2img-remix"></script>
+  <script src="app.js?v=20260525-workflow-visibility-fix"></script>
 </body>
 </html>
 

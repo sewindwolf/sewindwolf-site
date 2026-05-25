@@ -336,8 +336,13 @@ let currentImageProvider = 'banana';
 let currentRemixProvider = 'banana';
 let remixSourceImageUrl = '';
 let remixLastImageUrl = '';
+let workflowImages = [];
+let remixReferenceImages = [];
 let historyPage = 1;
 let historyPassword = '';
+let historySelectMode = false;
+const WORKFLOW_IMAGE_LIMIT = 5;
+const REMIX_REFERENCE_LIMIT = 5;
 const HISTORY_PAGE_SIZE = 10;
 const imageProviderConfigs = {
   banana: { label: 'Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
@@ -346,6 +351,55 @@ const imageProviderConfigs = {
 };
 function imageProviderConfig(provider){ return imageProviderConfigs[provider] || imageProviderConfigs.banana; }
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
+function escapeHtml(value){
+  return String(value || '').replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
+}
+function imageId(prefix = 'img'){ return prefix + '-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
+function normalizeReferenceEntry(entry){
+  if(!entry) return null;
+  if(typeof entry === 'string') return { id:imageId('ref'), imageUrl:entry, source:'url', label:'参考图' };
+  const url = String(entry.imageUrl || entry.url || '').trim();
+  if(!url) return null;
+  return { ...entry, id: entry.id || imageId('ref'), imageUrl:url, label: entry.label || '参考图', source: entry.source || 'url' };
+}
+function getReferenceUrls(){
+  return remixReferenceImages.map(item => item.imageUrl).filter(Boolean).slice(0, REMIX_REFERENCE_LIMIT);
+}
+async function ensureRemoteReferenceUrls(password, refs, status){
+  const result = [];
+  const replacements = new Map();
+  for(const url of refs){
+    if(String(url || '').startsWith('data:image/')){
+      if(status) status.textContent = '正在上传本地参考图，生成可供模型读取的临时 HTTPS 链接…';
+      const resp = await fetch('/api/furry-reference-upload', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ password, dataUrl:url })
+      });
+      const data = await resp.json().catch(() => ({}));
+      if(!resp.ok || !data.ok || !data.url) throw new Error(data.error || '本地参考图上传失败');
+      result.push(data.url);
+      replacements.set(url, data.url);
+    }else{
+      result.push(url);
+    }
+  }
+  if(replacements.size){
+    remixReferenceImages = remixReferenceImages.map(item => replacements.has(item.imageUrl) ? { ...item, imageUrl:replacements.get(item.imageUrl), source:'uploaded', label:(item.label || '本地参考图') + '（已临时上传）' } : item);
+    renderRemixReferencePool();
+  }
+  return result;
+}
+function canUseReferenceWithProvider(provider, refs){
+  const urls = refs || getReferenceUrls();
+  if(!urls.length) return { ok:false, message:'没有可用的参考图。' };
+  if(provider === 'banana'){
+    const first = urls[0] || '';
+    if(first.startsWith('data:')) return { ok:false, message:'Banana 当前只支持线上图片 URL，本地上传图请先使用 GPT-Image-2 / GPT fal.ai，或改用当前工作流/历史图片。' };
+    return { ok:true, urls:[first] };
+  }
+  return { ok:true, urls };
+}
 async function pollQueuedImageTask(providerInfo, password, task, statusEl, extraBody, onComplete){
   const providerLabel = providerInfo.label;
   const taskId = task.taskId || task.requestId || '';
@@ -460,6 +514,141 @@ function characterExportData(){
 function promptPairText(){
   const base = character || buildCharacter();
   return '[Positive Prompt]\n' + bananaPrompt(base) + '\n\n[Negative Prompt]\n' + negativePrompt(base);
+}
+
+function addWorkflowImage(entry){
+  const normalized = normalizeReferenceEntry(entry);
+  if(!normalized) return null;
+  if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){
+    const status = document.getElementById('bananaStatus') || document.getElementById('remixStatus');
+    if(status) status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续生成。';
+    return null;
+  }
+  const item = {
+    ...normalized,
+    source: normalized.source || 'workflow',
+    label: normalized.label || '工作流图片',
+    createdAt: normalized.createdAt || new Date().toISOString()
+  };
+  workflowImages.push(item);
+  setRemixReferences([item], { replace:true });
+  renderWorkflowGallery();
+  renderRemixReferencePool();
+  return item;
+}
+
+function removeWorkflowImage(id){
+  const removed = workflowImages.find(item => item.id === id);
+  workflowImages = workflowImages.filter(item => item.id !== id);
+  if(removed) remixReferenceImages = remixReferenceImages.filter(item => item.id !== id);
+  if(!remixReferenceImages.length && workflowImages.length) setRemixReferences([workflowImages[workflowImages.length - 1]], { replace:true });
+  renderWorkflowGallery();
+  renderRemixReferencePool();
+  const status = document.getElementById('bananaStatus');
+  if(status && workflowImages.length < WORKFLOW_IMAGE_LIMIT) status.textContent = '已删除一张工作流图片，现在可以继续生成。';
+}
+
+function setRemixReferences(entries, options = {}){
+  const list = (Array.isArray(entries) ? entries : [entries]).map(normalizeReferenceEntry).filter(Boolean);
+  remixReferenceImages = options.replace ? [] : [...remixReferenceImages];
+  list.forEach(item => {
+    remixReferenceImages = remixReferenceImages.filter(existing => existing.id !== item.id && existing.imageUrl !== item.imageUrl);
+    remixReferenceImages.push(item);
+  });
+  remixReferenceImages = remixReferenceImages.slice(-REMIX_REFERENCE_LIMIT);
+  const first = remixReferenceImages[0];
+  remixSourceImageUrl = first ? first.imageUrl : '';
+  remixLastImageUrl = remixSourceImageUrl;
+  renderRemixReferencePool();
+}
+
+function toggleRemixReference(entry){
+  const item = normalizeReferenceEntry(entry);
+  if(!item) return;
+  const exists = remixReferenceImages.some(existing => existing.id === item.id || existing.imageUrl === item.imageUrl);
+  if(exists){
+    remixReferenceImages = remixReferenceImages.filter(existing => existing.id !== item.id && existing.imageUrl !== item.imageUrl);
+  }else{
+    if(remixReferenceImages.length >= REMIX_REFERENCE_LIMIT){
+      const status = document.getElementById('remixStatus');
+      if(status) status.textContent = '最多选择 5 张参考图，请先取消一张。';
+      return;
+    }
+    remixReferenceImages.push(item);
+  }
+  const first = remixReferenceImages[0];
+  remixSourceImageUrl = first ? first.imageUrl : '';
+  remixLastImageUrl = remixSourceImageUrl;
+  renderWorkflowGallery();
+  renderRemixReferencePool();
+}
+
+function renderWorkflowGallery(){
+  const box = document.getElementById('workflowGallery');
+  const count = document.getElementById('workflowCount');
+  const limit = document.getElementById('workflowLimitNote');
+  if(count) count.textContent = String(workflowImages.length);
+  if(limit) limit.textContent = workflowImages.length >= WORKFLOW_IMAGE_LIMIT ? '已达 5 张上限，请删除一张后再继续生成。' : '最多保留 5 张；新图不会覆盖旧图。';
+  if(!box) return;
+  box.innerHTML = '';
+  if(!workflowImages.length){
+    box.innerHTML = '<div class="workflow-empty">本工作流还没有生成图片。</div>';
+    return;
+  }
+  workflowImages.forEach((item, index) => {
+    const selected = remixReferenceImages.some(ref => ref.id === item.id || ref.imageUrl === item.imageUrl);
+    const card = document.createElement('article');
+    card.className = 'workflow-card' + (selected ? ' selected' : '');
+    card.innerHTML = '<img src="' + item.imageUrl + '" alt="工作流图片 ' + (index + 1) + '"><div class="workflow-card-body"><strong>' + escapeHtml(item.label || ('工作流图片 ' + (index + 1))) + '</strong><span>' + (item.providerLabel || item.provider || '生成图') + '</span><div class="workflow-actions"><button class="primary" type="button" data-action="select">设为参考</button><button class="ghost" type="button" data-action="open">打开</button><button class="ghost" type="button" data-action="delete">删除</button></div></div>';
+    card.querySelector('[data-action="select"]').onclick = () => { setRemixReferences([item], { replace:true }); openRemixPage(item.imageUrl); };
+    card.querySelector('[data-action="open"]').onclick = () => window.open(item.imageUrl, '_blank', 'noopener');
+    card.querySelector('[data-action="delete"]').onclick = () => removeWorkflowImage(item.id);
+    box.appendChild(card);
+  });
+}
+
+function renderRemixReferencePool(){
+  const grid = document.getElementById('remixReferenceGrid');
+  const count = document.getElementById('remixReferenceCount');
+  const mainImg = document.getElementById('remixSourceImage');
+  const mainLink = document.getElementById('remixSourceLink');
+  const first = remixReferenceImages[0];
+  remixSourceImageUrl = first ? first.imageUrl : '';
+  remixLastImageUrl = remixSourceImageUrl;
+  if(count) count.textContent = String(remixReferenceImages.length);
+  if(mainImg){ mainImg.hidden = !first; if(first) mainImg.src = first.imageUrl; }
+  if(mainLink){ mainLink.href = first ? first.imageUrl : '#'; mainLink.textContent = first ? '打开主参考图' : '暂无主参考图'; }
+  if(!grid) return;
+  grid.innerHTML = '';
+  if(!remixReferenceImages.length){
+    grid.innerHTML = '<div class="workflow-empty">还没有选择参考图。可从当前工作流、历史后台或本地上传加入。</div>';
+    return;
+  }
+  remixReferenceImages.forEach((item, index) => {
+    const card = document.createElement('article');
+    card.className = 'reference-card' + (index === 0 ? ' primary-ref' : '');
+    card.innerHTML = '<img src="' + item.imageUrl + '" alt="参考图 ' + (index + 1) + '"><div class="reference-card-body"><strong>' + (index === 0 ? '主参考图' : '参考图 ' + (index + 1)) + '</strong><span>' + escapeHtml(item.label || item.source || '参考图') + '</span><div class="workflow-actions"><button class="ghost" type="button" data-action="main">设为主图</button><button class="ghost" type="button" data-action="remove">移除</button></div></div>';
+    card.querySelector('[data-action="main"]').onclick = () => { remixReferenceImages = [item, ...remixReferenceImages.filter(ref => ref.id !== item.id)]; renderRemixReferencePool(); };
+    card.querySelector('[data-action="remove"]').onclick = () => { remixReferenceImages = remixReferenceImages.filter(ref => ref.id !== item.id); renderWorkflowGallery(); renderRemixReferencePool(); };
+    grid.appendChild(card);
+  });
+}
+
+async function addLocalReferenceFiles(files){
+  const status = document.getElementById('remixStatus');
+  const list = Array.from(files || []).slice(0, REMIX_REFERENCE_LIMIT);
+  if(!list.length) return;
+  const entries = [];
+  for(const file of list){
+    if(!file.type.startsWith('image/')) continue;
+    if(file.size > 4 * 1024 * 1024){ if(status) status.textContent = '本地图片过大，请先压缩到 4MB 以内：' + file.name; continue; }
+    const dataUrl = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(String(reader.result || '')); reader.onerror = reject; reader.readAsDataURL(file); });
+    entries.push({ id:imageId('local'), imageUrl:dataUrl, source:'local', label:'本地上传：' + file.name, createdAt:new Date().toISOString() });
+  }
+  if(entries.length){
+    setRemixReferences(entries, { replace:false });
+    if(status) status.textContent = '已加入 ' + entries.length + ' 张本地参考图。Banana 暂不支持本地 data URL，建议用 GPT-Image-2 或 GPT fal.ai。';
+  }
 }
 
 function restoreFromImportedData(data){
@@ -627,6 +816,8 @@ function setViewMode(mode){
   document.body.classList.toggle('is-wizard', mode === 'wizard');
   document.body.classList.toggle('is-result', mode === 'result');
   document.body.classList.toggle('is-remix', mode === 'remix');
+  const workflowPanel = document.getElementById('workflowGalleryPanel');
+  if(workflowPanel) workflowPanel.hidden = !(mode === 'result' || mode === 'remix');
 }
 
 function setHeroVisible(visible){
@@ -1115,6 +1306,11 @@ async function requestBananaImage(password){
     status.textContent = '请先输入 ' + providerLabel + ' 生图密码。';
     return;
   }
+  if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){
+    status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续生成。';
+    renderWorkflowGallery();
+    return;
+  }
   const requestBody = { password: cleanPassword, prompt: bananaPrompt(character), negativePrompt: negativePrompt(character), character };
   preview.innerHTML = '';
   status.textContent = '正在提交 ' + providerLabel + ' 生图任务，请稍等…';
@@ -1134,11 +1330,12 @@ async function requestBananaImage(password){
     const finish = async (result) => {
       if(panel) panel.hidden = true;
       status.textContent = providerLabel + ' 生图成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
+      const added = addWorkflowImage({ imageUrl: result.imageUrl || '', provider, providerLabel, taskId: result.taskId || '', label: providerLabel + ' 生成图' });
       remixSourceImageUrl = result.imageUrl || '';
       remixLastImageUrl = result.imageUrl || '';
       preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + result.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">基于这张图二次修改</button></div>';
       const remixBtn = preview.querySelector('[data-remix-image]');
-      if(remixBtn) remixBtn.onclick = () => openRemixPage(decodeURIComponent(remixBtn.dataset.remixImage || ''));
+      if(remixBtn) remixBtn.onclick = () => openRemixPage(result.imageUrl || '');
     };
     if(data.pending && providerInfo.asyncQueue){
       await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish);
@@ -1157,29 +1354,27 @@ async function requestBananaImage(password){
 
 
 function setRemixSourceImage(imageUrl){
-  remixSourceImageUrl = String(imageUrl || '').trim();
-  remixLastImageUrl = remixSourceImageUrl;
-  const img = document.getElementById('remixSourceImage');
-  const link = document.getElementById('remixSourceLink');
-  if(img) img.src = remixSourceImageUrl;
-  if(link) link.href = remixSourceImageUrl || '#';
+  const url = String(imageUrl || '').trim();
+  if(url) setRemixReferences([{ imageUrl:url, source:'url', label:'当前参考图' }], { replace:true });
+  else renderRemixReferencePool();
 }
 
 function openRemixPage(imageUrl){
-  if(!imageUrl) return;
+  if(imageUrl) setRemixSourceImage(imageUrl);
+  if(!getReferenceUrls().length) return;
   setViewMode('remix');
   setHeroVisible(true);
   document.querySelector('.form-panel').style.display = 'none';
   document.querySelector('.result-panel').style.display = 'none';
   const remixPanel = document.getElementById('remixPanel');
   if(remixPanel) remixPanel.hidden = false;
-  setRemixSourceImage(imageUrl);
+  renderWorkflowGallery();
+  renderRemixReferencePool();
   const status = document.getElementById('remixStatus');
   const preview = document.getElementById('remixPreview');
   const passPanel = document.getElementById('remixPasswordPanel');
   const passInput = document.getElementById('remixPasswordInput');
   if(status) status.textContent = '请输入修改内容，选择渠道后输入密码提交。';
-  if(preview) preview.innerHTML = '';
   if(passPanel) passPanel.hidden = true;
   if(passInput) passInput.value = '';
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1199,9 +1394,16 @@ function applyRemixTemplate(type){
 }
 
 function openRemixPasswordPanel(provider){
-  if(!remixSourceImageUrl){
+  const refs = getReferenceUrls();
+  if(!refs.length){
     const status = document.getElementById('remixStatus');
-    if(status) status.textContent = '没有可用的参考图，请先完成一次生图。';
+    if(status) status.textContent = '没有可用的参考图，请先完成一次生图、从历史选择或上传本地图片。';
+    return;
+  }
+  const support = canUseReferenceWithProvider(provider, refs);
+  if(!support.ok){
+    const status = document.getElementById('remixStatus');
+    if(status) status.textContent = support.message;
     return;
   }
   currentRemixProvider = imageProviderConfigs[provider] ? provider : 'banana';
@@ -1234,12 +1436,20 @@ async function requestRemixImage(password){
   const buttons = ['remixBananaBtn','remixGptBtn','remixFalGptBtn','remixPasswordSubmitBtn'].map(id => document.getElementById(id)).filter(Boolean);
   if(!instruction){ if(status) status.textContent = '请先输入想修改的内容和方向。'; return; }
   if(!cleanPassword){ if(status) status.textContent = '请先输入 ' + providerLabel + ' 生图密码。'; return; }
-  if(!remixSourceImageUrl){ if(status) status.textContent = '没有可用的参考图。'; return; }
-  const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: remixSourceImageUrl, editInstruction: instruction, mode: 'remix' };
-  if(preview) preview.innerHTML = '';
-  if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等…';
+  if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){
+    if(status) status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续二次修改。';
+    renderWorkflowGallery();
+    return;
+  }
+  const refs = getReferenceUrls();
   buttons.forEach(btn => btn.disabled = true);
   try{
+    const remoteRefs = await ensureRemoteReferenceUrls(cleanPassword, refs, status);
+    const support = canUseReferenceWithProvider(provider, remoteRefs);
+    if(!support.ok){ if(status) status.textContent = support.message; return; }
+    const usableRefs = support.urls;
+    const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: usableRefs[0] || '', referenceImageUrls: usableRefs, editInstruction: instruction, mode: 'remix' };
+    if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等…';
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
@@ -1252,14 +1462,18 @@ async function requestRemixImage(password){
       const newUrl = result.imageUrl || '';
       remixLastImageUrl = newUrl;
       remixSourceImageUrl = newUrl;
-      setRemixSourceImage(newUrl);
-      if(status) status.textContent = providerLabel + ' 二次修改成功！任务ID：' + (result.taskId || '未知') + '\n新图已自动成为下一轮图生图参考图。\n图片地址：' + newUrl;
+      const added = addWorkflowImage({ imageUrl:newUrl, provider, providerLabel, taskId: result.taskId || '', label: providerLabel + ' 二次修改图' });
+      if(added) setRemixReferences([added], { replace:true });
+      if(status) status.textContent = providerLabel + ' 二次修改成功！任务ID：' + (result.taskId || '未知') + '\n新图已加入当前工作流，并自动成为下一轮主参考图。\n图片地址：' + newUrl;
       if(preview){
-        preview.innerHTML = '<a href="' + newUrl + '" target="_blank" rel="noopener">打开新图原图</a><img src="' + newUrl + '" alt="' + providerLabel + ' 二次修改结果" /><div class="remix-entry"><button class="primary" type="button" id="continueRemixBtn">继续基于这张新图修改</button><button class="ghost" type="button" id="copyRemixUrlBtn">复制新图地址</button></div>';
-        const continueBtn = document.getElementById('continueRemixBtn');
+        const card = document.createElement('article');
+        card.className = 'remix-result-card';
+        card.innerHTML = '<a href="' + newUrl + '" target="_blank" rel="noopener">打开新图原图</a><img src="' + newUrl + '" alt="' + providerLabel + ' 二次修改结果" /><div class="remix-entry"><button class="primary" type="button" data-action="continue">继续基于这张新图修改</button><button class="ghost" type="button" data-action="copy">复制新图地址</button></div>';
+        const continueBtn = card.querySelector('[data-action="continue"]');
         if(continueBtn) continueBtn.onclick = () => openRemixPage(newUrl);
-        const copyBtn = document.getElementById('copyRemixUrlBtn');
+        const copyBtn = card.querySelector('[data-action="copy"]');
         if(copyBtn) copyBtn.onclick = async () => { await navigator.clipboard.writeText(newUrl); copyBtn.textContent = '已复制'; setTimeout(() => copyBtn.textContent = '复制新图地址', 1200); };
+        preview.prepend(card);
       }
     };
     if(data.pending && providerInfo.asyncQueue){
@@ -1290,18 +1504,27 @@ function bindRemixPanel(){
   if(passInput) passInput.onkeydown = e => { if(e.key === 'Enter') requestRemixImage(passInput.value); };
   if(passCancel) passCancel.onclick = () => { const passPanel = document.getElementById('remixPasswordPanel'); if(passPanel) passPanel.hidden = true; if(passInput) passInput.value = ''; };
   if(backBtn) backBtn.onclick = () => { setViewMode('result'); setHeroVisible(true); document.querySelector('.result-panel').style.display = 'block'; const remixPanel = document.getElementById('remixPanel'); if(remixPanel) remixPanel.hidden = true; window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  const addHistoryRefBtn = document.getElementById('addHistoryReferenceBtn');
+  if(addHistoryRefBtn) addHistoryRefBtn.onclick = () => openHistoryPanel(true);
+  const localInput = document.getElementById('localReferenceInput');
+  const addLocalBtn = document.getElementById('addLocalReferenceBtn');
+  if(addLocalBtn && localInput) addLocalBtn.onclick = () => localInput.click();
+  if(localInput) localInput.onchange = async () => { await addLocalReferenceFiles(localInput.files); localInput.value = ''; };
   document.querySelectorAll('[data-remix-template]').forEach(btn => btn.onclick = () => applyRemixTemplate(btn.dataset.remixTemplate));
 }
 function generate(partial){ character = buildCharacter(partial); renderResult(); }
 
-function openHistoryPanel(){
+function openHistoryPanel(selectMode = false){
+  historySelectMode = !!selectMode;
   const modal = document.getElementById('historyModal');
   const input = document.getElementById('historyPasswordInput');
   const status = document.getElementById('historyStatus');
   const grid = document.getElementById('historyGrid');
   if(!modal) return;
   modal.hidden = false;
-  if(status) status.textContent = '请输入密码后查看生成历史。';
+  const title = document.getElementById('historyTitle');
+  if(title) title.textContent = historySelectMode ? '选择历史图片作为参考' : '生成历史后台';
+  if(status) status.textContent = historySelectMode ? '请输入密码后选择历史图片加入参考图池。' : '请输入密码后查看生成历史。';
   if(grid) grid.innerHTML = '';
   if(input){
     input.setAttribute('autocomplete', 'new-password');
@@ -1357,7 +1580,17 @@ function renderHistoryItems(items){
     open.target = '_blank';
     open.rel = 'noopener';
     open.textContent = '打开原图';
-    body.append(title, meta, details, open);
+    const choose = document.createElement('button');
+    choose.type = 'button';
+    choose.className = 'primary history-pick-btn';
+    choose.textContent = '选为再生成参考';
+    choose.onclick = () => {
+      const entry = { id:'history-' + (item.id || imageId('hist')), imageUrl:item.imageUrl || '', source:'history', label:historyCardTitle(item), provider:item.provider, providerLabel:item.providerLabel, createdAt:item.createdAt };
+      setRemixReferences([entry], { replace:false });
+      closeHistoryPanel();
+      openRemixPage('');
+    };
+    body.append(title, meta, details, open, choose);
     card.append(link, body);
     grid.appendChild(card);
   });
@@ -1408,8 +1641,8 @@ function bindHistoryPanel(){
   const input = document.getElementById('historyPasswordInput');
   const prev = document.getElementById('historyPrevBtn');
   const next = document.getElementById('historyNextBtn');
-  if(openBtn) openBtn.onclick = () => openHistoryPanel();
-  if(openResultBtn) openResultBtn.onclick = () => openHistoryPanel();
+  if(openBtn) openBtn.onclick = () => openHistoryPanel(false);
+  if(openResultBtn) openResultBtn.onclick = () => openHistoryPanel(false);
   if(closeBtn) closeBtn.onclick = () => closeHistoryPanel();
   if(loadBtn) loadBtn.onclick = () => loadHistory(1);
   if(input) input.onkeydown = e => { if(e.key === 'Enter') loadHistory(1); };
@@ -1454,7 +1687,7 @@ function bindStatic(){
     document.querySelector('.result-panel').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; init(); };
+  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; workflowImages=[]; remixReferenceImages=[]; init(); };
   document.querySelectorAll('.tab').forEach(btn => btn.onclick = () => { document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); activeTab = btn.dataset.tab; renderResult(); });
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
   const editFieldInput = document.getElementById('editFieldInput');
