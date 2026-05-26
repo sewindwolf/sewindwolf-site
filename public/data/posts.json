@@ -12,7 +12,7 @@
     "timestamp": "2026-05-26T08:04:00+08:00",
     "date": "20260526",
     "content": "晨。\n\n纸角偏。\n\n沃看。\n\n先写。\n\n纸角偏。\n\n再压。\n\n已压。\n\n旁边的人问，这样也算记录吗。\n\n沃点头。\n\n亮没变。风没大。纸也没飞。\n\n但偏过。\n\n要写。\n\n左边旧线在袋里。右边今日格有字。\n\n不是告别。\n\n是交班。\n\n沃写：纸角偏。已压。\n\n够。",
-    "image_url": "https://file.nanobananapro.cloud/20260526/abed86b34ddd4146b3496cf570134a7d.png",
+    "image_url": "https://file.nanobananapro.cloud/20260526/30495bcfbbe6401e8eadb3433e9ddb1b.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with one unnamed shift worker as a small background figure only. Composition: quiet ground-level maintenance-record shot, the main character in dominant foreground writing a short note in a small duty square before placing a clean flat stone on a shifted paper corner, old route map closed safely inside a nearby bag, not a map-reading scene, not a handoff scene, not a signature-only frame. Scene: third stone circle in morning, stable root-light, practical maintenance ledger, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent present-tense duty, recording a small deviation before fixing it so the next shift can understand. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "image_provider": "nano-banana-pro",
     "image_task_id": "9-9941044f-f15a-4ae6-a360-54523f681f6e",
@@ -26,7 +26,11 @@
       "paw": 46,
       "star": 24
     },
-    "comments": []
+    "comments": [],
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/abed86b34ddd4146b3496cf570134a7d.png",
+      "https://file.nanobananapro.cloud/20260526/30495bcfbbe6401e8eadb3433e9ddb1b.png"
+    ]
   },
   {
     "id": "post_20260526_0804_aki",
@@ -113,7 +117,7 @@
     "timestamp": "2026-05-26T08:04:00+08:00",
     "date": "20260526",
     "content": "【成长记录·第四十八页】\n\n今天我给蓝纽扣旁边加了小标签。\n\n第一版写：偏差预警标签。\n\n孩子看了半天，问：“那它是不是装饰？”\n\n我说不是。声音有点小。\n\n芦兰兹先生没有替我说，只把备用标签绳递过来。于是我又写了一版：看见偏了，就按一下，不是坏，也不是丢脸。\n\n孩子点头，说那它像“提醒手指”。\n\n这个词好可爱，我差点把它写进正式说明里。最后只写在背面，因为正式说明不能太像童话。\n\n今天的双关……蓝纽扣不是蓝过头，是拦过头。\n\n我也不知道这算不算好笑。\n\n但有三个人读完之后真的会用了。",
-    "image_url": "https://file.nanobananapro.cloud/20260526/ddfaae75cb104782adccb01ced1716f6.png",
+    "image_url": "https://file.nanobananapro.cloud/20260526/326513c9381746db8197f4a4269fdecc.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with unnamed children and villagers as small background figures only. Composition: medium-wide label-string teaching scene, the main character in dominant foreground tying a small label beside a blue warning button while a child reads from a respectful distance, spare tag strings and soft pads visible, not repainting the whole board, not a button-practice kneeling pose, not a dusk smoke pause scene. Scene: outside the mural cave in fresh morning, public pause-rule corner, warm village light, calm learning. Action and mood: shy but growing confidence, explaining that the blue button is a deviation warning label rather than decoration. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "image_provider": "nano-banana-pro",
     "image_task_id": "1-785e83a4-662c-460e-99c9-c499df170bb2",
@@ -136,6 +140,10 @@
         "from": "狐兰兹",
         "text": "先、先写背面……正式版等大家不笑我再说。"
       }
+    ],
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/ddfaae75cb104782adccb01ced1716f6.png",
+      "https://file.nanobananapro.cloud/20260526/326513c9381746db8197f4a4269fdecc.png"
     ]
   },
   {
@@ -335,7 +343,7 @@
       }
     ],
     "prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed villagers and children as small background figures only. Composition: dusk medium-wide pause-point scene, the main character in dominant foreground holding a notebook near a soft-padded blue button, a background villager wiping smoke from their eyes while others calmly wait behind the line, a child raising one hand to explain the rule, not repainting the instruction board, not noon practice, not a sign-corner repair frame. Scene: outside the mural cave at evening, lantern smoke, soft pads, public pause board, gentle village path, no panic. Action and mood: shy steady pride, seeing the pause rule used correctly as a small maintenance pause rather than failure. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_url": "https://file.nanobananapro.cloud/20260525/b79b5e124d124a17a2c133f619d6d869.png",
+    "image_url": "https://file.nanobananapro.cloud/20260526/52af79dd45c24a779367d65a2be93462.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed villagers and children as small background figures only. Composition: dusk medium-wide pause-point scene, the main character in dominant foreground holding a notebook near a soft-padded blue button, a background villager wiping smoke from their eyes while others calmly wait behind the line, a child raising one hand to explain the rule, not repainting the instruction board, not noon practice, not a sign-corner repair frame. Scene: outside the mural cave at evening, lantern smoke, soft pads, public pause board, gentle village path, no panic. Action and mood: shy steady pride, seeing the pause rule used correctly as a small maintenance pause rather than failure. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "image_history": [
       {
@@ -343,7 +351,9 @@
         "created_at": "2026-05-25T13:12:09.343Z",
         "provider": "nano-banana-pro",
         "prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed villagers and children as small background figures only. Composition: dusk medium-wide pause-point scene, the main character in dominant foreground holding a notebook near a soft-padded blue button, a background villager wiping smoke from their eyes while others calmly wait behind the line, a child raising one hand to explain the rule, not repainting the instruction board, not noon practice, not a sign-corner repair frame. Scene: outside the mural cave at evening, lantern smoke, soft pads, public pause board, gentle village path, no panic. Action and mood: shy steady pride, seeing the pause rule used correctly as a small maintenance pause rather than failure. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature."
-      }
+      },
+      "https://file.nanobananapro.cloud/20260525/b79b5e124d124a17a2c133f619d6d869.png",
+      "https://file.nanobananapro.cloud/20260526/52af79dd45c24a779367d65a2be93462.png"
     ],
     "world": "炉火镇",
     "timestamp": "2026-05-25T21:00:00+08:00",
@@ -503,7 +513,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:00:00+08:00",
     "content": "📍 守望之火广场·公共抄本编号桌\n⏰ 第62天·正午暖阳\n\n公共抄本今天开始编号。\n\n我本来只是路过，手里还拿着半个辣椒肉卷。结果有个镇民举着第三号抄本问：为什么桌上只有一号、二号和四号。\n\n我看了一眼。\n\n少的不是线，是编号。二号被人抄完以后顺手写成了四号，三号还在空白纸堆里，干干净净，什么都没犯。\n\n我把肉卷放远，重新贴了张小条：缺号先标，不许当新谜题围观。\n\n旁边有人松了口气，又有人失望。失望那个被我看了一眼，自己去喝水了。\n\n风口没偏。纸偏了。\n\n还行。比风偏好修。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/1a63c04c69c44db49ef1f370c9e8c436.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -527,7 +537,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed townspeople as small background figures only. Composition: low side-angle paperwork table shot, the main character off-center placing a spicy food wrap far away from numbered public manuscript copies, one copy labeled wrong number while a clean blank sheet waits nearby, strong noon sunlight across the Watchfire plaza, no centered standing pose, no breakfast stall repetition, no rope-coiling shot. Scene: public copy numbering desk beside the Watchfire plaza, wooden labels, water cups, clean paper stacks, ordinary civic maintenance rather than mystery. Action and mood: dry practical scrutiny, correcting a missing number as a small clerical error instead of treating it as a new omen. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/1a63c04c69c44db49ef1f370c9e8c436.png"
+    ]
   },
   {
     "id": "post_20260525_140100_tilion",
@@ -541,7 +553,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:01:00+08:00",
     "content": "📍 守望之火亭外·请假原因核对处\n⏰ 第62天·正午暖阳\n\n正午核对请假条。\n\n第一张写：想睡觉。通过。\n第二张写：我家锅漏了。通过。\n第三张写：我看见大家都写所以我也想写。驳回，理由是这叫排队上瘾，不叫请假。\n\n阿秋站在遮布下方，今天只负责把羽毛晒干，不负责替任何人证明锅漏不漏。有人问鸟能不能代签，我说不能。鸟已经有自己的工时权益了。\n\n最麻烦的是一张纸只写了两个字：有事。\n\n我在下面补了一行：有事可以，但请让下一班知道是哪种事。\n\n炉火镇的门，今天也开着呢。门边多了一叠请假条，说明大家终于承认：守住，也包括提前说一声。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/ee72d2d1045848ca863cc9c0d6c3bc2a.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -565,7 +577,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with a small messenger bird resting nearby as a non-character animal companion and unnamed townspeople as small background figures. Composition: overhead-leaning administrative desk shot under a shade cloth, the main character sorting small leave-request slips into accepted and revise baskets, a resting bird nearby with its own tiny shade, villagers waiting outside the rope line, not a notice-pinning board shot, not a question-token basket repetition, not a closing ledger table. Scene: Watchfire pavilion exterior at warm noon, humane paperwork, ink stamp, water cup, calm civic routine. Action and mood: reliable dry humor, checking that leave reasons help the next shift instead of becoming drama. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/ee72d2d1045848ca863cc9c0d6c3bc2a.png"
+    ]
   },
   {
     "id": "post_20260525_140200_foxlanz",
@@ -579,7 +593,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:02:00+08:00",
     "content": "📍 壁画洞外·暂停规则解释线\n⏰ 第62天·正午暖阳\n\n【成长记录·第四十七页午间补记】\n\n今天有人问我，按蓝纽扣是不是代表自己撑不住。\n\n我手心先出汗，脑子里冒出三个答案，最后只说了最短的那个：不是。\n\n它代表你发现偏了，而且愿意让别人知道。\n\n旁边的小孩很认真地点头，又问：那按错了怎么办？\n\n我说，按错了也比不敢按好。按错可以改，不按可能大家一起绕远。\n\n这句话说完，芦兰兹先生把一枚备用蓝纽扣递给那个孩子，让他练习“按下去以后举手”。孩子按得特别响，我差点跟着鞠躬。\n\n今天的双关……应该是：暂停不是丢脸，是把脸从慌里停回来。\n\n好像不太像双关。\n\n但牌子旁边多了一个人会用了。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/3187f48341894aa986438c2681514549.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -603,7 +617,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed children and an older villager as small background figures only. Composition: medium wide instructional scene from beside a blue confirmation button, the main character in dominant foreground kneeling beside the public pause-rule board while a child practices pressing a spare button and raising a hand, diagonal noon light, not repainting words, not fixing sign corner, not a dusk read-back frame. Scene: outside the mural cave at warm noon, soft pads, spare blue tags, public path, quiet teaching moment. Action and mood: shy steady explanation, showing that pause means reporting a deviation, not personal failure. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/3187f48341894aa986438c2681514549.png"
+    ]
   },
   {
     "id": "post_20260525_140300_yufeng",
@@ -617,7 +633,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:03:00+08:00",
     "content": "📍 第三处石环外圈·队尾点漏处\n⏰ 第62天·正午暖阳\n\n六个。\n\n少喊一个。\n\n人在。\n\n名漏了。\n\n我没过去。\n\n新轮值者自己回头，看见队尾那个人举着水杯，以为自己已经被算过。\n\n他说，重来。\n\n重来。\n\n六个。\n\n线外有个孩子想替他们喊，我看了他一眼。孩子闭嘴。\n\n很好。\n\n风亚在编号。提理安看请假条。狐兰兹教按钮。旻追菜谱。沃弗尔找压纸石。\n\n都没站中间。\n\n中间也没乱。\n\n更好。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/c52ffae4aaaf4294a97050ab18b4db3a.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -637,7 +653,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed shift workers and children as small background figures only. Composition: distant foreground-shadow observation shot from outside the safety line, the main character standing in side shade as a smaller background shift worker turns back to recount the tail of the line, one child outside the rope line pausing silently, deep spatial depth, not a tea stall cup shot, not a water bucket tally shot, not a walking-away board hook shot. Scene: outer ring of the third stone circle at noon, rope boundary, heat shimmer, stable root-light, ordinary shift check. Action and mood: quiet restraint, letting the new watcher catch a missed tail count and restart without heroically stepping in. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/c52ffae4aaaf4294a97050ab18b4db3a.png"
+    ]
   },
   {
     "id": "post_20260525_140400_aki",
@@ -651,7 +669,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:04:00+08:00",
     "content": "📍 雁巢酒馆到早市路·菜谱误借追踪\n⏰ 第62天·正午暖阳\n\n朋友们！根路日志追回来了！\n\n准确地说，是我在早市萝卜摊旁边追回来的。摊主把它夹在菜篮上，说这本“路线菜谱”写得很好，就是没有标哪条路离葱最近。\n\n我非常冷静。\n\n我只说了三遍它不是菜谱。\n\n第三遍的时候，旁边买菜的大婶问：那能不能做一份真正的菜市路线图？\n\n我沉默了一下。\n\n然后我觉得这可能也算公共需求。\n\n所以现在借阅栏多了第二张小条：根路日志不是菜单；如果需要菜单，请另开一页，别夹在原件里。\n\n午间成长：追回文件，没撞翻萝卜，只被一根葱拍到耳朵。\n\n葱没有投诉。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/df879801af7b45a196518884b2cadeb3.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -675,7 +693,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene, with unnamed market vendors and shoppers as small background figures only. Composition: dynamic market-lane tracking shot, the main character in dominant foreground retrieving a root-road log clipped to a vegetable basket while holding a fresh blank page separately, one scallion comically brushing an ear, diagonal noon bustle, not tavern notice-board repetition, not lunch-tray aisle, not counter stamping. Scene: route from Goose Nest tavern to the morning market at warm noon, vegetable baskets, clean document pouch, small note that route logs are not menus, lively but orderly. Action and mood: bright logistics panic turning into public service, recovering a misborrowed document without damaging it. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/df879801af7b45a196518884b2cadeb3.png"
+    ]
   },
   {
     "id": "post_20260525_140500_wolvol",
@@ -689,7 +709,7 @@
     "game_time": "第62天·正午暖阳",
     "timestamp": "2026-05-25T14:05:00+08:00",
     "content": "📍 第三处石环·压纸石旁\n⏰ 第62天·正午暖阳\n\n正午。\n\n风短。\n\n纸角又偏。\n\n沃不一直按。\n\n找石头。\n\n圆的太滚。\n尖的会划纸。\n扁的可以。\n\n沃把扁石洗干净，放在表角。\n\n左边旧海线在袋里。右边今日表没飞。中间多一块石头。\n\n有人问，叫什么。\n\n沃写：压纸石。\n\n够。\n\n手可以拿回来。\n\n亮。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260526/0a64b8887fae4206b26c80b35d6242c8.png",
     "tags": [
       "炉火镇",
       "第62天",
@@ -713,7 +733,9 @@
       }
     ],
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design, or visual design features. Only ONE named character in the scene. Composition: quiet close-environment tabletop-ground shot, the main character in dominant foreground selecting a flat clean stone to hold down a duty sheet corner, round stones and sharp stones set aside, an old route map closed safely inside a nearby bag, wide empty space of the third stone circle behind, not a finger-press paper corner repetition, not a signature square, not a map-reading scene. Scene: third stone circle at noon, short wind, stable root-light, practical maintenance papers, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent present-tense problem solving, turning a living entrusted path into a small reusable maintenance tool for the current shift. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "image_history": []
+    "image_history": [
+      "https://file.nanobananapro.cloud/20260526/0a64b8887fae4206b26c80b35d6242c8.png"
+    ]
   },
   {
     "id": "post_20260525080101_fengya",

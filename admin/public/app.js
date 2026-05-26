@@ -10,21 +10,38 @@ let regenTargetId = null;
 let regenCount = 1;
 let regenBatchId = null;
 let selectedCandidateUrl = null;
+let regenTargetPost = null;
 let currentPage = 1;
 const PAGE_SIZE = 50;
+let serverTotal = 0;
+let serverFilteredTotal = 0;
+let serverTotalPages = 1;
 let thumbObserver = null;
 
 async function init() {
-  await loadPosts();
   await loadCharacters();
   bindEvents();
+  await loadPosts();
+  await loadDeployStatus();
 }
 
 async function loadPosts() {
-  const res = await fetch('/api/posts');
+  const params = new URLSearchParams({
+    page: String(currentPage),
+    pageSize: String(PAGE_SIZE),
+    character: currentFilter,
+    q: searchQuery
+  });
+  const res = await fetch('/api/posts?' + params.toString());
   const data = await res.json();
-  allPosts = data.posts;
-  applyFilters();
+  if (!res.ok) throw new Error(data.error || 'load posts failed');
+  allPosts = data.posts || [];
+  filtered = allPosts;
+  serverTotal = data.total || 0;
+  serverFilteredTotal = data.filteredTotal || allPosts.length;
+  serverTotalPages = data.totalPages || 1;
+  currentPage = data.page || currentPage;
+  renderPosts();
 }
 
 async function loadCharacters() {
@@ -50,6 +67,8 @@ function bindEvents() {
     applyFilters();
   });
   document.getElementById('deployBtn').addEventListener('click', deploy);
+  const refreshDeployBtn = document.getElementById('refreshDeployStatusBtn');
+  if (refreshDeployBtn) refreshDeployBtn.addEventListener('click', loadDeployStatus);
 
   // Count buttons
   document.querySelectorAll('.count-btn').forEach(btn => {
@@ -62,16 +81,8 @@ function bindEvents() {
 }
 
 function applyFilters() {
-  filtered = allPosts.filter(p => {
-    if (currentFilter !== 'all' && p.character !== currentFilter) return false;
-    if (searchQuery) {
-      const hay = (p.content + p.id + p.location + (p.tags||[]).join(' ') + (p.image_prompt||'')).toLowerCase();
-      if (!hay.includes(searchQuery)) return false;
-    }
-    return true;
-  });
   currentPage = 1;
-  renderPosts();
+  loadPosts().catch(e => toast('加载失败: ' + e.message, true));
 }
 
 function renderPosts() {
@@ -94,8 +105,10 @@ function renderPosts() {
       ? '<img class="post-thumb lazy-thumb" data-src="' + escapeHtml(p.image_url) + '" decoding="async" width="160" height="100" onerror="this.className=&quot;post-thumb no-img&quot;;this.alt=&quot;图片加载失败&quot;;">'
       : '<div class="post-thumb no-img">无图</div>';
     const contentPreview = escapeHtml(p.content || '').replace(/\n/g, ' ').slice(0, 120);
-    const hasPrompt = p.image_prompt && p.image_prompt.trim();
-    const promptPreview = hasPrompt ? escapeHtml(p.image_prompt).slice(0, 150) + (p.image_prompt.length > 150 ? '...' : '') : '<em style="color:var(--text-dim);">无提示词</em>';
+    const fullPrompt = p.image_prompt || '';
+    const promptPreviewSource = fullPrompt || p.image_prompt_preview || '';
+    const hasPrompt = !!(p.has_image_prompt || (fullPrompt && fullPrompt.trim()) || (promptPreviewSource && promptPreviewSource.trim()));
+    const promptPreview = hasPrompt ? escapeHtml(promptPreviewSource).slice(0, 150) + (promptPreviewSource.length > 150 ? '...' : '') : '<em style="color:var(--text-dim);">无提示词</em>';
 
     const historyBlock = renderHistoryBlock(p);
 
@@ -152,8 +165,7 @@ function renderPagination(totalPages) {
 
 function setPage(page) {
   currentPage = page;
-  renderPosts();
-  window.scrollTo({ top: 0, behavior: 'auto' });
+  loadPosts().then(() => window.scrollTo({ top: 0, behavior: 'auto' })).catch(e => toast('翻页失败: ' + e.message, true));
 }
 
 function activateLazyThumbs(root) {
@@ -184,81 +196,61 @@ function loadLazyThumb(img) {
 // === Render image history block (per-card) ===
 // 获取所有历史生图，当前图标绿边框，其他可点击切换
 function renderHistoryBlock(p) {
-  const history = Array.isArray(p.image_history) ? p.image_history : (p.image_url ? [p.image_url] : []);
-  if (history.length <= 1) {
+  const count = Array.isArray(p.image_history) ? p.image_history.length : (p.image_history_count || (p.image_url ? 1 : 0));
+  if (count <= 1) {
     return '<details class="history-details" style="opacity:0.6;">'
-      + '<summary class="history-summary">\uD83D\uDCDA \u5386\u53F2\u56FE (暂无备选)</summary>'
-      + '<div class="history-content"><em style="color:var(--text-dim);">当前只有 1 张图，在后台重新生图后候选图会自动留存在这里</em></div>'
+      + '<summary class="history-summary">📚 历史图 (' + count + ' 张)</summary>'
+      + '<div class="history-content"><em style="color:var(--text-dim);">当前只有 1 张图，后台重新生图后候选图会自动留存在这里</em></div>'
       + '</details>';
   }
-  const pid = p.id;
+  return '<details class="history-details" data-post-id="' + p.id + '" ontoggle="onHistoryToggle(this)">'
+    + '<summary class="history-summary">📚 历史图 (' + count + ' 张，展开后加载)</summary>'
+    + '<div class="history-content"><em style="color:var(--text-dim);">展开后加载历史缩略图...</em></div>'
+    + '</details>';
+}
+
+function renderHistoryGrid(pid, imageUrl, history) {
   let thumbs = '';
   for (let i = 0; i < history.length; i++) {
     const url = history[i];
-    const isCurrent = (url === p.image_url);
-    const urlEsc = url.replace(/'/g, '%27');
-    // ⚡ 性能优化：用 data-src 占位，details 展开时才注入真实 src，避免一次性解码全部历史图
+    const isCurrent = (url === imageUrl);
+    const urlEsc = encodeURIComponent(url);
     thumbs += '<div class="history-thumb ' + (isCurrent ? 'current' : '') + '">'
-      + '<img data-src="' + url + '" decoding="async" width="140" height="90" alt="" onclick="previewFullImage(\'' + urlEsc + '\')">'
+      + '<img data-src="' + escapeHtml(url) + '" decoding="async" width="140" height="90" alt="" onclick="previewFullImage(\'' + urlEsc + '\')">'
       + '<div class="history-thumb-actions">'
       + (isCurrent
-          ? '<span class="history-current-tag">✅ 当前</span>'
+          ? '<span class="history-current-tag">✓ 当前</span>'
           : '<button class="btn-xs btn-set-current" onclick="setCurrentImage(\'' + pid + '\',\'' + urlEsc + '\')">设为当前</button>'
               + '<button class="btn-xs btn-del-history" onclick="removeHistoryImage(\'' + pid + '\',\'' + urlEsc + '\')">删除</button>'
         )
       + '</div>'
       + '</div>';
   }
-  return '<details class="history-details" ontoggle="onHistoryToggle(this)">'
-    + '<summary class="history-summary">\uD83D\uDCDA \u5386\u53F2\u56FE (' + history.length + ' \u5F20)</summary>'
-    + '<div class="history-content"><div class="history-grid">' + thumbs + '</div></div>'
-    + '</details>';
+  return '<div class="history-grid">' + thumbs + '</div>';
 }
 
-// ⚡ 性能优化：details 展开时才注入 src，关闭时清空以释放解码内存
-function onHistoryToggle(detailsEl) {
+async function onHistoryToggle(detailsEl) {
   const imgs = detailsEl.querySelectorAll('img[data-src]');
   if (detailsEl.open) {
-    imgs.forEach(img => { if (!img.src) img.src = img.getAttribute('data-src'); });
+    if (detailsEl.dataset.postId && !detailsEl.dataset.loaded) {
+      const content = detailsEl.querySelector('.history-content');
+      try {
+        const res = await fetch('/api/posts/' + detailsEl.dataset.postId + '/history');
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'load history failed');
+        content.innerHTML = renderHistoryGrid(data.id, data.image_url, data.image_history || []);
+        detailsEl.dataset.loaded = '1';
+      } catch (e) {
+        content.innerHTML = '<em style="color:var(--danger);">历史图加载失败：' + escapeHtml(e.message) + '</em>';
+      }
+    }
+    detailsEl.querySelectorAll('img[data-src]').forEach(img => { if (!img.src) img.src = img.getAttribute('data-src'); });
   } else {
-    imgs.forEach(img => { img.removeAttribute('src'); });
+    detailsEl.querySelectorAll('img[data-src]').forEach(img => { img.removeAttribute('src'); });
   }
 }
 
 // 页内模态预览全图（不再新标签页打开原图，避免高清 PNG 占满内存）
-function previewFullImage(url) {
-  const realUrl = decodeURIComponent(url);
-  let overlay = document.getElementById('imgPreviewOverlay');
-  if (!overlay) {
-    overlay = document.createElement('div');
-    overlay.id = 'imgPreviewOverlay';
-    overlay.className = 'img-preview-overlay';
-    overlay.onclick = closeImagePreview;
-    document.body.appendChild(overlay);
-  }
-  // 每次重建内部，关闭时一起删，保证 GC
-  overlay.innerHTML = '<div class="img-preview-inner" onclick="event.stopPropagation()">'
-    + '<button class="img-preview-close" onclick="closeImagePreview()">×</button>'
-    + '<img src="' + realUrl.replace(/"/g, '&quot;') + '" decoding="async" alt="preview">'
-    + '<div class="img-preview-actions">'
-    + '<a class="btn-sm" href="' + realUrl.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener">新标签打开原图</a>'
-    + '</div>'
-    + '</div>';
-  overlay.style.display = 'flex';
-  document.addEventListener('keydown', _imgPreviewKeyHandler);
-}
-function closeImagePreview() {
-  const overlay = document.getElementById('imgPreviewOverlay');
-  if (overlay) {
-    overlay.innerHTML = ''; // 释放图片资源
-    overlay.style.display = 'none';
-  }
-  document.removeEventListener('keydown', _imgPreviewKeyHandler);
-}
-function _imgPreviewKeyHandler(e) {
-  if (e.key === 'Escape') closeImagePreview();
-}
-
 async function setCurrentImage(postId, url) {
   const realUrl = decodeURIComponent(url);
   try {
@@ -307,8 +299,15 @@ function escapeHtml(str) {
 }
 
 // === Edit Modal ===
-function openEdit(id) {
-  const post = allPosts.find(p => p.id === id);
+async function openEdit(id) {
+  let post = allPosts.find(p => p.id === id);
+  try {
+    const res = await fetch('/api/posts/' + id);
+    const full = await res.json();
+    if (res.ok) post = full;
+  } catch (e) {
+    toast('详情加载失败，使用列表摘要打开: ' + e.message, true);
+  }
   if (!post) return;
   editingId = id;
   document.getElementById('editId').value = post.id;
@@ -378,14 +377,22 @@ async function savePost() {
 }
 
 // === Regen Modal (Multi-mode) ===
-function openRegen(id) {
-  const post = allPosts.find(p => p.id === id);
+async function openRegen(id) {
+  let post = allPosts.find(p => p.id === id);
+  try {
+    const res = await fetch('/api/posts/' + id);
+    const full = await res.json();
+    if (res.ok) post = full;
+  } catch (e) {
+    toast('详情加载失败: ' + e.message, true);
+  }
   if (!post) return;
   if (!post.image_prompt || !post.image_prompt.trim()) {
-    toast('\u8BF7\u5148\u5728\u7F16\u8F91\u4E2D\u586B\u5199 image_prompt', true);
+    toast('请先在编辑中填写 image_prompt', true);
     return;
   }
   regenTargetId = id;
+  regenTargetPost = post;
   regenBatchId = null;
   selectedCandidateUrl = null;
   regenCount = 1;
@@ -399,7 +406,7 @@ function openRegen(id) {
   document.getElementById('candidatesGrid').innerHTML = '';
   document.getElementById('regenStartBtn').style.display = '';
   document.getElementById('regenStartBtn').disabled = false;
-  document.getElementById('regenStartBtn').textContent = '\u5F00\u59CB\u751F\u6210';
+  document.getElementById('regenStartBtn').textContent = '开始生成';
   document.getElementById('regenApplyBtn').style.display = 'none';
   document.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
   document.querySelector('.count-btn[data-count="1"]').classList.add('active');
@@ -410,6 +417,7 @@ function openRegen(id) {
 function closeRegenModal() {
   document.getElementById('regenModal').classList.remove('open');
   regenTargetId = null;
+  regenTargetPost = null;
   regenBatchId = null;
   selectedCandidateUrl = null;
 }
@@ -422,8 +430,8 @@ async function startRegen() {
 
   // If user edited the prompt in the modal, save it first
   const editedPrompt = document.getElementById('regenPromptPreview').value.trim();
-  const post = allPosts.find(p => p.id === regenTargetId);
-  if (editedPrompt && editedPrompt !== post.image_prompt) {
+  const post = regenTargetPost || allPosts.find(p => p.id === regenTargetId);
+  if (editedPrompt && post && editedPrompt !== post.image_prompt) {
     // Save the updated prompt
     await fetch('/api/posts/' + regenTargetId, {
       method: 'PUT',
@@ -647,10 +655,28 @@ async function doDelete(id) {
 }
 
 // === Deploy ===
+async function loadDeployStatus() {
+  const panel = document.getElementById('deployStatusPanel');
+  if (!panel) return;
+  panel.textContent = '读取部署状态中...';
+  try {
+    const res = await fetch('/api/deploy-status');
+    const data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.error || 'deploy status failed');
+    const dirty = data.statusShort && data.statusShort.trim();
+    panel.innerHTML = '<div><strong>分支：</strong>' + escapeHtml(data.branch || '-') + ' → ' + escapeHtml(data.upstream || '-') + '</div>'
+      + '<div><strong>同步：</strong>ahead ' + (data.ahead ?? '-') + ' / behind ' + (data.behind ?? '-') + '</div>'
+      + '<div><strong>最近提交：</strong>' + escapeHtml(data.latestCommit || '-') + '</div>'
+      + '<div><strong>本地变更：</strong>' + (dirty ? '<pre>' + escapeHtml(data.statusShort) + '</pre>' : '干净') + '</div>';
+  } catch (e) {
+    panel.innerHTML = '<span class="deploy-error">部署状态读取失败：' + escapeHtml(e.message) + '</span>';
+  }
+}
+
 async function deploy() {
-  if (!confirm('\u786E\u8BA4\u63D0\u4EA4\u5E76\u63A8\u9001\u5230\u7EBF\u4E0A\uFF1F')) return;
+  if (!confirm('确认提交并推送到线上？')) return;
   const btn = document.getElementById('deployBtn');
-  btn.textContent = '\u90E8\u7F72\u4E2D...';
+  btn.textContent = '部署中...';
   btn.disabled = true;
   try {
     const res = await fetch('/api/deploy', {
@@ -661,15 +687,18 @@ async function deploy() {
     const data = await res.json();
     if (data.success) {
       hasUnsaved = false;
-      toast('\u90E8\u7F72\u6210\u529F! ' + data.message);
+      toast('部署成功! ' + data.message);
+      await loadDeployStatus();
       renderPosts();
     } else {
-      toast('\u90E8\u7F72\u5931\u8D25: ' + data.error, true);
+      toast('部署失败: ' + (data.error || data.hint || ''), true);
+      await loadDeployStatus();
     }
   } catch (e) {
-    toast('\u90E8\u7F72\u9519\u8BEF: ' + e.message, true);
+    toast('部署错误: ' + e.message, true);
+    await loadDeployStatus();
   } finally {
-    btn.textContent = 'Git Push \u90E8\u7F72';
+    btn.textContent = 'Git Push 部署';
     btn.disabled = false;
   }
 }

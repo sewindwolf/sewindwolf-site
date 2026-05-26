@@ -62,6 +62,39 @@ function writePosts(posts) {
   fs.writeFileSync(PUBLIC_POSTS_PATH, json, 'utf8');
 }
 
+function summarizePost(post) {
+  const history = Array.isArray(post.image_history) ? post.image_history : (post.image_url ? [post.image_url] : []);
+  return {
+    id: post.id,
+    character: post.character,
+    character_en: post.character_en,
+    world: post.world,
+    avatar_color: post.avatar_color,
+    avatar_symbol: post.avatar_symbol,
+    mood: post.mood,
+    location: post.location,
+    game_time: post.game_time,
+    timestamp: post.timestamp,
+    content: post.content,
+    image_url: post.image_url,
+    image_prompt_preview: post.image_prompt ? String(post.image_prompt).slice(0, 220) : '',
+    has_image_prompt: !!(post.image_prompt && String(post.image_prompt).trim()),
+    image_history_count: history.length,
+    tags: Array.isArray(post.tags) ? post.tags : [],
+    reactions: post.reactions || {},
+    comments_count: Array.isArray(post.comments) ? post.comments.length : 0
+  };
+}
+
+function runGit(command) {
+  return execSync(command, { cwd: SITE_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+}
+
+function safeGit(command) {
+  try { return runGit(command); }
+  catch (e) { return (e.stderr ? e.stderr.toString() : e.message || String(e)).trim(); }
+}
+
 
 // === Helper: extract gen result URL from script stdout ===
 function extractResultUrl(stdout) {
@@ -103,11 +136,28 @@ function runGenScript(prompt, refUrl, outFile) {
 app.get('/api/posts', (req, res) => {
   try {
     const raw = fs.readFileSync(POSTS_PATH, 'utf8');
-    const posts = JSON.parse(raw);
-    // Back-compat: ensure every post has image_history populated in the response
-    for (const p of posts) ensureImageHistory(p);
+    let posts = JSON.parse(raw);
     posts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    res.json({ total: posts.length, posts });
+
+    const total = posts.length;
+    const character = req.query.character || 'all';
+    const q = String(req.query.q || '').trim().toLowerCase();
+    if (character && character !== 'all') posts = posts.filter(p => p.character === character);
+    if (q) {
+      posts = posts.filter(p => {
+        const hay = [p.content, p.id, p.location, p.game_time, p.character, (p.tags || []).join(' '), p.image_prompt]
+          .filter(Boolean).join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+    }
+
+    const filteredTotal = posts.length;
+    const pageSize = Math.min(Math.max(parseInt(req.query.pageSize) || 50, 1), 100);
+    const totalPages = Math.max(1, Math.ceil(filteredTotal / pageSize));
+    const page = Math.min(Math.max(parseInt(req.query.page) || 1, 1), totalPages);
+    const start = (page - 1) * pageSize;
+    const pagePosts = posts.slice(start, start + pageSize).map(summarizePost);
+    res.json({ total, filteredTotal, page, pageSize, totalPages, posts: pagePosts });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
@@ -120,6 +170,18 @@ app.get('/api/posts/:id', (req, res) => {
     if (!post) return res.status(404).json({ error: 'Not found' });
     ensureImageHistory(post);
     res.json(post);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/posts/:id/history', (req, res) => {
+  try {
+    const posts = JSON.parse(fs.readFileSync(POSTS_PATH, 'utf8'));
+    const post = posts.find(p => p.id === req.params.id);
+    if (!post) return res.status(404).json({ error: 'Not found' });
+    ensureImageHistory(post);
+    res.json({ id: post.id, image_url: post.image_url || '', image_history: post.image_history || [] });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
@@ -331,21 +393,41 @@ app.post('/api/posts/:id/history-image/remove', (req, res) => {
 });
 
 // === Deploy ===
+app.get('/api/deploy-status', (req, res) => {
+  try {
+    const branch = safeGit('git branch --show-current');
+    const statusShort = safeGit('git status --short');
+    const statusBranch = safeGit('git status --short --branch');
+    const latestCommit = safeGit('git log -1 --pretty=format:%h%x20%s%x20(%cr)');
+    const upstream = safeGit('git rev-parse --abbrev-ref --symbolic-full-name @{u}');
+    const ahead = /^\d+$/.test(safeGit('git rev-list --count @{u}..HEAD')) ? Number(safeGit('git rev-list --count @{u}..HEAD')) : null;
+    const behind = /^\d+$/.test(safeGit('git rev-list --count HEAD..@{u}')) ? Number(safeGit('git rev-list --count HEAD..@{u}')) : null;
+    res.json({ success: true, branch, upstream, ahead, behind, latestCommit, statusShort, statusBranch, checkedAt: new Date().toISOString() });
+  } catch (e) {
+    res.status(500).json({ success: false, error: e.stderr ? e.stderr.toString() : e.message });
+  }
+});
+
 app.post('/api/deploy', (req, res) => {
   try {
-    const msg = (req.body.message || 'admin: update posts').replace(/"/g, '');
-    execSync('git add data/posts.json public/data/posts.json', { cwd: SITE_ROOT });
+    const msg = (req.body.message || 'admin: update site data and admin').replace(/"/g, '');
+    const before = safeGit('git status --short --branch');
+    execSync('git add data/posts.json public/data/posts.json admin/server.js admin/public/app.js admin/public/style.css admin/public/index.html', { cwd: SITE_ROOT });
+    let commitOutput = '';
     try {
-      execSync('git commit -m "' + msg + '"', { cwd: SITE_ROOT });
+      commitOutput = execSync('git commit -m "' + msg + '"', { cwd: SITE_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
     } catch (commitErr) {
-      if (commitErr.message && commitErr.message.includes('nothing to commit'))
-        return res.json({ success: true, message: 'Nothing changed' });
+      const combined = ((commitErr.stdout || '') + '\n' + (commitErr.stderr || '') + '\n' + commitErr.message).toString();
+      if (combined.includes('nothing to commit')) {
+        return res.json({ success: true, message: 'Nothing changed', before, after: safeGit('git status --short --branch') });
+      }
       throw commitErr;
     }
-    execSync('git push', { cwd: SITE_ROOT });
-    res.json({ success: true, message: 'Deployed!' });
+    const pushOutput = execSync('git push', { cwd: SITE_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+    res.json({ success: true, message: 'Deployed!', commitOutput, pushOutput, before, after: safeGit('git status --short --branch') });
   } catch (e) {
-    res.status(500).json({ error: e.stderr ? e.stderr.toString() : e.message });
+    const err = (e.stderr ? e.stderr.toString() : e.message || String(e));
+    res.status(500).json({ error: err, hint: /Authentication failed|could not read Username|token|403|401/i.test(err) ? '可能是 GitHub token/凭证过期或权限不足。' : '请查看原始错误判断是 commit、push 还是网络问题。', status: safeGit('git status --short --branch') });
   }
 });
 

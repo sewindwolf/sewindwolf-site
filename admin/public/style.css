@@ -691,3 +691,38 @@ main {
 .lazy-thumb:not([src]) {
   background: linear-gradient(135deg, var(--bg), var(--surface-alt));
 }
+
+
+/* Deploy Status Panel */
+.deploy-status-card {
+  margin: 12px 24px 0;
+  padding: 12px 14px;
+  background: rgba(22, 33, 62, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+.deploy-status-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.deploy-status-panel {
+  color: var(--text-dim);
+  line-height: 1.55;
+}
+.deploy-status-panel pre {
+  margin-top: 4px;
+  padding: 8px;
+  max-height: 120px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: var(--bg);
+  border-radius: 6px;
+  color: var(--regen);
+}
+.deploy-error { color: var(--danger); }
