@@ -334,6 +334,7 @@ let currentStep = 0;
 let wizardStarted = false;
 let currentImageProvider = 'banana';
 let currentRemixProvider = 'banana';
+let remixOutputMode = 'illustration';
 let remixSourceImageUrl = '';
 let remixLastImageUrl = '';
 let workflowImages = [];
@@ -1185,9 +1186,37 @@ ${characterPromptCore(c)}
 [STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details.`;
 }
 
+function remixOutputModeInstruction(mode = remixOutputMode){
+  if(mode === 'sheet'){
+    return `[OUTPUT LAYOUT LOCK - CHARACTER SHEET / TURNAROUND]
+Keep the reference image's character sheet, turnaround, model sheet, design board, multi-panel, or three-view layout. If the primary reference has front/side/back views, preserve the same front/side/back structure, spacing, white or clean background, and panel arrangement. Only edit the requested details consistently across every view and panel. Do not turn the result into a single scene illustration, portrait, action pose, cinematic background, or one-view artwork.`;
+  }
+  return `[OUTPUT LAYOUT LOCK - SINGLE ILLUSTRATION]
+Convert the referenced character identity into one coherent polished illustration. Generate a single complete scene, portrait, half-body, or full-body artwork with one main view of the character. Do not preserve or generate a three-view turnaround, model sheet, character sheet, design board, multi-panel layout, front/side/back lineup, UI boxes, color swatches, callout panels, or blank label areas.`;
+}
+
+function updateRemixLayoutUI(){
+  const hint = document.getElementById('remixLayoutHint');
+  document.querySelectorAll('[data-remix-layout]').forEach(btn => {
+    const active = btn.dataset.remixLayout === remixOutputMode;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  });
+  if(hint){
+    hint.textContent = remixOutputMode === 'sheet'
+      ? '当前：保留三视图/设定板/多面板结构，只按要求同步修改各视图细节。'
+      : '当前：把参考图角色身份转成单张完整插图，禁止保留三视图或多面板设定板布局。';
+  }
+}
+function setRemixOutputMode(mode){
+  remixOutputMode = mode === 'sheet' ? 'sheet' : 'illustration';
+  updateRemixLayoutUI();
+}
+
 function remixPrompt(instruction, options = {}){
   const cleanInstruction = String(instruction || '').trim();
   const refs = Array.isArray(options.references) ? options.references : remixReferenceImages;
+  const outputMode = options.outputMode === 'sheet' ? 'sheet' : 'illustration';
   const hasHistoryReference = refs.some(item => item && item.source === 'history');
   const characterContext = (!hasHistoryReference && character) ? characterPromptCore(character) : '';
   const contextBlock = characterContext ? `
@@ -1202,6 +1231,8 @@ At least one reference image comes from generation history. Treat the visual ide
 
 [EDIT REQUEST]
 ${cleanInstruction}
+
+${remixOutputModeInstruction(outputMode)}
 
 [STRICT PRESERVATION]
 Only make the requested changes. Do not change the character identity, species, body shape, colors, markings, outfit silhouette, facial expression, camera angle, overall style, or background unless explicitly requested. Keep the result very close to the primary reference image with minimal edits. If text conflicts with the reference images, follow the reference images.
@@ -1455,7 +1486,7 @@ async function requestRemixImage(password){
     const support = canUseReferenceWithProvider(provider, remoteRefs);
     if(!support.ok){ if(status) status.textContent = support.message; return; }
     const usableRefs = support.urls;
-    const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction, { references: remixReferenceImages }), negativePrompt: negativePrompt(character), character, referenceImageUrl: usableRefs[0] || '', referenceImageUrls: usableRefs, editInstruction: instruction, mode: 'remix' };
+    const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction, { references: remixReferenceImages, outputMode: remixOutputMode }), negativePrompt: negativePrompt(character), character, referenceImageUrl: usableRefs[0] || '', referenceImageUrls: usableRefs, editInstruction: instruction, mode: 'remix', remixOutputMode };
     if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等…';
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
@@ -1518,6 +1549,8 @@ function bindRemixPanel(){
   if(addLocalBtn && localInput) addLocalBtn.onclick = () => localInput.click();
   if(localInput) localInput.onchange = async () => { await addLocalReferenceFiles(localInput.files); localInput.value = ''; };
   document.querySelectorAll('[data-remix-template]').forEach(btn => btn.onclick = () => applyRemixTemplate(btn.dataset.remixTemplate));
+  document.querySelectorAll('[data-remix-layout]').forEach(btn => btn.onclick = () => setRemixOutputMode(btn.dataset.remixLayout));
+  updateRemixLayoutUI();
 }
 function generate(partial){ character = buildCharacter(partial); renderResult(); }
 
