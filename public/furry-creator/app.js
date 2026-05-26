@@ -1185,20 +1185,27 @@ ${characterPromptCore(c)}
 [STYLE MANDATE] ${c.artStyle}, polished furry OC reference sheet, clean illustration, appealing character design, balanced details.`;
 }
 
-function remixPrompt(instruction){
+function remixPrompt(instruction, options = {}){
   const cleanInstruction = String(instruction || '').trim();
-  const characterContext = character ? characterPromptCore(character) : '';
-  return `Use the provided image as the base image for image-to-image editing. Preserve the original composition, pose, camera angle, lighting, background layout, color palette, and overall art style as much as possible.
+  const refs = Array.isArray(options.references) ? options.references : remixReferenceImages;
+  const hasHistoryReference = refs.some(item => item && item.source === 'history');
+  const characterContext = (!hasHistoryReference && character) ? characterPromptCore(character) : '';
+  const contextBlock = characterContext ? `
+[CURRENT CHARACTER CONTEXT]
+This context is secondary. If it conflicts with any reference image, follow the reference images.
+${characterContext}
+` : `
+[REFERENCE-ONLY HISTORY MODE]
+At least one reference image comes from generation history. Treat the visual identity in the reference images as the source of truth. Do not use the current page character settings to redesign species, colors, markings, body shape, outfit, face, or style.
+`;
+  return `Use the provided reference images as the base for image-to-image editing. Reference image 1 is the PRIMARY IDENTITY ANCHOR and has absolute priority. Preserve the original composition, pose, camera angle, lighting, background layout, color palette, and overall art style as much as possible.
 
 [EDIT REQUEST]
 ${cleanInstruction}
 
 [STRICT PRESERVATION]
-Only make the requested changes. Do not change the character identity, species, body shape, outfit silhouette, facial expression, camera angle, overall style, or background unless explicitly requested. Keep the result very close to the base image with minimal edits.
-
-[CURRENT CHARACTER CONTEXT]
-${characterContext}
-
+Only make the requested changes. Do not change the character identity, species, body shape, colors, markings, outfit silhouette, facial expression, camera angle, overall style, or background unless explicitly requested. Keep the result very close to the primary reference image with minimal edits. If text conflicts with the reference images, follow the reference images.
+${contextBlock}
 Fully clothed, pants, skirt, or robe clearly visible, no nudity. No readable text, no watermark, no logo.`;
 }
 function positivePrompt(c){
@@ -1448,7 +1455,7 @@ async function requestRemixImage(password){
     const support = canUseReferenceWithProvider(provider, remoteRefs);
     if(!support.ok){ if(status) status.textContent = support.message; return; }
     const usableRefs = support.urls;
-    const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction), negativePrompt: negativePrompt(character), character, referenceImageUrl: usableRefs[0] || '', referenceImageUrls: usableRefs, editInstruction: instruction, mode: 'remix' };
+    const requestBody = { password: cleanPassword, prompt: remixPrompt(instruction, { references: remixReferenceImages }), negativePrompt: negativePrompt(character), character, referenceImageUrl: usableRefs[0] || '', referenceImageUrls: usableRefs, editInstruction: instruction, mode: 'remix' };
     if(status) status.textContent = '正在提交 ' + providerLabel + ' 图生图二次修改，请稍等…';
     const resp = await fetch(providerInfo.endpoint, {
       method: 'POST',
