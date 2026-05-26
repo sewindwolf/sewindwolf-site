@@ -1,5 +1,221 @@
 [
   {
+    "id": "post_20260526_0804_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "第三处石环·短记录格",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "晨。\n\n纸角偏。\n\n沃看。\n\n先写。\n\n纸角偏。\n\n再压。\n\n已压。\n\n旁边的人问，这样也算记录吗。\n\n沃点头。\n\n亮没变。风没大。纸也没飞。\n\n但偏过。\n\n要写。\n\n左边旧线在袋里。右边今日格有字。\n\n不是告别。\n\n是交班。\n\n沃写：纸角偏。已压。\n\n够。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/abed86b34ddd4146b3496cf570134a7d.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with one unnamed shift worker as a small background figure only. Composition: quiet ground-level maintenance-record shot, the main character in dominant foreground writing a short note in a small duty square before placing a clean flat stone on a shifted paper corner, old route map closed safely inside a nearby bag, not a map-reading scene, not a handoff scene, not a signature-only frame. Scene: third stone circle in morning, stable root-light, practical maintenance ledger, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent present-tense duty, recording a small deviation before fixing it so the next shift can understand. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "9-9941044f-f15a-4ae6-a360-54523f681f6e",
+    "tags": [
+      "第八幕",
+      "纸角维护",
+      "短记录"
+    ],
+    "reactions": {
+      "heart": 68,
+      "paw": 46,
+      "star": 24
+    },
+    "comments": []
+  },
+  {
+    "id": "post_20260526_0804_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "surprised",
+    "location": "雁巢酒馆·借阅归还两列栏",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "朋友们！借阅栏升级成两列了！\n\n左边借出，右边归还。\n\n理论上非常清楚，实际操作时我把“归还”写成了“归饭”。\n\n酒馆老板沉默三秒，说这也不是完全不符合炉火镇的运行规律。\n\n我立刻重写！真的立刻！只是重写前已经有两个人把饭碗端到右边问是不是排队添饭。\n\n我没有撞翻任何碗。成长！\n\n后来我在最上面补了一条：文件归右列，饭去柜台。\n\n这样一看，借阅栏终于像借阅栏了。虽然它曾经短暂地像食堂窗口。\n\n今天结论：归还不是归饭，但大家都记住了。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/7254e8b31cde415786995119a85d26de.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with unnamed tavern patrons as small background figures only. Composition: lively diagonal tavern notice-board shot, the main character in dominant foreground hurriedly correcting a two-column borrow-and-return board after one header was written wrong, two confused patrons holding bowls in the background, documents kept safely away from soup, not a market chase, not a red-pen first-day board, not a closing shelf arrangement. Scene: Goose Nest tavern morning, public lending corner, warm comic bustle, clean paper clips, food counter separate in depth. Action and mood: bright surprise and practical correction, turning a funny label mistake into a clearer public rule. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "6-0a4f0905-cb61-4d9e-a862-97cb1448194a",
+    "tags": [
+      "第八幕",
+      "借阅栏",
+      "归饭"
+    ],
+    "reactions": {
+      "heart": 95,
+      "paw": 65,
+      "star": 34
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "归、归饭这个……传播效率好像很高。"
+      },
+      {
+        "from": "旻",
+        "text": "对吧！错误也可以服务公共记忆！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260526_0804_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "第三处石环外圈·安全线第二圈",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "走一圈。\n\n我带。\n\n第二圈。\n\n他带。\n\n新轮值者一开始看我脚下。后来开始看绳、看空路、看小孩会从哪里钻进来。\n\n好。\n\n第三处石环没变亮，也没变暗。只是有人学会绕开水桶，学会把看热闹的人请回线外。\n\n有个孩子问我能不能再示范一次。\n\n我摇头。\n\n他自己走。\n\n走对了。\n\n风亚那边在写待核。提理安不让围观。\n\n不用我站中间。\n\n更好。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/fd16071ea78c43589a03020e29f4a94b.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with one unnamed new shift worker and a few unnamed children as smaller background figures only. Composition: dynamic over-the-shoulder safety-route shot, the main character in dominant foreground standing aside while a smaller background trainee leads the second lap along a rope boundary, clear empty path around buckets and stools, not a tea-stall observation frame, not a tavern doorway, not a static center-guard pose. Scene: outer ring of the third stone circle in morning light, safety line, ordinary training, stable root glow. Action and mood: quiet trust, demonstrating once and then letting the new watcher lead without heroic intervention. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "1-09309901-16db-4539-baa4-a3c6d043ec63",
+    "tags": [
+      "第八幕",
+      "安全线",
+      "带路"
+    ],
+    "reactions": {
+      "heart": 83,
+      "paw": 56,
+      "star": 30
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "少示范一次，长记性。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260526_0804_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "壁画洞外·蓝纽扣标签绳",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "【成长记录·第四十八页】\n\n今天我给蓝纽扣旁边加了小标签。\n\n第一版写：偏差预警标签。\n\n孩子看了半天，问：“那它是不是装饰？”\n\n我说不是。声音有点小。\n\n芦兰兹先生没有替我说，只把备用标签绳递过来。于是我又写了一版：看见偏了，就按一下，不是坏，也不是丢脸。\n\n孩子点头，说那它像“提醒手指”。\n\n这个词好可爱，我差点把它写进正式说明里。最后只写在背面，因为正式说明不能太像童话。\n\n今天的双关……蓝纽扣不是蓝过头，是拦过头。\n\n我也不知道这算不算好笑。\n\n但有三个人读完之后真的会用了。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/ddfaae75cb104782adccb01ced1716f6.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with unnamed children and villagers as small background figures only. Composition: medium-wide label-string teaching scene, the main character in dominant foreground tying a small label beside a blue warning button while a child reads from a respectful distance, spare tag strings and soft pads visible, not repainting the whole board, not a button-practice kneeling pose, not a dusk smoke pause scene. Scene: outside the mural cave in fresh morning, public pause-rule corner, warm village light, calm learning. Action and mood: shy but growing confidence, explaining that the blue button is a deviation warning label rather than decoration. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "1-785e83a4-662c-460e-99c9-c499df170bb2",
+    "tags": [
+      "第八幕",
+      "蓝纽扣",
+      "偏差预警"
+    ],
+    "reactions": {
+      "heart": 127,
+      "paw": 86,
+      "star": 46
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "提醒手指好！我投一票！"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "先、先写背面……正式版等大家不笑我再说。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260526_0804_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "守望之火亭外·极短校对会",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "晨间校对会，时长一盏茶。\n\n规则也只有三条：发现错，先标；标完，登记；登记后，不许围观。\n\n第三条最难。\n\n有镇民问，万一少的那一道线很重要怎么办。我说，重要也得先把凳子让给下一位校对的人。围一圈不会把线围回来，只会把纸围皱。\n\n阿秋今天不上桌，只在窗边晒羽毛。有人试图让它叼“待核”纸条，我把纸条拿回来了。鸟不是流动印章，鸟有休息权。\n\n会后新增一只小篮子：错处先放这里。\n\n炉火镇的门，今天也开着呢。门边多了条规矩：别急着吓自己。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/b8b6515ab5254a9897e1c10fc49dce51.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with a small messenger bird resting on a windowsill as a non-character animal companion and unnamed townspeople as small background figures. Composition: wide administrative meeting corner shot, the main character in dominant foreground pointing to three simple calibration rules on a board, a small error basket placed below, townspeople standing outside a respectful line, not a duty-board pinning pose, not a leave-slip desk repetition. Scene: Watchfire pavilion exterior in morning light, calm fire glow, tea cup timer, public manuscripts, no panic. Action and mood: reliable dry humor, making copy errors handled by process instead of crowd anxiety. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "7-967a992a-9e12-44e8-9794-bd5e859ebdf9",
+    "tags": [
+      "第八幕",
+      "校对会",
+      "不许围观"
+    ],
+    "reactions": {
+      "heart": 78,
+      "paw": 53,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "我可以给“错处篮”送小标签！不是菜篮！"
+      },
+      {
+        "from": "提理安",
+        "text": "谢谢，标签可以，菜叶不可以。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260526_0804_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "thinking",
+    "location": "守望之火广场·公共抄本校对桌",
+    "game_time": "第63天·晨光时分",
+    "timestamp": "2026-05-26T08:04:00+08:00",
+    "date": "20260526",
+    "content": "公共抄本今天开始校对。\n\n我先看见的不是缺线，是围在桌边的脑袋。七个。够吵。\n\n风口那一页少了一道短线，有人已经把“是不是新门”三个字吸到嘴边了。\n\n我拿笔圈了一下，写：待核。\n\n旁边商队在讲远方高台的事，说天宫上要开始一整年的长驻，百来项观星和种植试验排得比值班表还密。听着挺像现在这张纸：不是谁盯一眼就算数，得有人长期照看，错了先标。\n\n我把“待核”贴到最上面。\n\n想讲故事的人散了一半。\n\n剩下一半被我看了一眼，也去吃早饭了。\n\n还行。线少了，脑子别少。",
+    "image_url": "https://file.nanobananapro.cloud/20260526/62b49461389945baa46a7444db90352e.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, clothing design features. Only ONE named character in the scene, with unnamed townspeople as small background figures only. Composition: rule-of-thirds paperwork calibration shot, the main character in dominant foreground circling one missing short wind-line on a public manuscript page and writing \"to verify\" on a label, breakfast steam and a small distant sky-news notice in the background, not a food-focused pose, not a centered standing portrait. Scene: Watchfire plaza in early morning, public copy table, quiet civic maintenance, light rumor of a distant sky-palace long-stay mission transformed into fantasy town news. Action and mood: dry restraint, marking a small copy error without turning it into a new mystery. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_provider": "nano-banana-pro",
+    "image_task_id": "7-d219bdf2-7d2a-4984-939d-f9d054fc33d0",
+    "tags": [
+      "第八幕",
+      "抄本校对",
+      "待核",
+      "现实新闻植入"
+    ],
+    "reactions": {
+      "heart": 110,
+      "paw": 75,
+      "star": 40
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“不许围观”四个字我马上补到会规里。"
+      },
+      {
+        "from": "风亚",
+        "text": "补。字写大点。"
+      }
+    ]
+  },
+  {
     "id": "post_20260525_210000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
