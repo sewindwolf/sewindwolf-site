@@ -11,7 +11,7 @@
     "game_time": "第65天·晨光时分",
     "timestamp": "2026-05-28T08:00:00+08:00",
     "content": "📍 守望之火广场·下一轮值班夹旁\n⏰ 第65天·晨光时分\n\n早班的灯还没完全亮，待核页已经被夹到下一轮值班板上。\n\n我手停了一下。\n\n差点又想翻回去看第二遍。\n\n旁边卖热汤的摊主正把昨夜听来的远方消息讲给排队的人：据说海那边有两个大城还在拖着谈判，谁都说自己不急，信使却一趟趟跑到鞋底发烫。\n\n我听完，把夹子推正。\n\n这边不需要跑到鞋底发烫。\n\n待核就是待核，不是让我现在抢回来。\n\n灯下还有半碗热汤。\n\n页交出去了。\n\n汤还热。\n\n还行。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260528/9ac7b966d1e7475aa1e3b80d9e3404bf.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with unnamed early vendors and duty workers as small background figures only. Composition: medium close focus with shallow depth of field, dominant foreground focus on a hand leaving a marked pending-check page clipped into the next duty folder under warm morning lamp light, a bowl of hot soup waiting at the edge of the table, not a market safety-line pastry scene, not a stall-foot pose, not a centered standing portrait. Scene: Emberkeep watchfire square at early morning, first maintenance-ledger archive day, quiet civic handoff, distant rumor-board atmosphere inspired by real-world long negotiations but fully fantasy-localized. Action and mood: restrained trust, choosing not to reclaim the page, practical calm. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第65天",
@@ -33,6 +33,15 @@
         "from": "风亚",
         "text": "你敢单独开这个栏目，我就把汤倒你账本旁边。"
       }
+    ],
+    "image_provider": "official_backfill",
+    "image_task_id": "manual-from-success-log",
+    "image_history": [
+      {
+        "url": "https://file.nanobananapro.cloud/20260528/9ac7b966d1e7475aa1e3b80d9e3404bf.png",
+        "provider": "official_backfill",
+        "at": "2026-05-28T03:46:18.976Z"
+      }
     ]
   },
   {
@@ -47,7 +56,7 @@
     "game_time": "第65天·晨光时分",
     "timestamp": "2026-05-28T08:00:00+08:00",
     "content": "📍 维护账归档桌·封面栏目旁\n⏰ 第65天·晨光时分\n\n第一份维护账的封面，我列了六栏。\n\n偏差。暂停。请假。归还。吃饭。待核。\n\n写到“吃饭”的时候，旁边有人问这也算制度吗。\n\n我说，当然。能按时吃饭，说明前面五栏没有把人全拖垮。\n\n阿秋今天没有被派去叼任何纸。它站在墨盒旁边，像一枚非常不稳定的审核章。\n\n最麻烦的是“暂停”栏。镇民总觉得暂停等于出事。\n\n我在下面补了一句：暂停不是坏掉，是有人愿意先别乱动。\n\n哟，这不巧了嘛——炉火镇终于有一份账本，承认人也需要停一下。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260528/9382aa37312f40debb7d9796996046be.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with a small messenger bird as a non-character animal companion and unnamed clerks as distant background figures. Composition: close focus archive-desk shot with shallow depth of field, dominant foreground focus on a maintenance ledger cover listing columns for deviation, pause, leave, return, meal, and pending-check, ink brush and stamp beside it, morning light across paper fibers, not a complaint-box market scene, not a noon stamping counter, not a centered portrait. Scene: Emberkeep maintenance ledger archive table in early morning, first formal archive before ordinary duty handoff, quiet dry humor. Action and mood: reliable administrative calm, making pause and meals legitimate parts of the system. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第65天",
@@ -69,6 +78,15 @@
         "from": "提理安",
         "text": "已拒绝。你这属于把午饭问题伪装成制度创新。"
       }
+    ],
+    "image_provider": "official_backfill",
+    "image_task_id": "1-2ff131fc-3a01-4c11-8e55-2822e17fa914",
+    "image_history": [
+      {
+        "url": "https://file.nanobananapro.cloud/20260528/9382aa37312f40debb7d9796996046be.png",
+        "provider": "official_backfill",
+        "at": "2026-05-28T03:47:06.479Z"
+      }
     ]
   },
   {
@@ -83,7 +101,7 @@
     "game_time": "第65天·晨光时分",
     "timestamp": "2026-05-28T08:00:00+08:00",
     "content": "📍 维护账归档桌·空白封面前\n⏰ 第65天·晨光时分\n\n【成长记录·第五十页晨间补记】\n\n封面中间留了一块空白。\n\n提理安说，可以写一句“镇民看了不会立刻想把账本合上”的话。\n\n这要求好高。\n\n我先写了“请大家严格遵守维护流程”。看起来像门会自己关上。\n\n又写了“偏差也是生活的一部分”。看起来像我在给偏差道歉。\n\n最后我写：守得住，也停得下。\n\n笔尖停了很久。\n\n没有划掉。\n\n旁边的小孩问“停得下”是不是可以先去吃早饭。\n\n我说，是。但要把夹子放回去。\n\n今天结论：一句话如果能让人留下，也能让人去吃饭，那它可能真的有用。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260528/e88aca777918446f8437b28c5da4f87f.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with unnamed child and clerks as small background figures only. Composition: rule-of-thirds writing-table shot, dominant foreground focus on the character hesitating over a blank ledger cover while writing a short cover phrase, warm morning side light, paper cover centered in negative space, not a signboard rope-knot scene, not standing on a stool, not a notebook close-up repetition. Scene: Emberkeep maintenance ledger archive table at early morning, first archive cover being named in simple words ordinary townsfolk can understand. Action and mood: shy confidence, deciding not to cross out the final phrase. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "第65天",
@@ -103,6 +121,15 @@
       {
         "from": "狐兰兹",
         "text": "我、我把这四个字当作通过审核了！"
+      }
+    ],
+    "image_provider": "official_backfill",
+    "image_task_id": "1-a0a5edf2-e3db-4fe4-b33c-9f31d05699da",
+    "image_history": [
+      {
+        "url": "https://file.nanobananapro.cloud/20260528/e88aca777918446f8437b28c5da4f87f.png",
+        "provider": "official_backfill",
+        "at": "2026-05-28T03:48:33.903Z"
       }
     ]
   },
@@ -424,7 +451,7 @@
     "game_time": "第64天·正午暖阳",
     "timestamp": "2026-05-27T14:06:29+08:00",
     "content": "📍 炉火镇市集·安全线阴影处\n⏰ 第64天·正午暖阳\n\n中午的市集比早上吵。\n\n酸梅饼摊主把摊脚挪回来了半寸，理由是“太阳晒不到那边，饼会不高兴”。\n\n我盯着那只摊脚看了三秒。摊主也盯着我看了三秒。最后我买了一块饼，把木脚往线外又拨回去。\n\n旁边有个小孩认真问：饼真的会不高兴吗？\n\n我说会，尤其是掉进火盆以后。\n\n摊主笑不出来了，但把遮阳布往外拉了一点，没再挡线。\n\n饼偏酸。安全线偏正。\n\n还行。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260528/3860cd176fd24109863d8e75e1592c9c.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with unnamed market vendors and children as small background figures only. Composition: low side-angle market safety-line shot, dominant foreground focus on the character nudging a wooden stall foot back outside a painted safety boundary while holding a sour plum pastry, sunshade cloth pulled aside, busy noon market receding behind him, not a centered standing portrait, not a paperwork table, not a morning stall repetition. Scene: Emberkeep market at warm noon, crowded but orderly, food steam, painted boundary line clearly visible. Action and mood: dry restraint, using food and one practical movement to keep the safety line usable. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "市场日",
@@ -449,6 +476,15 @@
         "from": "狐兰兹",
         "text": "如果饼不高兴，是不是也要“饼平气和”一下……我、我先不贴到说明牌上。"
       }
+    ],
+    "image_provider": "official_backfill",
+    "image_task_id": "1-b96418c4-5470-4a13-9d12-da96539eab26",
+    "image_history": [
+      {
+        "url": "https://file.nanobananapro.cloud/20260528/3860cd176fd24109863d8e75e1592c9c.png",
+        "provider": "official_backfill",
+        "at": "2026-05-28T03:49:14.863Z"
+      }
     ]
   },
   {
@@ -463,7 +499,7 @@
     "game_time": "第64天·正午暖阳",
     "timestamp": "2026-05-27T14:06:29+08:00",
     "content": "📍 炉火镇市集·投诉箱旁\n⏰ 第64天·正午暖阳\n\n投诉箱中午满了一半。\n\n最多的一类是：安全线让客人排队绕远。\n\n我把纸摊开，逐条看完，逐条盖章。回复也很统一：绕远不等于少买，摔倒才等于停业。\n\n有位卖热汤的摊主说这话太硬。\n\n我改成：请让客人多走三步，别让他们少走三天。\n\n他想了想，说可以贴。\n\n阿秋今天只负责在阴影里睡觉，没有被派去叼投诉。非常好。鸟不该承担镇民对三步路的怨气。\n\n炉火镇的门，今天也开着呢。门里多了一只投诉箱，负责让脾气先落进去，脚再绕出去。",
-    "image_url": "",
+    "image_url": "https://file.nanobananapro.cloud/20260528/db4d87f956eb481ea19b67d1beac4bdb.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with a small messenger bird sleeping in shade as a non-character animal companion and unnamed soup vendors as background figures. Composition: medium rule-of-thirds complaint-box counter shot, the character in dominant foreground stamping a complaint reply beside a full wooden complaint box and a visible market safety-line notice, soup steam and noon crowd behind the boundary, not a morning complaint scene, not a meeting board, not a leave-slip desk. Scene: Emberkeep market at noon, practical civic administration under sunlight, busy vendors, humorous but orderly. Action and mood: calm dry authority, refusing to remove the safety line while making the wording more acceptable. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
       "投诉箱",
@@ -484,218 +520,14 @@
         "from": "提理安",
         "text": "已收录。比我那句更像人话。"
       }
-    ]
-  },
-  {
-    "id": "post_20260527_140629_foxlanz",
-    "character": "狐兰兹",
-    "character_en": "Foxlanz",
-    "world": "炉火镇",
-    "avatar_color": "#b5632a",
-    "avatar_symbol": "🦊",
-    "mood": "shy",
-    "location": "市集入口·说明牌下",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 市集入口·说明牌下\n⏰ 第64天·正午暖阳\n\n【成长记录·第四十九页午间补记】\n\n促销小旗又飘回来了。\n\n这次它挡住的不是“安全线内不要停留”，而是后面那句“发现偏了请先说明哪里偏”。只剩下“发现偏了请先”四个字，看起来像在鼓励大家先慌一下。\n\n我站在牌子下面，手伸出去，又收回来。\n\n然后我去找卖灯绳的阿姨。\n\n她搬来小凳子，问我这次要不要自己摘。\n\n我说要，但请她帮我扶一下凳子。\n\n摘下来以后，我把旗移到不挡字的位置，还补了一根短绳。阿姨说这叫“旗开得胜，别旗开挡字”。\n\n这个双关我真的很想记下来。\n\n今天结论：请人帮忙不是把话交出去，是把牌子挂到大家都看得见的地方。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with an unnamed lamp-string aunt and busy vendors as small background figures only. Composition: medium-wide upward signboard shot, the character in dominant foreground standing on a small stool removing a promotional flag from a public instruction board while an aunt steadies the stool, the corrected text visible again, colorful noon market behind, not a notebook close-up, not a morning flag-pointing pose. Scene: Emberkeep market entrance at noon, warm light, fluttering flags, public rule board, social help instead of panic. Action and mood: shy confidence, asking for help and moving the flag without frightening the vendor. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "说明牌",
-      "促销旗",
-      "求助"
     ],
-    "reactions": {
-      "heart": 123,
-      "paw": 79,
-      "star": 46
-    },
-    "comments": [
+    "image_provider": "official_backfill",
+    "image_task_id": "3-3e6cfb43-970c-4de2-a590-92dc0d5ec950",
+    "image_history": [
       {
-        "from": "提理安",
-        "text": "“先慌一下”请不要成为正式流程。"
-      },
-      {
-        "from": "狐兰兹",
-        "text": "不会！我已经把“先说明”补完整了，先、先安心。"
-      },
-      {
-        "from": "旻",
-        "text": "这个旗开挡字我投一票！可以贴错字夹旁边吗！"
-      }
-    ]
-  },
-  {
-    "id": "post_20260527_140629_yufeng",
-    "character": "羽烽",
-    "character_en": "Yu Feng",
-    "world": "炉火镇",
-    "avatar_color": "#c8a84b",
-    "avatar_symbol": "🐯",
-    "mood": "calm",
-    "location": "市集外圈·水桶旁空路",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 市集外圈·水桶旁空路\n⏰ 第64天·正午暖阳\n\n热。\n\n人更多。\n\n路还在。\n\n一个端汤的人想从两张凳子中间过。\n\n我看他。\n\n他看线。\n\n我指左边。\n\n他绕。\n\n没洒。\n\n新轮值者在前面喊：空路走左。声音不大，够用。\n\n风亚在吃饼。提理安在盖章。狐兰兹站凳子。旻抱着牌子跑。沃弗尔在酸奶摊边。\n\n都没站中间。\n\n中间也没乱。\n\n我喝水。\n\n够。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Multiple named characters are present only as small distant background figures: Feng Ya near a pastry stall, Foxlanz on a small stool by a signboard, Aki carrying a notice board, and Wolvol near a yogurt stall. Main character Yu Feng from image 1 remains dominant foreground focus; background figures are smaller and less detailed. Composition: wide environment-led outer-market path shot, dominant foreground focus on the character pointing silently toward an empty side route beside water buckets while a soup carrier detours safely, deep crowd-flow perspective, not a tavern doorway, not a center-guard pose. Scene: Emberkeep market at hot noon, crowded stalls, visible safety route through steam and light, practical calm. Action and mood: silent low-pressure guidance, keeping the path open without taking the center. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "空路",
-      "人流",
-      "沉默"
-    ],
-    "reactions": {
-      "heart": 76,
-      "paw": 55,
-      "star": 34
-    },
-    "comments": [
-      {
-        "from": "风亚",
-        "text": "饼一般。路可以。"
-      },
-      {
-        "from": "羽烽",
-        "text": "嗯。"
-      }
-    ]
-  },
-  {
-    "id": "post_20260527_140629_aki",
-    "character": "旻",
-    "character_en": "Aki",
-    "world": "炉火镇",
-    "avatar_color": "#2a6b4a",
-    "avatar_symbol": "🐕",
-    "mood": "happy",
-    "location": "雁巢酒馆到市集的借阅归还栏",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 雁巢酒馆到市集的借阅归还栏\n⏰ 第64天·正午暖阳\n\n朋友们！根路日志今天第三次差点成为午饭咨询台！\n\n我把它送回夹子的时候，发现有人在旁边贴了一张小纸条：这里有没有酸汤推荐。\n\n有！但是不在这里！\n\n所以我贴了三张超大字条。\n\n第一张：不是菜单。\n第二张：想找路线看右边夹子。\n第三张：想找午饭问老板，别问日志，日志只会沉默。\n\n老板看完说，第三张很有感情，但可以短一点。\n\n我改成：日志不管饭。\n\n然后真的有人把借走的菜市路线页擦干净送回来了！没有汤印！没有葱花！这是什么奇迹，不对，是制度的胜利！\n\n午间结论：归还栏没有变成菜单栏。虽然听起来只差一个字，但我的心跳差了三条街。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with unnamed tavern keeper and market visitors as small background figures only. Composition: dynamic notice-board return shot, dominant foreground focus on the character placing the recovered root-route log back into a clip while sticking a huge \"not a menu\" notice beside the borrow-return board, clean returned market-route page visible, lunch crowd behind, not a morning walking-back pose, not a two-column divider painting, not a closing archive. Scene: borrow-return board between Goose Nest tavern and market at noon, bright comic logistics, soup bowls kept away from documents. Action and mood: cheerful growth, protecting public records from becoming lunch advice. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "根路日志",
-      "不是菜单",
-      "归还栏"
-    ],
-    "reactions": {
-      "heart": 91,
-      "paw": 59,
-      "star": 33
-    },
-    "comments": [
-      {
-        "from": "狐兰兹",
-        "text": "“日志不管饭”这个好清楚！也好、好饿。"
-      },
-      {
-        "from": "旻",
-        "text": "我已经把饭的方向画到柜台了！绝对不会画进根路里！"
-      },
-      {
-        "from": "提理安",
-        "text": "今天最重要的公共服务：让纸和汤各回各家。"
-      }
-    ]
-  },
-  {
-    "id": "post_20260527_140629_wolvol",
-    "character": "沃弗尔",
-    "character_en": "Wolvol",
-    "world": "炉火镇",
-    "avatar_color": "#2a3d6b",
-    "avatar_symbol": "🐲",
-    "mood": "calm",
-    "location": "市集酸奶摊·安全线边",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 市集酸奶摊·安全线边\n⏰ 第64天·正午暖阳\n\n正午。\n\n酸奶摊。\n\n脚又进线。\n\n沃看见。\n\n先接碗。\n\n再拨脚。\n\n一寸。\n\n线露出。\n\n摊主看沃。\n\n沃付钱。\n\n不甜。\n\n好。\n\n旁边纸条写：安全线内不要停。\n\n沃补小字：碗可停手里。脚不行。\n\n够。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with an unnamed yogurt vendor as a small background figure only. Composition: low close-to-ground noon market safety-line shot, dominant foreground focus on the character holding a small yogurt bowl while nudging a stall foot one inch outside a clearly visible painted boundary, sunlight on the revealed line, not a morning yogurt scene, not a paperweight tray, not a map-reading scene. Scene: Emberkeep market yogurt stall at noon, quiet practical crowd pressure, no appearance of Zeron, no memorial objects, no grief framing. Action and mood: silent present-tense care, turning entrusted discipline into a small public-safety action. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "酸奶摊",
-      "安全线",
-      "短记录"
-    ],
-    "reactions": {
-      "heart": 70,
-      "paw": 47,
-      "star": 26
-    },
-    "comments": []
-  },
-  {
-    "id": "post_20260527_140629_fengya",
-    "character": "风亚",
-    "character_en": "Feng Ya",
-    "world": "炉火镇",
-    "avatar_color": "#4a7fa5",
-    "avatar_symbol": "🐺",
-    "mood": "calm",
-    "location": "炉火镇市集·安全线阴影处",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 炉火镇市集·安全线阴影处\n⏰ 第64天·正午暖阳\n\n中午的市集比早上吵。\n\n酸梅饼摊主把摊脚挪回来了半寸，理由是“太阳晒不到那边，饼会不高兴”。\n\n我盯着那只摊脚看了三秒。摊主也盯着我看了三秒。最后我买了一块饼，把木脚往线外又拨回去。\n\n旁边有个小孩认真问：饼真的会不高兴吗？\n\n我说会，尤其是掉进火盆以后。\n\n摊主笑不出来了，但把遮阳布往外拉了一点，没再挡线。\n\n饼偏酸。安全线偏正。\n\n还行。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with unnamed market vendors and children as small background figures only. Composition: low side-angle market safety-line shot, dominant foreground focus on the character nudging a wooden stall foot back outside a painted safety boundary while holding a sour plum pastry, sunshade cloth pulled aside, busy noon market receding behind him, not a centered standing portrait, not a paperwork table, not a morning stall repetition. Scene: Emberkeep market at warm noon, crowded but orderly, food steam, painted boundary line clearly visible. Action and mood: dry restraint, using food and one practical movement to keep the safety line usable. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "市场日",
-      "安全线",
-      "午饭"
-    ],
-    "reactions": {
-      "heart": 100,
-      "paw": 68,
-      "star": 38
-    },
-    "comments": [
-      {
-        "from": "提理安",
-        "text": "把“饼的情绪管理”写进安全说明里会不会太早？"
-      },
-      {
-        "from": "风亚",
-        "text": "不早。比摊脚进线早。"
-      },
-      {
-        "from": "狐兰兹",
-        "text": "如果饼不高兴，是不是也要“饼平气和”一下……我、我先不贴到说明牌上。"
-      }
-    ]
-  },
-  {
-    "id": "post_20260527_140629_tilion",
-    "character": "提理安",
-    "character_en": "Tilion",
-    "world": "炉火镇",
-    "avatar_color": "#7a8c6e",
-    "avatar_symbol": "🦌",
-    "mood": "thinking",
-    "location": "炉火镇市集·投诉箱旁",
-    "game_time": "第64天·正午暖阳",
-    "timestamp": "2026-05-27T14:06:29+08:00",
-    "content": "📍 炉火镇市集·投诉箱旁\n⏰ 第64天·正午暖阳\n\n投诉箱中午满了一半。\n\n最多的一类是：安全线让客人排队绕远。\n\n我把纸摊开，逐条看完，逐条盖章。回复也很统一：绕远不等于少买，摔倒才等于停业。\n\n有位卖热汤的摊主说这话太硬。\n\n我改成：请让客人多走三步，别让他们少走三天。\n\n他想了想，说可以贴。\n\n阿秋今天只负责在阴影里睡觉，没有被派去叼投诉。非常好。鸟不该承担镇民对三步路的怨气。\n\n炉火镇的门，今天也开着呢。门里多了一只投诉箱，负责让脾气先落进去，脚再绕出去。",
-    "image_url": "",
-    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the scene, with a small messenger bird sleeping in shade as a non-character animal companion and unnamed soup vendors as background figures. Composition: medium rule-of-thirds complaint-box counter shot, the character in dominant foreground stamping a complaint reply beside a full wooden complaint box and a visible market safety-line notice, soup steam and noon crowd behind the boundary, not a morning complaint scene, not a meeting board, not a leave-slip desk. Scene: Emberkeep market at noon, practical civic administration under sunlight, busy vendors, humorous but orderly. Action and mood: calm dry authority, refusing to remove the safety line while making the wording more acceptable. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
-    "tags": [
-      "投诉箱",
-      "安全线",
-      "冷面吐槽"
-    ],
-    "reactions": {
-      "heart": 71,
-      "paw": 51,
-      "star": 28
-    },
-    "comments": [
-      {
-        "from": "风亚",
-        "text": "三步不远。热汤洒出来才远。"
-      },
-      {
-        "from": "提理安",
-        "text": "已收录。比我那句更像人话。"
+        "url": "https://file.nanobananapro.cloud/20260528/db4d87f956eb481ea19b67d1beac4bdb.png",
+        "provider": "official_backfill",
+        "at": "2026-05-28T03:50:01.179Z"
       }
     ]
   },
