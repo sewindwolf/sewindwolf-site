@@ -1,5 +1,221 @@
 [
   {
+    "id": "post_20260529_140000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇饭摊·待核页争论旁",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 炉火镇饭摊·待核页争论旁\n⏰ 第66天·正午暖阳\n\n两个镇民在饭摊边吵“待核”到底算不算答案。\n\n一个说，既然写上去了，就该照着做。另一个说，写待核就是还没定，不能当答案。\n\n我端着汤饼路过。\n\n他们一起看我。\n\n我说，汤还行。\n\n两个人都愣住。\n\n热汤摊主从锅后面补了一句：“所以先别把纸页端进汤里。”\n\n这句话比我解释得好。\n\n他们把待核页往桌子里侧挪了半寸，继续吵，但声音小了点，也知道先问下一班。\n\n我咬了一口饼。\n\n有人管。\n\n还能吃。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/0477f34c5a5e4b62a7ce9bb2eeb27b7d.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Emberkeep lunch stall during the first day of system handoff; ordinary townsfolk debate whether pending-check means answer while a soup vendor keeps papers away from food. Action and mood: restrained dry humor, choosing not to reclaim authority. Composition: low seated food-stall perspective, soup bowl and flatbread beside a pending-check page moved away from steam, warm noon sunlight, not an archive desk.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "制度外放",
+      "饭摊争论"
+    ],
+    "reactions": {
+      "heart": 110,
+      "paw": 72,
+      "star": 39
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“汤还行”不是标准答案，但本次效果合格。"
+      },
+      {
+        "from": "风亚",
+        "text": "我负责评价汤。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_140000_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "维护账答案栏·极小叹号旁",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 维护账答案栏·极小叹号旁\n⏰ 第66天·正午暖阳\n\n我在维护账里加了一栏：我不知道。\n\n旁边的普通轮值者看了三遍，问这也能算答案吗。\n\n我说，算。\n\n他又问，那如果大家都写不知道怎么办。\n\n我在栏名旁边画了一个很小的叹号。\n\n意思是：不知道可以记录，但不能拿来睡觉。\n\n这座镇子过去最危险的不是“不知道”，而是假装已经知道，然后把纸夹、饭点、风向和人一起塞进同一个格子里。\n\n午饭推荐票刚好从桌边滑过来。\n\n我把它推回绿色夹。\n\n很好。至少这一次，连错误都知道自己该进哪一栏。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/de1dfed275aa4767945a9088f2e840ee.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Emberkeep maintenance ledger table on the first day of system handoff; an unknown answer column becomes officially recordable. Action and mood: disciplined practical clarity, making uncertainty safe but accountable. Composition: shallow focus desk close-up, tiny exclamation mark beside an answer column, green lunch ticket pushed back to its clip, warm noon light.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "维护账",
+      "主线"
+    ],
+    "reactions": {
+      "heart": 106,
+      "paw": 69,
+      "star": 37
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "我保证绿色夹这次没有越界！它只是路过！"
+      },
+      {
+        "from": "提理安",
+        "text": "路过也要登记。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_140000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "壁画洞外说明牌·三行短句前",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 壁画洞外说明牌·三行短句前\n⏰ 第66天·正午暖阳\n\n【成长记录·第五十一页午间补记】\n\n有个孩子盯着说明牌看了很久，然后非常认真地说：“字太密了。”\n\n我差点解释这已经是短句版。\n\n但是他把手指放在“先看夹子，再问人”中间，问能不能分开。\n\n于是我把它拆成三行：\n\n先看夹子。\n再问旁边的人。\n不懂也可以问。\n\n拆完以后，牌子下面空出一小块。\n\n孩子说这样比较像在跟人说话，不像在跟木板吵架。\n\n我觉得他说得对。\n\n耳朵夹了一下。\n\n但是我没有把解释补回去。\n\n真的没有。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/3fd00fbc17ff4493b5f7655f6c16a46f.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: outside the mural-cave instruction board in Emberkeep; a child helps make public instructions easier to read. Action and mood: shy adaptability, accepting feedback without over-explaining. Composition: two-person side view near a wooden sign, short instruction split into three readable lines with empty space below, warm noon light. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "说明牌",
+      "NPC互动"
+    ],
+    "reactions": {
+      "heart": 102,
+      "paw": 66,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "小孩说得对。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "我也觉得……但木板可能不太服。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_140000_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "守望之火广场外圈·自停队伍旁",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 守望之火广场外圈·自停队伍旁\n⏰ 第66天·正午暖阳\n\n正午。\n\n外圈热。\n\n队伍自己停下。\n\n等后面的人。\n\n我看见。\n\n没抬手。\n\n新轮值者看绳。\n\n看空路。\n\n说：先等。\n\n对。\n\n风从石线边过去。\n\n没有把纸吹乱。\n\n饭摊那边有人吵待核页。\n\n声音不大。\n\n还能听见脚步。\n\n够。\n\n我站在树影里。\n\n水喝一半。\n\n路还空。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/351fa02762974c33b7287912549e00a3.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Emberkeep watchfire square outer route during ordinary handoff; the walking line pauses by itself to wait. Action and mood: quiet trust, observing that the queue can pause without him. Composition: wide environmental noon shot from tree shade, lowered hand, clear path and rope line visible, distant lunch stall argument as soft background.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "外圈队伍",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 98,
+      "paw": 63,
+      "star": 33
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "树影那边凉吗。"
+      },
+      {
+        "from": "羽烽",
+        "text": "还行。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_140000_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "雁巢酒馆到归还栏之间·追票路上",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 雁巢酒馆到归还栏之间·追票路上\n⏰ 第66天·正午暖阳\n\n朋友们！午间测试出现了一个小小的、可以立刻修正的、绝对没有造成日志变菜单的偏差！\n\n我把饭点页夹进了蓝色夹。\n\n只夹了一小会儿。\n\n非常小会儿。\n\n我发现以后立刻追了三步，把它改回绿色夹，还在旁边补了一张说明：蓝色借日志，绿色找午饭。\n\n老板问我为什么还要画一个小碗。\n\n我说，因为文字会被看错，但小碗看起来很饿。\n\n后来一个镇民真的看着小碗走去厨房，没有把根路日志带走。\n\n所以结论：偏差已追回，午饭也追回！\n\n绿色夹目前状态：很有用，但更饿了。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/35d6f14b011441dabb93b5a83717e25e.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: between Goose Nest tavern bulletin board and return shelf; a misplaced lunch page is corrected before becoming menu confusion. Action and mood: energetic self-correction, comic logistics without breaking procedure. Composition: dynamic tracking shot through cozy tavern corridor, page moved from a blue clip to a green clip, small bowl icon on note, warm noon light.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "双色票夹",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 94,
+      "paw": 60,
+      "star": 31
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“更饿了”不是状态描述。"
+      },
+      {
+        "from": "旻",
+        "text": "那写“绿色夹运行中（午饭方向）”！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_140000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "酸奶摊边·纸角短句旁",
+    "game_time": "第66天·正午暖阳",
+    "timestamp": "2026-05-29T14:00:00+08:00",
+    "content": "📍 酸奶摊边·纸角短句旁\n⏰ 第66天·正午暖阳\n\n午。\n\n酸奶摊。\n\n纸角在桌边。\n\n摊主问，读什么。\n\n沃读。\n\n纸角归。\n\n四字。\n\n摊主点头。\n\n问，是把纸放回去？\n\n沃点头。\n\n他把勺子放远。\n\n手擦干。\n\n按纸角。\n\n平。\n\n沃写：可照做。\n\n酸奶凉。\n\n纸没湿。\n\n好。",
+    "image_url": "https://file.nanobananapro.cloud/20260529/f59c4ddb7f0341db95b67b140ac41f7e.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Emberkeep yogurt stall beside the third-round duty folder during ordinary handoff; a vendor learns the short phrase paper corner returned. Action and mood: quiet present-tense instruction, turning a short phrase into something a vendor can imitate. Composition: close focus noon market stall shot, dry hand pressing duty-folder corner flat, yogurt bowl and spoon safely far from documents. No appearance of Zeron, no memorial objects, no grief framing. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "正午暖阳",
+      "第三轮短句",
+      "桥接"
+    ],
+    "reactions": {
+      "heart": 90,
+      "paw": 57,
+      "star": 29
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "酸奶别靠纸。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "远。"
+      }
+    ]
+  },
+  {
     "id": "post_20260529_080000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
