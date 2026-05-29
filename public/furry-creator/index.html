@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260526-remix-layout-lock" />
+  <link rel="stylesheet" href="style.css?v=20260529-google-banana" />
 </head>
 <body>
-  <script>window.APP_VERSION = '20260526-remix-layout-lock';</script>
+  <script>window.APP_VERSION = '20260529-google-banana';</script>
   <div class="shell">
     <header class="hero">
       <div class="badge">SEWINDWOLF · CHARACTER LAB</div>
@@ -101,6 +101,7 @@
           <button class="ghost" id="importJsonBtn" type="button">导入 JSON</button>
           <input class="visually-hidden-file" id="importJsonInput" type="file" accept="application/json,.json" />
           <button class="banana-action" id="bananaGenerateBtn">提交 Banana 生图任务</button>
+          <button class="banana-action" id="googleBananaGenerateBtn" type="button">提交 Google Banana 生图任务</button>
           <button class="gpt-action" id="gptGenerateBtn" type="button">提交 GPT-Image-2 生图任务</button>
           <button class="fal-gpt-action" id="falGptGenerateBtn" type="button">提交 GPT fal.ai 生图任务</button>
           <button class="ghost" id="openHistoryFromResultBtn" type="button">查看生成历史</button>
@@ -120,7 +121,7 @@
           <div class="banana-preview" id="bananaPreview"></div>
         </div>
         <p class="note">说明：点击任一“提交 XX 生图任务”按钮后会在页面内显示密码输入框，密码正确才会用当前提示词提交对应生图任务；生成完成后会显示图片预览和原图链接。生图成功后可进入“图生图二次修改”，新图也可以继续作为下一轮参考图。</p>
-        <div class="version-row">当前版本：<span id="versionText">20260526-remix-layout-lock</span></div>
+        <div class="version-row">当前版本：<span id="versionText">20260529-google-banana</span></div>
       </section>
 
       <section class="panel remix-panel" id="remixPanel" hidden>
@@ -131,7 +132,7 @@
         <div class="remix-source-card">
           <div class="field-editor-kicker">BASE IMAGE</div>
           <h3>选择 1～5 张参考图继续修改</h3>
-          <p>可以从本工作流、历史图片或本地上传中选择参考图；第一张是主参考图。Banana 暂按第一张线上图处理，GPT-Image-2 / GPT fal.ai 会尝试多图联合。</p>
+          <p>可以从本工作流、历史图片或本地上传中选择参考图；第一张是主参考图。Banana 暂按第一张线上图处理，Google Banana / GPT-Image-2 / GPT fal.ai 会尝试多图联合。</p>
           <div class="remix-reference-actions">
             <button class="ghost" id="addHistoryReferenceBtn" type="button">从历史选择参考图</button>
             <button class="ghost" id="addLocalReferenceBtn" type="button">上传本地参考图</button>
@@ -162,6 +163,7 @@
           </div>
           <div class="copy-row remix-provider-row">
             <button class="banana-action" id="remixBananaBtn" type="button">提交 Banana 图生图</button>
+            <button class="banana-action" id="remixGoogleBananaBtn" type="button">提交 Google Banana 图生图</button>
             <button class="gpt-action" id="remixGptBtn" type="button">提交 GPT-Image-2 图生图</button>
             <button class="fal-gpt-action" id="remixFalGptBtn" type="button">提交 GPT fal.ai 图生图</button>
             <button class="ghost" id="backToResultBtn" type="button">返回结果页</button>
@@ -207,12 +209,12 @@
     </div>
   </div>
   <script>
-    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260526-remix-layout-lock');
+    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260529-google-banana');
     document.getElementById('refreshLatestBtn') && document.getElementById('refreshLatestBtn').addEventListener('click', function(){
       location.replace('/furry-creator/?v=' + Date.now());
     });
   </script>
-  <script src="app.js?v=20260526-remix-layout-lock"></script>
+  <script src="app.js?v=20260529-google-banana"></script>
 </body>
 </html>
 
