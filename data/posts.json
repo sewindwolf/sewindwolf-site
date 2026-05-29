@@ -1,5 +1,221 @@
 [
   {
+    "id": "post_20260529_210000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇外围灯下·传页路旁",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 炉火镇外围灯下·传页路旁\n⏰ 第66天·暮色将至\n\n风把一张待核页从夹子边缘掀起来。\n\n我伸脚踩住。旁边的孩子立刻蹲下来，小心把纸页按回值班夹，还问下一班是不是要先看蓝色标记。\n\n我说，是。\n\n他点头，把夹子递给后面的人，没有递给我。挺好。\n\n我也没有看内容。\n\n灯下的汤饼还有半块，热气快散完了。远处有人照着维护账念，念错一行，又被旁边摊主提醒回来。\n\n我把脚收回去，坐下继续吃。\n\n今天的风没把事情吹回我手里。",
+    "image_url": "https://sewindwolf.art/images/refs/fengya_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening lamplight at the edge of Emberkeep, a pending-check page is caught before ordinary townsfolk pass it onward. Action and mood: quiet restraint, deliberately not taking authority back, returning to a simple dinner. Composition: low-angle lamplit scene with one foot holding a loose page, a child returning the page to a duty folder, half-eaten flatbread and soup steam in foreground.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "制度外放",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 126,
+      "paw": 84,
+      "star": 44
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "页回去了。"
+      },
+      {
+        "from": "风亚",
+        "text": "饭也还在。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_210000_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "维护账读账桌·外放第一日晚检",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 维护账读账桌·外放第一日晚检\n⏰ 第66天·暮色将至\n\n普通轮值者把维护账从头读到尾。\n\n中途停了三次：一次问“待核”能不能跳过，一次把饭点栏念成归还栏，还有一次承认自己不知道。\n\n我都记下了。没有替他念。\n\n最后一页合上时，桌边的人都在等我评价。\n\n我写：外放第一日，没炸。\n\n字很短。旁边有人小声说，这算夸奖吗。\n\n算。\n\n如果一套制度第一次交到普通人手里，只是多出三处停顿、两次更正和一行“不知道”，那它已经比很多自称完美的东西可靠。",
+    "image_url": "https://sewindwolf.art/images/refs/tilion_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening maintenance-ledger reading table in Emberkeep, an ordinary duty worker finishes reading the entire handoff ledger. Action and mood: stern relief, documenting errors without taking over the process. Composition: shallow focus close-up of a ledger final page under warm lamp, short note about first handoff day not exploding, quiet listeners at table edge.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "维护账",
+      "主线"
+    ],
+    "reactions": {
+      "heart": 121,
+      "paw": 80,
+      "star": 42
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "“没炸”可以写进说明牌吗……"
+      },
+      {
+        "from": "提理安",
+        "text": "不建议，但准确。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_210000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "短句说明牌旁·木架边",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 短句说明牌旁·木架边\n⏰ 第66天·暮色将至\n\n【成长记录·第五十一页夜间补记】\n\n我听见镇民照着说明牌念：\n\n先看夹子。\n再问旁边的人。\n不懂也可以问。\n\n他念得很慢，但没有跳字。\n\n我本来想过去说明“旁边的人”不一定是我，也可以是普通轮值者。\n\n刚迈一步，尾巴撞到了木架。木架响了一声。\n\n念牌的人回头说：“哦，所以问旁边的人，不是问写牌的人。”\n\n我停住。\n\n对。\n\n他自己懂了。\n\n尾巴虽然撞得有点疼，但从结果上看，今天这一下也算一种解释方式。",
+    "image_url": "https://sewindwolf.art/images/refs/foxlanz_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: beside a short public instruction board near a wooden rack at dusk in Emberkeep, townsfolk read the simplified lines by themselves. Action and mood: shy comic relief, discovering that people can understand without extra explanation. Composition: three-quarter composition with wooden rack and readable short-line sign, warm evening lanterns, slight motion of tail bumping the rack. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "说明牌",
+      "NPC互动"
+    ],
+    "reactions": {
+      "heart": 116,
+      "paw": 76,
+      "star": 40
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "尾巴式教学！"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "请不要正式命名……"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_210000_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "人声边缘·守望之火广场外侧",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 人声边缘·守望之火广场外侧\n⏰ 第66天·暮色将至\n\n灯亮。\n\n人声在里面。\n\n我站在边上。\n\n没有数齐每个人。\n\n只看出口。\n\n出口亮。\n\n空路空。\n\n新轮值者停了一下。等后面的人。\n\n有人念错栏。有人改回来。\n\n没人喊救场。\n\n够。\n\n我转身。走两步。\n\n又听见风亚那边碗碰桌。\n\n他还在吃。\n\n好。",
+    "image_url": "https://sewindwolf.art/images/refs/yufeng_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: outer edge of Emberkeep watchfire square at dusk, warm voices inside and clear exits around the handoff route. Action and mood: quiet trust, leaving before counting every person because the route works. Composition: over-the-shoulder wide evening shot from the edge of lantern light, visible open exits, distant duty workers correcting a ledger line.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "外圈空路",
+      "桥接"
+    ],
+    "reactions": {
+      "heart": 111,
+      "paw": 72,
+      "star": 38
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "听碗声也算数？"
+      },
+      {
+        "from": "羽烽",
+        "text": "算。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_210000_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "雁巢酒馆布告板·双色票夹下方",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 雁巢酒馆布告板·双色票夹下方\n⏰ 第66天·暮色将至\n\n我把双色票夹挂高了。\n\n这样看起来很正式！\n\n然后第一个过来的小孩仰头看了三秒，问：“上面写的是午饭还是日志？”\n\n我立刻意识到，正式不等于好用。\n\n所以我又把夹子挂低一点，还在绿色夹旁边画了小碗，在蓝色夹旁边画了小书。\n\n第二个镇民走过来，看了一眼小碗，直奔厨房；看了一眼小书，把根路日志还回蓝夹。\n\n完美。\n\n今天没人把日志当菜单。也没人把菜单还进日志栏。\n\n我宣布：高度调整成功，晚饭方向清晰！",
+    "image_url": "https://sewindwolf.art/images/refs/aki_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Goose Nest tavern bulletin board at dusk with two color-coded clips lowered for children and townsfolk to read. Action and mood: bright practical enthusiasm, learning that accessibility matters more than looking official. Composition: dynamic cozy tavern shot, two lowered ticket clips with simple bowl and book icons, townsfolk moving correctly toward kitchen and return shelf.  Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "双色票夹",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 106,
+      "paw": 68,
+      "star": 36
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“晚饭方向清晰”可以保留。"
+      },
+      {
+        "from": "旻",
+        "text": "这句我会写进说明！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260529_210000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "第三轮记录格·格子线前",
+    "game_time": "第66天·暮色将至",
+    "timestamp": "2026-05-29T21:00:00+08:00",
+    "content": "📍 第三轮记录格·格子线前\n⏰ 第66天·暮色将至\n\n第三轮。\n\n沃不数脸。\n\n看格。\n\n格齐。\n\n纸角归。\n\n蓝夹在。\n\n绿夹远。\n\n人换。\n\n格还在。\n\n沃写：格齐。\n\n停。\n\n又写：可照。\n\n下一班的人读。\n\n手擦干。按纸角。\n\n没有问沃。\n\n沃把笔放下。给下一班。\n\n好。",
+    "image_url": "https://sewindwolf.art/images/refs/wolvol_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: third-round duty grid at dusk during ordinary handoff, the next shift reads a short note and repeats the action without asking. Action and mood: quiet low-pressure participation, choosing present procedure over counting faces. Composition: close focus on duty-grid lines and a pen being left for the next shift, dry hands pressing a paper corner flat, warm lantern light. No appearance of Zeron, no memorial objects, no grief framing. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第66天",
+      "暮色将至",
+      "第三轮短句",
+      "桥接"
+    ],
+    "reactions": {
+      "heart": 101,
+      "paw": 64,
+      "star": 34
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "短句可用。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "可交。"
+      }
+    ]
+  },
+  {
     "id": "post_20260529_140000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
