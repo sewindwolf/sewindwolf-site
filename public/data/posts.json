@@ -118,7 +118,7 @@
     "location": "守望之火广场外圈·半圈后",
     "game_time": "第66天·晨光时分",
     "timestamp": "2026-05-29T08:00:00+08:00",
-    "content": "📍 守望之火广场外圈·半圈后\n⏰ 第66天·晨光时分\n\n半圈。\n\n新轮值者在前。\n\n我在后。\n\n他停。\n\n看绳。\n\n看路。\n\n问：这里让人先过？\n\n我说，嗯。\n\n他走。\n\n走对。\n\n我退半步。\n\n风亚在摊边喝汤。\n\n没看这边。\n\n好。\n\n远方消息板很吵，说别的城在谈很久以后的路怎么修。\n\n这里不用很久。\n\n这一段路，他能自己走完。\n\n够。",
+    "content": "📍 守望之火广场外圈·半圈后\n⏰ 第66天·晨光时分\n\n守望之火广场外圈，半圈后。新轮值者停下来看绳和路，问我这里是不是让人先过。我说嗯。他按规矩让路，继续走对方向，我退半步，没再接管。远处摊边风亚在喝汤，没往这边看。消息板有人贴了别的城讨论修路的简报，当背景听就好。",
     "image_url": "https://file.nanobananapro.cloud/20260529/1c0ce81d8bc645eeae1fa8184f74192d.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with an unnamed ordinary duty trainee walking ahead as a small figure, and Feng Ya only implied far away by a soup stall silhouette without identity focus. Composition: dynamic tracking shot from behind and slightly low, dominant foreground focus on the character stepping back after guiding a trainee through half of the outer route, rope line and clear path visible, morning square light, distant notice board with faraway city-road rumor, not a rescue scene, not a tavern doorway waiting repeat, not a centered portrait. Scene: outer route of Emberkeep watchfire square on the first morning of ordinary handoff. Action and mood: quiet trust, letting someone else finish the route. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
@@ -141,7 +141,9 @@
         "from": "羽烽",
         "text": "嗯。"
       }
-    ]
+    ],
+    "text_provider": "deepseek",
+    "text_layer_status": "ok_rewrite_20260529"
   },
   {
     "id": "post_20260529_080000_aki",
@@ -190,7 +192,7 @@
     "location": "第三轮值班夹·压纸动作旁",
     "game_time": "第66天·晨光时分",
     "timestamp": "2026-05-29T08:00:00+08:00",
-    "content": "📍 第三轮值班夹·压纸动作旁\n⏰ 第66天·晨光时分\n\n晨。\n\n纸角起。\n\n旁边人看见。\n\n他按。\n\n平。\n\n沃看。\n\n好。\n\n他问，照这样？\n\n沃写：可照做。\n\n四字。\n\n他念。\n\n懂。\n\n酸奶在远处。\n\n不压纸。\n\n笔在格边。\n\n下一班来。\n\n也能看。\n\n够。",
+    "content": "📍 第三轮值班夹·压纸动作旁\n⏰ 第66天·晨光时分\n\n第三轮值班夹。纸角翘起来，旁边的人看见了，伸手按平。问沃，是不是照这样做。沃在格边写：可照做。四个字。他念了一遍，懂了。酸奶放远处，不碰纸。笔搁格边。这样下一班来时，也能看懂该怎么做。",
     "image_url": "https://file.nanobananapro.cloud/20260529/4a6efafd6d05495da9ca65cb0941d1f7.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed duty worker hands pressing a paper corner as small secondary action only. Composition: close focus side-silhouette desk shot, dominant foreground focus on the character writing a concise phrase after watching another worker press down a lifted duty-folder corner, yogurt bowl safely far from documents, morning side light, no appearance of Zeron, no memorial objects, no grief framing, not map reading, not a dusk short-record repeat. Scene: third-round duty folder table on the first morning of ordinary handoff. Action and mood: quiet present-tense approval, turning a personal habit into readable instruction. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
     "tags": [
@@ -213,7 +215,9 @@
         "from": "沃弗尔",
         "text": "好。"
       }
-    ]
+    ],
+    "text_provider": "deepseek",
+    "text_layer_status": "ok_rewrite_20260529"
   },
   {
     "id": "post_20260528_210800_fengya",
