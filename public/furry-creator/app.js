@@ -346,10 +346,10 @@ const WORKFLOW_IMAGE_LIMIT = 5;
 const REMIX_REFERENCE_LIMIT = 5;
 const HISTORY_PAGE_SIZE = 10;
 const imageProviderConfigs = {
-  banana: { label: 'Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
-  googleBanana: { label: 'Google Banana', buttonId: 'googleBananaGenerateBtn', endpoint: '/api/google-banana-generate' },
-  gpt: { label: 'GPT-Image-2', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
-  falGpt: { label: 'GPT fal.ai', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate', statusEndpoint: '/api/fal-gpt-status', asyncQueue: true }
+  banana: { label: '转链Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
+  googleBanana: { label: '官方Banana', buttonId: 'googleBananaGenerateBtn', endpoint: '/api/google-banana-generate' },
+  gpt: { label: 'GPTImage2-1', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
+  falGpt: { label: 'GPTImage2-2', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate', statusEndpoint: '/api/fal-gpt-status', asyncQueue: true }
 };
 function imageProviderConfig(provider){ return imageProviderConfigs[provider] || imageProviderConfigs.banana; }
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
@@ -397,7 +397,7 @@ function canUseReferenceWithProvider(provider, refs){
   if(!urls.length) return { ok:false, message:'没有可用的参考图。' };
   if(provider === 'banana'){
     const first = urls[0] || '';
-    if(first.startsWith('data:')) return { ok:false, message:'Banana 当前只支持线上图片 URL，本地上传图请先使用 Google Banana / GPT-Image-2 / GPT fal.ai，或改用当前工作流/历史图片。' };
+    if(first.startsWith('data:')) return { ok:false, message:'转链Banana 当前只支持线上图片 URL，本地上传图请先使用 官方Banana / GPTImage2-1 / GPTImage2-2，或改用当前工作流/历史图片。' };
     return { ok:true, urls:[first] };
   }
   if(provider === 'googleBanana') return { ok:true, urls:urls.slice(0, REMIX_REFERENCE_LIMIT) };
@@ -650,7 +650,7 @@ async function addLocalReferenceFiles(files){
   }
   if(entries.length){
     setRemixReferences(entries, { replace:false });
-    if(status) status.textContent = '已加入 ' + entries.length + ' 张本地参考图。Banana 暂不支持本地 data URL，建议用 GPT-Image-2 或 GPT fal.ai。';
+    if(status) status.textContent = '已加入 ' + entries.length + ' 张本地参考图。转链Banana 暂不支持本地 data URL，建议用 官方Banana / GPTImage2-1 / GPTImage2-2。';
   }
 }
 

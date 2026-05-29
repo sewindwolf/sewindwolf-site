@@ -100,10 +100,12 @@
           <button class="ghost" id="downloadBtn">下载 JSON</button>
           <button class="ghost" id="importJsonBtn" type="button">导入 JSON</button>
           <input class="visually-hidden-file" id="importJsonInput" type="file" accept="application/json,.json" />
-          <button class="banana-action" id="bananaGenerateBtn">提交 Banana 生图任务</button>
-          <button class="banana-action" id="googleBananaGenerateBtn" type="button">提交 Google Banana 生图任务</button>
-          <button class="gpt-action" id="gptGenerateBtn" type="button">提交 GPT-Image-2 生图任务</button>
-          <button class="fal-gpt-action" id="falGptGenerateBtn" type="button">提交 GPT fal.ai 生图任务</button>
+          <div class="provider-action-row">
+            <button class="image-provider-action google-banana-action" id="googleBananaGenerateBtn" type="button"><span class="provider-rank">01</span><span>官方Banana</span></button>
+            <button class="image-provider-action banana-action" id="bananaGenerateBtn" type="button"><span class="provider-rank">02</span><span>转链Banana</span></button>
+            <button class="image-provider-action gpt-action" id="gptGenerateBtn" type="button"><span class="provider-rank">03</span><span>GPTImage2-1</span></button>
+            <button class="image-provider-action fal-gpt-action" id="falGptGenerateBtn" type="button"><span class="provider-rank">04</span><span>GPTImage2-2</span></button>
+          </div>
           <button class="ghost" id="openHistoryFromResultBtn" type="button">查看生成历史</button>
         </div>
         <div class="banana-box" id="bananaBox" hidden>
@@ -132,7 +134,7 @@
         <div class="remix-source-card">
           <div class="field-editor-kicker">BASE IMAGE</div>
           <h3>选择 1～5 张参考图继续修改</h3>
-          <p>可以从本工作流、历史图片或本地上传中选择参考图；第一张是主参考图。Banana 暂按第一张线上图处理，Google Banana / GPT-Image-2 / GPT fal.ai 会尝试多图联合。</p>
+          <p>可以从本工作流、历史图片或本地上传中选择参考图；第一张是主参考图。转链Banana 暂按第一张线上图处理，官方Banana / GPTImage2-1 / GPTImage2-2 会尝试多图联合。</p>
           <div class="remix-reference-actions">
             <button class="ghost" id="addHistoryReferenceBtn" type="button">从历史选择参考图</button>
             <button class="ghost" id="addLocalReferenceBtn" type="button">上传本地参考图</button>
@@ -162,10 +164,10 @@
             <p id="remixLayoutHint">当前：把参考图角色身份转成单张完整插图，禁止保留三视图或多面板设定板布局。</p>
           </div>
           <div class="copy-row remix-provider-row">
-            <button class="banana-action" id="remixBananaBtn" type="button">提交 Banana 图生图</button>
-            <button class="banana-action" id="remixGoogleBananaBtn" type="button">提交 Google Banana 图生图</button>
-            <button class="gpt-action" id="remixGptBtn" type="button">提交 GPT-Image-2 图生图</button>
-            <button class="fal-gpt-action" id="remixFalGptBtn" type="button">提交 GPT fal.ai 图生图</button>
+            <button class="image-provider-action google-banana-action" id="remixGoogleBananaBtn" type="button"><span class="provider-rank">01</span><span>官方Banana 图生图</span></button>
+            <button class="image-provider-action banana-action" id="remixBananaBtn" type="button"><span class="provider-rank">02</span><span>转链Banana 图生图</span></button>
+            <button class="image-provider-action gpt-action" id="remixGptBtn" type="button"><span class="provider-rank">03</span><span>GPTImage2-1 图生图</span></button>
+            <button class="image-provider-action fal-gpt-action" id="remixFalGptBtn" type="button"><span class="provider-rank">04</span><span>GPTImage2-2 图生图</span></button>
             <button class="ghost" id="backToResultBtn" type="button">返回结果页</button>
           </div>
           <div class="banana-password-panel" id="remixPasswordPanel" hidden>
