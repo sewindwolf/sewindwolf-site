@@ -1,5 +1,221 @@
 [
   {
+    "id": "post_20260531_140000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇饭摊·递饼的小桌边",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 炉火镇饭摊·递饼的小桌边\n⏰ 第68天·正午暖阳\n\n有个孩子端着半碗汤跑过来，问我：“你今天不管吗？”\n\n我把饼掰了一半递过去，说：“有人管。”\n\n他往维护账桌那边看了一眼。提理安在宣布“常规账本”，旁边的人比他本人还紧张。\n\n孩子又问：“那如果他们管错了呢？”\n\n我说：“错了就写，写了就改。别把汤洒到账本上。”\n\n他点点头，接过饼，先把汤碗放远了才翻页。\n\n这动作比我想象中熟。\n\n我本来想提醒一句蓝纽扣挂低一点，结果狐兰兹那边已经有人自己补了纸条。\n\n所以我闭嘴了。\n\n饼少了半块。\n\n事也没有回到我手里。\n\n午饭很成功。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/c6a03873a70b4db4850d03fd2de1429b.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Emberkeep lunch stall at noon, a child asks whether the main character is not managing today while holding a soup bowl near a small table. Action and mood: quiet restraint and ordinary relief, handing over half a flatbread and letting the regular ledger process continue without taking control back. Composition: two-person side view from table height, soup bowl placed safely away from papers, half flatbread in foreground, maintenance ledger table visible in the distance, warm noon sunlight, not a command scene. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "轮值外放",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 126,
+      "paw": 82,
+      "star": 45
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“午饭很成功”可以算入常规反馈。"
+      },
+      {
+        "from": "风亚",
+        "text": "别算。吃饭不是栏目。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260531_140000_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "常规账本架·维护账换栏处",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 常规账本架·维护账换栏处\n⏰ 第68天·正午暖阳\n\n我宣布：维护账从今天开始进入常规账本。\n\n旁边那位新轮值者立刻问：“那还要写试行吗？”\n\n我说，不写。\n\n他把“试行”两个字划掉，划得很认真，认真到差点把纸划穿。\n\n我把笔从他手里拿开一点，说：“常规不是用力证明它常规。”\n\n他愣了愣，又问：“那写什么？”\n\n我指了指账本架上的空格。\n\n“写日期，写轮次，写谁接手，写哪里没看懂。”\n\n午间风从架子缝里过去，吹得一张旧试行页轻轻晃了一下，没有掉。\n\n我把它压平，放到常规账本后面。\n\n试行结束，不是被藏起来。\n\n是终于不用每次都先解释自己为什么存在。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/6008df36086944578b344cfbe77a9629.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: regular ledger shelf in Emberkeep at noon, the maintenance ledger is moved from a trial folder into a regular ledger slot. Action and mood: disciplined clarity and restrained relief, declaring the procedure regular without turning it into a ceremony. Composition: low-angle view of a ledger shelf with one old trial page being flattened behind a new regular ledger, a careful duty worker crossing out a trial label, warm noon light through wooden shelves, no archive finale. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "常规账本",
+      "主线"
+    ],
+    "reactions": {
+      "heart": 120,
+      "paw": 78,
+      "star": 43
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "天哪，“常规不是用力证明它常规”听起来像贴在酒馆门口的句子。"
+      },
+      {
+        "from": "提理安",
+        "text": "不许贴。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260531_140000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "说明牌旁·新增纸条下方",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 说明牌旁·新增纸条下方\n⏰ 第68天·正午暖阳\n\n【成长记录·第五十三页午间补记】\n\n我发现说明牌旁边多了一张小纸条。\n\n字有点歪，但很清楚：看不懂就问。\n\n不是我写的。\n\n我站在旁边看了很久，耳朵先热起来。\n\n因为我第一反应不是高兴，而是想补一句：请向最近的轮值者、标记员或已阅读过本说明者提问。\n\n这句话在脑子里排得很整齐。\n\n但是纸条下面已经有镇民画了一个小箭头，箭头指向旁边的蓝纽扣。\n\n孩子路过时念了一遍：“看不懂就问。”\n\n然后真的去问了。\n\n我把手里的长句子咽回去了。\n\n今天的练习结论：有人替说明牌长出一句短话时，不要急着给它穿太厚的外套。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/c5ad32a830d4415ea372da0c9920cd8a.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: beside a public instruction board at noon, an unnamed townsfolk note has been added saying to ask if confused, with a small arrow toward a blue marker. Action and mood: shy surprise and practical acceptance, resisting the urge to over-explain because the short note already works. Composition: rule-of-thirds composition near a wooden sign, one small handwritten note and arrow, a child reading it in the background, warm noon light, clear empty space on the board, not a dense text wall. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "NPC互动",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 114,
+      "paw": 74,
+      "star": 41
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "最后一句可以留。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "这、这句比较长，但它没有贴到牌子上。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260531_140000_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "雁巢酒馆门口·回望空路处",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 雁巢酒馆门口·回望空路处\n⏰ 第68天·正午暖阳\n\n我离开外圈，往酒馆走。\n\n走到门口，回头一次。\n\n空路还空。\n\n新轮值者让挑水的人先过。\n\n拿账本的人停了一下，自己等线里的人走完。\n\n没人喊我。\n\n风亚在饭摊那边说话。\n\n狐兰兹站在说明牌旁边，耳朵红。\n\n旻在酒馆里大声强调“这回不是归饭”。\n\n我推开门。\n\n老板把水壶放到吧台上。\n\n他说：“今天不用站门外？”\n\n我说：“先坐一会儿。”\n\n坐下后又看了一眼门缝。\n\n路还空。\n\n水是凉的。\n\n很好。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/57f3599f7646456d9c0960ba9fcbaa35.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Goose Nest tavern doorway at noon, the character leaves the outer route and looks back once while the open path remains clear outside. Action and mood: quiet trust and relief, sitting down for water because the route continues without needing him at the edge. Composition: wide environmental shot from inside the tavern doorway looking out to a clear sunlit route, water kettle on the bar in foreground, small townsfolk moving correctly in the distance, not a rescue scene, not a lonely vigil. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "外圈空路",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 108,
+      "paw": 70,
+      "star": 39
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "你可以多坐一会儿。"
+      },
+      {
+        "from": "羽烽",
+        "text": "嗯。"
+      }
+    ]
+  },
+  {
+    "id": "post_20260531_140000_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "雁巢酒馆布告板·饭点栏正下方",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 雁巢酒馆布告板·饭点栏正下方\n⏰ 第68天·正午暖阳\n\n朋友们！我终于把饭点页放到饭点栏了！\n\n这个句子听起来很简单，但它背后包含了三次移栏、两次误会、一次老板沉默凝视，以及我本人非常郑重的视觉路线调整。\n\n现在绿色夹下面写着：今日饭点。\n\n旁边还画了一个小碗。\n\n我刚贴好，就有人拿着根路日志过来问：“这个是不是要还到饭点栏？”\n\n我立刻说：“不是！这个不是归饭！”\n\n老板在后面咳了一声。\n\n我改口：“我是说，不是归还到饭点。”\n\n对方点头，把日志放回蓝色夹。\n\n天哪，成功。\n\n今天没有人把日志当菜单，也没有人把菜单归档。\n\n我宣布：午间导向偏差已修正，且未造成文书饥饿事故。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/b18a93954f3049fdad15b83acd32125e.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Goose Nest tavern bulletin board at noon, the lunch page is finally placed under the correct meal-time column with a small bowl icon. Action and mood: bright comic success and quick self-correction, preventing route logs from being returned to the meal column. Composition: dynamic tracking shot in a cozy tavern corridor, green meal-time clip under a bowl icon, blue log-return clip beside it, an unnamed townsfolk holding a route log, warm noon bustle, not a centered portrait. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "饭点栏",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 102,
+      "paw": 66,
+      "star": 37
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“文书饥饿事故”删掉。"
+      },
+      {
+        "from": "旻",
+        "text": "那改成“饭点栏误导风险下降”！但我保留内部命名权！"
+      }
+    ]
+  },
+  {
+    "id": "post_20260531_140000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "第三轮记录格·可交短句旁",
+    "game_time": "第68天·正午暖阳",
+    "timestamp": "2026-05-31T14:00:00+08:00",
+    "content": "📍 第三轮记录格·可交短句旁\n⏰ 第68天·正午暖阳\n\n格里写：可交。\n\n别人读。\n\n照做。\n\n纸角平。\n\n笔在旁边。\n\n沃看。\n\n少一个点。\n\n沃补：。\n\n停。\n\n那人问，这样就行？\n\n沃说，行。\n\n他说，那下一班也能看懂？\n\n沃看格。\n\n格齐。\n\n纸平。\n\n线没越。\n\n沃写：可交。\n\n又写：下班读。\n\n笔留下。\n\n好。",
+    "image_url": "https://file.nanobananapro.cloud/20260531/ed30a5414d234bd79b380f199e475d68.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: third-round duty grid at noon, an unnamed worker reads a short note saying ready to hand off and follows it while the pen remains beside the grid. Action and mood: quiet present-tense participation, adding only a punctuation mark and leaving the process readable for the next shift. Composition: close shallow-focus side-silhouette desk shot of a duty-grid cell, one small period being added beside a short handoff phrase, flat paper corner, clear safety line beyond the table, warm noon side light, no appearance of Zeron, no memorial objects, no grief framing. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第68天",
+      "正午暖阳",
+      "可交",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 96,
+      "paw": 62,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "标点也算说明的一部分……我记下了。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "嗯。"
+      }
+    ]
+  },
+  {
     "id": "post_20260530_140000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
