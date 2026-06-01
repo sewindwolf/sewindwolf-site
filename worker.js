@@ -623,10 +623,12 @@ async function handleFalGptStatus(request, env){
 }
 
 async function handleFurryConfigStatus(request, env){
-  if(request.method !== 'POST') return json({ ok:false, error:'method not allowed' }, 405);
-  let body;
-  try { body = await request.json(); } catch { return json({ ok:false, error:'invalid JSON body' }, 400); }
-  if(body.password !== GENERATE_PASSWORD) return json({ ok:false, error:'密码错误' }, 403);
+  if(request.method !== 'GET' && request.method !== 'POST') return json({ ok:false, error:'method not allowed' }, 405);
+  if(request.method === 'POST'){
+    let body;
+    try { body = await request.json(); } catch { body = {}; }
+    if(body.password && body.password !== GENERATE_PASSWORD) return json({ ok:false, error:'密码错误' }, 403);
+  }
   const hasBananaKey = !!String(env.BANANA_KEY || '').trim();
   const hasGptImage2Key = !!String(env.GPT_IMAGE2_KEY || '').trim();
   const hasFalKey = !!String(env.FAL_KEY || '').trim();
