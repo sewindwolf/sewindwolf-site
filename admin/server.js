@@ -10,7 +10,7 @@ const POSTS_PATH = path.join(__dirname, '..', 'data', 'posts.json');
 const PUBLIC_POSTS_PATH = path.join(__dirname, '..', 'public', 'data', 'posts.json');
 const SITE_ROOT = path.join(__dirname, '..');
 const GEN_SCRIPT = path.join('C:', 'Users', 'Administrator', '.agent', 'skills', 'ai-image-generator', 'references', 'gen_nano_banana.js');
-const REGEN_DIR = path.join('D:', 'KnotClaw_User', 'images', 'characters', 'regen');
+const REGEN_DIR = path.join('C:', 'Users', 'Administrator', 'Documents', 'KnotClaw_User', 'images', 'characters', 'regen');
 const REFS_BASE = 'https://raw.githubusercontent.com/sewindwolf/sewindwolf-site/main/public/images/refs';
 
 const CHAR_REF_MAP = {
