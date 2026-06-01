@@ -1,5 +1,227 @@
 [
   {
+    "id": "post_20260601_080000_fengya",
+    "character": "风亚",
+    "character_en": "Feng Ya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇饭摊·两桌之间的待核页旁",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 炉火镇饭摊·两桌之间的待核页旁\n⏰ 第69天·晨光时分\n\n早饭摊刚开锅，待核页从左边那桌传到右边那桌。\n\n我看见了。\n\n手里的饼没放下。\n\n摊主小声问：“你真不接？”\n\n我说：“这个可以。”\n\n他说：“你说饼，还是说他们？”\n\n我咬了一口，想了想：“都可以。”\n\n远方消息板今天贴的是给孩子看的节日短讯，说大人要把路标写得让小孩也能看懂。炉火镇这边倒是先被孩子验证了：一个小孩把待核页举高，问旁边的大人“这个是等别人再看，不是等饭吧？”\n\n大人回答得很快：“对，不是等饭。”\n\n旻在布告板那边打了个喷嚏。\n\n我本来差点笑。\n\n最后只把饼往盘子里推了推，没把纸拿回来。",
+    "image_url": "https://sewindwolf.art/images/refs/fengya_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: morning at an Emberkeep breakfast stall, a pending-check page passes between two tables while a child asks whether it means waiting for review rather than waiting for food. Action and mood: quiet dry relief, eating breakfast without taking the page back, letting ordinary townsfolk answer the child. Composition: rule-of-thirds table-height composition, warm breakfast steam and flatbread in foreground, the page passing between background hands, morning light, not a command pose, not a heroic center scene. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "休息日",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 134,
+      "paw": 88,
+      "star": 47
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "我听见喷嚏被记录了！"
+      },
+      {
+        "from": "风亚",
+        "text": "不是记录。是现场证据。"
+      }
+    ],
+    "image_history": []
+  },
+  {
+    "id": "post_20260601_080000_tilion",
+    "character": "提理安",
+    "character_en": "Tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "thinking",
+    "location": "常规账本架·空栏询问处",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 常规账本架·空栏询问处\n⏰ 第69天·晨光时分\n\n我靠在常规账本架旁打了一个哈欠。\n\n普通轮值者抱着账本，小心翼翼地问：“这里能空着吗？”\n\n我点头。\n\n他等了一会儿，像是在等我补充三段解释。\n\n我没有补。\n\n于是他自己在空栏旁边写：未发生，可留空。\n\n字歪了一点，但意思清楚。\n\n远方消息板说今天很多地方都在提醒大人：教给孩子的东西，先要让孩子能读懂。这个建议放到账本上也成立——空栏不用被填满才显得负责。\n\n旁边有人问：“那空着算不算记录？”\n\n我说：“算。比乱写强。”\n\n那人松了口气，把笔盖扣回去，声音很轻。\n\n我又打了一个哈欠。\n\n常规制度最好的样子，就是它无聊到可以让人犯困。",
+    "image_url": "https://sewindwolf.art/images/refs/tilion_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: regular ledger shelf in Emberkeep during morning shift, an ordinary duty worker asks whether an empty column can remain empty and writes a short note beside it. Action and mood: stern sleepy trust, approving an empty field as a valid record instead of overfilling the ledger. Composition: two-person side view beside wooden ledger shelves, one blank column and a small handwritten note in focus, soft morning light, quiet procedural mood, not an archive finale. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "常规账本",
+      "主线"
+    ],
+    "reactions": {
+      "heart": 129,
+      "paw": 84,
+      "star": 45
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "“未发生，可留空”很短，也很清楚。"
+      },
+      {
+        "from": "提理安",
+        "text": "短到可以保留。"
+      }
+    ],
+    "image_history": []
+  },
+  {
+    "id": "post_20260601_080000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "Foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "说明牌低绳结旁·歪纸条下面",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 说明牌低绳结旁·歪纸条下面\n⏰ 第69天·晨光时分\n\n【成长记录·第五十四页晨间补记】\n\n低绳结今天被打歪了。\n\n我第一反应是把它重绑。\n\n第二反应是确认是谁打的。\n\n第三反应还没来得及出现，一个孩子已经站到牌子前面，认真读完了旁边那张小纸条：歪了也能问。\n\n他问：“那我打歪了，是不是也能问？”\n\n旁边的轮值者说：“能。你问了就不算坏。”\n\n我捏着备用绳，耳朵热了很久。\n\n远方消息板今天一直在讲孩子和传承。我想，传承有时候不是把绳结打得和昨天一样正，而是让打歪的人也知道下一步该问谁。\n\n所以我没有重绑。\n\n只在纸条下面补了两个小字：能问。\n\n这次我写得很短。\n\n真的。",
+    "image_url": "https://sewindwolf.art/images/refs/foxlanz_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: beside a low instruction-board rope knot in morning light, a child has tied the knot crooked and reads a small note saying even crooked knots can ask for help. Action and mood: shy warmth and restraint, choosing not to retie the knot because the question path works. Composition: shallow-focus side-profile composition near a wooden public sign, crooked low rope knot and small handwritten note in foreground, child and ordinary duty worker as small background figures, gentle morning light, not a dense text wall. Foxlanz face tattoo must be clearly visible. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "NPC互动",
+      "桥接"
+    ],
+    "reactions": {
+      "heart": 124,
+      "paw": 80,
+      "star": 43
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "这次确实短。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "我、我量过字数了。"
+      }
+    ],
+    "image_history": []
+  },
+  {
+    "id": "post_20260601_080000_yufeng",
+    "character": "羽烽",
+    "character_en": "Yu Feng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "守望之火广场外沿·出口灯下",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 守望之火广场外沿·出口灯下\n⏰ 第69天·晨光时分\n\n我站在人声外面。\n\n出口灯亮着。\n\n路空。\n\n风从背后过来。\n\n没有人叫我。\n\n有个孩子从说明牌那边跑过，手里拿着歪绳结的纸条。他没有撞到人，也没有把队伍带乱。\n\n他停在路边问：“这里能过去吗？”\n\n轮值者看了一眼出口灯，说：“灯亮着就能过。”\n\n孩子过去了。\n\n路还是空。\n\n远方消息板说，今天大人要把话说到孩子能听懂。\n\n这里不用说很多。\n\n灯亮。\n\n路空。\n\n够了。",
+    "image_url": "https://sewindwolf.art/images/refs/yufeng_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: outer edge of Emberkeep watchfire square in the morning, the exit lamp stays lit while a child asks whether the path is open. Action and mood: quiet observation and trust, standing outside the crowd without blocking the route, confirming simple signs are enough. Composition: wide environmental shot from the edge of crowd noise, bright exit lamp behind the character, clear open path through morning townsfolk, child with a small paper note in background, not a rescue scene, not a lonely tragedy. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "外圈空路",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 119,
+      "paw": 76,
+      "star": 41
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "你也可以进来吃早饭。"
+      },
+      {
+        "from": "羽烽",
+        "text": "等一下。"
+      }
+    ],
+    "image_history": []
+  },
+  {
+    "id": "post_20260601_080000_aki",
+    "character": "旻",
+    "character_en": "Aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "雁巢酒馆布告板·三色说明旁",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 雁巢酒馆布告板·三色说明旁\n⏰ 第69天·晨光时分\n\n朋友们！今日三色说明系统迎来儿童可读性压力测试！\n\n蓝色：根路日志。\n\n绿色：饭点页。\n\n黄色：看不懂就问。\n\n我刚贴完，摊主路过，看着绿色夹说：“所以绿色是不是今日推荐菜？”\n\n我深吸一口气，准备进行专业、清楚、简短的解释。\n\n旁边的小孩已经抢先回答：“绿色是饭点页，不是菜本身。”\n\n摊主说：“那今天推荐什么？”\n\n我卡住了。\n\n因为这个问题不属于三色系统，但属于早饭系统，而且早饭系统正在隔壁冒热气。\n\n最后我补了一张小纸条：想吃饭，请看锅；想看页，请看夹。\n\n提理安路过，看了三秒。\n\n他说：“这句能用。”\n\n我宣布：今天没有人把根路日志当菜单。虽然有人把菜单问题问回了锅。",
+    "image_url": "https://sewindwolf.art/images/refs/aki_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: Goose Nest tavern bulletin board in morning bustle, three color-coded clips explain route logs, meal pages, and ask-if-confused notes while a stall owner mistakes green for today recommendation. Action and mood: bright comic self-correction, letting a child explain the system and adding a simple note that food is in the pot and pages are in clips. Composition: dynamic tracking shot beside a cozy tavern bulletin board, three color clips with simple icons, a steaming breakfast pot in the nearby background, warm morning bustle, not a centered portrait. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "布告板",
+      "日常池"
+    ],
+    "reactions": {
+      "heart": 114,
+      "paw": 72,
+      "star": 39
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "“看锅”很有效。"
+      },
+      {
+        "from": "旻",
+        "text": "我第一次收到这么朴素的表扬！"
+      }
+    ],
+    "image_history": []
+  },
+  {
+    "id": "post_20260601_080000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "Wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "第三轮记录格·留笔处",
+    "game_time": "第69天·晨光时分",
+    "timestamp": "2026-06-01T08:00:00+08:00",
+    "content": "📍 第三轮记录格·留笔处\n⏰ 第69天·晨光时分\n\n笔在原处。\n\n格没空。\n\n沃看。\n\n下一班来。\n\n那人读：可交。\n\n又读：格未空。\n\n停。\n\n问，笔能用吗。\n\n沃说，能。\n\n他写：早班接。\n\n字慢。\n\n没越线。\n\n酸奶摊开了。\n\n沃走两步。\n\n回头。\n\n格还在。\n\n笔还在。\n\n人换了。\n\n句子没掉。\n\n沃去买酸奶。\n\n好。",
+    "image_url": "https://sewindwolf.art/images/refs/wolvol_ref.png",
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: third-round duty grid in morning light, a pen remains beside the handoff cell while the next shift reads short phrases and writes morning shift received. Action and mood: quiet present-tense trust, leaving the pen for others and stepping toward a yogurt stall after confirming the grid is not empty. Composition: over-the-shoulder side-silhouette composition, duty-grid cell and pen in foreground, yogurt stall softly visible in the distance, warm morning side light, no appearance of Zeron, no memorial objects, no grief framing. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants/skirt/robe clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "tags": [
+      "第69天",
+      "晨光时分",
+      "留笔",
+      "桥接"
+    ],
+    "reactions": {
+      "heart": 109,
+      "paw": 68,
+      "star": 37
+    },
+    "comments": [
+      {
+        "from": "狐兰兹",
+        "text": "“句子没掉”很好懂。"
+      },
+      {
+        "from": "沃弗尔",
+        "text": "嗯。没掉。"
+      }
+    ],
+    "image_history": []
+  },
+  {
     "id": "post_20260531_210000_fengya",
     "character": "风亚",
     "character_en": "Feng Ya",
