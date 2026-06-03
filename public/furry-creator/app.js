@@ -1395,10 +1395,13 @@ function refreshVideoGridPromptPreview(options = {}){
   const output = document.getElementById('videoGridPromptOutput');
   const polishStatus = document.getElementById('videoGridPolishStatus');
   if(!output) return;
-  const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : [];
+  const latestWorkflowImage = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
+  const refs = latestWorkflowImage ? [latestWorkflowImage.imageUrl] : [];
+  const boundPrompt = latestWorkflowImage && latestWorkflowImage.videoPrompt ? String(latestWorkflowImage.videoPrompt).trim() : '';
   if(options.reset){ customVideoGridPrompt = ''; }
-  output.value = customVideoGridPrompt || videoGridPrompt(character || buildCharacter(), refs);
+  output.value = customVideoGridPrompt || boundPrompt || videoGridPrompt(character || buildCharacter(), refs);
   if(polishStatus && options.reset){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '已恢复默认模板；也可以输入构想后再次润色。'; }
+  else if(polishStatus && boundPrompt && !customVideoGridPrompt){ polishStatus.className = 'video-grid-polish-status is-ok'; polishStatus.textContent = '已读取这张十六宫格图片绑定的分镜文字，直接生视频会一并提交。'; }
   if(box) box.hidden = false;
 }
 
@@ -1485,11 +1488,13 @@ async function requestVideoOmni(password){
   if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
   if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成十六宫格视频。'; return; }
   const currentGridOutput = document.getElementById('videoGridPromptOutput');
+  const latestWorkflowImage = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
   if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
-  const prompt = (currentGridOutput || {}).value || videoGridPrompt(character, [ref]);
-  const requestBody = { password: cleanPassword, prompt, images:[ref], size:'1280x720', duration:'10', character };
+  const boundPrompt = latestWorkflowImage && latestWorkflowImage.videoPrompt ? String(latestWorkflowImage.videoPrompt).trim() : '';
+  const prompt = String((currentGridOutput || {}).value || customVideoGridPrompt || boundPrompt || videoGridPrompt(character, [ref])).trim();
+  const requestBody = { password: cleanPassword, prompt, videoPrompt: prompt, images:[ref], size:'1280x720', duration:'10', character };
   preview.innerHTML = '';
-  status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…';
+  status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…\n已携带分镜文字：' + prompt.slice(0, 80) + (prompt.length > 80 ? '…' : '');
   if(btn) btn.disabled = true; if(gridBtn) gridBtn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
   try{
     const resp = await fetch('/api/video-google-omni-generate', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
@@ -1535,10 +1540,10 @@ async function requestVideoGridImage(password){
     const finish = async (result) => {
       if(panel) panel.hidden = true;
       status.textContent = '十六宫格图片生成成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
-      addWorkflowImage({ imageUrl: result.imageUrl || '', provider:'videoGridImage', providerLabel:'十六宫格图片', taskId: result.taskId || '', label:'十六宫格图片' });
+      addWorkflowImage({ imageUrl: result.imageUrl || '', provider:'videoGridImage', providerLabel:'十六宫格图片', taskId: result.taskId || '', label:'十六宫格图片', videoPrompt: prompt });
       preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开十六宫格图片</a><img src="' + result.imageUrl + '" alt="十六宫格图片结果" /><div class="remix-entry"><button class="primary" type="button" data-video-image="' + encodeURIComponent(result.imageUrl) + '">基于这张十六宫格直接生视频</button><button class="ghost" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">继续修改这张图</button></div>';
       const videoBtn = preview.querySelector('[data-video-image]');
-      if(videoBtn) videoBtn.onclick = () => openVideoOmniPasswordPanel();
+      if(videoBtn) videoBtn.onclick = () => { customVideoGridPrompt = prompt; openVideoOmniPasswordPanel(); };
       const remixBtn = preview.querySelector('[data-remix-image]');
       if(remixBtn) remixBtn.onclick = () => openRemixPage(result.imageUrl || '');
     };
