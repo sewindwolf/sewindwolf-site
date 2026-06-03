@@ -10,6 +10,8 @@ const FURRY_APP_JS = "const speciesDetailOptions = {\n  common: [['wolf','狼'],
 const GENERATE_PASSWORD = 'jibao';
 const HISTORY_PASSWORD = 'chujun';
 const DEFAULT_REFERENCE_IMAGE_URL = 'https://sewindwolf.art/furry-creator/assets/blank-reference.png';
+const FAL_QUEUE_BASE_URL = 'https://queue.fal.run/';
+const FAL_GPT_MODEL = 'openai/gpt-image-2';
 const MAX_REFERENCE_IMAGE_URL_LENGTH = 1400;
 const HISTORY_INDEX_KEY = 'furry-history:index';
 const HISTORY_MAX_ITEMS = 500;
