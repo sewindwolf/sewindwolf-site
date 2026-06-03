@@ -652,6 +652,8 @@ function renderWorkflowGallery(){
   const limit = document.getElementById('workflowLimitNote');
   if(count) count.textContent = String(workflowImages.length);
   if(limit) limit.textContent = workflowImages.length >= WORKFLOW_IMAGE_LIMIT ? '已达 5 张上限，请删除一张后再继续生成。' : '最多保留 5 张；新图不会覆盖旧图。';
+  const videoGridStage = document.getElementById('videoGridStage');
+  if(videoGridStage) videoGridStage.hidden = !workflowImages.length;
   if(!box) return;
   box.innerHTML = '';
   if(!workflowImages.length){
@@ -1405,13 +1407,31 @@ function openVideoOmniPasswordPanel(){
   const preview = document.getElementById('bananaPreview');
   const label = panel ? panel.querySelector('label') : null;
   currentImageProvider = 'videoOmni';
-  if(label && label.firstChild) label.firstChild.textContent = '速创Omni视频密码';
+  if(label && label.firstChild) label.firstChild.textContent = '直接生视频密码';
   box.hidden = false;
   if(panel) panel.hidden = false;
   if(preview) preview.innerHTML = '';
   refreshVideoGridPromptPreview();
-  if(status) status.textContent = workflowImages.length ? '请输入密码后提交速创Omni十六宫格视频任务。将使用当前工作流最新图片作为参考图。' : '请先至少生成一张图片，再用最新图片转成十六宫格视频。';
+  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前工作流最新图片作为参考，直接提交 google_omni 生视频。' : '第一步还没有图片，不能生视频。请先生成基础图。';
   if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_omni_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
+}
+
+function openVideoGridImagePasswordPanel(){
+  if(!character){ showResultPage(); return; }
+  const box = document.getElementById('bananaBox');
+  const panel = document.getElementById('bananaPasswordPanel');
+  const input = document.getElementById('bananaPasswordInput');
+  const status = document.getElementById('bananaStatus');
+  const preview = document.getElementById('bananaPreview');
+  const label = panel ? panel.querySelector('label') : null;
+  currentImageProvider = 'videoGridImage';
+  if(label && label.firstChild) label.firstChild.textContent = '十六宫格图片密码';
+  box.hidden = false;
+  if(panel) panel.hidden = false;
+  if(preview) preview.innerHTML = '';
+  refreshVideoGridPromptPreview();
+  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前工作流最新图片作为参考，先生成十六宫格图片。生成后可继续修改或直接生视频。' : '第一步还没有图片，不能生成十六宫格图片。请先生成基础图。';
+  if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_grid_image_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
 }
 
 async function requestVideoOmni(password){
@@ -1422,6 +1442,7 @@ async function requestVideoOmni(password){
   const panel = document.getElementById('bananaPasswordPanel');
   const submitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const btn = document.getElementById('videoOmniGenerateBtn');
+  const gridBtn = document.getElementById('videoGridImageBtn');
   const otherBtns = Object.entries(imageProviderConfigs).map(([, info]) => document.getElementById(info.buttonId)).filter(Boolean);
   const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
   if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
@@ -1431,7 +1452,7 @@ async function requestVideoOmni(password){
   const requestBody = { password: cleanPassword, prompt, images:[ref], size:'1280x720', duration:'10', character };
   preview.innerHTML = '';
   status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…';
-  if(btn) btn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
+  if(btn) btn.disabled = true; if(gridBtn) gridBtn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
   try{
     const resp = await fetch('/api/video-google-omni-generate', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
     const data = await resp.json().catch(() => ({}));
@@ -1444,7 +1465,52 @@ async function requestVideoOmni(password){
     if(data.pending){ await pollQueuedVideoTask(cleanPassword, data, status, requestBody, finish); }
     else{ if(!data.videoUrl) throw new Error('任务已提交但尚未返回最终视频，请稍后重试'); await finish(data); }
   }catch(err){ status.textContent = '视频生成失败：' + (err.message || err); }
-  finally{ if(btn) btn.disabled = false; otherBtns.forEach(otherBtn => otherBtn.disabled = false); if(submitBtn) submitBtn.disabled = false; }
+  finally{ if(btn) btn.disabled = false; if(gridBtn) gridBtn.disabled = false; otherBtns.forEach(otherBtn => otherBtn.disabled = false); if(submitBtn) submitBtn.disabled = false; }
+}
+
+async function requestVideoGridImage(password){
+  if(!character){ showResultPage(); return; }
+  const cleanPassword = String(password || '').trim();
+  const provider = 'gpt';
+  const providerInfo = imageProviderConfig(provider);
+  const status = document.getElementById('bananaStatus');
+  const preview = document.getElementById('bananaPreview');
+  const panel = document.getElementById('bananaPasswordPanel');
+  const submitBtn = document.getElementById('bananaPasswordSubmitBtn');
+  const btn = document.getElementById('videoGridImageBtn');
+  const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
+  if(!cleanPassword){ status.textContent = '请先输入十六宫格图片密码。'; return; }
+  if(!ref){ status.textContent = '请先生成至少一张基础图，再进入十六宫格阶段。'; return; }
+  if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){ status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续生成。'; renderWorkflowGallery(); return; }
+  refreshVideoGridPromptPreview();
+  const prompt = (document.getElementById('videoGridPromptOutput') || {}).value || videoGridPrompt(character, [ref]);
+  const requestBody = { password: cleanPassword, prompt, negativePrompt: negativePrompt(character), referenceImageUrl: ref, referenceImageUrls: [ref], mode:'gridImage', character };
+  preview.innerHTML = '';
+  status.textContent = '正在提交十六宫格图片任务，请稍等…';
+  if(btn) btn.disabled = true;
+  if(submitBtn) submitBtn.disabled = true;
+  try{
+    const resp = await fetch(providerInfo.endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
+    const finish = async (result) => {
+      if(panel) panel.hidden = true;
+      status.textContent = '十六宫格图片生成成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
+      addWorkflowImage({ imageUrl: result.imageUrl || '', provider:'videoGridImage', providerLabel:'十六宫格图片', taskId: result.taskId || '', label:'十六宫格图片' });
+      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开十六宫格图片</a><img src="' + result.imageUrl + '" alt="十六宫格图片结果" /><div class="remix-entry"><button class="primary" type="button" data-video-image="' + encodeURIComponent(result.imageUrl) + '">基于这张十六宫格直接生视频</button><button class="ghost" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">继续修改这张图</button></div>';
+      const videoBtn = preview.querySelector('[data-video-image]');
+      if(videoBtn) videoBtn.onclick = () => openVideoOmniPasswordPanel();
+      const remixBtn = preview.querySelector('[data-remix-image]');
+      if(remixBtn) remixBtn.onclick = () => openRemixPage(result.imageUrl || '');
+    };
+    if(data.pending && providerInfo.asyncQueue){ await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish); }
+    else{ if(!data.imageUrl) throw new Error('任务已提交但尚未返回最终图片，请稍后重试'); await finish(data); }
+  }catch(err){
+    status.textContent = '十六宫格图片生成失败：' + (err.message || err);
+  }finally{
+    if(btn) btn.disabled = false;
+    if(submitBtn) submitBtn.disabled = false;
+  }
 }
 
 async function requestBananaImage(password){
@@ -1495,7 +1561,9 @@ async function requestBananaImage(password){
       const added = addWorkflowImage({ imageUrl: result.imageUrl || '', provider, providerLabel, taskId: result.taskId || '', label: providerLabel + ' 生成图' });
       remixSourceImageUrl = result.imageUrl || '';
       remixLastImageUrl = result.imageUrl || '';
-      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + result.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">基于这张图二次修改</button></div>';
+      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开原图</a><img src="' + result.imageUrl + '" alt="' + providerLabel + ' 生成结果" /><div class="remix-entry"><button class="primary" type="button" data-grid-image>进入十六宫格阶段</button><button class="ghost" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">基于这张图二次修改</button></div>';
+      const gridBtn = preview.querySelector('[data-grid-image]');
+      if(gridBtn) gridBtn.onclick = () => { renderWorkflowGallery(); const stage = document.getElementById('videoGridStage'); if(stage) stage.scrollIntoView({ behavior:'smooth', block:'center' }); };
       const remixBtn = preview.querySelector('[data-remix-image]');
       if(remixBtn) remixBtn.onclick = () => openRemixPage(result.imageUrl || '');
     };
@@ -1868,7 +1936,7 @@ function bindStatic(){
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
   if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };
   const copyVideoGridPromptBtn = document.getElementById('copyVideoGridPromptBtn');
-  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格视频提示词',1200); };
+  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格提示词',1200); };
   const copyVideoGridPromptInlineBtn = document.getElementById('copyVideoGridPromptInlineBtn');
   if(copyVideoGridPromptInlineBtn) copyVideoGridPromptInlineBtn.onclick = async () => { refreshVideoGridPromptPreview(); await navigator.clipboard.writeText((document.getElementById('videoGridPromptOutput') || {}).value || ''); copyVideoGridPromptInlineBtn.textContent='已复制'; setTimeout(()=>copyVideoGridPromptInlineBtn.textContent='复制提示词',1200); };
   const refreshVideoGridPromptBtn = document.getElementById('refreshVideoGridPromptBtn');
@@ -1881,10 +1949,13 @@ function bindStatic(){
   const bananaPasswordInput = document.getElementById('bananaPasswordInput');
   const bananaPasswordSubmitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const bananaPasswordCancelBtn = document.getElementById('bananaPasswordCancelBtn');
+  const videoGridImageBtn = document.getElementById('videoGridImageBtn');
+  if(videoGridImageBtn) videoGridImageBtn.onclick = () => openVideoGridImagePasswordPanel();
   const videoOmniGenerateBtn = document.getElementById('videoOmniGenerateBtn');
   if(videoOmniGenerateBtn) videoOmniGenerateBtn.onclick = () => openVideoOmniPasswordPanel();
-  if(bananaPasswordSubmitBtn) bananaPasswordSubmitBtn.onclick = () => currentImageProvider === 'videoOmni' ? requestVideoOmni(bananaPasswordInput ? bananaPasswordInput.value : '') : requestBananaImage(bananaPasswordInput ? bananaPasswordInput.value : '');
-  if(bananaPasswordInput) bananaPasswordInput.onkeydown = e => { if(e.key === 'Enter') currentImageProvider === 'videoOmni' ? requestVideoOmni(bananaPasswordInput.value) : requestBananaImage(bananaPasswordInput.value); };
+  const submitPrimaryPanelTask = () => currentImageProvider === 'videoOmni' ? requestVideoOmni(bananaPasswordInput ? bananaPasswordInput.value : '') : currentImageProvider === 'videoGridImage' ? requestVideoGridImage(bananaPasswordInput ? bananaPasswordInput.value : '') : requestBananaImage(bananaPasswordInput ? bananaPasswordInput.value : '');
+  if(bananaPasswordSubmitBtn) bananaPasswordSubmitBtn.onclick = submitPrimaryPanelTask;
+  if(bananaPasswordInput) bananaPasswordInput.onkeydown = e => { if(e.key === 'Enter') submitPrimaryPanelTask(); };
   if(bananaPasswordCancelBtn) bananaPasswordCancelBtn.onclick = () => { document.getElementById('bananaBox').hidden = true; if(bananaPasswordInput) bananaPasswordInput.value = ''; };
   document.getElementById('downloadBtn').onclick = () => {
     const data = JSON.stringify(characterExportData(), null, 2);
