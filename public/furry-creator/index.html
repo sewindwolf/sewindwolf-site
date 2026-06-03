@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260603-video-loop-flow" />
+  <link rel="stylesheet" href="style.css?v=20260603-deepseek-grid" />
 </head>
 <body>
-  <script>window.APP_VERSION = '20260603-video-loop-flow';</script>
+  <script>window.APP_VERSION = '20260603-deepseek-grid';</script>
   <div class="shell">
     <header class="hero">
       <div class="badge">SEWINDWOLF · CHARACTER LAB</div>
@@ -133,16 +133,21 @@
           <div class="video-grid-box" id="videoGridBox" hidden>
             <div class="field-editor-kicker">VIDEO GRID PROMPT</div>
             <h3>十六宫格提示词</h3>
-            <p>默认使用当前工作流最新图片作为角色参考图。此提示词既可用于生成十六宫格图片，也可作为 google_omni 生视频的前置分镜说明。</p>
-            <textarea id="videoGridPromptOutput" spellcheck="false" readonly></textarea>
+            <p>默认使用当前工作流最新图片作为角色参考图。可以直接用模板，也可以先写一个视频/剧情构想，让 DeepSeek V4 按十六宫格规则润色成可生成的 4×4 分镜提示词。</p>
+            <label class="video-grid-idea-label">你的构想
+              <textarea id="videoGridIdeaInput" rows="4" maxlength="900" placeholder="例如：角色在雨夜游乐园寻找遗失的信物，前半段孤独、后半段看到摩天轮灯亮起来，结尾释然离开。"></textarea>
+            </label>
             <div class="video-grid-actions">
-              <button class="ghost" id="refreshVideoGridPromptBtn" type="button">刷新提示词</button>
+              <button class="primary" id="polishVideoGridPromptBtn" type="button">用 DeepSeek V4 润色为十六宫格</button>
+              <button class="ghost" id="refreshVideoGridPromptBtn" type="button">恢复默认模板</button>
               <button class="ghost" id="copyVideoGridPromptInlineBtn" type="button">复制提示词</button>
             </div>
+            <div class="video-grid-polish-status" id="videoGridPolishStatus">可先输入构想再润色；不输入构想则使用默认模板。</div>
+            <textarea id="videoGridPromptOutput" spellcheck="false"></textarea>
           </div>
         </div>
         <p class="note">说明：第一步只生成基础图；生成任意基础图后，顶部“十六宫格阶段”会解锁。第二步可直接生视频，也可先生成十六宫格图片。十六宫格图片会加入当前工作流，第三步可继续图生图修改或再次生视频，形成循环。</p>
-        <div class="version-row">当前版本：<span id="versionText">20260603-video-loop-flow</span></div>
+        <div class="version-row">当前版本：<span id="versionText">20260603-deepseek-grid</span></div>
       </section>
 
       <section class="panel remix-panel" id="remixPanel" hidden>
@@ -229,12 +234,12 @@
     </div>
   </div>
   <script>
-    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260603-video-loop-flow');
+    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260603-deepseek-grid');
     document.getElementById('refreshLatestBtn') && document.getElementById('refreshLatestBtn').addEventListener('click', function(){
       location.replace('/furry-creator/?v=' + Date.now());
     });
   </script>
-  <script src="app.js?v=20260603-video-loop-flow"></script>
+  <script src="app.js?v=20260603-deepseek-grid"></script>
 </body>
 </html>
 

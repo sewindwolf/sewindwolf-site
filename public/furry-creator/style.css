@@ -253,9 +253,14 @@ body.is-result .result-panel{display:block;}
 .video-grid-stage p{margin:0 0 12px;color:#b9c8ea;font-size:13px;line-height:1.7;}
 .video-grid-box{margin-top:14px;padding:14px;border:1px solid rgba(103,232,249,.32);border-radius:18px;background:linear-gradient(135deg,rgba(103,232,249,.10),rgba(167,139,250,.08));}
 .video-grid-box[hidden]{display:none;}
-.video-grid-box h3{margin:4px 0 8px;font-size:18px;color:#e7ecff;}
-.video-grid-box p{margin:0 0 10px;color:#b9c8ea;font-size:13px;line-height:1.7;}
-.video-grid-box textarea{min-height:260px;margin-top:8px;font-size:13px;}
+.video-grid-box h3{margin:4px 0 8px;font-size:20px;color:#e7ecff;}
+.video-grid-box p{margin:0 0 12px;color:#b9c8ea;font-size:13px;line-height:1.7;}
+.video-grid-idea-label{margin-top:10px;font-weight:900;color:#dff4ff;}
+.video-grid-idea-label textarea{min-height:96px;margin-top:8px;font-family:'Noto Sans SC',system-ui,sans-serif;font-size:14px;line-height:1.65;}
+.video-grid-polish-status{margin-top:10px;color:#b9c8ea;font-size:12px;line-height:1.6;white-space:pre-wrap;}
+.video-grid-polish-status.is-error{color:#ffb4b4;}
+.video-grid-polish-status.is-ok{color:#9ef0c2;}
+.video-grid-box textarea#videoGridPromptOutput{min-height:280px;margin-top:12px;font-size:12px;line-height:1.6;}
 .video-grid-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
 .banana-preview video{width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.16);background:#000;}
 

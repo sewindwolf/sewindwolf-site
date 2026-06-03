@@ -339,6 +339,7 @@ let remixSourceImageUrl = '';
 let remixLastImageUrl = '';
 let workflowImages = [];
 let remixReferenceImages = [];
+let customVideoGridPrompt = '';
 let historyPage = 1;
 let historyPassword = '';
 let historySelectMode = false;
@@ -1389,13 +1390,49 @@ function openBananaPasswordPanel(provider = 'banana'){
   }
 }
 
-function refreshVideoGridPromptPreview(){
+function refreshVideoGridPromptPreview(options = {}){
   const box = document.getElementById('videoGridBox');
   const output = document.getElementById('videoGridPromptOutput');
+  const polishStatus = document.getElementById('videoGridPolishStatus');
   if(!output) return;
   const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : [];
-  output.value = videoGridPrompt(character || buildCharacter(), refs);
+  if(options.reset){ customVideoGridPrompt = ''; }
+  output.value = customVideoGridPrompt || videoGridPrompt(character || buildCharacter(), refs);
+  if(polishStatus && options.reset){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '已恢复默认模板；也可以输入构想后再次润色。'; }
   if(box) box.hidden = false;
+}
+
+async function polishVideoGridPrompt(){
+  if(!character){ showResultPage(); return; }
+  const output = document.getElementById('videoGridPromptOutput');
+  const ideaInput = document.getElementById('videoGridIdeaInput');
+  const status = document.getElementById('videoGridPolishStatus');
+  const btn = document.getElementById('polishVideoGridPromptBtn');
+  const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : [];
+  const idea = String((ideaInput && ideaInput.value) || '').trim();
+  const basePrompt = videoGridPrompt(character || buildCharacter(), refs);
+  if(!output) return;
+  if(!idea){
+    customVideoGridPrompt = '';
+    output.value = basePrompt;
+    if(status){ status.className = 'video-grid-polish-status'; status.textContent = '还没有输入构想，已显示默认十六宫格模板。'; }
+    return;
+  }
+  if(status){ status.className = 'video-grid-polish-status'; status.textContent = 'DeepSeek V4 正在润色十六宫格提示词…'; }
+  if(btn) btn.disabled = true;
+  try{
+    const resp = await fetch('/api/deepseek-video-grid-polish', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ idea, basePrompt, character: character || buildCharacter(), referenceImageUrls: refs }) });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '润色失败');
+    customVideoGridPrompt = String(data.prompt || '').trim();
+    if(!customVideoGridPrompt) throw new Error('DeepSeek 返回空提示词');
+    output.value = customVideoGridPrompt;
+    if(status){ status.className = 'video-grid-polish-status is-ok'; status.textContent = '已按你的构想润色完成。后续生成十六宫格图片或直接生视频都会使用下方当前提示词。'; }
+  }catch(err){
+    if(status){ status.className = 'video-grid-polish-status is-error'; status.textContent = 'DeepSeek 润色失败：' + (err.message || err) + '\n已保留当前提示词，你也可以手动编辑。'; }
+  }finally{
+    if(btn) btn.disabled = false;
+  }
 }
 
 function openVideoOmniPasswordPanel(){
@@ -1447,8 +1484,9 @@ async function requestVideoOmni(password){
   const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
   if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
   if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成十六宫格视频。'; return; }
-  refreshVideoGridPromptPreview();
-  const prompt = (document.getElementById('videoGridPromptOutput') || {}).value || videoGridPrompt(character, [ref]);
+  const currentGridOutput = document.getElementById('videoGridPromptOutput');
+  if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
+  const prompt = (currentGridOutput || {}).value || videoGridPrompt(character, [ref]);
   const requestBody = { password: cleanPassword, prompt, images:[ref], size:'1280x720', duration:'10', character };
   preview.innerHTML = '';
   status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…';
@@ -1482,8 +1520,9 @@ async function requestVideoGridImage(password){
   if(!cleanPassword){ status.textContent = '请先输入十六宫格图片密码。'; return; }
   if(!ref){ status.textContent = '请先生成至少一张基础图，再进入十六宫格阶段。'; return; }
   if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){ status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续生成。'; renderWorkflowGallery(); return; }
-  refreshVideoGridPromptPreview();
-  const prompt = (document.getElementById('videoGridPromptOutput') || {}).value || videoGridPrompt(character, [ref]);
+  const currentGridOutput = document.getElementById('videoGridPromptOutput');
+  if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
+  const prompt = (currentGridOutput || {}).value || videoGridPrompt(character, [ref]);
   const requestBody = { password: cleanPassword, prompt, negativePrompt: negativePrompt(character), referenceImageUrl: ref, referenceImageUrls: [ref], mode:'gridImage', character };
   preview.innerHTML = '';
   status.textContent = '正在提交十六宫格图片任务，请稍等…';
@@ -1744,7 +1783,7 @@ function bindRemixPanel(){
   document.querySelectorAll('[data-remix-layout]').forEach(btn => btn.onclick = () => setRemixOutputMode(btn.dataset.remixLayout));
   updateRemixLayoutUI();
 }
-function generate(partial){ character = buildCharacter(partial); renderResult(); }
+function generate(partial){ customVideoGridPrompt = ''; character = buildCharacter(partial); renderResult(); }
 
 function openHistoryPanel(selectMode = false){
   historySelectMode = !!selectMode;
@@ -1919,7 +1958,7 @@ function bindStatic(){
     document.querySelector('.result-panel').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; workflowImages=[]; remixReferenceImages=[]; init(); };
+  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; workflowImages=[]; remixReferenceImages=[]; customVideoGridPrompt=''; init(); };
   document.querySelectorAll('.tab').forEach(btn => btn.onclick = () => { document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); activeTab = btn.dataset.tab; renderResult(); });
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
   const editFieldInput = document.getElementById('editFieldInput');
@@ -1936,11 +1975,13 @@ function bindStatic(){
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
   if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };
   const copyVideoGridPromptBtn = document.getElementById('copyVideoGridPromptBtn');
-  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格提示词',1200); };
+  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const currentGridPrompt = (document.getElementById('videoGridPromptOutput') || {}).value; const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(currentGridPrompt || customVideoGridPrompt || videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格提示词',1200); };
   const copyVideoGridPromptInlineBtn = document.getElementById('copyVideoGridPromptInlineBtn');
-  if(copyVideoGridPromptInlineBtn) copyVideoGridPromptInlineBtn.onclick = async () => { refreshVideoGridPromptPreview(); await navigator.clipboard.writeText((document.getElementById('videoGridPromptOutput') || {}).value || ''); copyVideoGridPromptInlineBtn.textContent='已复制'; setTimeout(()=>copyVideoGridPromptInlineBtn.textContent='复制提示词',1200); };
+  if(copyVideoGridPromptInlineBtn) copyVideoGridPromptInlineBtn.onclick = async () => { await navigator.clipboard.writeText((document.getElementById('videoGridPromptOutput') || {}).value || ''); copyVideoGridPromptInlineBtn.textContent='已复制'; setTimeout(()=>copyVideoGridPromptInlineBtn.textContent='复制提示词',1200); };
   const refreshVideoGridPromptBtn = document.getElementById('refreshVideoGridPromptBtn');
-  if(refreshVideoGridPromptBtn) refreshVideoGridPromptBtn.onclick = () => refreshVideoGridPromptPreview();
+  if(refreshVideoGridPromptBtn) refreshVideoGridPromptBtn.onclick = () => refreshVideoGridPromptPreview({ reset:true });
+  const polishVideoGridPromptBtn = document.getElementById('polishVideoGridPromptBtn');
+  if(polishVideoGridPromptBtn) polishVideoGridPromptBtn.onclick = () => polishVideoGridPrompt();
   document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
   const gptGenerateBtn = document.getElementById('gptGenerateBtn');
   if(gptGenerateBtn) gptGenerateBtn.onclick = () => openBananaPasswordPanel('gpt');
