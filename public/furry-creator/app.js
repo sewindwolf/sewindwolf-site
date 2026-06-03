@@ -425,6 +425,24 @@ async function pollQueuedImageTask(providerInfo, password, task, statusEl, extra
   throw new Error(providerLabel + ' 后台生成仍未完成，请稍后到 fal.ai 后台或生成历史中查看。');
 }
 
+async function pollQueuedVideoTask(password, task, statusEl, extraBody, onComplete){
+  const taskId = task.taskId || task.requestId || '';
+  for(let i = 0; i < 180; i++){
+    if(statusEl) statusEl.textContent = '速创Omni视频任务已提交，正在等待 google_omni 返回最终视频…\n任务ID：' + (taskId || '未知') + '\n已等待约 ' + (i * 5) + ' 秒，请不要重复提交。';
+    await sleep(5000);
+    const resp = await fetch('/api/video-google-omni-status', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ ...(extraBody || {}), password, taskId })
+    });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '查询视频任务状态失败');
+    if(data.done && data.videoUrl){ await onComplete(data); return data; }
+    if(data.done && !data.videoUrl) throw new Error('任务已结束，但服务端没有返回视频地址');
+  }
+  throw new Error('速创Omni视频生成仍未完成，请稍后重试或到速创后台查看。');
+}
+
 function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 function resolve(value, options){ return value === 'random' || value === 'auto' ? pick(options) : value; }
 function sanitizeCustomInput(value, maxLength = 12){
@@ -515,6 +533,50 @@ function characterExportData(){
 function promptPairText(){
   const base = character || buildCharacter();
   return '[Positive Prompt]\n' + bananaPrompt(base) + '\n\n[Negative Prompt]\n' + negativePrompt(base);
+}
+
+function videoGridPrompt(c = character || buildCharacter(), refs = []){
+  const refNote = refs.length ? 'ps.角色参考图->“图1”' : 'ps.当前角色设定作为人物参考';
+  const species = cn(c.species);
+  const color = cnColor(c.color).join('、');
+  const outfit = cn(c.outfit) + '，' + cn(c.outfitDetail);
+  const mood = cn(c.temperament);
+  const world = cnJoin(c.worlds || c.world);
+  const identity = zhSummary(c);
+  const lines = [
+    '【十六宫格提示词】：' + refNote,
+    '**创意：**',
+    '4×4分镜宫格，4行×4列16格黑边，写实电影摄影，35mm胶片颗粒，变形镜头特征，Furry OC电影短片预告片氛围。',
+    '@图片1仅作人物外貌、体型、毛色、花纹、服装和装饰物参考，禁止复制其构图姿势；若未提供图片，则严格参考下方角色设定。',
+    '角色设定：' + identity,
+    '每格按以下指定构图独立生成。左到右上到下：',
+    '1（超广角全景/轻仰/背面）' + species + '角色背影站在画面下三分之一，进入' + world + '风格的开阔场景，远处建筑与天空完整入画，24mm深景深/清晨冷灰蓝光',
+    '2（全景/平视/3-4侧）角色从画面左侧走入，完整展示' + color + '配色和' + outfit + '，地面有清晰透视线，35mm/柔和自然光',
+    '3（中景/轻俯/正面）角色停下观察手中小道具或徽记，背景元素轻微虚焦，35mm/冷光中带一点暖色边缘光',
+    '4（近景/侧面）角色眼神特写，瞳色和面部花纹保持一致，前景有轻微遮挡形成电影感，85mm浅景深/柔和侧光',
+    '5（全景/低角度/正面）角色迈步穿过场景核心区域，服装下摆和尾巴有轻微动态，24mm/黄金时间暖光',
+    '6（中景/平视/侧背）角色与场景道具互动，手部动作清楚无畸形，背景人群或灯牌虚焦，35mm/暖金阳光',
+    '7（中近景/轻俯/3-4侧）角色低头整理装饰物或装备细节，毛发分层和布料材质清晰，50mm浅景深/暖色反射光',
+    '8（特写/平视/正面）爪垫、手套、项链或关键装饰物特写，主体填满画面，85mm微距感/高光点状反射',
+    '9（超广角全景/顶视）角色位于画面中心小比例，周围环境形成几何构图，24mm深景深/夕阳橙红过渡光',
+    '10（中景/轻仰/正面）角色抬头迎向风或光源，衣料和毛发产生自然运动，35mm/强逆光轮廓光',
+    '11（近景/3-4侧）角色表情从' + mood + '转向坚定或温柔，背景灯光开始形成散景，50mm浅景深/黄昏暖橙光',
+    '12（特写/侧面）眼睛和面部轮廓占据画面，倒影中出现下一幕场景，85mm浅景深/夕阳边缘光',
+    '13（全景/背面）角色走入夜色中的灯光区域，画面右侧大面积留白，35mm/冷蓝夜色+暖色灯光',
+    '14（中近景/平视/正面）角色在夜景中回头，服装和花纹仍与参考图一致，50mm/霓虹或灯串柔和散景',
+    '15（特写/轻俯）角色手部按住胸前装饰或道具，毛发、布料、金属细节清楚，85mm/暖色小光源',
+    '16（超广角远景/背面）角色背影离开或站在高处，远处烟花、星空或城市灯光收束短片，24mm深景深/冷蓝夜景与暖光点缀',
+    '**相机：**',
+    'ARRI ALEXA Mini LF，Cooke S7/i全画幅，变形椭圆散景，35mm胶片颗粒，ARRI LogC色彩，电影级动态模糊但每格主体清晰。',
+    '**光线：**',
+    '格1-4 清晨冷灰蓝自然光，关系和世界建立；格5-8 黄金时间暖金阳光，互动展开；格9-12 黄昏橙红过渡光，情绪升温；格13-16 冷蓝夜色叠加暖色灯光，电影式收束。',
+    '**纹理：**',
+    '兽人毛发分层质感，爪垫或手套皮革质感，服装布料纤维，装饰物金属磨损，场景地面裂纹，玻璃与灯泡折射，背景材质细节，35mm胶片颗粒全格覆盖。',
+    '**负面：**',
+    '禁止卡通插画动画CGI感，禁止二次元扁平化，禁止过度调色，禁止每格构图重复，禁止格外字幕，禁止人物比例扭曲，禁止角色外貌不一致，禁止多余肢体，禁止手部错误，禁止尾巴位置错误，禁止毛发塑料感，禁止低俗姿势，禁止裸露，禁止水印和logo。',
+    '】'
+  ];
+  return lines.join('\n');
 }
 
 function addWorkflowImage(entry){
@@ -1310,6 +1372,8 @@ function openBananaPasswordPanel(provider = 'banana'){
   const preview = document.getElementById('bananaPreview');
   const label = panel ? panel.querySelector('label') : null;
   if(label && label.firstChild) label.firstChild.textContent = providerLabel + ' 生图密码';
+  const videoBox = document.getElementById('videoGridBox');
+  if(videoBox) videoBox.hidden = true;
   box.hidden = false;
   if(panel) panel.hidden = false;
   if(preview) preview.innerHTML = '';
@@ -1321,6 +1385,66 @@ function openBananaPasswordPanel(provider = 'banana'){
     setTimeout(() => { input.value = ''; input.focus(); }, 80);
     setTimeout(() => { input.value = ''; }, 320);
   }
+}
+
+function refreshVideoGridPromptPreview(){
+  const box = document.getElementById('videoGridBox');
+  const output = document.getElementById('videoGridPromptOutput');
+  if(!output) return;
+  const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : [];
+  output.value = videoGridPrompt(character || buildCharacter(), refs);
+  if(box) box.hidden = false;
+}
+
+function openVideoOmniPasswordPanel(){
+  if(!character){ showResultPage(); return; }
+  const box = document.getElementById('bananaBox');
+  const panel = document.getElementById('bananaPasswordPanel');
+  const input = document.getElementById('bananaPasswordInput');
+  const status = document.getElementById('bananaStatus');
+  const preview = document.getElementById('bananaPreview');
+  const label = panel ? panel.querySelector('label') : null;
+  currentImageProvider = 'videoOmni';
+  if(label && label.firstChild) label.firstChild.textContent = '速创Omni视频密码';
+  box.hidden = false;
+  if(panel) panel.hidden = false;
+  if(preview) preview.innerHTML = '';
+  refreshVideoGridPromptPreview();
+  if(status) status.textContent = workflowImages.length ? '请输入密码后提交速创Omni十六宫格视频任务。将使用当前工作流最新图片作为参考图。' : '请先至少生成一张图片，再用最新图片转成十六宫格视频。';
+  if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_omni_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
+}
+
+async function requestVideoOmni(password){
+  if(!character){ showResultPage(); return; }
+  const cleanPassword = String(password || '').trim();
+  const status = document.getElementById('bananaStatus');
+  const preview = document.getElementById('bananaPreview');
+  const panel = document.getElementById('bananaPasswordPanel');
+  const submitBtn = document.getElementById('bananaPasswordSubmitBtn');
+  const btn = document.getElementById('videoOmniGenerateBtn');
+  const otherBtns = Object.entries(imageProviderConfigs).map(([, info]) => document.getElementById(info.buttonId)).filter(Boolean);
+  const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
+  if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
+  if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成十六宫格视频。'; return; }
+  refreshVideoGridPromptPreview();
+  const prompt = (document.getElementById('videoGridPromptOutput') || {}).value || videoGridPrompt(character, [ref]);
+  const requestBody = { password: cleanPassword, prompt, images:[ref], size:'1280x720', duration:'10', character };
+  preview.innerHTML = '';
+  status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…';
+  if(btn) btn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
+  try{
+    const resp = await fetch('/api/video-google-omni-generate', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
+    const data = await resp.json().catch(() => ({}));
+    if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
+    const finish = async (result) => {
+      if(panel) panel.hidden = true;
+      status.textContent = '速创Omni十六宫格视频生成成功！任务ID：' + (result.taskId || '未知') + '\n视频地址：' + result.videoUrl;
+      preview.innerHTML = '<a href="' + result.videoUrl + '" target="_blank" rel="noopener">打开视频原链接</a><video controls playsinline src="' + result.videoUrl + '"></video>';
+    };
+    if(data.pending){ await pollQueuedVideoTask(cleanPassword, data, status, requestBody, finish); }
+    else{ if(!data.videoUrl) throw new Error('任务已提交但尚未返回最终视频，请稍后重试'); await finish(data); }
+  }catch(err){ status.textContent = '视频生成失败：' + (err.message || err); }
+  finally{ if(btn) btn.disabled = false; otherBtns.forEach(otherBtn => otherBtn.disabled = false); if(submitBtn) submitBtn.disabled = false; }
 }
 
 async function requestBananaImage(password){
@@ -1742,7 +1866,14 @@ function bindStatic(){
   if(cancelFieldEditBtn) cancelFieldEditBtn.onclick = () => { selectedEditField = null; renderResult(); };
   document.getElementById('copyBtn').onclick = async () => { await navigator.clipboard.writeText(document.getElementById('output').value); document.getElementById('copyBtn').textContent='已复制'; setTimeout(()=>document.getElementById('copyBtn').textContent='复制当前内容',1200); };
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
-  if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
+  if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };
+  const copyVideoGridPromptBtn = document.getElementById('copyVideoGridPromptBtn');
+  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格视频提示词',1200); };
+  const copyVideoGridPromptInlineBtn = document.getElementById('copyVideoGridPromptInlineBtn');
+  if(copyVideoGridPromptInlineBtn) copyVideoGridPromptInlineBtn.onclick = async () => { refreshVideoGridPromptPreview(); await navigator.clipboard.writeText((document.getElementById('videoGridPromptOutput') || {}).value || ''); copyVideoGridPromptInlineBtn.textContent='已复制'; setTimeout(()=>copyVideoGridPromptInlineBtn.textContent='复制提示词',1200); };
+  const refreshVideoGridPromptBtn = document.getElementById('refreshVideoGridPromptBtn');
+  if(refreshVideoGridPromptBtn) refreshVideoGridPromptBtn.onclick = () => refreshVideoGridPromptPreview();
+  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
   const gptGenerateBtn = document.getElementById('gptGenerateBtn');
   if(gptGenerateBtn) gptGenerateBtn.onclick = () => openBananaPasswordPanel('gpt');
   const falGptGenerateBtn = document.getElementById('falGptGenerateBtn');
@@ -1750,8 +1881,10 @@ function bindStatic(){
   const bananaPasswordInput = document.getElementById('bananaPasswordInput');
   const bananaPasswordSubmitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const bananaPasswordCancelBtn = document.getElementById('bananaPasswordCancelBtn');
-  if(bananaPasswordSubmitBtn) bananaPasswordSubmitBtn.onclick = () => requestBananaImage(bananaPasswordInput ? bananaPasswordInput.value : '');
-  if(bananaPasswordInput) bananaPasswordInput.onkeydown = e => { if(e.key === 'Enter') requestBananaImage(bananaPasswordInput.value); };
+  const videoOmniGenerateBtn = document.getElementById('videoOmniGenerateBtn');
+  if(videoOmniGenerateBtn) videoOmniGenerateBtn.onclick = () => openVideoOmniPasswordPanel();
+  if(bananaPasswordSubmitBtn) bananaPasswordSubmitBtn.onclick = () => currentImageProvider === 'videoOmni' ? requestVideoOmni(bananaPasswordInput ? bananaPasswordInput.value : '') : requestBananaImage(bananaPasswordInput ? bananaPasswordInput.value : '');
+  if(bananaPasswordInput) bananaPasswordInput.onkeydown = e => { if(e.key === 'Enter') currentImageProvider === 'videoOmni' ? requestVideoOmni(bananaPasswordInput.value) : requestBananaImage(bananaPasswordInput.value); };
   if(bananaPasswordCancelBtn) bananaPasswordCancelBtn.onclick = () => { document.getElementById('bananaBox').hidden = true; if(bananaPasswordInput) bananaPasswordInput.value = ''; };
   document.getElementById('downloadBtn').onclick = () => {
     const data = JSON.stringify(characterExportData(), null, 2);
