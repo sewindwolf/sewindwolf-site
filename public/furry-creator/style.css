@@ -111,8 +111,8 @@ textarea {
   font-family: Consolas, 'Noto Sans SC', monospace;
 }
 .copy-row { margin-top: 12px; }
-.provider-action-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:100%;margin-top:2px;}
-.remix-provider-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;}
+.provider-action-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%;margin-top:2px;}
+.remix-provider-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
 .provider-action-row .image-provider-action,.remix-provider-row .image-provider-action{width:100%;}
 @media(max-width:980px){.provider-action-row,.remix-provider-row{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:560px){.provider-action-row,.remix-provider-row{grid-template-columns:1fr;}}

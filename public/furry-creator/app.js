@@ -347,7 +347,6 @@ const REMIX_REFERENCE_LIMIT = 5;
 const HISTORY_PAGE_SIZE = 10;
 const imageProviderConfigs = {
   banana: { label: '转链Banana', buttonId: 'bananaGenerateBtn', endpoint: '/api/banana-generate' },
-  googleBanana: { label: '官方Banana', buttonId: 'googleBananaGenerateBtn', endpoint: '/api/google-banana-generate' },
   gpt: { label: 'GPTImage2-1', buttonId: 'gptGenerateBtn', endpoint: '/api/gpt-generate' },
   falGpt: { label: 'GPTImage2-2', buttonId: 'falGptGenerateBtn', endpoint: '/api/fal-gpt-generate', statusEndpoint: '/api/fal-gpt-status', asyncQueue: true }
 };
@@ -397,10 +396,9 @@ function canUseReferenceWithProvider(provider, refs){
   if(!urls.length) return { ok:false, message:'没有可用的参考图。' };
   if(provider === 'banana'){
     const first = urls[0] || '';
-    if(first.startsWith('data:')) return { ok:false, message:'转链Banana 当前只支持线上图片 URL，本地上传图请先使用 官方Banana / GPTImage2-1 / GPTImage2-2，或改用当前工作流/历史图片。' };
+    if(first.startsWith('data:')) return { ok:false, message:'转链Banana 当前只支持线上图片 URL，本地上传图请先使用 GPTImage2-1 / GPTImage2-2，或改用当前工作流/历史图片。' };
     return { ok:true, urls:[first] };
   }
-  if(provider === 'googleBanana') return { ok:true, urls:urls.slice(0, REMIX_REFERENCE_LIMIT) };
   return { ok:true, urls };
 }
 async function pollQueuedImageTask(providerInfo, password, task, statusEl, extraBody, onComplete){
@@ -1473,7 +1471,7 @@ async function requestRemixImage(password){
   const provider = imageProviderConfigs[currentRemixProvider] ? currentRemixProvider : 'banana';
   const providerInfo = imageProviderConfig(provider);
   const providerLabel = providerInfo.label;
-  const buttons = ['remixBananaBtn','remixGoogleBananaBtn','remixGptBtn','remixFalGptBtn','remixPasswordSubmitBtn'].map(id => document.getElementById(id)).filter(Boolean);
+  const buttons = ['remixBananaBtn','remixGptBtn','remixFalGptBtn','remixPasswordSubmitBtn'].map(id => document.getElementById(id)).filter(Boolean);
   if(!instruction){ if(status) status.textContent = '请先输入想修改的内容和方向。'; return; }
   if(!cleanPassword){ if(status) status.textContent = '请先输入 ' + providerLabel + ' 生图密码。'; return; }
   if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){
@@ -1531,7 +1529,6 @@ async function requestRemixImage(password){
 
 function bindRemixPanel(){
   const remixBananaBtn = document.getElementById('remixBananaBtn');
-  const remixGoogleBananaBtn = document.getElementById('remixGoogleBananaBtn');
   const remixGptBtn = document.getElementById('remixGptBtn');
   const remixFalGptBtn = document.getElementById('remixFalGptBtn');
   const passInput = document.getElementById('remixPasswordInput');
@@ -1539,7 +1536,6 @@ function bindRemixPanel(){
   const passCancel = document.getElementById('remixPasswordCancelBtn');
   const backBtn = document.getElementById('backToResultBtn');
   if(remixBananaBtn) remixBananaBtn.onclick = () => openRemixPasswordPanel('banana');
-  if(remixGoogleBananaBtn) remixGoogleBananaBtn.onclick = () => openRemixPasswordPanel('googleBanana');
   if(remixGptBtn) remixGptBtn.onclick = () => openRemixPasswordPanel('gpt');
   if(remixFalGptBtn) remixFalGptBtn.onclick = () => openRemixPasswordPanel('falGpt');
   if(passSubmit) passSubmit.onclick = () => requestRemixImage(passInput ? passInput.value : '');
@@ -1745,8 +1741,6 @@ function bindStatic(){
   const cancelFieldEditBtn = document.getElementById('cancelFieldEditBtn');
   if(cancelFieldEditBtn) cancelFieldEditBtn.onclick = () => { selectedEditField = null; renderResult(); };
   document.getElementById('copyBtn').onclick = async () => { await navigator.clipboard.writeText(document.getElementById('output').value); document.getElementById('copyBtn').textContent='已复制'; setTimeout(()=>document.getElementById('copyBtn').textContent='复制当前内容',1200); };
-  const googleBananaGenerateBtn = document.getElementById('googleBananaGenerateBtn');
-  if(googleBananaGenerateBtn) googleBananaGenerateBtn.onclick = () => openBananaPasswordPanel('googleBanana');
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
   if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };  document.getElementById('bananaGenerateBtn').onclick = () => openBananaPasswordPanel('banana');
   const gptGenerateBtn = document.getElementById('gptGenerateBtn');
