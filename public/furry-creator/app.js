@@ -340,6 +340,13 @@ let remixLastImageUrl = '';
 let workflowImages = [];
 let remixReferenceImages = [];
 let customVideoGridPrompt = '';
+let currentVideoGridSegment = 'A';
+const VIDEO_GRID_SEGMENTS = {
+  A: { label:'四宫格 A', range:'1-4', title:'建立场景 / 角色进入' },
+  B: { label:'四宫格 B', range:'5-8', title:'主要动作展开' },
+  C: { label:'四宫格 C', range:'9-12', title:'情绪或事件升级' },
+  D: { label:'四宫格 D', range:'13-16', title:'收束和结尾画面' }
+};
 let historyPage = 1;
 let historyPassword = '';
 let historySelectMode = false;
@@ -537,47 +544,110 @@ function promptPairText(){
 }
 
 function videoGridPrompt(c = character || buildCharacter(), refs = []){
-  const refNote = refs.length ? 'ps.角色参考图->“图1”' : 'ps.当前角色设定作为人物参考';
+  const refNote = refs.length ? '角色参考图：图1' : '角色参考：当前角色设定';
   const species = cn(c.species);
   const color = cnColor(c.color).join('、');
   const outfit = cn(c.outfit) + '，' + cn(c.outfitDetail);
   const mood = cn(c.temperament);
   const world = cnJoin(c.worlds || c.world);
   const identity = zhSummary(c);
-  const lines = [
-    '【十六宫格提示词】：' + refNote,
-    '**创意：**',
-    '4×4分镜宫格，4行×4列16格黑边，写实电影摄影，35mm胶片颗粒，变形镜头特征，Furry OC电影短片预告片氛围。',
-    '@图片1仅作人物外貌、体型、毛色、花纹、服装和装饰物参考，禁止复制其构图姿势；若未提供图片，则严格参考下方角色设定。',
+  const control = [
+    '【总控规则】',
+    refNote,
+    '场景 / UI / 道具参考：如上传多张参考图，则图2用于主场景与UI风格，图3用于地图或界面切换，图4用于关键道具；若没有额外参考图，则按文字设定生成。',
     '角色设定：' + identity,
-    '每格按以下指定构图独立生成。左到右上到下：',
-    '1（超广角全景/轻仰/背面）' + species + '角色背影站在画面下三分之一，进入' + world + '风格的开阔场景，远处建筑与天空完整入画，24mm深景深/清晨冷灰蓝光',
-    '2（全景/平视/3-4侧）角色从画面左侧走入，完整展示' + color + '配色和' + outfit + '，地面有清晰透视线，35mm/柔和自然光',
-    '3（中景/轻俯/正面）角色停下观察手中小道具或徽记，背景元素轻微虚焦，35mm/冷光中带一点暖色边缘光',
-    '4（近景/侧面）角色眼神特写，瞳色和面部花纹保持一致，前景有轻微遮挡形成电影感，85mm浅景深/柔和侧光',
-    '5（全景/低角度/正面）角色迈步穿过场景核心区域，服装下摆和尾巴有轻微动态，24mm/黄金时间暖光',
-    '6（中景/平视/侧背）角色与场景道具互动，手部动作清楚无畸形，背景人群或灯牌虚焦，35mm/暖金阳光',
-    '7（中近景/轻俯/3-4侧）角色低头整理装饰物或装备细节，毛发分层和布料材质清晰，50mm浅景深/暖色反射光',
-    '8（特写/平视/正面）爪垫、手套、项链或关键装饰物特写，主体填满画面，85mm微距感/高光点状反射',
-    '9（超广角全景/顶视）角色位于画面中心小比例，周围环境形成几何构图，24mm深景深/夕阳橙红过渡光',
-    '10（中景/轻仰/正面）角色抬头迎向风或光源，衣料和毛发产生自然运动，35mm/强逆光轮廓光',
-    '11（近景/3-4侧）角色表情从' + mood + '转向坚定或温柔，背景灯光开始形成散景，50mm浅景深/黄昏暖橙光',
-    '12（特写/侧面）眼睛和面部轮廓占据画面，倒影中出现下一幕场景，85mm浅景深/夕阳边缘光',
-    '13（全景/背面）角色走入夜色中的灯光区域，画面右侧大面积留白，35mm/冷蓝夜色+暖色灯光',
-    '14（中近景/平视/正面）角色在夜景中回头，服装和花纹仍与参考图一致，50mm/霓虹或灯串柔和散景',
-    '15（特写/轻俯）角色手部按住胸前装饰或道具，毛发、布料、金属细节清楚，85mm/暖色小光源',
-    '16（超广角远景/背面）角色背影离开或站在高处，远处烟花、星空或城市灯光收束短片，24mm深景深/冷蓝夜景与暖光点缀',
-    '**相机：**',
-    'ARRI ALEXA Mini LF，Cooke S7/i全画幅，变形椭圆散景，35mm胶片颗粒，ARRI LogC色彩，电影级动态模糊但每格主体清晰。',
-    '**光线：**',
-    '格1-4 清晨冷灰蓝自然光，关系和世界建立；格5-8 黄金时间暖金阳光，互动展开；格9-12 黄昏橙红过渡光，情绪升温；格13-16 冷蓝夜色叠加暖色灯光，电影式收束。',
-    '**纹理：**',
-    '兽人毛发分层质感，爪垫或手套皮革质感，服装布料纤维，装饰物金属磨损，场景地面裂纹，玻璃与灯泡折射，背景材质细节，35mm胶片颗粒全格覆盖。',
-    '**负面：**',
-    '禁止卡通插画动画CGI感，禁止二次元扁平化，禁止过度调色，禁止每格构图重复，禁止格外字幕，禁止人物比例扭曲，禁止角色外貌不一致，禁止多余肢体，禁止手部错误，禁止尾巴位置错误，禁止毛发塑料感，禁止低俗姿势，禁止裸露，禁止水印和logo。',
-    '】'
+    '统一风格：写实电影摄影，第三人称游戏实录或纪录片式观察画面，35mm胶片颗粒，横屏16:9，黑边分镜。',
+    '统一摄影：每个四宫格内部必须像同一段动作的连续关键帧；优先固定机位或极轻微自然镜头，禁止大幅跳场景、禁止突兀推拉摇移和跟拍。',
+    '统一要求：无对白、无字幕、无任何文字。角色、服装、毛色花纹、道具、场景、UI风格、摄影规则必须前后一致。',
+    '生成策略：十六宫格负责完整故事总规划；四个四宫格负责分段生成。生成图片或视频时只提交“总控规则 + 当前四宫格段落”。'
   ];
+  const sixteen = [
+    '【十六宫格完整故事】',
+    '4×4十六宫格，左到右、上到下阅读，用来规划完整故事节奏，不直接拿整张十六宫格生成视频。',
+    '1（建立场景/超广角全景）' + species + '角色进入' + world + '风格场景，画面先交代空间关系和行动方向。',
+    '2（全景/平视）角色从画面一侧出现，完整展示' + color + '配色和' + outfit + '。',
+    '3（中景/轻俯）角色观察环境或确认目标，道具或环境线索第一次出现。',
+    '4（近景/侧面）角色表情从' + mood + '转向警觉或期待，形成第一段落落点。',
+    '5（全景/低角度）角色开始主要行动，进入场景核心区域。',
+    '6（中景/侧背）角色与关键道具或环境机制互动，手部动作清楚。',
+    '7（中近景/3-4侧）角色完成动作关键步骤，服装、毛发和道具细节保持一致。',
+    '8（特写/平视）关键道具或动作结果特写，作为第二段落收束。',
+    '9（界面或环境全景）出现地图、标记、过场、转场或下一阶段目标。',
+    '10（中景/轻仰）角色迎向新变化，情绪或任务发生转折。',
+    '11（近景/3-4侧）角色表情转为坚定、温柔或释然，背景光线强化情绪。',
+    '12（特写/侧面）眼睛、道具或界面反馈形成第三段落落点。',
+    '13（全景/背面）角色重新进入同一场景或来到结尾区域，空间关系与前文呼应。',
+    '14（中近景/正面）角色取回、确认或完成关键目标。',
+    '15（特写/轻俯）角色与关键道具产生明确情绪反馈，但无文字和符号。',
+    '16（远景/背面）角色离开或停在结尾构图中，画面回到安静场景，完成短片收束。'
+  ];
+  const blocks = [
+    ['A','第一段：角色出现并观察','1-4','延续总控规则；建立同一角色、同一场景、同一摄影规则。',[
+      '1（固定远景/平视）空场景先出现，入口、主体环境、出口和UI/HUD位置清楚，画面无文字。',
+      '2（固定远景/平视）' + species + '角色从画面一侧出现，动作谨慎，服装和' + color + '花纹与参考保持一致。',
+      '3（固定中远景/平视）角色进入画面三分之一处，观察周围或确认目标，道具线索首次出现。',
+      '4（固定中景/平视）角色停在关键位置回头观察或凝视目标，形成第一段落落点。'
+    ]],
+    ['B','第二段：主要动作展开','5-8','延续上一组同一角色、同一服装、同一场景、同一道具、同一UI。',[
+      '1（固定远景/平视）角色走向目标位置，主要行动开始，场景关系与上一组保持一致。',
+      '2（固定中景/平视）角色蹲下、伸手、放置、拾取或操作关键道具，手部动作清楚无畸形。',
+      '3（固定中景/平视）角色完成动作关键步骤，环境中的遮挡、光线或UI状态保持一致。',
+      '4（固定远景/平视）角色离开或站起确认结果，画面保留动作后的状态，作为第二段落收束。'
+    ]],
+    ['C','第三段：界面/地图/转场与下一阶段','9-12','表现故事转折，可使用地图UI、黑屏过场、回合切换或环境变化；禁止任何文字。',[
+      '1（地图或界面全屏）出现无文字地图、图标、路线或区域形状，标记关键位置但不出现地名数字。',
+      '2（地图或界面全屏）关键图标轻微高亮或状态变化，UI样式与总控一致，无任务框和字幕。',
+      '3（黑屏或极简过场）纯黑或无文字加载图形，表现时间/回合/段落切换。',
+      '4（固定远景/平视）回到同一核心场景或下一阶段起点，机位和UI规则与前文一致。'
+    ]],
+    ['D','第四段：回收目标并离开','13-16','延续同一场景、同一角色、同一道具、同一HUD；结尾必须清楚收束。',[
+      '1（固定远景/平视）角色再次进入画面，目标明确，动作比第一段更果断。',
+      '2（固定中景/平视）角色取回、确认或完成关键道具/目标，手部和道具形状保持一致。',
+      '3（固定中景/平视）角色抱起道具或完成动作，情绪从' + mood + '转向轻快、坚定或释然。',
+      '4（固定远景/平视）角色从出口离开或停在结尾构图中，画面回到安静场景，完成收束。'
+    ]]
+  ];
+  const lines = [...control, '', ...sixteen];
+  blocks.forEach(block => {
+    lines.push('', '【四宫格 ' + block[0] + '：' + block[1] + '（对应十六宫格' + block[2] + '）】');
+    lines.push('ps.' + refNote + '；场景/UI/道具参考按总控规则使用。');
+    lines.push('2×2四宫格分镜，黑边分隔，左到右、上到下阅读。' + block[3]);
+    lines.push('统一风格：第三人称游戏实录或纪录片式固定观察，横屏16:9，同一摄影规则，同一UI规则，无对白、无字幕、无任何文字。');
+    lines.push('左到右上到下：');
+    block[4].forEach(line => lines.push(line));
+    lines.push('负面：禁止文字、对白、字幕、镜头大幅运动、角色变化、服装变化、道具变化、UI错乱、多余角色、多余肢体、手部错误、低俗姿势、裸露、水印、logo。');
+  });
   return lines.join('\n');
+}
+
+function extractVideoGridControlRules(prompt){
+  const text = String(prompt || '').trim();
+  const match = text.match(/【总控规则】[\s\S]*?(?=\n【十六宫格完整故事】|\n【四宫格\s*[ABCD][：:]|$)/);
+  return match ? match[0].trim() : '';
+}
+
+function selectedVideoGridSegment(){
+  const select = document.getElementById('videoGridSegmentSelect');
+  const value = String((select && select.value) || currentVideoGridSegment || 'A').toUpperCase();
+  currentVideoGridSegment = VIDEO_GRID_SEGMENTS[value] ? value : 'A';
+  return currentVideoGridSegment;
+}
+
+function extractVideoGridSegmentPrompt(prompt, segment = selectedVideoGridSegment()){
+  const text = String(prompt || '').trim();
+  const seg = VIDEO_GRID_SEGMENTS[segment] ? segment : 'A';
+  const control = extractVideoGridControlRules(text);
+  const marker = new RegExp('【四宫格\\s*' + seg + '[：:][\\s\\S]*?(?=\\n【四宫格\\s*[ABCD][：:]|$)');
+  const match = text.match(marker);
+  if(match) return [control, match[0].trim()].filter(Boolean).join('\n\n');
+  return text;
+}
+
+function currentVideoGridPromptText(refs = []){
+  const output = document.getElementById('videoGridPromptOutput');
+  const latestWorkflowImage = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
+  const boundPrompt = latestWorkflowImage && latestWorkflowImage.videoPrompt ? String(latestWorkflowImage.videoPrompt).trim() : '';
+  return String((output && output.value) || customVideoGridPrompt || boundPrompt || videoGridPrompt(character || buildCharacter(), refs)).trim();
 }
 
 function addWorkflowImage(entry){
@@ -1400,8 +1470,10 @@ function refreshVideoGridPromptPreview(options = {}){
   const boundPrompt = latestWorkflowImage && latestWorkflowImage.videoPrompt ? String(latestWorkflowImage.videoPrompt).trim() : '';
   if(options.reset){ customVideoGridPrompt = ''; }
   output.value = customVideoGridPrompt || boundPrompt || videoGridPrompt(character || buildCharacter(), refs);
-  if(polishStatus && options.reset){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '已恢复默认模板；也可以输入构想后再次润色。'; }
-  else if(polishStatus && boundPrompt && !customVideoGridPrompt){ polishStatus.className = 'video-grid-polish-status is-ok'; polishStatus.textContent = '已读取这张十六宫格图片绑定的分镜文字，直接生视频会一并提交。'; }
+  const segment = VIDEO_GRID_SEGMENTS[selectedVideoGridSegment()];
+  if(polishStatus && options.reset){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '已恢复默认四宫格分段模板；也可以输入构想后再次润色。'; }
+  else if(polishStatus && boundPrompt && !customVideoGridPrompt){ polishStatus.className = 'video-grid-polish-status is-ok'; polishStatus.textContent = '已读取这张四宫格图片绑定的分镜文字，直接生视频会提交当前段落。'; }
+  else if(polishStatus){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '当前将提交“总控规则 + ' + segment.label + '（原' + segment.range + '格）：' + segment.title + '。'; }
   if(box) box.hidden = false;
 }
 
@@ -1418,10 +1490,10 @@ async function polishVideoGridPrompt(){
   if(!idea){
     customVideoGridPrompt = '';
     output.value = basePrompt;
-    if(status){ status.className = 'video-grid-polish-status'; status.textContent = '还没有输入构想，已显示默认十六宫格模板。'; }
+    if(status){ status.className = 'video-grid-polish-status'; status.textContent = '还没有输入构想，已显示默认四宫格分段模板。'; }
     return;
   }
-  if(status){ status.className = 'video-grid-polish-status'; status.textContent = 'DeepSeek V4 正在润色十六宫格提示词…'; }
+  if(status){ status.className = 'video-grid-polish-status'; status.textContent = 'DeepSeek V4 正在先规划十六宫格故事，再拆成四组四宫格…'; }
   if(btn) btn.disabled = true;
   try{
     const resp = await fetch('/api/deepseek-video-grid-polish', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ idea, basePrompt, character: character || buildCharacter(), referenceImageUrls: refs }) });
@@ -1430,7 +1502,7 @@ async function polishVideoGridPrompt(){
     customVideoGridPrompt = String(data.prompt || '').trim();
     if(!customVideoGridPrompt) throw new Error('DeepSeek 返回空提示词');
     output.value = customVideoGridPrompt;
-    if(status){ status.className = 'video-grid-polish-status is-ok'; status.textContent = '已按你的构想润色完成。后续生成十六宫格图片或直接生视频都会使用下方当前提示词。'; }
+    if(status){ status.className = 'video-grid-polish-status is-ok'; status.textContent = '已按你的构想生成“总控规则 + 十六宫格完整故事 + A/B/C/D 四组四宫格”。生成图片或视频时只提交总控规则和当前段落。'; }
   }catch(err){
     if(status){ status.className = 'video-grid-polish-status is-error'; status.textContent = 'DeepSeek 润色失败：' + (err.message || err) + '\n已保留当前提示词，你也可以手动编辑。'; }
   }finally{
@@ -1452,7 +1524,8 @@ function openVideoOmniPasswordPanel(){
   if(panel) panel.hidden = false;
   if(preview) preview.innerHTML = '';
   refreshVideoGridPromptPreview();
-  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前工作流最新图片作为参考，直接提交 google_omni 生视频。' : '第一步还没有图片，不能生视频。请先生成基础图。';
+  const segment = VIDEO_GRID_SEGMENTS[selectedVideoGridSegment()];
+  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前最新图片作为参考，提交 ' + segment.label + '（原' + segment.range + '格）到 google_omni 生 5-8 秒分段视频。' : '第一步还没有图片，不能生视频。请先生成基础图。';
   if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_omni_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
 }
 
@@ -1465,12 +1538,13 @@ function openVideoGridImagePasswordPanel(){
   const preview = document.getElementById('bananaPreview');
   const label = panel ? panel.querySelector('label') : null;
   currentImageProvider = 'videoGridImage';
-  if(label && label.firstChild) label.firstChild.textContent = '十六宫格图片密码';
+  if(label && label.firstChild) label.firstChild.textContent = '四宫格图片密码';
   box.hidden = false;
   if(panel) panel.hidden = false;
   if(preview) preview.innerHTML = '';
   refreshVideoGridPromptPreview();
-  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前工作流最新图片作为参考，先生成十六宫格图片。生成后可继续修改或直接生视频。' : '第一步还没有图片，不能生成十六宫格图片。请先生成基础图。';
+  const segment = VIDEO_GRID_SEGMENTS[selectedVideoGridSegment()];
+  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前最新图片作为参考，先生成 ' + segment.label + '（原' + segment.range + '格）2×2 图片。生成后可继续修改或直接生分段视频。' : '第一步还没有图片，不能生成四宫格图片。请先生成基础图。';
   if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_grid_image_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
 }
 
@@ -1486,15 +1560,16 @@ async function requestVideoOmni(password){
   const otherBtns = Object.entries(imageProviderConfigs).map(([, info]) => document.getElementById(info.buttonId)).filter(Boolean);
   const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
   if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
-  if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成十六宫格视频。'; return; }
+  if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成四宫格分段视频。'; return; }
   const currentGridOutput = document.getElementById('videoGridPromptOutput');
-  const latestWorkflowImage = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
   if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
-  const boundPrompt = latestWorkflowImage && latestWorkflowImage.videoPrompt ? String(latestWorkflowImage.videoPrompt).trim() : '';
-  const prompt = String((currentGridOutput || {}).value || customVideoGridPrompt || boundPrompt || videoGridPrompt(character, [ref])).trim();
-  const requestBody = { password: cleanPassword, prompt, videoPrompt: prompt, images:[ref], size:'1280x720', duration:'10', character };
+  const segmentKey = selectedVideoGridSegment();
+  const segment = VIDEO_GRID_SEGMENTS[segmentKey];
+  const fullPrompt = currentVideoGridPromptText([ref]);
+  const prompt = extractVideoGridSegmentPrompt(fullPrompt, segmentKey);
+  const requestBody = { password: cleanPassword, prompt, videoPrompt: prompt, images:[ref], size:'1280x720', duration:'8', character, segment: segmentKey };
   preview.innerHTML = '';
-  status.textContent = '正在提交速创Omni十六宫格视频任务，请稍等…\n已携带分镜文字：' + prompt.slice(0, 80) + (prompt.length > 80 ? '…' : '');
+  status.textContent = '正在提交速创Omni四宫格分段视频任务：' + segment.label + '（原' + segment.range + '格）…\n已携带当前段落分镜文字：' + prompt.slice(0, 80) + (prompt.length > 80 ? '…' : '');
   if(btn) btn.disabled = true; if(gridBtn) gridBtn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
   try{
     const resp = await fetch('/api/video-google-omni-generate', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
@@ -1502,7 +1577,7 @@ async function requestVideoOmni(password){
     if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
     const finish = async (result) => {
       if(panel) panel.hidden = true;
-      status.textContent = '速创Omni十六宫格视频生成成功！任务ID：' + (result.taskId || '未知') + '\n视频地址：' + result.videoUrl;
+      status.textContent = '速创Omni四宫格分段视频生成成功！任务ID：' + (result.taskId || '未知') + '\n视频地址：' + result.videoUrl;
       preview.innerHTML = '<a href="' + result.videoUrl + '" target="_blank" rel="noopener">打开视频原链接</a><video controls playsinline src="' + result.videoUrl + '"></video>';
     };
     if(data.pending){ await pollQueuedVideoTask(cleanPassword, data, status, requestBody, finish); }
@@ -1522,15 +1597,18 @@ async function requestVideoGridImage(password){
   const submitBtn = document.getElementById('bananaPasswordSubmitBtn');
   const btn = document.getElementById('videoGridImageBtn');
   const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
-  if(!cleanPassword){ status.textContent = '请先输入十六宫格图片密码。'; return; }
-  if(!ref){ status.textContent = '请先生成至少一张基础图，再进入十六宫格阶段。'; return; }
+  if(!cleanPassword){ status.textContent = '请先输入四宫格图片密码。'; return; }
+  if(!ref){ status.textContent = '请先生成至少一张基础图，再进入四宫格阶段。'; return; }
   if(workflowImages.length >= WORKFLOW_IMAGE_LIMIT){ status.textContent = '当前工作流已达到 5 张上限。请先删除其中一张，再继续生成。'; renderWorkflowGallery(); return; }
   const currentGridOutput = document.getElementById('videoGridPromptOutput');
   if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
-  const prompt = (currentGridOutput || {}).value || videoGridPrompt(character, [ref]);
-  const requestBody = { password: cleanPassword, prompt, negativePrompt: negativePrompt(character), referenceImageUrl: ref, referenceImageUrls: [ref], mode:'gridImage', character };
+  const segmentKey = selectedVideoGridSegment();
+  const segment = VIDEO_GRID_SEGMENTS[segmentKey];
+  const fullPrompt = currentVideoGridPromptText([ref]);
+  const prompt = extractVideoGridSegmentPrompt(fullPrompt, segmentKey);
+  const requestBody = { password: cleanPassword, prompt, negativePrompt: negativePrompt(character), referenceImageUrl: ref, referenceImageUrls: [ref], mode:'gridImage', gridLayout:'2x2', segment:segmentKey, character };
   preview.innerHTML = '';
-  status.textContent = '正在提交十六宫格图片任务，请稍等…';
+  status.textContent = '正在提交四宫格图片任务：' + segment.label + '（原' + segment.range + '格），请稍等…';
   if(btn) btn.disabled = true;
   if(submitBtn) submitBtn.disabled = true;
   try{
@@ -1539,9 +1617,9 @@ async function requestVideoGridImage(password){
     if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
     const finish = async (result) => {
       if(panel) panel.hidden = true;
-      status.textContent = '十六宫格图片生成成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
-      addWorkflowImage({ imageUrl: result.imageUrl || '', provider:'videoGridImage', providerLabel:'十六宫格图片', taskId: result.taskId || '', label:'十六宫格图片', videoPrompt: prompt });
-      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开十六宫格图片</a><img src="' + result.imageUrl + '" alt="十六宫格图片结果" /><div class="remix-entry"><button class="primary" type="button" data-video-image="' + encodeURIComponent(result.imageUrl) + '">基于这张十六宫格直接生视频</button><button class="ghost" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">继续修改这张图</button></div>';
+      status.textContent = '四宫格图片生成成功！任务ID：' + (result.taskId || '未知') + '\n图片地址：' + result.imageUrl;
+      addWorkflowImage({ imageUrl: result.imageUrl || '', provider:'videoGridImage', providerLabel:segment.label + '图片', taskId: result.taskId || '', label:segment.label + '图片', videoPrompt: prompt });
+      preview.innerHTML = '<a href="' + result.imageUrl + '" target="_blank" rel="noopener">打开四宫格图片</a><img src="' + result.imageUrl + '" alt="四宫格图片结果" /><div class="remix-entry"><button class="primary" type="button" data-video-image="' + encodeURIComponent(result.imageUrl) + '">基于这张四宫格直接生分段视频</button><button class="ghost" type="button" data-remix-image="' + encodeURIComponent(result.imageUrl) + '">继续修改这张图</button></div>';
       const videoBtn = preview.querySelector('[data-video-image]');
       if(videoBtn) videoBtn.onclick = () => { customVideoGridPrompt = prompt; openVideoOmniPasswordPanel(); };
       const remixBtn = preview.querySelector('[data-remix-image]');
@@ -1550,7 +1628,7 @@ async function requestVideoGridImage(password){
     if(data.pending && providerInfo.asyncQueue){ await pollQueuedImageTask(providerInfo, cleanPassword, data, status, requestBody, finish); }
     else{ if(!data.imageUrl) throw new Error('任务已提交但尚未返回最终图片，请稍后重试'); await finish(data); }
   }catch(err){
-    status.textContent = '十六宫格图片生成失败：' + (err.message || err);
+    status.textContent = '四宫格图片生成失败：' + (err.message || err);
   }finally{
     if(btn) btn.disabled = false;
     if(submitBtn) submitBtn.disabled = false;
@@ -1963,7 +2041,7 @@ function bindStatic(){
     document.querySelector('.result-panel').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; workflowImages=[]; remixReferenceImages=[]; customVideoGridPrompt=''; init(); };
+  document.getElementById('resetBtn').onclick = () => { locked.clear(); character=null; remixSourceImageUrl=''; remixLastImageUrl=''; workflowImages=[]; remixReferenceImages=[]; customVideoGridPrompt=''; currentVideoGridSegment='A'; init(); };
   document.querySelectorAll('.tab').forEach(btn => btn.onclick = () => { document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); activeTab = btn.dataset.tab; renderResult(); });
   document.querySelectorAll('[data-reroll]').forEach(btn => btn.onclick = () => generate({[btn.dataset.reroll]: true}));
   const editFieldInput = document.getElementById('editFieldInput');
@@ -1980,7 +2058,9 @@ function bindStatic(){
   const copyPromptPairBtn = document.getElementById('copyPromptPairBtn');
   if(copyPromptPairBtn) copyPromptPairBtn.onclick = async () => { await navigator.clipboard.writeText(promptPairText()); copyPromptPairBtn.textContent='已复制正+负'; setTimeout(()=>copyPromptPairBtn.textContent='复制正+负提示词',1200); };
   const copyVideoGridPromptBtn = document.getElementById('copyVideoGridPromptBtn');
-  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const currentGridPrompt = (document.getElementById('videoGridPromptOutput') || {}).value; const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(currentGridPrompt || customVideoGridPrompt || videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制十六宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制十六宫格提示词',1200); };
+  if(copyVideoGridPromptBtn) copyVideoGridPromptBtn.onclick = async () => { const currentGridPrompt = (document.getElementById('videoGridPromptOutput') || {}).value; const refs = workflowImages.length ? [workflowImages[workflowImages.length - 1].imageUrl] : []; await navigator.clipboard.writeText(currentGridPrompt || customVideoGridPrompt || videoGridPrompt(character || buildCharacter(), refs)); copyVideoGridPromptBtn.textContent='已复制四宫格'; setTimeout(()=>copyVideoGridPromptBtn.textContent='复制四宫格分段提示词',1200); };
+  const videoGridSegmentSelect = document.getElementById('videoGridSegmentSelect');
+  if(videoGridSegmentSelect) videoGridSegmentSelect.onchange = () => { currentVideoGridSegment = selectedVideoGridSegment(); refreshVideoGridPromptPreview(); };
   const copyVideoGridPromptInlineBtn = document.getElementById('copyVideoGridPromptInlineBtn');
   if(copyVideoGridPromptInlineBtn) copyVideoGridPromptInlineBtn.onclick = async () => { await navigator.clipboard.writeText((document.getElementById('videoGridPromptOutput') || {}).value || ''); copyVideoGridPromptInlineBtn.textContent='已复制'; setTimeout(()=>copyVideoGridPromptInlineBtn.textContent='复制提示词',1200); };
   const refreshVideoGridPromptBtn = document.getElementById('refreshVideoGridPromptBtn');
