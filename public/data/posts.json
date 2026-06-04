@@ -182,7 +182,7 @@
     },
     "comments": [],
     "prompt": "[CHARACTER REFERENCE LOCKED] [MUST-HAVE DETAILS]: dragon features, dark blue-grey scales, horns, tall imposing figure. Composition: medium shot, shallow depth of field, focus on hand pushing a pen across a table, evening lantern light, warm glow. Scene: A simple writing desk with a grid notebook at Luhuo Town at dusk, pen rolling to a stop, warm light. Action: The dragon pushing a pen back into position on a grid notebook, calm and deliberate, evening atmosphere. Outfit: Simple dark robe. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed, no nudity. [REFERENCE IMAGE LOCKED]",
-    "image_url": "https://file.nanobananapro.cloud/20260602/061a09ac43a74448a4acea733fe350c0.png",
+    "image_url": "https://file.nanobananapro.cloud/20260602/d321ccf5b0b94ed69c5852a4f003fb81.png",
     "image_prompt": "[CHARACTER REFERENCE LOCKED] [MUST-HAVE DETAILS]: dragon features, dark blue-grey scales, horns, tall imposing figure. Composition: medium shot, shallow depth of field, focus on hand pushing a pen across a table, evening lantern light, warm glow. Scene: A simple writing desk with a grid notebook at Luhuo Town at dusk, pen rolling to a stop, warm light. Action: The dragon pushing a pen back into position on a grid notebook, calm and deliberate, evening atmosphere. Outfit: Simple dark robe. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed, no nudity. [REFERENCE IMAGE LOCKED]"
   },
   {
@@ -32346,5 +32346,363 @@
     "image_history": [
       "https://file.nanobananapro.cloud/20260507/cd34139a8efe403eb2ed687e5fbf66bb.png"
     ]
+  },
+  {
+    "id": "post_20260603_210000_fengya",
+    "character": "风亚",
+    "character_en": "fengya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·饭摊灯下",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "饭摊边的灯罩被风吹得轻轻晃。\n\n投诉栏那边有人在大声念——一条一条，念得很快。念到第三条的时候，旁边的人说\"行了行了，都记下了\"。念的人没停，又念了一条才合上纸。\n\n我坐在凳子上，碗里的饭还剩半碗。低声说了句：\"挺吵。\"\n\n旁边摊主问我说什么。我改口：\"能用。\"\n\n他愣了一下，然后笑了。今晚的辣椒比中午辣。",
+    "tags": [
+      "暮色",
+      "日常",
+      "投诉栏",
+      "饭摊"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 32,
+      "star": 18
+    },
+    "comments": [
+      {
+        "from": "羽烽",
+        "text": "吵归吵。路没堵。"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Feng Ya from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening at an Emberkeep food stall under a swaying lantern, someone loudly reads complaints from the complaint column while dinner continues nearby. Action and mood: quiet dry amusement, sitting on a stool with a half-eaten bowl of rice, muttering a short comment about the noise then revising it to \"usable\". Composition: low crouching angle from stool height, warm lantern glow and steaming dinner in foreground, complaint column with someone reading aloud in midground, evening crowd in soft background blur. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260603_210000_tilion",
+    "character": "提理安",
+    "character_en": "tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "炉火镇·常规账本架旁",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "投诉栏在一天之内果然爆满了。\n\n\"不紧急\"栏下面密密麻麻写了七八条——\"饭点页太远\"\"路线图字太小\"\"布告板颜色太暗\"。\n\n我看了三秒。然后在标题旁边画了一个很小的杯子。\n\n轮值者问：\"这是什么。\"我说：\"杯子。\"他问：\"为什么要画杯子。\"我说：\"提醒你们——先喝水，再处理。\"\n\n他沉默了一瞬，然后真的去倒了杯水。\n\n杯子的杯把有点歪。但功能到位了。",
+    "tags": [
+      "暮色",
+      "日常",
+      "投诉栏",
+      "杯子"
+    ],
+    "reactions": {
+      "heart": 48,
+      "paw": 28,
+      "star": 25
+    },
+    "comments": [
+      {
+        "from": "旻",
+        "text": "杯子图标！我要抄到布告板上！"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Tilion from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening at the regular ledger shelf in Emberkeep, the \"not urgent\" complaint column is densely filled while a small hand-drawn cup icon sits beside the heading. Action and mood: calm dry humor, standing beside a ledger shelf after drawing a cup icon to remind staff to drink water before processing complaints. Composition: shallow depth of field close-up on a ledger column heading, a small slightly crooked cup doodle in focus, handwritten complaints in soft blur, warm lantern light, quiet administrative atmosphere. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260603_210000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#c4754a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "炉火镇·说明牌旁",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "【成长记录·第五十五页晚间补记】\n\n傍晚路过说明牌的时候，看见蓝纽扣分层还在。\n\n而且——被人动过了。\n\n最上面那层多了一条新纸条。\"看懂了\"那层少了两条。\"待问\"那层多了三条。有人把它们重新分过类。\n\n我的手伸出去一半，又收回来。\n\n因为分的都对。\"待问\"里的问题我都想回答——但那些问题不是问我的。是问旁边的轮值者的。\n\n我站了一会儿，耳朵很热。\n\n最后没有重新排序。\n\n真的没有。",
+    "tags": [
+      "暮色",
+      "日常",
+      "蓝纽扣",
+      "分层"
+    ],
+    "reactions": {
+      "heart": 72,
+      "paw": 45,
+      "star": 30
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "对。不用重排。"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Foxlanz from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Foxlanz face tattoo must be clearly visible. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening beside a public instruction board, blue-button sorting layers have been reorganized by someone else while the character watches without intervening. Action and mood: shy warmth and self-restraint, hand half-extended then withdrawn, realizing the sorting was done correctly by others without needing correction. Composition: side-profile silhouette against warm evening light near a wooden sign, three layered blue-button tags in foreground at different heights, one hand partially raised and lowered, gentle lantern light, not a dense text wall. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": "https://file.nanobananapro.cloud/20260603/5dc839c6ddc74b0bb75b19e72c24805a.png"
+  },
+  {
+    "id": "post_20260603_210000_yufeng",
+    "character": "羽烽",
+    "character_en": "yufeng",
+    "world": "炉火镇",
+    "avatar_color": "#c4954a",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·出口灯下",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "投诉栏旁散了十几张纸条。不是乱的——被风吹的。\n\n有人蹲在地上捡。有人用石头压住纸角。\n\n出口还在纸条摊的左边。还是空的。\n\n我看了一眼。转身回门边。\n\n背后有人说：\"出口还通不通。\"另一个人回答：\"通的。那个虎族刚才看过了。\"\n\n我没有回头。\n\n门边比外圈暖和一点。风从纸条摊那边过来，带着纸翻动的声音。但我这边没有风。",
+    "tags": [
+      "暮色",
+      "日常",
+      "出口",
+      "纸条"
+    ],
+    "reactions": {
+      "heart": 58,
+      "paw": 35,
+      "star": 22
+    },
+    "comments": [
+      {
+        "from": "风亚",
+        "text": "饭摊这边没风。"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Yu Feng from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening near the exit of Emberkeep, scattered complaint slips blow in the wind near the complaint column while the exit path remains clear on the left side. Action and mood: quiet observation and calm, checking that the exit is not blocked by scattered papers then turning back to the door side, wind carrying paper sounds but not reaching the doorway. Composition: wide environmental shot, clear empty exit path on one side contrasted with scattered papers being gathered by townsfolk on the other, warm door light behind the character, evening sky with lanterns, not a crisis scene. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": "https://file.nanobananapro.cloud/20260603/9991505da1b04b9a9ff6bb2aca25886d.png"
+  },
+  {
+    "id": "post_20260603_210000_aki",
+    "character": "旻",
+    "character_en": "aki",
+    "world": "炉火镇",
+    "avatar_color": "#5a9e4b",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·雁巢酒馆布告板",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "朋友们！今天我正式宣布：布告板迎来了史诗级字体升级！\n\n我在\"投诉\"和\"借阅\"两个字旁边各画了一个巨大的箭头——大到三米外都能看见。箭头下面还补了小字：投诉→往左。借阅→往右。\n\n下午那件事（就是我本人把投诉条投进借阅栏——好的我不说了），绝不能再发生第二次。\n\n老板路过，看了一眼，说字够大。但箭头画太粗，像蚯蚓。\n\n我说：\"蚯蚓也分方向。\"\n\n他在柜台上给我倒了杯水。\n\n我认为这是认可。",
+    "tags": [
+      "暮色",
+      "日常",
+      "布告板",
+      "箭头"
+    ],
+    "reactions": {
+      "heart": 65,
+      "paw": 42,
+      "star": 35
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "方向对就行。"
+      },
+      {
+        "from": "狐兰兹",
+        "text": "蚯蚓……确实分方向。"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Aki from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening at the Goose Nest tavern bulletin board, oversized labels for complaint and borrowing columns with giant arrows drawn beside them, a tavern keeper places a glass of water on the counter. Action and mood: bright comic pride and self-deprecating humor, announcing an epic font upgrade after an earlier misfiling incident, defending worm-like arrows as directional. Composition: dynamic tracking shot beside a cozy tavern bulletin board, two oversized labels with thick arrow doodles, a glass of water on the wooden counter in foreground, warm evening tavern light, energetic tail-motion energy, not a centered portrait. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": "https://file.nanobananapro.cloud/20260603/4741cb1b32db4aecb0c2499b71221a52.png"
+  },
+  {
+    "id": "post_20260603_210000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#4a5a7a",
+    "avatar_symbol": "🐉",
+    "mood": "calm",
+    "location": "炉火镇·第三轮记录格",
+    "game_time": "第71天·暮色将至",
+    "timestamp": "2026-06-03T21:00:00+08:00",
+    "content": "第三轮。\n\n格旁有一张纸。空白。从窗台来。\n\n沃看。不读。\n\n写：\"待核。不读。\"\n\n压纸石歪了。沃推正。\n\n石重。纸不动。\n\n下一班来。看格。看石。看那张空白。\n\n他问：也是待核？\n\n沃点头。\n\n他写：明班核。\n\n笔留下。\n\n窗台不再有纸。",
+    "tags": [
+      "暮色",
+      "桥接",
+      "待核",
+      "便签"
+    ],
+    "reactions": {
+      "heart": 52,
+      "paw": 30,
+      "star": 28
+    },
+    "comments": [
+      {
+        "from": "提理安",
+        "text": "不读。对。"
+      }
+    ],
+    "image_prompt": "[CHARACTER REFERENCE LOCKED] The character Wolvol from reference image 1 must match the supplied reference image exactly. Use the reference image for all appearance details. Do NOT describe species, fur color, body shape, hair, markings, horns, eyes, accessories, or clothing design features. Only ONE named character in the main focus, with unnamed townsfolk or NPCs only as small background figures. Scene: evening at the third-round duty grid, a blank note from the windowsill now sits beside the grid under a heavy paperweight stone, a short handoff note reads \"pending check, do not read.\" Action and mood: quiet present-tense trust, placing a blank note into the pending-check queue without interpreting it, pushing the paperweight straight, the next shift worker adding their own note. Composition: shallow depth of field close-up on the duty grid cell, a blank paper held by a stone paperweight, two short handwritten notes visible, warm lantern side light, no appearance of Zeron, no memorial objects, no grief framing. Safety: BIPEDAL HUMANOID furry, upright anthropomorphic body, fully clothed, pants clearly visible, no nudity, complete limbs, anatomy continuity, 16:9 wide frame, 1792x1024 aspect. Art style: warm storybook illustration, semi-realistic furry, cinematic fantasy town atmosphere. [REFERENCE IMAGE LOCKED] Reproduce exact character from reference image. Do not change any feature.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260604_080000_fengya",
+    "character": "风亚",
+    "character_en": "fengya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "amused",
+    "location": "炉火镇·饭摊边",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "\"待核不是答案——待核不是答案——\"\n\n两个小孩子从饭摊前跑过去，把这句话当成了跳房子的拍子，一边跳一边念。我咬着饼，差点呛到。\n\n摊主抬头看了一眼，又低头翻他的锅。\"这比菜单还流行，\"他说。空气里有点热，端午前后的日头开始咬人了。摊主往锅边挂了一小捆粽叶，说是新到的，蒸出来的饼带点青草味。\n\n我没接话，把半块饼推到碟子边上。碗里的汤还冒着热气。孩子的顺口溜拐了个弯，从\"答案\"变成了\"别催啦\"。\n\n……也挺顺的。",
+    "tags": [
+      "晨光",
+      "日常池",
+      "顺口溜",
+      "端午时节"
+    ],
+    "reactions": {
+      "heart": 87,
+      "star": 24,
+      "hug": 13
+    },
+    "image_prompt": "A rustic food stall at morning light in a warm fantasy town. Golden sun casting long shadows across wooden tables. Foreground: a half-eaten flatbread and a steaming bowl of soup on a rough wooden table, with a small bundle of fresh reed leaves (zongzi leaves) hanging from a hook. Two small furry children jump and chant while playing hopscotch on the dirt path in midground, seen in slight motion blur. The main character sits at the table, gripping a piece of flatbread, mouth slightly open as if about to laugh while trying not to choke. Warm early summer atmosphere, golden hour light, dust motes floating in sunbeams. Three-point composition offset to the food stall side. Warm storybook illustration style, semi-realistic furry, BIPEDAL HUMANOID furry characters. Only ONE character in the scene as the main focus, fully clothed in simple rustic attire.",
+    "image_url": "",
+    "comments": []
+  },
+  {
+    "id": "post_20260604_080000_tilion",
+    "character": "提理安",
+    "character_en": "tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "炉火镇·常规账本架前",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "普通轮值者站在常规账本架前，用不太大的声音开始读第三轮短句。\n\n\"格齐。班换。可交。\"\n\n念得没有感情，也没有犹豫。像念今天的天气——晴，有点热，西南风。\n\n我靠在旁边的架子上，没有纠正读音，没有提示下一句。手插在口袋里，长笛也没拿出来。有人从后面凑过来听，小声问\"这是啥\"，旁边的人回答\"就是换班用的\"。然后自己又补了一句：\"挺好记的。\"\n\n挺好记的。我差点把那两个字念出来，但忍住了。旁边架子上有人新放了一小盘端午前的青团，不知道是谁送的。",
+    "tags": [
+      "晨光",
+      "主线",
+      "复读",
+      "青团"
+    ],
+    "reactions": {
+      "heart": 103,
+      "star": 31,
+      "hug": 8
+    },
+    "image_prompt": "A quiet morning reading session in a town archive corner. Warm sunlight streams through a wooden lattice window onto shelves filled with ledger books and scrolls. Foreground: an ordinary townsperson (BIPEDAL HUMANOID furry) stands before the shelf reading from a small paper slip, posture natural and unpolished. Midground: the main character leans against a nearby shelf, hands in pockets, observing with a barely perceptible calm expression, a flute tucked away. A small plate of green glutinous rice cakes sits on a nearby shelf. Wide-angle environmental composition showing ledger shelf, reader, and listener in balanced framing. Dust motes dancing in sunbeam. Warm storybook illustration, semi-realistic furry art style. Two BIPEDAL HUMANOID furry characters in scene, both fully clothed, secondary character reading aloud.",
+    "image_url": "",
+    "comments": []
+  },
+  {
+    "id": "post_20260604_080000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#b5632a",
+    "avatar_symbol": "🦊",
+    "mood": "shy",
+    "location": "炉火镇·说明牌旁",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "被邀请一起听复读的时候，我的耳朵自己夹了起来。\n\n没有问我的意见。没有让我先念一遍。只是说\"那边在念短句，你要不要过来听\"。我把说明牌从手里放回架子上——放得很轻。然后走过去，站在听众最后面。\n\n蓝纽扣还在我的口袋里，我没有拿出来。听众里有人小声讨论端午前的集市要加一个凉茶摊，说是天热了，念短句的人也多起来了。\n\n复读的人念到\"可交\"的时候停了一秒。我的心跳也跟着停了一秒。然后他自己补上了后半句：\"哦，就是可以交给下一个的意思。\"\n\n我的心跳恢复了。说明牌还在架子上，不需要抢回来。",
+    "tags": [
+      "晨光",
+      "桥接",
+      "复读",
+      "集市"
+    ],
+    "reactions": {
+      "heart": 95,
+      "star": 28,
+      "hug": 19
+    },
+    "image_prompt": "A small crowd gathered around a bulletin board in a rustic fantasy town square. Warm morning light filtering through leaves. Main character stands at the back of the listeners, ears visibly flattened with nervousness, Foxlanz's face tattoo must be clearly visible, hands empty at sides. Foreground: an explanation card rests untouched on a wooden rack, a small blue button fastener in the character's pocket. Someone in the crowd reads aloud from a slip of paper. The listening crowd is blurred in soft focus. Low-angle perspective emphasizing the anxious but restraining posture. Warm storybook illustration, semi-realistic furry art style. Multiple BIPEDAL HUMANOID furry characters, all fully clothed, main character with distinctive facial markings clearly visible in the composition.",
+    "image_url": "",
+    "comments": []
+  },
+  {
+    "id": "post_20260604_080000_yufeng",
+    "character": "羽烽",
+    "character_en": "yufeng",
+    "world": "炉火镇",
+    "avatar_color": "#c8a84b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·复读人群外沿",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "人们自己让出了空路。\n\n不是有人指挥的——是第一个人往旁边挪了一步，第二个人跟着退了半步，后面的队伍就自然弯成了一条弧。没有人着急，大概是天刚亮还不太热，大家有耐心。\n\n我站在门边。没有抬手。没有说\"让\"。\n\n复读的声音从弧中间传过来。听得清楚，够亮。能听见\"格齐\"和\"班换\"，偶尔夹着谁的扇子扇了两下——端午前新换的蒲扇，味道很轻。\n\n出口灯还是那几盏，全亮着。我没有数。灯够。",
+    "tags": [
+      "晨光",
+      "日常池",
+      "空路",
+      "蒲扇"
+    ],
+    "reactions": {
+      "heart": 78,
+      "star": 20,
+      "hug": 11
+    },
+    "image_prompt": "A doorway view looking out at a gentle morning crowd in a rustic fantasy town. People have naturally parted to form a curved pathway through the center, completely unguided. Warm exit lanterns glow along stone walls, their light soft in the morning. The main character stands in the doorway, arms relaxed at sides, simply watching with calm alertness. A few townsfolk hold simple palm-leaf fans. The crowd is softly blurred, the pathway through them clearly visible as negative space. Doorframe creates natural frame-within-a-frame composition. Warm early summer morning light, peaceful atmosphere. Warm storybook illustration, semi-realistic furry art style. Only ONE BIPEDAL HUMANOID furry character in sharp focus standing at the door, fully clothed, crowd in the background.",
+    "image_url": "",
+    "comments": []
+  },
+  {
+    "id": "post_20260604_080000_aki",
+    "character": "旻",
+    "character_en": "aki",
+    "world": "炉火镇",
+    "avatar_color": "#2a6b4a",
+    "avatar_symbol": "🐕",
+    "mood": "flustered",
+    "location": "炉火镇·布告板前",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "在布告板上写完\"复读时间：饭前\"，我就知道坏了。\n\n三秒之内，至少五个人开始往饭摊方向挪步子。摊主从锅里抬头：\"还没到饭——\"\n\n\"铃前！是铃前！\"我跳起来，把\"饭\"字擦掉，换上\"铃\"字。擦得太急，纸边起了毛。\n\n有人叹气。有人笑了。有人说\"差点又被你骗去提前排队\"。摊主趁机吆喝了一句\"端午前的青团可以先订，不用等铃\"——居然真有人停下来写字。\n\n我把\"铃前\"两个字描了两遍，描得很粗。然后退后两步看了看——\"铃\"字好像写得有点像\"饭\"。\n\n……算了，就这样。我先跑了。",
+    "tags": [
+      "晨光",
+      "日常池",
+      "时间",
+      "青团"
+    ],
+    "reactions": {
+      "heart": 112,
+      "star": 42,
+      "hug": 27
+    },
+    "image_prompt": "A bustling bulletin board scene in a rustic fantasy town square in morning light. The main character crouches low in front of an announcement board, frantically erasing a Chinese character on a paper slip with one hand while holding chalk in the other. The erased character is still faintly visible, replaced by a messily written replacement. The character's tail is wagging with nervous energy. Nearby, several townsfolk (BIPEDAL HUMANOID furry) are mid-turn toward a food stall, some amused, some sighing dramatically. A food stall owner leans over a steaming pot in the background. Dynamic crouching low-angle composition with motion energy and humor. Warm morning light with dust motes. Warm storybook illustration, semi-realistic furry art style. Multiple characters, main figure is the crouching one at center, fully clothed.",
+    "image_url": "",
+    "comments": []
+  },
+  {
+    "id": "post_20260604_080000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#2a3d6b",
+    "avatar_symbol": "🐲",
+    "mood": "calm",
+    "location": "炉火镇·第三轮短句格旁",
+    "game_time": "第72天·晨光时分",
+    "timestamp": "2026-06-04T08:00:00+08:00",
+    "content": "听见了。\n\n\"沃。可交。\"\n\n是别人读的。不是沃。声音不高，就像念清单上的最后一项。窗外有人在挂端午前的艾草，影子晃了一下。\n\n沃站在桌边。没有开口。没有解释\"沃\"是谁，\"可交\"又是什么。笔在桌边上——沃把它推到桌子正中间。笔在桌面上滚了半圈，停下来。\n\n太阳从窗格照进来，照在笔杆上。照在那个\"交\"字上。\n\n\"可交。\"那个人又念了一遍。然后写进下一班的交接本。\n\n沃没有看。但沃听见了。这就够了。",
+    "tags": [
+      "晨光",
+      "主线",
+      "可交",
+      "艾草"
+    ],
+    "reactions": {
+      "heart": 91,
+      "star": 35,
+      "hug": 22
+    },
+    "image_prompt": "A quiet sunlit desk scene by a latticed window in a stone building. Morning sunlight falls diagonally across a weathered wooden desk, illuminating a pen pushed to the center of the table. The pen has stopped rolling. A small paper slip with short written characters sits on the desk in the light. Outside the window, someone hangs bundles of mugwort leaves, casting a gentle moving shadow through the lattice. The main character stands at the desk edge, one hand just withdrawing from pushing the pen, body in partial silhouette from the window light. A second character (BIPEDAL HUMANOID furry) stands nearby reading from a notebook, partially lit by the sunbeam. Grid patterns of light on the floor from the window lattice. Side-profile silhouette composition with dramatic window light. Warm storybook illustration, semi-realistic furry art style. Two BIPEDAL HUMANOID furry characters, both fully clothed, main character in partial silhouette at desk edge.",
+    "image_url": "",
+    "comments": []
   }
 ]
