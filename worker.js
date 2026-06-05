@@ -685,6 +685,7 @@ async function handleVideoGoogleOmniGenerate(request, env){
   const prompt = String(body.prompt || '').trim();
   if(!prompt) return json({ ok:false, error:'缺少 prompt' }, 400);
   if(prompt.length > 12000) return json({ ok:false, error:'prompt too long' }, 400);
+  const finalPrompt = prompt + '\n\nFINAL VIDEO OUTPUT LOCK: single continuous full-frame 16:9 video only. No 2x2 grid, no four-panel layout, no split screen, no collage, no storyboard sheet, no comic panels, no black panel borders, no picture-in-picture, no overlay graphics, no status bars, no icons, no buttons, no task prompts, no numbers, no subtitles, no readable text, no logo, no watermark. Use the reference image only for character identity, outfit, materials, and atmosphere; never copy any multi-panel layout from the reference image.';
   const GPT_IMAGE2_KEY = String(env.GPT_IMAGE2_KEY || '').trim();
   if(!GPT_IMAGE2_KEY) throw new Error('服务端未配置 GPT-Image-2 Key');
   const imageUrls = Array.isArray(body.images) ? body.images : normalizeReferenceImageUrls(body);
