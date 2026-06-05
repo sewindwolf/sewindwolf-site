@@ -554,28 +554,28 @@ function videoGridPrompt(c = character || buildCharacter(), refs = []){
   const control = [
     '【总控规则】',
     refNote,
-    '场景 / UI / 道具参考：如上传多张参考图，则图2用于主场景与UI风格，图3用于地图或界面切换，图4用于关键道具；若没有额外参考图，则按文字设定生成。',
+    '场景 / 道具参考：如上传多张参考图，则图2用于主场景氛围，图3用于空间关系或转场氛围，图4用于关键道具；若没有额外参考图，则按文字设定生成。',
     '角色设定：' + identity,
-    '统一风格：写实电影摄影，第三人称游戏实录或纪录片式观察画面，35mm胶片颗粒，横屏16:9，黑边分镜。',
-    '统一摄影：每个四宫格内部必须像同一段动作的连续关键帧；优先固定机位或极轻微自然镜头，禁止大幅跳场景、禁止突兀推拉摇移和跟拍。',
-    '统一要求：无对白、无字幕、无任何文字。角色、服装、毛色花纹、道具、场景、UI风格、摄影规则必须前后一致。',
-    '生成策略：十六宫格负责完整故事总规划；四个四宫格负责分段生成。生成图片或视频时只提交“总控规则 + 当前四宫格段落”。'
+    '统一风格：写实电影摄影或纪录片式观察画面，35mm胶片颗粒，横屏16:9。',
+    '统一摄影：每个段落内部必须像同一段动作的连续关键帧；优先固定机位或极轻微自然镜头，禁止大幅跳场景、禁止突兀推拉摇移和跟拍。',
+    '统一要求：无对白、无字幕、无任何文字。角色、服装、毛色花纹、道具、场景、摄影规则必须前后一致。',
+    '生成策略：十六宫格负责完整故事总规划；四个四宫格只负责分段规划。生成图片时可做2×2分镜图；生成视频时必须转成单一连续全画面镜头，禁止分屏和四宫格。'
   ];
   const sixteen = [
     '【十六宫格完整故事】',
-    '4×4十六宫格，左到右、上到下阅读，用来规划完整故事节奏，不直接拿整张十六宫格生成视频。',
+    '4×4十六宫格，左到右、上到下阅读，只用来规划完整故事节奏，不直接拿整张十六宫格生成视频。',
     '1（建立场景/超广角全景）' + species + '角色进入' + world + '风格场景，画面先交代空间关系和行动方向。',
     '2（全景/平视）角色从画面一侧出现，完整展示' + color + '配色和' + outfit + '。',
     '3（中景/轻俯）角色观察环境或确认目标，道具或环境线索第一次出现。',
     '4（近景/侧面）角色表情从' + mood + '转向警觉或期待，形成第一段落落点。',
     '5（全景/低角度）角色开始主要行动，进入场景核心区域。',
-    '6（中景/侧背）角色与关键道具或环境机制互动，手部动作清楚。',
+    '6（中景/侧背）角色与关键道具或环境机关互动，手部动作清楚。',
     '7（中近景/3-4侧）角色完成动作关键步骤，服装、毛发和道具细节保持一致。',
     '8（特写/平视）关键道具或动作结果特写，作为第二段落收束。',
-    '9（界面或环境全景）出现地图、标记、过场、转场或下一阶段目标。',
+    '9（环境全景）通过光线、天气、门扉、路径或空间变化表现下一阶段目标。',
     '10（中景/轻仰）角色迎向新变化，情绪或任务发生转折。',
     '11（近景/3-4侧）角色表情转为坚定、温柔或释然，背景光线强化情绪。',
-    '12（特写/侧面）眼睛、道具或界面反馈形成第三段落落点。',
+    '12（特写/侧面）眼睛、道具或环境反馈形成第三段落落点。',
     '13（全景/背面）角色重新进入同一场景或来到结尾区域，空间关系与前文呼应。',
     '14（中近景/正面）角色取回、确认或完成关键目标。',
     '15（特写/轻俯）角色与关键道具产生明确情绪反馈，但无文字和符号。',
@@ -583,24 +583,24 @@ function videoGridPrompt(c = character || buildCharacter(), refs = []){
   ];
   const blocks = [
     ['A','第一段：角色出现并观察','1-4','延续总控规则；建立同一角色、同一场景、同一摄影规则。',[
-      '1（固定远景/平视）空场景先出现，入口、主体环境、出口和UI/HUD位置清楚，画面无文字。',
+      '1（固定远景/平视）空场景先出现，入口、主体环境和出口方向清楚，画面无文字。',
       '2（固定远景/平视）' + species + '角色从画面一侧出现，动作谨慎，服装和' + color + '花纹与参考保持一致。',
       '3（固定中远景/平视）角色进入画面三分之一处，观察周围或确认目标，道具线索首次出现。',
       '4（固定中景/平视）角色停在关键位置回头观察或凝视目标，形成第一段落落点。'
     ]],
-    ['B','第二段：主要动作展开','5-8','延续上一组同一角色、同一服装、同一场景、同一道具、同一UI。',[
+    ['B','第二段：主要动作展开','5-8','延续上一组同一角色、同一服装、同一场景、同一道具。',[
       '1（固定远景/平视）角色走向目标位置，主要行动开始，场景关系与上一组保持一致。',
       '2（固定中景/平视）角色蹲下、伸手、放置、拾取或操作关键道具，手部动作清楚无畸形。',
-      '3（固定中景/平视）角色完成动作关键步骤，环境中的遮挡、光线或UI状态保持一致。',
+      '3（固定中景/平视）角色完成动作关键步骤，环境中的遮挡和光线状态保持一致。',
       '4（固定远景/平视）角色离开或站起确认结果，画面保留动作后的状态，作为第二段落收束。'
     ]],
-    ['C','第三段：界面/地图/转场与下一阶段','9-12','表现故事转折，可使用地图UI、黑屏过场、回合切换或环境变化；禁止任何文字。',[
-      '1（地图或界面全屏）出现无文字地图、图标、路线或区域形状，标记关键位置但不出现地名数字。',
-      '2（地图或界面全屏）关键图标轻微高亮或状态变化，UI样式与总控一致，无任务框和字幕。',
-      '3（黑屏或极简过场）纯黑或无文字加载图形，表现时间/回合/段落切换。',
-      '4（固定远景/平视）回到同一核心场景或下一阶段起点，机位和UI规则与前文一致。'
+    ['C','第三段：环境转场与情绪升级','9-12','表现故事转折，只使用真实场景内的光线、天气、门、路、风、尘、影子或道具变化；禁止任何文字。',[
+      '1（固定全景/平视）场景光线或天气发生细微变化，暗示下一阶段目标。',
+      '2（固定中景/平视）角色注意到环境中的关键变化，身体方向和视线转向新目标。',
+      '3（固定近景/侧面）角色短暂停顿，表情或呼吸表现情绪转折。',
+      '4（固定远景/平视）角色迈向下一阶段起点，机位和场景连续，完成第三段落落点。'
     ]],
-    ['D','第四段：回收目标并离开','13-16','延续同一场景、同一角色、同一道具、同一HUD；结尾必须清楚收束。',[
+    ['D','第四段：回收目标并离开','13-16','延续同一场景、同一角色、同一道具；结尾必须清楚收束。',[
       '1（固定远景/平视）角色再次进入画面，目标明确，动作比第一段更果断。',
       '2（固定中景/平视）角色取回、确认或完成关键道具/目标，手部和道具形状保持一致。',
       '3（固定中景/平视）角色抱起道具或完成动作，情绪从' + mood + '转向轻快、坚定或释然。',
@@ -610,12 +610,12 @@ function videoGridPrompt(c = character || buildCharacter(), refs = []){
   const lines = [...control, '', ...sixteen];
   blocks.forEach(block => {
     lines.push('', '【四宫格 ' + block[0] + '：' + block[1] + '（对应十六宫格' + block[2] + '）】');
-    lines.push('ps.' + refNote + '；场景/UI/道具参考按总控规则使用。');
-    lines.push('2×2四宫格分镜，黑边分隔，左到右、上到下阅读。' + block[3]);
-    lines.push('统一风格：第三人称游戏实录或纪录片式固定观察，横屏16:9，同一摄影规则，同一UI规则，无对白、无字幕、无任何文字。');
+    lines.push('ps.' + refNote + '；场景/道具参考按总控规则使用。');
+    lines.push('2×2四宫格分镜图片规划，黑边分隔，左到右、上到下阅读。' + block[3]);
+    lines.push('统一风格：写实电影摄影或纪录片式固定观察，横屏16:9，同一摄影规则，无对白、无字幕、无任何文字。');
     lines.push('左到右上到下：');
     block[4].forEach(line => lines.push(line));
-    lines.push('负面：禁止文字、对白、字幕、镜头大幅运动、角色变化、服装变化、道具变化、UI错乱、多余角色、多余肢体、手部错误、低俗姿势、裸露、水印、logo。');
+    lines.push('负面：禁止文字、对白、字幕、镜头大幅运动、角色变化、服装变化、道具变化、多余角色、多余肢体、手部错误、低俗姿势、裸露、水印、logo。');
   });
   return lines.join('\n');
 }
@@ -641,6 +641,37 @@ function extractVideoGridSegmentPrompt(prompt, segment = selectedVideoGridSegmen
   const match = text.match(marker);
   if(match) return [control, match[0].trim()].filter(Boolean).join('\n\n');
   return text;
+}
+
+function cleanStoryboardPromptForVideo(text){
+  return String(text || '')
+    .split(/\r?\n/)
+    .filter(line => !/2×2|2x2|四宫格|分镜图片|黑边|分隔|左到右|上到下|阅读|地图|界面|UI|HUD|图标|路线|任务框|回合|加载图形|游戏实录/i.test(line))
+    .join('\n')
+    .replace(/十六宫格/g, '完整故事规划')
+    .replace(/分镜/g, '动作段落')
+    .replace(/编号必须是1-4/g, '')
+    .trim();
+}
+
+function videoMotionPromptFromSegment(prompt, segment = selectedVideoGridSegment()){
+  const segmentText = extractVideoGridSegmentPrompt(prompt, segment);
+  const cleaned = cleanStoryboardPromptForVideo(segmentText);
+  return [
+    cleaned,
+    '【最终视频生成规则】',
+    '生成一个单一连续的横屏16:9全画面视频，不是图片分镜，不是四宫格，不是分屏。',
+    '画面只能有一个完整视频画面窗口，禁止2×2布局、四个面板、黑色分隔线、拼贴、漫画格、画中画、多屏监控墙。',
+    '禁止任何叠加信息层、状态条、角标、按钮、任务提示、数字、字幕、文字、logo、水印。',
+    '参考图只用于角色身份、服装、材质和场景氛围，不要复制参考图里的多面板或设定板布局。',
+    '把上面的4个关键帧理解为同一镜头内连续动作的起承转合，用自然运动连接，5-8秒内完成。'
+  ].filter(Boolean).join('\n');
+}
+
+function latestVideoReferenceImage(){
+  const base = [...workflowImages].reverse().find(item => item && item.imageUrl && item.provider !== 'videoGridImage');
+  const latest = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
+  return (base && base.imageUrl) || (latest && latest.imageUrl) || '';
 }
 
 function currentVideoGridPromptText(refs = []){
@@ -1472,7 +1503,7 @@ function refreshVideoGridPromptPreview(options = {}){
   output.value = customVideoGridPrompt || boundPrompt || videoGridPrompt(character || buildCharacter(), refs);
   const segment = VIDEO_GRID_SEGMENTS[selectedVideoGridSegment()];
   if(polishStatus && options.reset){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '已恢复默认四宫格分段模板；也可以输入构想后再次润色。'; }
-  else if(polishStatus && boundPrompt && !customVideoGridPrompt){ polishStatus.className = 'video-grid-polish-status is-ok'; polishStatus.textContent = '已读取这张四宫格图片绑定的分镜文字，直接生视频会提交当前段落。'; }
+  else if(polishStatus && boundPrompt && !customVideoGridPrompt){ polishStatus.className = 'video-grid-polish-status is-ok'; polishStatus.textContent = '已读取这张四宫格图片绑定的分镜文字，直接生视频会自动转成单画面连续镜头。'; }
   else if(polishStatus){ polishStatus.className = 'video-grid-polish-status'; polishStatus.textContent = '当前将提交“总控规则 + ' + segment.label + '（原' + segment.range + '格）：' + segment.title + '。'; }
   if(box) box.hidden = false;
 }
@@ -1502,7 +1533,7 @@ async function polishVideoGridPrompt(){
     customVideoGridPrompt = String(data.prompt || '').trim();
     if(!customVideoGridPrompt) throw new Error('DeepSeek 返回空提示词');
     output.value = customVideoGridPrompt;
-    if(status){ status.className = 'video-grid-polish-status is-ok'; status.textContent = '已按你的构想生成“总控规则 + 十六宫格完整故事 + A/B/C/D 四组四宫格”。生成图片或视频时只提交总控规则和当前段落。'; }
+    if(status){ status.className = 'video-grid-polish-status is-ok'; status.textContent = '已按你的构想生成“总控规则 + 十六宫格完整故事 + A/B/C/D 四组四宫格”。生成图片时使用当前四宫格段落；生成视频时会自动转成单画面连续镜头。'; }
   }catch(err){
     if(status){ status.className = 'video-grid-polish-status is-error'; status.textContent = 'DeepSeek 润色失败：' + (err.message || err) + '\n已保留当前提示词，你也可以手动编辑。'; }
   }finally{
@@ -1525,7 +1556,7 @@ function openVideoOmniPasswordPanel(){
   if(preview) preview.innerHTML = '';
   refreshVideoGridPromptPreview();
   const segment = VIDEO_GRID_SEGMENTS[selectedVideoGridSegment()];
-  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前最新图片作为参考，提交 ' + segment.label + '（原' + segment.range + '格）到 google_omni 生 5-8 秒分段视频。' : '第一步还没有图片，不能生视频。请先生成基础图。';
+  if(status) status.textContent = workflowImages.length ? '第二阶段：使用当前基础图作为参考，提交 ' + segment.label + '（原' + segment.range + '格）到 google_omni 生 5-8 秒单画面分段视频。四宫格只作为规划，不会作为视频画面布局。' : '第一步还没有图片，不能生视频。请先生成基础图。';
   if(input){ input.value = ''; input.setAttribute('autocomplete', 'new-password'); input.setAttribute('name', 'furry_video_omni_password'); setTimeout(() => { input.value = ''; input.focus(); }, 80); setTimeout(() => { input.value = ''; }, 320); }
 }
 
@@ -1558,18 +1589,20 @@ async function requestVideoOmni(password){
   const btn = document.getElementById('videoOmniGenerateBtn');
   const gridBtn = document.getElementById('videoGridImageBtn');
   const otherBtns = Object.entries(imageProviderConfigs).map(([, info]) => document.getElementById(info.buttonId)).filter(Boolean);
-  const ref = workflowImages.length ? workflowImages[workflowImages.length - 1].imageUrl : '';
+  const ref = latestVideoReferenceImage();
+  const latestImage = workflowImages.length ? workflowImages[workflowImages.length - 1] : null;
+  const usingStoryboardImage = latestImage && latestImage.provider === 'videoGridImage' && ref !== latestImage.imageUrl;
   if(!cleanPassword){ status.textContent = '请先输入速创Omni视频密码。'; return; }
-  if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成四宫格分段视频。'; return; }
+  if(!ref){ status.textContent = '请先生成至少一张图片，再把最新图片转成单画面分段视频。'; return; }
   const currentGridOutput = document.getElementById('videoGridPromptOutput');
   if(currentGridOutput && !currentGridOutput.value.trim()) refreshVideoGridPromptPreview();
   const segmentKey = selectedVideoGridSegment();
   const segment = VIDEO_GRID_SEGMENTS[segmentKey];
   const fullPrompt = currentVideoGridPromptText([ref]);
-  const prompt = extractVideoGridSegmentPrompt(fullPrompt, segmentKey);
-  const requestBody = { password: cleanPassword, prompt, videoPrompt: prompt, images:[ref], size:'1280x720', duration:'8', character, segment: segmentKey };
+  const prompt = videoMotionPromptFromSegment(fullPrompt, segmentKey);
+  const requestBody = { password: cleanPassword, prompt, videoPrompt: prompt, images:[ref], size:'1280x720', duration:'8', character, segment: segmentKey, outputMode:'singleVideo' };
   preview.innerHTML = '';
-  status.textContent = '正在提交速创Omni四宫格分段视频任务：' + segment.label + '（原' + segment.range + '格）…\n已携带当前段落分镜文字：' + prompt.slice(0, 80) + (prompt.length > 80 ? '…' : '');
+  status.textContent = '正在提交速创Omni单画面分段视频任务：' + segment.label + '（原' + segment.range + '格）…\n已自动移除四宫格/分屏/叠加信息层等词，并加入单画面连续镜头约束。' + (usingStoryboardImage ? '\n检测到最新图是四宫格图片，已自动改用上一张基础图作为视频参考，避免视频变成四宫格。' : '');
   if(btn) btn.disabled = true; if(gridBtn) gridBtn.disabled = true; otherBtns.forEach(otherBtn => otherBtn.disabled = true); if(submitBtn) submitBtn.disabled = true;
   try{
     const resp = await fetch('/api/video-google-omni-generate', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(requestBody) });
@@ -1577,8 +1610,12 @@ async function requestVideoOmni(password){
     if(!resp.ok || !data.ok) throw new Error(data.error || '提交失败');
     const finish = async (result) => {
       if(panel) panel.hidden = true;
-      status.textContent = '速创Omni四宫格分段视频生成成功！任务ID：' + (result.taskId || '未知') + '\n视频地址：' + result.videoUrl;
-      preview.innerHTML = '<a href="' + result.videoUrl + '" target="_blank" rel="noopener">打开视频原链接</a><video controls playsinline src="' + result.videoUrl + '"></video>';
+      status.textContent = '速创Omni单画面分段视频生成成功！任务ID：' + (result.taskId || '未知') + '\n视频地址：' + result.videoUrl;
+      preview.innerHTML = '<a href="' + result.videoUrl + '" target="_blank" rel="noopener">打开视频原链接</a><video controls playsinline src="' + result.videoUrl + '"></video><div class="remix-entry"><button class="primary" type="button" data-video-retry>重新生成当前段落视频</button><button class="ghost" type="button" data-video-next>切换段落 / 生成其他段落</button></div>';
+      const retryBtn = preview.querySelector('[data-video-retry]');
+      if(retryBtn) retryBtn.onclick = () => openVideoOmniPasswordPanel();
+      const nextBtn = preview.querySelector('[data-video-next]');
+      if(nextBtn) nextBtn.onclick = () => { const videoBox = document.getElementById('videoGridBox'); if(videoBox) videoBox.hidden = false; const stage = document.getElementById('videoGridStage'); if(stage) stage.scrollIntoView({ behavior:'smooth', block:'center' }); };
     };
     if(data.pending){ await pollQueuedVideoTask(cleanPassword, data, status, requestBody, finish); }
     else{ if(!data.videoUrl) throw new Error('任务已提交但尚未返回最终视频，请稍后重试'); await finish(data); }
