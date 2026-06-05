@@ -1,4 +1,4 @@
 @echo off
-cd /d "D:\KnotClaw_User\sewindwolf-site\admin"
+cd /d "C:\Users\Administrator\Documents\KnotClaw_User\sewindwolf-site\admin"
 node server.js
 pause

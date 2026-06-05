@@ -115,7 +115,7 @@ const posts = [
   }
 ];
 
-fs.writeFileSync('D:/KnotClaw_User/new_posts_temp.json', JSON.stringify(posts, null, 2), 'utf8');
+fs.writeFileSync('C:/Users/Administrator/Documents/KnotClaw_User/new_posts_temp.json', JSON.stringify(posts, null, 2), 'utf8');
 console.log(`Written ${posts.length} posts to new_posts_temp.json`);
 console.log('Ids:');
 posts.forEach(p => console.log(' - ' + p.id + ' | ' + p.character + ' | ' + p.location));
