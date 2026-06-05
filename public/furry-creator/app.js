@@ -1947,41 +1947,57 @@ function renderHistoryItems(items){
   items.forEach(item => {
     const card = document.createElement('article');
     card.className = 'history-card';
+    const isVideo = item.mediaType === 'video' || (!item.imageUrl && item.videoUrl);
+    const mediaUrl = isVideo ? (item.videoUrl || '') : (item.imageUrl || '');
     const link = document.createElement('a');
-    link.href = item.imageUrl || '#';
+    link.href = mediaUrl || '#';
     link.target = '_blank';
     link.rel = 'noopener';
-    const img = document.createElement('img');
-    img.loading = 'lazy';
-    img.decoding = 'async';
-    img.src = item.imageUrl || '';
-    img.alt = historyCardTitle(item);
-    link.appendChild(img);
+    if(isVideo){
+      const video = document.createElement('video');
+      video.src = mediaUrl;
+      video.controls = true;
+      video.preload = 'metadata';
+      video.playsInline = true;
+      video.style.width = '100%';
+      link.appendChild(video);
+      link.removeAttribute('href');
+    } else {
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.src = mediaUrl;
+      img.alt = historyCardTitle(item);
+      link.appendChild(img);
+    }
     const body = document.createElement('div');
     body.className = 'history-card-body';
     const title = document.createElement('h4');
-    title.textContent = historyCardTitle(item);
+    title.textContent = (isVideo ? '🎬 ' : '') + historyCardTitle(item);
     const meta = document.createElement('p');
     const created = item.createdAt ? new Date(item.createdAt).toLocaleString('zh-CN', { hour12:false }) : '未知时间';
     meta.textContent = (item.providerLabel || item.provider || '未知渠道') + ' · ' + created;
     const details = document.createElement('p');
     details.textContent = [item.anthroLabel, item.bodyType, item.temperament].filter(Boolean).join(' / ');
     const open = document.createElement('a');
-    open.href = item.imageUrl || '#';
+    open.href = mediaUrl || '#';
     open.target = '_blank';
     open.rel = 'noopener';
-    open.textContent = '打开原图';
-    const choose = document.createElement('button');
-    choose.type = 'button';
-    choose.className = 'primary history-pick-btn';
-    choose.textContent = '选为再生成参考';
-    choose.onclick = () => {
-      const entry = { id:'history-' + (item.id || imageId('hist')), imageUrl:item.imageUrl || '', source:'history', label:historyCardTitle(item), provider:item.provider, providerLabel:item.providerLabel, createdAt:item.createdAt };
-      setRemixReferences([entry], { replace:false });
-      closeHistoryPanel();
-      openRemixPage('');
-    };
-    body.append(title, meta, details, open, choose);
+    open.textContent = isVideo ? '打开视频' : '打开原图';
+    body.append(title, meta, details, open);
+    if(!isVideo){
+      const choose = document.createElement('button');
+      choose.type = 'button';
+      choose.className = 'primary history-pick-btn';
+      choose.textContent = '选为再生成参考';
+      choose.onclick = () => {
+        const entry = { id:'history-' + (item.id || imageId('hist')), imageUrl:item.imageUrl || '', source:'history', label:historyCardTitle(item), provider:item.provider, providerLabel:item.providerLabel, createdAt:item.createdAt };
+        setRemixReferences([entry], { replace:false });
+        closeHistoryPanel();
+        openRemixPage('');
+      };
+      body.append(choose);
+    }
     card.append(link, body);
     grid.appendChild(card);
   });
