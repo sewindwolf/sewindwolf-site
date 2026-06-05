@@ -140,7 +140,7 @@ function generatedImagePublicUrl(requestUrl, id){
 async function storeGeneratedImage(env, requestUrl, image){
   const stub = historyStoreStub(env);
   if(!stub || !image?.data) return '';
-  const id = 'gen-' + Date.now().toString(36) + '-' + crypto.randomU视觉元素D().slice(0, 12);
+  const id = 'gen-' + Date.now().toString(36) + '-' + crypto.randomUUID().slice(0, 12);
   const bytes = Array.from(base64ToBytes(image.data));
   const resp = await stub.fetch('https://furry-history.local/img-put', {
     method:'POST',
@@ -251,7 +251,7 @@ function providerLabel(provider){
 function compactHistoryRecord({ provider, taskId, imageUrl, body }){
   const character = body && body.character && typeof body.character === 'object' ? body.character : {};
   const createdAt = new Date().toISOString();
-  const id = createdAt.replace(/[-:.TZ]/g, '') + '-' + crypto.randomU视觉元素D().slice(0, 8);
+  const id = createdAt.replace(/[-:.TZ]/g, '') + '-' + crypto.randomUUID().slice(0, 8);
   return {
     id,
     createdAt,
@@ -295,7 +295,7 @@ async function handleFurryReferenceUpload(request, env){
   try { body = await request.json(); } catch { return json({ ok:false, error:'invalid JSON body' }, 400); }
   if(!isGeneratePassword(env, body.password)) return json({ ok:false, error:'密码错误' }, 403);
   const { contentType, bytes } = parseDataImage(body.dataUrl || body.image || '');
-  const id = 'ref-' + Date.now().toString(36) + '-' + crypto.randomU视觉元素D().slice(0, 12);
+  const id = 'ref-' + Date.now().toString(36) + '-' + crypto.randomUUID().slice(0, 12);
   const stub = historyStoreStub(env);
   if(!stub) return json({ ok:false, error:'reference store not configured' }, 500);
   const resp = await stub.fetch('https://furry-history.local/ref-put', {
