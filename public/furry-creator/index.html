@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260605-video-history" />
+  <link rel="stylesheet" href="style.css?v=20260605-light-fourpanel" />
 </head>
 <body>
-  <script>window.APP_VERSION = '20260605-video-history';</script>
+  <script>window.APP_VERSION = '20260605-light-fourpanel';</script>
   <div class="shell">
     <header class="hero">
       <div class="badge">SEWINDWOLF · CHARACTER LAB</div>
@@ -39,7 +39,11 @@
         <div class="video-grid-stage" id="videoGridStage" hidden>
           <div class="field-editor-kicker">STAGE 02 · GRID / VIDEO LOOP</div>
           <h3>四宫格分段阶段</h3>
-          <p>第一步生成基础图后，才能进入这里。现在默认把原十六宫格拆成 A/B/C/D 四个 2×2 四宫格；每次可先生成当前段落的四宫格分镜图片；生成视频时会自动转成单一连续全画面镜头，避免视频变成四宫格。</p>
+          <div class="video-mode-switch">
+            <button class="video-mode-btn active" type="button" data-video-mode="story">重型十六格叙事</button>
+            <button class="video-mode-btn" type="button" data-video-mode="light">轻松四格日常</button>
+          </div>
+          <p>第一步生成基础图后，才能进入这里。<strong>重型十六格</strong>：把完整故事拆成 A/B/C/D 四段四宫格、分段生成、最后拼成 20~30 秒短片。<strong>轻松四格</strong>：只规划一个四宫格（4格），一键出一段约 5~8 秒的轻松日常小视频。生成视频时都会自动转成单一连续全画面镜头，避免视频变成四宫格。</p>
           <div class="video-grid-actions">
             <button class="image-provider-action video-grid-image-action" id="videoGridImageBtn" type="button"><span class="provider-rank">4</span><span>生成当前四宫格图片</span></button>
             <button class="image-provider-action video-omni-action" id="videoOmniGenerateBtn" type="button"><span class="provider-rank">V</span><span>生成当前段落视频</span></button>
@@ -134,7 +138,7 @@
             <div class="field-editor-kicker">VIDEO GRID PROMPT</div>
             <h3>四宫格分段提示词</h3>
             <p>默认使用当前工作流最新图片作为角色参考图。DeepSeek 会先写完整十六宫格故事总规划，再拆成 A/B/C/D 四组独立 2×2 四宫格；生成图片时使用“总控规则 + 当前段落”；生成视频时自动转成单画面连续镜头。</p>
-            <label class="video-grid-idea-label">当前段落
+            <label class="video-grid-idea-label" id="videoGridSegmentField">当前段落
               <select id="videoGridSegmentSelect">
                 <option value="A">四宫格 A：建立场景 / 角色进入（原1-4格）</option>
                 <option value="B">四宫格 B：主要动作展开（原5-8格）</option>
@@ -155,7 +159,7 @@
           </div>
         </div>
         <p class="note">说明：第一步只生成基础图；生成任意基础图后，顶部“四宫格分段阶段”会解锁。第二步先用十六宫格规划完整故事，再按 A/B/C/D 拆成四个独立四宫格；每次生成图片使用总控规则和当前段落；生成视频会自动移除四宫格/分屏/叠加信息层等词，四段视频最后手动剪辑拼接。</p>
-        <div class="version-row">当前版本：<span id="versionText">20260605-video-history</span></div>
+        <div class="version-row">当前版本：<span id="versionText">20260605-light-fourpanel</span></div>
       </section>
 
       <section class="panel remix-panel" id="remixPanel" hidden>
@@ -242,12 +246,12 @@
     </div>
   </div>
   <script>
-    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260605-video-history');
+    document.getElementById('versionText') && (document.getElementById('versionText').textContent = window.APP_VERSION || '20260605-light-fourpanel');
     document.getElementById('refreshLatestBtn') && document.getElementById('refreshLatestBtn').addEventListener('click', function(){
       location.replace('/furry-creator/?v=' + Date.now());
     });
   </script>
-  <script src="app.js?v=20260605-video-history"></script>
+  <script src="app.js?v=20260605-light-fourpanel"></script>
 </body>
 </html>
 

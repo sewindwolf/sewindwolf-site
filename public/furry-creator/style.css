@@ -372,3 +372,8 @@ body.is-home #workflowGalleryPanel,
 body.is-wizard #workflowGalleryPanel{display:none;}
 body.is-result #workflowGalleryPanel,
 body.is-remix #workflowGalleryPanel{display:block;}
+
+.video-mode-switch{display:flex;gap:8px;margin:10px 0 6px;flex-wrap:wrap;}
+.video-mode-btn{flex:1 1 auto;min-width:140px;padding:9px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:#cdd3e0;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s ease;}
+.video-mode-btn:hover{border-color:rgba(120,170,255,.5);color:#fff;}
+.video-mode-btn.active{background:linear-gradient(135deg,#5b8cff,#8a6bff);border-color:transparent;color:#fff;box-shadow:0 4px 14px rgba(91,140,255,.35);}
