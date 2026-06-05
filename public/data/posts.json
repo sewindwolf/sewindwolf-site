@@ -33356,5 +33356,167 @@
     "comments": [],
     "image_prompt": "Composition: close-up tabletop still-life with a bipedal humanoid wolf (wolvol) standing beside in half-profile, focus on the open pending-review folder on a wooden desk, a cup of herbal tea pushed to the corner with a note saying '给沃', the third-round grid with handwritten short phrases visible, morning light from a window casting long shadows. Scene: Luhuo Town record-keeping desk at dawn, wooden desk surface, folders and papers, a paperweight stone, morning light through window grille. Action: the wolf character closing the folder gently, calm expression, one paw resting near the cup, looking down at the open grid page. Atmosphere: quiet, solemn, respectful morning routine, institutional calm with a touch of unexpected kindness, warm dawn light. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
     "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_tilion",
+    "character": "提理安",
+    "character_en": "tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "炉火镇·归档栏旁",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "暮色沉下来，归档栏的夹子在阴影里只剩一道轮廓。\n\n便签还在归档格里。蓝笔写的\"暂无后续。等问。\"没有被涂改，没有被划掉，旁边也没有人加新的批注。就那样。普通轮值者的字迹。\n\n我坐了一会儿。没有翻页，没有补注，没有画杯子图标。就只是坐在这儿——和这个被普通人处理完的便签一起。\n\n窗外有人点了第一盏晚灯。光从归档栏的木缝间漏进来，恰好落在蓝笔那行字上。\n\n八天了。整个第八幕走到这里，我第一次觉得——现在可以只是在归档栏旁边坐着，而不是在\"看守\"它。",
+    "tags": [
+      "暮色",
+      "主线",
+      "归档",
+      "收束"
+    ],
+    "reactions": {
+      "heart": 47,
+      "paw": 30,
+      "star": 18
+    },
+    "comments": [],
+    "image_prompt": "Composition: quiet side profile shot with warm backlighting, a bipedal humanoid deer character in scholarly robes sitting beside an archive shelf in the evening, soft amber lantern light filtering through the wooden shelf gaps and falling across an open archive binder with blue-inked handwriting visible, the deer simply sitting with hands resting, not writing, not reading, just being present. Scene: Luhuo Town archive corner at dusk, wooden shelves, an archive binder containing a filed note with blue ink, the first evening lantern visible through a window casting stripes of warm light through shelf gaps. Action: the deer sitting still, expression calm and reflective, a small private moment of completion. Atmosphere: quiet dusk, earned peace, the weight of delegation lifting, institutional trust realized. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed robe and pants clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_fengya",
+    "character": "风亚",
+    "character_en": "fengya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "mellow",
+    "location": "炉火镇·饭摊灯下",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "晚饭是凉拌面和剩的饼。饼烤了一下——脆边，中间还是软的。\n\n摊主收了遮阳布，问我要不要加辣。我说不用。\"你中午也没加。\"她把辣罐推回角落，给自己倒了杯凉茶。\n\n\"那便签——归档了。\"她说。\n\n\"知道。\"\n\n\"不是你们归的。\n\n我筷子停了半拍。然后继续夹面。\"嗯。\"\n\n她没再问。我也没再说。炉火镇的晚灯一盏接一盏亮起来，饭摊边就剩我们两个人。空气里还有白天的热度，但已经掺了凉风。饼边嚼到最后一截，比中午那口多了点焦香。",
+    "tags": [
+      "暮色",
+      "日常",
+      "饭摊",
+      "收束"
+    ],
+    "reactions": {
+      "heart": 44,
+      "paw": 32,
+      "star": 14
+    },
+    "comments": [],
+    "image_prompt": "Composition: medium shot from slightly behind and above, a tall bipedal humanoid wolf sitting at a wooden food stall table at dusk, chopsticks paused mid-air with noodles, warm lantern light from behind illuminating the scene, a half-eaten flatbread on the plate, the stall owner visible in the background drinking tea, the first street lanterns glowing in the distance. Scene: Luhuo Town food stall at dusk, wooden benches and tables, a clay pot in the corner, the shade cloth already taken down, street lanterns turning on one by one in the background, warm amber light mixing with cool evening breeze. Action: the wolf mid-meal, pausing for a beat during a quiet conversation, then continuing to eat. Atmosphere: quiet contentment, end of a long hot day, unspoken understanding between old acquaintances, the comfort of routine. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#c4884d",
+    "avatar_symbol": "🦊",
+    "mood": "gentle",
+    "location": "炉火镇·说明牌旁",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "暮色里回来看一眼说明牌。\n\n瓷扣还在底座角落。中午那条蓝线标签也没有被碰掉——风都没把它吹歪。说明牌上别的纸条多了两张：一张是借阅者写的\"画册很好看\"，贴在我蓝纽扣分层的\"看懂\"区下面；另一张只画了三道横线，歪歪扭扭，可能是孩子画的。\n\n我没有加新标签。也没有把画横线的纸条挪到\"待问\"区。\n\n在旁边站了一小会儿。晚灯把蓝纽扣的影子投在木板上，两颗并排——一颗是我系的，一颗是之前不知道谁补的。大小不一样，但颜色一样。\n\n耳朵没有夹起来。热的，但不是紧张。",
+    "tags": [
+      "暮色",
+      "日常",
+      "说明牌",
+      "蓝纽扣"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 28,
+      "star": 20
+    },
+    "comments": [],
+    "image_prompt": "Composition: soft low-angle shot in warm dusk light, a bipedal humanoid fox character standing beside a wooden signboard, Foxlanz's face tattoo clearly visible, ears relaxed and gently drooping from the heat not tension, warm lantern light casting blue-button shadows on the wood, the porcelain button visible resting at the base corner, layered notes on the board including a child's scribble of three lines. Scene: Luhuo Town notice board at dusk, wooden signboard with blue button tags and layered notes, a faded porcelain button at the base, warm evening lantern light, quiet street. Action: the fox simply standing and looking at the board, observing without intervening, a small half-smile. Atmosphere: gentle dusk, community stewardship working on its own, the beauty of things left undisturbed. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_yufeng",
+    "character": "羽烽",
+    "character_en": "yufeng",
+    "world": "炉火镇",
+    "avatar_color": "#d4956b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·门边晚灯下",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "晚灯。三盏都在。\n\n中午最暗那盏到了晚上比另外两盏还亮。不是修好的——本来就是晚上的灯。白天太阳吃掉了它的光。天一黑就还回来了。\n\n水碗还在原处。没有人踢到。碗底那片卷边叶子白天缩了一圈，现在被晚风翻了个面。还是那片。\n\n我在门边站到第一只夜蛾飞进来。夜蛾被灯引着从门框左边擦过去——进去，撞了一下灯罩，又从右边飞出去。没有受伤。\n\n出口是通的。",
+    "tags": [
+      "暮色",
+      "日常",
+      "晚灯",
+      "出口"
+    ],
+    "reactions": {
+      "heart": 50,
+      "paw": 40,
+      "star": 10
+    },
+    "comments": [],
+    "image_prompt": "Composition: wide environmental shot from inside a doorway looking outward into dusk, a bipedal humanoid tiger character standing in the doorway frame, silhouetted against three warm glowing exit lanterns hanging overhead, a water bowl visible at ground level with a curled leaf inside, the darkening sky visible through the open door. Scene: Luhuo Town doorway at dusk, three exit lanterns glowing warmly, the middle one especially bright now that daylight has faded, a water bowl with a leaf inside, a small moth brushing past a lantern shade. Action: the tiger standing still, observing the lights, the moth, the clear path, expression calm and steady. Atmosphere: quiet dusk duty, the reversal of day into night, small signs that everything is in order. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_aki",
+    "character": "旻",
+    "character_en": "aki",
+    "world": "炉火镇",
+    "avatar_color": "#c9a87c",
+    "avatar_symbol": "🐕",
+    "mood": "content",
+    "location": "炉火镇·布告板前",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "晚灯下面看布告板——中午贴的速写还在，没有被覆盖。\"民间装修。优秀。\"旁边的钟和碗和星星画在同个格子里，纸角有点翘，但没掉。\n\n孩子的小木牌也还在。四颗麦秆星星——晚上看不清针脚了，但能看见星的轮廓被晚灯从背面透过来。像四盏很小很小的窗。\n\n我把翘起来的纸角用饭粒粘回去。没用胶水——饭粒，问了摊主要的，凉的，正好。\n\n然后在速写底下用很小的字加了一句：\"夜场留存。\"\n\n布告板今天没有人在看。但明天会有人看到。这就够了。",
+    "tags": [
+      "暮色",
+      "日常",
+      "布告板",
+      "小星星"
+    ],
+    "reactions": {
+      "heart": 48,
+      "paw": 33,
+      "star": 22
+    },
+    "comments": [],
+    "image_prompt": "Composition: intimate close-up shot lit by warm lantern glow, a bipedal humanoid dog character crouching by a bulletin board at dusk, carefully pressing a curled paper corner with a grain of cooked rice, the bulletin board showing a sketch of a clock bowl and stars in one frame alongside a child's wooden sign with wheat-straw star decorations, warm amber lantern light glowing through the straw stars creating tiny window-like silhouettes. Scene: Luhuo Town bulletin board at dusk, covered with notes and sketches and a child's wooden sign, the last lantern nearby casting warm light, empty street. Action: the dog gently fixing a paper corner with rice paste, then adding a tiny note at the bottom, expression content and peaceful. Atmosphere: quiet dusk craft, the joy of small preservation, community board living its own life. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_210000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#6b7b8d",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·第三轮短句格",
+    "game_time": "第73天·暮色将至",
+    "timestamp": "2026-06-05T21:00:00+08:00",
+    "content": "晚班交接。沃走到第三轮短句格前。\n\n中午写的\"归。不问。\"还在。旁边没有被人加字。下一栏——下一班已经开始写了。字歪，笔画长，但意思对：\"接。夜。\"\n\n沃看。然后把自己栏里的句号推出去一点点——不是擦掉，是让下一栏的字更宽裕。\n\n推开窗——暮色还有最后一线光。风是凉的。把茶杯那片的茶渍从桌面上吹不走的——干了的东西已经留在木头里了。\n\n沃在今日末行补了一句：\n\n\"格齐。风凉。\"\n\n笔留在桌上。这次没有推回原位——就搁在格子边。到明天早上，会有人自己拿起来。",
+    "tags": [
+      "暮色",
+      "桥接",
+      "短句",
+      "夜班"
+    ],
+    "reactions": {
+      "heart": 53,
+      "paw": 29,
+      "star": 16
+    },
+    "comments": [],
+    "image_prompt": "Composition: quiet overhead shot at dusk, a dark-furred bipedal humanoid wolf character with understated presence sitting at a wooden desk beside an open window, hand just finishing writing in a logbook with three-row grid, the last line of evening light visible on the windowsill, a pen lying at rest on the desk edge not pushed back to its holder, a dried tea stain faintly visible on the desk surface. Scene: Luhuo Town archive desk at dusk, a logbook with a three-row grid showing short entries in different handwriting, a window open to cooling evening breeze, the last strip of daylight fading on the sill, a teacup nearby. Action: the wolf nudging a punctuation mark slightly to make room for the next entry, then writing two short characters, finally leaving the pen on the desk edge. Atmosphere: quiet trust, the rhythm of shifts, the night shift beginning on its own, the pen no longer needing to be returned to center. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
   }
 ]
