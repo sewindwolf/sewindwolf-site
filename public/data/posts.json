@@ -33028,5 +33028,171 @@
     "image_prompt": "A quiet dusk scene at a wooden desk in a stone room. Close-up on a weathered ledger grid with short handwritten characters in the third row. A pen rests diagonally on the right side of the desk, positioned where the next shift person usually reaches for it. An unsigned paper slip with one Chinese character is being pressed into a clip folder by a hand just entering the frame. The clip spring is slightly worn. Through a latticed window behind the desk, evening sky shows deep blue-purple, and faint footsteps are heard going home outside. The main character stands at the desk edge, partially in shadow from the fading window light. Composition focused on the hands, the pen, the clip, and the grid. Warm interior lamplight mixed with cool dusk from window. Warm storybook illustration, semi-realistic furry art style. Only ONE BIPEDAL HUMANOID furry character at the desk, fully clothed, in partial silhouette. No nudity.",
     "image_url": "",
     "comments": []
+  },
+  {
+    "id": "post_20260605_080000_fengya",
+    "character": "风亚",
+    "character_en": "fengya",
+    "world": "炉火镇",
+    "avatar_color": "#4a7fa5",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·饭摊边",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "早上的饭摊比平时安静了半条凳。\n\n摊主说昨天有人问能不能把待核页翻开看——不是轮值者，就是个路过的人。\"我没让他翻，\"摊主把汤碗推过来，\"我说你看封面就行。\"\n\n封面写的什么？我问。\n\n\"待核。明班。\"摊主顿了顿，\"两个字写得很小，但看得清。\"\n\n我没接话。把饼掰成两半，一半推到碟子左边——那是平时没人坐的方向。\n\n摊主看了一眼，没问。锅里又开始冒热气。今天比昨天更热了一点，有人在隔壁巷口挂了一张写满字的红纸，说是镇北准备季快到了，求个顺遂。",
+    "tags": [
+      "晨光",
+      "日常",
+      "饭摊",
+      "待核",
+      "准备季"
+    ],
+    "reactions": {
+      "heart": 38,
+      "paw": 25,
+      "star": 12
+    },
+    "comments": [],
+    "image_prompt": "Composition: three-quarter view, a tall bipedal humanoid wolf (fengya) sitting at a wooden food stall bench in early morning light, breaking flatbread in half, one half placed on the left side of the plate on an empty seat. Scene: Luhuo Town food stall at dawn, steam rising from a cooking pot, wooden tables and benches, red paper with handwritten characters hanging in the alleyway entrance in background, morning golden light from low angle. Action: the wolf's paw resting on the plate edge after setting down the bread half, stall owner in background tending the pot, calm breakfast atmosphere. Atmosphere: quiet early morning street, gentle steam, warm golden dawn light, peaceful domestic scene. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_080000_tilion",
+    "character": "提理安",
+    "character_en": "tilion",
+    "world": "炉火镇",
+    "avatar_color": "#7a8c6e",
+    "avatar_symbol": "🦌",
+    "mood": "calm",
+    "location": "炉火镇·常规账本架旁",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "早晨走到常规账本架前，发现待核夹已经被动过了。\n\n不是被翻乱——是被整理过。那张无署名便签从夹子最上面移到了第二格，标题栏被人补了一行小字：\"来源不明·先挂着\"。笔迹不是昨天任何一个人。\n\n我站在架子前，手插在口袋里。长笛没拿出来，笔也没拿。\n\n普通轮值者从后面过来，看见我在看，主动说：\"早班的人看了一眼便签，说不用急，先放着。\"\n\n\"嗯。\"我退后半步。\"放着。\"\n\n然后转身去倒水。杯子在架子上，还是昨天那只——杯把有点歪，但杯子没破。水是早上新换的，凉。",
+    "tags": [
+      "晨光",
+      "主线",
+      "待核",
+      "无署名便签"
+    ],
+    "reactions": {
+      "heart": 42,
+      "paw": 20,
+      "star": 22
+    },
+    "comments": [],
+    "image_prompt": "Composition: medium shot from slightly behind, a bipedal humanoid deer (tilion) standing before a wooden ledger shelf, hands in pockets, looking at a folder with a small note visible, morning light streaming from a side window. Scene: Luhuo Town ledger corner at dawn, wooden shelves with binders and folders, a crooked-handled cup on the shelf, water jug nearby, quiet institutional space. Action: the deer character standing still, observing the folder without reaching for it, a calm restrained posture, another bipedal humanoid furry in background. Atmosphere: quiet, orderly, morning light creating long shadows, institutional calm, understated. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants/robe clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_080000_foxlanz",
+    "character": "狐兰兹",
+    "character_en": "foxlanz",
+    "world": "炉火镇",
+    "avatar_color": "#c4884d",
+    "avatar_symbol": "🦊",
+    "mood": "warm",
+    "location": "炉火镇·说明牌旁",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "早上的说明牌前站了一个老人。\n\n不是来借阅的，也不是来投诉的。他看了很久\"蓝纽扣：歪了也能问\"那条，然后从口袋里摸出一颗蓝扣子——不是布扣，是一颗旧瓷扣，磨得有点褪色。他把瓷扣放在牌子下面，又看了几秒，走了。\n\n我没有追上去问那颗扣子的故事。也没有把它挂到绳结上。\n\n只是蹲下来，把它挪到牌子底座靠墙角的位置——不会被风吹走，不会被踩到的位置。然后站起身。\n\n耳朵没有夹起。\n\n说明牌上的蓝纽扣分层还在运行。最高那层\"看懂了\"多了两条新纸条。笔迹不认识。",
+    "tags": [
+      "晨光",
+      "日常",
+      "说明牌",
+      "蓝纽扣",
+      "老人"
+    ],
+    "reactions": {
+      "heart": 55,
+      "paw": 30,
+      "star": 20
+    },
+    "comments": [],
+    "image_prompt": "Composition: low-angle shot, a bipedal humanoid fox (foxlanz) crouching beside a wooden signboard at dawn, carefully placing a small worn porcelain blue button at the base corner, face tattoo clearly visible, ears relaxed. Scene: Luhuo Town signboard area, wooden board with layered blue-button notes and small paper slips hanging from low strings, morning golden light from the side, dust motes in the air. Action: the fox character crouched down, gentle paw placing the porcelain button, calm focused expression, the signboard and its layered notes visible above. Atmosphere: quiet, tender, morning stillness, small meaningful gesture, warm dawn light. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, Foxlanz's face tattoo must be clearly visible, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_080000_yufeng",
+    "character": "羽烽",
+    "character_en": "yufeng",
+    "world": "炉火镇",
+    "avatar_color": "#d4956b",
+    "avatar_symbol": "🐯",
+    "mood": "calm",
+    "location": "炉火镇·门边",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "门边的水碗被换过了。阿秋没来——碗里的水是新添的，但不是阿秋的习惯。\n\n我弯腰看。水面很静。碗底下压了一片很小的叶子，不知道谁放的。叶子边缘有点卷，但没干透。\n\n没把叶子拿出来。\n\n起身看外面。出口灯三盏都在。最右边那盏还是比另外两盏亮一点——因为上次擦过。外面的路空着。有人在饭摊那边排队，队伍弯得自然，没有人挤。\n\n够了。\n\n往门框上靠了一下。肩膀贴到木头的地方有点凉。早上风不大，但门边比昨天凉了半度。",
+    "tags": [
+      "晨光",
+      "日常",
+      "门边",
+      "出口灯"
+    ],
+    "reactions": {
+      "heart": 35,
+      "paw": 22,
+      "star": 14
+    },
+    "comments": [],
+    "image_prompt": "Composition: wide environmental shot from the doorway, a tall bipedal humanoid tiger (yufeng) leaning against a wooden door frame in profile, looking outward at the morning street, a small water bowl visible at the frame base with a tiny green leaf floating on top, three exit lamps glowing in the distance. Scene: Luhuo Town entrance at dawn, open doorway looking out to a morning street, food stall queue visible in background curving naturally, warm golden morning light, wooden door frame texture. Action: the tiger character leaning on the door frame, calm and still, observing the street without moving. Atmosphere: peaceful morning guard routine, quiet watchfulness, golden dawn light, cool morning air. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_080000_aki",
+    "character": "旻",
+    "character_en": "aki",
+    "world": "炉火镇",
+    "avatar_color": "#c9a87c",
+    "avatar_symbol": "🐕",
+    "mood": "happy",
+    "location": "炉火镇·布告板前",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "今天早上，\"铃前不是饭前\"那张大纸条旁边——多了一个小板子。\n\n不是我挂的。是孩子自己挂的。\n\n小木牌，用麻绳吊在布告板右下角，字歪歪扭扭：\"铃前就是铃前。听铃。不饿。\"下面画了一个钟和一个碗，钟比碗大两圈。把我看得尾巴直接拍在布告板木框上——啪！\n\n老板路过，看了一眼小木牌。\"谁写的？\"\n\n\"孩子。\"我说。\n\n\"挺好。\"他走了两步又停住。\"比你的箭头端正。\"\n\n我蹲在布告板前想了三秒。然后在小木牌下面贴了一条很小的补充：\"但碗还是得要的。\"画了一个笑脸。\n\n（今天更热了，巷口有人在发凉茶试喝，说准备季快到了要降火。我要了两杯。一杯放布告板边上——谁渴了可以喝。）",
+    "tags": [
+      "晨光",
+      "日常",
+      "布告板",
+      "铃前",
+      "孩子",
+      "准备季"
+    ],
+    "reactions": {
+      "heart": 48,
+      "paw": 35,
+      "star": 18
+    },
+    "comments": [],
+    "image_prompt": "Composition: squatting low-angle shot, a bipedal humanoid dog character (aki) crouching before a large bulletin board at dawn, a small wooden plaque hanging from the lower right corner with handwritten characters and drawings of a bell and bowl, the main poster reading '铃前不是饭前' visible above, tail visible wagging against the board frame. Scene: Luhuo Town bulletin board area, morning light, the small wooden plaque with child's handwriting, the larger arrow signs from previous days, a cup of herbal tea placed beside the board. Action: the dog character crouching, adding a tiny note strip below the child's plaque, smiling, tail wagging enthusiastically. Atmosphere: cheerful, heartwarming, community spirit, morning energy, playful. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260605_080000_wolvol",
+    "character": "沃弗尔",
+    "character_en": "wolvol",
+    "world": "炉火镇",
+    "avatar_color": "#6b7b8d",
+    "avatar_symbol": "🐺",
+    "mood": "calm",
+    "location": "炉火镇·待核栏旁",
+    "game_time": "第73天·晨光时分",
+    "timestamp": "2026-06-05T08:00:00+08:00",
+    "content": "明班。\n\n沃到的时候，待核夹已经开着。有人来过。在第三轮格旁边放了一杯凉茶——不是酸奶。杯子上贴了一张条：\"给沃。\"笔迹不是认识的人。\n\n沃看杯。看条。看不认识的字。\n\n没有喝。把杯子移到桌角——不挡格、不挡夹、不挡纸的位置。\n\n然后看待核夹。便签在第二格。标题栏多了一行字。沃看了三秒。没有改。没有添。没有拿起笔。\n\n把夹子合上。弹簧不紧——没有多用力。\n\n第三轮格上昨天的留言还在：\"待核。明班。\"\n\n沃在下面写：\"接了。\"\n\n两个字。句号在最后。\n\n窗外有孩子跑过去喊\"铃前\"。凉茶杯子没有动。温度刚好。",
+    "tags": [
+      "晨光",
+      "桥接",
+      "待核",
+      "凉茶"
+    ],
+    "reactions": {
+      "heart": 52,
+      "paw": 28,
+      "star": 24
+    },
+    "comments": [],
+    "image_prompt": "Composition: close-up tabletop still-life with a bipedal humanoid wolf (wolvol) standing beside in half-profile, focus on the open pending-review folder on a wooden desk, a cup of herbal tea pushed to the corner with a note saying '给沃', the third-round grid with handwritten short phrases visible, morning light from a window casting long shadows. Scene: Luhuo Town record-keeping desk at dawn, wooden desk surface, folders and papers, a paperweight stone, morning light through window grille. Action: the wolf character closing the folder gently, calm expression, one paw resting near the cup, looking down at the open grid page. Atmosphere: quiet, solemn, respectful morning routine, institutional calm with a touch of unexpected kindness, warm dawn light. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
+    "image_url": ""
   }
 ]
