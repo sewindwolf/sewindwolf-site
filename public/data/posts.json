@@ -33684,5 +33684,223 @@
     "comments": [],
     "image_prompt": "Composition: quiet overhead shot at dusk, a dark-furred bipedal humanoid wolf character with understated presence sitting at a wooden desk beside an open window, hand just finishing writing in a logbook with three-row grid, the last line of evening light visible on the windowsill, a pen lying at rest on the desk edge not pushed back to its holder, a dried tea stain faintly visible on the desk surface. Scene: Luhuo Town archive desk at dusk, a logbook with a three-row grid showing short entries in different handwriting, a window open to cooling evening breeze, the last strip of daylight fading on the sill, a teacup nearby. Action: the wolf nudging a punctuation mark slightly to make room for the next entry, then writing two short characters, finally leaving the pen on the desk edge. Atmosphere: quiet trust, the rhythm of shifts, the night shift beginning on its own, the pen no longer needing to be returned to center. Art style: warm storybook illustration, semi-realistic furry, 16:9, BIPEDAL HUMANOID furry, fully clothed pants and top clearly visible, no nudity.",
     "image_url": ""
+  },
+  {
+    "id": "post_20260606_140000_fengya",
+    "character": "风亚",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·饭摊边",
+    "mood": "calm",
+    "content": "正午的饭摊——拼桌的旅人多了。三张桌子全坐满，后来的人端着碗蹲在屋檐下吃。摊主忙不过来，锅铲和碗叠成两摞。\n\n我把自己的面往旁边挪了半臂，腾出一小块桌面给人放碗。\n\n坐我对面的那位画地图的旅人，还在对着纸皱眉——刚才往南拐两个路口，他好像把第二个路口画反了。\n\n我没说。\n\n他自己会发现的。",
+    "image_prompt": "A lively midday food stall in Luhuo Town, crowded with travelers sitting at shared tables and some crouching under eaves with bowls. The character Fengya from reference image sits at a packed table, pushing his noodle bowl aside to make room, watching a traveler across the table puzzling over a hand-drawn map. Warm noon sunlight with harsh shadows, outdoor street food atmosphere, wooden stools and steaming pots visible. Medium shot, slightly off-center composition. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, pants and tunic clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "饭摊",
+      "旅人",
+      "日常"
+    ],
+    "line_type": "日常池"
+  },
+  {
+    "id": "post_20260606_140000_tilion",
+    "character": "提理安",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·归档栏旁",
+    "mood": "satisfied",
+    "content": "归档栏多了一个新格子。不是我加的。\n\n格子上贴了张黄纸，写了两行——「非投诉·非借阅——请勿归入维护账。」\n\n笔迹不是任何六人的——是那位写字最慢的早班轮值者。\n\n她把早上的祈福红纸归进了这个新格子，还在下面加了一行备注：「顺遂类·节日前后多。暂存。满十张再归档。」\n\n我看完。把备注读了两遍。\n\n然后把黄纸的角按平。\n\n没有改任何字。",
+    "image_prompt": "The archive shelf area in Luhuo Town, late morning light streaming from a nearby window. The character Tilien from reference image stands beside the archive bar, one hand pressing down the corner of a yellow paper label on a new category grid. A red paper with handwritten blessings visible nearby on the shelf. Organized shelves and wooden archive drawers in the background. Dust motes floating in the light. Medium shot, focus on the yellow paper label and the character's hand pressing its corner. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, robe clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "归档栏",
+      "制度运转",
+      "新格子"
+    ],
+    "line_type": "主线"
+  },
+  {
+    "id": "post_20260606_140000_foxlanz",
+    "character": "狐兰兹",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·说明牌旁",
+    "mood": "warm",
+    "content": "中午路过说明牌——有人在瓷扣标签旁边又贴了一条。\n\n不是蓝纽扣，是一张从路边撕下来的棕纸边角，字迹歪歪扭扭：「瓷扣——不知道哪来的，但早上有个旅人说这东西让他想起外婆的针线盒。」\n\n落款没有。纸边沾了点油渍。\n\n可能是拼桌吃饭的人写的。\n\n我把棕纸按平——没有叠，没有排顺序，就让它歪着。然后退了一步。\n\n它和蓝纽扣并排。一个高，一个低。\n\n但都还在。",
+    "image_prompt": "The instruction board in Luhuo Town, midday light. The character Foxlanz from reference image crouches beside the board, pressing down a torn brown paper note placed next to a blue button label. The board is layered with notes, blue buttons sorted by category, and a porcelain button resting in the corner. Foxlanz's face tattoo must be clearly visible. Warm, intimate, slightly shy atmosphere as he steps back to see the whole board. Low angle shot, focus on the layered notes and the porcelain button. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, robe and pants clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "说明牌",
+      "瓷扣",
+      "旅人留言"
+    ],
+    "line_type": "主线"
+  },
+  {
+    "id": "post_20260606_140000_yufeng",
+    "character": "羽烽",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·门边",
+    "mood": "calm",
+    "content": "水碗被晒烫了。\n\n正午的太阳正打在水面上——早上的那朵槐花已经被蒸得透明，贴在碗底像一小片晾干的膜。\n\n我把旧水倒了。重新从井里打了一桶——井水比上午凉两度。碗放回去的时候，有人在旁边放了一片荷叶。不是垫碗——是斜靠在碗边上，遮了小半个碗口的荫。\n\n回头看——是个旅人。怀里抱着一大捆荷叶，正往南走。应该是去赶明天的日子。\n\n没说一句话。\n\n我点头。荷叶上的水珠还在晃。",
+    "image_prompt": "By the doorway in Luhuo Town, harsh noon sun directly overhead. The character Yufeng from reference image stands by a water bowl on the ground, having just refilled it with cool well water. A fresh green lotus leaf is propped against the bowl edge, casting a small patch of shade over the water surface. A traveler carrying a large bundle of lotus leaves walks away toward the south in the distant background. Exit lights visible above the door frame, their glow dimmed by the bright midday sunlight. Clean minimal composition focusing on the bowl, the leaf, and the light. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, simple tunic and pants clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "水碗",
+      "荷叶",
+      "旅人",
+      "日常"
+    ],
+    "line_type": "日常池"
+  },
+  {
+    "id": "post_20260606_140000_aki",
+    "character": "旻",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·布告板前",
+    "mood": "happy",
+    "content": "布告板——又多了三条留言！\n\n红纸下面贴了：第一条——「借光——明天日子几点开始？」第二条——「顺遂！我也要贴！」\n\n第三条没写字。画了一只很小很小的鸟。不是阿秋——这只鸟是圆形的，只有两笔翅膀，眼睛是两个点。像孩子画的。但又不像孩子的手——线条太稳。\n\n我把三条留言画进了速写本。然后在红纸旁边加了一张空白纸片，用麦秆别在角上。写：「此处可留言。借墨在左手边小桶。」\n\n摊主探头看了一眼：「你这是要开分号？」\n\n不是！\n\n是——好吧算是。",
+    "image_prompt": "The community bulletin board in Luhuo Town, bustling with midday activity. The character Aki from reference image crouches in front of the board, sketching in a notebook with a happy expression. The board is layered with a red paper reading shun sui, three new reply notes stuck below including one with a tiny bird drawing, and a blank note card pinned with wheat straw in the corner. A food stall owner peeks over from nearby teasing the character. Dynamic cheerful atmosphere with warm noon light. Low crouching pose, the character's tail visible and slightly swaying. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, messenger-style outfit clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "布告板",
+      "留言",
+      "顺遂",
+      "日常"
+    ],
+    "line_type": "日常池"
+  },
+  {
+    "id": "post_20260606_140000_wolvol",
+    "character": "沃弗尔",
+    "timestamp": "2026-06-06T14:00:00+08:00",
+    "game_time": "第73天·正午暖阳",
+    "location": "炉火镇·酸奶摊",
+    "mood": "calm",
+    "content": "酸奶摊边。\n\n两个旅人在分一碗酸奶。一个说：「明天是大日子——祖村那边也来。」另一个说：「听说炉火镇的规矩很奇怪——不用站在中间也能管事。」\n\n酸奶勺停在半空。\n\n沃喝自己的那碗。\n\n不抬头。\n\n短句格在石屋方向——但沃不用去看。早上「归。不问。」还在。下午会多一个字。\n\n沃把空碗推回摊边。起身。\n\n路过布告板——红纸还在。留言多了。\n\n沃只看。\n\n不写。",
+    "image_prompt": "At the yogurt stall in Luhuo Town, midday sunlight. The character Wolvol from reference image sits alone at a wooden counter, finishing a bowl of yogurt. Two travelers in the midground share a bowl, mid-conversation, one gesturing toward the south road. Warm sun, wooden stall counter, simple clay bowls on the counter. Quiet observant atmosphere - the character listens without engaging, eyes lowered. Side silhouette composition, the empty yogurt bowl pushed slightly forward. Behind the stall, the road leads toward the stone houses of Luhuo Town. warm storybook illustration, semi-realistic furry. BIPEDAL HUMANOID furry. Only ONE character from reference in the scene. fully clothed, simple dark tunic clearly visible, no nudity. 16:9 aspect ratio.",
+    "image_url": "",
+    "tags": [
+      "酸奶摊",
+      "旅人",
+      "短句格",
+      "桥接"
+    ],
+    "line_type": "桥接"
+  },
+  {
+    "id": "post_20260606_210000_fengya",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "风亚",
+    "location": "炉火镇·饭摊灯下",
+    "mood": "mellow",
+    "content": "晚饭是中午剩的面，多加了一勺辣。\n\n摊主把灯挂低了两寸，桌面的影子比白天短。中午拼桌的旅人走了大半，只剩画地图那位还对着纸——他刚才往南拐两个路口，好像把祖村来的路画岔了，旁边等酸奶的那位探过头来帮他指。\n\n灯晃了一下。我低头——四叶草项链反了一小片光在碗边上。\n\n没碰它。把面吃完。\n\n摊主收碗的时候问：「明天祖村来——你不去？」\n\n我说：「有人在管。」",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "饭摊",
+      "祖村",
+      "四叶草"
+    ],
+    "image_prompt": "Evening at a humble food stall in Luhuo Town, warm yellow lantern hanging low over a wooden table. The character Fengya sits at the table, a bowl of noodles in front, chopsticks resting. A faint glint of a four-leaf clover pendant catches lantern light on the bowl's rim. Across the table, a traveler hunched over a map, another traveler leaning in to point directions. The stall owner turns away with an empty bowl. Background: three warm exit lamps visible in the distance, dusk sky deepening violet. Warm storybook illustration, semi-realistic furry, dusk atmosphere, intimate dinner scene, 16:9 aspect ratio, wide shot with warm lantern glow as main light source. Only ONE character (Fengya) as primary focus.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260606_210000_tilion",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "提理安",
+    "location": "炉火镇·归档栏旁",
+    "mood": "satisfied",
+    "content": "暮色里的归档栏——早班轮值者建的那个「顺遂类」格子下面，又多了一张祈福红纸。\n\n不是六人任何一个人贴的。笔迹很新，墨还没干透：「愿明天赶路的人不迷路。」\n\n旁边常规章还在原处。我没有盖。\n\n那位写字最慢的早班轮值者晚班还在——她正在往「投诉但不紧急」栏里夹一张条，夹到一半自己笑了，把条抽回去，说「哦这个不是投诉」改放进借阅栏。\n\n没人问她。\n\n我靠在架子边，把常规章转了半圈。没盖。没写。\n\n归档栏里现在有六个人没发明过的分类了。挺好的。",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "归档栏",
+      "顺遂类",
+      "常规章",
+      "轮值者"
+    ],
+    "image_prompt": "Dusk at the archive shelf in Luhuo Town, warm amber lantern light. The character Tilion leans against the wooden archive rack, watching. A new slot labeled in yellow paper with red祈福 paper tucked in, fresh ink still glistening. An ordinary day-shift keeper (generic BIPEDAL HUMANOID furry) stands nearby, mid-motion pulling a slip back from the wrong slot with a quiet laugh. The regular stamp sits untouched on the shelf edge. Soft shadows, warm storybook illustration, semi-realistic furry, quiet satisfaction mood, 16:9 aspect ratio, medium shot focusing on the archive shelf with Tilion in profile at frame edge. Only ONE primary character (Tilion) in scene.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260606_210000_foxlanz",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "狐兰兹",
+    "location": "炉火镇·说明牌旁",
+    "mood": "gentle",
+    "content": "天黑前走了一圈——有人给说明牌挂了一盏小灯笼。\n\n不是六人的灯。是用细藤编的罩子，里面一小截蜡烛，光刚好照到「蓝纽扣：歪了也能问」那行。中午那张棕纸标签还在，油渍被灯笼烤得有点透光，字更好认了。\n\n一个旅人站在牌前，把蓝纽扣分层从「看懂」念到「待问」再念到「纯吐槽」，念完自己笑了，对旁边的人说：「这个牌很有意思。」\n\n没提我。\n\n没提任何人的名字。\n\n我站在后排，尾巴没有夹。耳朵也没有。",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "说明牌",
+      "灯笼",
+      "蓝纽扣",
+      "旅人"
+    ],
+    "image_prompt": "Dusk at the instruction board in Luhuo Town. A small hand-woven rattan lantern hangs beside the wooden board, casting warm candlelight on handwritten notes and blue button labels. A traveler (generic BIPEDAL HUMANOID furry, back view) reads the board silently, one finger tracing a line of text. The character Foxlanz stands in the background at the edge of a small crowd, ears relaxed, tail still, watching from the back row. The light catches the blue button labels and a brown paper note with oil stains. Warm storybook illustration, semi-realistic furry, gentle dusk mood, 16:9 aspect ratio, wide composition with the lantern-lit board center-left and Foxlanz in right background. Only ONE primary character (Foxlanz) in scene with generic background figures.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260606_210000_yufeng",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "羽烽",
+    "location": "炉火镇·门边晚灯下",
+    "mood": "calm",
+    "content": "晚灯。三盏。\n\n中午最暗那盏——晚上的灯——比另外两盏还亮。天黑了还回来的光，一直是这样。\n\n水碗还在原处。中午放的那片荷叶边上凝了一圈水珠，不是雨——是暮气。碗底那片卷边叶子已经缩成了很小一团，但还在。\n\n有人路过，问我：「明天祖村来——门会开整夜吗？」\n\n我指了指出口灯。「灯亮着，门就是开的。」\n\n那人点点头走了。没有再问第二句。\n\n饭摊方向的灯也亮着。风亚还在。\n\n够了。",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "晚灯",
+      "水碗",
+      "荷叶",
+      "出口"
+    ],
+    "image_prompt": "Evening at the doorway edge of Luhuo Town. Three warm exit lamps glow against deepening dusk sky, the middle one brightest now that daylight is gone. A simple water bowl on the ground, a lotus leaf tilted over its edge with evening dew droplets glistening. The character Yufeng stands beside the door frame in profile, pointing toward the lamps. A traveler silhouette walks away into the distance. Warm storybook illustration, semi-realistic furry, calm dusk atmosphere, 16:9 aspect ratio, wide environmental shot with lamps as key light sources. Only ONE character (Yufeng) as primary focus.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260606_210000_aki",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "旻",
+    "location": "炉火镇·布告板前",
+    "mood": "happy",
+    "content": "天黑了看布告板——中午那三条留言周围又多了东西！\n\n问「明天日子几点开始」那张条下面，有人贴了回复：「铃响就是开始——铃前不是饭前。」\n\n……那是我早上贴的大纸条！被人引用了我好感动！！\n\n然后旁边多了一张手画路线图——从饭摊到守望之火广场，拐了两个弯，尽头画了一个小小的火。笔迹很细，不是孩子的手。\n\n我在路线图左上角补了一行字：「路线请问画图的人——我也不熟。」\n\n旁边等看布的旅人笑了。\n\n我也笑了。",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "布告板",
+      "路线图",
+      "铃前",
+      "旅人"
+    ],
+    "image_prompt": "Evening at the bulletin board in Luhuo Town, lit by a nearby lantern. The board is densely covered with notes, a large paper strip reading in Chinese characters about bell-before-meal. Someone has drawn a simple route map on a smaller paper pinned beside it, ending in a tiny flame drawing. The character Aki crouches beside the board, tail wagging, adding a small handwritten note in the corner of the map with a grin. A traveler in the background watches and chuckles. Warm storybook illustration, semi-realistic furry, happy evening mood, 16:9 aspect ratio, medium shot with the bulletin board filling left frame and Aki crouching at right. Only ONE primary character (Aki) in scene.",
+    "image_url": ""
+  },
+  {
+    "id": "post_20260606_210000_wolvol",
+    "timestamp": "2026-06-06T21:00:00+08:00",
+    "game_time": "第73天·暮色将至",
+    "character": "沃弗尔",
+    "location": "炉火镇·第三轮短句格",
+    "mood": "calm",
+    "content": "晚班。沃走到第三轮短句格前。\n\n沃的「归。不问。」还在。下面多了一行——不是下一班写的。是另一个笔迹：「问也可以。」\n\n笔很轻。像试了又试才落下去的。\n\n沃看。没有擦。没有改标点。\n\n旅人从旁边经过——「祖村那边明天一早就到。路我已经画好了。」\n\n沃在下一栏写：「接。明班。」\n\n把笔推回桌中央。\n\n有人问。也可以。",
+    "comments": [],
+    "tags": [
+      "暮色",
+      "短句格",
+      "晚班",
+      "祖村",
+      "笔"
+    ],
+    "image_prompt": "Evening at the third round short-phrase grid in Luhuo Town, a simple wooden writing desk with a grid of short handwritten phrases. Two columns visible: one reads in Chinese brush strokes, another below has lighter hesitant writing. The character Wolvol stands beside the desk, having just pushed a brush back to the center of the table. His shadow stretches long in lantern light. Travelers walk past in the distant background, one carrying a rolled map. Warm storybook illustration, semi-realistic furry, calm evening mood, 16:9 aspect ratio, medium shot focused on the desk and writing grid with Wolvol in quarter profile. Only ONE character (Wolvol) as primary focus.",
+    "image_url": ""
   }
 ]
